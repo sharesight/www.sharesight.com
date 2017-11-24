@@ -1,0 +1,29 @@
+// This is a large bit of data, only to be included into localization.js
+// Using .es6 to handle the quote-friendly `string type`.
+
+const config = {
+  default_locale_id: `<%= default_locale_id %>`,
+  locale_ids: <%= data.locales.map {|a| a[:id].downcase } %>,
+  base_url: `<%= base_url('/') %>`,
+  base_path: `<%= base_path('/') %>`,
+  help_url: `<%= base_url('/', base_url: config[:help_url]) %>`,
+  location_url: `<%= config[:location_url] %>`,
+  locales: [ // this is some minimal data coming from locales.json
+    <% data.locales.each do |locale| %>
+    {
+      id: `<%= locale.id %>`,
+      default_title: `<%= locale.default_title %>`,
+      append_title: `<%= locale.append_title %>`,
+      pages: [
+        <% locale.pages.each do |page| %>
+        {
+          page: `<%= page.page %>`,
+          page_title: `<%= page.page_title %>`,
+          footer_tagline: `<%= page.footer_tagline %>`
+        },
+        <% end %>
+      ]
+    },
+    <% end %>
+  ]
+}

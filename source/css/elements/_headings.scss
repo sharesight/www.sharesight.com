@@ -1,0 +1,93 @@
+%headings {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  @include fontSize(50px, 1.4);
+}
+
+h2 {
+  @include fontSize(45px, 1.33);
+}
+
+h3 {
+  @include fontSize(38px, 1.2);
+
+  @include respond-to (md, min) {
+     @include fontSize(32px, 1.2);
+  }
+}
+
+h4 {
+  @include fontSize(26px);
+  font-weight: normal;
+}
+
+h5 {
+  @include fontSize(24px);
+  font-weight: 600;
+}
+
+.heading {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.heading_page {
+  @include fontSize(2.5rem);
+  font-weight: 300;
+  @include respond-to(sm, min) {
+    @include fontSize(4.375rem);
+    line-height: 74px;
+  }
+}
+
+.heading_section {
+  @include fontSize(1.625rem);
+  font-weight: 400;
+  max-width: 620px;
+  margin: 0 auto;
+
+  @include respond-to(lg, min) {
+    margin-bottom: 40px;
+  }
+}
+
+.heading_section + img {
+  margin-top: 40px;
+}
+
+.heading_subsection {
+  @include fontSize(1.125rem);
+  margin-bottom: 0;
+  font-weight: 600;
+
+  @include respond-to(xs, min) {
+    @include fontSize(1.5rem);
+    line-height: 1.5;
+    vertical-align: top;
+  }
+}
+
+.heading_paragraph {
+  @include fontSize(1rem);
+  line-height: 1.5;
+}
+
+.heading_center {
+  text-align: center;
+}
+
+.heading_flat {
+  margin-bottom: 0;
+}
+
+.heading_flat + .heading_subsection {
+  margin-bottom: 30px;
+  line-height: 1.5;
+
+  @include respond-to(sm, min) {
+    line-height: 2.5;
+  }
+}

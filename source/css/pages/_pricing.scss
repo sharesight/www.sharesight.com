@@ -1,0 +1,281 @@
+$__plans_count: 4;
+
+.pricing {
+  &__background {
+    background: linear-gradient(175deg, $background_offset_white percentage(2/3), white percentage(1/3))
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__intro {
+    text-align: center;
+    margin: $gutter*2 auto $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*2.5;
+    }
+
+    h1 {
+      margin: 0 0 $gutter/2;
+      color: $colour_pro;
+      font-weight: 600;
+      letter-spacing: 1.25px;
+      text-transform: lowercase;
+      font-variant: small-caps;
+    }
+  }
+
+  &__intro--home {
+    @extend .pricing__intro;
+    margin: $gutter*2;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*2;
+    }
+
+    h2 {
+      font-weight: 300;
+      margin: 0 0 $gutter/2;
+    }
+
+    .btn,
+    .btn + .btn {
+      margin: 5px;
+    }
+  }
+
+  &__cta {
+    @include fontSize(20px, 2.25);
+    padding: 0 $gutter;
+    margin: $gutter auto;
+    box-shadow: 0 1px 2px 0 rgba($colour_pro, .15);
+  }
+
+  &__plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond-to(phone, min) {
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    @include respond-to(md, min) {
+      align-items: flex-end;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__plan {
+    margin: $gutter/2 0;
+    padding: $gutter*1.5 $gutter;
+    text-align: center;
+    border-radius: $gutter/2.5;
+    background-color: $background_white;
+    box-shadow: 0 1px 2px 0 rgba($colour_pro, .08);
+    flex: 1 0 auto;
+    width: 90%;
+    max-width: 100%;
+
+    @include respond-to(phone, min) {
+      flex: 1 0 50%;
+      width: 50%;
+      max-width: calc(50% - #{$gutter});
+    }
+
+    @include respond-to(md, min) {
+      flex: 1 0 percentage(1/$__plans_count);
+      width: percentage(1/$__plans_count);
+      max-width: calc(#{percentage(1/$__plans_count)} - #{$gutter});
+    }
+  }
+
+  &__title {
+    @include fontSize(24px, 1);
+    color: $colour_pro;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      @include fontSize(18px, 1);
+    }
+  }
+
+  &__price {
+    @include fontSize(60px);
+    color: $colour_secondary;
+    font-weight: 600;
+
+    margin-bottom: $gutter;
+  }
+
+  &__currency,
+  &__unit {
+    font-weight: 300;
+  }
+
+  &__currency {
+    @include fontSize(26px);
+    margin-right: -$gutter/1.5;
+    vertical-align: super;
+  }
+
+  &__unit {
+    @include fontSize(22px);
+    margin-left: -$gutter/1.5;
+  }
+
+  &__info,
+  &__stats,
+  &__support {
+    &, p {
+      @include fontSize(15px, 1.8);
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    margin: $gutter 0 0;
+  }
+
+  &__support {
+    margin: $gutter 0 0;
+  }
+
+  &__button {
+    margin: $gutter 0 0;
+    border-radius: $gutter/5;
+  }
+
+  &__small-print {
+    @include fontSize(14px);
+    margin: $gutter/2 0 0;
+    text-align: center;
+  }
+
+  &__pro.featured_link { // specificity
+    background-color: $background_offset_white;
+    color: $colour_pro;
+  }
+}
+
+.pricing-tables {
+  @extend %container;
+  overflow-x: auto; // allow scroll, incase `display: none` doesn't work on a breakpoint + font-size setting.
+
+  @include respond-to(xs, max) {
+    display: none;
+  }
+}
+
+.pricing-table {
+  width: 100%;
+  margin: $gutter 0;
+  border-collapse: collapse;
+
+  & + & {
+    margin-top: $gutter*2;
+
+    @include respond-to(md, min) {
+      margin-top: $gutter*3;
+    }
+
+    @include respond-to(lg, min) {
+      margin-top: $gutter*4;
+    }
+  }
+
+  @include respond-to(md, min) {
+    margin: $gutter*1.5 0;
+  }
+
+  @include respond-to(lg, min) {
+    margin: $gutter*2 0;
+  }
+
+  td {
+    @include fontSize(16px);
+    padding: $gutter*.75 $gutter;
+  }
+
+  thead th {
+    padding: $gutter;
+    border-bottom: 1px solid $colour_default;
+    vertical-align: bottom;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: $background_offset_white;
+  }
+
+  &__title {
+    @include fontSize(20px, 1.4);
+    vertical-align: bottom;
+  }
+
+  &__plan {
+    text-align: center;
+
+    &-title,
+    &-price {
+      margin: 0 0 $gutter/2;
+    }
+
+    &-title {
+      @include fontSize(15px);
+      color: $colour_pro;
+      font-weight: 600;
+      letter-spacing: 1.25px;
+      text-transform: lowercase;
+      font-variant: small-caps;
+    }
+
+    &-price {
+      @include fontSize(14px);
+      color: $colour_primary;
+      font-weight: 200;
+    }
+
+    &-button {
+      @include fontSize(11px, 24px);
+      height: 27px;
+      border-radius: $gutter/6;
+    }
+  }
+
+  &__feature {
+    width: 25%;
+    line-height: 24px;
+    vertical-align: middle;
+
+    @include respond-to (md, min) {
+      width: 40%;
+    }
+
+    img {
+      height: 28px; // because of negative margins; line-height + 2px*2;
+      width: auto;
+      vertical-align: middle;
+      margin: -2px $gutter/5;
+    }
+  }
+
+  &__feature-value {
+    text-align: center;
+    font-weight: bold;
+    width: percentage(((100 - 25) / $__plans_count) / 100);
+
+    @include respond-to (md, min) {
+      width: percentage(((100 - 40) / $__plans_count) / 100);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<%
+  category = locals[:category]
+%>
+<!DOCTYPE html>
+<html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">
+  <!-- paginated layout -->
+  <%= partial "layouts/partials/head", locals: locals.merge({
+    title: space_category_page_title,
+    description: category&.dig(:description) || nil,
+    social_title: base_space_category_page_title,
+    social_description: category&.dig(:description) || nil
+  }) %>
+
+  <% partial "layouts/partials/body", locals: locals.merge({}) do %>
+    <%= yield %>
+  <% end %>
+</html>

@@ -1,0 +1,164 @@
+---
+page_classes: 'page_pricing'
+section_class: 'section_default'
+---
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  plans = locale_plans(locale_obj[:id])
+%>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="pricing__background">
+  <div class="pricing__container">
+    <section class="pricing__intro">
+      <h1>Pricing</h1>
+      <p>
+        Your first <%= plans[0][:holdings] %> holdings are <strong>free</strong>!
+        <br />
+        Choose from any of our paid plans at anytime to track additional holdings or portfolios.
+        <br />
+        <a href="<%= config[:signup_url] %>" class="btn btn--secondary btn--solid pricing__cta" title="Sign up for Sharesight">
+           get started for free
+        </a>
+      </p>
+    </section>
+
+    <section class="pricing__plans">
+      <% plans.each_with_index do |plan, index| %>
+        <div class="pricing__plan">
+          <h4 class="pricing__title"><%= plan[:label] %> plan</h4>
+
+          <div class="pricing__price">
+            <span class="pricing__currency"><%= locale_obj[:currency_symbol] %></span>
+            <%= plan[:price] %>
+            <span class="pricing__unit">/mo</span>
+          </div>
+
+          <div class="pricing__stats">
+            <p><strong><%= plan[:portfolios] %></strong> <%= 'portfolio'.pluralize(plan[:portfolios]) %></p>
+            <p><strong><%= plan[:holdings] %></strong> <%= 'holding'.pluralize(plan[:holdings]) %></p>
+            <p><strong><%= plan[:reports_text] %></strong> reporting</p>
+          </div>
+
+          <div class="pricing__info">
+            <% plan[:info].each do |info| %>
+              <%= partial "partials/components/markdown", locals: { markdown: info } %>
+            <% end %>
+          </div>
+
+          <div class="pricing__support">
+            <%# :support_type can be either array or string %>
+            <% Array(plan[:support_type]).each do |support| %>
+              <%= partial "partials/components/markdown", locals: { markdown: support } %>
+            <% end %>
+          </div>
+
+          <a href="<%= config[:signup_url] %>" class="btn btn--<%= plan[:theme] %> btn--solid pricing__button" title="Sign up for Sharesight">
+             sign up – free
+          </a>
+        </div>
+      <% end %>
+    </section>
+
+    <p class="pricing__small-print">
+      Prices in <%= locale_obj[:currency] %> <% if locale_obj[:plans_include_tax] %>including GST<% else %>and tax-free<% end %>.
+    </p>
+
+    <section class="pricing__pro featured_link">
+      <div class="featured_link__description">
+        Manage more than <%= plans[plans.length - 1][:portfolios] %> portfolios?&nbsp;
+        <a href="<%= localize_url('pro', locale_id: locale_obj[:id]) %>" title="Sharesight Pro">
+          Sharesight Pro
+        </a> might be what you are looking for.
+      </div>
+
+      <a href="<%= localize_url('pro', locale_id: locale_obj[:id]) %>" title="Sharesight Pro" class="pricing__pro-button featured_link__button">
+        Learn More
+      </a>
+    </section>
+  </div>
+</div>
+
+<section class="pricing-tables">
+  <%= partial "partials/pricing_table", locals: {
+    locale_obj: locale_obj,
+    plans: plans,
+    feature_type: 'features',
+    features: [
+      ["Portfolios", :portfolios],
+      ["Holdings", :holdings],
+      [
+        "Custom Groups",
+        :custom_groups,
+        "[Organise your portfolio](#{localize_url('custom-groups', base_url: config[:help_url], locale_id: locale_obj[:id])}){:target='_blank'}
+        according to your preferred asset allocation methodology."
+      ]
+    ],
+    title: "Compare Plans"
+  } %>
+
+  <%= partial "partials/pricing_table", locals: {
+    locale_obj: locale_obj,
+    plans: plans,
+    feature_type: 'features',
+    features: [
+      [
+        "Supported Markets",
+        :supported_stock_exchanges,
+        "See our full list of markets
+        [here](#{localize_url('supported-stock-exchanges-and-managed-funds', base_url: config[:help_url], locale_id: locale_obj[:id])}){:target='_blank'}."
+      ],
+      ["Automatic Dividends & Adjustments", :automatic_adjustments, "Also track your dividend reinvestments (DRPs/DRIPs)"],
+      ["Price & Portfolio Email Alerts", :price_and_portfolio_alerts],
+      [
+        "Mobile App",
+        :mobile_app,
+        "Available on [Google Play](#{config[:google_store_url]}){:target='_blank'} and
+        the [App Store](#{config[:ios_store_url]}){:target='_blank'}."
+      ],
+      [
+        "Broker Email Imports",
+        :broker_email_import,
+        "Forward your trade confirmations for
+        [automatic trade importing](#{localize_url('contract_notes', base_url: config[:help_url], locale_id: locale_obj[:id])}){:target='_blank'}."
+      ],
+      ["Record Unlisted Investments", :record_unlisted_investments],
+      ["Portfolio Sharing", :portfolio_sharing],
+      ["Benchmarking", :benchmarking],
+      ["File Attachments", :file_attachments],
+      ["Labels & Report Filtering", :labels_report_filtering],
+      [
+        "Xero Integration ![Xero Integration](#{image_url "xero/xero-logo-50w.png"})",
+        :xero_integration,
+        "Connect to your
+        [Xero Account](#{localize_url('xero', locale_id: locale_obj[:id])}){:target='_blank'}
+        to synchronise trade data and cash accounts"
+      ]
+    ],
+    title: "Portfolio Features"
+  } %>
+
+  <%= partial "partials/pricing_table", locals: {
+    locale_obj: locale_obj,
+    plans: plans,
+    feature_type: 'reports',
+    features: [
+      ["Performance", :performance_report],
+      ["Taxable Income", :taxable_income_report],
+      ["Historical Cost", :historical_cost_report],
+      ["Sold Securities", :sold_securities_report],
+      ["All Trades", :all_trades_report],
+      ["Capital Gains Tax", :capital_gains_tax_report],
+      ["Unrealized Capital Gains Tax", :unrealised_capital_gains_tax_report],
+      ["Future Income", :future_income_report],
+      ["Diversity", :diversity_report],
+      ["Contribution Analysis", :contributions_analysis_report],
+      ["Foreign Investment Fund", :foreign_investment_fund_report],
+      ["Traders Tax", :traders_tax_report],
+    ],
+    title: "Reports"
+  } %>
+</section>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

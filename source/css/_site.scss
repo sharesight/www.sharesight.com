@@ -1,0 +1,19 @@
+/*
+	Our documents should be placed in the following order:
+	Tools - Functions and mixins
+	Base - Unclassed HTML elements (type selectors)
+	Elements - Unstyled design patterns (media object)
+	Components - Styled objects, chunks of UI
+	Trumps - Helpers and overrides, e.g. .float-left { float:left !important;}
+*/
+
+@import "_config";
+
+@import "elements/*";
+@import "components/*";
+
+@import "pages/*";
+@import "blog/*";
+@import "partners/*";
+
+@import "trumps";

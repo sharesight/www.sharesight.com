@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<% # this is assigned by default, but this makes it more clear
+  post = current_page.metadata[:locals][:post]
+%>
+
+<html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">
+  <!-- blog_post layout -->
+  <%= partial "layouts/partials/head", locals: locals.merge({
+    og_type: 'article',
+    title: post&.title && "#{post&.title} | #{current_locale_obj[:append_title]}",
+    description: post&.meta_description,
+    social_title: post&.title && "#{post&.title} | #{current_locale_obj[:append_title]}",
+    social_description: post&.meta_description,
+    social_image: post&.featured_image&.url
+  }) %>
+
+  <% partial "layouts/partials/body", locals: locals.merge({}) do %>
+    <%= yield %>
+  <% end %>
+</html>

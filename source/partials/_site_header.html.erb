@@ -1,0 +1,26 @@
+<header class="masthead masthead_tier masthead_blank" tabindex="0" role="banner">
+  <div class="masthead_nav_wrapper">
+    <div class="container">
+      <nav role="navigation" class="nav">
+        <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
+          <img src="<%=image_path('logos/site_logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
+        </a>
+
+        <%= partial "partials/navigation_in_header", locals: { locale_obj: locale_obj } %>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="all_menus" id="js-sliding-menu" data-menu-visibility="1">
+  <div id="menu_mask" class="mask"></div>
+
+  <div class="menu" id="menu">
+    <div id="js-close" class="close_wrapper" tabindex="0" aria-label="Exit Extended Menu">
+      <span class="close_text">Close</span>
+      <%= image_tag "/img/icons/close.svg", class: "icon close" %>
+    </div>
+
+    <%= partial "partials/main_nav", locals: { locale_obj: locale_obj } %>
+  </div>
+</div>

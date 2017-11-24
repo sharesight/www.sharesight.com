@@ -1,0 +1,107 @@
+<section class="section section_text section_video section_lp_video section_emphasis">
+  <div class="container">
+  <h2 class="heading heading_page heading_flat">Investment Tracking Software</h2>
+  <h3 class="heading heading_subsection">FINALLY UNDERSTAND HOW YOUR PORTFOLIO IS REALLY PERFORMING</h3>
+    <ul class="lp_header layout_columns">
+      <li>
+        <div class='embed-container'><iframe src='https://player.vimeo.com/video/57338416' frameborder='0' allowfullscreen></iframe></div>
+        <ul class="lp_header_list">
+          <li><p>Daily price updates &amp; currency adjustments</p></li>
+          <li><p>Automatic corporate actions such as dividends &amp; share splits</p></li>
+          <li>
+            <p>Powerful performance &amp; tax reports — including CGT</p>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+          <div class="sign_in">
+            <h5>TRY SHARESIGHT TODAY</h5>
+            <p>
+              and Keep It For Free, For Life!
+            </p>
+            <iframe src="<%= config[:signup_url] %>?embedded=true" width="280" height="275" class="landing_page_video" scrolling="no"></iframe>
+
+            <p><a class="clickGoogle qbutton small" href="<%= config[:portfolio_url] %>/auth/google_oauth2?_ga=1.223257304.230208777.1455499482" target="_blank" data-hover-background-color="#cc342e" title="Sign in with Google">Register with Google<i class="fa fa-google-plus"></i></a></p>
+            <p>Need to manage client portfolios? Signup to <a id="linkPro" href="<%= config[:pro_signup_url] %>" title="Sign up for Sharesight Pro">Sharesight Pro</a></p>
+          </div>
+        </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section content-center">
+  <div class="container">
+    <h2 class="heading heading_section">Join the thousands of investors already using Sharesight to manage their investment portfolios</h2>
+    <% data.lp_reasons_to_join.each_slice(2).with_index do |tile, i| %>
+      <ul class="tiles layout_columns">
+        <% tile.each do |item| %>
+    			<li class="tile tile_compact">
+            <i class="icon-fa fa <%=item.font_awesome_icon%> fa-3x"></i>
+            <h3 class="heading heading_subsection"><%=item.title%></h3>
+    				<p><%=item.description%></p>
+    			</li>
+        <% end %>
+  		</ul>
+    <% end %>
+  </div>
+</section>
+
+<section class="section section_emphasis">
+  <div class="container">
+    <div class="content-center">
+      <h2 class="heading heading_section">SAY HELLO TO YOUR “PORTFOLIO PASSPORT”</h2>
+      <img src="<%= image_path('sharesight-hero-clean-min.png')%>" class="img-hero img-responsive" alt="A laptop screen displaying the Sharesight application.">
+    </div>
+
+    <ul class="layout_columns content-center">
+      <% data.portfolio_passport.each do |item| %>
+      <li class="tile tile_profile tile_important tile_curved tile_expanded">
+        <span class="icon_circle"><i class="icon-fa fa <%=item.font_awesome_icon%> fa-3x"></i></span>
+        <h3 class="heading heading_subsection"><%=item.title%></h3>
+        <p><%=item.description%></p>
+      </li>
+      <% end %>
+    </ul>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="content-center">
+      <h2 class="heading heading_section heading_flat">Powerful performance &amp; tax reports</h2>
+      <h3 class="heading heading_subsection">AVAILABLE ANY TIME, IN JUST 1 CLICK</h3>
+    </div>
+    <% data.portfolio_overview.each_slice(3).with_index do |tile, i| %>
+      <ul class="tiles layout_columns content-center">
+        <% tile.each do |item| %>
+    			<li class="tile">
+            <img src="<%= image_path(item.img)%>" class="img-responsive img-shadow img-curved" alt="">
+
+    				<h3 class="heading heading_subsection"><%=item.title%></h3>
+    				<p><%=item.description%></p>
+    			</li>
+        <% end %>
+  		</ul>
+    <% end %>
+    </div>
+</section>
+
+<section class="lp_testimonials">
+  <%= partial "partials/testimonials", locals: {json: data.lp_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
+</section>
+
+<div class="section section_featured section_plain">
+  <div class="container">
+    <h4 class="heading heading_section">Award-Winning Investment Portfolio Tracking Software Built for Canadian Investors</h4>
+    <div class="featured_in_wrapper">
+
+      <div class="featured_logos">
+        <img src="<%= image_path('logos/logo_xero-award-winner_square-min.png')%>" class="img-inline img-responsive" alt="Xero Add-On Partner of the Year">
+        <img src="<%= image_path('logos/logo_tsx-min.png')%>" class="img-inline img-responsive" alt="Toronto Stock Exchange">
+        <img src="<%= image_path('logos/logo_CSE_square-min.png')%>" class="img-inline img-responsive" alt="Canadian Securities Exchange">
+        <img src="<%= image_path('logos/logo_CRA_square-min.png')%>" class="img-inline img-responsive" alt="Canada Revenue Agency">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<%#
+  locals = { category: { id, name } }
+    category is optional; without it, we assume we're on the all category (eg. from featured)
+%>
+<%
+  category = locals[:category]
+  active_category_id = category&.dig(:id) || 'all'
+  partners_categories_localized = partners_categories(locale_obj[:lang], withIndex: true)
+    .select{ |cat| cat[:count] >= 1 }
+%>
+
+<header class="partners-header">
+  <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="breadcrumb" title="<%= locale_page(page: 'partners', locale_obj: locale_obj)[:page_title] %>"><% if category %>Partners<% end %></a>
+
+  <h1 class="partners-header__title"><%= !category || category[:id] == 'all' ? 'Partners' : category[:name] %></h1>
+
+  <div class="partners-header__categories">
+    Jump To
+
+    <ul class="partners-header__categories-list">
+      <% partners_categories_localized.each do |partner_category| %>
+        <li>
+          <a href="<%= localize_url(partner_category[:path], locale_id: locale_obj[:id]) %>"
+            class="partners-header__category<%= active_category_id == partner_category[:id] ? ' partners-header__category--active' : '' %>"
+            title="See all <%= partner_category[:name] %> Partners"
+          >
+            <%= partner_category[:name] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</header>

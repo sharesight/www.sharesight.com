@@ -1,0 +1,23 @@
+---
+page_classes: ''
+page_title: 'Thanks | Sharesight'
+page_description: "Thanks for taking the time to complete our survey."
+section_class: ''
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+<section class="section_base second-tier">
+  <div class="container">
+
+    <div class="second-tier_wrapper">
+      <h1 class="heading_important heading_light">Thank You</h1>
+      <p>Thank you for taking the time to complete our survey.</p>
+      <p>
+        <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

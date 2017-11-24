@@ -1,0 +1,78 @@
+<%
+  # Make the locals variable seem a bit less magical.
+  metas = {}
+  metas[:og_type]              = locals[:og_type] || 'website'
+
+  metas[:canonical_url]        = locals[:canonical_url] || canonical_url
+  metas[:social_url]           = locals[:social_url] || current_global_url
+
+  metas[:title]                = BasicHelper.replace_quotes(locals[:title] || current_locale_page[:page_title] || current_page&.data&.page_title || current_locale_obj[:default_title])
+  metas[:social_title]         = generate_social_title(locals[:social_title])
+  metas[:social_title]       ||= base_locale_page[:page_title]
+  metas[:social_title]       ||= generate_social_title(metas[:title])
+  metas[:social_title]         = BasicHelper.replace_quotes(metas[:social_title])
+
+  metas[:description]          = BasicHelper.replace_quotes(locals[:description] || current_locale_page[:page_description] || current_page&.data&.page_description)
+  metas[:social_description]   = locals[:social_description]
+  metas[:social_description] ||= base_locale_page[:page_description]
+  metas[:social_description] ||= metas[:description]
+  metas[:social_description]   = BasicHelper.replace_quotes(metas[:social_description])
+
+  metas[:social_image]         = locals[:social_image]
+  metas[:social_image]       ||= (page_path_name == 'xero') ? 'featured_sharesight_xero.png' : 'featured_sharesight-hero.png'
+  metas[:social_image]         = image_url(metas[:social_image]) unless metas[:social_image].match(/\A(http[s]?:)?\/\//) # unless already a url (https://, http://, //)
+  metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
+
+  pagination = locals[:pagination]
+  if pagination && pagination&.current_page && pagination&.total_pages && pagination&.current_page > 1
+    # metas[:description]          = "#{pagination.from_items}-#{pagination.to_items} of (#{pagination.total_items}) – #{metas[:description]}"
+    metas[:title]                = "Page #{pagination.current_page}/#{pagination.total_pages} – #{metas[:title]}"
+
+    # Social stuff should keep the 'base' descriptions and urls.
+    metas[:social_url]           = metas[:social_url]&.gsub(/\/pages\/[\d]{1,}/, '')
+  end
+%>
+
+<!-- <%= valid_page_from_path %> -->
+
+<%# NOTE: meta name='charset' is set at the top of every layout %>
+<title><%= metas[:title] %></title>
+<meta name="description" content="<%= metas[:description] %>">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="<%= config[:env_name] == 'production' ? 'Index, Follow' : 'NoIndex, NoFollow' %>">
+<meta name="msvalidate.01" content="D71EF5876D9C5F2034E74AC314553CA3" />
+
+<meta name="application-name" content="<%= config[:site_name] %>">
+
+<%# Favicons %>
+<link rel="shortcut icon" href="<%= base_url('/favicon.ico') %>" type="image/x-icon">
+
+<%# OpenGraph %>
+<meta property="og:site_name" content="<%= config[:site_name] %>">
+<meta property="og:type" content="<%= metas[:og_type] %>">
+<meta property="og:url" content="<%= metas[:social_url] %>">
+<meta property="og:title" content="<%= metas[:social_title] %>">
+<meta property="og:image" content="<%= metas[:social_image] %>">
+<meta property="og:description" content="<%= metas[:social_description] %>">
+
+<%# Social Specific %>
+<meta property="fb:app_id" content="<%= config[:facebook_app_id] %>">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sharesight">
+<meta name="twitter:site:id" content="<%= config[:twitter_site_id] %>">
+
+<%# Google+ %>
+<link rel="publisher" href="https://plus.google.com/+sharesightltd"/>
+
+<%# Links; next/prev should be canonical. %>
+<link rel="alternate" type="application/rss+xml" title="Sharesight RSS Feed" href="<%= base_url('/blog/feed.xml') %>">
+<link rel="canonical" href="<%= metas[:canonical_url] %>">
+<%= partial "layouts/partials/alternate_links" %>
+<% if pagination&.next_page&.url %>
+  <link rel="next" href="<%= localize_url(pagination.next_page.url) %>">
+<% end %>
+<% if pagination&.prev_page&.url %>
+  <link rel="prev" href="<%= localize_url(pagination.prev_page.url) %>">
+<% end %>

@@ -1,0 +1,131 @@
+.blog {
+  @include respond-to(md, min) {
+    padding-top: $gutter;
+  }
+
+  &__header {
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*1.5;
+    }
+
+    @include respond-to(lg, min) {
+      margin-bottom: $gutter*2;
+    }
+  }
+
+  .alternate {
+    @include respond-to(sm, max) {
+      background-color: white; // blog gets a white background
+    }
+  }
+}
+// page specific
+.intro {
+  &.centered {
+    text-align: center;
+  }
+
+  .heading {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    max-width: 40rem;
+    margin: 0 auto 1.625rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Images
+img {
+  max-width: 100%;
+
+  &.small {
+    max-width: 220px;
+  }
+}
+
+aside.table {
+  padding-top: 0;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  text-align: left;
+  @media (min-width:1024px) {
+    border-spacing: 26px;
+    border-collapse: separate;
+  }
+  @media (min-width:768px) and (max-width:1024px) {
+    padding-top: 30px;
+  }
+
+  .row {
+    display: table-row;
+  }
+
+  .cell {
+    @media (min-width:1024px) {
+      display: table-cell;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+
+    p {
+      @media (min-width:768px) {
+        width: 100%;
+      }
+      @media (max-width:1024px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &.image {
+      padding-right: 0;
+      padding-top: 10px;
+      @media (min-width:768px) {
+        width: 100%;
+      }
+      @media (min-width:1024px) {
+        width: 50%;
+      }
+    }
+
+    &.description {
+      padding-right: 0;
+      vertical-align: middle;
+    }
+  }
+
+  footer {
+    margin: 25px 0 10px;
+  }
+}
+
+iframe {
+  margin-bottom: 4.875rem;
+}
+
+.page-heading {
+  margin-top: 130px;
+
+  &.stacked {
+    margin-top: 76px;
+  }
+}

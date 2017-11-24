@@ -1,0 +1,28 @@
+<%#
+  locals = { category: { id, name, path }, title, set, pagination }
+    set = pagination and are optional
+%>
+
+<%
+  category = locals[:category]
+  pagination = locals[:pagination]
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  pagination_set = locals[:set] || locals[:pagination] || []
+%>
+
+<div class="partners__category">
+  <% if locals[:title] %><%= partial "partners/partials/paginated_title", locals: { category: category, locale_obj: locale_obj } %><% end %>
+
+  <div class="partners__cards">
+    <% pagination_set.each_with_index do |partner, idx| %>
+      <%= partial "partners/partials/card", locals: { partner: partner, category: category, locale_obj: locale_obj } %>
+    <% end %>
+  </div>
+
+  <% if pagination && (pagination.next_page&.url || pagination.prev_page&.url) %>
+    <div class="partners__pagination">
+      <% if pagination.prev_page&.url %><a class="partners__pagination-link" href="<%= localize_url(pagination.prev_page.url) %>" title="Previous Page of Partners">〈&nbsp; Prev Page &nbsp;</a><% end %>
+      <% if pagination.next_page&.url %><a class="partners__pagination-link" href="<%= localize_url(pagination.next_page.url) %>" title="Next Page of Partners">&nbsp; Next Page &nbsp;〉</a><% end %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,35 @@
+<% if dots == false %>
+  <% entry = json.find {|x| x[:id] == locale_obj[:id] } %>
+  <% if entry.any? %>
+    <% entry[column_type].each_slice(3).with_index do |tile, i| %>
+      <ul class="tiles layout_columns content-center">
+        <% tile.each do |item| %>
+          <li class="tile">
+            <%if !item.img.blank? %>
+              <img src="<%= image_path('icons/' + item.img) %>.svg" class="img-responsive" alt="">
+            <%end%>
+            <h6 class="heading heading_subheading"><%=item.title%></h6>
+            <p><%=item.description%></p>
+          </li>
+        <% end %>
+      </ul>
+    <%end%>
+  <%end%>
+<%else%>
+  <% entry = json.find {|x| x[:id] == locale_obj[:id] } %>
+  <% if entry.any? %>
+    <div class="table">
+      <div class="row">
+        <% entry[column_type].each do |item| %>
+          <div class="cell card card_cursive card_plain">
+            <%if !item.icon.blank? %>
+              <img src="<%= image_path('icons/' + item.icon)%>.svg" class="img-responsive" alt="">
+            <%end%>
+            <h6 class="heading heading_subheading"><%=item.title%></h6>
+            <p><%=item.description%></p>
+          </div>
+        <%end%>
+      </div>
+    </div>
+  <%end%>
+<%end%>

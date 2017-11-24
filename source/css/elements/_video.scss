@@ -1,0 +1,104 @@
+.fs-video {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  background: image-url("video_screen.jpg") no-repeat;
+  background-size: cover;
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+// About us video
+.o-video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.external_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.landing_page_video {
+  border: none;
+}
+
+.o-video {
+  position: absolute;
+  width: 100%;
+  background: image-url("video_screen.jpg") no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    top: -63px;
+  }
+}
+
+.video_overlay {
+  background-image: image-url("video/tony_ryburn.jpg");
+  background-size: 101%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 101%;
+  min-width: 101%;
+
+  &.xero {
+    background-image: image-url("https://i.vimeocdn.com/video/485090548_640.webp");
+  }
+}
+
+.btn-play {
+  height: 30%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: $screen-md-min) {
+    height: 25%;
+  }
+}
+
+.xero {
+  .o-video_wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container embed,
+.embed-container iframe,
+.embed-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.embed iframe {
+  border: none;
+}

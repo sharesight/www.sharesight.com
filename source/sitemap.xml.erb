@@ -1,0 +1,84 @@
+<% locale_obj = locals[:locale_obj] || default_locale_obj %>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+<%# Only doing Blog for the default locale %>
+<% if locale_obj[:id] == default_locale_id %>
+  <%# Iterate through every blog category with more than one post. %>
+  <% blog_categories.select{ |category| category[:count] > 0 }.each do |category| %>
+    <% updated_at = category.dig(:_meta, :updated_at) || category.dig(:_meta, 'updated_at') %>
+    <url>
+      <loc><%= base_url(category[:path]) %></loc>
+      <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+      <changefreq>daily</changefreq>
+      <priority>0.6</priority>
+    </url>
+  <% end %>
+
+  <%# Iterates through every post. %>
+  <% data.blog.posts.map{ |post| post[1] }.select{ |post| post[:title]&.present? }.each do |post| %>
+    <% updated_at = post[:_meta][:updated_at] %>
+    <url>
+      <loc><%= post_url(post) %></loc>
+      <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+      <changefreq>daily</changefreq>
+      <priority>0.7</priority>
+    </url>
+  <%end%>
+<% end %>
+
+<%# Iterate through every partner category with more than one post.  Include partners/all %>
+<% partners_categories(withIndex: true).select{ |category| category[:count] > 0 }.each do |category| %>
+  <% updated_at = category.dig(:_meta, :updated_at) || category.dig(:_meta, 'updated_at') %>
+  <url>
+    <loc><%= localize_url(category[:path], locale_id: locale_obj[:id]) %></loc>
+    <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+
+    <% data.locales.each do |locale| %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <%end%>
+  </url>
+<% end %>
+
+<%# Iterates through every partner. %>
+<% partners_collection().each do |partner| %>
+  <% updated_at = partner[:_meta][:updated_at] %>
+  <url>
+    <loc><%= partner_url(partner, locale_id: locale_obj[:id]) %></loc>
+    <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+
+    <% data.locales.each do |locale| %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <%end%>
+  </url>
+<%end%>
+
+<%# This is a list of pages on this current locale %>
+<% locale_obj[:pages].reject{ |page| page.show_in_sitemap == false }.each do |page_data| %>
+  <% alternative_locales = page_alternative_locales(page_data[:page]) %>
+  <url>
+    <%# Some pages can be strictly non-global, eg. a canadian landing page, so grabs the first locale. %>
+    <loc><%= localize_url(page_data.page, locale_id: locale_obj[:id]) %></loc>
+    <changefreq><%= page_data.sitemap_changefreq || 'weekly' %></changefreq>
+    <priority><%= page_data.sitemap_priority || '0.5' %></priority>
+
+    <% alternative_locales.each do |locale| %>
+      <%# Set a default language alternate link in addition to the en-* versions we have %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <% end %>
+  </url>
+<% end %>
+</urlset>

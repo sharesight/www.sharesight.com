@@ -1,0 +1,17 @@
+[
+  {
+    "title": "LOCAL & GLOBAL",
+    "description": "Monitor your Canadian investments (CNSX, CVE & TSE), as well those listed on over 200 global stock markets",
+    "font_awesome_icon": "fa-globe"
+  },
+  {
+    "title": "ALL TOGETHER NOW",
+    "description": "Track your stocks, ETFs, listed bonds, fixed assets & cash — they're all in one place, and always up-to-date",
+    "font_awesome_icon": "fa-paperclip"
+  },
+  {
+    "title": "EASY ACCESS",
+    "description": "Access your secure portfolio from anywhere, and easily share access with your accountant or advisor",
+    "font_awesome_icon": "fa-share-alt"
+  }
+]

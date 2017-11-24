@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Free"
+  },
+  {
+    "label": "Starter"
+  },
+  {
+    "label": "Investor",
+
+    "reports": {
+      "capital_gains_tax_report": true
+    },
+
+    "info": [
+      "**Everything in Starter** plus",
+      "Capital Gains Tax Report",
+      "Xero Integration",
+      "Benchmarking"
+    ]
+  },
+  {
+    "label": "Expert",
+
+    "reports": {
+      "capital_gains_tax_report": true
+    }
+  }
+]

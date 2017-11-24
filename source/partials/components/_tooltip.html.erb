@@ -1,0 +1,8 @@
+<% if text %>
+  <% id = "tooltip-#{Digest::MD5.hexdigest(text)[0..8]}" %>
+  <div class="tooltip" tabindex="-1" role="tooltip" aria-controls="<%= id %>" aria-describedby="<%= id %>" aria-haspopup="true">
+    <div id="<%= id %>" class="tooltip__content" aria-hidden="true">
+      <%= partial "partials/components/markdown", locals: { markdown: text, inline: true } %>
+    </div>
+  </div>
+<% end %>

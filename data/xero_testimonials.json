@@ -1,0 +1,52 @@
+[
+	{
+		"id": "norman_vincent",
+		"text": "I've been using Sharesight with Xero for over 2 years now - fantastic.",
+		"author": "Norman Vincent",
+		"image_id": "norman_vincent",
+		"role": "Xero Business Community",
+		"source_title": "Xero Business Community",
+		"source_url": "https://community.xero.com/business/discussion/2212560",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "andrew_haynes",
+		"text": "Loving the @Sharesight integration with @Xero.",
+		"author": "Andrew Haynes",
+		"image_id": "andrew_haynes",
+		"role": "",
+		"source_title": "Twitter",
+		"source_url": "https://twitter.com/andrew_haynes/status/12557651552",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "jonathan_herrman",
+		"text": "Sharesight & Xero are an awesome combination",
+		"author": "Jonathan Herrman",
+		"image_id": "jonathan_herrman",
+		"role": "Xero Business Community",
+		"source_title": "Xero Business Community",
+		"source_url": "https://community.xero.com/business/discussion/2212560",
+		"visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "mike_deam",
+		"text": "@Sharesight & @Xero an awesome combination. Having 13 portfolios integrated into similar Xero files - this is a godsend for staying on track.",
+		"author": "Mike Deam",
+		"image_id": "mike_deam_bw",
+		"role": "Xero Business Community",
+		"source_title": "Twitter",
+		"source_url": "https://twitter.com/MikeDeam/status/557660125117571072",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "kimberley_middlemis",
+		"text": "The @Xero and @Sharesight combo is awesome.",
+		"author": "Kimberley Middlemis",
+		"image_id": "kimberley_middlemis",
+		"role": "",
+		"source_title": "Twitter",
+		"source_url": "https://twitter.com/kmiddlemis/status/536769140694851584",
+		"visible": ["nz", "ca", "uk", "au", "global"]
+	}
+]

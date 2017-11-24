@@ -1,0 +1,36 @@
+<% require_asset "../lib/froogaloop.min" %>
+
+(function() {
+  var iframe = document.getElementById("content_video");
+  var banner_video = document.getElementById("js-banner_video");
+  var window_width = window.innerWidth;
+  if (banner_video && window_width < 768) {
+    banner.removeChild(banner_video);
+  }
+
+  var about_overlay = document.getElementById('js-about-overlay');
+  var playButton = document.getElementById("js-play-button");
+  var player = $f(iframe);
+
+  if (playButton) {
+    playButton.addEventListener("click", function() {
+      player.api("play");
+      onPlay();
+      return false;
+    });
+
+    playButton.onfocus = function(event){
+      this.onkeypress = function(e){
+        if(e.which === 13 || e.keyCode === 13) {
+          onPlay();
+          player.api("play");
+        }
+      };
+    };
+  }
+
+  function onPlay(){
+    playButton.style.display = "none";
+    about_overlay.style.display = "none";
+  }
+})();

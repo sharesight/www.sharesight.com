@@ -1,0 +1,22 @@
+<%
+  partner = locals[:partner]
+  locale_obj = locals[:locale_obj]
+
+  link = partner[:featured_link]
+
+  url = if (link[:link].match(/\A(http[s]?:)?\/\//))
+    link[:link]
+  elsif link[:localize] == true
+    localize_url(link[:link], locale_id: locale_obj[:id])
+  else
+    base_url(link[:link])
+  end
+%>
+
+<div class="featured_link">
+  <span class="featured_link__description"><%= link[:description] %></span>
+
+  <a href="<%= url %>" title="<%= link[:button_text] %>" class="featured_link__button">
+    <%= link[:button_text] %>
+  </a>
+</div>

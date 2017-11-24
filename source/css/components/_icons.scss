@@ -1,0 +1,129 @@
+.icon {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+
+  &.hamburger {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  &.close {
+    right: 0;
+    top: 2px;
+    height: 28px;
+  }
+}
+
+.icon_tick_default,
+.icon_tick_secondary,
+.icon_tick_primary {
+  height: 33px;
+  width: 33px;
+  vertical-align: bottom;
+}
+
+.icon_tick_default {
+  background-image: image-url('img/icons/pricing_table_tick_free.svg');
+}
+
+.icon_tick_secondary {
+  background-image: image-url('img/icons/pricing_table_tick_expert.svg');
+}
+
+.icon_tick_primary {
+  background-image: image-url('img/icons/pricing_table_tick_investor.svg');
+}
+
+.icon_circle {
+  position: relative;
+  top: -38px;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  background-color: $colour_secondary;
+  border-radius: 50%;
+
+  .icon-fa {
+    padding-top: 15px;
+    color: white;
+  }
+}
+
+.icon-fa-header {
+  font-size: 12px;
+}
+
+.icon_inline {
+  display: inline-block;
+}
+
+.icon_sm {
+  height: 20px;
+  width: 20px;
+}
+// Sprites
+.sprite {
+  background: image-url('logos/sprite_logos.png') no-repeat top left;
+  width: 165px;
+  height: 85px;
+  margin-bottom: 30px;
+  display: inline-block;
+  opacity: 0.8;
+  vertical-align: middle;
+  margin-right: 60px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sprite.financial-observer {
+  background-position: 0 0;
+}
+
+.sprite.IBD {
+  background-position: 0 -95px;
+}
+
+.sprite.MM-Web {
+  background-position: 0 -190px;
+}
+
+.sprite.nz-herald {
+  background-position: 0 -285px;
+}
+
+.sprite.sky-news-business {
+  background-position: 0 -380px;
+}
+
+.sprite.The-Australian-Financial-Review {
+  background-position: 0 -475px;
+}
+
+.sprite.xlogo-the-australian {
+  background-position: 0 -570px;
+}
+
+.icon-arrow-right {
+  background: image-url('icons/more_info_right.svg');
+  height: 24px;
+  width: 24px;
+}
+
+.icon-arrow-down {
+  background: image-url('icons/more_info_down.svg');
+  height: 24px;
+  width: 24px;
+}

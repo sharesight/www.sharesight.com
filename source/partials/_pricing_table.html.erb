@@ -1,0 +1,43 @@
+<table class="pricing-table">
+  <thead>
+    <tr>
+      <th class="pricing-table__title"><%= title %></th>
+      <% plans.each_with_index do |plan, index| %>
+        <th class="pricing-table__plan">
+          <div class="pricing-table__plan-title"><%= plan[:label] %> plan</div>
+          <div class="pricing-table__plan-price"><%= locale_obj[:currency_symbol] %><%= plan[:price] %>/mo</div>
+        <a href="<%= config[:signup_url] %>" class="btn btn--<%= plan[:theme] %> btn--solid pricing-table__plan-button" title="Sign up for Sharesight">
+             Sign Up
+          </a>
+        </th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% if block_given? %>
+      <%= yield %>
+    <% elsif feature_type && features&.length %>
+      <% features.each do |report, sym, tooltip| %>
+        <%# report exists on /any/ plan on this locale %>
+        <% if plans.select{ |plan| plan[feature_type.to_sym][sym.to_sym] || plan[sym.to_sym] }.length > 0 %>
+          <tr>
+            <td class="pricing-table__feature">
+              <%= partial "partials/components/markdown", locals: { markdown: report, inline: true } %>
+              <%= partial "partials/components/tooltip", locals: { text: tooltip } if tooltip %>
+            </td>
+            <% plans.each_with_index do |plan, index| %>
+              <% value = plan[feature_type.to_sym][sym.to_sym] || plan[sym.to_sym] %>
+              <td class="pricing-table__feature-value">
+                <% if value == true %>
+                  <%= partial "partials/components/checkmark" %>
+                <% elsif value %>
+                  <%= value %>
+                <% end %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

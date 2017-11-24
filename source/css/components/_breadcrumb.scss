@@ -1,0 +1,24 @@
+.breadcrumb {
+  display: inline-block; // this will be a link, don't make it full-page
+  font-size: 1rem;
+  font-weight: 400;
+  color: $colour_secondary;
+  padding: $gutter/2 $gutter; // so we can click on it easier
+  margin-bottom: $gutter/2;
+  padding-left: 6px; // align with the likely below it
+
+  &:empty {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: auto;
+    padding-right: $gutter;
+    background-image: image-url('icons/breadcrumb_arrow_left.svg');
+    height: 12px;
+    background-repeat: no-repeat;
+  }
+}

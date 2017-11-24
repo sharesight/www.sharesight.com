@@ -1,0 +1,47 @@
+<%
+  # NOTE: Body must have a yield.  It will not function without.
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  header = locals[:header]
+
+  page_classes = locals[:page_classes] || current_page.data.page_classes
+  section_class = locals[:section_class] || current_page.data.section_class
+  include_campaign_monitor = locals[:include_campaign_monitor] || current_page.data.include_campaign_monitor
+%>
+
+<body class="<% if section_class %> <%= section_class %><% end %><% if page_classes %> <%= page_classes %><% end %>">
+  <%= partial "layouts/partials/noscript" %>
+  <script>document.body.className += ' js_menu_closed';</script>
+
+  <nav class="a11y" role="navigation" tabindex="1">
+    <ul role="menu">
+      <li role="menuitem"><a href="#main-menu">Skip to main menu</a></li>
+      <li role="menuitem"><a href="#main-area">Skip to main content</a></li>
+    </ul>
+  </nav>
+
+  <% if header %>
+    <%= partial header, locals: { locale_obj: locale_obj } %>
+  <% end %>
+
+  <main role="main" id="main-area" aria-label="Start on main content">
+    <%= yield %>
+  </main>
+
+  <% if content_for?(:javascript) %>
+    <%= yield_content :javascript %>
+  <% end %>
+
+  <script>
+    window.onload = function(){
+      var s = document.createElement('script');
+      s.async = 1;
+      s.src = "<%= asset_path(:js, 'site') %>";
+      document.body.appendChild(s);
+    }
+  </script>
+
+  <% if include_campaign_monitor %>
+    <%# Include createsend // campaignmonitor for the Subscribe button %>
+    <script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+  <% end %>
+</body>

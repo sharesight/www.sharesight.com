@@ -1,0 +1,50 @@
+[
+  {
+    "id": "margaret_holmes",
+    "text": "Sharesight makes it easy to review portfolio performance, track income and manage those awful FIF calculations at tax time.",
+    "author": "Margaret Holmes",
+    "image_id": "margaret_holmes",
+    "company": "Engine Room, New Zealand",
+    "visible": ["nz"]
+  },
+  {
+    "id": "david_mcewen",
+    "text": "A lot of stuff is taken care of for me, automatically. Adding dividends, dividend reinvestment plan calculations, tax reports.",
+    "author": "David McEwen",
+    "image_id": "david_mcewen",
+    "company": "David McEwen Wealth Management, New Zealand",
+    "visible": ["nz", "au"]
+  },
+	{
+		"id": "peter_small",
+		"text": "Sharesight allows my clients to see what’s going on in their portfolios and I can see what is going on in each investment.",
+		"author": "Peter Small",
+		"image_id": "peter_small",
+		"company": "Fluid Financial Planning, Australia",
+    "visible": ["nz", "au", "ca", "uk", "global"]
+	},
+  {
+    "id": "andrew_haynes",
+    "text": "Record keeping for my clients investment trusts just got simple.",
+    "author": "Andrew Haynes",
+    "image_id": "andrew_haynes",
+    "company": "Growthwise, Australia",
+    "visible": ["nz", "au", "ca", "uk", "global"]
+  },
+  {
+    "id": "peter_naude",
+    "text": "Sharesight has allowed us to assist our clients to manage their long term investment strategies.",
+    "author": "Peter Naude",
+    "image_id": "peter_naude",
+    "company": "Outsourced Resource Pty Ltd, Australia",
+    "visible": ["nz", "au", "ca", "uk", "global"]
+  },
+	{
+    "id": "martin_dowse",
+		"text": "We recommend Sharesight as there is nothing else in the space that comes close. It has a great look and feel and just seems to work.",
+		"author": "Martin Dowse",
+		"image_id": "martin_dowse",
+		"company": "Dowse Murray Chartered Accountants, New Zealand",
+    "visible": ["nz", "au", "ca", "uk", "global"]
+	}
+]

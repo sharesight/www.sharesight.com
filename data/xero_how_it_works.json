@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Reconcile your investment transactions",
+    "description": "When you synchronise your Sharesight portfolio to Xero, details of your share purchases, sales, and dividends will flow into Xero automatically so  they can be easily reconciled against your bank statement and incorporated into your personal wealth and budgeting picture.",
+    "img": "lp_screens/screenshot_report-growth_1205x945-min.png",
+    "img_alt": ""
+  },
+  {
+    "title": "Manage your cash balances",
+    "description": "Furthermore, Sharesight can pull in your bank account balances, term deposits and cash investments from Xero, so you can view your complete financial position directly within your Sharesight portfolio – automatically, and in real-time.",
+    "img": "lp_screens/screenshot_report-performance_1205x945-min.png",
+    "img_alt": ""
+  }
+]

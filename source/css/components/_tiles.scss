@@ -1,0 +1,40 @@
+.tile {
+  background-color: #fff;
+
+  > h3 {
+    font-weight: 600;
+  }
+
+  > img + h3 {
+    margin-top: 20px;
+  }
+}
+
+.tile_important {
+  border: 1px solid rgba(#818181, .4);
+  margin-bottom: 20px;
+}
+
+.tile_profile {
+  > .heading_subsection {
+    margin-top: -10px;
+  }
+
+  > p {
+    font-size: 16px;
+    line-height: 1.5;
+    @media (min-width:1024px) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.tile_curved {
+  border-radius: 2px;
+}
+
+.tile_expanded {
+  padding: 1rem !important;
+}
+// This is a trump class

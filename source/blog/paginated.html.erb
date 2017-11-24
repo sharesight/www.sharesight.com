@@ -1,0 +1,96 @@
+---
+page_classes: 'page_about_us'
+section_class: 'blog_paginated section_blog'
+layout: blog_category
+include_campaign_monitor: true
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="blog">
+  <header class="blog__header">
+    <div class="container">
+
+      <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog"><% if category[:name] != 'All' %>Blog<% end %></a>
+
+      <% if category[:name] != 'All' %>
+        <h1 class="heading heading_page heading_page_index">Topic: <%= space_category_page_title %></h1>
+      <% else %>
+        <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading heading_page heading_page_index">Blog</h1></a>
+      <% end %>
+    </div>
+  </header>
+
+  <div class="alternate footer">
+    <div class="container cards-container">
+      <div class="table cards">
+        <div class="row">
+          <% pagination.each_with_index do |blog_post, idx| %>
+            <% if blog_post[:title] %>
+              <article class="cell card card_stripped">
+                <% if blog_post[:featured_image] %>
+                  <a href="<%= post_url(blog_post) %>" title="<%= blog_post[:title] %>">
+                    <img src="https:<%=blog_post[:featured_image][:url] %>?h=261" alt="<%=blog_post[:featured_image][:title] %>">
+                  </a>
+                <%end%>
+
+                <section class="content">
+
+                  <a href="<%= post_url(blog_post) %>" title="<%= blog_post[:title] %>">
+                    <h3 class="title"><%= blog_post[:title] %></h3>
+                  </a>
+
+                  <div class="meta">
+                    <% if blog_post[:created_at] %>
+                      <small class="blog-post-date">
+                        <%= blog_post[:created_at].strftime("#{blog_post[:created_at].day}<sup>#{blog_post[:created_at].day.ordinalize.split('').last(2).join()}</sup> %B %Y") %>
+                      </small>
+                    <%end%>
+
+                    <small class="blog-post-author">
+                      by <%= blog_post&.author[:display_name] %>
+                    </small>
+                  </div>
+
+                  <%= partial "partials/components/markdown", locals: { markdown: blog_post[:meta_description] } %>
+                  <footer>
+                    <a href="<%= post_url(blog_post) %>" class="btn btn--bordered primary" title="<%= blog_post[:title] %>">Read Full Post</a>
+                  </footer>
+                </section>
+              </article>
+
+            <% if((idx + 1) % 2 == 0) %>
+              <% if (idx + 1 == 2) %>
+                <%= partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: category[:name], footer: false, on_individual_page: false} %>
+              <% else %>
+                <div class="cell"></div>
+              <% end %>
+              </div>
+              <div class="row">
+            <%end%>
+          <%end%>
+        <%end%>
+        </div>
+      </div>
+
+      <aside class="table">
+        <footer class="row">
+          <div class="cell">
+            <div class="section section-nav">
+              <% if pagination.next_page&.url %>
+                <a href="<%= localize_url(pagination.next_page.url, locale_id: locale_obj[:id]) %>" class="btn btn--bordered btn-default" title="View Older Posts">Older posts</a>
+              <%end%>
+              <% if pagination.prev_page&.url %>
+                <a href="<%= localize_url(pagination.prev_page.url, locale_id: locale_obj[:id]) %>" class="btn btn--bordered btn-default" title="View Newer Posts">Newer posts</a>
+              <%end%>
+            </div>
+          </div>
+        </footer>
+      </aside>
+    </div>
+
+    <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: category[:name], footer: true, on_individual_page: false} %>
+  </div>
+</div>
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

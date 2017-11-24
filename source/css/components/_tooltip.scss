@@ -1,0 +1,62 @@
+$__square: $gutter;
+$__padding: $gutter/5;
+$__outer-dimensions: $__square + $__padding*2;
+
+.tooltip {
+  cursor: pointer;
+  width: $__outer-dimensions;
+  height: $__outer-dimensions;
+  vertical-align: middle;
+  margin: $__padding;
+  display: inline-block;
+  position: relative;
+
+  &, &:before, &__content {
+    outline: none;
+  }
+
+  &:before {
+    @include fontSize(12px, $__square);
+    content: '?';
+    text-align: center;
+    display: block;
+    width: $__square;
+    height: $__square;
+    margin: ($__padding - 1px) $__padding $__padding;
+    border-radius: 50%;
+    color: white;
+    background-color: $colour_secondary;
+  }
+
+  &__content {
+    @include fontSize(15px);
+    font-weight: 600;
+    background-color: $colour_pro;
+    color: white;
+    border-radius: $gutter/2.5;
+    box-shadow: 0 11px 20px 0 rgba(0,0,0,.1), 0 29px 100px 0 rgba(0,0,0,.1);
+    display: inline-block;
+    letter-spacing: .2px;
+    margin-left: $__outer-dimensions - 1px; // match tooltip dimensions, so we don't lose when hovering..
+    min-width: 300px;
+    max-width: 600px;
+    padding: $gutter $gutter*1.5;
+    position: absolute;
+    top: -$gutter*1.25;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 250ms ease-out;
+
+    .tooltip:hover &,
+    .tooltip:focus & {
+      opacity: 100;
+      visibility: visible;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

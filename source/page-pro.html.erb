@@ -1,0 +1,129 @@
+---
+page_classes: ''
+section_class: ''
+layout: layout_pro
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<div class="pro pro-index">
+  <div class="layout layout_alternate">
+    <section class="layout_primary">
+      <h2 class="heading heading_paragraph">
+        Pro benefits that make you more efficient, so you can boost revenue and grow your business
+      </h2>
+      <p>
+        Sharesight Pro combines all the information accountants and financial advisors need to manage and report on client investment portfolios. Powerful stock market data aggregation tools save you hours of manual administration, while comprehensive tax and performance reports provide unparalleled insights.
+      </p>
+
+      <div class="layout_component cards">
+        <%= partial "partials/three_column_grid", locals: {json: data.columns, column_type: 'columns_pro_index', dots: true, locale_obj: locale_obj}%>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="layout">
+    <div class="layout_primary">
+      <h2 class="heading heading_paragraph">Powerful Pro features<br/> that will change the way you work</h2>
+      <p>Keeping track of your client’s share portfolios used to be a hassle. Sharesight Pro makes it simple. Want automatic trade recording with comprehensive tax and performance reporting, wrapped up in an easy-to-use, fully online system? That’s Sharesight Pro in a nutshell.</p>
+      <div class="layout_component cards">
+        <%= partial "partials/three_column_grid", locals: {json: data.pro_features, column_type: 'features', dots: false, locale_obj: locale_obj}%>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout layout_alternate">
+    <div class="layout_primary">
+      <h2 class="heading heading_paragraph">Simple pricing, no commitment</h2>
+      <p>
+        Whether you need to track 5 portfolios or 500, you never pay more than $12 per portfolio, per month. And the more portfolios you set up, the more affordable it gets.
+      </p>
+      <div class="layout_component table-columns">
+        <div class="columns">
+          <ul class="price starter">
+            <li><h6 class="heading heading_subheading">STARTER</h6></li>
+            <li>
+              <h1 class="heading">$12</h1>
+              <small>per portfolio/month <br>(from $60/month)
+              </small>
+            </li>
+            <li><p>5-19 portfolios</p></li>
+          </ul>
+        </div>
+        <div class="columns">
+          <ul class="price bronze">
+            <li><h6 class="heading heading_subheading">BRONZE</h6></li>
+            <li>
+              <h1 class="heading">$10.80</h1>
+              <small>per portfolio/month<br>(from $216/month)
+              </small>
+            </li>
+            <li><p>20-49 portfolios</p></li>
+          </ul>
+
+        </div>
+        <div class="columns">
+          <ul class="price silver">
+            <li><h6 class="heading heading_subheading">SILVER</h6></li>
+            <li>
+              <h1 class="heading">$9.60</h1>
+              <small>per portfolio/month<br>(from $480/month)
+              </small>
+            </li>
+            <li><p>50-99 portfolios</p></li>
+          </ul>
+
+
+        </div>
+        <div class="columns">
+          <ul class="price gold">
+            <li><h6 class="heading heading_subheading">GOLD</h6></li>
+            <li>
+              <h1 class="heading">$8.40</h1>
+              <small>
+                per portfolio/month
+                <br>(from $840/month)
+              </small>
+            </li>
+            <li><p>100+ portfolios</p></li>
+          </ul>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="layout_primary">
+      <small class="currency">Prices in <%= locale_obj[:currency] %><% if locale_obj[:plans_include_tax] %> excluding GST<% end %>.</small>
+    </div>
+  </div>
+
+  <div class="layout layout_alternate">
+    <div class="layout_secondary">
+      <p>With Sharesight, there are no hidden fees, no extras that you have to pay for and no contracts. Just one simple price. And you can put us to the test with a <a href="<%= config[:pro_signup_url] %>" title="Sign up for Sharesight Pro">free 30-day no-risk trial</a> – no credit card required.</p>
+    </div>
+  </div>
+  <div class="layout">
+    <section class="layout_primary">
+      <h2 class="heading heading_paragraph">
+        See for yourself how Sharesight Pro makes managing client portfolios a breeze
+      </h2>
+
+      <dl class="list_checked">
+        <dt>Easy sign-up</dt>
+        <dd>No billing details or credit card required</dd>
+        <dt>No hidden fees or contracts</dt>
+        <dd>Upgrade, downgrade or cancel anytime</dd>
+      </dl>
+      <a href="<%= config[:pro_signup_url] %>" class="btn btn-secondary inverse" title="Sign up for Sharesight Pro">Start your <span class="hide-phone">30-day</span> free trial</a>
+
+      <p>Need fewer than 5 portfolios? The retail edition of <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a> might be for you.</p>
+    </section>
+
+  </div>
+</div>
+
+<%= partial "partials/testimonials", locals: {json: data.testimonials_pro, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_pro], css_class: '', customer_type: 'Sharesight Pro', locale_obj: locale_obj} %>
+<%= partial "partials/as_featured_in", locals: { locale_obj: locale_obj } %>
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

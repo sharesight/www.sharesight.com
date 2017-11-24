@@ -1,0 +1,37 @@
+.heading_light {
+  font-weight: 300 !important;
+}
+
+.heading_normal {
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 36px;
+  @media (min-width: $screen-sm-min) {
+    font-weight: 400;
+  }
+}
+
+.heading_important {
+  margin-top: 30px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 130px;
+  }
+}
+
+.heading_paragraph {
+  @include fontSize(18px);
+  font-weight: 400;
+  line-height: 34px;
+  margin-top: 27px;
+}
+
+.heading_center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .heading_page {
+    font-size: 4.375rem;
+    line-height: 74px;
+  }
+}

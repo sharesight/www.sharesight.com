@@ -1,0 +1,98 @@
+.faq {
+  padding-bottom: 35px;
+
+  section {
+    @media (min-width: 1024px) {
+      max-width: 80%;
+    }
+  }
+
+  h1 {
+    @include fontSize(3.4375rem, 1.2);
+    margin-bottom: 35px;
+
+    @media (min-width:768px) {
+      @include fontSize(3.375rem, 1.2);
+      font-weight: 300;
+      margin-bottom: 45px;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 35px;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    top: 4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    border-radius: 50%;
+    border: 1px solid $colour_default;
+    font-weight: bold;
+    color: $colour_default;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 1px;
+    @media (min-width: 768px) {
+      top: 6px;
+    }
+
+    span {
+      display: inline-block;
+      position: relative;
+      top: -2px;
+
+      &[data-state-toggle="open"] {
+        top: -2px;
+        font-size: 17px;
+      }
+
+      &[data-state-toggle="closed"] {
+        top: -3px;
+      }
+    }
+  }
+
+  ol,
+  ul {
+    margin-left: 0;
+    padding: 15px 0 15px 65px;
+
+    li {
+      font-weight: 300;
+      line-height: 2.2;
+    }
+  }
+
+  section {
+    position: relative;
+
+    section {
+      margin-bottom: 30px;
+    }
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 1em 0 0 35px;
+  }
+}

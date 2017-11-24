@@ -1,0 +1,17 @@
+# robotstxt.org/
+User-agent: *
+
+<% if config[:env_name] == 'staging' || config[:env_name] == 'development' %>
+Disallow: /
+<% end %>
+
+<% data.locales.each do |locale| %>
+  <% locale.pages.select{ |locale_page| locale_page[:show_in_sitemap] == false }.each do |locale_page| %>
+Disallow: <%= localize_path(locale_page[:page], locale_id: locale[:id]) %>
+  <% end %>
+<% end %>
+
+Sitemap: <%= base_url('/sitemapindex.xml') %>
+<% data.locales.each do |locale| %>
+Sitemap: <%= localize_url('/sitemap.xml', locale_id: locale[:id] )%>
+<% end %>

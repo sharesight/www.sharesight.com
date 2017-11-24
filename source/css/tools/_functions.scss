@@ -1,0 +1,25 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function calculatePx($input) {
+  $unit: unit($input);
+  $size: strip-unit($input);
+
+  @if $unit == 'px' {
+    @return $size * 1px;
+  } @else if $unit == 'em' or $unit == 'rem' {
+    @return $size * 16px;
+  } @else {
+    @error "Got an invalid size in calculatePx (#{$size} / #{$unit}).";
+  }
+}
+
+@function calculateRem($size) {
+  $rem: calculatePx($size) / 16px;
+  @return $rem * 1rem;
+}

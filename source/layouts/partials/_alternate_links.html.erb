@@ -1,0 +1,8 @@
+<%# Ignores alternate links on unlocalized pages that aren't automatically generated %>
+<% page_alternative_locales.each do |locale| %>
+  <%# Set a default language alternate link in addition to the en-* versions we have %>
+  <% if locale[:id] == default_locale_id %>
+  <link rel="alternate" href="<%= localize_url(get_current_page_url, locale_id: locale[:id]) %>" hreflang="x-default">
+  <% end %>
+  <link rel="alternate" href="<%= localize_url(get_current_page_url, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>">
+<%end%>

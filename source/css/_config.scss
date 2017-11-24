@@ -1,0 +1,59 @@
+$font_family_sans: 'Open Sans', 'Helvetica Neue', 'Droid Sans', Helvetica, Arial, sans-serif;
+$font_family_serif: 'merriweatheritalic', serif;
+
+$colour_pro: #2f353e;
+$colour_secondary: #F5A623;
+
+$colour_base: #212121;
+$colour_primary: #4A4A4A;
+$colour_default: #9B9B9B;
+
+$colour_table-lines: #d4d4cc;
+
+$background_white: #fafafa;
+$background_offset_white: #f4f4ef;
+$background_pearl: #fce5cd;
+
+$screen-xs:                  320px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+$breakpoints: (
+  // min, max
+  base: (false, $screen-xs-min - 1, $screen-xs-min - 1),
+  xs: ($screen-xs-min, $screen-xs-max, $screen-xs-max),
+  phone: (480px, $screen-xs-max, $screen-xs-max), // custom breakpoint!
+  sm: ($screen-sm-min, $screen-sm-max, $screen-sm-max - 40),
+  md: ($screen-md-min, $screen-md-max, $screen-md-max - 100),
+  lg: ($screen-lg-min, false, 1440px)
+);
+
+$grid-columns: 12;
+$gutter: 20px;
+
+// must be in order
+@import "tools/mixins";
+@import "tools/functions";
+@import "tools/placeholders";
+@import "tools/keyframes";
+@import "tools/grid";

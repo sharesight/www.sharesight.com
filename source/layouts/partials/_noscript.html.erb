@@ -1,0 +1,6 @@
+<% if ApplicationConfig.const_defined?(:GoogleAnalytics) && ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>
+  <noscript> <!-- Google Tag Manager (noscript) -->
+    <iframe src="https://www.googletagmanager.com/ns.html?id=<%= ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<% end %>

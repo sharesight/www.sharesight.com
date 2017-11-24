@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Free"
+  },
+  {
+    "label": "Starter",
+    "price": 15,
+
+    "info": [
+      "**Everything in Free** plus",
+      "Portfolio Sharing"
+    ]
+  },
+  {
+    "label": "Investor",
+    "price": 25
+  },
+  {
+    "label": "Expert",
+    "price": 39,
+    "portfolios": 4,
+
+    "reports": {
+      "traders_tax_report": true,
+      "foreign_investment_fund_report": true
+    }
+  }
+]

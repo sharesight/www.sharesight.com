@@ -1,0 +1,27 @@
+---
+page_classes: 'page_partners'
+section_class: 'partners_paginated section_partners'
+layout: partners_category
+---
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  partners_categories_localized = partners_categories(locale_obj[:lang], withIndex: true).select{ |cat| cat[:count] >= 1 }
+%>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="partners partners__paginated">
+  <%= partial "partners/partials/paginated_header", locals: { locale_obj: locale_obj } %>
+
+  <% partners_categories_localized.each do |partner_category| %>
+    <%= partial "partners/partials/paginated_cards", locals: {
+      category: partner_category,
+      title: true,
+      set: partner_category[:set].take(6),
+      pagination: false,
+      locale_obj: locale_obj
+    } %>
+  <% end %>
+</div>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

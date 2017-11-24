@@ -1,0 +1,22 @@
+---
+page_classes: 'page_about_us'
+page_title: 'Page Not Found | Sharesight Portfolio Tracker'
+page_description: "The leading online share portfolio tracker & reporting tool for DIY investors. Track share prices, trades, dividends, performance and tax!"
+section_class: 'section_default'
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<section class="section_base second-tier" id="_404">
+  <div class="container">
+    <div class="second-tier_wrapper">
+      <h2 class="heading_important heading_light">Whoops!</h2>
+      <p>Sorry, but the web page you are trying to visit cannot be found.<br>
+      Please go back to the <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>"><strong>homepage</strong></a> or use the menu above to navigate to another area.</p>
+      <p>If you followed a link to get to this page, please tell us about the problem in our <a href="<%= config[:community_url] %>" title="Community Forum">Community Forum</a> and we'll fix it right away!</p>
+    </div>
+  </div>
+</section>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

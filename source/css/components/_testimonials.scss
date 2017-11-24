@@ -1,0 +1,207 @@
+.section_testimonials_intro,
+.slideshow {
+  max-width: 505px;
+  margin: 0 auto;
+  @media (min-width: $screen-sm-min) {
+    max-width: 675px;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: 951px;
+  }
+}
+
+.content_paragraph {
+  color: $colour_secondary;
+  @include fontSize(24px);
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonial_item {
+  display: none;
+  width: 100%;
+}
+
+.testimonial_image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 86px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+
+  @media (max-width: $screen-xs-max) {
+    margin-top: 10px;
+  }
+}
+
+.testimonial_cite {
+  @include fontSize(19px, 1.35);
+  margin-top: $gutter/2;
+  display: inline-block;
+  color: #fff;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.testimonial_author {
+  display: block;
+}
+
+.slideshow[data-testimonial-index="1"] .testimonial_item:nth-of-type(1),
+.slideshow[data-testimonial-index="2"] .testimonial_item:nth-of-type(2),
+.slideshow[data-testimonial-index="3"] .testimonial_item:nth-of-type(3),
+.slideshow[data-testimonial-index="4"] .testimonial_item:nth-of-type(4),
+.slideshow[data-testimonial-index="5"] .testimonial_item:nth-of-type(5),
+.slideshow[data-testimonial-index="6"] .testimonial_item:nth-of-type(6) {
+  display: inline-block;
+  animation: fadeIn 0.3s 1;
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+}
+
+.testimonial_quote {
+  margin: 0;
+  font-family: $font-family-serif;
+  @include fontSize(26px);
+  color: #fff;
+  height: auto;
+
+  &:after {
+    content: "”";
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  &:before {
+    content: "“";
+    font-size: inherit;
+    font-family: inherit;
+  }
+}
+
+.testimonials {
+  blockquote {
+    margin: 0 auto;
+    width: 100%;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      height: 180px;
+      line-height: 1.5;
+    }
+  }
+
+  &--xero {
+    blockquote p {
+      font-size: 32px !important;
+    }
+
+    .xero_quote_3 {
+      font-size: 26px !important;
+      @media (min-width: 480px) {
+        font-size: 32px !important;
+      }
+    }
+  }
+
+  &--pro {
+    blockquote {
+      p {
+        height: 270px;
+        text-align: left;
+        padding-top: 0;
+        @media (min-width: 480px) {
+          height: 170px;
+        }
+      }
+
+      .pro_quote_0,
+      .pro_quote_2,
+      .pro_quote_5 {
+        font-size: 22px !important;
+        @media (min-width: 480px) {
+          font-size: 26px !important;
+        }
+      }
+
+      .pro_quote_3 {
+        @media (min-width: 480px) {
+          font-size: 32px !important;
+        }
+      }
+    }
+  }
+}
+
+.indicators {
+  width: 222px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: -30px;
+}
+
+.indicator_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indicator_item {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #3a3736;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+  outline: none;
+
+  @include respond-to(md, max) { // bigger for touch displays
+    width: $gutter;
+    height: $gutter;
+    margin-right: $gutter;
+  }
+}
+
+.slideshow[data-testimonial-index="1"] .indicator_item:nth-of-type(1),
+.slideshow[data-testimonial-index="2"] .indicator_item:nth-of-type(2),
+.slideshow[data-testimonial-index="3"] .indicator_item:nth-of-type(3),
+.slideshow[data-testimonial-index="4"] .indicator_item:nth-of-type(4),
+.slideshow[data-testimonial-index="5"] .indicator_item:nth-of-type(5),
+.slideshow[data-testimonial-index="6"] .indicator_item:nth-of-type(6) {
+  background-color: #858483;
+  font-weight: bold;
+}
+
+.section_home {
+  blockquote {
+    margin: 0 auto;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      height: 270px;
+      line-height: 1.5;
+      @media (min-width: 375px) {
+        height: 200px;
+      }
+    }
+
+    .index_quote_2 {
+      font-size: 22px !important;
+      @media (min-width: 480px) {
+        font-size: 26px !important;
+      }
+    }
+  }
+}

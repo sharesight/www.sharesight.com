@@ -1,0 +1,29 @@
+<%# locale_obj comes from locals from the parent %>
+<div class="section section_featured">
+  <div class="container">
+    <div class="featured_in_wrapper">
+      <h4 class="featured_in_title">As featured in</h4>
+      <div class="featured_logos">
+        <% if locale_obj[:id] == 'au'%>
+          <span class='sprite xlogo-the-australian'></span>
+          <span class='sprite sky-news-business'></span>
+          <span class='sprite The-Australian-Financial-Review'></span>
+          <span class='sprite financial-observer'></span>
+          <span class='sprite IBD'></span>
+        <% elsif locale_obj[:id] == 'nz'%>
+          <span class='sprite nz-herald'></span>
+          <span class='sprite sky-news-business'></span>
+          <span class='sprite The-Australian-Financial-Review'></span>
+          <span class='sprite financial-observer'></span>
+          <span class='sprite IBD'></span>
+        <% else %>
+          <span class='sprite financial-observer'></span>
+          <span class='sprite IBD'></span>
+          <span class='sprite MM-Web'></span>
+          <span class='sprite sky-news-business'></span>
+          <span class='sprite The-Australian-Financial-Review'></span>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>

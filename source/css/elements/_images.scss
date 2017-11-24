@@ -1,0 +1,41 @@
+.img-responsive {
+  max-width: 100%;
+}
+
+.img-inline {
+  max-width: 150px;
+  margin-right: 3rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.img-hero {
+  margin-bottom: 70px;
+}
+
+.img-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.img-curved {
+  border-radius: 1px;
+}
+
+.images_app_logos {
+  padding-top: 90px;
+
+  a > img {
+    display: inline-block;
+    width: 152px;
+  }
+
+  a > img:first-child {
+    margin-right: 5px;
+  }
+
+  a > img:last-child {
+    margin-left: 5px;
+  }
+}

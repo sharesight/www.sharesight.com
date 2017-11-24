@@ -1,0 +1,20 @@
+.partner-category {
+  $__title_line_height: 32px * 1.25;
+
+  &__title {
+    @extend %container;
+
+    @include fontSize(32px);
+    @include lineHeight($__title_line_height);
+    font-weight: 400;
+  }
+
+  &__browse {
+    @include fontSize(14px);
+    @include lineHeight($__title_line_height);
+    display: inline-block;
+    margin-left: $gutter*2;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}

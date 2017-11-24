@@ -1,0 +1,133 @@
+---
+page_classes: ''
+section_class: 'section_home'
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+<div class="xero">
+  <section class="intro centered">
+    <div class="container layout-container">
+      <div class="heading heading_page heading_layout layout-heading">
+        <h1>Sharesight + Xero</h1>
+      </div>
+    </div>
+    <div class="container layout-container">
+      <p><a href="<%= localize_url(locale_id: locale_obj[:id]) %>">Sharesight</a>, with its powerful performance and tax reporting, gives you unmatched tracking and insight into your investment portfolio. </p>
+      <p>Leading online accounting system <a href="https://www.xero.com" title="Xero">Xero</a> offers crucial cash management and straightforward budgeting. Used together, they provide <strong>a seamless solution between investment portfolio management and accounting.</strong></p>
+    </div>
+    <div class="container"><img src="<%= image_path('xero/sharesight-xero-banner.png')%>" class="feature" alt="Laptop on left displaying Sharesight app. Laptop on right displaying Xero app. Arrow pointing to right laptop accompanied with Buy, Sells &amp; Dividends Paid text. Arrow pointing to left laptop accompanied with Cash Balances text."></div>
+  </section>
+  <section class="alternate layout-med">
+    <div class="container">
+      <h2>Why connect Sharesight to Xero?</h2>
+      <div class="table">
+        <div class="row">
+          <% data.xero_page_icons.each_slice(2).with_index do |tile, i| %>
+            <% tile.each do |item| %>
+              <div class="cell card card_cursive card_plain">
+
+                <%=image_tag "icons/#{item.icon}.svg", class: "icon" %>
+                <h3 class="heading"><%=item.title%></h3>
+                <p><%=item.description%></p>
+
+              </div>
+            <%end%>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="layout-med layout--how-it-works">
+    <div class="container">
+      <h2>How it Works</h2>
+      <div class="table">
+        <div class="row">
+          <div class="cell image hide-mobile">
+            <img src="<%= image_path('xero/screenshot_xero-reconcile_hres.png')%>" alt="Sharesight Portfolio Overview screen">
+          </div>
+          <div class="cell description description-lg">
+            <h3>Reconcile your investment transactions</h3>
+            <p> When you synchronise your Sharesight portfolio to Xero, details of your share purchases, sales, and dividends will flow into Xero automatically so they can be easily reconciled against your bank statement and incorporated into your personal
+              wealth and budgeting picture. </p>
+          </div>
+          <div class="cell image hide-desktop">
+            <img src="<%= image_path('xero/screenshot_xero-reconcile_hres.png')%>" alt="Sharesight Portfolio Overview screen">
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="row">
+          <div class="cell description">
+            <h3 class="heading">Manage your cash balances</h3>
+            <p> Furthermore, Sharesight can pull in your bank account balances, term deposits and cash investments from Xero, so you can view your complete financial position directly within your Sharesight portfolio – automatically, and in real-time. </p>
+          </div>
+          <div class="cell image">
+            <img src="<%= image_path('xero/screenshot_xero-cash.png')%>" alt="Sharesight Performance Report screen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="alternate layout-med">
+    <div class="container cards_container">
+      <div class="o-video_wrapper">
+        <div id="js-about-overlay"></div>
+        <iframe id="content_video" class="external_video" src="https://player.vimeo.com/video/102970230?color=ff7b30&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1" width="500" height="281" frameborder="0"
+          allowfullscreen=""></iframe>
+        </div>
+      <p class="paragraph_important">If you like the investment insight you get from Sharesight, you’ll love the complete financial picture you get by connecting your portfolio to Xero.</p>
+    </div>
+  </div>
+</div>
+
+<section class="xero layout-med">
+  <div class="container cards_container">
+    <h2>Award Winning Integration</h2>
+    <a href="<%= unlocalized_url('/blog/sharesight-wins-xero-add-partner-year/') %>" title="Sharesight + Xero: Award Winning Integration">
+      <img src="<%= image_path('xero/xero-addon.png')%>" alt="Xero Addon. Xero Award Winner 2014" class="small">
+    </a>
+  </div>
+</section>
+<%= partial "partials/testimonials", locals: {json: data.xero_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_xero], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
+
+<!-- Faqs -->
+<div class="theme-featured faq">
+  <div class="container">
+    <section>
+      <h2 class="heading_important heading_light">Frequently Asked Questions</h2>
+
+      <% data.xero_faqs.each do |faq|%>
+        <% if faq[:locale_access].include? locale_obj[:id] %>
+          <section>
+
+            <span class="toggle">
+              <span data-state-toggle="open">+</span>
+            </span>
+
+            <h3 class="faq-heading" tabindex="0">
+              <% if locale_obj[:id] == default_locale_id %>
+                <%=faq.question_alt%>
+              <% else %>
+                <%=faq.question%>
+              <% end %>
+            </h3>
+
+            <div class="faq-answer" aria-hidden="true">
+              <% if faq[:answers_template].empty? %>
+                <% faq.answers.each do |answer| %>
+                  <p><%=answer%></p>
+                <% end %>
+              <% else %>
+                <%= partial "partials/xero_faqs/#{faq[:answers_template]}", locals: { locale_obj: locale_obj } %>
+              <% end %>
+            </div>
+          </section>
+        <% end %>
+      <% end %>
+    </section>
+  </div>
+</div>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

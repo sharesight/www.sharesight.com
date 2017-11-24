@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <%= partial "layouts/partials/analytics_js" %>
+
+  <% features = [
+    'es6', 'es7','es2017', 'default-3.6',
+    '~html5-elements',
+    'Array.from', 'Array.isArray',
+    'Array.prototype.filter', 'Array.prototype.find', 'Array.prototype.forEach',
+    'Array.prototype.includes', 'Array.prototype.indexOf',
+    'Array.prototype.map', 'Array.prototype.reduce',
+    'Date.now',
+    'Document', 'document.querySelector',
+    'Element',
+    'Element.prototype.append', 'Element.prototype.classList', 'Element.prototype.closest',
+    'Element.prototype.matches', 'Element.prototype.prepend',
+    'Event', 'Event.DOMContentLoaded',
+    'NodeList', 'NodeList.prototype.@@iterator',
+    'Object.defineProperty', 'Object.keys', 'Object.getOwnPropertyNames',
+    'String.prototype.endsWith', 'String.prototype.includes',
+    'String.prototype.startsWith', 'String.prototype.trim',
+    'Window',
+    'XMLHttpRequest'
+  ] %>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=<%= features.join(',') %>&flags=gated&rum=0"></script>
+
+  <%= javascript_include_tag 'localization' %>
+
+  <%= partial "layouts/partials/meta", locals: locals %>
+
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <%= stylesheet_link_tag "pro.css" if locals[:pro] == true %>
+  <%= stylesheet_link_tag "site.css" %>
+</head>

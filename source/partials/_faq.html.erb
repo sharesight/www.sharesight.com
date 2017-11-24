@@ -1,0 +1,36 @@
+<div class="theme-featured faq">
+  <div class="container">
+    <section>
+      <h1 class="heading_important heading_light">Frequently Asked Questions</h1>
+
+      <% data.faqs.each do |faq|%>
+        <% if faq[:locale_access].include? locale_obj[:id] %>
+          <section>
+
+            <span class="toggle">
+              <span data-state-toggle="open">+</span>
+            </span>
+
+            <h3 class="faq-heading" tabindex="0">
+              <% if locale_obj[:id] == 'nz' || locale_obj[:id] == 'au' %>
+                <%=faq.question_alt%>
+              <% else %>
+                <%=faq.question%>
+              <% end %>
+            </h3>
+
+            <div class="faq-answer" aria-hidden="true">
+              <% if faq[:answers_template].empty? %>
+                <% faq.answers.each do |answer| %>
+                  <p><%=answer%></p>
+                <% end %>
+              <% else %>
+                <%= partial "partials/faqs/#{faq[:answers_template]}", locals: { locale_obj: locale_obj } %>
+              <% end %>
+            </div>
+          </section>
+        <% end %>
+      <% end %>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+(function(){
+  // Create the video element but do not play on Mobile or Ipad
+  var video_wrapper = document.getElementById("js-video-wrapper");
+
+  if(video_wrapper && window.innerWidth > 767 && !navigator.userAgent.match(/iPad/i)) {
+    var video_tag = document.createElement("video");
+    video_tag.setAttribute("autoplay", "");
+    video_tag.setAttribute("loop", "");
+    video_tag.setAttribute("id", "js-banner_video");
+    video_tag.setAttribute("class", "fs-video");
+    video_wrapper.appendChild(video_tag);
+
+    // get the newly made video wrapper
+    var video = document.getElementById("js-banner_video");
+    var video_format = ['webm', 'mp4', 'mov'];
+
+    for(var i = 0; i < video_format.length; i++) {
+      video[i] = document.createElement("source");
+      video[i].setAttribute("type", "video/" + video_format[i]);
+      video[i].setAttribute("src", "<%= image_path 'video/sharesight_banner."+ video_format[i] + "' %>");
+      video_tag.appendChild(video[i]);
+    }
+  }
+})();

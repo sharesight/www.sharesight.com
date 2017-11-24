@@ -1,0 +1,66 @@
+[
+	// {
+	// 	"id": "adam",
+	// 	"text": "I’ve had shares since 2008, but this is the first time I’ve had any clue what they were worth as a whole, and can find out what’s happening to them – in any sort of timely fashion",
+	// 	"author": "Adam",
+	// 	"role": "Sharesight Customer"
+	// },
+	// {
+	// 	"id": "sharon",
+	// 	"text": "You can tell people who actually do trading have had a big input into how Sharesight was designed",
+	// 	"author": "Sharon",
+	// 	"role": "Sharesight Customer"
+	// },
+	// {
+	// 	"id": "stephen_phillips",
+	// 	"text": "Sharesight takes all the hassle out of managing a stock portfolio. I have never been able to get this level of detail on the performance of my shares anywhere else — even with share management software – thank you!",
+	// 	"author": "Stephen Phillips",
+	// 	"role": "Sharesight Customer"
+	// },
+	{
+		"id": "stephen_colman",
+		"text": "This will allow you to pretty much throw away all of your spreadsheets",
+		"author": "Stephen Colman",
+		"image_id": "stephen_colman",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	// {
+	// 	"id": "marilyn_bryce",
+	// 	"text": "I am very impressed by how easy it is to use, how quickly and accurately it updated the information. I just wish I had found this app earlier",
+	// 	"author": "Marilyn Bryce",
+	// 	"role": "Sharesight Customer"
+	// },
+	{
+		"id": "martin_dowse",
+		"text": "Much better than the spreadsheets it replaced. If you are an investor you need Sharesight",
+		"author": "Martin Dowse",
+		"image_id": "martin_dowse",
+		"role": "Xero Business Community",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "david_mcewen",
+		"text": "A lot of stuff is taken care of for me, automatically. Adding dividends, dividend reinvestment plan calculations, tax reports",
+		"author": "David McEwen",
+		"image_id": "david_mcewen",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "peter_naude",
+		"text": "It allows you to understand exactly how your investments are going",
+		"author": "Peter Naude",
+		"image_id": "peter_naude",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "mike_deam",
+		"text": "Sharesight is the best portfolio manager I've used",
+		"author": "Mike Deam",
+		"image_id": "mike_deam",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	}
+]

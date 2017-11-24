@@ -1,0 +1,229 @@
+$__locale-height: 35px;
+
+footer#footer {
+  background-color: $colour_pro;
+  color: white;
+  padding: $gutter 0;
+  text-align: center;
+
+  @include respond-to(sm, min) {
+    text-align: left;
+  }
+
+  @include respond-to(md, min) {
+    padding: $gutter*3 0 $gutter;
+  }
+}
+
+.footer {
+  &__container {
+    @extend %contain-row;
+
+    @include respond-to(lg, min) {
+      padding: 0 10%;
+    }
+  }
+
+  &__head {
+    @extend %column--12;
+    text-align: center;
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*2;
+    }
+  }
+
+  &__logo {
+    width: 75%;
+    max-width: 160px;
+    display: block;
+    margin: 0 auto $gutter;
+  }
+
+  &__intro {
+    color: #fff;
+    margin-bottom: 52px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &__actions {
+    @extend %column--12;
+    @extend %column__sm--6;
+    @extend %column__md--4;
+    @extend %column__lg--3;
+    @extend %column__lg--offset-right-1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*2;
+    }
+
+    > * + * {
+      margin-top: $gutter/2;
+    }
+  }
+
+  &__buttons, &__apps {
+    width: 100%;
+    display: flex;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__app, &__login,
+  &__sign-up {
+    flex: 1 1 auto;
+
+    margin: 0 $gutter/4;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__login,
+  &__sign-up {
+    @extend .btn;
+    @extend .btn--solid;
+    max-width: 100%;
+  }
+
+  &__sign-up {
+    @extend .btn--secondary;
+  }
+
+  &__apps {
+    flex-wrap: wrap;
+  }
+
+  &__app {
+    width: calc(50% - #{$gutter/2});
+    display: block;
+
+    @media (min-width: 610px) and (max-width: $screen-xs-max) {
+      width: auto;
+    }
+  }
+
+  &__social {
+    margin: $gutter 0;
+    display: block;
+    text-align: center;
+    flex: 100 0 auto; // much higher priority than .footer__app; auto is required for flex-wrap on safari
+
+    // special viewport
+    @media (min-width: 610px) and (max-width: $screen-xs-max) {
+      text-align: right;
+      margin: 0 $gutter/2;
+    }
+
+    &-link {
+      display: inline-block;
+
+      & + & {
+        margin-left: $gutter/3;
+      }
+    }
+
+    &-icon {
+      height: 40px;
+      opacity: 0.5;
+      transition: opacity 250ms;
+
+      @include respond-to(md, min) {
+        height: 30px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__locale {
+    display: block;
+    background-color: $colour_primary;
+    height: $__locale-height;
+    width: 100%;
+
+    select {
+      @include fontSize(12px, $__locale-height);
+      padding: 0 25px 0 7.5px;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: $__locale-height;
+      color: #fff;
+      font-family: 'Open Sans', helvetica, sans-serif;
+      font-weight: 300;
+      text-align: left;
+      border-radius: 0;
+      letter-spacing: 1px;
+      appearance: none;
+
+      &,
+      &:focus {
+        background: image-url("img/icons/caret_line.svg") no-repeat right 7.5px center $colour_primary;
+      }
+
+      &:-moz-focusring,
+      &::-moz-focus-inner {
+        // hack to hide the mozilla-specific focus 'outline'
+        color: transparent;
+        text-shadow: 0 0 0 #fff; // NOTE: same as color above!
+        border: 0;
+      }
+    }
+  }
+
+  &__links {
+    @extend %column--6;
+    @extend %column__sm--3;
+    @extend %column__md--2;
+    margin-top: 0;
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*2;
+    }
+
+    list-style: none;
+    outline: none;
+  }
+
+  &__link-header {
+    @include fontSize(16px, 30px);
+    font-weight: 600;
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
+
+  &__link {
+    @include fontSize(15px, 30px); // match link-header
+    color: white;
+    font-weight: 100;
+  }
+
+  &__copyright {
+    @include fontSize(16px, 1.65);
+    font-weight: 100;
+    text-align: center;
+    padding: $gutter;
+    background: $colour_primary;
+    color: white;
+  }
+}

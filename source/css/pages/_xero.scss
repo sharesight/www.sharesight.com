@@ -1,0 +1,94 @@
+.xero {
+  p {
+    font-weight: 300;
+
+    a {
+      text-decoration: none;
+      color: $colour_secondary;
+
+      &:hover {
+        border-bottom: 1px solid currentColor;
+        cursor: pointer;
+      }
+    }
+  }
+
+  b,
+  strong {
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  hr {
+    height: 1px;
+    border: none;
+    background-color: $colour_table-lines;
+    margin-bottom: 60px;
+  }
+
+  .heading_page {
+    padding-top: $gutter*2;
+    @include respond-to(md, min) {
+      padding-top: $gutter*3;
+    }
+    @include respond-to(lg, min) {
+      padding-top: $gutter*4;
+    }
+  }
+
+  %headings {
+    font-weight: 300;
+    margin-bottom: $gutter;
+  }
+
+  h4 {
+    font-weight: 400;
+  }
+
+  h2 + p {
+    padding: 5px 0 30px;
+
+    @include respond-to(lg, min) {
+      padding: 0;
+    }
+  }
+
+  > img {
+    margin: 30px 0;
+  }
+
+  img.feature {
+    width: 907px;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .xero-icon {
+    color: white;
+    @include fontSize(20px);
+    padding-top: $gutter;
+  }
+
+  .xero-icon-container {
+    height: 72px;
+    width: 72px;
+    margin: 0 auto $gutter;
+    background-color: $colour_secondary;
+    border-radius: 50%;
+    padding-bottom: $gutter;
+  }
+
+  @media screen and (min-width: 1440px) {
+    h2,
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  .layout-container {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding-bottom: $gutter*2;
+  }
+}

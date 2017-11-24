@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "Who is Sharesight for?",
+    "question_alt": "Who is Sharesight for?",
+    "answers": "",
+    "answers_template": "who_is_sharesight_for",
+    "slug": "who-is-sharesight-for"
+  },
+  {
+    "id": 2,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "How does Sharesight work?",
+    "question_alt": "How does Sharesight work?",
+    "answers": "",
+    "answers_template": "how_does_sharesight_work",
+    "slug": "how-does-sharesight-work"
+  },
+  {
+    "id": 3,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "What do I need to get started?",
+    "question_alt": "What do I need to get started?",
+    "answers": "",
+    "answers_template": "what_do_i_need_to_get_started",
+    "slug": "what-do-i-need-to-get-started"
+  },
+  {
+    "id": 4,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "How do I import my stock portfolio?",
+    "question_alt": "How do I import my share portfolio?",
+    "answers": [
+      "You can import your trading history via CSV (Excel) or simply by entering trades manually.",
+      "We also integrate with a growing list of online brokers which allows you to automatically import and track all your trading history in just a few clicks."],
+    "answers_template": "how_do_i_import_my_stock_portfolio",
+    "slug": "how-do-i-import-my-stock-portfolio"
+  },
+  {
+    "id": 5,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "How much will Sharesight cost me?",
+    "question_alt": "How much will Sharesight cost me?",
+    "answers": "",
+    "answers_template": "how_much_will_sharesight_cost_me",
+    "slug": "how-much-will-sharesight-cost-me"
+  },
+  {
+    "id": 6,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "Which stock exchanges does Sharesight support?",
+    "question_alt": "Which stock exchanges does Sharesight support?",
+    "answers": "",
+    "answers_template": "which_stock_exchange",
+    "slug": "which-stock-exchanges-does-sharesight-support"
+  },
+  {
+    "id": 7,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "Who owns Sharesight?",
+    "question_alt": "Who owns Sharesight?",
+    "answers": "",
+      "answers_template": "who_owns_sharesight",
+      "slug": "who-owns-sharesight"
+  },
+  {
+    "id": 8,
+    "locale_access": ["global", "ca"],
+    "question": "How do I keep my investments in Sharesight up-to-date?",
+    "question_alt": "How do I keep my investments in Sharesight up-to-date?",
+    "answers": [
+      "Simply add your buy and sell transactions — Sharesight automatically records any corporate actions, including dividends, share splits, and capital returns. But don’t worry, you’re able to edit all automatically populated data."],
+      "answers_template": "",
+      "slug": "how-do-i-keep-my-investments-in-sharesight-up-to-date"
+  },
+  {
+    "id": 9,
+    "locale_access": ["nz", "au", "uk"],
+    "question": "How do I keep my investments in Sharesight up-to-date?",
+    "question_alt": "How do I keep my investments in Sharesight up-to-date?",
+    "answers": "",
+      "answers_template": "how_do_i_keep_my_investments_in_sharesight_up_to_date",
+      "slug": "how-do-i-keep-my-investments-in-sharesight-up-to-date"
+  },
+  {
+    "id": 10,
+    "locale_access": ["global", "nz", "au", "ca", "uk"],
+    "question": "Doesn’t my broker / financial adviser offer me all of these features already?",
+    "question_alt": "Doesn’t my broker / financial adviser offer me all of these features already?",
+    "answers": "",
+"answers_template": "doesnt_my_broker_advisor_offer_all_of_these",
+"slug": "doesnt-my-broker-financial-advisor-offer-me-all-if-these-features-already"
+  }
+]

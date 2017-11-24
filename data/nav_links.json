@@ -1,0 +1,14 @@
+[
+	{
+		"id": "Login",
+		"url": "https://test-portfolio.sharesight.com/login"
+	},
+	{
+		"id": "Pricing",
+		"url": "/pricing/#free"
+	},
+	{
+		"id": "About Us",
+		"url": "/about-sharesight/"
+	}
+]

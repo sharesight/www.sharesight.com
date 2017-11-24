@@ -1,0 +1,133 @@
+.blog,
+.xero {
+  .card {
+    min-height: 287px;
+    padding: 39px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    border: 1px solid #e5e7e8;
+    box-shadow: 0 2px 4px 0 rgba(46,61,73,0.06);
+    vertical-align: top;
+    @media (min-width:1024px) {
+      box-shadow: 0 2px 4px 0 rgba(46,61,73,0.06);
+    }
+
+    img {
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      width: 100%;
+    }
+
+    &_cursive {
+      border-radius: 2px;
+    }
+
+    &_stripped {
+      border: 0;
+      text-align: left;
+      padding: 0;
+      box-shadow: none;
+
+      img {
+        border: 0;
+      }
+    }
+
+    .content {
+      padding: 28px 15px;
+      @media (min-width:768px) {
+        padding: 39px;
+      }
+
+      .btn {
+        margin: 0 auto;
+      }
+
+      p {
+        margin-bottom: 40px;
+        min-height: 133px;
+        @media (max-width:1024px) {
+          min-height: 95px;
+        }
+      }
+
+      h3 {
+        margin-bottom: 18px;
+        min-height: 60px;
+        font-size: 1.25rem;
+
+        &.title {
+          font-size: 1.875rem;
+          line-height: 1.35;
+          font-weight: 300;
+          padding-bottom: 10px;
+          @media (min-width: 1440px) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: 1024px) {
+            font-size: 1.875rem;
+          }
+        }
+      }
+
+      .meta + * {
+        padding-top: 20px;
+      }
+
+      small {
+        padding-top: 0;
+        display: block;
+        font-size: 1rem !important;
+
+        &:first-child {
+          font-weight: 600;
+          margin-bottom: 3px;
+        }
+
+        &:last-child {
+          font-weight: 300;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    h3 {
+      font-size: 1.4375rem;
+      margin-bottom: 0.625rem;
+      line-height: 30px;
+      @media (min-width:1024px) {
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.725rem;
+      margin: 0;
+      @media (min-width:1024px) {
+        font-size: 1.0625rem;
+      }
+    }
+    // icons
+    .icon {
+      height: 72px;
+      width: 72px;
+      margin: 0 auto 20px;
+      background-color: #F5A623;
+      border-radius: 50%;
+      margin-bottom: 1.625rem;
+    }
+  }
+}

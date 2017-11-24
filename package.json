@@ -1,0 +1,24 @@
+{
+  "name": "sharesight",
+  "version": "2.0.0",
+  "description": "Static marketing site for Sharesight",
+  "main": "index.js",
+  "directories": {},
+  "scripts": {
+    "contentful": "bundle exec middleman contentful",
+    "start": "yarn contentful && bundle exec middleman",
+    "build": "bundle install && yarn contentful && bundle exec middleman build --verbose && yarn test",
+    "test": "bundle exec rspec spec",
+    "tdd": "bundle exec guard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharesight/www.sharesight.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sharesight/www.sharesight.com/issues"
+  },
+  "homepage": "https://github.com/sharesight/www.sharesight.com#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}

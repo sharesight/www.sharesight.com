@@ -1,0 +1,22 @@
+[
+  {
+    "font_awesome_icon": "fa-clock-o",
+    "title": "SAVE TIME",
+    "description": "No more tracking spreadsheets and shoe boxes full of trade confirmations. All your trades, dividends and share splits are automatically incorporated."
+  },
+  {
+    "font_awesome_icon": "fa-bullseye",
+    "title": "GET PEACE-OF-MIND",
+    "description": "All your information is secure, and you'll know exactly how your investments are performing with detailed reports and optional weekly emails & price alerts."
+  },
+  {
+    "font_awesome_icon": "fa-paper-plane",
+    "title": "USE IT FREE, FOR LIFE",
+    "description": "No credit card or other hassles. Just create your account and import your holdings. No software to install or update."
+  },
+  {
+    "font_awesome_icon": "fa-money",
+    "title": "SAVE MONEY",
+    "description": "Stop paying your accountant for tax reports and other information that you can get for free, with just one click."
+  }
+]

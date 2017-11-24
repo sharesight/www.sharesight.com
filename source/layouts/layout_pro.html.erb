@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<%
+  page_classes = locals[:page_classes] || current_page.data.page_classes
+  section_class = locals[:section_class] || current_page.data.section_class
+%>
+
+<html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">
+  <!-- pro layout -->
+  <%= partial "layouts/partials/head", locals: locals.merge({ pro: true }) %>
+
+  <% partial "layouts/partials/body", locals: locals.merge({
+    header: "partials/site_header_pro"
+  }) do %>
+    <%= yield %>
+  <% end %>
+</html>

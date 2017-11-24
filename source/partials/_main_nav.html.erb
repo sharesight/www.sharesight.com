@@ -1,0 +1,34 @@
+<% locale_obj ||= get_locale_obj(locale_id) %>
+
+<nav role="navigation" id="main_menu">
+  <ul class="menu_list" role="menu" id="hamburger-menu">
+    <li class="menu_group" role="menuitem">
+      <a href="<%= config[:login_url] %>" class="menu_item login" title="Login to Sharesight">LOGIN</a>
+    </li>
+    <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Home</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url('pricing', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title] %>">Pricing</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url('pro', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'pro', locale_obj: locale_obj)[:page_title] %>">Sharesight Pro</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url('about-sharesight', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'about-sharesight', locale_obj: locale_obj)[:page_title] %>">About Us</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'partners', locale_obj: locale_obj)[:page_title] %>">Partners</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
+      <a href='<%= unlocalized_url('blog') %>' class="menu_item" title="Sharesight Blog">Blog</a>
+    </li>
+  </ul>
+
+  <a href="<%= config[:signup_url] %>" class="btn-menu-signup" title="Sign up for Sharesight">Sign up</a>
+</nav>

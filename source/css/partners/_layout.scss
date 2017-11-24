@@ -1,0 +1,9 @@
+.partners {
+  @include respond-to(md, min) {
+    padding-top: $gutter/2;
+  }
+
+  @include respond-to(lg, min) {
+    padding-top: $gutter;
+  }
+}

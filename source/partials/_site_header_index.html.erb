@@ -1,0 +1,51 @@
+<header class="masthead" id="js-banner" tabindex="0" role="banner">
+  <div class="masthead_nav_wrapper">
+    <div class="container">
+      <nav role="navigation" class="nav">
+        <img src="<%=image_path('logos/site_logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
+
+        <%= partial "partials/navigation_in_header", locals: { locale_obj: locale_obj } %>
+      </nav>
+    </div>
+  </div>
+
+  <div id="js-video-wrapper">
+  </div>
+
+  <img src="<%=image_path('banner.jpg')%>" class="masthead_image" id="js-banner-image" alt="Portfolio Management Tool - Sharesight">
+  <div class="container">
+    <div class="masthead_content" id="banner_heading">
+      <h1 class="hero_title heading_light">Meet Sharesight</h1>
+
+      <h2 class="hero_intro heading_normal">
+        <%= locale_page(page: 'index', locale_obj: locale_obj)[:tagline] %>
+      </h2>
+
+      <a href="<%= config[:signup_url] %>" class="btn btn-secondary" title="Sign up for Sharesight">GET STARTED – <strong>FOR FREE</strong></a>
+    </div>
+  </div>
+</header>
+
+<div class="all_menus" id="js-sliding-menu" data-menu-visibility="1">
+  <div id="menu_mask" class="mask"></div>
+
+  <div class="menu" id="menu">
+    <div id="js-close" class="close_wrapper" tabindex="0" aria-label="Exit Extended Menu">
+      <span class="close_text">Close</span>
+      <%= image_tag "/img/icons/close.svg", class: "icon close" %>
+    </div>
+
+    <%= partial "partials/main_nav", locals: { locale_obj: locale_obj } %>
+  </div>
+</div>
+
+<div class="section masthead_extension">
+  <div class="container">
+    <p class="heading_light">
+      <% entry = data.seo_home.find { |entry| entry.id == locale_obj[:id] } %>
+      <%= entry&.tagline %>
+    </p>
+
+    <a href="<%= config[:signup_url] %>" class="btn btn-secondary" title="Sign up for Sharesight">GET STARTED – <strong>FOR FREE</strong></a>
+  </div>
+</div>

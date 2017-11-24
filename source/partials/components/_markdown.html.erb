@@ -1,0 +1,11 @@
+<%
+  markdown = locals[:markdown]&.to_s
+  inline = !!locals[:inline]
+
+  parsed = Kramdown::Document.new(markdown).to_html
+
+  # Kramdown wraps all markdown in `p` tags, by default (sometimes ol/ul).
+  # This just scraps unnecessary <p></p> wrapper.
+  parsed = parsed&.sub(/^<p>(.*)<\/p>$/im, '\1') if inline
+%>
+<%= parsed.html_safe if markdown %>

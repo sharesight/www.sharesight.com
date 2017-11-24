@@ -1,0 +1,90 @@
+$__card_header_height: 100px;
+
+.partner-card {
+  @extend %column;
+  @extend %column--12;
+  @extend %column__sm--6;
+  @extend %column__md--4;
+
+  flex: 0 0 auto;
+
+  margin-top: $gutter;
+
+  @include respond-to(sm, min) {
+    margin-top: $gutter*2;
+  }
+
+  &__header {
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: $__card_header_height + $gutter*2;
+    background-color: #fff; // default, overriden via inline style (from contentful)
+
+    display: flex;
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 50%;
+    max-height: 100%;
+    background-color: inherit;
+    padding: $gutter;
+
+    flex: 0 0 auto;
+
+    align-self: center; // to vertically center the image
+
+    img {
+      max-width: 100%;
+      max-height: $__card_header_height;
+    }
+  }
+
+  &__title-area {
+    @include fontSize(18px);
+    background-color: $background_offset_white; // match the background of the entire cards section, for a transparent look
+    height: 100%;
+    height: calc(100% - 10px);
+    padding: $gutter;
+
+    flex-grow: 3; // higher priority than logo
+    flex-shrink: 1; // allow shrinkage
+    flex-basis: auto;
+
+    display: inline-block;
+    display: flex; // vertically center everything
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $colour_base;
+
+    a#{&}:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__category {
+    display: inline-block; // don't be clickable outside of the text
+    margin: 0 0 $gutter/2;
+    @include fontSize(14px);
+    color: rgba($colour_secondary, .75);
+
+    a#{&}:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    @include fontSize(16px, 1.35);
+    background-color: $background_white;
+    padding: $gutter*2;
+    text-align: center;
+  }
+}

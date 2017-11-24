@@ -1,0 +1,39 @@
+---
+page_classes: 'page_about_us blog_page'
+section_class: 'section_blog'
+individual_page: true
+layout: blog_post
+include_campaign_monitor: true
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="blog_page_wrapper blog_page blog">
+  <div class="container blog-table blog_content_contained">
+    <div class="blog_content">
+      <div class="blog_content_container">
+        <div class="blogpost">
+          <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
+          <h1><%=post[:title]%></h1>
+
+          <div class="meta">
+            <% post[:created_at] = Time.now if post[:created_at].blank? %>
+            <small class="blog-post-date"><%= post[:created_at].strftime("#{post[:created_at].day}<sup>#{post[:created_at].day.ordinalize.split('').last(2).join()}</sup> %B %Y") %></small>
+            <small>by <%= post.author.display_name %><%=post.author[:title].present? ? ", #{post.author[:title]}" : ''%><%=post.author[:company].present? ? ", #{post.author[:company]}" : ''%></small>
+          </div>
+
+          <%= Kramdown::Document.new(post[:content].gsub('.png)', '.png?w=950)').gsub('.jpg)', '.jpg?w=950)')).to_html.html_safe %>
+          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-column">
+      <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: false} %>
+    </div>
+
+    <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: true} %>
+  </div>
+</div>
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

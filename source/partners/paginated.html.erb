@@ -1,0 +1,28 @@
+---
+page_classes: 'page_partners'
+section_class: 'partners_paginated section_partners'
+layout: partners_category
+---
+<%#
+  # locals = { category: { id, name, slug, set }, pagination: { ... } }
+  #   category is from extensions/spaces/space.rb
+  #   pagination is from extensions/spaces/space.rb and pagination_context.rb
+%>
+
+<%
+  category = locals[:category]
+  pagination = locals[:pagination]
+  locale_obj = locals[:locale_obj] || current_locale_obj
+%>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="partners partners__paginated">
+  <%= partial "partners/partials/paginated_header", locals: { category: category, locale_obj: locale_obj } %>
+
+  <section class="partners__section">
+    <%= partial "partners/partials/paginated_cards", locals: { category: category, pagination: pagination, locale_obj: locale_obj } %>
+  </section>
+</div>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

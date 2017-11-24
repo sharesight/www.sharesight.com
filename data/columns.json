@@ -1,0 +1,187 @@
+[
+  {
+    "id": "global",
+    "columns_home_index": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ],
+    "columns_pro_index": [
+      {
+        "icon": "icon_box",
+        "title": "End shoebox syndrome",
+        "description": "Badgering clients for trade confirmations and dividend statements? Staff struggling with stale spreadsheets? Having everything in one place puts an end to file-chasing and ensures everyone’s on the same page."
+      },
+      {
+        "icon": "icon_save_time",
+        "title": "Simplify portfolio admin",
+        "description": "Imagine client portfolios that are always up-to-date with the latest trade, currency and corporate action data. Use your new-found time to attract new clients, or claim back some hours in your day."
+      },
+      {
+        "icon": "icon_handshake",
+        "title": "Deepen client relationships",
+        "description": "With tax and performance reporting taken care of, you’ll have more time for more rewarding, pro-active activities such as tax planning and forward-looking investment discussions."
+      }
+    ]
+  },
+  {
+    "id": "uk",
+    "columns_home_index": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ],
+    "columns_pro_index": [
+      {
+        "icon": "icon_box",
+        "title": "End shoebox syndrome",
+        "description": "Badgering clients for trade confirmations and dividend statements? Staff struggling with stale spreadsheets? Having everything in one place puts an end to file-chasing and ensures everyone’s on the same page."
+      },
+      {
+        "icon": "icon_save_time",
+        "title": "Simplify portfolio admin",
+        "description": "Imagine client portfolios that are always up-to-date with the latest trade, currency and corporate action data. Use your new-found time to attract new clients, or claim back some hours in your day."
+      },
+      {
+        "icon": "icon_handshake",
+        "title": "Deepen client relationships",
+        "description": "With tax and performance reporting taken care of, you’ll have more time for more rewarding, pro-active activities such as tax planning and forward-looking investment discussions."
+      }
+    ]
+  },
+  {
+    "id": "nz",
+    "columns_home_index": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ],
+    "columns_pro_index": [
+      {
+        "icon": "icon_box",
+        "title": "End shoebox syndrome",
+        "description": "Badgering clients for contract notes and dividend statements? Staff struggling with stale spreadsheets? Having everything in one place puts an end to file-chasing and ensures everyone’s on the same page."
+      },
+      {
+        "icon": "icon_save_time",
+        "title": "Simplify portfolio admin",
+        "description": "Imagine client portfolios that are always up-to-date with the latest trade, currency and corporate action data. Use your new-found time to attract new clients, or claim back some hours in your day."
+      },
+      {
+        "icon": "icon_handshake",
+        "title": "Deepen client relationships",
+        "description": "With tax and performance reporting taken care of, you’ll have more time for more rewarding, pro-active activities such as tax planning and forward-looking investment discussions."
+      }
+    ]
+  },
+  {
+    "id": "au",
+    "columns_home_index": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ],
+    "columns_pro_index": [
+      {
+        "icon": "icon_box",
+        "title": "End shoebox syndrome",
+        "description": "Badgering clients for contract notes and dividend statements? Staff struggling with stale spreadsheets? Having everything in one place puts an end to file-chasing and ensures everyone’s on the same page."
+      },
+      {
+        "icon": "icon_save_time",
+        "title": "Simplify portfolio admin",
+        "description": "Imagine client portfolios that are always up-to-date with the latest trade, currency and corporate action data. Use your new-found time to attract new clients, or claim back some hours in your day."
+      },
+      {
+        "icon": "icon_handshake",
+        "title": "Deepen client relationships",
+        "description": "With tax and performance reporting taken care of, you’ll have more time for more rewarding, pro-active activities such as tax planning and forward-looking investment discussions."
+      }
+    ]
+  },
+  {
+    "id": "ca",
+    "columns_home_index": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ],
+    "columns_pro_index": [
+      {
+        "icon": "icon_box",
+        "title": "End shoebox syndrome",
+        "description": "Badgering clients for trade confirmations and dividend statements? Staff struggling with stale spreadsheets? Having everything in one place puts an end to file-chasing and ensures everyone’s on the same page."
+      },
+      {
+        "icon": "icon_save_time",
+        "title": "Simplify portfolio admin",
+        "description": "Imagine client portfolios that are always up-to-date with the latest trade, currency and corporate action data. Use your new-found time to attract new clients, or claim back some hours in your day."
+      },
+      {
+        "icon": "icon_handshake",
+        "title": "Deepen client relationships",
+        "description": "With tax and performance reporting taken care of, you’ll have more time for more rewarding, pro-active activities such as tax planning and forward-looking investment discussions."
+      }
+    ]
+  }
+]

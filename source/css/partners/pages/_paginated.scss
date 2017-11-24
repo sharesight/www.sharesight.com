@@ -1,0 +1,77 @@
+.partners {
+  &__category {
+    margin-top: $gutter/2;
+
+    & + & {
+      @include respond-to(sm, min) {
+        margin-top: $gutter*1.5;
+      }
+
+      @include respond-to(md, min) {
+        margin-top: $gutter*2.5;
+      }
+
+      @include respond-to(lg, min) {
+        margin-top: $gutter*4;
+      }
+    }
+  }
+
+  &__title {
+    @extend .heading_page;
+    @extend .heading_page_index;
+
+    @include fontSize(2.625rem);
+    padding-bottom: $gutter;
+
+    @include respond-to (sm, min) {
+      @include fontSize(3.5rem);
+      padding-top: $gutter / 3;
+    }
+  }
+
+  &__cards {
+    @extend %contain-row;
+    background-color: $background_offset_white;
+
+    margin-top: $gutter;
+    padding-top: 0; // top padding is "from" .partner-card via margin-top
+    padding-bottom: $gutter;
+
+    text-align: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include respond-to(sm, min) {
+      padding-bottom: $gutter*2;
+    }
+  }
+
+  &__pagination {
+    @extend %container;
+    background-color: $background_offset_white;
+    padding-bottom: $gutter;
+
+    @include respond-to(sm, min) {
+      padding-bottom: $gutter*2;
+    }
+
+    &-link {
+      @extend .btn;
+      @extend .btn--solid;
+      @extend .btn--pro;
+
+      & + & {
+        margin-left: $gutter/2;
+      }
+
+      @include respond-to(sm, max) {
+        display: block;
+
+        margin: $gutter/2;
+      }
+    }
+  }
+}

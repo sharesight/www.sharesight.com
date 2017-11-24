@@ -1,0 +1,100 @@
+---
+page_classes: 'page_partner'
+section_class: 'section_blog'
+layout: partners_partner
+---
+
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  partner = locals[:partner]
+  category = partner[:categories] && partner[:categories][0]
+%>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+
+<div class="partners partner">
+  <div class="partner__header"
+    style="
+      <% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>
+      <% if partner[:text_color] %>text-color: <%= "##{partner[:text_color]}".squeeze('#') %>;<% end %>
+    "
+  >
+    <div class="partner__header-content">
+      <div class="partner__title-column">
+        <div class="partner__title">
+          <% if category %>
+            <a class="partner__category"
+              href="<%= localize_url("partners/#{category[:url_slug]}", locale_id: locale_obj[:id]) %>"
+              title="See all <%= category[:name].singularize() %> Partners"
+            >
+              <%= category[:name].singularize() %> Partner
+            </a>
+          <% end %>
+
+          <h1><%= partner[:name] %></h1>
+        </div>
+      </div>
+
+      <div class="partner__logo">
+        <% if partner[:logo] %><img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" /><% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="partner__content-area">
+    <div class="partner__content">
+      <%= partial "partners/partials/featured_link", locals: { locale_obj: locale_obj, partner: partner } if partner[:featured_link] && partner[:featured_link][:link] %>
+
+      <%= partner[:page_content] && Kramdown::Document.new(partner[:page_content].gsub('.png)', '.png?w=950)').gsub('.jpg)', '.jpg?w=950)')).to_html.html_safe %>
+    </div>
+
+    <div class="partner__details">
+      <dl class="partner__details-inner">
+        <% if partner[:website] %>
+        <dt>Website</dt>
+        <dd><a href="<%= partner[:website] %>" title="<%= partner[:name] %>"><%= partner[:name] %></a></dd>
+        <% end %>
+
+        <dt>Location</dt>
+        <dd><%= partner[:location_text] || 'Worldwide' %></dd>
+
+        <% if partner[:address] %>
+        <dt>Address</dt>
+        <dd>
+          <%= partner[:address] %>
+          <%= '<br />' if partner[:city] || partner[:state] %>
+          <%= partner[:city] %>
+          <%= ',' if partner[:city] && partner[:state] %>
+          <%= partner[:state] %>
+        </dd>
+        <% end %>
+
+        <% if partner[:email] || partner[:phone_number] %>
+        <dt>Contact</dt>
+        <dd>
+          <% if partner[:email] %><a href="mailto:<%= partner[:email] %>" title="Email <%= partner[:email] %>"><%= partner[:email] %></a><% end %>
+          <%= '<br />' if partner[:email] && partner[:phone_number] %>
+          <%= partner[:phone_number] %>
+        </dd>
+        <% end %>
+
+        <% if partner[:partner_type] && partner[:partner_type][:name] %>
+          <dt>Partner Type</dt>
+          <dd>
+            <%= partner[:partner_type][:name] %>
+          </dd>
+        <% end %>
+
+        <dt>Partner <%= 'Category'.pluralize(partner[:categories].length) %></dt>
+        <dd>
+          <% partner[:categories].each_with_index do |category, index| %>
+            <a href="<%= localize_url("partners/#{category[:url_slug]}", locale_id: locale_obj[:id]) %>" title="<%= category[:name] %>"><%= category[:name] %></a>
+            <%= '<br />' if index + 1 < partner[:categories].length %>
+          <% end %>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

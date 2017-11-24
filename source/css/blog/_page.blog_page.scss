@@ -1,0 +1,19 @@
+.blog_page {
+  .blog_content {
+    padding-bottom: $gutter;
+  }
+
+  .blog_content_container {
+    @media (min-width: 1440px) {
+      max-width: 950px;
+      position: relative;
+      left: -30px;
+    }
+  }
+}
+
+.blog_content_contained {
+  @media (max-width: 1440px) {
+    display: block !important; //overrides table
+  }
+}

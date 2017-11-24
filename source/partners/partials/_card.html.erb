@@ -1,0 +1,49 @@
+<%#
+  # locals = { partner, category: { id, name } }
+  # partner comes from contentful
+  # category comes from helpers/middleman/partners and is a `paginated` category
+%>
+<%
+  partner = locals[:partner]
+  category = locals[:category]
+  category = partner[:categories][0] if !category || !category[:id] || category[:id] == 'all' # get the first category
+
+  url = partner_url(partner, locale_id: locale_obj[:id])
+%>
+
+<div class="partner-card">
+  <div class="partner-card__header"
+    style="
+      <% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>
+      <% if partner[:text_color] %>color: <%= "##{partner[:text_color]}".squeeze('#') %>;<% end %>
+    "
+  >
+    <a href="<%= url %>"
+      class="partner-card__logo"
+      title="<%= partner[:name] %>"
+    >
+      <% if partner[:logo] %><img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" /><% end %>
+    </a>
+
+    <div class="partner-card__title-area">
+      <a class="partner-card__category"
+        href="<%= localize_url("partners/#{category[:url_slug]}", locale_id: locale_obj[:id]) %>"
+        title="See all <%= category[:name].singularize() %> Partners"
+      >
+        <%= category[:name].singularize() %>
+      </a>
+
+      <a href="<%= url %>" class="partner-card__title" title="<%= partner[:name] %>">
+        <%= partner[:name] %>
+      </a>
+    </div>
+  </div>
+
+  <div class="partner-card__description">
+    <%= Kramdown::Document.new(partner[:short_description].gsub('.png)', '.png?w=950)').gsub('.jpg)', '.jpg?w=950)')).to_html.html_safe %>
+
+    <div class="partner-card__buttons">
+      <a class="btn btn--solid btn--secondary" href="<%= url %>" title="Learn about <%= partner[:name] %> + Sharesight">Learn More</a>
+    </div>
+  </div>
+</div>

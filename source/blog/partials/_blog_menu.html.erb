@@ -1,0 +1,28 @@
+<%# locals: { category_name: '', on_individual_page: boolean, footer: boolean } %>
+
+<nav role="navigation" class="cell side_nav <%if footer%>side_nav_footer<%else%>side_nav_content<%end%> <%if on_individual_page %>side_nav_individual<%end%>">
+  <ul>
+    <li>
+      <div class="campaign_monitor">
+        <%# Campaign Monitor "Subscribe" Button %>
+        <div class="createsend-button" data-listid="r/58/BD4/ACC/5C6AB96D05E5929A"></div>
+      </div>
+
+      <h4>Topics</h4>
+    </li>
+
+    <% blog_categories.each do |category| %>
+      <% if category[:count] > 0 %>
+        <li>
+          <a href="<%= base_url("blog/#{url_friendly_string(category[:name])}") %>"
+             class="<%= category_name == category[:name] ? 'active' : '' %>"
+             aria-label="Category: <%= category[:name].capitalize %>"
+             title="<%= category[:name] %>"
+          >
+            <%= category[:name] %> (<%= category[:count] %>)
+          </a>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+</nav>

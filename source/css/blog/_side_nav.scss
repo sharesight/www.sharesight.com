@@ -1,0 +1,113 @@
+.blog {
+  .side_nav {
+    position: relative; // for the campaign_monitor
+    margin-top: 0;
+    vertical-align: top;
+
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 0;
+        text-indent: 0;
+        border-bottom: 1px solid #BDBDBD;
+
+        h4 {
+          @include fontSize(20px);
+          margin-bottom: 30px;
+          font-weight: 400;
+          padding-top: $gutter;
+          color: $colour_primary;
+          letter-spacing: 1px;
+          font-weight: 600;
+        }
+
+        a {
+          width: 100%;
+          padding: 10px 0 12px 15px;
+          text-decoration: none;
+          color: $colour_primary;
+          display: block;
+          font-size: 1rem;
+          display: block;
+          cursor: pointer;
+          appearance: none;
+          user-select: none;
+          white-space: nowrap;
+          text-decoration: none;
+          vertical-align: middle;
+
+          &.active {
+            background-color: #e8e8e8;
+            font-weight: 600 !important;
+          }
+
+          &:first-child {
+            font-weight: 400;
+            font-size: 0.9375rem;
+            font-family: "Open Sans", sans-serif;
+            line-height: 2.5rem;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .blog-table {
+    @media (min-width: 768px) {
+      display: table;
+    }
+  }
+
+  .blog_content {
+    // padding-right: 0;
+    @include respond-to(md, min) {
+      display: table-cell;
+      padding-right: 100px;
+      vertical-align: top;
+    }
+  }
+
+  .blog-column {
+    display: table-cell;
+    vertical-align: top;
+    width: 310px;
+  }
+
+  .side_nav.side_nav_individual {
+    @include respond-to(md, min) {
+      padding-top: 93px;
+    }
+
+    @media (min-width:1440px) {
+      margin-left: 30px;
+    }
+  }
+
+  .side_nav_content {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+    @include respond-to(md, min) {
+      display: block;
+    }
+
+    &.individual_page {
+      padding-top: 90px;
+    }
+  }
+
+  .side_nav_footer {
+    display: block;
+    padding: 30px $gutter $gutter;
+    background-color: #f4f4f4;
+
+    @include respond-to(md, min) {
+      display: none;
+    }
+  }
+}

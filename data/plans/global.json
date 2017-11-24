@@ -1,0 +1,202 @@
+[
+  {
+    "label": "Free",
+    "theme": "secondary",
+
+    "price": 0,
+    "portfolios": 1,
+    "custom_groups": 1,
+    "holdings": 10,
+
+    "reports_text": "limited",
+    "support_type": "community forum support",
+
+    "features": {
+      "sharesight_connect": "write access",
+      "supported_stock_exchanges": true,
+      "cash_account": false,
+      "automatic_adjustments": true,
+      "broker_email_import": true,
+      "price_and_portfolio_alerts": true,
+      "mobile_app": true,
+      "record_unlisted_investments": true,
+      "portfolio_sharing": false,
+      "xero_integration": false,
+      "file_attachments": false,
+      "labels_report_filtering": false,
+      "benchmarking": false
+    },
+
+    "reports": {
+      "performance_report": true,
+      "taxable_income_report": true,
+      "historical_cost_report": true,
+      "sold_securities_report": true,
+      "all_trades_report": true,
+      "capital_gains_tax_report": false,
+      "unrealised_capital_gains_tax_report": false,
+      "future_income_report": false,
+      "diversity_report": false,
+      "contributions_analysis_report": false,
+      "traders_tax_report": false,
+      "foreign_investment_fund_report": false
+    },
+
+    "info": [
+      "Automatic dividends",
+      "Price alerts"
+    ]
+  },
+  {
+    "label": "Starter",
+    "theme": "secondary",
+
+    "price": 12,
+    "portfolios": 1,
+    "custom_groups": 1,
+    "holdings": 20,
+
+    "reports_text": "limited",
+    "support_type": "community forum support",
+
+    "features": {
+      "sharesight_connect": "write access",
+      "supported_stock_exchanges": true,
+      "cash_account": true,
+      "automatic_adjustments": true,
+      "broker_email_import": true,
+      "price_and_portfolio_alerts": true,
+      "mobile_app": true,
+      "record_unlisted_investments": true,
+      "portfolio_sharing": true,
+      "xero_integration": false,
+      "file_attachments": false,
+      "labels_report_filtering": false,
+      "benchmarking": false
+    },
+
+    "reports": {
+      "performance_report": true,
+      "taxable_income_report": true,
+      "historical_cost_report": true,
+      "sold_securities_report": true,
+      "all_trades_report": true,
+      "capital_gains_tax_report": false,
+      "unrealised_capital_gains_tax_report": false,
+      "future_income_report": false,
+      "diversity_report": false,
+      "contributions_analysis_report": false,
+      "traders_tax_report": false,
+      "foreign_investment_fund_report": false
+    },
+
+    "info": [
+      "**Everything in Free** plus",
+      "Portfolio Sharing"
+    ]
+  },
+  {
+    "label": "Investor",
+    "theme": "primary",
+
+    "price": 19,
+    "portfolios": 3,
+    "custom_groups": 2,
+    "holdings": "unlimited",
+
+    "reports_text": "advanced",
+    "support_type": [
+      "email support",
+      "community forum support"
+    ],
+
+    "features": {
+      "sharesight_connect": "read + write access",
+      "supported_stock_exchanges": true,
+      "cash_account": true,
+      "automatic_adjustments": true,
+      "broker_email_import": true,
+      "price_and_portfolio_alerts": true,
+      "mobile_app": true,
+      "record_unlisted_investments": true,
+      "portfolio_sharing": true,
+      "xero_integration": true,
+      "file_attachments": true,
+      "labels_report_filtering": true,
+      "benchmarking": true
+    },
+
+    "reports": {
+      "performance_report": true,
+      "taxable_income_report": true,
+      "historical_cost_report": true,
+      "sold_securities_report": true,
+      "all_trades_report": true,
+      "capital_gains_tax_report": false,
+      "unrealised_capital_gains_tax_report": false,
+      "future_income_report": true,
+      "diversity_report": false,
+      "contributions_analysis_report": false,
+      "traders_tax_report": false,
+      "foreign_investment_fund_report": false
+    },
+
+    "info": [
+      "**Everything in Starter** plus",
+      "Xero Integration",
+      "Benchmarking"
+    ]
+  },
+  {
+    "label": "Expert",
+    "theme": "secondary",
+
+    "price": 25,
+    "portfolios": 5,
+    "custom_groups": 5,
+    "holdings": "unlimited",
+
+    "reports_text": "full",
+    "support_type": [
+      "**priority** email support",
+      "community forum support"
+    ],
+
+    "features": {
+      "sharesight_connect": "read + write access",
+      "supported_stock_exchanges": true,
+      "cash_account": true,
+      "automatic_adjustments": true,
+      "price_and_portfolio_alerts": true,
+      "mobile_app": true,
+      "broker_email_import": true,
+      "record_unlisted_investments": true,
+      "portfolio_sharing": true,
+      "xero_integration": true,
+      "file_attachments": true,
+      "labels_report_filtering": true,
+      "benchmarking": true
+    },
+
+    "reports": {
+      "performance_report": true,
+      "taxable_income_report": true,
+      "historical_cost_report": true,
+      "sold_securities_report": true,
+      "all_trades_report": true,
+      "capital_gains_tax_report": false,
+      "unrealised_capital_gains_tax_report": false,
+      "future_income_report": true,
+      "diversity_report": true,
+      "contributions_analysis_report": true,
+      "traders_tax_report": false,
+      "foreign_investment_fund_report": false
+    },
+
+    "info": [
+      "**Everything in Investor** plus",
+      "Contribution Analysis Report",
+      "**5** custom groups"
+    ]
+  }
+]

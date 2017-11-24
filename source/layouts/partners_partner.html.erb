@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<% # this is assigned by default, but this makes it more clear
+  partner = current_page.metadata[:locals][:partner]
+%>
+
+<html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">
+  <!-- partner layout -->
+  <%= partial "layouts/partials/head", locals: locals.merge({
+    title: partner&.name && "#{partner[:name]} | #{current_locale_obj[:append_title]} Partner",
+    description: partner&.short_description,
+    social_title: partner&.name && "#{partner[:name]} | #{current_locale_obj[:append_title]} Partner",
+    social_description: partner&.short_description,
+    social_image: partner&.social_image&.url
+  }) %>
+
+  <% partial "layouts/partials/body", locals: locals.merge({}) do %>
+    <%= yield %>
+  <% end %>
+</html>

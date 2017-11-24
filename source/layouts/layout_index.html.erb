@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">
+  <!-- index layout -->
+  <%= partial "layouts/partials/head", locals: locals.merge({}) %>
+
+  <% partial "layouts/partials/body", locals: locals.merge({
+    header: "partials/site_header_index"
+  }) do %>
+    <%= yield %>
+  <% end %>
+</html>

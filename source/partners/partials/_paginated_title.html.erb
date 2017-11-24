@@ -1,0 +1,21 @@
+<%
+  category = locals[:category]
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  if category[:id] == 'all'
+    title = 'Featured Partners'
+    browse_all = 'All Partners'
+  else
+    title = category[:name]
+    browse_all = "#{category[:name].singularize} Partners"
+  end
+%>
+
+<h3 class="partner-category__title">
+  <%= title %>
+  <a
+    href="<%= localize_url(category[:path], locale_id: locale_obj[:id]) %>"
+    class="partner-category__browse"
+    title="Browse <%= browse_all %>"
+  >Browse <%= browse_all %> →</a>
+</h3>

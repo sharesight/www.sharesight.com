@@ -1,0 +1,52 @@
+$__logo_max_height: 75px;
+
+.partner-home {
+  background-color: $background_offset_white;
+  text-align: center;
+
+  strong {
+    color: $colour_secondary;
+  }
+
+  &__logos {
+    margin: $gutter 0;
+
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    @include respond-to(sm, min) {
+      flex-direction: row;
+    }
+
+    @include respond-to(md, min) {
+      margin: $gutter*2 0;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    max-height: 100%;
+    background-color: #fff;
+    padding: $gutter;
+
+    flex-grow: 0; // don't grow
+    flex-shrink: 0; // don't shrink
+    flex-basis: auto;
+
+    align-self: center; // to vertically center the image
+
+    @include respond-to(sm, max) { // on column mode
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: $__logo_max_height;
+    }
+  }
+}

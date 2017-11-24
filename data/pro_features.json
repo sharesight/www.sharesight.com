@@ -1,0 +1,297 @@
+[
+  {
+    "id": "global",
+    "features": [
+      {
+        "title": "Effortless setup",
+        "description": "Choose the level of detail you want in each portfolio – from opening balances to complete trading histories – all imported it in just a few clicks.",
+        "img": "magic_wand",
+        "img_alt": "Magic Wand"
+      },
+      {
+        "title": "Automatic updates",
+        "description": "Sit back and watch as share prices, currency effects and corporate actions such as dividends and share splits are automatically incorporated.",
+        "img": "icon_magnet",
+        "img_alt": ""
+      },
+      {
+        "title": "Simple sharing",
+        "description": "Grant access to staff and clients according to the level of access they require: read, read/write, or admin.",
+        "img": "icon_hierarchy",
+        "img_alt": ""
+      },
+      {
+        "title": "Comprehensive tax reporting",
+        "description": "Get everything you need for balance sheet preparation plus comprehensive tax-time reports including taxable income, historical cost, and more.",
+        "img": "icon_invoice",
+        "img_alt": ""
+      },
+      {
+        "title": "Seamless Xero integration",
+        "description": "Synchronise share purchases, sales, and dividends to leading online accounting system <a href='https://www.sharesight.com/xero/' title='Xero'>Xero</a> for easy bank statement reconciliation. Plus track cash balances for complete financial positions.",
+        "img": "xero",
+        "img_alt": ""
+      },
+      {
+        "title": "Powerful performance data",
+        "description": "Analyse a portfolio or individual holding’s true returns – including brokerage, currency effects and dividends. Plus run easy-to-read diversity, asset allocation and contribution analysis reports.",
+        "img": "icon_graph-up",
+        "img_alt": ""
+      },
+      {
+        "title": "Mobile app",
+        "description": "Go mobile with a handy app designed for iPhone & Android phones, plus the full version of Sharesight works great on tablets as well as computers.",
+        "img": "icon_mobile-phone",
+        "img_alt": ""
+      },
+      {
+        "title": "Branded reports",
+        "description": "Apply your logo to marketing flyers and PDF reports so they’re personalised with your company brand when you download and share them with clients.",
+        "img": "icon_stamp",
+        "img_alt": ""
+      },
+      {
+        "title": "Helpful support",
+        "description": "Reach out to your dedicated account manager whenever you need assistance, plus leverage online tutorials and an active community forum.",
+        "img": "icon_lightbulb  ",
+        "img_alt": ""
+      }
+    ]
+  },
+  {
+    "id": "uk",
+    "features": [
+      {
+        "title": "Effortless setup",
+        "description": "Choose the level of detail you want in each portfolio – from opening balances to complete trading histories – all imported it in just a few clicks.",
+        "img": "magic_wand",
+        "img_alt": "Magic Wand"
+      },
+      {
+        "title": "Automatic updates",
+        "description": "Sit back and watch as share prices, currency effects and corporate actions such as dividends and share splits are automatically incorporated.",
+        "img": "icon_magnet",
+        "img_alt": ""
+      },
+      {
+        "title": "Simple sharing",
+        "description": "Grant access to staff and clients according to the level of access they require: read, read/write, or admin.",
+        "img": "icon_hierarchy",
+        "img_alt": ""
+      },
+      {
+        "title": "Comprehensive tax reporting",
+        "description": "Get everything you need for balance sheet preparation plus comprehensive tax-time reports including taxable income, historical cost, and more.",
+        "img": "icon_invoice",
+        "img_alt": ""
+      },
+      {
+        "title": "Seamless Xero integration",
+        "description": "Synchronise share purchases, sales, and dividends to leading online accounting system <a href='https://www.sharesight.com/xero/' title='Xero'>Xero</a> for easy bank statement reconciliation. Plus track cash balances for complete financial positions.",
+        "img": "xero",
+        "img_alt": ""
+      },
+      {
+        "title": "Powerful performance data",
+        "description": "Analyse a portfolio or individual holding’s true returns – including brokerage, currency effects and dividends. Plus run easy-to-read diversity, asset allocation and contribution analysis reports.",
+        "img": "icon_graph-up",
+        "img_alt": ""
+      },
+      {
+        "title": "Mobile app",
+        "description": "Go mobile with a handy app designed for iPhone & Android phones, plus the full version of Sharesight works great on tablets as well as computers.",
+        "img": "icon_mobile-phone",
+        "img_alt": ""
+      },
+      {
+        "title": "Branded reports",
+        "description": "Apply your logo to marketing flyers and PDF reports so they’re personalised with your company brand when you download and share them with clients.",
+        "img": "icon_stamp",
+        "img_alt": ""
+      },
+      {
+        "title": "Helpful support",
+        "description": "Reach out to your dedicated account manager whenever you need assistance, plus leverage online tutorials and an active community forum.",
+        "img": "icon_lightbulb  ",
+        "img_alt": ""
+      }
+    ]
+  },
+  {
+    "id": "au",
+    "features": [
+      {
+        "title": "Effortless setup",
+        "description": "Choose the level of detail you want in each portfolio – from opening balances to complete trading histories – all imported it in just a few clicks.",
+        "img": "magic_wand",
+        "img_alt": "Magic Wand"
+      },
+      {
+        "title": "Automatic updates",
+        "description": "Sit back and watch as share prices, currency effects and corporate actions such as dividends, DRPs and share splits are automatically incorporated.",
+        "img": "icon_magnet",
+        "img_alt": ""
+      },
+      {
+        "title": "Simple sharing",
+        "description": "Grant access to staff and clients according to the level of access they require: read, read/write, or admin.",
+        "img": "icon_hierarchy",
+        "img_alt": ""
+      },
+      {
+        "title": "Comprehensive tax reporting",
+        "description": "Get everything you need for balance sheet preparation plus comprehensive tax-time reports including taxable income, historical cost, capital gains tax (CGT), unrealised CGT, and more.",
+        "img": "icon_invoice",
+        "img_alt": ""
+      },
+      {
+        "title": "Seamless Xero integration",
+        "description": "Synchronise share purchases, sales, and dividends to leading online accounting system <a href='https://www.sharesight.com/xero/' title='Xero'>Xero</a> for easy bank statement reconciliation. Plus track cash balances for complete financial positions.",
+        "img": "xero",
+        "img_alt": ""
+      },
+      {
+        "title": "Powerful performance data",
+        "description": "Analyse a portfolio or individual holding’s true returns – including brokerage, currency effects and dividends. Plus run easy-to-read diversity, asset allocation and contribution analysis reports.",
+        "img": "icon_graph-up",
+        "img_alt": ""
+      },
+      {
+        "title": "Mobile app",
+        "description": "Go mobile with a handy app designed for iPhone & Android phones, plus the full version of Sharesight works great on tablets as well as computers.",
+        "img": "icon_mobile-phone",
+        "img_alt": ""
+      },
+      {
+        "title": "Branded reports",
+        "description": "Apply your logo to marketing flyers and PDF reports so they’re personalised with your company brand when you download and share them with clients.",
+        "img": "icon_stamp",
+        "img_alt": ""
+      },
+      {
+        "title": "Helpful support",
+        "description": "Reach out to your dedicated account manager whenever you need assistance, plus leverage online tutorials and an active community forum.",
+        "img": "icon_lightbulb  ",
+        "img_alt": ""
+      }
+    ]
+  },
+  {
+    "id": "nz",
+    "features": [
+      {
+        "title": "Effortless setup",
+        "description": "Choose the level of detail you want in each portfolio – from opening balances to complete trading histories – all imported it in just a few clicks.",
+        "img": "magic_wand",
+        "img_alt": "Magic Wand"
+      },
+      {
+        "title": "Automatic updates",
+        "description": "Sit back and watch as share prices, currency effects and corporate actions such as dividends, DRPs and share splits are automatically incorporated.",
+        "img": "icon_magnet",
+        "img_alt": ""
+      },
+      {
+        "title": "Simple sharing",
+        "description": "Grant access to staff and clients according to the level of access they require: read, read/write, or admin.",
+        "img": "icon_hierarchy",
+        "img_alt": ""
+      },
+      {
+        "title": "Comprehensive tax reporting",
+        "description": "Get everything you need for balance sheet preparation plus comprehensive tax-time reports including taxable income, historical cost, foreign investment funds (FIF), traders tax, and more.",
+        "img": "icon_invoice",
+        "img_alt": ""
+      },
+      {
+        "title": "Seamless Xero integration",
+        "description": "Synchronise share purchases, sales, and dividends to leading online accounting system <a href='https://www.sharesight.com/xero/' title='Xero'>Xero</a> for easy bank statement reconciliation. Plus track cash balances for complete financial positions.",
+        "img": "xero",
+        "img_alt": ""
+      },
+      {
+        "title": "Powerful performance data",
+        "description": "Analyse a portfolio or individual holding’s true returns – including brokerage, currency effects and dividends. Plus run easy-to-read diversity, asset allocation and contribution analysis reports.",
+        "img": "icon_graph-up",
+        "img_alt": ""
+      },
+      {
+        "title": "Mobile app",
+        "description": "Go mobile with a handy app designed for iPhone & Android phones, plus the full version of Sharesight works great on tablets as well as computers.",
+        "img": "icon_mobile-phone",
+        "img_alt": ""
+      },
+      {
+        "title": "Branded reports",
+        "description": "Apply your logo to marketing flyers and PDF reports so they’re personalised with your company brand when you download and share them with clients.",
+        "img": "icon_stamp",
+        "img_alt": ""
+      },
+      {
+        "title": "Helpful support",
+        "description": "Reach out to your dedicated account manager whenever you need assistance, plus leverage online tutorials and an active community forum.",
+        "img": "icon_lightbulb  ",
+        "img_alt": ""
+      }
+    ]
+  },
+  {
+    "id": "ca",
+    "features": [
+      {
+        "title": "Effortless setup",
+        "description": "Choose the level of detail you want in each portfolio – from opening balances to complete trading histories – all imported it in just a few clicks.",
+        "img": "magic_wand",
+        "img_alt": "Magic Wand"
+      },
+      {
+        "title": "Automatic updates",
+        "description": "Sit back and watch as share prices, currency effects and corporate actions such as dividends and share splits are automatically incorporated.",
+        "img": "icon_magnet",
+        "img_alt": ""
+      },
+      {
+        "title": "Simple sharing",
+        "description": "Grant access to staff and clients according to the level of access they require: read, read/write, or admin.",
+        "img": "icon_hierarchy",
+        "img_alt": ""
+      },
+      {
+        "title": "Comprehensive tax reporting",
+        "description": "Get everything you need for balance sheet preparation plus comprehensive tax-time reports including taxable income, historical cost, capital gains tax (CGT), and more.",
+        "img": "icon_invoice",
+        "img_alt": ""
+      },
+      {
+        "title": "Seamless Xero integration",
+        "description": "Synchronise share purchases, sales, and dividends to leading online accounting system <a href='https://www.sharesight.com/xero/' title='Xero'>Xero</a> for easy bank statement reconciliation. Plus track cash balances for complete financial positions.",
+        "img": "xero",
+        "img_alt": ""
+      },
+      {
+        "title": "Powerful performance data",
+        "description": "Analyse a portfolio or individual holding’s true returns – including brokerage, currency effects and dividends. Plus run easy-to-read diversity, asset allocation and contribution analysis reports.",
+        "img": "icon_graph-up",
+        "img_alt": ""
+      },
+      {
+        "title": "Mobile app",
+        "description": "Go mobile with a handy app designed for iPhone & Android phones, plus the full version of Sharesight works great on tablets as well as computers.",
+        "img": "icon_mobile-phone",
+        "img_alt": ""
+      },
+      {
+        "title": "Branded reports",
+        "description": "Apply your logo to marketing flyers and PDF reports so they’re personalised with your company brand when you download and share them with clients.",
+        "img": "icon_stamp",
+        "img_alt": ""
+      },
+      {
+        "title": "Helpful support",
+        "description": "Reach out to your dedicated account manager whenever you need assistance, plus leverage online tutorials and an active community forum.",
+        "img": "icon_lightbulb  ",
+        "img_alt": ""
+      }
+    ]
+  }
+]

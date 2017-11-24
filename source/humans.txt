@@ -1,0 +1,10 @@
+# humanstxt.org
+Developed by:
+	Sharesight
+		Michael Sands, Kylor Hall
+		Visit us on the web:  https://www.sharesight.com
+		Follow us on twitter: @sharesight
+	Abletech
+		Dana Iti, Shaun O'Connell
+		Visit us on the web:  https://abletech.nz
+		Follow us on twitter: @abletech

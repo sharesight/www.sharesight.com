@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <% data&.blog&.posts&.map {|p| p[1] }.select{ |p| p[:created_at] && p[:title] }.sort_by { |p| p[:created_at] }.reverse.take(2).each do |post| %>
+    <% if !post.title.blank? %>
+      <url>
+        <loc><%= post_url(post) %></loc>
+        <news:news>
+          <news:publication>
+            <news:name>Sharesight</news:name>
+            <news:language>en</news:language>
+          </news:publication>
+          <news:genres>Blog</news:genres>
+          <news:publication_date><%= Date.parse(post.created_at.to_s) %></news:publication_date>
+          <news:title><%=post.title.gsub('&','&amp;')%></news:title>
+        </news:news>
+      </url>
+    <%end%>
+  <%end%>
+</urlset>

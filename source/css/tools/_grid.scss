@@ -1,0 +1,160 @@
+$__base_responsive_size: base;
+
+$__column-padding: $gutter;
+$__container-padding: $gutter;
+$__container-padding--sm: 30px;
+$__container-padding--md: 60px;
+$__container-padding--lg: 60px;
+
+@mixin grid-make($class) {
+  @if ($class == $__base_responsive_size) {
+    $class: '';
+  } @else {
+    $class: "__#{$class}";
+  }
+
+  @include grid-float($class);
+  @include grid-loop-columns($class);
+}
+
+@mixin grid-float($class, $list: "%column#{$class}") {
+  @for $i from 1 through $grid-columns {
+    $list: "#{$list}, %column#{$class}--#{$i}";
+  }
+
+  #{$list} {
+    float: left;
+  }
+}
+
+@mixin grid-loop-columns($class) {
+  @for $i from 0 through $grid-columns {
+    @include grid-column($i, $class);
+  }
+}
+
+@mixin grid-column($index, $class) {
+  @if ($index > 0) {
+    %column#{$class}--#{$index} {
+      // this is the same as %column
+      position: relative;
+      min-height: 1px;
+      padding-right: $__column-padding;
+      padding-left: $__column-padding;
+      margin-left: 0;
+      margin-right: 0;
+
+      width: percentage(($index / $grid-columns));
+    }
+
+    %column#{$class}--push-#{$index} {
+      left: percentage(($index / $grid-columns));
+    }
+
+    %column#{$class}--pull-#{$index} {
+      right: percentage(($index / $grid-columns));
+    }
+  }
+
+  @if ($index == $grid-columns) {
+    %column#{$class}--full {
+      width: percentage(($index / $grid-columns));
+    }
+  }
+
+  @if ($index == 0) {
+    %column#{$class}--push-#{$index} {
+      left: auto;
+    }
+
+    %column#{$class}--pull-#{$index} {
+      right: auto;
+    }
+  }
+
+  %column#{$class}--offset-right-#{$index} {
+    margin-right: percentage(($index / $grid-columns)) !important;
+  }
+
+  %column#{$class}--offset-#{$index} {
+    margin-left: percentage(($index / $grid-columns)) !important;
+  }
+}
+
+@mixin generate-container($padding: 0px) {
+  overflow: hidden;
+  width: auto;
+  padding: 0 ($__container-padding - $padding);
+  margin: 0 auto;
+
+  @include respond-to(sm, min) {
+    padding: 0 ($__container-padding--sm - $padding);
+  }
+
+  @include respond-to(md, min) {
+    padding: 0 ($__container-padding--md - $padding);
+  }
+
+  @include respond-to(lg, min) {
+    padding: 0 ($__container-padding--lg - $padding);
+  }
+
+  @include responsive-max-widths(base xs sm md lg);
+}
+
+%container {
+  @include generate-container(0);
+}
+
+%contain-row {
+  @include generate-container($__column-padding);
+  margin: auto; // centers left/right
+}
+
+%row {
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+
+  &--flex {
+    display: flex;
+
+    align-items: center;
+  }
+}
+
+%container:before,
+%container:after,
+%container--full:before,
+%container--full:after,
+%container--content:before,
+%container--content:after,
+%row:before,
+%row:after {
+  display: table;
+  content: ' ';
+}
+
+%container:after,
+%container--full:after,
+%container--content:before,
+%row:after {
+  clear: both;
+}
+
+%column {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@include grid-make($__base_responsive_size);
+
+@each $size in (xs sm md lg) {
+  @include respond-to ($size, min) {
+    @include grid-make($size);
+  }
+}

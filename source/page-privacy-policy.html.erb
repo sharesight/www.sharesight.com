@@ -1,0 +1,127 @@
+---
+page_classes: 'page_privacy_policy'
+section_class: 'section_default'
+---
+<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+
+<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
+<section class="second-tier page_privacy">
+  <div class="container">
+    <div class="second-tier_wrapper">
+      <h1 class="heading_page heading_main heading_important">Sharesight Privacy Policy</h1>
+
+      <p>
+        This Privacy Policy applies to your use of Sharesight and our website. By visiting our site and using Sharesight, you accept our Privacy Policy.
+      </p>
+
+      <h5 class="sub-heading">What data does Sharesight collect?</h5>
+      <p>
+        <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a> is an online share market investment portfolio management service. Sharesight stores information that is entered by you or is imported at your request.
+      </p>
+      <br /><br />
+
+      <h5 class="sub-heading">How we use the information we hold about you</h5>
+      <p>
+        We may use information we collect about you for the primary purpose for which it is collected and for other secondary purposes that are related to the primary purpose of collection.
+      </p>
+      <p>We generally use information we hold about you to:</p>
+      <ul>
+        <li>provide you with products or services you have requested;</li>
+        <li>communicate with you;</li>
+        <li>provide you with ongoing news and information about our products and services;</li>
+        <li>do other things necessary and incidental to the provision of products and services by us to you;</li>
+        <li>produce and publish aggregated portfolio statistics; and/or</li>
+        <li>help us manage and enhance our products and services.</li>
+      </ul>
+      <p>
+        We also use screen capturing software to analyse individual customer usage for the purpose of improving our user interface.
+      </p>
+
+      <h5 class="sub-heading">To whom we may disclose your information</h5>
+      <p>
+        We may disclose information we hold about you to a third party for any purpose that is directly or indirectly related to the normal use of Sharesight.
+      </p>
+      <p>
+        If we sell our business, personal information may be part of the assets transferred to the purchaser.
+      </p>
+
+      <h5 class="sub-heading">Use of cookies and tracking technology</h5>
+      <p>
+        Sharesight uses ‘cookies’ and other measures to monitor traffic patterns and to serve you more efficiently when you visit the site. Cookies do not contain information by which we can identify you but they identify your computer to our servers. We work with third party advertisers to collect and use information about your use of the site in order to advertise Sharesight products which may be of interest to you.
+      </p>
+      <p>
+        To ‘opt out’ you may set your browser so that you are notified before a cookie is downloaded and this will provide you with the opportunity to accept or reject it on each occasion. The help menu within your Internet browser will explain how to do this.
+      </p>
+
+      <h5 class="sub-heading">Credit card information</h5>
+      <p>
+        If you choose to pay by credit card your details are encrypted and securely stored by Direct Payment Solutions Limited to allow your credit card to be billed on a recurring basis.
+      </p>
+
+      <p>
+        Sharesight does not store your credit card details and they cannot be accessed by Sharesight staff.
+      </p>
+
+      <h5 class="sub-heading">How we secure and manage your personal information</h5>
+      <p>
+        We protect the personal information we collect from misuse, loss, unauthorised access, modification or disclosure by various means including firewalls, password access, secure servers and encryption of credit card transactions.
+      </p>
+
+      <p>It is your responsibility to keep your password safe.</p>
+
+      <h5 class="sub-heading">How you can update and gain access to your personal information</h5>
+
+      <p>
+        You can update your personal information by logging into your account and changing your personal information at any time. If you are unable to update your personal information for any reason, you can contact us and we will do it for you. Sharesight will provide you with your data on request.
+      </p>
+
+      <p>
+        Paying subscribers who cancel their paid subscription will be downgraded to the Sharesight Free plan. Any of your data which is in excess of the Free plan allowance may be permanently deleted if you stop paying for the Sharesight service.
+      </p>
+
+      <p>
+        Your data will be permanently deleted at your request.
+      </p>
+
+      <h5 class="sub-heading">Email opt-out</h5>
+
+      <p>
+        Sharesight will send you emails covering a variety of topics such as account activation, billing information, product updates, newsletters, share price alerts and portfolio performance updates.
+      </p>
+
+      <p>
+        Non-essential email communications will clearly describe how you can be removed from the mailing list.
+      </p>
+
+      <h5 class="sub-heading">Third party applications</h5>
+
+      <p>
+        Sharesight contains links enabling the electronic transfer of data within third-party applications. Sharesight takes no responsibility for the privacy practices or content of these applications.
+      </p>
+
+      <h5 class="sub-heading">Changes to this Privacy Policy</h5>
+
+      <p>
+        We reserve the right to make amendments to this Privacy Policy at any time. If you have objections to the Privacy Policy, you should not access or use Sharesight.
+      </p>
+
+      <h5 class="sub-heading">Terms of Use</h5>
+      <p>
+        This Privacy Policy is to be read in conjunction with Sharesight’s <%= link_to "Terms of Use", localize_url('sharesight-terms-of-use', locale_id: locale_obj[:id]) %>.
+      </p>
+
+      <h5 class="sub-heading">How to contact us</h5>
+
+      <p>To make an access request, please contact our Privacy Officer by:</p>
+
+      <ol>
+        <li>Email: contact@sharesight.com; or</li>
+        <li>Post: PO Box 25-346, Panama Street, Wellington New Zealand</li>
+      </ol>
+
+      <p><em>Last updated 7th September 2017</em></p>
+    </div>
+  </div>
+</section>
+
+<%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>

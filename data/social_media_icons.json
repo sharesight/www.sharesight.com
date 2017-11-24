@@ -1,0 +1,32 @@
+[
+	{
+		"id": "linkedin",
+		"name": "LinkedIn",
+		"image": "linkedin.svg",
+		"url": "https://www.linkedin.com/company/sharesight-limited"
+	},
+	{
+		"id": "twitter",
+		"name": "Twitter",
+		"image": "twitter.svg",
+		"url": "https://twitter.com/Sharesight"
+	},
+	{
+		"id": "facebook",
+		"name": "Facebook",
+		"image": "facebook.svg",
+		"url": "https://www.facebook.com/sharesight"
+	},
+	{
+		"id": "youtube",
+		"name": "Youtube",
+		"image": "youtube.svg",
+		"url": "https://www.youtube.com/user/sharesightTV"
+	},
+	{
+		"id": "google-plus",
+		"name": "Google Plus",
+		"image": "google.svg",
+		"url": "https://plus.google.com/+SharesightLtd"
+	}
+]

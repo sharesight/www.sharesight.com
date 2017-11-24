@@ -1,0 +1,224 @@
+.fa-container {
+  text-align: justify;
+  top: -77px;
+  padding-bottom: 95%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $screen-xs-max) {
+    top: -10px;
+  }
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 49%;
+  }
+  @media (min-width: $screen-md-min) {
+    padding: 0;
+    height: 600px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+    height: 700px;
+  }
+}
+
+.fa-container-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 1440px) {
+    width: 80%;
+  }
+}
+
+.fa-container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.fa-item {
+  display: inline-block;
+  @media (min-width: $screen-sm-min) {
+    opacity: 0;
+  }
+}
+
+.fa-slide {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  @media (min-width: $screen-md-min) {
+    top: 15px;
+  }
+  @media (min-width: $screen-lg-min) {
+    top: 50px;
+  }
+}
+
+.fa-slide1 {
+  left: 0;
+}
+
+.fa-slide2 {
+  left: 100%;
+}
+
+.fa-next,
+.fa-prev {
+  position: absolute;
+  z-index: 1;
+  @media (min-width: $screen-xs-min) {
+    display: none;
+  }
+  @media (min-width: $screen-sm-min) {
+    top: 191px;
+    display: block;
+  }
+  @media (min-width: $screen-md-min) {
+    top: 250px;
+  }
+  @media (min-width: $screen-lg-min) {
+    top: 300px;
+  }
+}
+
+.fa-next {
+  right: 20px;
+}
+
+.fa-prev {
+  left: 20px;
+}
+
+.fa-spacer {
+  @media(min-width: $screen-sm-min) {
+    position: relative;
+    margin: 0 60px;
+  }
+  @media(min-width: $screen-lg-min) {
+    margin: 0 100px;
+  }
+}
+
+.fa-container,
+.fa-container[data-fa-slider="1"] {
+  background-image: image-url('large-anim-bg.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fa-container[data-fa-slider="2"] {
+  background-image: image-url('large-anim-bg2.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fa-container[data-fa-slider="1"],
+.fa-container[data-fa-slider="2"] {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fa-slide-title {
+  @include fontSize(30px);
+  line-height: 36px;
+  color: $colour_primary;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+
+  &--first {
+    width: 320px;
+    margin: 21px auto 31px;
+  }
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+.fa-desktop-line {
+  background-color: #F09500;
+  position: absolute;
+}
+
+.fa-desktop-line {
+  width: 94px;
+  top: 68px;
+  left: -94px;
+  height: 5px;
+}
+
+.fa-heading-xs,
+.fa-subtitle {
+  display: block;
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .import-title-mobile {
+    opacity: 1;
+  }
+}
+@media (min-width: 426px) {
+  .import-title-mobile {
+    opacity: 0;
+  }
+}
+
+.fa-import-title {
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+$d-width: 472;
+$d-height: 434;
+$d-aspect: $d-height/$d-width*100;
+$frame-width: 32.5;
+
+.fa-frame-wrapper {
+  width: $frame-width * 1%;
+  height: 0;
+  padding-top: ($d-aspect / 100 * $frame-width) * 1%;
+  float: left;
+  position: relative;
+  margin-right: 0.6%;
+  overflow: hidden;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    position: static;
+    height: 350px;
+    margin: 0;
+    padding-top: 0;
+  }
+  @media (min-width: $screen-sm-min) {
+    border: 1px solid #fff;
+    background-color: rgba(#fff, 0.3);
+    width: 32%;
+  }
+}
+
+.fa-frame-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#js-frame-1,
+#js-frame-2,
+#js-frame-3,
+#js-frame-4,
+#js-frame-5,
+#js-frame-6 {
+  margin-right: 0;
+  opacity: 0;
+  display: none;
+}

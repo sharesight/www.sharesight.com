@@ -1,0 +1,127 @@
+[
+  {
+    "id": "global",
+    "tagline": "Simply the best share portfolio tracker for investors.",
+    "testimonial_heading": "Join the thousands of investors already using Sharesight to manage their investment portfolios",
+    "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
+    "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
+    "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+    "columns": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ]
+  },
+  {
+    "id": "nz",
+    "tagline": "Simply the best share portfolio tracker for Kiwi investors.",
+    "testimonial_heading": "Join the thousands of New Zealand investors already using Sharesight to manage their investment portfolios",
+    "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
+    "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
+    "footer_tagline": "Simply the best portfolio management tool for New Zealand’s DIY investors.",
+    "columns": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ]
+  },
+  {
+    "id": "au",
+    "tagline": "Simply the best share portfolio tracker for Australian investors.",
+    "testimonial_heading": "Join the thousands of Australian investors already using Sharesight to manage their investment portfolios",
+    "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
+    "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
+    "footer_tagline": "Simply the best portfolio management tool for Australia’s DIY investors.",
+    "columns": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ]
+  },
+  {
+    "id": "ca",
+    "tagline": "Simply the best share portfolio tracker for Canadian investors.",
+    "testimonial_heading": "Join the thousands of Canadian investors already using Sharesight to manage their investment portfolios",
+    "testimonial_heading_pro": "Financial professionals love Sharesight",
+    "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
+    "footer_tagline": "Simply the best portfolio management tool for Canada’s DIY investors.",
+    "columns": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ]
+  },
+  {
+    "id": "uk",
+    "tagline": "Simply the best share portfolio tracker for UK investors.",
+    "testimonial_heading": "Join the thousands of UK investors already using Sharesight to manage their investment portfolios",
+    "testimonial_heading_pro": "Financial professionals love Sharesight",
+    "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
+    "footer_tagline": "Simply the best portfolio management tool for the UK’s DIY investors.",
+    "columns": [
+      {
+        "icon": "buzzing_magnet",
+        "title": "Track your dividends",
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+      },
+      {
+        "icon": "stacked_coins_and_chart",
+        "title": "Know your true performance",
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+      },
+      {
+        "icon": "report_on_computer_screen",
+        "title": "Save time and money",
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+      }
+    ]
+  }
+]

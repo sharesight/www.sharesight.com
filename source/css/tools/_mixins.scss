@@ -1,0 +1,94 @@
+@mixin hide_text() {text-indent:100%; white-space:nowrap; overflow:hidden;}
+@mixin off_left() {position:absolute; left:-999em; top:-999em;}
+@mixin clearfix() {content:""; display:block; clear:both; height:0;}
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align() {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin list_stripped() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition($value) {
+  transition: $value .1s ease;
+  &:hover {
+    #{$value}: 1;
+  }
+}
+
+@mixin elTransition {
+  transition: all 0.3s ease-in-out;
+}
+
+// use @include respond-to(lg, max, print)..
+@mixin respond-to ($breakpoint, $type: both, $mediaType: 'screen') {
+  $list: map-get($breakpoints, $breakpoint);
+
+  @if $type == 'only' {
+    $type: 'both';
+  }
+
+  @if not $list {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  $min: nth($list, 1);
+  $max: nth($list, 2);
+  $query: $mediaType + ' and ';
+
+  @if $type == 'both' and $min and $max {
+    $query: $query + "(min-width: #{$min}) and (max-width: #{$max})";
+  } @elseif $type != 'max' and $min {
+    $query: $query + "(min-width: #{$min})";
+  } @elseif $type != 'min' and $max {
+    $query: $query + "(max-width: #{$max})";
+  }
+
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}
+
+@mixin responsive-max-widths($sizes) {
+  @each $size in $sizes {
+    @include respond-to ($size) {
+      $max: nth(map-get($breakpoints, $size), 3);
+
+      @if not $max {
+        $max: 100%;
+      }
+
+      max-width: $max;
+    }
+  }
+}
+
+@mixin fontSize($size, $line-height: 0) {
+  font-size: calculatePx($size); // fallback in pixels
+  font-size: calculateRem($size);
+
+  @if type-of($line-height) == 'number' and not unitless($line-height) {
+    @include lineHeight($line-height);
+  } @else if $line-height > 0 {
+    @include lineHeight($size * $line-height);
+  }
+}
+
+@mixin lineHeight($size) {
+  line-height: calculatePx($size); // fallback in pixels
+  line-height: calculateRem($size);
+}

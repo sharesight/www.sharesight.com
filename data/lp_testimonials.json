@@ -1,0 +1,26 @@
+[
+	{
+		"id": "david_mcewen",
+		"text": "A lot of stuff is taken care of for me, automatically. Adding dividends, dividend reinvestment plan calculations, tax reports.",
+		"author": "David McEwen",
+		"image_id": "david_mcewen",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "mike_deam",
+		"text": "Simply put, Sharesight is the best portfolio manager I’ve used.",
+		"author": "Mike Deam",
+		"image_id": "mike_deam",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	},
+	{
+		"id": "stephen_colman",
+		"text": "If you manage your holdings in a similar fashion as I do, Sharesight will allow you to pretty much throw away all of your spreadsheets.",
+		"author": "Stephen Colman",
+		"image_id": "stephen_colman",
+		"role": "Sharesight Customer",
+    "visible": ["nz", "ca", "uk", "au", "global"]
+	}
+]
