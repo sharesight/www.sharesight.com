@@ -3,10 +3,12 @@
     "label": "Free"
   },
   {
-    "label": "Starter"
+    "label": "Starter",
+    "price": 15
   },
   {
     "label": "Investor",
+    "price": 25,
 
     "reports": {
       "capital_gains_tax_report": true
@@ -21,6 +23,7 @@
   },
   {
     "label": "Expert",
+    "price": 32,
 
     "reports": {
       "capital_gains_tax_report": true
