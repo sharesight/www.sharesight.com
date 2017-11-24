@@ -83,4 +83,4 @@ after_success:
 notifications:
   slack: # see: https://docs.travis-ci.com/user/notifications/#Configuring-slack-notifications
     rooms:
-      secure: # needs to be updated AFTER creating the Travis repo..
+      secure: EPbJNS8vHwwt38cx/XbmEqBnKjtYIgnEWIELcK7ZX0eA63tV3l1UpaN8rBxB6v4BxV9Ya8vSjHhMHm2cOIT+7xCaQcMOolC1Es6mZeAUL7qphGRzB6QrAiq1kMPHMaF/DtWZ65h7Mn1dB96OBCRM/Koa3U5OjKrNPe1JFBGjrDa43qQVDhRbqvjHwFNNGfNGD+Xc48V+Iswx0yhRvWu5hl2Kk8g/UaKQiW0aBZwK5MpryyIXI4SPeSJX1vSigoCt8Q1VeZvCzZ2zJ/nbdhmxhLzreAJn2vQHjpt9/DCOFkvnmKW8n5HdeDe73bzSDMGjzb8jfty7jaSEUiXr702iVu+zHRQLzqxzAehir18IfaPqKytrJ/UeWjWrOtHUYFpG5oYDdbkM3apkkbB7X7hAN2RaXnwNuwZALK5vG2sA2VRRc+N8m7bw4NWwx/eSYxxYQnytPGzZF6cahyyc82sD2LwkccTNzsi0SowZ/90K+CppWU8CEp6uU/XVVwY9IA0sb7X0lU+7HLGdroYZ9hdnLaC6hlyWs4pdVSGwYK2w/y0fdvJlA6o485hkcfj/hxAG7yeDwvigRAHkHcZStkRNeZtuLCI1K6AO93Vsdba/1UbRQFh73jFFF8DY0CxDdhIOAF6EBR6behuMg4LrPyfzRutH34L2JEVEqpcCZ+AjyOk=
