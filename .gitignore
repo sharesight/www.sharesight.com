@@ -27,5 +27,6 @@ data/partners/
 .*-space-hash
 
 # ignore personal files
+.envrc
 .ruby-gemset
 node_modules/
