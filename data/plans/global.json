@@ -8,8 +8,8 @@
     "custom_groups": 1,
     "holdings": 10,
 
-    "reports_text": "limited",
-    "support_type": "community forum support",
+    "reports_text": "Limited",
+    "support_type": "Community forum support",
 
     "features": {
       "sharesight_connect": "write access",
@@ -56,8 +56,8 @@
     "custom_groups": 1,
     "holdings": 20,
 
-    "reports_text": "limited",
-    "support_type": "community forum support",
+    "reports_text": "Limited",
+    "support_type": "Community forum support",
 
     "features": {
       "sharesight_connect": "write access",
@@ -102,12 +102,12 @@
     "price": 19,
     "portfolios": 3,
     "custom_groups": 2,
-    "holdings": "unlimited",
+    "holdings": "Unlimited",
 
-    "reports_text": "advanced",
+    "reports_text": "Advanced",
     "support_type": [
-      "email support",
-      "community forum support"
+      "Email support",
+      "Community forum support"
     ],
 
     "features": {
@@ -154,12 +154,12 @@
     "price": 25,
     "portfolios": 5,
     "custom_groups": 5,
-    "holdings": "unlimited",
+    "holdings": "Unlimited",
 
-    "reports_text": "full",
+    "reports_text": "Full",
     "support_type": [
-      "**priority** email support",
-      "community forum support"
+      "**Priority** email support",
+      "Community forum support"
     ],
 
     "features": {
