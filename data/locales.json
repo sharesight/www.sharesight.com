@@ -226,7 +226,7 @@
     "path": "/ca/",
     "name": "Canada",
     "lang": "en-CA",
-    "currency": "USD",
+    "currency": "CAD",
     "currency_symbol": "$",
     "plans_include_tax": false,
     "cert_type": "stock",
