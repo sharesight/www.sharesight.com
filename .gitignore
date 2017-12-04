@@ -29,3 +29,4 @@ data/partners/
 # ignore personal files
 .ruby-gemset
 node_modules/
+.envrc
