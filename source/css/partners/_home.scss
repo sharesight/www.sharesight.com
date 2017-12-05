@@ -1,4 +1,5 @@
-$__logo_max_height: 75px;
+$__logo_max_width: 200px;
+$__logo_height: 75px;
 
 .partner-home {
   background-color: $background_offset_white;
@@ -11,16 +12,13 @@ $__logo_max_height: 75px;
   &__logos {
     margin: $gutter 0;
 
-    flex-direction: column;
-    display: flex;
-    overflow: hidden;
+    overflow: visible;
 
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-
-    @include respond-to(sm, min) {
-      flex-direction: row;
-    }
+    flex-wrap: wrap;
 
     @include respond-to(md, min) {
       margin: $gutter*2 0;
@@ -28,25 +26,32 @@ $__logo_max_height: 75px;
   }
 
   &__logo {
-    display: inline-block;
-    max-height: 100%;
     background-color: #fff;
     padding: $gutter;
+    max-width: $__logo_max_width;
+    height: $__logo_height + ($gutter*2);
 
-    flex-grow: 0; // don't grow
-    flex-shrink: 0; // don't shrink
-    flex-basis: auto;
+    // to vertically center the image
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 
-    align-self: center; // to vertically center the image
-
-    @include respond-to(sm, max) { // on column mode
-      display: block;
-      width: 100%;
+    &, img {
+      flex: 0 0 auto; // don't grow or shrink
     }
 
     img {
       max-width: 100%;
-      max-height: $__logo_max_height;
+      max-height: 100%;
+    }
+
+    @include respond-to(sm, max) {
+      width: 50%;
+    }
+
+    @include respond-to(xs, max) {
+      width: 100%;
     }
   }
 }
