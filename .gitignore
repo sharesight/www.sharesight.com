@@ -30,3 +30,4 @@ data/partners/
 .envrc
 .ruby-gemset
 node_modules/
+.envrc
