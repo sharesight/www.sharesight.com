@@ -407,23 +407,14 @@
   background-color: #fff;
   text-align: center;
   display: none;
+
   @include respond-to(xs, max) {
     display: block;
-    padding-top: 60px;
+    padding: 60px 25px 25px;
   }
 
   .btn-secondary {
     margin: 0 auto;
-  }
-
-  .heading_light {
-    margin-top: 0;
-    @include fontSize(26px);
-    font-weight: 300;
-    @include respond-to(xs, max) {
-       @include fontSize(18px);
-      line-height: 22px;
-    }
   }
 }
 

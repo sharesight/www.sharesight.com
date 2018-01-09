@@ -1,11 +1,9 @@
 [
   {
     "id": "global",
-    "tagline": "Simply the best share portfolio tracker for investors.",
     "testimonial_heading": "Join the thousands of investors already using Sharesight to manage their investment portfolios",
     "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
     "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
-    "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
     "columns": [
       {
         "icon": "buzzing_magnet",
@@ -26,11 +24,9 @@
   },
   {
     "id": "nz",
-    "tagline": "Simply the best share portfolio tracker for Kiwi investors.",
     "testimonial_heading": "Join the thousands of New Zealand investors already using Sharesight to manage their investment portfolios",
     "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
     "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
-    "footer_tagline": "Simply the best portfolio management tool for New Zealand’s DIY investors.",
     "columns": [
       {
         "icon": "buzzing_magnet",
@@ -51,11 +47,9 @@
   },
   {
     "id": "au",
-    "tagline": "Simply the best share portfolio tracker for Australian investors.",
     "testimonial_heading": "Join the thousands of Australian investors already using Sharesight to manage their investment portfolios",
     "testimonial_heading_pro": "Financial professionals love Sharesight Pro",
     "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
-    "footer_tagline": "Simply the best portfolio management tool for Australia’s DIY investors.",
     "columns": [
       {
         "icon": "buzzing_magnet",
@@ -76,11 +70,9 @@
   },
   {
     "id": "ca",
-    "tagline": "Simply the best share portfolio tracker for Canadian investors.",
     "testimonial_heading": "Join the thousands of Canadian investors already using Sharesight to manage their investment portfolios",
     "testimonial_heading_pro": "Financial professionals love Sharesight",
     "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
-    "footer_tagline": "Simply the best portfolio management tool for Canada’s DIY investors.",
     "columns": [
       {
         "icon": "buzzing_magnet",
@@ -101,11 +93,9 @@
   },
   {
     "id": "uk",
-    "tagline": "Simply the best share portfolio tracker for UK investors.",
     "testimonial_heading": "Join the thousands of UK investors already using Sharesight to manage their investment portfolios",
     "testimonial_heading_pro": "Financial professionals love Sharesight",
     "testimonial_heading_xero": "What people are saying about Sharesight + Xero",
-    "footer_tagline": "Simply the best portfolio management tool for the UK’s DIY investors.",
     "columns": [
       {
         "icon": "buzzing_magnet",
