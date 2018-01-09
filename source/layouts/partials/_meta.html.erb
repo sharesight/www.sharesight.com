@@ -57,6 +57,14 @@
 <meta property="og:image" content="<%= metas[:social_image] %>">
 <meta property="og:description" content="<%= metas[:social_description] %>">
 
+<%# locales must be in language_TERRITORY (`en_US` is default, not `en`) %>
+<% og_locale = current_locale_id == default_locale_id ? 'en_US' : current_locale_obj[:lang] %>
+<meta property="og:locale" content="<%= og_locale.gsub('-', '_') %>">
+<% page_alternative_locales.select{ |locale| locale[:id] != current_locale_id }.each do |locale| %>
+  <% og_locale = locale[:id] == default_locale_id ? 'en_US' : locale[:lang] %>
+  <meta property="og:locale:alternate" content="<%= og_locale.gsub('-', '_') %>">
+<% end %>
+
 <%# Social Specific %>
 <meta property="fb:app_id" content="<%= config[:facebook_app_id] %>">
 <meta name="twitter:card" content="summary_large_image">
