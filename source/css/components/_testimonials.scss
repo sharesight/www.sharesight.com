@@ -90,7 +90,12 @@
 .testimonials {
   blockquote {
     margin: 0 auto;
+    padding: 0;
     width: 100%;
+
+    &:before {
+      display: none; // get rid of the quote marks on default blockquotes
+    }
 
     p {
       display: table-cell;
