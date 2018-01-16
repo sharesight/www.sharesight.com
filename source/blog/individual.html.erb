@@ -19,7 +19,11 @@ include_campaign_monitor: true
 
           <div class="meta">
             <% post[:created_at] = Time.now if post[:created_at].blank? %>
-            <small class="blog-post-date"><%= post[:created_at].strftime("#{post[:created_at].day}<sup>#{post[:created_at].day.ordinalize.split('').last(2).join()}</sup> %B %Y") %></small>
+            <small class="blog-post-date">
+              <%# Displaying created_at in the config timezone offset %>
+              <% created_at = post[:created_at].in_time_zone(config[:display_timezone]) %>
+              <%= created_at.strftime("#{created_at.day}<sup>#{created_at.day.ordinal}</sup> %B %Y") %>
+            </small>
             <small>by <%= post.author.display_name %><%=post.author[:title].present? ? ", #{post.author[:title]}" : ''%><%=post.author[:company].present? ? ", #{post.author[:company]}" : ''%></small>
           </div>
 
