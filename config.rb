@@ -24,6 +24,7 @@ config[:locale] = "en-#{config[:locale_name]}"
 
 # Site Configuration
 config[:site_name] = 'Sharesight'
+config[:display_timezone] = 'Sydney' # Time.new.in_time_zone('Sydney')
 config[:font_dir] = 'fonts'
 config[:css_dir] = 'css'
 config[:js_dir] = 'js'
