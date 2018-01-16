@@ -50,7 +50,7 @@ describe 'Partners Partner Pages', :type => :feature do
         visit partner[:path]
 
         expect(page).to have_img(partner[:logo][:url]) if partner[:logo]
-        expect(page).to have_css('.partner__title', text: /#{Regexp.escape(partner[:name])}$/) if partner[:name]
+        expect(page).to have_css('.partner__title', text: /#{Regexp.escape(partner[:name].strip)}$/) if partner[:name]
 
         if partner[:featured_link] && partner[:featured_link][:link]
           expect(page).to have_css('.featured_link__description', text: partner[:featured_link][:description]) if partner[:featured_link][:description]
@@ -58,11 +58,11 @@ describe 'Partners Partner Pages', :type => :feature do
         end
 
         # Fairly dumb checks for content.
-        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:address])}/) if partner[:address]
-        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:city])}/) if partner[:address] && partner[:city]
-        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:state])}/) if partner[:address] && partner[:state]
-        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:email])}/) if partner[:email]
-        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:phone_number])}/) if partner[:phone_number]
+        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:address].strip)}/) if partner[:address]
+        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:city].strip)}/) if partner[:address] && partner[:city]
+        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:state].strip)}/) if partner[:address] && partner[:state]
+        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:email].strip)}/) if partner[:email]
+        expect(page).to have_css('.partner__details dd', text: /#{Regexp.escape(partner[:phone_number].strip)}/) if partner[:phone_number]
 
         # Dumb checks for just titles.
         expect(page).to have_css('.partner__details dt', text: 'Website') if partner[:website]
