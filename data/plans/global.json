@@ -20,7 +20,7 @@
       "price_and_portfolio_alerts": true,
       "mobile_app": true,
       "record_unlisted_investments": true,
-      "portfolio_sharing": false,
+      "portfolio_sharing": true,
       "xero_integration": false,
       "file_attachments": false,
       "labels_report_filtering": false,
@@ -91,8 +91,8 @@
     },
 
     "info": [
-      "**Everything in Free** plus",
-      "Portfolio Sharing"
+      "Automatic dividends",
+      "Price alerts"
     ]
   },
   {
