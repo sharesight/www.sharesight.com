@@ -5,23 +5,23 @@
       <h4 class="featured_in_title">As featured in</h4>
       <div class="featured_logos">
         <% if locale_obj[:id] == 'au'%>
-          <span class='sprite xlogo-the-australian'></span>
-          <span class='sprite sky-news-business'></span>
-          <span class='sprite The-Australian-Financial-Review'></span>
-          <span class='sprite financial-observer'></span>
-          <span class='sprite IBD'></span>
+          <img class="featured_image" src="<%= image_path('featured/the-australian.png')%>" alt="Featured in The Australian" />
+          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
+          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
         <% elsif locale_obj[:id] == 'nz'%>
-          <span class='sprite nz-herald'></span>
-          <span class='sprite sky-news-business'></span>
-          <span class='sprite The-Australian-Financial-Review'></span>
-          <span class='sprite financial-observer'></span>
-          <span class='sprite IBD'></span>
+          <img class="featured_image" src="<%= image_path('featured/nz-herald.png')%>" alt="Featured in The New Zealand Herald" />
+          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
+          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
         <% else %>
-          <span class='sprite financial-observer'></span>
-          <span class='sprite IBD'></span>
-          <span class='sprite MM-Web'></span>
-          <span class='sprite sky-news-business'></span>
-          <span class='sprite The-Australian-Financial-Review'></span>
+          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
+          <img class="featured_image" src="<%= image_path('featured/money-management.png')%>" alt="Featured in Money Management" />
+          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
         <%end%>
       </div>
     </div>
