@@ -7,6 +7,10 @@
   padding-bottom: 60px;
 }
 
+.section_plain {
+  background-color: white;
+}
+
 .section_featured {
   text-align: center;
 
@@ -36,6 +40,7 @@
     &:last-child {
       margin-right: 0;
     }
+
     @media (max-width: $screen-xs-max) {
       display: block;
       margin-right: 0;
@@ -46,8 +51,4 @@
       }
     }
   }
-}
-
-.section_plain {
-  background-color: white;
 }

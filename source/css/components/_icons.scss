@@ -63,58 +63,6 @@
   height: 20px;
   width: 20px;
 }
-// Sprites
-.sprite {
-  background: image-url('logos/sprite_logos.png') no-repeat top left;
-  width: 165px;
-  height: 85px;
-  margin-bottom: 30px;
-  display: inline-block;
-  opacity: 0.8;
-  vertical-align: middle;
-  margin-right: 60px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-  @media (max-width: $screen-xs-max) {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.sprite.financial-observer {
-  background-position: 0 0;
-}
-
-.sprite.IBD {
-  background-position: 0 -95px;
-}
-
-.sprite.MM-Web {
-  background-position: 0 -190px;
-}
-
-.sprite.nz-herald {
-  background-position: 0 -285px;
-}
-
-.sprite.sky-news-business {
-  background-position: 0 -380px;
-}
-
-.sprite.The-Australian-Financial-Review {
-  background-position: 0 -475px;
-}
-
-.sprite.xlogo-the-australian {
-  background-position: 0 -570px;
-}
 
 .icon-arrow-right {
   background: image-url('icons/more_info_right.svg');
