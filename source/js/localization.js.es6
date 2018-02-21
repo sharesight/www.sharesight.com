@@ -8,10 +8,6 @@
 const localization = {
   current_locale_id: localeHelper.getCookieLocale(),
 
-  beforeLoad: function () {
-    this.localizeCurrentPath()
-  },
-
   onLoad: function () {
     this.regionSelector()
     this.modifyContent()
@@ -20,34 +16,14 @@ const localization = {
   shouldModifyContent: function () {
     if (window.location.pathname.match(/^\/?blog/)) return true
     if (document.getElementById('_404')) return true
-    if (localeHelper.current_locale_path_id() !== this.current_locale_id) return true
     return false
   },
 
   modifyContent: function () {
-    if (this.shouldModifyContent()) {
-      this.updateUrls()
-      contentManager.updateContent()
-    }
-  },
+    if (!this.shouldModifyContent()) return
 
-  localizeCurrentPath: function () {
-    // see if the user's raw cookie exists and matches our current path
-    if (cookieManager.getCookie() && localeHelper.current_locale_path_id() === cookieManager.getCookie()) return true
-    if (cookieManager.getCookie()) return urlHelper.redirect()
-
-    let xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if ([200, 301, 302, 304].indexOf(xhr.status) === -1) return
-
-      const country_code = JSON.parse(xhr.responseText).country.toLowerCase()
-      this.setLocale(country_code)
-    }
-
-    xhr.open("GET", config.location_url, true)
-    xhr.setRequestHeader("Content-Type", "text/plain")
-    xhr.send()
+    this.updateUrls()
+    contentManager.updateContent()
   },
 
   setLocale: function (locale_id) {
