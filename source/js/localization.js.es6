@@ -49,7 +49,7 @@ const localization = {
     })
   },
 
-  getRegionSelectorNodeNode () {
+  getRegionSelectorNode () {
     if (this.regionSelector) return this.regionSelector
     this.regionSelector = document.getElementById('region_selector')
     return this.regionSelector
