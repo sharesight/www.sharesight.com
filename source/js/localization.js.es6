@@ -8,25 +8,25 @@
 const localization = {
   current_locale_id: localeHelper.getCookieLocale(),
 
-  onLoad: function () {
+  onLoad () {
     this.regionSelector()
     this.modifyContent()
   },
 
-  shouldModifyContent: function () {
+  shouldModifyContent () {
     if (window.location.pathname.match(/^\/?blog/)) return true
     if (document.getElementById('_404')) return true
     return false
   },
 
-  modifyContent: function () {
+  modifyContent () {
     if (!this.shouldModifyContent()) return
 
     this.updateUrls()
     contentManager.updateContent()
   },
 
-  setLocale: function (locale_id) {
+  setLocale (locale_id) {
     if (!locale_id || typeof locale_id.toLowerCase !== 'function' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -39,7 +39,7 @@ const localization = {
     if (redirected !== true) this.modifyContent() // because redirection may not always happen
   },
 
-  updateUrls: function () {
+  updateUrls () {
     ;[].concat.apply([], [ // flatten
         document.querySelectorAll(`a[href^="${config.base_url}"]`), // absolute urls
         document.querySelectorAll(`a[href^="${config.help_url}"]`), // help site
@@ -50,7 +50,7 @@ const localization = {
     })
   },
 
-  regionSelector: function () {
+  initializeRegionSelector () {
     const self = this
     const selector = document.getElementById('region_selector')
     if (!selector || !selector.options || !selector.options.length) return
