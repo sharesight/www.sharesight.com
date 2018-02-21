@@ -14,17 +14,6 @@ const urlHelper = {
     return true
   },
 
-  redirect: function (locale_id = localization.current_locale_id) {
-    if (locale_id === localeHelper.current_locale_path_id()) return
-    if (!this.shouldLocalizePath(window.location.pathname, locale_id)) return
-
-    const newPath = this.localizePath(window.location.pathname, locale_id)
-    if (window.location.pathname != newPath) {
-      window.location.pathname = newPath
-      return true // did redirect
-    }
-  },
-
   // we've very redundant in these adding and removing slashes.
   // For delete[0], etc., to be accurate accessors, we have to add/remove/squeeze slashes a lot!
   removeLocalizationFromPath: function(path) {
