@@ -72,8 +72,6 @@ const localization = {
 }
 
 ;(() => {
-  localization.beforeLoad()
-
   document.addEventListener('DOMContentLoaded', () => {
     localization.onLoad()
   })
