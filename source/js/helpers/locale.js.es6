@@ -9,7 +9,7 @@ const localeHelper = {
     return locale
   },
 
-  getLocale: function (locale_id = localization.current_locale_id) {
+  getLocale: function (locale_id = localization.getCurrentLocaleId()) {
     const locale = config.locales.find(locale => locale.id === locale_id)
     if (locale) return locale
 
