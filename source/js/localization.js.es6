@@ -27,7 +27,7 @@ const localization = {
   },
 
   setLocale (locale_id) {
-    if (!locale_id || typeof locale_id.toLowerCase !== 'function' || !localeHelper.isValidLocaleId(locale_id)) {
+    if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
 
