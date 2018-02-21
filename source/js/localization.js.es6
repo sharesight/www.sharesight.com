@@ -89,7 +89,7 @@ const localization = {
     const selector = this.getRegionSelectorNode()
     console.log(`@setCookieFromRegionSelector, value: ${selector.value}, current: ${this.current_locale_id}`)
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
-    setLocale(selector.value)
+    this.setLocale(selector.value)
   },
 }
 
