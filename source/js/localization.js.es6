@@ -21,6 +21,7 @@ const localization = {
 
   modifyContent (force=false) {
     if (!force && !this.shouldModifyContent()) return
+    console.log('modifying content')
 
     this.updateUrls()
     contentManager.updateContent()
