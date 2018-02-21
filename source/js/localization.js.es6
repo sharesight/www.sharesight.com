@@ -49,24 +49,45 @@ const localization = {
     })
   },
 
+  getRegionSelectorNodeNode () {
+    if (this.regionSelector) return this.regionSelector
+    this.regionSelector = document.getElementById('region_selector')
+    return this.regionSelector
+  }
+
   initializeRegionSelector () {
     const self = this
-    const selector = document.getElementById('region_selector')
+    const selector = this.getRegionSelectorNode();
     if (!selector || !selector.options || !selector.options.length) return
 
-    // first load
-    Array.from(selector.options).forEach(option => {
-      option.removeAttribute('selected')
+    this.setRegionSelectorValue()
+    this.setCookieFromRegionSelector();
 
-      if (option.value.toLowerCase() === self.current_locale_id) {
-        option.setAttribute('selected', true)
-      }
-    })
-
-    // when it changes
+    // when it changes, set locale
     selector.onchange = function () {
       self.setLocale(this.value)
     }
+  }
+
+  setRegionSelectorValue () {
+    const selector = this.getRegionSelectorNode();
+    if (!this.shouldModifyContent()) return
+    if (selector.value === this.current_locale_id) return
+
+    // set the region selector to match the current locale on unlocalized pages
+    Array.from(selector.options).forEach(option => {
+      option.removeAttribute('selected')
+
+      if (option.value.toLowerCase() === this.current_locale_id) {
+        option.setAttribute('selected', true)
+      }
+    })
+  }
+
+  setCookieFromRegionSelector () {
+    const selector = this.getRegionSelectorNode()
+    if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
+    setLocale(selector.value)
   }
 }
 
