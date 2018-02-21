@@ -49,11 +49,11 @@ const localization = {
     })
   },
 
-  getRegionSelectorNodeNode () {
+  getRegionSelectorNode () {
     if (this.regionSelector) return this.regionSelector
     this.regionSelector = document.getElementById('region_selector')
     return this.regionSelector
-  }
+  },
 
   initializeRegionSelector () {
     const self = this
@@ -67,7 +67,7 @@ const localization = {
     selector.onchange = function () {
       self.setLocale(this.value)
     }
-  }
+  },
 
   setRegionSelectorValue () {
     const selector = this.getRegionSelectorNode();
@@ -82,13 +82,13 @@ const localization = {
         option.setAttribute('selected', true)
       }
     })
-  }
+  },
 
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
     setLocale(selector.value)
-  }
+  },
 }
 
 ;(() => {
