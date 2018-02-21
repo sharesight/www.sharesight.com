@@ -21,6 +21,7 @@ const localization = {
 
   modifyContent (force=false) {
     if (!force && !this.shouldModifyContent()) return
+    console.log('modifying content')
 
     this.updateUrls()
     contentManager.updateContent()
@@ -39,11 +40,12 @@ const localization = {
   },
 
   updateUrls () {
-    ;[].concat.apply([], [ // flatten
-        document.querySelectorAll(`a[href^="${config.base_url}"]`), // absolute urls
-        document.querySelectorAll(`a[href^="${config.help_url}"]`), // help site
-        document.querySelectorAll(`a[href^="${config.base_path}"]`), // relative urls
-      ].map(elements => Array.from(elements))
+    ;[].concat.apply([], // flatten arrays of arrays
+      [
+        config.base_url, // absolute urls (www.sharesight.com)
+        config.help_url, // help site (help.sharesight.com)
+        `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
+      ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
       element.pathname = urlHelper.localizePath(element.pathname)
     })
