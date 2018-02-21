@@ -9,7 +9,7 @@ const localization = {
   current_locale_id: localeHelper.getCookieLocale(),
 
   onLoad () {
-    this.regionSelector()
+    this.initializeRegionSelector()
     this.modifyContent()
   },
 
