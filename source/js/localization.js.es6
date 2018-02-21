@@ -35,8 +35,7 @@ const localization = {
 
     this.current_locale_id = locale_id
     cookieManager.setCookie(locale_id)
-    let redirected = urlHelper.redirect(locale_id)
-    if (redirected !== true) this.modifyContent() // because redirection may not always happen
+    this.modifyContent()
   },
 
   updateUrls () {
