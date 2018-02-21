@@ -6,10 +6,9 @@
 //= require "./helpers/url"
 
 const localization = {
-  current_locale_id: localeHelper.getCookieLocale(),
+  setLocaleId: false,
 
   onLoad () {
-    this.current_locale_id = localeHelper.getCookieLocale() // this seems to change
     this.initializeRegionSelector()
     this.modifyContent()
   },
@@ -35,9 +34,14 @@ const localization = {
 
     locale_id = locale_id.toLowerCase()
 
-    this.current_locale_id = locale_id
+    this.setLocaleId = locale_id
     cookieManager.setCookie(locale_id)
     this.modifyContent(true)
+  },
+
+  getCurrentLocaleId () {
+    if (this.setLocaleId) return this.setLocaleId;
+    return localeHelper.getCookieLocale();
   },
 
   updateUrls () {
@@ -74,15 +78,17 @@ const localization = {
 
   setRegionSelectorValue () {
     const selector = this.getRegionSelectorNode();
-    console.log(`@setRegionSelectorValue, value: ${selector.value}, current: ${this.current_locale_id}, shouldModify: ${this.shouldModifyContent()}`)
+    const newLocaleId = this.getCurrentLocaleId();
+    console.log(`@setRegionSelectorValue, value: ${selector.value}, current: ${this.getCurrentLocaleId()}, shouldModify: ${this.shouldModifyContent()}`)
     if (!this.shouldModifyContent()) return
-    if (selector.value === this.current_locale_id) return
+    if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie when the page loads
+    if (selector.value === this.getCurrentLocaleId()) return
 
     // set the region selector to match the current locale on unlocalized pages
     Array.from(selector.options).forEach(option => {
       option.removeAttribute('selected')
 
-      if (option.value.toLowerCase() === this.current_locale_id) {
+      if (option.value.toLowerCase() === this.getCurrentLocaleId()) {
         option.setAttribute('selected', true)
       }
     })
@@ -90,7 +96,7 @@ const localization = {
 
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
-    console.log(`@setCookieFromRegionSelector, value: ${selector.value}, current: ${this.current_locale_id}`)
+    console.log(`@setCookieFromRegionSelector, value: ${selector.value}, current: ${this.getCurrentLocaleId()}`)
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
     this.setLocale(selector.value)
   },
