@@ -136,7 +136,7 @@ describe('localizationLambda', () => {
       });
     });
 
-    test('should return undefined when unknown', () => {
+    test('should return false when unknown', () => {
       expect(isValidCountryCode('US')).toEqual(false);
       expect(isValidCountryCode('EU')).toEqual(false);
       expect(isValidCountryCode(1)).toEqual(false);
@@ -146,7 +146,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getPathCountryCode', () => {
-    test('should return true when valid country code is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect(getPathCountryCode('/nz')).toEqual('nz');
       expect(getPathCountryCode('/nZ/')).toEqual('nz');
       expect(getPathCountryCode('/AU/something')).toEqual('au');
@@ -154,7 +154,7 @@ describe('localizationLambda', () => {
       expect(getPathCountryCode('/UK/nz/ca/au/')).toEqual('uk');
     });
 
-    test('should return undefined when unknown', () => {
+    test('should return undefined when country code is unknown', () => {
       expect(getPathCountryCode('/US')).toEqual(undefined);
       expect(getPathCountryCode('/EU/')).toEqual(undefined);
       expect(getPathCountryCode('/nz1/something')).toEqual(undefined);
@@ -167,7 +167,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getHeaderCountryCode', () => {
-    test('should return when a valid country is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect.assertions(codesInAllCases.length);
 
       codesInAllCases.forEach(code => {
@@ -188,7 +188,7 @@ describe('localizationLambda', () => {
       expect(getHeaderCountryCode(request)).toEqual(undefined);
     });
 
-    test('should return undefined with a bad code', () => {
+    test('should return undefined with an unknown code', () => {
       expect.assertions(badCodes.length);
 
       badCodes.forEach(code => {
@@ -200,7 +200,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getCookieCountryCode', () => {
-    test('should return when a valid country is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect.assertions(codesInAllCases.length);
 
       codesInAllCases.forEach(code => {
@@ -217,7 +217,7 @@ describe('localizationLambda', () => {
       });
     });
 
-    test('should return the first valid country found, even in some weird cookie situations', () => {
+    test('should return the first valid, normalized country found, even in some weird cookie situations', () => {
       const request = { headers: {
         cookie: [
           { value: `sharesight_country; country=au;` },
@@ -252,7 +252,7 @@ describe('localizationLambda', () => {
   });
 
   describe('pathWithoutCountryCode', () => {
-    test('should stip out the country code', () => {
+    test('should strip out the country code', () => {
       expect.assertions(codesInAllCases.length * 3);
 
       codesInAllCases.forEach(code => {
