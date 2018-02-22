@@ -19,10 +19,8 @@ const localization = {
     return false
   },
 
-  modifyContent (force=false) {
-    if (!force && !this.shouldModifyContent()) return
     console.log('modifying content')
-
+  modifyContent () {
     this.updateUrls()
     contentManager.updateContent()
   },
@@ -36,7 +34,7 @@ const localization = {
 
     this.setLocaleId = locale_id
     cookieManager.setCookie(locale_id)
-    this.modifyContent(true)
+    this.modifyContent()
   },
 
   getCurrentLocaleId () {
