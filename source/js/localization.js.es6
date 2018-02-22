@@ -13,8 +13,8 @@ const localization = {
     this.modifyContent()
   },
 
-  shouldModifyContent () {
     if (window.location.pathname.match(/^\/?blog/)) return true
+  isGlobalOnlyPage () {
     if (document.getElementById('_404')) return true
     return false
   },
@@ -80,8 +80,8 @@ const localization = {
     const selector = this.getRegionSelectorNode();
     const newLocaleId = this.getCurrentLocaleId();
     console.log(`@setRegionSelectorValue, value: ${selector.value}, current: ${this.getCurrentLocaleId()}, shouldModify: ${this.shouldModifyContent()}`)
-    if (!this.shouldModifyContent()) return
     if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie when the page loads
+    if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
     if (selector.value === this.getCurrentLocaleId()) return
 
     // set the region selector to match the current locale on unlocalized pages
