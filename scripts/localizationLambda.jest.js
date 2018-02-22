@@ -1,4 +1,5 @@
 const {
+  ignoreErrors,
   validCountryCodes,
   validCountryCodesLength,
   dontProcess,
@@ -75,6 +76,24 @@ const generateCloudFrontEvent = (uri = '', cookieCountry, viewerCountry) => {
 }
 
 describe('localizationLambda', () => {
+  describe('ignoreErrors', () => {
+    test('ignores a strictly thrown error and returns undefined', () => {
+      expect(ignoreErrors(() => {
+        throw new Error('This is an error');
+      })).toEqual(undefined);
+    })
+
+    test('ignores a code error and returns undefined', () => {
+      expect(ignoreErrors(() => {
+        a += 's' * 2 / 0 + thisIsUndefined;
+      })).toEqual(undefined);
+    })
+
+    test('returns the response when there are no errors', () => {
+      expect(ignoreErrors(() => 'valid')).toEqual('valid');
+    })
+  });
+
   describe('validCountryCodes', () => {
     test('array matches', () => {
       expect(validCountryCodes).toEqual(codes);
