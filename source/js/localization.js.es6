@@ -34,6 +34,11 @@ const localization = {
     this.setLocaleId = locale_id
     cookieManager.setCookie(locale_id)
     this.modifyContent()
+
+    // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
+    if (!this.isGlobalOnlyPage() && !window.location.pathname.startsWith(`/${locale_id}`)) {
+      window.location.reload();
+    }
   },
 
   getCurrentLocaleId () {
