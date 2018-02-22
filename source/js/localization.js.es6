@@ -19,7 +19,6 @@ const localization = {
     return false
   },
 
-    console.log('modifying content')
   modifyContent () {
     this.updateUrls()
     contentManager.updateContent()
@@ -77,7 +76,6 @@ const localization = {
   setRegionSelectorValue () {
     const selector = this.getRegionSelectorNode();
     const newLocaleId = this.getCurrentLocaleId();
-    console.log(`@setRegionSelectorValue, value: ${selector.value}, current: ${this.getCurrentLocaleId()}, shouldModify: ${this.shouldModifyContent()}`)
     if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie when the page loads
     if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
     if (selector.value === this.getCurrentLocaleId()) return
@@ -94,7 +92,6 @@ const localization = {
 
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
-    console.log(`@setCookieFromRegionSelector, value: ${selector.value}, current: ${this.getCurrentLocaleId()}`)
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
     this.setLocale(selector.value)
   },
