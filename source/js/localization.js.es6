@@ -13,8 +13,8 @@ const localization = {
     this.modifyContent()
   },
 
-    if (window.location.pathname.match(/^\/?blog/)) return true
   isGlobalOnlyPage () {
+    if (window.location.pathname.startsWith('/blog')) return true
     if (document.getElementById('_404')) return true
     return false
   },
