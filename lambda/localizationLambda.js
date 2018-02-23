@@ -1,5 +1,14 @@
 'use strict';
 
+/*
+ * NOTE: This is an ORIGIN REQUEST Lambda.
+ * It takes a request / response and returns a response.
+ * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
+ *
+ * This must be deployed *MANUALLY*.  See `../lambda/README.md`.
+ * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
+ */
+
 const validCountryCodes = ['au', 'ca', 'nz', 'uk'];
 const validCountryCodesLength = validCountryCodes.length; // cache this
 

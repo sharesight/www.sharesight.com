@@ -15,6 +15,9 @@
 6. Build the site: `middleman build`
 7. Or run a local server: `middleman`
 
+## Cloudfront Localization via Lambda
+ - See `lambda/README.md`!
+
 ## Manual Deploys
 
 The website automatically deploys to staging and production from the Travis-CI
