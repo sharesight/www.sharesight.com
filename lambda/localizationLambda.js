@@ -94,6 +94,12 @@ const handler = function (event, context, callback) {
       }
     }
 
+    if (response.status < 200 || response.status >= 300) {
+      console.log(`Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
+      callback(null, response);
+      return;
+    }
+
     const cookieCountryCode = getCookieCountryCode(request);
     const headerCountryCode = getHeaderCountryCode(request);
     let newUri = request.uri;
@@ -112,12 +118,6 @@ const handler = function (event, context, callback) {
 
     if (newUri === request.uri) {
       console.log('URIs match, stopping.');
-      callback(null, response);
-      return;
-    }
-
-    if (response.status < 200 || response.status >= 300) {
-      console.log(`Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
       callback(null, response);
       return;
     }
