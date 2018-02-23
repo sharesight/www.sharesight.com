@@ -1,5 +1,12 @@
 # Cloudfront + Lambda for localization
 
+## WARNING
+#### AWS May change!
+ - The version of Node AWS offers currently (v6.10) is no longer in LTS.
+ - Their UI has changed and may continue to change, these instructions may become out of date quickly.
+ - As of current writing, some of the Examples and screenshots in their own documentation are incorrect and do not match reality.
+ - Lambdas are pretty young.  Lambda + Cloudfront is only out of preview in the past 6 months and the origin request type we're using is even newer than that.
+
 ## Why
   - We want to serve users their localized content.
 
