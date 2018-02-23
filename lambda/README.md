@@ -23,10 +23,10 @@
   - Example Trigger: distributionId: E1LG497M3L1WGH, cacheBehavior: \*, event: Origin Request
   - Alternatively, go into the Cloudfront Endpoint > Behavior Tab > Select the Behavior (eg. \*), and at the bottom of the page, change or set the version of the Lambda for *Origin Request* to match the version you just published.
   - Invalidate everything, if necessary via Invalidations Tab: `/*`...
-  - NOTE: You can assign different version to different Cloudfront Endpoints!  So if you're testing a change, you assign version [100] to `staging-www.sharesight.com` and keep version [95] to `www.sharesight.com`.
+  - NOTE: You can assign different versions to different Cloudfront Endpoints!  So if you're testing a change, you assign version [100] to `staging-www.sharesight.com` and keep version [95] to `www.sharesight.com`.
 
 ## Caching
-  - Cloudfront caches, that's the point.
+  - Cloudfront caches, that's the point.  Be sure to invalidate if you make changes that require it.
   - We cache based on `sharesight_country` cookie + `cloudfront-viewer-country` header.
   - This means that when someone visits `/nz/faq`, Cloudfront looks to see if a user with countryHeader=NZ and countryCookie=CA has been cached.
     - If so, it would respond with the cached response, which is the 302 previously created by this Lambda – `302 Found => /ca/faq/`.
