@@ -13,16 +13,13 @@ const localization = {
     this.modifyContent()
   },
 
-  shouldModifyContent () {
-    if (window.location.pathname.match(/^\/?blog/)) return true
+  isGlobalOnlyPage () {
+    if (window.location.pathname.startsWith('/blog')) return true
     if (document.getElementById('_404')) return true
     return false
   },
 
-  modifyContent (force=false) {
-    if (!force && !this.shouldModifyContent()) return
-    console.log('modifying content')
-
+  modifyContent () {
     this.updateUrls()
     contentManager.updateContent()
   },
@@ -36,7 +33,12 @@ const localization = {
 
     this.setLocaleId = locale_id
     cookieManager.setCookie(locale_id)
-    this.modifyContent(true)
+    this.modifyContent()
+
+    // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
+    if (!this.isGlobalOnlyPage() && !window.location.pathname.startsWith(`/${locale_id}`)) {
+      window.location.reload();
+    }
   },
 
   getCurrentLocaleId () {
@@ -79,9 +81,8 @@ const localization = {
   setRegionSelectorValue () {
     const selector = this.getRegionSelectorNode();
     const newLocaleId = this.getCurrentLocaleId();
-    console.log(`@setRegionSelectorValue, value: ${selector.value}, current: ${this.getCurrentLocaleId()}, shouldModify: ${this.shouldModifyContent()}`)
-    if (!this.shouldModifyContent()) return
-    if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie when the page loads
+    if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
+    if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
     if (selector.value === this.getCurrentLocaleId()) return
 
     // set the region selector to match the current locale on unlocalized pages
@@ -96,7 +97,6 @@ const localization = {
 
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
-    console.log(`@setCookieFromRegionSelector, value: ${selector.value}, current: ${this.getCurrentLocaleId()}`)
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
     this.setLocale(selector.value)
   },

@@ -1,5 +1,14 @@
 'use strict';
 
+/*
+ * NOTE: This is an ORIGIN REQUEST Lambda.
+ * It takes a request / response and returns a response.
+ * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
+ *
+ * This must be deployed *MANUALLY*.  See `../lambda/README.md`.
+ * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
+ */
+
 const validCountryCodes = ['au', 'ca', 'nz', 'uk'];
 const validCountryCodesLength = validCountryCodes.length; // cache this
 
@@ -10,6 +19,16 @@ const dontProcess = [
   /\.htaccess\/?$/,
 ];
 const dontProcessLength = dontProcess.length;
+
+function ignoreErrors (fn) {
+  try {
+    return fn();
+  } catch (e) {
+    // We actually don't care, sadly, and this will probably never get logged.
+    // If this fails, Cloudfront has changed...  An error here would result in a 503 on every response, so we ignore it.
+    console.log('Error@getHeaderCountryCode', e);
+  }
+}
 
 function isValidCountryCode (code) {
   if (!code || typeof code !== 'string') return false;
@@ -36,29 +55,32 @@ function getPathCountryCode (uri) {
 }
 
 function getHeaderCountryCode (request) {
-  let code = request.headers['cloudfront-viewer-country'][0].value;
-  if (isValidCountryCode(code)) return code.toLowerCase();
+  return ignoreErrors(() => {
+    let code = request.headers['cloudfront-viewer-country'][0].value;
+    if (isValidCountryCode(code)) return code.toLowerCase();
+  })
 }
 
 function getCookieCountryCode (request) {
-  const cookieName = 'sharesight_country';
-  const headers = request.headers;
+  return ignoreErrors(() => {
+    const cookieName = 'sharesight_country';
 
-  if (headers && headers.cookie) {
-    // NOTE: A cookie may have multiple values on it, so we join and split again
-    const cookies = headers.cookie.map(cookie => cookie.value).join(';');
-    const regex = new RegExp(`^${cookieName}=(.*?)$`);
+    if (Array.isArray(request.headers.cookie)) {
+      // NOTE: A cookie may have multiple values on it, so we join and split again
+      const cookies = request.headers.cookie.map(cookie => cookie.value).join(';');
+      const regex = new RegExp(`^${cookieName}=(.*?)$`);
 
-    // Look at all cookies, regex them, and pass matching strings on, then filter out undefineds, and grab the first result
-    const code = cookies.split(';')
-      .map(cookie => {
-        const match = regex.exec(cookie.trim());
-        if (Array.isArray(match) && typeof match[1] === 'string') return match[1];
-      })
-      .filter(value => isValidCountryCode(value))[0]; // NOTE the [0], just grabbing the first code after we filter out the bads
+      // Look at all cookies, regex them, and pass matching strings on, then filter out undefineds, and grab the first result
+      const code = cookies.split(';')
+        .map(cookie => {
+          const match = regex.exec(cookie.trim());
+          if (Array.isArray(match) && typeof match[1] === 'string') return match[1];
+        })
+        .filter(value => isValidCountryCode(value))[0]; // NOTE the [0], just grabbing the first code after we filter out the bads
 
-    if (code) return code.toLowerCase();
-  }
+      if (code) return code.toLowerCase();
+    }
+  });
 }
 
 function pathWithoutCountryCode (path) {
@@ -79,6 +101,12 @@ const handler = function (event, context, callback) {
         callback(null, response);
         return;
       }
+    }
+
+    if (response.status < 200 || response.status >= 300) {
+      console.log(`Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
+      callback(null, response);
+      return;
     }
 
     const cookieCountryCode = getCookieCountryCode(request);
@@ -103,12 +131,6 @@ const handler = function (event, context, callback) {
       return;
     }
 
-    if (response.status < 200 || response.status >= 300) {
-      console.log(`Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
-      callback(null, response);
-      return;
-    }
-
     if (request.querystring) newUri += `?${request.querystring}`;
 
     response.status = 302;
@@ -121,6 +143,7 @@ const handler = function (event, context, callback) {
 };
 
 module.exports = {
+  ignoreErrors: ignoreErrors,
   validCountryCodes: validCountryCodes,
   validCountryCodesLength: validCountryCodesLength,
   dontProcess: dontProcess,

@@ -1,4 +1,5 @@
 const {
+  ignoreErrors,
   validCountryCodes,
   validCountryCodesLength,
   dontProcess,
@@ -75,6 +76,24 @@ const generateCloudFrontEvent = (uri = '', cookieCountry, viewerCountry) => {
 }
 
 describe('localizationLambda', () => {
+  describe('ignoreErrors', () => {
+    test('ignores a strictly thrown error and returns undefined', () => {
+      expect(ignoreErrors(() => {
+        throw new Error('This is an error');
+      })).toEqual(undefined);
+    })
+
+    test('ignores a code error and returns undefined', () => {
+      expect(ignoreErrors(() => {
+        a += 's' * 2 / 0 + thisIsUndefined;
+      })).toEqual(undefined);
+    })
+
+    test('returns the response when there are no errors', () => {
+      expect(ignoreErrors(() => 'valid')).toEqual('valid');
+    })
+  });
+
   describe('validCountryCodes', () => {
     test('array matches', () => {
       expect(validCountryCodes).toEqual(codes);
@@ -136,7 +155,7 @@ describe('localizationLambda', () => {
       });
     });
 
-    test('should return undefined when unknown', () => {
+    test('should return false when unknown', () => {
       expect(isValidCountryCode('US')).toEqual(false);
       expect(isValidCountryCode('EU')).toEqual(false);
       expect(isValidCountryCode(1)).toEqual(false);
@@ -146,7 +165,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getPathCountryCode', () => {
-    test('should return true when valid country code is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect(getPathCountryCode('/nz')).toEqual('nz');
       expect(getPathCountryCode('/nZ/')).toEqual('nz');
       expect(getPathCountryCode('/AU/something')).toEqual('au');
@@ -154,7 +173,7 @@ describe('localizationLambda', () => {
       expect(getPathCountryCode('/UK/nz/ca/au/')).toEqual('uk');
     });
 
-    test('should return undefined when unknown', () => {
+    test('should return undefined when country code is unknown', () => {
       expect(getPathCountryCode('/US')).toEqual(undefined);
       expect(getPathCountryCode('/EU/')).toEqual(undefined);
       expect(getPathCountryCode('/nz1/something')).toEqual(undefined);
@@ -167,7 +186,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getHeaderCountryCode', () => {
-    test('should return when a valid country is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect.assertions(codesInAllCases.length);
 
       codesInAllCases.forEach(code => {
@@ -188,7 +207,7 @@ describe('localizationLambda', () => {
       expect(getHeaderCountryCode(request)).toEqual(undefined);
     });
 
-    test('should return undefined with a bad code', () => {
+    test('should return undefined with an unknown code', () => {
       expect.assertions(badCodes.length);
 
       badCodes.forEach(code => {
@@ -200,7 +219,7 @@ describe('localizationLambda', () => {
   });
 
   describe('getCookieCountryCode', () => {
-    test('should return when a valid country is found, regardless of case', () => {
+    test('should return the normalized country code when a valid country code is found, regardless of case', () => {
       expect.assertions(codesInAllCases.length);
 
       codesInAllCases.forEach(code => {
@@ -217,7 +236,7 @@ describe('localizationLambda', () => {
       });
     });
 
-    test('should return the first valid country found, even in some weird cookie situations', () => {
+    test('should return the first valid, normalized country found, even in some weird cookie situations', () => {
       const request = { headers: {
         cookie: [
           { value: `sharesight_country; country=au;` },
@@ -252,7 +271,7 @@ describe('localizationLambda', () => {
   });
 
   describe('pathWithoutCountryCode', () => {
-    test('should stip out the country code', () => {
+    test('should strip out the country code', () => {
       expect.assertions(codesInAllCases.length * 3);
 
       codesInAllCases.forEach(code => {
@@ -325,10 +344,12 @@ describe('localizationLambda', () => {
     test(`should respond with a 302 redirect when the cookie locale does not match the page locale`, () => {
       const mockCallback = jest.fn();
       const event = generateCloudFrontEvent('/nz/faq', 'ca', 'nz');
+      const eventResponse = Object.assign({}, event.Records[0].cf.response)
       const handled = handler(event, null, mockCallback);
 
       expect(mockCallback.mock.calls.length).toEqual(1);
       expect(mockCallback.mock.calls[0][0]).toEqual(null);
+      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
       expect(mockCallback.mock.calls[0][1].status).toEqual(302);
       expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
       expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/ca/faq');
@@ -337,10 +358,12 @@ describe('localizationLambda', () => {
     test(`[as a side-effect] should respond with a 302 redirect when the case is incorrect on the locale`, () => {
       const mockCallback = jest.fn();
       const event = generateCloudFrontEvent('/NZ/faq', 'nz', 'nz');
+      const eventResponse = Object.assign({}, event.Records[0].cf.response)
       const handled = handler(event, null, mockCallback);
 
       expect(mockCallback.mock.calls.length).toEqual(1);
       expect(mockCallback.mock.calls[0][0]).toEqual(null);
+      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
       expect(mockCallback.mock.calls[0][1].status).toEqual(302);
       expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
       expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/faq');
