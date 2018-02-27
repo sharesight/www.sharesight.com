@@ -46,11 +46,18 @@ RSpec::Matchers.define :have_social_metas do
     expect(page).to have_meta('fb:app_id', '1028405463915894', name_key: 'property')
     expect(page).to have_meta('og:site_name', 'Sharesight', name_key: 'property')
 
-    expect(page).to have_head('meta', args: { property: 'og:image' })
+    expect(page).to have_meta('og:image', name_key: 'property')
+
+    # NOTE: Somehow this, below, doesn't work?  Can't use `if` logic inside a matcher...?
+    # if (!get_meta('og:image', name_key: 'property').include?('.contentful.com'))
+    #   expect(page).to have_meta('og:image:type', name_key: 'property')
+    #   expect(page).to have_meta('og:image:width', name_key: 'property')
+    #   expect(page).to have_meta('og:image:height', name_key: 'property')
+    # end
   end
 
   failure_message do |actual|
-    "expected to have social metas (twitter:site:id, og:site_name, etc) on #{current_path}"
+    "expected to have social metas (twitter:site:id, og:site_name, og:image:*, etc) on #{current_path}"
   end
 end
 
