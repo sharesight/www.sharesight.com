@@ -19,7 +19,7 @@
   metas[:social_description]   = BasicHelper.replace_quotes(metas[:social_description])
 
   metas[:social_image]         = locals[:social_image]
-  metas[:social_image]       ||= (page_path_name == 'xero') ? 'featured_sharesight_xero.png' : 'featured_sharesight-hero.png'
+  metas[:social_image]       ||= (page_path_name == 'xero') ? 'sharesight-social-image@1200w.png' : 'featured_sharesight-hero.png'
   metas[:social_image]         = image_url(metas[:social_image]) unless metas[:social_image].match(/\A(http[s]?:)?\/\//) # unless already a url (https://, http://, //)
   metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
 
