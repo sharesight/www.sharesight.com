@@ -1,4 +1,18 @@
 <%
+  DEFAULT_SOCIAL_IMG = {
+    url: image_url('sharesight-social-image@1200w.png'),
+    type: 'image/png',
+    width: 1200,
+    height: 630
+  }
+
+  DEFAULT_XERO_SOCIAL_IMG = {
+    url: image_url('featured_sharesight_xero.png'),
+    type: 'image/png',
+    width: 600,
+    height: 315,
+  }
+
   # Make the locals variable seem a bit less magical.
   metas = {}
   metas[:og_type]              = locals[:og_type] || 'website'
@@ -19,8 +33,7 @@
   metas[:social_description]   = BasicHelper.replace_quotes(metas[:social_description])
 
   metas[:social_image]         = locals[:social_image]
-  metas[:social_image]       ||= (page_path_name == 'xero') ? 'featured_sharesight_xero.png' : 'sharesight-social-image@1200w.png'
-  metas[:social_image]         = image_url(metas[:social_image]) unless metas[:social_image].match(/\A(http[s]?:)?\/\//) # unless already a url (https://, http://, //)
+  metas[:social_image]       ||= (page_path_name == 'xero') ? DEFAULT_XERO_SOCIAL_IMG[:url] : DEFAULT_SOCIAL_IMG[:url]
   metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
 
   pagination = locals[:pagination]
@@ -54,8 +67,18 @@
 <meta property="og:type" content="<%= metas[:og_type] %>">
 <meta property="og:url" content="<%= metas[:social_url] %>">
 <meta property="og:title" content="<%= metas[:social_title] %>">
-<meta property="og:image" content="<%= metas[:social_image] %>">
 <meta property="og:description" content="<%= metas[:social_description] %>">
+
+<meta property="og:image" content="<%= metas[:social_image] %>">
+<% if metas[:social_image] == DEFAULT_SOCIAL_IMG[:url] %>
+  <meta property="og:image:type" content="<%= DEFAULT_SOCIAL_IMG[:type] %>">
+  <meta property="og:image:width" content="<%= DEFAULT_SOCIAL_IMG[:width] %>">
+  <meta property="og:image:height" content="<%= DEFAULT_SOCIAL_IMG[:height] %>">
+<% elsif metas[:social_image] == DEFAULT_XERO_SOCIAL_IMG[:url] %>
+  <meta property="og:image:type" content="<%= DEFAULT_XERO_SOCIAL_IMG[:type] %>">
+  <meta property="og:image:width" content="<%= DEFAULT_XERO_SOCIAL_IMG[:width] %>">
+  <meta property="og:image:height" content="<%= DEFAULT_XERO_SOCIAL_IMG[:height] %>">
+<% end %>
 
 <%# locales must be in language_TERRITORY (`en_US` is default, not `en`) %>
 <% og_locale = current_locale_id == default_locale_id ? 'en_US' : current_locale_obj[:lang] %>
