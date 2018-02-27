@@ -1,6 +1,10 @@
 # robotstxt.org/
-User-agent: *
+<% if config[:env_name] == 'staging' || config[:env_name] == 'development' %>
+User-agent: Twitterbot
+Disallow:
+<% end %>
 
+User-agent: *
 <% if config[:env_name] == 'staging' || config[:env_name] == 'development' %>
 Disallow: /
 <% end %>
