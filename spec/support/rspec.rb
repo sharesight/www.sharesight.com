@@ -48,12 +48,18 @@ RSpec::Matchers.define :have_social_metas do
 
     expect(page).to have_meta('og:image', name_key: 'property')
 
-    # NOTE: Somehow this, below, doesn't work?  Can't use `if` logic inside a matcher...?
-    # if (!get_meta('og:image', name_key: 'property').include?('.contentful.com'))
-    #   expect(page).to have_meta('og:image:type', name_key: 'property')
-    #   expect(page).to have_meta('og:image:width', name_key: 'property')
-    #   expect(page).to have_meta('og:image:height', name_key: 'property')
-    # end
+    og_image_value = get_meta('og:image', name_key: 'property')
+    is_local_image = og_image_value.start_with?(Capybara.app.config[:base_url])
+
+    expect(og_image_value).to start_with('https://') if !is_local_image
+
+    if is_local_image
+      expect(page).to have_meta('og:image:type', name_key: 'property')
+      expect(page).to have_meta('og:image:width', name_key: 'property')
+      expect(page).to have_meta('og:image:height', name_key: 'property')
+    end
+
+    true # must return true as `expect() if false` would return nil and returning a nil fails a matcher
   end
 
   failure_message do |actual|
