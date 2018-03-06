@@ -8,11 +8,12 @@ const cookieManager = {
   getCookie (cache = true) {
     if (cache && this.cookie) return this.cookie
 
-    const pattern = RegExp("^\\s*"+this.cookieName+"=\\s*(.*?)\\s*$")
+    const pattern = RegExp(`^\\s*${this.cookieName}\\s*=\\s*(.*?)\\s*$`)
 
-    // WARNING: This could return multiple cookies, in theory?
+    // WARNING: This could return multiple cookies, in theory.
     this.cookie = this.getAllCookies()
-      .filter(cookie => cookie.match(pattern) && cookie.match(pattern)[1])
+      .map(cookie => cookie.match(pattern) && cookie.match(pattern)[1])
+      .filter(cookie => cookie) // filter out undefines
       .toString()
 
     return this.cookie

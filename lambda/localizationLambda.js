@@ -1,7 +1,8 @@
 'use strict';
 
 /*
- * NOTE: This is an ORIGIN REQUEST Lambda.
+ * NOTE: This is an ORIGIN REQUEST Lambda running on Node v6.10.
+ * If the Node version changes, this code may need major refactor.
  * It takes a request / response and returns a response.
  * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
  *
