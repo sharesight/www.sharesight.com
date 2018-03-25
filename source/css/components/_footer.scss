@@ -1,5 +1,38 @@
 $__locale-height: 35px;
 
+
+// Extends featured_link, but modified to stand out a bit more.
+.footer-cta {
+  @extend %featured_link;
+  margin: 0;
+  padding: $gutter*1.5 $gutter*3;
+  justify-content: center;
+
+  background-color: rgba($colour_secondary, .95);
+  color: $colour_pro;
+
+  @include respond-to(sm, max) {
+    margin: 0;
+    padding: $gutter*2 $gutter*4;
+  }
+
+  &__description {
+    @extend %featured_link__description;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &__button {
+    @extend %featured_link__button;
+    font-size: 17px;
+    line-height: 48px; // match description height
+    font-weight: 500;
+    padding: 0 $gutter*1.5;
+    margin: 0; // override the `justify-self: flex-end` type functionality
+    text-transform: none;
+  }
+}
+
 footer#footer {
   background-color: $colour_pro;
   color: white;
