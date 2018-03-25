@@ -25,6 +25,8 @@
 
   <main role="main" id="main-area" aria-label="Start on main content">
     <%= yield %>
+
+    <%= partial "partials/site_footer", locals: { locale_obj: locale_obj } %>
   </main>
 
   <% if content_for?(:javascript) %>
