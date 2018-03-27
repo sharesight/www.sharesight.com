@@ -104,11 +104,8 @@
     letter-spacing: 0.015em;
   }
 
-  h1,
   h2,
   h3,
-  h4,
-  h5,
   h6 {
     margin-bottom: 0.75rem;
     -webkit-font-smoothing: antialiased;
@@ -118,37 +115,18 @@
     }
   }
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-
   h2 {
     font-size: 2rem;
     line-height: 2.25rem;
   }
 
-  h3 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-
-  h5 {
-    font-size: 1.125rem;
-    line-height: 2rem;
-  }
-
   h6 {
     font-size: 0.8125rem;
     line-height: 1.5rem;
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
-    }
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
   }
 
   .layout_secondary p,
@@ -158,27 +136,6 @@
     max-width: 48.75rem;
     text-align: center;
     margin: 0 auto;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-
-  h5 {}
-
-  h6 {
-    font-size: 0.8125rem !important;
-    line-height: 1.5rem;
-    letter-spacing: 0.125rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
   }
 
   .heading_paragraph {
@@ -471,12 +428,6 @@ ul {
   letter-spacing: 0.3px;
 }
 
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
 .price li {
   padding: 0;
   text-align: center;
@@ -495,6 +446,10 @@ ul {
 
 .price .heading {
   margin-bottom: 0;
+}
+
+.price__heading {
+  font-size: 2.5rem;
 }
 
 .price .grey {
