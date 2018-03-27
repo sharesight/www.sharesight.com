@@ -1,13 +1,18 @@
-<div class="section footer-cta">
-  <span class="footer-cta__description">
-    <h5>Try Sharesight today</h5>
-    Track <strong>10 holdings</strong> for free.
-  </span>
+<%# if hide_global_footer_cta is set to true (typically from a layout file), we don't show the footer-cta %>
+<% hide_global_footer_cta = locals[:hide_global_footer_cta] || current_page.data.hide_global_footer_cta %>
 
-  <a href="<%= config[:signup_url] %>" title="Sign up for Sharesight" class="footer-cta__button">
-    Sign up for Free
-  </a>
-</div>
+<% if !hide_global_footer_cta %>
+  <div class="section footer-cta">
+    <span class="footer-cta__description">
+      <h5>Try Sharesight today</h5>
+      Track <strong>10 holdings</strong> for free.
+    </span>
+
+    <a href="<%= config[:signup_url] %>" title="Sign up for Sharesight" class="footer-cta__button">
+      Sign up for Free
+    </a>
+  </div>
+<% end %>
 
 <footer class="section footer" id="footer">
   <div class="footer__container">
