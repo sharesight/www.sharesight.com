@@ -5,7 +5,7 @@
  - The version of Node AWS offers currently (v6.10) is no longer in LTS.
  - Their UI has changed and may continue to change, these instructions may become out of date quickly.
  - As of current writing, some of the Examples and screenshots in their own documentation are incorrect and do not match reality.
- - Lambdas are pretty young.  Lambda + Cloudfront is only out of preview in the past 6 months and the origin request type we're using is even newer than that.
+ - Lambdas are pretty young.  Lambda + Cloudfront is only out of preview in the past 6 months and the origin response type we're using is even newer than that.
 
 ## Why
   - We want to serve users their localized content.
@@ -16,14 +16,18 @@
 ## Deployment
   - Always run these steps on the `develop` branch.  There could be multiple testing versions of this lambda file around and you should always work with the merged copy, not your own copy, when modifying staging.
   - Test code changes first via `yarn jest` and improve `./localizationLambda.jest.js` whenever you make changes!
-  - Visit the [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/localizeMarketingSiteCloudfrontRequests/versions/$LATEST)
+  - Visit the [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/localizeCloudfrontResponse/versions/$LATEST)
   - Paste the contents of `./localizationLambda.js` into the code section of `$LATEST`.
   - Under `Actions`, select `Publish a New Version`.  Cloudfront can only run versioned Lambdas, not aliased or $LATEST.
   - On the newly published version, drag the Cloudfront trigger onto the Lambda actions/triggers section.  This means "when Cloudfront does something, do this Lambda".
-  - Example Trigger: distributionId: E1LG497M3L1WGH, cacheBehavior: \*, event: Origin Request
-  - Alternatively, go into the Cloudfront Endpoint > Behavior Tab > Select the Behavior (eg. \*), and at the bottom of the page, change or set the version of the Lambda for *Origin Request* to match the version you just published.
+  - Example Trigger: distributionId: E1LG497M3L1WGH, cacheBehavior: \*, event: Origin Response
+  - Alternatively, go into the Cloudfront Endpoint > Behavior Tab > Select the Behavior (eg. \*), and at the bottom of the page, change or set the version of the Lambda for *Origin Response* to match the version you just published.
   - Invalidate everything, if necessary via Invalidations Tab: `/*`...
   - NOTE: You can assign different versions to different Cloudfront Endpoints!  So if you're testing a change, you assign version [100] to `staging-www.sharesight.com` and keep version [95] to `www.sharesight.com`.
+
+## Cloudfront Behavior
+  - whitelist headers: `CloudFront-Viewer-Country`
+  - whitelist cookies: `sharesight_country`
 
 ## Caching
   - Cloudfront caches, that's the point.  Be sure to invalidate if you make changes that require it.

@@ -1,17 +1,17 @@
 'use strict';
 
 /*
- * NOTE: This is an ORIGIN REQUEST Lambda running on Node v6.10.
+ * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v6.10.
  * If the Node version changes, this code may need major refactor.
- * It takes a request / response and returns a response.
+ * It takes a request + response and returns a response.
  * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
  *
  * This must be deployed *MANUALLY*.  See `../lambda/README.md`.
  * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
  */
 
-const validCountryCodes = ['au', 'ca', 'nz', 'uk'];
-const validCountryCodesLength = validCountryCodes.length; // cache this
+const validCountryCodes = { au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
+const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
 // dontProcess turns off all processing (ultimately, localization)
 const dontProcess = [
@@ -31,10 +31,10 @@ function ignoreErrors (fn) {
   }
 }
 
-function isValidCountryCode (code) {
-  if (!code || typeof code !== 'string') return false;
+function getCountryCode (code) {
+  if (!code || typeof code !== 'string') return undefined;
   code = code.toLowerCase();
-  return (validCountryCodes.indexOf(code) > -1);
+  return validCountryCodes[code];
 }
 
 function getPathCountryCode (uri) {
@@ -42,7 +42,7 @@ function getPathCountryCode (uri) {
   uri = uri.toLowerCase();
 
   for (let i = 0; i < validCountryCodesLength; i++) {
-    const code = validCountryCodes[i];
+    const code = Object.keys(validCountryCodes)[i];
     if (
       code &&
       uri.indexOf(`/${code}`) === 0 && // eg. startsWith
@@ -58,7 +58,8 @@ function getPathCountryCode (uri) {
 function getHeaderCountryCode (request) {
   return ignoreErrors(() => {
     let code = request.headers['cloudfront-viewer-country'][0].value;
-    if (isValidCountryCode(code)) return code.toLowerCase();
+    code = getCountryCode(code);
+    return code;
   })
 }
 
@@ -69,17 +70,18 @@ function getCookieCountryCode (request) {
     if (Array.isArray(request.headers.cookie)) {
       // NOTE: A cookie may have multiple values on it, so we join and split again
       const cookies = request.headers.cookie.map(cookie => cookie.value).join(';');
-      const regex = new RegExp(`^${cookieName}=(.*?)$`);
+      const regex = new RegExp(`^\\s*${cookieName}\\s*=\\s*(.*?)\\s*$`);
 
       // Look at all cookies, regex them, and pass matching strings on, then filter out undefineds, and grab the first result
-      const code = cookies.split(';')
+      const codes = cookies.split(';')
         .map(cookie => {
           const match = regex.exec(cookie.trim());
-          if (Array.isArray(match) && typeof match[1] === 'string') return match[1];
+          if (!Array.isArray(match)) return undefined;
+          return getCountryCode(match[1]);
         })
-        .filter(value => isValidCountryCode(value))[0]; // NOTE the [0], just grabbing the first code after we filter out the bads
+        .filter(a => a);
 
-      if (code) return code.toLowerCase();
+      return codes[0]; // could have multiple cookies, I suppose
     }
   });
 }
@@ -144,12 +146,13 @@ const handler = function (event, context, callback) {
 };
 
 module.exports = {
+  // exporting all so we can test it
   ignoreErrors: ignoreErrors,
   validCountryCodes: validCountryCodes,
   validCountryCodesLength: validCountryCodesLength,
   dontProcess: dontProcess,
   dontProcessLength: dontProcessLength,
-  isValidCountryCode: isValidCountryCode,
+  getCountryCode: getCountryCode,
   getPathCountryCode: getPathCountryCode,
   getHeaderCountryCode: getHeaderCountryCode,
   getCookieCountryCode: getCookieCountryCode,

@@ -4,7 +4,7 @@ const {
   validCountryCodesLength,
   dontProcess,
   dontProcessLength,
-  isValidCountryCode,
+  getCountryCode,
   getPathCountryCode,
   getHeaderCountryCode,
   getCookieCountryCode,
@@ -12,8 +12,14 @@ const {
   handler,
 } = require('./localizationLambda.js');
 
-const codes = ['au', 'ca', 'nz', 'uk'];
-const badCodes = ['us', 'EU', 'NZD', 'aud', 'gb', '1'];
+const codes = ['au', 'ca', 'nz', 'gb', 'uk'];
+const badCodes = ['us', 'EU', 'NZD', 'aud', 'ie', '1'];
+
+// account for gb
+const getCode = (code) => {
+  code = code.toLowerCase();
+  return code === 'gb' ? 'uk' : code;
+}
 
 // I know this is weird.
 const codesInAllCases = [].concat.apply([], codes.map(code => [
@@ -96,11 +102,11 @@ describe('localizationLambda', () => {
 
   describe('validCountryCodes', () => {
     test('array matches', () => {
-      expect(validCountryCodes).toEqual(codes);
+      expect(Object.keys(validCountryCodes)).toEqual(codes);
     })
 
     test('length matches', () => {
-      expect(validCountryCodesLength).toEqual(validCountryCodes.length)
+      expect(validCountryCodesLength).toEqual(Object.keys(validCountryCodes).length)
     });
   });
 
@@ -146,21 +152,21 @@ describe('localizationLambda', () => {
     });
   });
 
-  describe('isValidCountryCode', () => {
-    test('should return true when valid, regardless of case', () => {
+  describe('getCountryCode', () => {
+    test('should return the country code when valid, regardless of case', () => {
       expect.assertions(codesInAllCases.length);
 
       codesInAllCases.forEach(code => {
-        expect(isValidCountryCode(code)).toEqual(true);
+        expect(getCountryCode(code)).toEqual(getCode(code));
       });
     });
 
-    test('should return false when unknown', () => {
-      expect(isValidCountryCode('US')).toEqual(false);
-      expect(isValidCountryCode('EU')).toEqual(false);
-      expect(isValidCountryCode(1)).toEqual(false);
-      expect(isValidCountryCode({})).toEqual(false);
-      expect(isValidCountryCode(/whatever man/)).toEqual(false);
+    test('should return undefined when unknown', () => {
+      expect(getCountryCode('US')).toEqual(undefined);
+      expect(getCountryCode('EU')).toEqual(undefined);
+      expect(getCountryCode(1)).toEqual(undefined);
+      expect(getCountryCode({})).toEqual(undefined);
+      expect(getCountryCode(/whatever man/)).toEqual(undefined);
     });
   });
 
@@ -197,7 +203,7 @@ describe('localizationLambda', () => {
           }]
         }}
 
-        expect(getHeaderCountryCode(request)).toEqual(code.toLowerCase());
+        expect(getHeaderCountryCode(request)).toEqual(getCode(code));
       });
     });
 
@@ -211,7 +217,7 @@ describe('localizationLambda', () => {
       expect.assertions(badCodes.length);
 
       badCodes.forEach(code => {
-        const request = { headers: { 'cloudfront-viewer-country': [{ value: code, }] } }
+        const request = { headers: { 'cloudfront-viewer-country': [{ value: code }] } }
 
         expect(getHeaderCountryCode(request)).toEqual(undefined);
       })
@@ -232,7 +238,7 @@ describe('localizationLambda', () => {
           ]
         }}
 
-        expect(getCookieCountryCode(request)).toEqual(code.toLowerCase());
+        expect(getCookieCountryCode(request)).toEqual(getCode(code));
       });
     });
 
