@@ -19,7 +19,7 @@ const pageHelper = {
     return locale ? getPage(locale) : undefined // find the page itself
   },
 
-  getPage: function(name, locale_id = localization.current_locale_id) {
+  getPage: function(name, locale_id = localization.getCurrentLocaleId()) {
     name = urlHelper.getUnlocalizedPath(name)
     return localeHelper.getLocale(locale_id).pages.find(page => page.page === name)
   }

@@ -31,3 +31,4 @@ data/partners/
 .ruby-gemset
 node_modules/
 .envrc
+yarn-error.log

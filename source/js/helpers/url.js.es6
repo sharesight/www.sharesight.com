@@ -14,17 +14,6 @@ const urlHelper = {
     return true
   },
 
-  redirect: function (locale_id = localization.current_locale_id) {
-    if (locale_id === localeHelper.current_locale_path_id()) return
-    if (!this.shouldLocalizePath(window.location.pathname, locale_id)) return
-
-    const newPath = this.localizePath(window.location.pathname, locale_id)
-    if (window.location.pathname != newPath) {
-      window.location.pathname = newPath
-      return true // did redirect
-    }
-  },
-
   // we've very redundant in these adding and removing slashes.
   // For delete[0], etc., to be accurate accessors, we have to add/remove/squeeze slashes a lot!
   removeLocalizationFromPath: function(path) {
@@ -33,9 +22,9 @@ const urlHelper = {
     let split = path.split('/')
 
     // remove any valid locales or the current locale (via cookie, which could be an invalid locale) from the path
-    if (localeHelper.isValidLocaleId(split[0]) || split[0] === localization.current_locale_id) {
+    if (localeHelper.isValidLocaleId(split[0]) || split[0] === localization.getCurrentLocaleId()) {
       delete split[0]
-    } else if (!split[0] && (localeHelper.isValidLocaleId(split[1]) || split[1] === localization.current_locale_id)) {
+    } else if (!split[0] && (localeHelper.isValidLocaleId(split[1]) || split[1] === localization.getCurrentLocaleId())) {
       delete split[1]
     }
 
@@ -52,7 +41,7 @@ const urlHelper = {
     return this.removeLocalizationFromPath(path).split('/')[1] || 'index'
   },
 
-  localizePath: function (input = '', locale_id = localization.current_locale_id) {
+  localizePath: function (input = '', locale_id = localization.getCurrentLocaleId()) {
     if (!this.shouldLocalizePath(input, locale_id)) return input
     if (locale_id == config.default_locale_id) locale_id = ''
     if (!localeHelper.isValidLocaleId(locale_id)) locale_id = ''
