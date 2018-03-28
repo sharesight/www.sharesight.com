@@ -14,7 +14,7 @@ const localization = {
   },
 
   isGlobalOnlyPage () {
-    if (window.location.pathname.startsWith('/blog')) return true
+    if (window.location.pathname.indexOf('/blog') === 0) return true
     if (document.getElementById('_404')) return true
     return false
   },
@@ -36,7 +36,7 @@ const localization = {
     this.modifyContent()
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
-    if (!this.isGlobalOnlyPage() && !window.location.pathname.startsWith(`/${locale_id}`)) {
+    if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
       window.location.reload();
     }
   },
