@@ -9,7 +9,8 @@
   <%= partial "layouts/partials/head", locals: locals.merge({ pro: true }) %>
 
   <% partial "layouts/partials/body", locals: locals.merge({
-    header: "partials/site_header_pro"
+    header: "partials/site_header_pro",
+    hide_global_footer_cta: true
   }) do %>
     <%= yield %>
   <% end %>
