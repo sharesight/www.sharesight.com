@@ -45,7 +45,6 @@ config[:community_url] = ApplicationConfig::COMMUNITY_URL
 
 # Auto-generate these from the portfolio url.
 config[:api_url] = "#{config[:portfolio_url]}/api"
-config[:location_url] = "#{config[:portfolio_url]}/locations"
 config[:signup_url] = "#{config[:portfolio_url]}/signup"
 config[:login_url] = "#{config[:portfolio_url]}/login"
 config[:pro_signup_url] = "#{config[:portfolio_url]}/professional_signup"
