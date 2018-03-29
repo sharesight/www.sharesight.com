@@ -157,6 +157,7 @@ configure :build do
   activate :minify_html do |html|
     html.remove_http_protocol    = false
     html.remove_input_attributes = false
+    html.remove_quotes           = true
     html.remove_intertag_spaces  = true
   end
 end
