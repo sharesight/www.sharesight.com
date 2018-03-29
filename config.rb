@@ -137,7 +137,7 @@ helpers MiddlemanHelpers # includes every helper in helpers/middleman/*
 # Build-specific configuration
 configure :build do
   activate :gzip do |gzip|
-    gzip.exts = ['.js', '.css', '.html', '.htm', '.svg']
+    gzip.exts = %w(.js .css .html .htm .svg .txt .ico)
   end
 
   remove_paths = ['.DS_Store']
