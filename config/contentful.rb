@@ -16,7 +16,7 @@ module ContentfulConfig
 		ALL_ENTRIES = true
 
 		SCHEMAS = [
-			[ 'post', ::BlogPostMapper ],
+			{ name: 'post', mapper: ::BlogPostMapper },
 			'category',
 			'author'
 		]
@@ -31,7 +31,7 @@ module ContentfulConfig
 		ALL_ENTRIES = true
 
 		SCHEMAS = [
-			[ 'partner', ::PartnersPartnerMapper ],
+			{ name: 'partner', mapper: ::PartnersPartnerMapper },
 			'category'
 		]
 	end

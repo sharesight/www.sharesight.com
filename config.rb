@@ -85,13 +85,17 @@ activate :routing
     # This maps the content types; takes ['schema', 'array']; returns { 'schemas' => 'schema', 'arrays' => 'array' }
     f.content_types     = space::SCHEMAS.reduce(Hash.new(0)) { |memo, schema|
       mapper = ::DefaultMapper
+      name = schema
 
-      if schema.is_a?(Array)
-        mapper = schema[1]
-        schema = schema[0]
+      if schema.is_a?(Hash)
+        mapper = schema[:mapper] || ::DefaultMapper
+        name = schema[:name]
+        schema = schema[:contentful_schema_id] || name
       end
 
-      memo[schema.pluralize(2)] = { id: schema, mapper: mapper }
+      raise Exception.new("Invalid schema for Contentful.") if !name || !schema
+
+      memo[name.pluralize(2)] = { id: schema, mapper: mapper }
       memo # return
     }
   end
