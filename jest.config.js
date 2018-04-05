@@ -6,6 +6,7 @@ module.exports = {
     '**/?(*.)jest.js?(x)'
   ],
   testPathIgnorePatterns: [
+    '/.bundle/',
     '/node_modules/',
     '/vendor/',
     '/tmp/',
