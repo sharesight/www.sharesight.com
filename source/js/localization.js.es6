@@ -37,7 +37,7 @@ const localization = {
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
     if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
-      window.location.reload();
+      window.location.href = urlHelper.localizePath(window.location.pathname, locale_id);
     }
   },
 
