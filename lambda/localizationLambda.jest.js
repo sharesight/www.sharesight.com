@@ -12,17 +12,19 @@ const {
   handler,
 } = require('./localizationLambda.js');
 
-const codes = ['au', 'ca', 'nz', 'gb', 'uk'];
+const codes = ['global', 'au', 'ca', 'nz', 'gb', 'uk'];
 const badCodes = ['us', 'EU', 'NZD', 'aud', 'ie', '1'];
 
 // account for gb
 const getCode = (code) => {
   code = code.toLowerCase();
-  return code === 'gb' ? 'uk' : code;
+  if (code === 'gb') return 'uk';
+  if (code === 'global') return '';
+  return code;
 }
 
 // I know this is weird.
-const codesInAllCases = [].concat.apply([], codes.map(code => [
+const codesInAllCases = [].concat.apply([], codes.filter(code => code !== 'global').map(code => [
   code,
   code.toUpperCase(),
   code[0].toUpperCase() + code[1],
@@ -347,6 +349,16 @@ describe('localizationLambda', () => {
       expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
     });
 
+    test(`should do nothing when the the cookie local is global and the current page locale is global`, () => {
+      const mockCallback = jest.fn();
+      const event = generateCloudFrontEvent('/faq', 'global', 'nz');
+      const handled = handler(event, null, mockCallback);
+
+      expect(mockCallback.mock.calls.length).toEqual(1);
+      expect(mockCallback.mock.calls[0][0]).toEqual(null);
+      expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+    });
+
     test(`should respond with a 302 redirect when the cookie locale does not match the page locale`, () => {
       const mockCallback = jest.fn();
       const event = generateCloudFrontEvent('/nz/faq', 'ca', 'nz');
@@ -359,6 +371,20 @@ describe('localizationLambda', () => {
       expect(mockCallback.mock.calls[0][1].status).toEqual(302);
       expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
       expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/ca/faq');
+    });
+
+    test(`should respond with a 302 redirect to the global page when the cookie locale is global`, () => {
+      const mockCallback = jest.fn();
+      const event = generateCloudFrontEvent('/nz/faq', 'global', 'nz');
+      const eventResponse = Object.assign({}, event.Records[0].cf.response)
+      const handled = handler(event, null, mockCallback);
+
+      expect(mockCallback.mock.calls.length).toEqual(1);
+      expect(mockCallback.mock.calls[0][0]).toEqual(null);
+      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/faq');
     });
 
     test(`[as a side-effect] should respond with a 302 redirect when the case is incorrect on the locale`, () => {
