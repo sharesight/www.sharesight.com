@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 . ${TRAVIS_BUILD_DIR}/bin/travis/helpers.sh # source helpers for functions
 
 get_cache_from_s3() {
