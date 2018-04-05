@@ -7,23 +7,19 @@ get_cache_from_s3() {
     cd $TRAVIS_BUILD_DIR
     BUILT_FROM_BUNDLE=false
 
-    if [ "$AWS_ACCESS_KEY_ID" ] && [ "$AWS_SECRET_ACCESS_KEY" ]; then
-      # download the current build file
-      # use sync instead of mv/cp as it doesn't require the file to exist (see include/exclude)
-      announce_time_start # Must use for complicated functions like this
-        echo "aws s3 sync – looking for $TAR_FILENAME"
-        aws s3 sync "s3://$BUCKET_NAME/www" $TRAVIS_BUILD_DIR --exclude "*" --include "$TAR_FILENAME"
-      announce_time_finish
+    # download the current build file
+    # use sync instead of mv/cp as it doesn't require the file to exist (see include/exclude)
+    announce_time_start # Must use for complicated functions like this
+      echo "aws s3 sync – looking for $TAR_FILENAME"
+      aws s3 sync "s3://$BUCKET_NAME/www" $TRAVIS_BUILD_DIR --exclude "*" --include "$TAR_FILENAME"
+    announce_time_finish
 
-      if [ -f "./$TAR_FILENAME" ]; then
-        announce tar -xf ./$TAR_FILENAME
-        echo "Using bundle from S3 – s3://$BUCKET_NAME/www/$TAR_FILENAME"
-        BUILT_FROM_BUNDLE=true
-      else
-        echo "Could not find an S3 build, will build."
-      fi
+    if [ -f "./$TAR_FILENAME" ]; then
+      announce tar -xf ./$TAR_FILENAME
+      echo "Using bundle from S3 – s3://$BUCKET_NAME/www/$TAR_FILENAME"
+      BUILT_FROM_BUNDLE=true
     else
-      echo "WARNING: Did not have access to Travis Encrypted ENV Variables!"
+      echo "Could not find an S3 build, will build."
     fi
 
     export BUILT_FROM_BUNDLE
