@@ -10,7 +10,7 @@
  * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
  */
 
-const validCountryCodes = { au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
+const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
 // dontProcess turns off all processing (ultimately, localization)
@@ -79,7 +79,7 @@ function getCookieCountryCode (request) {
           if (!Array.isArray(match)) return undefined;
           return getCountryCode(match[1]);
         })
-        .filter(a => a);
+        .filter(a => a !== undefined);
 
       return codes[0]; // could have multiple cookies, I suppose
     }
@@ -118,10 +118,10 @@ const handler = function (event, context, callback) {
 
     newUri = pathWithoutCountryCode(newUri);
 
-    if (cookieCountryCode) {
+    if (cookieCountryCode !== undefined) {
       newUri = `/${cookieCountryCode}/${newUri}`;
       console.log(`Localized using a cookie; new uri: ${newUri}`);
-    } else if (headerCountryCode) {
+    } else if (headerCountryCode !== undefined) {
       newUri = `/${headerCountryCode}/${newUri}`;
       console.log(`Localized using the cloudfront header; new uri: ${newUri}`);
     }
