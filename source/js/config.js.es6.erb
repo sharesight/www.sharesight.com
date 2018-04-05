@@ -7,7 +7,6 @@ const config = {
   base_url: `<%= base_url('/') %>`,
   base_path: `<%= base_path('/') %>`,
   help_url: `<%= base_url('/', base_url: config[:help_url]) %>`,
-  location_url: `<%= config[:location_url] %>`,
   locales: [ // this is some minimal data coming from locales.json
     <% data.locales.each do |locale| %>
     {

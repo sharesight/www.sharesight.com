@@ -45,7 +45,6 @@ config[:community_url] = ApplicationConfig::COMMUNITY_URL
 
 # Auto-generate these from the portfolio url.
 config[:api_url] = "#{config[:portfolio_url]}/api"
-config[:location_url] = "#{config[:portfolio_url]}/locations"
 config[:signup_url] = "#{config[:portfolio_url]}/signup"
 config[:login_url] = "#{config[:portfolio_url]}/login"
 config[:pro_signup_url] = "#{config[:portfolio_url]}/professional_signup"
@@ -86,13 +85,17 @@ activate :routing
     # This maps the content types; takes ['schema', 'array']; returns { 'schemas' => 'schema', 'arrays' => 'array' }
     f.content_types     = space::SCHEMAS.reduce(Hash.new(0)) { |memo, schema|
       mapper = ::DefaultMapper
+      name = schema
 
-      if schema.is_a?(Array)
-        mapper = schema[1]
-        schema = schema[0]
+      if schema.is_a?(Hash)
+        mapper = schema[:mapper] || ::DefaultMapper
+        name = schema[:name]
+        schema = schema[:contentful_schema_id] || name
       end
 
-      memo[schema.pluralize(2)] = { id: schema, mapper: mapper }
+      raise Exception.new("Invalid schema for Contentful.") if !name || !schema
+
+      memo[name.pluralize(2)] = { id: schema, mapper: mapper }
       memo # return
     }
   end
@@ -138,7 +141,7 @@ helpers MiddlemanHelpers # includes every helper in helpers/middleman/*
 # Build-specific configuration
 configure :build do
   activate :gzip do |gzip|
-    gzip.exts = ['.js', '.css', '.html', '.htm', '.svg']
+    gzip.exts = %w(.js .css .html .htm .svg .txt .ico)
   end
 
   remove_paths = ['.DS_Store']
@@ -158,6 +161,7 @@ configure :build do
   activate :minify_html do |html|
     html.remove_http_protocol    = false
     html.remove_input_attributes = false
+    html.remove_quotes           = true
     html.remove_intertag_spaces  = true
   end
 end
