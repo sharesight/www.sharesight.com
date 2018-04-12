@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 . ${TRAVIS_BUILD_DIR}/bin/travis/helpers.sh # source helpers for functions
 
 # NOTE: This should always be built in the deploy step, so only for develop/master branches and NOT PRs

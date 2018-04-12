@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 . ${TRAVIS_BUILD_DIR}/bin/travis/helpers.sh # source helpers for functions
 
 if [ "$RUN_TESTS" = "false" ]; then
@@ -6,12 +7,25 @@ if [ "$RUN_TESTS" = "false" ]; then
 fi
 
 ##########
+fold_start yarn.install "yarn install"
+  announce yarn install --frozen-lockfile --non-interactive
+fold_end yarn.install
+
+##########
+fold_start yarn.jest "yarn jest"
+    announce yarn run jest --runInBand # run in development so we don't have the s3_sync stuff
+fold_end yarn.jest
+
+##########
 fold_start rspec "rspec spec tests"
   announce_time_start # Must use when working with env variables.
     echo "bundle exec rspec spec"
     APP_ENV=development bundle exec rspec spec # run in development so we don't have the s3_sync stuff
   announce_time_finish
+fold_end rspec
 
+##########
+fold_start bundle_audit "bundle audit"
   announce bundle exec bundle-audit update
   announce bundle exec bundle-audit check
-fold_end rspec
+fold_end bundle_audit
