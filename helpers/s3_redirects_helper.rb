@@ -1,9 +1,8 @@
 require 'aws/s3'
 require 'uri'
 
-# TODO: Untested
+# TODO: Untested Code
 # execute: S3RedirectsHelper::make_s3_redirects
-#
 
 module S3RedirectsHelper
 
@@ -30,10 +29,12 @@ module S3RedirectsHelper
       Dir.entries(File.join("build", current_dir)).each do |object|
         full_name = File.join(current_dir, object)
 
-        next if object.match /\.gz$/ # ignore these zipped pages
-        next if object.match /^\.$/ # ignore .
-        next if object.match /^\.\.$/ # ignore ..
-        next if object.match /\.xml$/ # ignore the blog rss feed and any other xml files
+        next if object.match(/^\.$/) # ignore .
+        next if object.match(/^\.\.$/) # ignore ..
+
+        # don't redirect gz, gzip, json, xml, htaccess, etc, but not html
+        next if object.match(/\.[A-z0-9]{2,4}\/?$/) && !object.match(/\.html$/) # ignore all non-html files with extensions 2-4 characters long
+        next if object.match(/\.htaccess$/)
 
         # if object is a directory, store it to read later
         directory_queue << full_name if File.directory?(full_name)
@@ -86,6 +87,7 @@ module S3RedirectsHelper
       end
     end
     puts "Creating a 301 redirect for object #{source_path} to #{target_path}"
+
     AWS::S3::S3Object.store(source_path, nil, bucket_name, 'x-amz-website-redirect-location': URI.encode(target_path), 'Content-Type': 'text/html') unless dry_run
   end
 end

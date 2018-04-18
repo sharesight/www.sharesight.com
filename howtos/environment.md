@@ -15,6 +15,6 @@ As this is a public repo, everything is stored in local environment keys.
    - AWS_DEPLOY_SECRET_KEY
 
 #### Travis Specific Environment:
- - For Travis Build Caching via aws-cli (currently linked to the `travis-ci` user):
+ - For Travis Build Caching via aws-cli (currently linked to the `travis-ci` user, which is currently shared by both [www] and [help]):
    - AWS_ACCESS_KEY_ID
    - AWS_SECRET_ACCESS_KEY
