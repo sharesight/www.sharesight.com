@@ -14,7 +14,7 @@
     "features": {
       "sharesight_connect": "write access",
       "supported_stock_exchanges": true,
-      "cash_account": false,
+      "cash_accounts": false,
       "automatic_adjustments": true,
       "broker_email_import": true,
       "price_and_portfolio_alerts": true,
@@ -62,7 +62,7 @@
     "features": {
       "sharesight_connect": "write access",
       "supported_stock_exchanges": true,
-      "cash_account": true,
+      "cash_accounts": false,
       "automatic_adjustments": true,
       "broker_email_import": true,
       "price_and_portfolio_alerts": true,
@@ -113,7 +113,7 @@
     "features": {
       "sharesight_connect": "read + write access",
       "supported_stock_exchanges": true,
-      "cash_account": true,
+      "cash_accounts": true,
       "automatic_adjustments": true,
       "broker_email_import": true,
       "price_and_portfolio_alerts": true,
@@ -166,7 +166,7 @@
     "features": {
       "sharesight_connect": "read + write access",
       "supported_stock_exchanges": true,
-      "cash_account": true,
+      "cash_accounts": true,
       "automatic_adjustments": true,
       "price_and_portfolio_alerts": true,
       "mobile_app": true,
