@@ -65,10 +65,15 @@ layout: layout_index
     </p>
 
     <div class="partner-home__logos">
-      <% partners_collection(locale_obj[:lang]).take(4).each do |partner| %>
-      <div class="partner-home__logo" style="<% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>">
-        <% if partner[:logo] %><img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" /><% end %>
-      </div>
+      <% partners_collection(locale_obj[:lang]).select{ |partner| partner[:logo] }.take(4).each do |partner| %>
+        <a
+          class="partner-home__logo"
+          href="<%= partner_url(partner, locale_id: locale_obj[:id]) %>"
+          style="<% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>"
+          title="<%= partner[:name] %>"
+        >
+          <img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" />
+        </a>
       <% end %>
     </div>
 
