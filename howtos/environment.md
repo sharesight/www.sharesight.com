@@ -4,12 +4,14 @@ As this is a public repo, everything is stored in local environment keys.
 
 #### Environment Settings:
  - Contenful, see `config/contentful.rb`
-   - Create your own Contentful Keys!
-   - CONTENTFUL_BLOG_ACCESS_TOKEN
-   - CONTENTFUL_BLOG_PREVIEW_TOKEN
-   - CONTENTFUL_PARTNERS_ACCESS_TOKEN
-   - CONTENTFUL_PARTNERS_PREVIEW_TOKEN
- - AWS Deploys, see `config/environment/*.rb`
+   - Create your **own** Contentful keys for each space.
+   - Blog Space: https://app.contentful.com/spaces/91sm3pewxzag/api/keys
+     - CONTENTFUL_BLOG_ACCESS_TOKEN
+     - CONTENTFUL_BLOG_PREVIEW_TOKEN
+   - Partners Space: https://app.contentful.com/spaces/rafbawofr5bl/api/keys
+     - CONTENTFUL_PARTNERS_ACCESS_TOKEN
+     - CONTENTFUL_PARTNERS_PREVIEW_TOKEN
+ - For deploys to AWS, see `config/environment/*.rb`
    - Use your own AWS Keys!
    - AWS_DEPLOY_ACCESS_ID
    - AWS_DEPLOY_SECRET_KEY
