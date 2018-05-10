@@ -9,11 +9,30 @@
 
 1. Clone this repo into a local directory
 2. Change to your new local directory
-3. Setup local environment keys.  See `howtos/environment.md`.
-4. Install the gems: `bundle install`
-5. Load content: `middleman contentful`
-6. Build the site: `middleman build`
-7. Or run a local server: `middleman`
+3. Setup local environment keys.  `.envrc` works great!  See `howtos/environment.md`.
+4. `bundle install && yarn`
+5. `yarn start` – it's not a javascript package, but it's helpful nevertheless
+
+Individual Commands (see package.json):
+1. Load content: `middleman contentful`
+2. Build the site: `middleman build`
+3. Or run a local server: `middleman`
+
+## Testing
+
+Most things are tested – both in `rspec` and `jest`.  Every page is tested that it renders, has a title, meta tags, etc.
+
+You need to install packages and run `yarn contentful` first.
+
+Commands (see package.json):
+ - `yarn test`
+ - `yarn rspec` / `yarn rspec:tdd`
+ - `yarn jest` / `yarn jest:tdd`
+
+## Testing Coverage Holes
+
+	1. Extensions are not tested
+	2. The logic in the config file is not tested.
 
 ## Cloudfront Localization via Lambda
  - See `lambda/README.md`!
@@ -24,6 +43,11 @@ The website automatically deploys to staging and production from the Travis-CI
 build, so normally you don't need to deploy anything manually.
 
 ### Building/Deploying to STAGING:
+
+1. Create PR
+2. Merge PR into `develop` branch.
+3. Travis will deploy it to `staging-www.sharesight.com`.
+4. Once build is complete, may take up to 15 minutes to resolve caches.
 
 *Note:* When Travis-CI builds the `develop` branch, it will automatically deploy
 the code to `staging-www.sharesight.com` after any successful build. The
@@ -37,6 +61,10 @@ Make sure you've modified your configuration settings (as described below) befor
 		APP_ENV=staging bundle exec middleman s3_sync
 
 ### Building/Deploying to PRODUCTION:
+
+1. Merge PR into `master` branch.
+3. Travis will deploy it to `www.sharesight.com`.
+3. Once build is complete, may take up to 15 minutes to resolve caches.
 
 *Note:* When Travis-CI builds the `master` branch, it will automatically deploy
 the code to `www.sharesight.com` after any successful build. The
@@ -82,9 +110,3 @@ Do note, the default_locale_id is set in config.rb.
     ![bucket properties](s3/bucket_properties.png)
 
     and press the `Save` button.
-
-
-## Testing Holes
-
-	1. Extensions are not tested.
-	2. The logic in the config file is not tested.
