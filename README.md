@@ -9,11 +9,14 @@
 
 1. Clone this repo into a local directory
 2. Change to your new local directory
-3. Setup local environment keys.  See `howtos/environment.md`.
-4. Install the gems: `bundle install`
-5. Load content: `middleman contentful`
-6. Build the site: `middleman build`
-7. Or run a local server: `middleman`
+3. Setup local environment keys.  `.envrc` works great!  See `howtos/environment.md`.
+4. `bundle install && yarn`
+5. `yarn start` – it's not a javascript package, but it's helpful nevertheless
+
+Individual Commands (see package.json):
+1. Load content: `middleman contentful`
+2. Build the site: `middleman build`
+3. Or run a local server: `middleman`
 
 ## Cloudfront Localization via Lambda
  - See `lambda/README.md`!
