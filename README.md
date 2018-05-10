@@ -18,6 +18,22 @@ Individual Commands (see package.json):
 2. Build the site: `middleman build`
 3. Or run a local server: `middleman`
 
+## Testing
+
+Most things are tested – both in `rspec` and `jest`.  Every page is tested that it renders, has a title, meta tags, etc.
+
+You need to install packages and run `yarn contentful` first.
+
+Commands (see package.json):
+ - `yarn test`
+ - `yarn rspec` / `yarn rspec:tdd`
+ - `yarn jest` / `yarn jest:tdd`
+
+## Testing Coverage Holes
+
+	1. Extensions are not tested
+	2. The logic in the config file is not tested.
+
 ## Cloudfront Localization via Lambda
  - See `lambda/README.md`!
 
@@ -85,9 +101,3 @@ Do note, the default_locale_id is set in config.rb.
     ![bucket properties](s3/bucket_properties.png)
 
     and press the `Save` button.
-
-
-## Testing Holes
-
-	1. Extensions are not tested.
-	2. The logic in the config file is not tested.
