@@ -44,6 +44,11 @@ build, so normally you don't need to deploy anything manually.
 
 ### Building/Deploying to STAGING:
 
+1. Create PR
+2. Merge PR into `develop` branch.
+3. Travis will deploy it to `staging-www.sharesight.com`.
+4. Once build is complete, may take up to 15 minutes to resolve caches.
+
 *Note:* When Travis-CI builds the `develop` branch, it will automatically deploy
 the code to `staging-www.sharesight.com` after any successful build. The
 instructions below are just for those cases when you want to manually deploy.
@@ -56,6 +61,10 @@ Make sure you've modified your configuration settings (as described below) befor
 		APP_ENV=staging bundle exec middleman s3_sync
 
 ### Building/Deploying to PRODUCTION:
+
+1. Merge PR into `master` branch.
+3. Travis will deploy it to `www.sharesight.com`.
+3. Once build is complete, may take up to 15 minutes to resolve caches.
 
 *Note:* When Travis-CI builds the `master` branch, it will automatically deploy
 the code to `www.sharesight.com` after any successful build. The
