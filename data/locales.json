@@ -14,6 +14,7 @@
     "append_title": "Sharesight",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App",
+    "xero_cashbook": false,
     "pages": [
       {
         "page": "index",
@@ -133,6 +134,7 @@
     "append_title": "Sharesight Australia",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App Australia",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Australia",
+    "xero_cashbook": true,
     "pages": [
       {
         "page": "index",
@@ -236,6 +238,7 @@
     "append_title": "Sharesight Canada",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App Canada",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Canada",
+    "xero_cashbook": false,
     "pages": [
       {
         "page": "index",
@@ -346,6 +349,7 @@
     "append_title": "Sharesight New Zealand",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App New Zealand",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App New Zealand",
+    "xero_cashbook": true,
     "pages": [
       {
         "page": "index",
@@ -450,6 +454,7 @@
     "append_title": "Sharesight UK",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App UK",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App UK",
+    "xero_cashbook": false,
     "pages": [
       {
         "page": "index",
