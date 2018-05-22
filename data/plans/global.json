@@ -135,7 +135,7 @@
       "capital_gains_tax_report": false,
       "unrealised_capital_gains_tax_report": false,
       "future_income_report": true,
-      "diversity_report": false,
+      "diversity_report": true,
       "contributions_analysis_report": false,
       "traders_tax_report": false,
       "foreign_investment_fund_report": false
