@@ -70,16 +70,19 @@ section_class: 'section_home'
       </div>
     </div>
   </section>
-  <div class="alternate layout-med">
-    <div class="container cards_container">
-      <div class="o-video_wrapper">
-        <div id="js-about-overlay"></div>
-        <iframe id="content_video" class="external_video" src="https://player.vimeo.com/video/102970230?color=ff7b30&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1" width="500" height="281" frameborder="0"
-          allowfullscreen=""></iframe>
-        </div>
-      <p class="paragraph_important">If you like the investment insight you get from Sharesight, you’ll love the complete financial picture you get by connecting your portfolio to Xero.</p>
+
+  <% if locale_obj[:xero_cashbook] %>
+    <div class="alternate layout-med">
+      <div class="container cards_container">
+        <div class="o-video_wrapper">
+          <div id="js-about-overlay"></div>
+          <iframe id="content_video" class="external_video" src="https://player.vimeo.com/video/102970230?color=ff7b30&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1" width="500" height="281" frameborder="0"
+            allowfullscreen=""></iframe>
+          </div>
+        <p class="paragraph_important">If you like the investment insight you get from Sharesight, you’ll love the complete financial picture you get by connecting your portfolio to Xero.</p>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
 
 <section class="xero layout-med">
@@ -98,33 +101,22 @@ section_class: 'section_home'
     <section>
       <h2 class="heading_important heading_light">Frequently Asked Questions</h2>
 
-      <% data.xero_faqs.each do |faq|%>
-        <% if faq[:locale_access].include? locale_obj[:id] %>
-          <section>
+      <% data.xero_faqs.select{ |faq| !faq[:locale_access] || faq[:locale_access].include?(locale_obj[:id]) }.each do |faq|%>
+        <section>
+          <span class="toggle">
+            <span data-state-toggle="open">+</span>
+          </span>
 
-            <span class="toggle">
-              <span data-state-toggle="open">+</span>
-            </span>
+          <h3 class="faq-heading" tabindex="0">
+            <%= faq.question %>
+          </h3>
 
-            <h3 class="faq-heading" tabindex="0">
-              <% if locale_obj[:id] == default_locale_id %>
-                <%=faq.question_alt%>
-              <% else %>
-                <%=faq.question%>
-              <% end %>
-            </h3>
-
-            <div class="faq-answer" aria-hidden="true">
-              <% if faq[:answers_template].empty? %>
-                <% faq.answers.each do |answer| %>
-                  <p><%=answer%></p>
-                <% end %>
-              <% else %>
-                <%= partial "partials/xero_faqs/#{faq[:answers_template]}", locals: { locale_obj: locale_obj } %>
-              <% end %>
-            </div>
-          </section>
-        <% end %>
+          <div class="faq-answer" aria-hidden="true">
+            <% if faq[:answers_template] %>
+              <%= partial "partials/xero_faqs/#{faq[:answers_template]}", locals: { locale_obj: locale_obj } %>
+            <% end %>
+          </div>
+        </section>
       <% end %>
     </section>
   </div>
