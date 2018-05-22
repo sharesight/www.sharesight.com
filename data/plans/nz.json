@@ -13,7 +13,11 @@
   },
   {
     "label": "Investor",
-    "price": 25
+    "price": 25,
+
+    "reports": {
+      "diversity_report": false,
+    }
   },
   {
     "label": "Expert",
