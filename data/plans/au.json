@@ -19,7 +19,6 @@
     "price": 25,
 
     "reports": {
-      "diversity_report": false,
       "capital_gains_tax_report": true,
       "unrealised_capital_gains_tax_report": true
     },
