@@ -1,22 +1,25 @@
 [{
-  "id": 1,
+  "xero_cashbook": null, // only true or false matter, null is the default, this is purely as an example
   "question": "I have an existing Xero account - how do I connect it to my Sharesight portfolio?",
   "answers_template": "have_existing_xero_account",
   "slug": "have-existing-xero-account"
 }, {
-  "id": 2,
+  "xero_cashbook": false,
   "question": "I don’t have a Xero account - how do I get one?",
   "answers_template": "dont_have_existing_xero_account",
   "slug": "dont-have-existing-xero-account"
 }, {
-  "id": 3,
-  "locale_access": ["nz", "au"], // match locales.json => xero_cashbook
+  "xero_cashbook": true,
+  "question": "I don’t have a Xero account - how do I get one?",
+  "answers_template": "dont_have_existing_xero_account_with_cashbook",
+  "slug": "dont-have-existing-xero-account-with-cashbook"
+}, {
+  "xero_cashbook": true,
   "question": "What’s the difference between Xero Business Edition and Cashbook?",
   "answers_template": "difference_between_xero_business",
   "slug": "difference-between-xero-business"
 }, {
-  "id": 4,
-  "locale_access": ["nz", "au"], // match locales.json => xero_cashbook
+  "xero_cashbook": true,
   "question": "How can I get Xero Cashbook, and how much does it cost?",
   "answers_template": "how_much_does_cashbook_cost",
   "slug": "how-much-does-cashbook-cost"

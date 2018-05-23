@@ -101,7 +101,11 @@ section_class: 'section_home'
     <section>
       <h2 class="heading_important heading_light">Frequently Asked Questions</h2>
 
-      <% data.xero_faqs.select{ |faq| !faq[:locale_access] || faq[:locale_access].include?(locale_obj[:id]) }.each do |faq|%>
+      <% data.xero_faqs.select{ |faq|
+        !faq[:locale_access] || faq[:locale_access].include?(locale_obj[:id])
+      }.select{ |faq|
+        faq[:xero_cashbook].nil? || faq[:xero_cashbook] == locale_obj[:xero_cashbook]
+      }.each do |faq|%>
         <section>
           <span class="toggle">
             <span data-state-toggle="open">+</span>
