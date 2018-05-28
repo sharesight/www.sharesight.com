@@ -7,16 +7,13 @@ section_class: ''
 <% locale_obj = locals[:locale_obj] || current_locale_obj %>
 
 <%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
-<section class="section_base second-tier">
+<section class="section_base second-tier section--center">
   <div class="container">
-
-    <div class="second-tier_wrapper">
-      <h1 class="heading_important heading_light">Thank You</h1>
-      <p>Thank you for taking the time to complete our survey.</p>
-      <p>
-        <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a>
-      </p>
-    </div>
-
+    <h3 class="heading_important heading_light">Thank You</h3>
+    <p>Thank you for taking the time to complete our survey.</p>
+    <small>
+      Back to <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a>
+      or <a href="<%= config[:portfolio_url] %>" title="Login to your Portfolio">Login to Your Portfolio</a>
+    </small>
   </div>
 </section>

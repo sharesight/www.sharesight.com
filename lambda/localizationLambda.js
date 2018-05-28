@@ -16,6 +16,7 @@ const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache 
 // dontProcess turns off all processing (ultimately, localization)
 const dontProcess = [
   /^\/blog\/?/, // don't localize the blog
+  /^\/survey-thanks\/?/, // don't localize the survey-thanks pages
   /\.[A-z0-9]{2,4}\/?$/, // don't process files; eg.: xml, html, txt, mp4, etc
   /\.htaccess\/?$/,
 ];

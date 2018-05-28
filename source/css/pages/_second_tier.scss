@@ -2,14 +2,14 @@
   .second-tier_wrapper {
     max-width: 950px;
     text-align: left;
-    // TODO: find where the centering class is and remove this and that.
   }
 
   .heading_important {
-    @include fontSize(55px);
+    @include fontSize(50px);
     line-height: 1.25;
+
     @media (min-width: $screen-sm-min) {
-       @include fontSize(70px);
+       @include fontSize(60px);
     }
   }
 

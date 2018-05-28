@@ -15,6 +15,7 @@ const localization = {
 
   isGlobalOnlyPage () {
     if (window.location.pathname.indexOf('/blog') === 0) return true
+    if (window.location.pathname.indexOf('/survey-thanks') === 0) return true
     if (document.getElementById('_404')) return true
     return false
   },
