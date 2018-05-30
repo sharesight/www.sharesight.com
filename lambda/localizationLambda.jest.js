@@ -31,7 +31,7 @@ const codesInAllCases = [].concat.apply([], codes.filter(code => code !== 'globa
   code[0] + code[1].toUpperCase(),
 ]));
 
-const blogUris = ['/blog', '/blog/', '/blog/some-blog-url/'];
+const ignoreUris = ['/blog', '/blog/', '/blog/some-blog-url/', '/survey-thanks', '/survey-thanks/'];
 const assetUris = [
   '/js/some-file-12389a.js/',
   '/css/styles.css',
@@ -118,9 +118,9 @@ describe('localizationLambda', () => {
     });
 
     test('ignores blogs', (done) => {
-      expect.assertions(blogUris.length);
+      expect.assertions(ignoreUris.length);
 
-      blogUris.forEach(uri => {
+      ignoreUris.forEach(uri => {
         let didMatch = false;
         for (let i=0; i < dontProcessLength; i++) {
           if (uri.match(dontProcess[i])) {
@@ -302,9 +302,9 @@ describe('localizationLambda', () => {
 
   describe('handler', () => {
     test('should ignore blogs', () => {
-      expect.assertions(blogUris.length * 3);
+      expect.assertions(ignoreUris.length * 3);
 
-      blogUris.forEach(uri => {
+      ignoreUris.forEach(uri => {
         const mockCallback = jest.fn();
         const event = generateCloudFrontEvent(uri);
         const handled = handler(event, null, mockCallback);
