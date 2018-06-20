@@ -1,4 +1,4 @@
-# Sharesight's Static Marketing Website
+# Sharesight's Static Website
 
 ## Dependencies
 
