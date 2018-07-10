@@ -86,7 +86,8 @@
 
   .nav_menu_item {
     float: left;
-    margin-right: 4px;
+    margin-right: 10px;
+
     @include respond-to(xs, max) {
       &.login,
       &.signup {
