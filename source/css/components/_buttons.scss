@@ -123,7 +123,7 @@
     color: $colour_default;
 
     &, &:hover {
-      border: none;
+      border-color: transparent;
       background: transparent;
     }
 
