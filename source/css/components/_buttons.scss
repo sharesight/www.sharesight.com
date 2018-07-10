@@ -90,8 +90,9 @@
       background-color: $colour_secondary;
 
       &:hover {
-        border-color: lighten($colour_secondary, 12%);
-        background-color: lighten($colour_secondary, 12%);
+        color: #fff;
+        border-color: lighten($colour_pro, 12%);
+        background-color: lighten($colour_pro, 12%);
       }
     }
 
