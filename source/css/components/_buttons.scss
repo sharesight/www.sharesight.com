@@ -172,37 +172,6 @@
   }
 }
 
-.btn-login,
-.btn-signup {
-  @include fontSize(14px);
-  text-transform: uppercase;
-  font-weight: normal;
-  display: block;
-  width: 99px;
-  height: 47px;
-  line-height: 48px;
-  text-align: center;
-  text-decoration: none;
-  color: $colour_default;
-}
-
-.btn-login {
-  height: 49px;
-
-  &:hover {
-    color: darken($colour_default, 10%);
-  }
-}
-
-.btn-signup {
-  border: 1px solid $colour_default;
-
-  &:hover {
-    background-color: $colour_default;
-    color: #fff;
-  }
-}
-
 .btn-menu-signup {
   display: block;
   height: 62px;
