@@ -44,6 +44,15 @@
   </script>
 <% end %>
 
+<% if ApplicationConfig.const_defined?(:Intercom) && ApplicationConfig::Intercom::APP_ID %>
+  <script>
+    window.intercomSettings = { app_id: '<%= ApplicationConfig::Intercom::APP_ID %>' };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
+    s.src='https://widget.intercom.io/widget/<%= ApplicationConfig::Optimizely::ID %>';
+    var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
+<% end %>
+
 <% if ApplicationConfig.const_defined?(:Optimizely) && ApplicationConfig::Optimizely::KEY %>
   <script src="https://cdn.optimizely.com/js/<%= ApplicationConfig::Optimizely::KEY %>.js" async></script>
 <% end %>
