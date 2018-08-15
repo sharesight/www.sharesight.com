@@ -35,8 +35,8 @@ describe 'Build Sanity', :type => :feature do
 
     # files only in root directory
     expect(root_dir).to include("favicon.ico")
-    expect(root_dir).to include("favicon-16x16.png")
-    expect(root_dir).to include("favicon-32x32.png")
+    expect(root_dir).to include(match(/favicon-16x16-[A-f0-9]+\.png/)) # is hashed
+    expect(root_dir).to include(match(/favicon-32x32-[A-f0-9]+\.png/)) # is hashed
     expect(root_dir).to include("robots.txt")
     expect(root_dir).to include("sitemap.xml")
 
