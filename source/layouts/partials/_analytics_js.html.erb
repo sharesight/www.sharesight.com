@@ -52,7 +52,3 @@
     var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
   </script>
 <% end %>
-
-<% if ApplicationConfig.const_defined?(:Optimizely) && ApplicationConfig::Optimizely::KEY %>
-  <script src="https://cdn.optimizely.com/js/<%= ApplicationConfig::Optimizely::KEY %>.js" async></script>
-<% end %>
