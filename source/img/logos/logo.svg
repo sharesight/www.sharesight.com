@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1544px" height="660px" viewBox="0 0 1544 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M250.866521,132.994455 C250.866521,198.082652 198.099658,250.866521 133.000292,250.866521 C67.9201881,250.866521 15.1334792,198.082652 15.1334792,132.994455 C15.1334792,67.9021714 67.9201881,15.1334792 133.000292,15.1334792 C198.099658,15.1334792 250.866521,67.9021714 250.866521,132.994455 Z" id="path-1"></path>
+    </defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sharesight" transform="translate(0.000000, 217.000000)" font-family="Asenine" font-size="429.6742" font-weight="normal" letter-spacing="14">
+            <text>
+                <tspan x="0.432166721" y="345" fill="#F5A623">Share</tspan>
+                <tspan x="879.724835" y="345" fill="#2F353E">sight</tspan>
+            </text>
+        </g>
+        <g id="Thin-Clipped" transform="translate(1119.000000, -29.000000)">
+            <g id="Bars-–-Clipped" transform="translate(140.533333, 49.866667)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <g id="Bars" mask="url(#mask-2)" fill-rule="evenodd">
+                    <polygon id="Bar-1" fill="#F5A623" points="0 266 49.4748359 266 49.4748359 198.4814 0 198.4814"></polygon>
+                    <polygon id="Bar-2" fill="#F8C065" points="54.131291 266 103.606127 266 103.606127 164.140044 54.131291 164.140044"></polygon>
+                    <polygon id="Bar-3" fill="#FAD291" points="108.262582 266 157.737418 266 157.737418 122.814004 108.262582 122.814004"></polygon>
+                    <polygon id="Bar-4" fill="#FCE0B2" points="162.393873 266 211.868709 266 211.868709 89.0547046 162.393873 89.0547046"></polygon>
+                    <polygon id="Bar-5" fill="#FEF2DE" points="216.525164 0 266 0 266 266 216.525164 266"></polygon>
+                </g>
+            </g>
+            <g id="Thin-Rim" transform="translate(16.433333, 47.600000)" stroke="#6B7278" stroke-width="15">
+                <path d="M391.995605,136.021834 C391.406452,210.549291 330.479326,270.486479 255.906992,269.892531 C181.347132,269.303683 121.377167,208.412664 121.972557,133.886341 C122.561143,59.3532177 183.483166,-0.585104116 258.043592,0.0043100673 C332.620463,0.59485774 392.590995,61.4887106 391.995605,136.021834 Z" id="Stroke-1"></path>
+                <path d="M152.602026,223.969072 L0,330" id="Stroke-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
