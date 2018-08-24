@@ -26,6 +26,8 @@
   <main role="main" id="main-area" aria-label="Start on main content">
     <%= yield %>
 
+    <div class="addthis_inline_share_toolbox"></div>
+
     <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
   </main>
 
