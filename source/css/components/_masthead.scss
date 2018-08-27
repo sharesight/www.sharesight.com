@@ -404,21 +404,6 @@
   }
 }
 
-.masthead_extension {
-  background-color: #fff;
-  text-align: center;
-  display: none;
-
-  @include respond-to(xs, max) {
-    display: block;
-    padding: 60px 25px 25px;
-  }
-
-  .btn-secondary {
-    margin: 0 auto;
-  }
-}
-
 .masthead_tier {
   height: 100px;
   padding-bottom: 0;
