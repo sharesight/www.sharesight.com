@@ -27,5 +27,6 @@ fold_end rspec
 ##########
 fold_start bundle_audit "bundle audit"
   announce bundle exec bundle-audit update
-  announce bundle exec bundle-audit check
+  # announce bundle exec bundle-audit check
+  announce bundle exec bundle-audit check --ignore CVE-2018-1000544
 fold_end bundle_audit
