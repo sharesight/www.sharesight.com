@@ -15,6 +15,10 @@ module ApplicationConfig
     API_KEY = ENV['BUGSNAG_API_KEY']
   end
 
+  module AddThis
+    ID = 'ra-5b7e0717fea453d4'
+  end
+
   module S3
     BUCKET = 'middleman-www'
     ACCESS_ID = ENV['AWS_DEPLOY_ACCESS_ID']

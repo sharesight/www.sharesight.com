@@ -6,25 +6,20 @@ require 'uri'
 
 module S3RedirectsHelper
 
-  BASE_DIR_STUFF_TO_IGNORE = [
-    ".", "..", "index.html", "sitemapindex.xml", "sitemap.xml", "robots.txt", "humans.txt",
-    "google1decda79799cf179.html", "google1decda79799cf179.html.gz",
-    "index.html.gz", "js", "fonts", "favicon.ico", "img", "patterns", "css",
-    "BingSiteAuth.xml"
-  ]
-
   def self.make_s3_redirects(dry_run = false)
     return unless ["staging", "production"].include?(ENV['APP_ENV']) && ENV['TRAVIS_PULL_REQUEST'] == "false"
 
     bucket_name = ::ApplicationConfig::S3::BUCKET
 
     make_connection
-    base_dir_objects = Dir.entries("build") - BASE_DIR_STUFF_TO_IGNORE
     directory_queue = Queue.new
-    base_dir_objects.each { |o| directory_queue << o }
+    Dir.entries("build").each { |o| directory_queue << o }
 
     while !directory_queue.empty? do
       current_dir = directory_queue.pop
+      build_directory = File.join("build", current_dir)
+
+      next unless File.exist?(build_directory) && File.directory?(build_directory)
 
       Dir.entries(File.join("build", current_dir)).each do |object|
         full_name = File.join(current_dir, object)

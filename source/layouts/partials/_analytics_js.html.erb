@@ -43,3 +43,7 @@
     })(window,document,'script','dataLayer','<%= ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>');
   </script>
 <% end %>
+
+<% if ApplicationConfig.const_defined?(:AddThis) && ApplicationConfig::AddThis::ID %>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<%= ApplicationConfig::AddThis::ID %>"></script>
+<% end %>

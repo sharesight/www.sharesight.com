@@ -88,7 +88,7 @@ GEM
     eventmachine (1.2.0.1)
     excon (0.51.0)
     execjs (2.7.0)
-    ffi (1.9.18)
+    ffi (1.9.25)
     fission (0.5.0)
       CFPropertyList (~> 2.2)
     fog (1.38.0)
@@ -374,7 +374,7 @@ GEM
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
     ruby-progressbar (1.8.1)
-    rubyzip (1.2.1)
+    rubyzip (1.2.2)
     sass (3.4.22)
     selenium-webdriver (2.53.4)
       childprocess (~> 0.5)
@@ -442,4 +442,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.16.0
+   1.16.2
