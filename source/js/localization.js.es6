@@ -25,7 +25,7 @@ const localization = {
     contentManager.updateContent()
   },
 
-  setLocale (locale_id) {
+  setLocale (locale_id, redirect = true) {
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -99,7 +99,7 @@ const localization = {
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
-    this.setLocale(selector.value)
+    this.setLocale(selector.value, false) // do not redirect when loading the page, just update the cookie
   },
 }
 
