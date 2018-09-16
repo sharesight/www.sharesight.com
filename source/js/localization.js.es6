@@ -66,17 +66,18 @@ const localization = {
   },
 
   initializeRegionSelector () {
-    const self = this
     const selector = this.getRegionSelectorNode();
     if (!selector || !selector.options || !selector.options.length) return
 
     this.setRegionSelectorValue()
     this.setCookieFromRegionSelector();
 
-    // when it changes, set locale
-    selector.onchange = function () {
-      self.setLocale(this.value)
-    }
+    // NOTE: We set this value programatically via `setRegionSelectorValue` and don't want that to redirect; wait 500ms before adding this event listener
+    setTimeout(() => {
+      selector.addEventListener('change', (e) => {
+        this.setLocale(e.target.value);
+      })
+    }, 500);
   },
 
   setRegionSelectorValue () {
