@@ -1,0 +1,30 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+%>
+
+<div class="section partner-home">
+  <div class="container">
+    <h2 class="heading_normal">Sharesight works with you.</h2>
+    <p class="heading_paragraph">
+      Sharesight partners with leading
+      <a href="<%= localize_url('partners/brokers', locale_id: locale_obj[:id]) %>" title="Broker Partners">brokers</a>,
+      <a href="<%= localize_url('partners/accountants', locale_id: locale_obj[:id]) %>" title="Accountant Partners">accountants</a>,
+      and <a href="<%= localize_url('partners/data-providers', locale_id: locale_obj[:id]) %>" title="Data Provider Partners">data providers</a>.
+    </p>
+
+    <div class="partner-home__logos">
+      <% partners_collection(locale_obj[:lang]).select{ |partner| partner[:logo] }.take(4).each do |partner| %>
+        <a
+          class="partner-home__logo"
+          href="<%= partner_url(partner, locale_id: locale_obj[:id]) %>"
+          style="<% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>"
+          title="<%= partner[:name] %>"
+        >
+          <img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" />
+        </a>
+      <% end %>
+    </div>
+
+    <a href="<%= localize_url("partners", locale_id: locale_obj[:id]) %>" class="btn btn--solid btn--secondary" title="See All Partners">See All Partners</a>
+  </div>
+</div>
