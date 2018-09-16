@@ -124,7 +124,7 @@ layout: layout_pro
   </div>
 </div>
 
-<%= partial "partials/testimonials", locals: { json: data.testimonials_pro, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_pro], css_class: '', customer_type: 'Sharesight Pro', locale_obj: locale_obj } %>
+<%= partial "sections/testimonials", locals: { json: data.testimonials_pro, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_pro], css_class: '', customer_type: 'Sharesight Pro', locale_obj: locale_obj } %>
 <%= partial "sections/as_featured_in", locals: { locale_obj: locale_obj }  %>
 
 <div class="section footer-cta">

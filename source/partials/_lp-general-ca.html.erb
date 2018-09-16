@@ -87,7 +87,7 @@
     </div>
 </section>
 
-<%= partial "partials/testimonials", locals: {json: data.lp_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
+<%= partial "sections/testimonials", locals: {json: data.lp_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
 
 <div class="section section_featured section_plain">
   <div class="container">
