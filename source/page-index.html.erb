@@ -30,30 +30,6 @@ layout: layout_index
   </div>
 </section>
 
-<div class="section section_pricing">
-  <div class="pricing__container">
-    <section class="pricing__intro--home">
-      <h2>Pricing</h2>
-      <p>
-        Your first <%= plans[0][:holdings] %> holdings are <strong>free!</strong>
-      </p>
-
-      <p>
-        Choose from any of our premium plans at any time to track additional
-        holdings or portfolios, and unlock advanced features.
-      </p>
-
-      <a href="<%= localize_url("pricing", locale_id: locale_obj[:id]) %>" class="btn btn--secondary btn--solid" title="Learn more about our Pricing">
-         explore our pricing
-      </a>
-
-      <a href="<%= config[:signup_url] %>" class="btn btn--pro btn--solid" title="Sign up for Sharesight">
-         get started – <strong>for free</strong>
-      </a>
-    </section>
-  </div>
-</div>
-
 <div class="section partner-home">
   <div class="container">
     <h2 class="heading_normal">Sharesight works with you.</h2>
@@ -80,6 +56,7 @@ layout: layout_index
     <a href="<%= localize_url("partners", locale_id: locale_obj[:id]) %>" class="btn btn--solid btn--secondary" title="See All Partners">See All Partners</a>
   </div>
 </div>
+<%= partial "sections/pricing", locals: { locale_obj: locale_obj } %>
 
 <%= partial "partials/testimonials", locals: {json: data.testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
 
