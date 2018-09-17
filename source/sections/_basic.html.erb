@@ -1,0 +1,31 @@
+<div class="section section--center">
+  <div class="container">
+    <% if locals[:title] %>
+      <h2 class="heading_normal">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %>
+      </h2>
+    <% end %>
+
+    <% if locals[:text] %>
+      <p class="heading_paragraph">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+      </p>
+    <% end %>
+
+    <% if locals[:image] %>
+      <p>
+        <%= partial 'sections/partials/image', locals: locals[:image] %>
+      </p>
+    <% end %>
+
+    <% if locals[:video] %>
+      <p>
+        <%= partial 'sections/partials/video', locals: locals[:video] %>
+      </p>
+    <% end %>
+
+    <% buttons.each do |button| %>
+      <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
+    <% end %>
+  </div>
+</div>
