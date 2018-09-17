@@ -2,6 +2,24 @@
   locale_obj = locals[:locale_obj] || current_locale_obj
   plans = locale_plans(locale_obj[:id])
   title = locals[:title] || 'Pricing'
+
+  buttons = if locals[:buttons]&.length
+    locals[:buttons]
+  else
+    [{
+      text: 'explore our pricing',
+      title: 'Learn more about our Pricing',
+      color: 'secondary',
+      url: 'pricing',
+      remote: false
+    }, {
+      text: 'get started – **for free**',
+      title: 'Sign up for Sharesight',
+      color: 'pro',
+      url: config[:signup_url],
+      remote: true
+    }]
+  end
 %>
 
 <div class="section section--no-padding">
@@ -20,13 +38,9 @@
         holdings or portfolios, and unlock advanced features.
       </p>
 
-      <a href="<%= localize_url("pricing", locale_id: locale_obj[:id]) %>" class="btn btn--secondary btn--solid" title="Learn more about our Pricing">
-         explore our pricing
-      </a>
-
-      <a href="<%= config[:signup_url] %>" class="btn btn--pro btn--solid" title="Sign up for Sharesight">
-         get started – <strong>for free</strong>
-      </a>
+      <% buttons.each do |button| %>
+        <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
+      <% end %>
     </section>
   </div>
 </div>
