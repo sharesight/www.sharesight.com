@@ -1,0 +1,23 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  # The entire "button" gets spread into here.
+  # Fields:
+  # color, title (=text), text, url, remote
+
+  url = if locals[:remote]
+    locals[:url]
+  else
+    localize_url(locals[:url], locale_id: locale_obj[:id])
+  end
+%>
+
+<a
+  href="<%= url %>"
+  class="btn btn--solid btn--<%= locals[:color] || 'secondary' %>"
+  title="<%= locals[:title] || locals[:text] %>"
+  <%= locals[:remote] ? "target='_blank'" : '' %>
+  <%= locals[:remote] ? "rel='noopener noreferrer'" : '' %>
+>
+  <%= locals[:text] %>
+</a>
