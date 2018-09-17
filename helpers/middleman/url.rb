@@ -152,6 +152,6 @@ module MiddlemanUrlHelpers
 
   # An absolute url for the image (eg. for Facebook/Twitter)
   def image_url(source)
-    return base_url(image_path(source))
+    return absolute_url(image_path(source))
   end
 end
