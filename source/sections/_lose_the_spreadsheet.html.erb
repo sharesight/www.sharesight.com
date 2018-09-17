@@ -5,7 +5,9 @@
 
 <section class="alternate layout-lrg xero">
   <div class="container layout-container">
-    <h2><%= title %></h2>
+    <h2>
+      <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
+    </h2>
 
     <p class="paragraph_compact paragraph_center">
       Keeping track of investments used to be a hassle. Sharesight makes it simple. Want automatic holding updates, with comprehensive tax and performance reporting, wrapped up in an easy-to-use, fully online system? That’s Sharesight in a nutshell.

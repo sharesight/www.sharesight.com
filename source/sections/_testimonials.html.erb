@@ -11,7 +11,7 @@
     <div class="slideshow" id="js-slideshow" data-testimonial-index="1">
       <div class="container">
         <h2 class="heading content_paragraph section_testimonials_intro">
-          <%= title %>
+          <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
         </h2>
 
         <ul id="js-testimonials" class="testimonials testimonials--<%= page_path_name %>">

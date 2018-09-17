@@ -1,6 +1,7 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
   title = locals[:title] || 'Sharesight works with you.'
+
   button = locals[:button] || {
     text: 'See All Partners',
     color: 'secondary',
@@ -11,7 +12,9 @@
 
 <div class="section partner-home">
   <div class="container">
-    <h2 class="heading_normal"><%= title %></h2>
+    <h2 class="heading_normal">
+      <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
+    </h2>
 
     <p class="heading_paragraph">
       Sharesight partners with leading

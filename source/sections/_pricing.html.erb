@@ -7,7 +7,10 @@
 <div class="section section--no-padding">
   <div class="pricing__container">
     <section class="pricing__intro--home">
-      <h2><%= title %></h2>
+      <h2>
+        <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
+      </h2>
+
       <p>
         Your first <%= plans[0][:holdings] %> holdings are <strong>free!</strong>
       </p>

@@ -6,7 +6,9 @@
 <div class="section section--featured">
   <div class="container">
     <div class="featured_in_wrapper">
-      <h4 class="featured_in_title"><%= title %></h4>
+      <h4 class="featured_in_title">
+        <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
+      </h4>
 
       <% if locals[:image] %>
         <img src="<%= partner[:image][:url] %>" alt="<%= partner[:image][:title] %>" />
