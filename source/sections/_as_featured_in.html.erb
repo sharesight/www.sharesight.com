@@ -11,7 +11,7 @@
       </h4>
 
       <% if locals[:image] %>
-        <img src="<%= partner[:image][:url] %>" alt="<%= partner[:image][:title] %>" />
+        <%= partial 'sections/partials/image', locals: locals[:image] %>
       <% else %>
         <div class="featured_logos">
           <% if locale_obj[:id] == 'au'%>

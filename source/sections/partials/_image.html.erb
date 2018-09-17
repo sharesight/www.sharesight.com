@@ -1,0 +1,8 @@
+<%
+  url = locals[:url]
+  alt = locals[:description] || locals[:title]
+%>
+
+<% if url %>
+  <img src="<%= url %>" alt="<%= alt %>" />
+<% end %>

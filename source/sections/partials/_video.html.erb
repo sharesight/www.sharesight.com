@@ -1,0 +1,8 @@
+<%
+  url = locals[:url]
+  label = locals[:description] || locals[:title]
+%>
+
+<% if url %>
+  <video controls muted src="<%= url %>"></video>
+<% end %>
