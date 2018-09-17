@@ -19,5 +19,5 @@
   <%= locals[:remote] ? "target='_blank'" : '' %>
   <%= locals[:remote] ? "rel='noopener noreferrer'" : '' %>
 >
-  <%= locals[:text] %>
+  <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
 </a>

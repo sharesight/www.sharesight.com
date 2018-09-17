@@ -51,15 +51,20 @@ module MiddlemanPageHelpers
 
     if found_page.nil?
       # Not found, find the first one where the page is found.
-      #  Ie. trying to find a page that only exists in the canadian locale, but we're not in the canadian locale.
+      # Ie. trying to find a page that only exists in the canadian locale, but we're not in the canadian locale.
       found_page = data.locales.find{ |locale| locale.pages&.find {|y| y[:page] == page } }&.pages&.find {|y| y[:page] == page}
     end
 
-    return found_page # default to an empty hash
+    if found_page.nil?
+      found_page = get_landing_page(page: page)
+    end
+
+    return found_page || {} # default to an empty hash
   end
 
   def page_alternative_locales(page_name = valid_page_from_path)
     return false if !is_valid_page?(page_name)
+    return data.locales if get_landing_page(page_name)
 
     @page_alternative_locales ||= data.locales.reduce({}) do |hash, locale|
       locale.pages.each do |page_data|
@@ -86,9 +91,14 @@ module MiddlemanPageHelpers
     return !!locale_page(page: page_name)
   end
 
+  def is_landing_page?(page_name)
+    return !!get_landing_page(page_name)
+  end
+
   def is_valid_locale_id_for_page?(page_name, locale_id)
-    return false if !is_valid_page?(page_name)
     return false if !is_valid_locale_id?(locale_id)
+    return true if is_landing_page?(page_name) # available in all locales
+    return false if !is_valid_page?(page_name)
 
     page = locale_page(page: page_name)
     locales = page_alternative_locales(page[:page])
@@ -107,6 +117,10 @@ module MiddlemanPageHelpers
     return default_locale_obj if !locales || !locales.length || !locales[0] || !locales[0][:id]
 
     return locales[0]
+  end
+
+  def get_landing_page(page_name)
+    landing_pages_collection.find{ |page| page.url_slug == page_name }
   end
 
   # NOTE: This makes bad usage of rescue as we expect not found pages and locales to result in it's localized (default).

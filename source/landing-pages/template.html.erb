@@ -1,0 +1,12 @@
+<%
+  # NOTE: The layout and all metadata for this file is defined in Contentful.
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  locals = locals.with_indifferent_access # this all comes from the Contentful model; it's merged in with locale_obj.
+  sections = locals[:sections] || []
+%>
+
+<% sections.each do |section| %>
+  <!-- section: <%= section[:type] %> -->
+  <%= partial "sections/#{section[:type]}", locals: section.merge({ locale_obj: locale_obj }) %>
+<% end %>
