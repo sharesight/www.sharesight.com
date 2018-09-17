@@ -1,10 +1,12 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
+  title = locals[:title] || 'Lose the spreadsheet'
 %>
 
 <section class="alternate layout-lrg xero">
   <div class="container layout-container">
-    <h2 tabindex="0">Lose the spreadsheet</h2>
+    <h2><%= title %></h2>
+
     <p class="paragraph_compact paragraph_center">
       Keeping track of investments used to be a hassle. Sharesight makes it simple. Want automatic holding updates, with comprehensive tax and performance reporting, wrapped up in an easy-to-use, fully online system? That’s Sharesight in a nutshell.
     </p>

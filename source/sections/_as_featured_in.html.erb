@@ -1,29 +1,38 @@
-<%# locale_obj comes from locals from the parent %>
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  title = locals[:title] || 'As featured in'
+%>
+
 <div class="section section_featured">
   <div class="container">
     <div class="featured_in_wrapper">
-      <h4 class="featured_in_title">As featured in</h4>
-      <div class="featured_logos">
-        <% if locale_obj[:id] == 'au'%>
-          <img class="featured_image" src="<%= image_path('featured/the-australian.png')%>" alt="Featured in The Australian" />
-          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
-          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
-          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
-          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
-        <% elsif locale_obj[:id] == 'nz'%>
-          <img class="featured_image" src="<%= image_path('featured/nz-herald.png')%>" alt="Featured in The New Zealand Herald" />
-          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
-          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
-          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
-          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
-        <% else %>
-          <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
-          <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
-          <img class="featured_image" src="<%= image_path('featured/money-management.png')%>" alt="Featured in Money Management" />
-          <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
-          <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
-        <%end%>
-      </div>
+      <h4 class="featured_in_title"><%= title %></h4>
+
+      <% if locals[:image] %>
+        <img src="<%= partner[:image][:url] %>" alt="<%= partner[:image][:title] %>" />
+      <% else %>
+        <div class="featured_logos">
+          <% if locale_obj[:id] == 'au'%>
+            <img class="featured_image" src="<%= image_path('featured/the-australian.png')%>" alt="Featured in The Australian" />
+            <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+            <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
+            <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+            <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
+          <% elsif locale_obj[:id] == 'nz'%>
+            <img class="featured_image" src="<%= image_path('featured/nz-herald.png')%>" alt="Featured in The New Zealand Herald" />
+            <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+            <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
+            <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+            <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
+          <% else %>
+            <img class="featured_image" src="<%= image_path('featured/financial-observer.png')%>" alt="Featured in financial observer" />
+            <img class="featured_image" src="<%= image_path('featured/investors-business-daily.png')%>" alt="Featured in Investor's Business Daily" />
+            <img class="featured_image" src="<%= image_path('featured/money-management.png')%>" alt="Featured in Money Management" />
+            <img class="featured_image" src="<%= image_path('featured/australian-fintech.png')%>" alt="Featured in Australian Fintech" />
+            <img class="featured_image" src="<%= image_path('featured/financial-review.png')%>" alt="Featured in Financial Review" />
+          <%end%>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

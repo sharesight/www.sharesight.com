@@ -1,6 +1,9 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
   css_class = locals[:css_class] || ''
+  json = locals[:json] || data.testimonials
+  customer_type = locals[:customer_type] || 'Sharesight'
+  title = "#{locals[:testimonial_heading]}…" || locals[:title] || 'Testimonials'
  %>
 
 <div class="section section_testimonials <%= css_class %>" id="js-testimonials-container">
@@ -8,7 +11,7 @@
     <div class="slideshow" id="js-slideshow" data-testimonial-index="1">
       <div class="container">
         <h2 class="heading content_paragraph section_testimonials_intro">
-          <%= testimonial_heading %>…
+          <%= title %>
         </h2>
 
         <ul id="js-testimonials" class="testimonials testimonials--<%= page_path_name %>">

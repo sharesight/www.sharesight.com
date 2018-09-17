@@ -1,10 +1,18 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
+  title = locals[:title] || 'Sharesight works with you.'
+  button = locals[:button] || {
+    text: 'See All Partners',
+    color: 'secondary',
+    url: 'partners',
+    remote: false
+  }
 %>
 
 <div class="section partner-home">
   <div class="container">
-    <h2 class="heading_normal">Sharesight works with you.</h2>
+    <h2 class="heading_normal"><%= title %></h2>
+
     <p class="heading_paragraph">
       Sharesight partners with leading
       <a href="<%= localize_url('partners/brokers', locale_id: locale_obj[:id]) %>" title="Broker Partners">brokers</a>,
@@ -25,6 +33,6 @@
       <% end %>
     </div>
 
-    <a href="<%= localize_url("partners", locale_id: locale_obj[:id]) %>" class="btn btn--solid btn--secondary" title="See All Partners">See All Partners</a>
+    <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) if button %>
   </div>
 </div>
