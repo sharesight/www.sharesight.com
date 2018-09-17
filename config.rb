@@ -147,7 +147,6 @@ configure :build do
   end
 
   remove_paths = ['.DS_Store']
-  remove_paths << 'ca/lp-general-ca' if config[:env_name] == 'production'
   activate :remover, :paths => remove_paths
 
   # For example, change the Compass output style for deployment

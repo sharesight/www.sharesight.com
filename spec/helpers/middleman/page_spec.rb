@@ -162,10 +162,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.base_locale_page[:page]).to eq("partners")
     end
 
-    it "should return the page from a locale that isn't global" do
-      expect(@app.base_locale_page(page: 'lp-general-ca')[:page_title]).to eq("Investment Tracking Software | Sharesight Canada")
-    end
-
     it "should return the page from the global locale, even when it doesn't exist on any other locale" do
       expect(@app.base_locale_page(page: 'survey-thanks')[:page_title]).to eq("Thanks | Sharesight")
     end
@@ -189,7 +185,6 @@ describe 'Page Helper', :type => :helper do
 
     it "should match expected counts" do
       expect(@app.page_counts['blog']).to eq(1)
-      expect(@app.page_counts['lp-general-ca']).to eq(1)
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
       expect(@app.page_counts['index']).to eq(5)
@@ -208,7 +203,6 @@ describe 'Page Helper', :type => :helper do
 
     it "should match expected counts" do
       expect(@app.page_alternative_locales('blog').length).to eq(1)
-      expect(@app.page_alternative_locales('lp-general-ca').length).to eq(1)
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
       expect(@app.page_alternative_locales('index').length).to eq(5)
@@ -226,7 +220,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.is_valid_page?('xero')).to be true
       expect(@app.is_valid_page?('404')).to be true
       expect(@app.is_valid_page?('partners')).to be true
-      expect(@app.is_valid_page?('lp-general-ca')).to be true
 
       expect(@app.is_valid_page?(nil)).to be false
       expect(@app.is_valid_page?('fake-page')).to be false
@@ -259,10 +252,6 @@ describe 'Page Helper', :type => :helper do
         expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
       end
 
-      locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('lp-general-ca', locale[:id])).to be !!(locale[:id] == 'ca')
-      end
-
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
       expect(@app.is_valid_locale_id_for_page?('blog', 'uka')).to be false
       expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
@@ -276,9 +265,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('partners')[:id]).to eq(default_locale_id)
-
-      # Non-global.
-      expect(@app.get_page_base_locale('lp-general-ca')[:id]).to eq('ca')
 
       # Bad pages always get default
       expect(@app.get_page_base_locale(nil)[:id]).to eq(default_locale_id)

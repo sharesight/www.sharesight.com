@@ -75,9 +75,9 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_path" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/'],
-        ['/nz/lp-general-ca/', '/ca/lp-general-ca/'],
+        ['/page.html', '/ca/page/'],
+        ['/ca//page', '/ca/page/'],
+        ['/nz/page/', '/ca/page/'],
         ['/partners/all.html', '/partners/all/'],
         ['/nz/partners/all/', '/partners/all/'],
         ['/ca/partners/all', '/partners/all/'],
@@ -94,9 +94,9 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_url" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca', @url + '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/'],
-        ['/nz/lp-general-ca/', @url + '/ca/lp-general-ca/'],
+        ['/page', @url + '/ca/page/'],
+        ['/ca//page', @url + '/ca/page/'],
+        ['/nz/page/', @url + '/ca/page/'],
         ['/partners/all.html', @url + '/partners/all/'],
         ['/nz/partners/all', @url + '/partners/all/'],
         ['/ca/partners/all', @external_url + '/partners/all/', @external_url],
@@ -119,10 +119,10 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_path" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/', 'nz'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/', 'ca'],
-        ['/nz/lp-general-ca/', '/ca/lp-general-ca/', 'nz'],
+        ['/page.html', '/ca/page/'],
+        ['/ca//page', '/ca/page/', 'nz'],
+        ['/ca//page', '/ca/page/', 'ca'],
+        ['/nz/page/', '/ca/page/', 'nz'],
         ['/partners/all.html', '/partners/all/', ],
         ['/partners//all.html', '/ca/partners/all/', 'ca'],
         ['/nz/partners/all', '/uk/partners/all/', 'uk'],
@@ -145,10 +145,10 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_url" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', @url + '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/', 'nz'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/', 'ca'],
-        ['/nz/lp-general-ca/', @url + '/ca/lp-general-ca/', 'nz'],
+        ['/page.html', @url + '/ca/page/'],
+        ['/ca//page', @url + '/ca/page/', 'nz'],
+        ['/ca//page', @url + '/ca/page/', 'ca'],
+        ['/nz/page/', @url + '/ca/page/', 'nz'],
         ['/partners/all.html', @url + '/partners/all/'],
         ['/partners//all.html', @url + '/ca/partners/all/', 'ca'],
         ['/nz/partners/all', @url + '/uk/partners/all/', 'uk'],
