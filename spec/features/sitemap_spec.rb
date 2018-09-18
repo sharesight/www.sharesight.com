@@ -41,6 +41,8 @@ describe 'Sitemap', :type => :feature do
       expectation += get_partners_partners(locale).length
       expectation += get_partners_categories(all: true).length
 
+      expectation += get_landing_pages(locale).length
+
       expect(all(:xpath, '//urlset/url').length).to eq(expectation)
       expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
     end
