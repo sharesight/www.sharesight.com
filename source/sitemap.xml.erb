@@ -63,6 +63,24 @@
   </url>
 <%end%>
 
+<%# Iterates through every landing page. %>
+<% landing_pages_collection().each do |landing_page| %>
+  <% updated_at = landing_page[:_meta][:updated_at] %>
+  <url>
+    <loc><%= landing_page_url(landing_page, locale_id: locale_obj[:id]) %></loc>
+    <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+
+    <% data.locales.each do |locale| %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <%end%>
+  </url>
+<%end%>
+
 <%# This is a list of pages on this current locale %>
 <% locale_obj[:pages].reject{ |page| page.show_in_sitemap == false }.each do |page_data| %>
   <% alternative_locales = page_alternative_locales(page_data[:page]) %>
