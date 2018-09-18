@@ -74,7 +74,7 @@ module MiddlemanPageHelpers
       hash # return to reduce
     end
 
-    return @page_alternative_locales[page_name] || []
+    return @page_alternative_locales[page_name] || false
   end
 
   def page_counts
