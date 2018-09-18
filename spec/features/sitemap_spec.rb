@@ -38,7 +38,7 @@ describe 'Sitemap', :type => :feature do
       expectation += get_blog_posts().length if locale[:id] == default_locale_id
       expectation += get_blog_categories().length if locale[:id] == default_locale_id
 
-      expectation += get_partners_partners().length
+      expectation += get_partners_partners(locale).length
       expectation += get_partners_categories(all: true).length
 
       expect(all(:xpath, '//urlset/url').length).to eq(expectation)
