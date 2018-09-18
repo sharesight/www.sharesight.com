@@ -2,6 +2,8 @@
   display: flex;
   margin: $gutter (-$gutter); // counter-acts the margin in section__content
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section__content {
