@@ -119,8 +119,11 @@ module MiddlemanPageHelpers
     return locales[0]
   end
 
-  def get_landing_page(page_name)
-    landing_pages_collection.find{ |page| page.url_slug == page_name }
+  def get_landing_page(page_name = valid_page_from_path)
+    found = landing_pages_collection.find{ |page| page.url_slug == page_name }
+    return unless found
+
+    found.with_indifferent_access
   end
 
   # NOTE: This makes bad usage of rescue as we expect not found pages and locales to result in it's localized (default).
