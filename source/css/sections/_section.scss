@@ -29,6 +29,12 @@
     margin-bottom: $gutter * 1.5;
   }
 
+  &__text {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.45;
+  }
+
   &--text {
     position: relative;
     text-align: center;
