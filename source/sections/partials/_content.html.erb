@@ -1,0 +1,43 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  classes = ['section__content']
+  classes << 'section__content--card' if locals[:with_background]
+  classes << "section__content--#{locals[:alignment]}" if locals[:alignment]
+%>
+
+<div class="<%= classes.join(' ') %>">
+  <% if locals[:image_icon] && locals[:image] %>
+    <p>
+      <%= partial 'sections/partials/image', locals: locals[:image].merge({ icon: true }) %>
+    </p>
+  <% end %>
+
+  <% if locals[:title] %>
+    <h2 class="heading_normal">
+      <%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %>
+    </h2>
+  <% end %>
+
+  <% if locals[:text] %>
+    <p>
+      <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+    </p>
+  <% end %>
+
+  <% if !locals[:image_icon] && locals[:image] %>
+    <p>
+      <%= partial 'sections/partials/image', locals: locals[:image] %>
+    </p>
+  <% end %>
+
+  <% if locals[:video] %>
+    <p>
+      <%= partial 'sections/partials/video', locals: locals[:video] %>
+    </p>
+  <% end %>
+
+  <% if locals[:buttons] %>
+    <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
+  <% end %>
+</div>

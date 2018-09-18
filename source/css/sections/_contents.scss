@@ -1,0 +1,36 @@
+.section__contents {
+  display: flex;
+  margin: $gutter (-$gutter); // counter-acts the margin in section__content
+  flex-wrap: wrap;
+}
+
+.section__content {
+  padding: $gutter;
+  flex: 1 0 auto;
+  margin: 0 $gutter; // counter-acted by the negative margin in section__contents
+
+  &--card {
+    background-color: $background_offset_white;
+
+    @at-root .section--alternate & {
+      background-color: #fff;
+    }
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+
+.section--alternate {
+
+}

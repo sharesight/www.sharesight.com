@@ -26,6 +26,10 @@
 
     <% buttons.each do |button| %>
       <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
+    <% if locals[:contents] %>
+      <%= partial 'sections/partials/contents', locals: { contents: locals[:contents], locale_obj: locale_obj } %>
+    <% end %>
+
     <% end %>
   </div>
 </div>
