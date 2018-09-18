@@ -59,7 +59,7 @@ module MiddlemanPageHelpers
       found_page = get_landing_page(page)
     end
 
-    return found_page || {} # default to an empty hash
+    return found_page # may return a nil here!
   end
 
   def page_alternative_locales(page_name = valid_page_from_path)
