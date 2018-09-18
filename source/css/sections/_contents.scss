@@ -1,12 +1,21 @@
 .section__contents {
   display: flex;
-  margin: $gutter (-$gutter); // counter-acts the margin in section__content
+  margin: 0 (-$gutter); // counter-acts the margin in section__content
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   @include respond-to(md, max) {
     flex-direction: column;
+  }
+
+  @at-root * ~ & {
+    // give this top padding if it has a parent
+    margin-top: $gutter;
+  }
+
+  & ~ * {
+    margin-top: $gutter;
   }
 }
 
@@ -41,9 +50,17 @@
   &--right {
     text-align: right;
   }
-}
 
+  &-header {
+    @include fontSize(22px);
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: $gutter;
+  }
 
-.section--alternate {
-
+  &-text {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.45;
+  }
 }
