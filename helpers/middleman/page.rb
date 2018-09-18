@@ -87,11 +87,11 @@ module MiddlemanPageHelpers
     end
   end
 
-  def is_valid_page?(page_name)
+  def is_valid_page?(page_name = valid_page_from_path)
     return !!locale_page(page: page_name)
   end
 
-  def is_landing_page?(page_name)
+  def is_landing_page?(page_name = valid_page_from_path)
     return !!get_landing_page(page_name)
   end
 
