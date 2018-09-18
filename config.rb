@@ -72,10 +72,12 @@ activate :routing
 # Do note, you MUST run `middleman contentful` prior to `middleman [build|server]` as contentful does not work properly with lifecycle hooks and data will be parsed post-configuration, pre-build (where other things can't hook into it)
 [ ContentfulConfig::BlogSpace, ContentfulConfig::PartnersSpace, ContentfulConfig::LandingPagesSpace ].each do |space|
   use_preview_api = config[:env_name] != 'production'
-  contentful_access_token = (use_preview_api) && space::PREVIEW_ACCESS_TOKEN || space::ACCESS_TOKEN
+  contentful_access_token = (use_preview_api) ? space::PREVIEW_ACCESS_TOKEN : space::ACCESS_TOKEN
 
   # This pulls the data from contentful and puts it into data[space::NAME][plural_name]
   activate :contentful do |f|
+    puts "Activating Contentful for #{space::NAME}::#{space::SPACE_ID} in #{use_preview_api ? 'draft' : 'published'} mode"
+
     f.use_preview_api   = use_preview_api # whether or not to use the drafts + published api
     f.access_token      = contentful_access_token # which token to use, only one has access to drafts –– redundant
 
