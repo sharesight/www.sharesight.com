@@ -38,8 +38,8 @@
         holdings or portfolios, and unlock advanced features.
       </p>
 
-      <% buttons.each do |button| %>
-        <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
+      <% if buttons %>
+        <%= partial 'sections/partials/buttons', locals: { buttons: buttons, locale_obj: locale_obj } %>
       <% end %>
     </section>
   </div>

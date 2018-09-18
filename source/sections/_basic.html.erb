@@ -1,3 +1,7 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+%>
+
 <div class="section section--center <%= locals[:class_name] %>">
   <div class="container">
     <% if locals[:title] %>
@@ -24,12 +28,12 @@
       </p>
     <% end %>
 
-    <% buttons.each do |button| %>
-      <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
     <% if locals[:contents] %>
       <%= partial 'sections/partials/contents', locals: { contents: locals[:contents], locale_obj: locale_obj } %>
     <% end %>
 
+    <% if locals[:buttons] %>
+      <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
     <% end %>
   </div>
 </div>
