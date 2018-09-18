@@ -11,21 +11,21 @@
     <% end %>
 
     <% if locals[:text] %>
-      <p>
+      <div class="section__text">
         <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
-      </p>
+      </div>
     <% end %>
 
     <% if locals[:image] %>
-      <p>
+      <div>
         <%= partial 'sections/partials/image', locals: locals[:image] %>
-      </p>
+      </div>
     <% end %>
 
     <% if locals[:video] %>
-      <p>
+      <div>
         <%= partial 'sections/partials/video', locals: locals[:video] %>
-      </p>
+      </div>
     <% end %>
 
     <% if locals[:contents] %>

@@ -9,33 +9,33 @@
 
 <div class="<%= classes.join(' ') %>">
   <% if locals[:image_icon] && locals[:image] %>
-    <p>
+    <div>
       <%= partial 'sections/partials/image', locals: locals[:image].merge({ icon: true }) %>
-    </p>
+    </div>
   <% end %>
 
   <% if locals[:title] %>
-    <h2 class="heading_normal">
+    <h4 class="section__content-header">
       <%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %>
-    </h2>
+    </h4>
   <% end %>
 
   <% if locals[:text] %>
-    <p>
+    <div class="section__content-text">
       <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
-    </p>
+    </div>
   <% end %>
 
   <% if !locals[:image_icon] && locals[:image] %>
-    <p>
+    <div>
       <%= partial 'sections/partials/image', locals: locals[:image] %>
-    </p>
+    </div>
   <% end %>
 
   <% if locals[:video] %>
-    <p>
+    <div>
       <%= partial 'sections/partials/video', locals: locals[:video] %>
-    </p>
+    </div>
   <% end %>
 
   <% if locals[:buttons] %>
