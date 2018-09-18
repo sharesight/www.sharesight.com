@@ -6,7 +6,12 @@
   sections = locals[:sections] || []
 %>
 
-<% sections.each do |section| %>
+<% sections.each_with_index do |section, index| %>
   <!-- section: <%= section[:type] %> -->
-  <%= partial "sections/#{section[:type]}", locals: section.merge({ locale_obj: locale_obj }) %>
+  <%
+    class_name = ''
+    class_name = 'section--alternate' if index % 2 == 0
+  %>
+
+  <%= partial "sections/#{section[:type]}", locals: section.merge({ locale_obj: locale_obj, class_name: class_name }) %>
 <% end %>
