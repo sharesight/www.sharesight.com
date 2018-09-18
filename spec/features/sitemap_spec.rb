@@ -106,6 +106,25 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
+  it "should have all landing pages" do
+    locales.each do |locale|
+      visit localize_path('sitemap.xml', locale_id: locale[:id])
+
+      get_landing_pages(locale).each do |landing_page|
+        url = localize_url(landing_page[:url_slug], locale_id: locale[:id])
+
+        xpath = generate_xpath('//urlset/url/loc', text: url)
+        expect(page).to have_xpath(xpath), "#{landing_page.url_slug} is missing in sitemap (expected #{url})."
+
+        locales.each do |sublocale|
+          url = localize_url(landing_page[:url_slug], locale_id: sublocale.id)
+          xpath = generate_xpath('//urlset/url/link', args: { href: url })
+          expect(page).to have_xpath(xpath), "#{landing_page.name} is missing in sitemap (expected #{url})."
+        end
+      end
+    end
+  end
+
   it "should have all the pages" do
     locales.each do |locale|
       visit localize_path('sitemap.xml', locale_id: locale[:id])
