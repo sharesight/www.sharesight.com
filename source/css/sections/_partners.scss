@@ -9,19 +9,13 @@ $__logo_height: 75px;
   }
 
   &__logos {
-    margin: $gutter 0;
-
+    margin: $gutter 0 $gutter/2;
     overflow: visible;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-
-    @include respond-to(md, min) {
-      margin: $gutter*2 0;
-    }
   }
 
   &__logo {
