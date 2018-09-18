@@ -4,5 +4,33 @@ section_class: 'section_default'
 ---
 <% locale_obj = locals[:locale_obj] || current_locale_obj %>
 
-<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
-<%= partial "partials/about-sharesight", locals: { locale_obj: locale_obj } %>
+<section class="second-tier">
+  <div class="container">
+    <div class="second-tier_wrapper">
+      <h1 class="heading_important heading_light layout-heading">About Sharesight</h1>
+      <h2 class="heading_paragraph heading_light">
+        My son Scott Ryburn and I evolved the idea for <a href="<%= localize_url(locale_id: locale_obj[:id]) %>">Sharesight</a> over 2006 and 2007. By then I had spent nearly 10 years as a keen, but highly frustrated, self-directed investor.
+      </h2>
+      <p>Recordkeeping was a nightmare and working out the true performance of my portfolio so that I knew whether it was worth all the drama, was nearly impossible.</p>
+
+      <p>We began our journey by bringing on board two highly experienced software developers as founding shareholders, which gave us the technical backing to bring our ideas to reality.</p>
+      <div class="o-video_wrapper video">
+        <%= partial "partials/video" %>
+      </div>
+
+      <p class="quote_author">Tony Ryburn, Executive Director</p>
+
+      <p>From there, Sharesight developed a unique and innovative product, including sophisticated corporate action processing – the first of its kind for a product that was accessible to self-directed investors.</p>
+
+      <p>Developing Sharesight as a web based offering provided a cost effective channel to make it available online to everyone. We signed up our first paying customer in April 2008.</p>
+
+      <p>Fast forward to today and we have built up a great team around us. Scott as our CTO manages a team of dedicated developers in Wellington and Doug Morris as CEO has assumed overall management of Sharesight and the committed, enthusiastic team in our Sydney office.</p>
+
+      <p>In addition to self-directed investors, we now count financial advisors, fund managers, and accountants as clients. We've also developed ways for partner companies to leverage our portfolio technology to power their own solutions.</p>
+
+      <p>Ultimately, the best way to understand what Sharesight is all about is to <a href="<%= config[:signup_url] %>" title="Sign up for Sharesight">sign up and try it for yourself</a>. We're confident that you'll agree that it's the best portfolio tracking system available today.</p>
+      <p class="page_author">Tony Ryburn</p>
+      <p class="page_author_title">Executive Director</p>
+    </div>
+  </div>
+</section>

@@ -8,8 +8,6 @@ layout: partners_category
   partners_categories_localized = partners_categories(locale_obj[:lang], withIndex: true).select{ |cat| cat[:count] >= 1 }
 %>
 
-<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
-
 <div class="partners partners__paginated">
   <%= partial "partners/partials/paginated_header", locals: { locale_obj: locale_obj } %>
 
