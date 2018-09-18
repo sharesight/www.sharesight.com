@@ -5,7 +5,7 @@ module MiddlemanLandingPagesHelpers
     return localize_url(landing_page_slug(landing_page), locale_id: locale_id)
   end
 
-  def landing_page_path(partner, locale_id: default_locale_id)
+  def landing_page_path(landing_page, locale_id: default_locale_id)
     return localize_path(landing_page_slug(landing_page), locale_id: locale_id)
   end
 
