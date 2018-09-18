@@ -56,7 +56,7 @@ module MiddlemanPageHelpers
     end
 
     if found_page.nil?
-      found_page = get_landing_page(page: page)
+      found_page = get_landing_page(page)
     end
 
     return found_page || {} # default to an empty hash
