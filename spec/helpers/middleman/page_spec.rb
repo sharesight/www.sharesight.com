@@ -249,10 +249,6 @@ describe 'Page Helper', :type => :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('sitemap.xml', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
       end
 
