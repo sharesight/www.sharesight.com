@@ -36,8 +36,7 @@ module MiddlemanLocaleHelpers
   end
 
   def is_valid_locale_id?(locale_id)
-    locale_id = locale_id&.downcase
-    return !!data.locales.find { |x| x[:id] == locale_id }
+    return !!data.locales.find { |x| x[:id]&.downcase == locale_id&.downcase }
   end
 
   def locale_cert_type(locale_obj = current_locale_obj)
