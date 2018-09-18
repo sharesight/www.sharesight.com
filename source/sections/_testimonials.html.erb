@@ -1,16 +1,23 @@
-<div class="section section_testimonials <%=css_class%>" id="js-testimonials-container">
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  json = locals[:json] || data.testimonials
+  customer_type = locals[:customer_type] || 'Sharesight'
+  title = "#{locals[:testimonial_heading]}…" || locals[:title] || 'Testimonials'
+ %>
+
+<div class="section section_testimonials <%= locals[:class_name] %>" id="js-testimonials-container">
   <div class="container">
     <div class="slideshow" id="js-slideshow" data-testimonial-index="1">
       <div class="container">
         <h2 class="heading content_paragraph section_testimonials_intro">
-          <%=testimonial_heading%>…
+          <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
         </h2>
 
         <ul id="js-testimonials" class="testimonials testimonials--<%= page_path_name %>">
           <% json.select { |p| p.visible.include?(locale_obj[:id]) }.each_with_index do |testimonial, i| %>
             <li class="testimonial_item">
               <blockquote>
-                <p class="testimonial_quote <%= "#{page_path_name}_quote_#{i}" %>"><%=testimonial.text %></p>
+                <p class="testimonial_quote <%= "#{page_path_name}_quote_#{i}" %>"><%= testimonial.text %></p>
               </blockquote>
 
               <% unless testimonial.image_id.blank? %>
@@ -19,14 +26,14 @@
 
               <p class="testimonial_cite">
                 <strong class="testimonial_author">
-                  <%=testimonial.author %>
+                  <%= testimonial.author %>
                 </strong>
 
-                <% if customer_type%><%=customer_type%> Customer<%end%>
+                <% if customer_type %><%= customer_type %> Customer<%end %>
 
-                <% if testimonial.source_title && testimonial.source_url%>
-                   | <a href="<%=testimonial.source_url%>"><%=testimonial.source_title%></a>
-                <%end%>
+                <% if testimonial.source_title && testimonial.source_url %>
+                   | <a href="<%= testimonial.source_url %>"><%= testimonial.source_title %></a>
+                <%end %>
               </p>
             </li>
           <% end %>
@@ -35,7 +42,7 @@
         <div class="indicators">
           <ul class="indicator_list" id="js-indicators" role="menu">
             <% json.select { |p| p.visible.include?(locale_obj[:id]) }.each_with_index do |j, i| %>
-              <li class="indicator_item" data-indicator="<%=i+1%>" tabindex="0" role="menuitem" aria-label="Slide <%=i+1%>"></li>
+              <li class="indicator_item" data-indicator="<%= i+1 %>" tabindex="0" role="menuitem" aria-label="Slide <%= i+1 %>"></li>
             <% end %>
           </ul>
         </div>

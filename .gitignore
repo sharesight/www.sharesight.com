@@ -24,6 +24,7 @@ tmp/
 # Ignore Contentful
 data/blog/
 data/partners/
+data/landing-pages/
 .*-space-hash
 
 # ignore personal files

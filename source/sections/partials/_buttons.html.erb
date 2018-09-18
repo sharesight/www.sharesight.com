@@ -1,0 +1,3 @@
+<% locals[:buttons]&.each do |button| %>
+  <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) %>
+<% end %>

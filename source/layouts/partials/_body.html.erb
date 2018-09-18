@@ -1,7 +1,11 @@
 <%
   # NOTE: Body must have a yield.  It will not function without.
   locale_obj = locals[:locale_obj] || current_locale_obj
-  header = locals[:header]
+  header = if locals[:header].nil?
+    'partials/site_header'
+  else
+    locals[:header]
+  end
 
   page_classes = locals[:page_classes] || current_page.data.page_classes
   section_class = locals[:section_class] || current_page.data.section_class

@@ -6,21 +6,25 @@ describe 'Build Sanity', :type => :feature do
     expect(page_data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.blog.posts.length).to be > 0
 
-    category_data_dir = dir_list("data/blog/authors/")
-    expect(category_data_dir - [".", ".."]).not_to be_empty
+    data_dir = dir_list("data/blog/authors/")
+    expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.blog.authors.length).to be > 0
 
-    category_data_dir = dir_list("data/blog/categories/")
-    expect(category_data_dir - [".", ".."]).not_to be_empty
+    data_dir = dir_list("data/blog/categories/")
+    expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.blog.categories.length).to be > 0
 
-    category_data_dir = dir_list("data/partners/partners/")
-    expect(category_data_dir - [".", ".."]).not_to be_empty
+    data_dir = dir_list("data/partners/partners/")
+    expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.partners.partners.length).to be > 0
 
-    category_data_dir = dir_list("data/partners/categories/")
-    expect(category_data_dir - [".", ".."]).not_to be_empty
+    data_dir = dir_list("data/partners/categories/")
+    expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.partners.categories.length).to be > 0
+
+    data_dir = dir_list("data/landing-pages/pages/")
+    expect(data_dir - [".", ".."]).not_to be_empty
+    expect(Capybara.app.data['landing-pages'].pages.length).to be > 0
   end
 
   it "should have built a site" do
@@ -47,6 +51,15 @@ describe 'Build Sanity', :type => :feature do
       expect(dir).to include("partners")
       expect(dir).to include("pro")
       expect(dir).to include("xero")
+    end
+
+    Capybara.app.data.locales.each do |locale|
+      get_landing_pages(locale).each do |landing_page|
+        locale_id = locale[:id]
+        locale_id = '' if locale_id == 'global' # we're looking at the build directory
+        dir = dir_list("build/#{locale_id}")
+        expect(dir).to include("#{landing_page[:url_slug]}")
+      end
     end
   end
 

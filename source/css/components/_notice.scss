@@ -1,0 +1,39 @@
+// Extends featured_link, but modified to stand out a bit more.
+.notice {
+  @extend %featured_link;
+  justify-content: center;
+
+  &,
+  &.section {
+    margin: 0;
+    padding: $gutter*1.5 $gutter*3;
+  }
+
+  background-color: rgba($colour_secondary, .95);
+  color: $colour_pro;
+
+  @include respond-to(sm, max) {
+    margin: 0;
+    padding: $gutter*2 $gutter*4;
+  }
+
+  &__description {
+    @extend %featured_link__description;
+    width: 100%;
+    max-width: 750px;
+  }
+
+  &__button {
+    @extend %featured_link__button;
+    font-size: 17px;
+    line-height: 48px; // match description height
+    font-weight: 500;
+    padding: 0 $gutter*1.5;
+    margin: 0; // override the `justify-self: flex-end` type functionality
+    text-transform: none;
+
+    @include respond-to(sm, max) {
+      margin-top: $gutter;
+    }
+  }
+}

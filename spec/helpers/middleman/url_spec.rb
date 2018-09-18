@@ -75,9 +75,9 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_path" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/'],
-        ['/nz/lp-general-ca/', '/ca/lp-general-ca/'],
+        ['/xero.html', '/xero/'],
+        ['/ca//xero', '/xero/'],
+        ['/nz/xero/', '/xero/'],
         ['/partners/all.html', '/partners/all/'],
         ['/nz/partners/all/', '/partners/all/'],
         ['/ca/partners/all', '/partners/all/'],
@@ -94,9 +94,9 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_url" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca', @url + '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/'],
-        ['/nz/lp-general-ca/', @url + '/ca/lp-general-ca/'],
+        ['/xero', @url + '/xero/'],
+        ['/ca//xero', @url + '/xero/'],
+        ['/nz/xero/', @url + '/xero/'],
         ['/partners/all.html', @url + '/partners/all/'],
         ['/nz/partners/all', @url + '/partners/all/'],
         ['/ca/partners/all', @external_url + '/partners/all/', @external_url],
@@ -119,11 +119,11 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_path" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/', 'nz'],
-        ['/ca//lp-general-ca', '/ca/lp-general-ca/', 'ca'],
-        ['/nz/lp-general-ca/', '/ca/lp-general-ca/', 'nz'],
-        ['/partners/all.html', '/partners/all/', ],
+        ['/xero.html', '/xero/'],
+        ['/ca//xero', '/nz/xero/', 'nz'],
+        ['/ca//xero', '/ca/xero/', 'ca'],
+        ['/nz/xero/', '/nz/xero/', 'nz'],
+        ['/partners/all.html', '/partners/all/'],
         ['/partners//all.html', '/ca/partners/all/', 'ca'],
         ['/nz/partners/all', '/uk/partners/all/', 'uk'],
         ['/ca/partners/all', '/nz/partners/all/', 'nz'],
@@ -145,10 +145,10 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_url" do
     it "should match our expectations" do
       [
-        ['/lp-general-ca.html', @url + '/ca/lp-general-ca/'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/', 'nz'],
-        ['/ca//lp-general-ca', @url + '/ca/lp-general-ca/', 'ca'],
-        ['/nz/lp-general-ca/', @url + '/ca/lp-general-ca/', 'nz'],
+        ['/xero.html', @url + '/xero/'],
+        ['/ca//xero', @url + '/nz/xero/', 'nz'],
+        ['/ca//xero', @url + '/ca/xero/', 'ca'],
+        ['/nz/xero/', @url + '/nz/xero/', 'nz'],
         ['/partners/all.html', @url + '/partners/all/'],
         ['/partners//all.html', @url + '/ca/partners/all/', 'ca'],
         ['/nz/partners/all', @url + '/uk/partners/all/', 'uk'],

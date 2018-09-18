@@ -21,20 +21,17 @@
   metas[:social_url]           = locals[:social_url] || current_global_url
 
   metas[:title]                = BasicHelper.replace_quotes(locals[:title] || current_locale_page[:page_title] || current_page&.data&.page_title || current_locale_obj[:default_title])
-  metas[:social_title]         = generate_social_title(locals[:social_title])
-  metas[:social_title]       ||= base_locale_page[:page_title]
-  metas[:social_title]       ||= generate_social_title(metas[:title])
+  metas[:social_title]         = locals[:social_title] || base_locale_page[:page_title] || metas[:title]
+  metas[:social_title]         = generate_social_title(metas[:social_title])
   metas[:social_title]         = BasicHelper.replace_quotes(metas[:social_title])
 
   metas[:description]          = BasicHelper.replace_quotes(locals[:description] || current_locale_page[:page_description] || current_page&.data&.page_description)
-  metas[:social_description]   = locals[:social_description]
-  metas[:social_description] ||= base_locale_page[:page_description]
-  metas[:social_description] ||= metas[:description]
-  metas[:social_description]   = BasicHelper.replace_quotes(metas[:social_description])
+  metas[:social_description]   = BasicHelper.replace_quotes(locals[:social_description] || base_locale_page[:page_description] || metas[:description])
 
-  metas[:social_image]         = locals[:social_image]
+  metas[:social_image]         = locals[:social_image] || current_locale_page[:social_image] || current_page&.data&.social_image
+  metas[:social_image]         = metas[:social_image][:url] if metas[:social_image].is_a?(Hash) # coming from contentful
   metas[:social_image]       ||= (page_path_name == 'xero') ? DEFAULT_XERO_SOCIAL_IMG[:url] : DEFAULT_SOCIAL_IMG[:url]
-  metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
+  metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image].is_a?(String) && metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
 
   pagination = locals[:pagination]
   if pagination && pagination&.current_page && pagination&.total_pages && pagination&.current_page > 1
@@ -46,9 +43,9 @@
   end
 %>
 
-<!-- <%= valid_page_from_path %> -->
+<!-- page: <%= valid_page_from_path %> -->
 
-<%# NOTE: meta name='charset' is set at the top of every layout %>
+<%# NOTE: meta name='charset' is set in `layouts/partials/head` as it should be first %>
 <title><%= metas[:title] %></title>
 <meta name="description" content="<%= metas[:description] %>">
 

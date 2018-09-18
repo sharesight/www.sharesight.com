@@ -9,6 +9,7 @@ require 'helpers/s3_redirects_helper.rb'
 
 require 'mappers/default'
 
+load 'extensions/landing-pages.rb'
 load 'extensions/blog.rb'
 load 'extensions/partners.rb'
 load 'extensions/routing.rb'
@@ -69,12 +70,14 @@ activate :routing
 # Fetch via Contentful
 # NOTE: This must exist in this file, cannot be an extension as `middleman-contentful` doesn't appear to be able to initiate from any source other than config.rb.
 # Do note, you MUST run `middleman contentful` prior to `middleman [build|server]` as contentful does not work properly with lifecycle hooks and data will be parsed post-configuration, pre-build (where other things can't hook into it)
-[ ContentfulConfig::BlogSpace, ContentfulConfig::PartnersSpace ].each do |space|
+[ ContentfulConfig::BlogSpace, ContentfulConfig::PartnersSpace, ContentfulConfig::LandingPagesSpace ].each do |space|
   use_preview_api = config[:env_name] != 'production'
-  contentful_access_token = (use_preview_api) && space::PREVIEW_ACCESS_TOKEN || space::ACCESS_TOKEN
+  contentful_access_token = (use_preview_api) ? space::PREVIEW_ACCESS_TOKEN : space::ACCESS_TOKEN
 
   # This pulls the data from contentful and puts it into data[space::NAME][plural_name]
   activate :contentful do |f|
+    puts "Activating Contentful for #{space::NAME}::#{space::SPACE_ID} in #{use_preview_api ? 'draft' : 'published'} mode"
+
     f.use_preview_api   = use_preview_api # whether or not to use the drafts + published api
     f.access_token      = contentful_access_token # which token to use, only one has access to drafts –– redundant
 
@@ -102,8 +105,9 @@ activate :routing
 end
 
 # activate :pagination
-activate :blog_space # creates the pagination
-activate :partners_space # creates the pagination
+activate :blog_space # creates the pagination and routing
+activate :partners_space # creates the pagination and routing
+activate :landing_pages_space # creates pages and routing
 
 # Sync to S3.  Unfortunately this doesn't appear to like any lifecycles either and isn't working in an extension.
 if ApplicationConfig.const_defined?(:S3)
@@ -145,7 +149,6 @@ configure :build do
   end
 
   remove_paths = ['.DS_Store']
-  remove_paths << 'ca/lp-general-ca' if config[:env_name] == 'production'
   activate :remover, :paths => remove_paths
 
   # For example, change the Compass output style for deployment

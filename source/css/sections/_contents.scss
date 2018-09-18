@@ -1,0 +1,66 @@
+.section__contents {
+  display: flex;
+  margin: 0 (-$gutter); // counter-acts the margin in section__content
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond-to(md, max) {
+    flex-direction: column;
+  }
+
+  @at-root * ~ & {
+    // give this top padding if it has a parent
+    margin-top: $gutter;
+  }
+
+  & ~ * {
+    margin-top: $gutter;
+  }
+}
+
+.section__content {
+  padding: $gutter;
+  flex: 1 1 0; // WARNING: A flex-basis of 0 means everything should stay the same width.
+  margin: 0 $gutter; // counter-acted by the negative margin in section__contents
+
+  &--card {
+    background-color: $background_offset_white;
+
+    @at-root .section--alternate & {
+      background-color: #fff;
+    }
+  }
+
+  &--hero {
+    &.section__content--card {
+      max-width: fit-content;
+      background-color: rgba(#fff, .65);
+    }
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &-header {
+    @include fontSize(22px);
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: $gutter;
+  }
+
+  &-text {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.45;
+  }
+}

@@ -1,0 +1,65 @@
+.hero {
+  min-height: 40vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+
+  // for the hero__background to work
+  position: relative;
+  overflow: hidden;
+
+  &, &.section {
+    padding: 60px 0;
+
+    @include respond-to (md, min) {
+      padding: 100px 0;
+    }
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  &__background {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50%;
+    z-index: -1;
+  }
+
+  &__content {
+    margin: 0 $gutter*2;
+    padding: $gutter * 1.5;
+    max-width: 360px;
+    background-color: rgba(#fff, .65)
+  }
+
+  &__title,
+  &__text {
+    color: $colour_pro;
+    margin-bottom: $gutter * 1.5;
+  }
+
+  &__title {
+    @include fontSize(30px);
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  &__text {
+    @include fontSize(20px);
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  // make hero level buttons  (outside of content)
+  &__buttons .btn {
+    @include fontSize(20px);
+    line-height: 50px; // has a border of
+    padding: 0 $gutter*1.5;
+  }
+}

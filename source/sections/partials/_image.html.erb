@@ -1,0 +1,12 @@
+<%
+  url = locals[:url]
+  alt = locals[:description] || locals[:title]
+
+  classes = locals[:classes] || []
+  classes << ['section__image']
+  classes << 'section__image--icon' if locals[:icon]
+%>
+
+<% if url %>
+  <img src="<%= url %>" alt="<%= alt %>" class="<%= classes.join(' ') %>" />
+<% end %>

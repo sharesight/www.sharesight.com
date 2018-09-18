@@ -1,0 +1,18 @@
+<%
+  # NOTE: The layout and all metadata for this file is defined in Contentful.
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  locals = locals.with_indifferent_access # this all comes from the Contentful model; it's merged in with locale_obj.
+  sections = locals[:sections] || []
+%>
+
+<% sections.each_with_index do |section, index| %>
+  <!-- section: <%= section[:type] %> -->
+  <%
+    class_name = ''
+    class_name = 'section--alternate' if index % 2 == 0
+    type = section[:type] || 'basic' # drafts can blow up
+  %>
+
+  <%= partial "sections/#{type}", locals: section.merge({ locale_obj: locale_obj, class_name: class_name }) %>
+<% end %>

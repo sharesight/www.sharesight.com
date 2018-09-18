@@ -11,6 +11,9 @@ As this is a public repo, everything is stored in local environment keys.
    - Partners Space: https://app.contentful.com/spaces/rafbawofr5bl/api/keys
      - CONTENTFUL_PARTNERS_ACCESS_TOKEN
      - CONTENTFUL_PARTNERS_PREVIEW_TOKEN
+   - Landing Pages Space: https://app.contentful.com/spaces/cbgsdqa84fjb/api/keys
+     - CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN
+     - CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN
  - For deploys to AWS, see `config/environment/*.rb`
    - Use your own AWS Keys!
    - AWS_DEPLOY_ACCESS_ID

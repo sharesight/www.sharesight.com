@@ -1,8 +1,7 @@
 $__logo_max_width: 200px;
 $__logo_height: 75px;
 
-.partner-home {
-  background-color: $background_offset_white;
+.section--partners {
   text-align: center;
 
   strong {
@@ -10,19 +9,13 @@ $__logo_height: 75px;
   }
 
   &__logos {
-    margin: $gutter 0;
-
+    margin: $gutter 0 $gutter/2;
     overflow: visible;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-
-    @include respond-to(md, min) {
-      margin: $gutter*2 0;
-    }
   }
 
   &__logo {

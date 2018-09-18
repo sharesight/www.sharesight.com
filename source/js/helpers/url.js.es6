@@ -6,7 +6,7 @@ const urlHelper = {
     if (path.match(/^\/?blog/)) return false
     if (path.match(/^\/?404/)) return false
 
-    // page exists, but not in the desired locale, eg. from ca/lp-general-ca to [non-existent] [global]/lp-general-ca
+    // page exists, but not in the desired locale (NOTE: This should not happen!)
     if (pageHelper.isPage(path) && !pageHelper.getPage(path, locale_id)) {
       return false
     }

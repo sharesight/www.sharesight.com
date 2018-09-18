@@ -302,13 +302,6 @@
         "sitemap_priority": 0.1
       },
       {
-        "page": "lp-general-ca",
-        "page_title": "Investment Tracking Software | Sharesight Canada",
-        "page_description": "Detailed information on Sharesight terms of use.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "show_in_sitemap": false
-      },
-      {
         "page": "404",
         "page_title": "Page Not Found | Sharesight Canada",
         "page_description": "The leading online stock portfolio tracker & reporting tool for Canadian DIY investors. Track prices, trades, dividends, performance and tax!",
