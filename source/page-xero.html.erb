@@ -93,7 +93,7 @@ section_class: 'section_home'
     </a>
   </div>
 </section>
-<%= partial "sections/testimonials", locals: {json: data.xero_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_xero], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
+<%= partial "sections/testimonials", locals: {json: data.xero_testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading_xero], customer_type: 'Sharesight', locale_obj: locale_obj} %>
 
 <!-- Faqs -->
 <div class="theme-featured faq">
