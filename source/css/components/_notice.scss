@@ -1,9 +1,13 @@
 // Extends featured_link, but modified to stand out a bit more.
 .notice {
   @extend %featured_link;
-  margin: 0;
-  padding: $gutter*1.5 $gutter*3;
   justify-content: center;
+
+  &,
+  &.section {
+    margin: 0;
+    padding: $gutter*1.5 $gutter*3;
+  }
 
   background-color: rgba($colour_secondary, .95);
   color: $colour_pro;
