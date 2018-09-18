@@ -4,11 +4,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include respond-to(md, max) {
+    flex-direction: column;
+  }
 }
 
 .section__content {
   padding: $gutter;
-  flex: 1 0 auto;
+  flex: 1 1 0; // WARNING: A flex-basis of 0 means everything should stay the same width.
   margin: 0 $gutter; // counter-acted by the negative margin in section__contents
 
   &--card {
