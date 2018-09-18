@@ -43,9 +43,9 @@
   end
 %>
 
-<!-- <%= valid_page_from_path %> -->
+<!-- page: <%= valid_page_from_path %> -->
 
-<%# NOTE: meta name='charset' is set at the top of every layout %>
+<%# NOTE: meta name='charset' is set in `layouts/partials/head` as it should be first %>
 <title><%= metas[:title] %></title>
 <meta name="description" content="<%= metas[:description] %>">
 
