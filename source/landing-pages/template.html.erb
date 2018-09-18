@@ -11,7 +11,8 @@
   <%
     class_name = ''
     class_name = 'section--alternate' if index % 2 == 0
+    type = section[:type] || 'basic' # drafts can blow up
   %>
 
-  <%= partial "sections/#{section[:type]}", locals: section.merge({ locale_obj: locale_obj, class_name: class_name }) %>
+  <%= partial "sections/#{type}", locals: section.merge({ locale_obj: locale_obj, class_name: class_name }) %>
 <% end %>
