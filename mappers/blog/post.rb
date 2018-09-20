@@ -9,5 +9,10 @@ class BlogPostMapper < ContentfulMiddleman::Mapper::Base
     end
 
     context.title = context.title&.to_s.squeeze(' ').strip # An author enters ' Great   Title!' and it becomes 'Great Title!'
+
+    # some sanitizing of blog content
+    context.content = (context.content || '')
+      .gsub('.png)', '.png?w=950)') # restrict image width
+      .gsub('.jpg)', '.jpg?w=950)')
   end
 end
