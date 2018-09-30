@@ -14,7 +14,7 @@ class PartnersPartnerMapper < ContentfulMiddleman::Mapper::Base
 
     if keys.include?(:priority)
       # There must be a priority of 0 at all times and it's a bit tricky to ensure it's set via the Contentful UI.
-      if context.priority.is_a?(::Hash) && !context.priority.try(:en)
+      if context.priority.is_a?(::Hash) && !context.priority[:en]
         context.priority[:en] = 0
       end
 
