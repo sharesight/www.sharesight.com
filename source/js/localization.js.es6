@@ -25,7 +25,7 @@ const localization = {
     contentManager.updateContent()
   },
 
-  setLocale (locale_id) {
+  setLocale (locale_id, redirect = true) {
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -37,7 +37,7 @@ const localization = {
     this.modifyContent()
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
-    if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
+    if (redirect && !this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
       window.location.href = urlHelper.localizePath(window.location.pathname, locale_id);
     }
   },
@@ -66,17 +66,18 @@ const localization = {
   },
 
   initializeRegionSelector () {
-    const self = this
     const selector = this.getRegionSelectorNode();
     if (!selector || !selector.options || !selector.options.length) return
 
     this.setRegionSelectorValue()
     this.setCookieFromRegionSelector();
 
-    // when it changes, set locale
-    selector.onchange = function () {
-      self.setLocale(this.value)
-    }
+    // NOTE: We set this value programatically via `setRegionSelectorValue` and don't want that to redirect; wait 500ms before adding this event listener
+    setTimeout(() => {
+      selector.addEventListener('change', (e) => {
+        this.setLocale(e.target.value);
+      })
+    }, 500);
   },
 
   setRegionSelectorValue () {
@@ -99,7 +100,7 @@ const localization = {
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
-    this.setLocale(selector.value)
+    this.setLocale(selector.value, false) // do not redirect when loading the page, just update the cookie
   },
 }
 
