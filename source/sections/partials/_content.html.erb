@@ -2,7 +2,7 @@
   locale_obj = locals[:locale_obj] || current_locale_obj
 
   classes = ['section__content']
-  classes << 'section__content--hero' if locals[:hero]
+  classes << 'hero__content' if locals[:hero]
   classes << 'section__content--card' if locals[:with_background]
   classes << "section__content--#{locals[:alignment]}" if locals[:alignment]
 %>

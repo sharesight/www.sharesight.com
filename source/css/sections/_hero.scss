@@ -34,6 +34,12 @@
     z-index: -1;
   }
 
+  &__contents {
+    @include respond-to(md, max) {
+      display: none; // not visible in mobile
+    }
+  }
+
   &__content {
     margin: 0 $gutter*2;
     padding: $gutter * 1.5;
