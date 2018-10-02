@@ -1,5 +1,4 @@
 .hero {
-  min-height: 40vh;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -9,10 +8,18 @@
   position: relative;
   overflow: hidden;
 
+  @include respond-to(md, min) {
+    min-height: 40vh;
+  }
+
   &, &.section {
-    padding: 60px 0;
+    padding: 30px 0;
 
     @include respond-to (md, min) {
+      padding: 60px 0;
+    }
+
+    @include respond-to (lg, min) {
       padding: 100px 0;
     }
   }
@@ -27,8 +34,14 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: -50%;
+    top: 0;
     z-index: -1;
+  }
+
+  &__contents {
+    @include respond-to(md, max) {
+      display: none; // not visible in mobile
+    }
   }
 
   &__content {

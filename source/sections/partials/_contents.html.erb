@@ -1,5 +1,12 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  classes = ['section__contents']
+  classes << 'hero__contents' if locals[:hero]
+%>
+
 <% if locals[:contents]&.length %>
-  <div class="section__contents">
+  <div class="<%= classes.join(' ') %>">
     <% locals[:contents]&.each do |content| %>
       <%= partial 'sections/partials/content', locals: content.merge({ hero: locals[:hero], locale_obj: locale_obj }) %>
     <% end %>

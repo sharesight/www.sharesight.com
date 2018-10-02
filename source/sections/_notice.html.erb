@@ -1,4 +1,4 @@
-<div class="section notice">
+<div class="section notice notice--<%= locals[:color] || 'secondary' %>">
   <span class="notice__description">
     <% if locals[:title] %>
       <h5><%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %></h5>

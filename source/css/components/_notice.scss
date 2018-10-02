@@ -9,8 +9,25 @@
     padding: $gutter*1.5 $gutter*3;
   }
 
-  background-color: rgba($colour_secondary, .95);
-  color: $colour_pro;
+  &, &--secondary {
+    background-color: rgba($colour_secondary, .95);
+    color: $colour_pro;
+  }
+
+  &--primary {
+    background-color: $colour_primary;
+    color: white;
+  }
+
+  &--white {
+    background-color: white;
+    color: $colour_pro;
+  }
+
+  &--pro {
+    background-color: $colour_pro;
+    color: white;
+  }
 
   @include respond-to(sm, max) {
     margin: 0;
