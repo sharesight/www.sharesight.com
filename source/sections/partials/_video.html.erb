@@ -7,5 +7,5 @@
 %>
 
 <% if url %>
-  <video controls muted src="<%= url %>" class="<%= classes.join(' ') %>" />
+  <video controls muted src="<%= url %>#t=0.5" class="<%= classes.join(' ') %>" preload="metadata" />
 <% end %>
