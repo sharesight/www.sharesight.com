@@ -1,5 +1,4 @@
 .hero {
-  min-height: 40vh;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -8,6 +7,10 @@
   // for the hero__background to work
   position: relative;
   overflow: hidden;
+
+  @include respond-to(md, min) {
+    min-height: 40vh;
+  }
 
   &, &.section {
     padding: 60px 0;
