@@ -2,7 +2,12 @@
   locale_obj = locals[:locale_obj] || current_locale_obj
   json = locals[:json] || data.testimonials
   customer_type = locals[:customer_type] || 'Sharesight'
-  title = "#{locals[:testimonial_heading]}…" || locals[:title] || 'Testimonials'
+
+  title = if locals[:testimonial_heading]
+    "#{locals[:testimonial_heading]}…"
+  end
+
+  title ||= locals[:title] || 'Testimonials'
  %>
 
 <div class="section section_testimonials <%= locals[:class_name] %>" id="js-testimonials-container">
