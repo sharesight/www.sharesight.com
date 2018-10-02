@@ -3,9 +3,11 @@
 
   # The entire "button" gets spread into here.
   # Fields:
-  # color, title (=text), text, url, remote
+  # color, title (=text), text, url
 
-  url = if locals[:remote]
+  is_remote = locals[:url].match(/^(http:|https:)?\/\//)
+
+  url = if is_remote
     locals[:url]
   else
     localize_url(locals[:url], locale_id: locale_obj[:id])
@@ -16,8 +18,8 @@
   href="<%= url %>"
   class="btn btn--solid btn--<%= locals[:color] || 'secondary' %>"
   title="<%= locals[:title] || locals[:text] %>"
-  <%= locals[:remote] ? "target='_blank'" : '' %>
-  <%= locals[:remote] ? "rel='noopener noreferrer'" : '' %>
+  <%= is_remote ? "target='_blank'" : '' %>
+  <%= is_remote ? "rel='noopener noreferrer'" : '' %>
 >
   <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
 </a>
