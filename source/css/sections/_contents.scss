@@ -14,7 +14,7 @@
     margin-top: $gutter;
   }
 
-  & ~ * {
+  & + * {
     margin-top: $gutter;
   }
 }
@@ -23,6 +23,10 @@
   padding: $gutter;
   flex: 1 1 0; // WARNING: A flex-basis of 0 means everything should stay the same width.
   margin: 0 $gutter; // counter-acted by the negative margin in section__contents
+
+  > .btn {
+    margin-top: $gutter;
+  }
 
   &--card {
     background-color: $background_offset_white;
@@ -49,6 +53,10 @@
 
   &--right {
     text-align: right;
+  }
+
+  &-icon {
+    margin-bottom: $gutter;
   }
 
   &-header {

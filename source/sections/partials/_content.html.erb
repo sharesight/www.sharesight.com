@@ -9,7 +9,7 @@
 
 <div class="<%= classes.join(' ') %>">
   <% if locals[:image_icon] && locals[:image] %>
-    <div>
+    <div class="section__content-icon">
       <%= partial 'sections/partials/image', locals: locals[:image].merge({ icon: true }) %>
     </div>
   <% end %>
@@ -27,13 +27,13 @@
   <% end %>
 
   <% if !locals[:image_icon] && locals[:image] %>
-    <div>
+    <div class="section__content-image">
       <%= partial 'sections/partials/image', locals: locals[:image] %>
     </div>
   <% end %>
 
   <% if locals[:video] %>
-    <div>
+    <div class="section__content-video">
       <%= partial 'sections/partials/video', locals: locals[:video] %>
     </div>
   <% end %>
