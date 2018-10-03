@@ -1,6 +1,6 @@
 .section__contents {
   display: flex;
-  margin: 0 (-$gutter); // counter-acts the margin in section__content
+  margin: $gutter/2 (-$gutter/2); // counter-acts the margin in section__content
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -8,21 +8,12 @@
   @include respond-to(md, max) {
     flex-direction: column;
   }
-
-  @at-root * ~ & {
-    // give this top padding if it has a parent
-    margin-top: $gutter;
-  }
-
-  & + * {
-    margin-top: $gutter;
-  }
 }
 
 .section__content {
   padding: $gutter;
   flex: 1 1 0; // WARNING: A flex-basis of 0 means everything should stay the same width.
-  margin: 0 $gutter; // counter-acted by the negative margin in section__contents
+  margin: $gutter/2; // left/right is counter-acted by the negative margin in section__contents
 
   > .btn {
     margin-top: $gutter;
