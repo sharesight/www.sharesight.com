@@ -2,12 +2,12 @@
   locale_obj = locals[:locale_obj] || current_locale_obj
   title = locals[:title] || 'Sharesight works with you.'
 
-  button = locals[:button] || {
+  buttons = locals[:buttons] || [{
     text: 'See All Partners',
     color: 'secondary',
     url: 'partners',
     remote: false
-  }
+  }]
 %>
 
 <div class="section section--partners <%= locals[:class_name] %>">
@@ -36,6 +36,6 @@
       <% end %>
     </div>
 
-    <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) if button %>
+    <%= partial 'sections/partials/buttons', locals: { buttons: buttons, locale_obj: locale_obj } %>
   </div>
 </div>

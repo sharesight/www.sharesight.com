@@ -29,9 +29,7 @@
     <% end %>
 
     <% if locals[:buttons] %>
-      <div class="hero__buttons">
-        <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
-      </div>
+      <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], hero: true, locale_obj: locale_obj } %>
     <% end %>
   </div>
 </section>
