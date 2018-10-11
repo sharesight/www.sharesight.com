@@ -1,0 +1,7 @@
+.section__buttons {
+  margin: -$gutter/4; // counter-acts the margin in section__button
+}
+
+.section__button {
+  margin: $gutter/4;
+}
