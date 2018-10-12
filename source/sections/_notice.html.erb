@@ -9,5 +9,7 @@
     <% end %>
   </span>
 
-  <%= partial 'sections/partials/button', locals: button.merge({ locale_obj: locale_obj }) if locals[:button] %>
+  <% if locals[:buttons] %>
+    <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
+  <% end %>
 </div>
