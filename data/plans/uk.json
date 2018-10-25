@@ -3,12 +3,15 @@
     "label": "Free"
   },
   {
-    "label": "Starter"
+    "label": "Starter",
+    "price": 9
   },
   {
-    "label": "Investor"
+    "label": "Investor",
+    "price": 15
   },
   {
-    "label": "Expert"
+    "label": "Expert",
+    "price": 19
   }
 ]
