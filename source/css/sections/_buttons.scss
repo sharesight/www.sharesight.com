@@ -3,5 +3,8 @@
 }
 
 .section__button {
-  margin: $gutter/4!important;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+  margin-left: $gutter/4!important;
+  margin-right: $gutter/4!important;
 }

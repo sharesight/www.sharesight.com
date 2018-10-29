@@ -36,6 +36,11 @@
     right: 0;
     top: 0;
     z-index: -1;
+
+    @include respond-to(md, max) {
+      background-color: black; // darken in mobile
+      opacity: 0.1;
+    }
   }
 
   &__contents {
