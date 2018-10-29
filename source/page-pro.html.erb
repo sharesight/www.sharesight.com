@@ -36,15 +36,15 @@ layout: layout_pro
     <div class="layout_primary">
       <h2 class="heading heading_paragraph">Simple pricing, no commitment</h2>
       <p>
-        Whether you need to track 5 portfolios or 500, you never pay more than $12 per portfolio, per month. And the more portfolios you set up, the more affordable it gets.
+        Whether you need to track 5 portfolios or 500, you never pay more than <%= locale_obj[:currency_symbol] %>12 per portfolio, per month. And the more portfolios you set up, the more affordable it gets.
       </p>
       <div class="layout_component table-columns">
         <div class="columns">
           <ul class="price starter">
             <li><h6 class="heading heading_subheading">STARTER</h6></li>
             <li>
-              <h3 class="heading price__heading">$12</h3>
-              <small>per portfolio/month <br>(from $60/month)
+              <h3 class="heading price__heading"><%= locale_obj[:currency_symbol] %>12</h3>
+              <small>per portfolio/month <br>(from <%= locale_obj[:currency_symbol] %>60/month)
               </small>
             </li>
             <li><p>5-19 portfolios</p></li>
@@ -54,8 +54,8 @@ layout: layout_pro
           <ul class="price bronze">
             <li><h6 class="heading heading_subheading">BRONZE</h6></li>
             <li>
-              <h3 class="heading price__heading">$10.80</h3>
-              <small>per portfolio/month<br>(from $216/month)
+              <h3 class="heading price__heading"><%= locale_obj[:currency_symbol] %>10.80</h3>
+              <small>per portfolio/month<br>(from <%= locale_obj[:currency_symbol] %>216/month)
               </small>
             </li>
             <li><p>20-49 portfolios</p></li>
@@ -66,8 +66,8 @@ layout: layout_pro
           <ul class="price silver">
             <li><h6 class="heading heading_subheading">SILVER</h6></li>
             <li>
-              <h3 class="heading price__heading">$9.60</h3>
-              <small>per portfolio/month<br>(from $480/month)
+              <h3 class="heading price__heading"><%= locale_obj[:currency_symbol] %>9.60</h3>
+              <small>per portfolio/month<br>(from <%= locale_obj[:currency_symbol] %>480/month)
               </small>
             </li>
             <li><p>50-99 portfolios</p></li>
@@ -79,10 +79,10 @@ layout: layout_pro
           <ul class="price gold">
             <li><h6 class="heading heading_subheading">GOLD</h6></li>
             <li>
-              <h3 class="heading price__heading">$8.40</h3>
+              <h3 class="heading price__heading"><%= locale_obj[:currency_symbol] %>8.40</h3>
               <small>
                 per portfolio/month
-                <br>(from $840/month)
+                <br>(from <%= locale_obj[:currency_symbol] %>840/month)
               </small>
             </li>
             <li><p>100+ portfolios</p></li>
