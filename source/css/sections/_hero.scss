@@ -76,8 +76,26 @@
 
   // make hero level buttons  (outside of content)
   &__buttons .btn {
-    @include fontSize(20px);
-    line-height: 50px; // has a border of
-    padding: 0 $gutter*1.5;
+
+    @media (min-width: 320px) and (max-width: 425px) {
+      @include fontSize(18px);
+      padding: 0 $gutter;
+      //line-height: 25px; // has a border of
+    }
+    @media (min-width: 426px) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      //line-height: 20px; // has a border of
+    }
+    @media (min-width: $screen-md-min) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      //line-height: 20px; // has a border of
+    }
+    @media (min-width: $screen-lg-min) {
+      @include fontSize(20px);
+      padding: 0 $gutter*1.5;
+      line-height: 50px; // has a border of
+    }
   }
 }
