@@ -12,11 +12,14 @@
   else
     localize_url(locals[:url], locale_id: locale_obj[:id])
   end
+
+  classes = ['btn', 'btn--solid ', "btn--#{locals[:color] || 'secondary' }", 'section__button']
+  classes << 'hero__button' if locals[:hero]
 %>
 
 <a
   href="<%= url %>"
-  class="btn btn--solid btn--<%= locals[:color] || 'secondary' %> section__button"
+  class="<%= classes.join(' ') %>"
   title="<%= locals[:title] || locals[:text] %>"
   <%= is_remote ? "target='_blank'" : '' %>
   <%= is_remote ? "rel='noopener noreferrer'" : '' %>
