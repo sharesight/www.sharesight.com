@@ -39,7 +39,7 @@
 
     @include respond-to(md, max) {
       background-color: black; // darken in mobile
-      opacity: 0.1;
+      opacity: 0.4;
     }
   }
 
@@ -59,7 +59,17 @@
   &__title,
   &__text {
     color: $colour_pro;
-    margin-bottom: $gutter * 1.5;
+    margin-bottom: $gutter*1.5;
+
+    @media (min-width: 320px) and (max-width: 425px) {
+      margin-bottom: $gutter*0.5;
+    }
+    @media (min-width: 426px) {
+      margin-bottom: $gutter*0.5;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-bottom: $gutter*0.75;
+    }
   }
 
   &__title {
@@ -74,10 +84,31 @@
     line-height: 24px;
   }
 
-  // make hero level buttons  (outside of content)
-  &__buttons .btn {
-    @include fontSize(20px);
-    line-height: 50px; // has a border of
-    padding: 0 $gutter*1.5;
+  &__button {
+    @media (min-width: 320px) and (max-width: 425px) {
+      @include fontSize(18px);
+      padding: 0 $gutter;
+      margin-top: 3px !important;
+      margin-bottom: 3px !important;
+    }
+    @media (min-width: 426px) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      margin-top: 2px !important;
+      margin-bottom: 2px !important;
+    }
+    @media (min-width: $screen-md-min) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      margin-top: 2px !important;
+      margin-bottom: 2px !important;
+    }
+    @media (min-width: $screen-lg-min) {
+      @include fontSize(20px);
+      padding: 0 $gutter*1.5;
+      line-height: 50px;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
   }
 }
