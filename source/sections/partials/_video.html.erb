@@ -1,0 +1,11 @@
+<%
+  url = locals[:url]
+  label = locals[:description] || locals[:title]
+
+  classes = locals[:classes] || []
+  classes << ['section__video']
+%>
+
+<% if url %>
+  <video controls muted src="<%= url %>#t=0.5" class="<%= classes.join(' ') %>" preload="metadata" />
+<% end %>

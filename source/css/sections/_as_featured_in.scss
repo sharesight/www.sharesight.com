@@ -1,17 +1,5 @@
-.alternate {
-  background-color: $background_offset_white;
-}
-
-.section-pricing {
-  padding-top: 0;
-  padding-bottom: 60px;
-}
-
-.section_plain {
-  background-color: white;
-}
-
-.section_featured {
+.section--featured {
+  padding-top: 60px;
   text-align: center;
 
   .featured_in_title {

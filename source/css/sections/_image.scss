@@ -1,0 +1,11 @@
+.section__image {
+  margin: 0 auto;
+  width: auto;
+  max-width: 300px; // NOTE: Match this in source/sections/partials/_image.html.erb
+  max-height: 250px;
+
+  &--icon {
+    max-width: 175px; // NOTE: Match this in source/sections/partials/_image.html.erb
+    max-height: 125px;
+  }
+}

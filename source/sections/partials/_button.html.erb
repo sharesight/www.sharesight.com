@@ -1,0 +1,28 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  # The entire "button" gets spread into here.
+  # Fields:
+  # color, title (=text), text, url
+
+  is_remote = locals[:url].match(/^(http:|https:)?\/\//)
+
+  url = if is_remote
+    locals[:url]
+  else
+    localize_url(locals[:url], locale_id: locale_obj[:id])
+  end
+
+  classes = ['btn', 'btn--solid ', "btn--#{locals[:color] || 'secondary' }", 'section__button']
+  classes << 'hero__button' if locals[:hero]
+%>
+
+<a
+  href="<%= url %>"
+  class="<%= classes.join(' ') %>"
+  title="<%= locals[:title] || locals[:text] %>"
+  <%= is_remote ? "target='_blank'" : '' %>
+  <%= is_remote ? "rel='noopener noreferrer'" : '' %>
+>
+  <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+</a>

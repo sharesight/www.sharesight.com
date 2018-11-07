@@ -1,0 +1,114 @@
+.hero {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: left;
+
+  // for the hero__background to work
+  position: relative;
+  overflow: hidden;
+
+  @include respond-to(md, min) {
+    min-height: 40vh;
+  }
+
+  &, &.section {
+    padding: 30px 0;
+
+    @include respond-to (md, min) {
+      padding: 60px 0;
+    }
+
+    @include respond-to (lg, min) {
+      padding: 100px 0;
+    }
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  &__background {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    @include respond-to(md, max) {
+      background-color: black; // darken in mobile
+      opacity: 0.4;
+    }
+  }
+
+  &__contents {
+    @include respond-to(md, max) {
+      display: none; // not visible in mobile
+    }
+  }
+
+  &__content {
+    margin: 0 $gutter*2;
+    padding: $gutter * 1.5;
+    max-width: 360px;
+    background-color: rgba(#fff, .65)
+  }
+
+  &__title,
+  &__text {
+    color: $colour_pro;
+    margin-bottom: $gutter*1.5;
+
+    @media (min-width: 320px) and (max-width: 425px) {
+      margin-bottom: $gutter*0.5;
+    }
+    @media (min-width: 426px) {
+      margin-bottom: $gutter*0.5;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-bottom: $gutter*0.75;
+    }
+  }
+
+  &__title {
+    @include fontSize(30px);
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  &__text {
+    @include fontSize(20px);
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &__button {
+    @media (min-width: 320px) and (max-width: 425px) {
+      @include fontSize(18px);
+      padding: 0 $gutter;
+      margin-top: $gutter*0.4 !important;
+      margin-bottom: $gutter*0.4 !important;
+    }
+    @media (min-width: 426px) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      margin-top: $gutter*0.25 !important;
+      margin-bottom: $gutter*0.25 !important;
+    }
+    @media (min-width: $screen-md-min) {
+      @include fontSize(15px);
+      padding: 0 $gutter*0.75;
+      margin-top: $gutter*0.25 !important;
+      margin-bottom: $gutter*0.25 !important;
+    }
+    @media (min-width: $screen-lg-min) {
+      @include fontSize(20px);
+      padding: 0 $gutter*1.5;
+      line-height: 50px;
+      margin-top: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
+}

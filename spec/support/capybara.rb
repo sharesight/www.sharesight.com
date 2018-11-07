@@ -17,6 +17,7 @@ module CapybaraHelpers
   include ::CapybaraBaseHelpers
   include ::CapybaraBlogHelpers
   include ::CapybaraFileHelpers
+  include ::CapybaraLandingPagesHelpers
   include ::CapybaraLocaleHelpers
   include ::CapybaraPageHelpers
   include ::CapybaraPartnersHelpers

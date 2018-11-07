@@ -1,0 +1,29 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  title = locals[:title] || 'Lose the spreadsheet'
+%>
+
+<section class="alternate layout-lrg xero <%= locals[:class_name] %>">
+  <div class="container layout-container">
+    <h2>
+      <%= partial 'partials/components/markdown', locals: { markdown: title, inline: true } %>
+    </h2>
+
+    <p class="paragraph_compact paragraph_center">
+      Keeping track of investments used to be a hassle. Sharesight makes it simple. Want automatic holding updates, with comprehensive tax and performance reporting, wrapped up in an easy-to-use, fully online system? That’s Sharesight in a nutshell.
+    </p>
+
+    <div class="table">
+      <div class="row">
+        <% entries = data.seo_home.find { |entry| entry.id == locale_obj[:id] } %>
+        <% entries&.columns.each do |col| %>
+          <div class="cell card card_cursive card_plain">
+            <%= image_tag "icons/#{col.icon}.svg", class: "icon" %>
+            <h3 class="heading"><%= col.title %></h3>
+            <p><%= col.description %></p>
+          </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</section>

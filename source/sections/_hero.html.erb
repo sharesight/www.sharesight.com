@@ -1,0 +1,35 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+%>
+
+<section class="section hero" role="banner">
+  <img
+    class="hero__background"
+    src="<%= locals[:image][:url]%>?w=2000"
+    srcset="<%= locals[:image][:url] %>?w=450 450w, <%= locals[:image][:url] %>?w=720 720w, <%= locals[:image][:url] %>?w=1200w 1200w, <%= locals[:image][:url] %>?w=1500 1500w, <%= locals[:image][:url] %>?w=2000 2000w"
+    sizes="(max-width: 450px) 450px, (max-width: 720px) 720px, (max-width: 1200px) 1200px, (max-width: 1500px) 1500px, 3000px"
+    alt="<%= locals[:description] || locals[:title] %>"
+  />
+
+  <div class="container">
+    <% if locals[:title] %>
+      <h1 class="hero__title">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %>
+      </h1>
+    <% end %>
+
+    <% if locals[:text] %>
+      <h2 class="hero__text">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+      </h2>
+    <% end %>
+
+    <% if locals[:contents] %>
+      <%= partial 'sections/partials/contents', locals: { contents: locals[:contents], hero: true, locale_obj: locale_obj } %>
+    <% end %>
+
+    <% if locals[:buttons] %>
+      <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], hero: true, locale_obj: locale_obj } %>
+    <% end %>
+  </div>
+</section>

@@ -8,82 +8,18 @@ layout: layout_index
   plans = locale_plans(locale_obj[:id])
 %>
 
-<section class="alternate layout-lrg xero">
-  <div class="container layout-container">
-    <h2 tabindex="0">Lose the spreadsheet</h2>
-    <p class="paragraph_compact paragraph_center">
-      Keeping track of investments used to be a hassle. Sharesight makes it simple. Want automatic holding updates, with comprehensive tax and performance reporting, wrapped up in an easy-to-use, fully online system? That’s Sharesight in a nutshell.
-    </p>
+<%= partial "sections/lose_the_spreadsheet", locals: { locale_obj: locale_obj } %>
+<%= partial "sections/pricing", locals: { locale_obj: locale_obj } %>
+<%= partial "sections/partners", locals: { locale_obj: locale_obj } %>
 
-    <div class="table">
-      <div class="row">
-        <% entries = data.seo_home.find { |entry| entry.id == locale_obj[:id] } %>
-        <% entries&.columns.each do |col| %>
-          <div class="cell card card_cursive card_plain">
-            <%=image_tag "icons/#{col.icon}.svg", class: "icon" %>
-            <h3 class="heading"><%=col.title%></h3>
-            <p><%=col.description%></p>
-          </div>
-        <%end%>
-      </div>
-    </div>
-  </div>
-</section>
+<%= partial "sections/testimonials", locals: {
+  json: data.testimonials,
+  testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading],
+  customer_type: 'Sharesight',
+  locale_obj: locale_obj
+} %>
 
-<div class="section section_pricing">
-  <div class="pricing__container">
-    <section class="pricing__intro--home">
-      <h2>Pricing</h2>
-      <p>
-        Your first <%= plans[0][:holdings] %> holdings are <strong>free!</strong>
-      </p>
-
-      <p>
-        Choose from any of our premium plans at any time to track additional
-        holdings or portfolios, and unlock advanced features.
-      </p>
-
-      <a href="<%= localize_url("pricing", locale_id: locale_obj[:id]) %>" class="btn btn--secondary btn--solid" title="Learn more about our Pricing">
-         explore our pricing
-      </a>
-
-      <a href="<%= config[:signup_url] %>" class="btn btn--pro btn--solid" title="Sign up for Sharesight">
-         get started – <strong>for free</strong>
-      </a>
-    </section>
-  </div>
-</div>
-
-<div class="section partner-home">
-  <div class="container">
-    <h2 class="heading_normal">Sharesight works with you.</h2>
-    <p class="heading_paragraph">
-      Sharesight partners with leading
-      <a href="<%= localize_url('partners/brokers', locale_id: locale_obj[:id]) %>" title="Broker Partners">brokers</a>,
-      <a href="<%= localize_url('partners/accountants', locale_id: locale_obj[:id]) %>" title="Accountant Partners">accountants</a>,
-      and <a href="<%= localize_url('partners/data-providers', locale_id: locale_obj[:id]) %>" title="Data Provider Partners">data providers</a>.
-    </p>
-
-    <div class="partner-home__logos">
-      <% partners_collection(locale_obj[:lang]).select{ |partner| partner[:logo] }.take(4).each do |partner| %>
-        <a
-          class="partner-home__logo"
-          href="<%= partner_url(partner, locale_id: locale_obj[:id]) %>"
-          style="<% if partner[:background_color] %>background-color: <%= "##{partner[:background_color]}".squeeze('#') %>;<% end %>"
-          title="<%= partner[:name] %>"
-        >
-          <img src="<%= partner[:logo][:url] %>" alt="<%= partner[:logo][:title] %>" />
-        </a>
-      <% end %>
-    </div>
-
-    <a href="<%= localize_url("partners", locale_id: locale_obj[:id]) %>" class="btn btn--solid btn--secondary" title="See All Partners">See All Partners</a>
-  </div>
-</div>
-
-<%= partial "partials/testimonials", locals: {json: data.testimonials, testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading], css_class: '', customer_type: 'Sharesight', locale_obj: locale_obj} %>
-
-<div class="section section_text section_video">
+<div class="section section--text section_video">
   <div class="container">
     <h2 class="heading_normal heading_light">Sharesight – we're real people, filling a real need. <a href="<%= localize_url('about-sharesight', locale_id: locale_obj[:id]) %>" class="expert section_text_link" title="<%= locale_page(page: 'about-sharesight', locale_obj: locale_obj)[:page_title] %>"><strong>Learn more about Sharesight…</strong></a></h2>
   </div>
@@ -91,7 +27,6 @@ layout: layout_index
   <div class="container container_video">
     <%= partial "partials/video" %>
   </div>
-
 </div>
 
-<%= partial "partials/as_featured_in", locals: { locale_obj: locale_obj }  %>
+<%= partial "sections/as_featured_in", locals: { locale_obj: locale_obj }  %>

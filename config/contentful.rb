@@ -1,5 +1,6 @@
 require 'mappers/blog/post'
 require 'mappers/partners/partner'
+require 'mappers/landing-pages/page'
 
 # Schema defines mapping.
 # A schema can be either a string 'author' or an array ['author', AuthorMapper].
@@ -33,6 +34,22 @@ module ContentfulConfig
 		SCHEMAS = [
 			{ name: 'partner', mapper: ::PartnersPartnerMapper },
 			'category'
+		]
+	end
+
+	module LandingPagesSpace
+		NAME = 'landing-pages'
+		SPACE_ID = 'cbgsdqa84fjb'
+		ACCESS_TOKEN = ENV['CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN'] # For Published Content
+		PREVIEW_ACCESS_TOKEN = ENV['CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN'] # For All, Unpublished: Draft Content
+		CDA_QUERY = { locale: '*' }
+		ALL_ENTRIES = true
+
+		SCHEMAS = [
+			{ name: 'page', mapper: ::LandingPagesPageMapper },
+			'section',
+			'button',
+			'content'
 		]
 	end
 end

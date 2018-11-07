@@ -1,0 +1,39 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+%>
+
+<div class="section section--center <%= locals[:class_name] %>">
+  <div class="container">
+    <% if locals[:title] %>
+      <h2 class="section__heading">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %>
+      </h2>
+    <% end %>
+
+    <% if locals[:text] %>
+      <div class="section__text">
+        <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+      </div>
+    <% end %>
+
+    <% if locals[:image] %>
+      <div>
+        <%= partial 'sections/partials/image', locals: locals[:image] %>
+      </div>
+    <% end %>
+
+    <% if locals[:video] %>
+      <div>
+        <%= partial 'sections/partials/video', locals: locals[:video] %>
+      </div>
+    <% end %>
+
+    <% if locals[:contents] %>
+      <%= partial 'sections/partials/contents', locals: { contents: locals[:contents], locale_obj: locale_obj } %>
+    <% end %>
+
+    <% if locals[:buttons] %>
+      <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
+    <% end %>
+  </div>
+</div>

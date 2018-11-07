@@ -1,0 +1,15 @@
+<div class="section notice notice--<%= locals[:color] || 'secondary' %>">
+  <span class="notice__description">
+    <% if locals[:title] %>
+      <h5><%= partial 'partials/components/markdown', locals: { markdown: locals[:title], inline: true } %></h5>
+    <% end %>
+
+    <% if locals[:text] %>
+      <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
+    <% end %>
+  </span>
+
+  <% if locals[:buttons] %>
+    <%= partial 'sections/partials/buttons', locals: { buttons: locals[:buttons], locale_obj: locale_obj } %>
+  <% end %>
+</div>

@@ -15,8 +15,6 @@ layout: partners_category
   locale_obj = locals[:locale_obj] || current_locale_obj
 %>
 
-<%= partial "partials/site_header", locals: { locale_obj: locale_obj } %>
-
 <div class="partners partners__paginated">
   <%= partial "partners/partials/paginated_header", locals: { category: category, locale_obj: locale_obj } %>
 
