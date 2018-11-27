@@ -116,6 +116,7 @@ const handler = function (event, context, callback) {
 
     const cookieCountryCode = getCookieCountryCode(request);
     const headerCountryCode = getHeaderCountryCode(request);
+    const pathCountryCode = getPathCountryCode(request.uri);
     let newUri = request.uri;
 
     newUri = pathWithoutCountryCode(newUri);
@@ -133,6 +134,13 @@ const handler = function (event, context, callback) {
     if (newUri === request.uri) {
       // render the page content without redirecting
       console.log(`v${version}: URIs match, not redirecting.`);
+      callback(null, response);
+      return;
+    }
+
+    if (pathCountryCode) {
+      // render the page content without redirecting, as we want the redirect only for global
+      console.log(`v${version}: Requesting different locale ${pathCountryCode}, not redirecting.`);
       callback(null, response);
       return;
     }
