@@ -45,7 +45,6 @@ const localization = {
     } else {
       console.log("isGlobalOnlyPage = " + this.isGlobalOnlyPage());
       console.log("window.location.pathname = " + window.location.pathname);
-
     }
   },
 
@@ -88,11 +87,17 @@ const localization = {
   },
 
   setRegionSelectorValue () {
+    console.log("setRegionSelectorValue 0");
     const selector = this.getRegionSelectorNode();
+    console.log("setRegionSelectorValue 1");
     const newLocaleId = this.getCurrentLocaleId();
+    console.log("setRegionSelectorValue 2 " + newLocaleId);
     if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
+    console.log("setRegionSelectorValue 3");
     if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
+    console.log("setRegionSelectorValue 4 " + this.getCurrentLocaleId());
     if (selector.value === this.getCurrentLocaleId()) return
+    console.log("setRegionSelectorValue 5 " + selector.value);
 
     // set the region selector to match the current locale on unlocalized pages
     Array.from(selector.options).forEach(option => {
