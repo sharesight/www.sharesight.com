@@ -26,6 +26,7 @@ const localization = {
   },
 
   setLocale (locale_id) {
+    console.log("/setLocale(" + locale_id + ")");
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -37,8 +38,14 @@ const localization = {
     this.modifyContent()
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
+    console.log("/locale_id = " + `/${locale_id}`);
     if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
+      console.log("redirecting...");
       window.location.href = urlHelper.localizePath(window.location.pathname, locale_id);
+    } else {
+      console.log("isGlobalOnlyPage = " + this.isGlobalOnlyPage());
+      console.log("window.location.pathname = " + window.location.pathname);
+
     }
   },
 
@@ -75,6 +82,7 @@ const localization = {
 
     // when it changes, set locale
     selector.onchange = function () {
+      console.log("setLocale onchange");
       self.setLocale(this.value)
     }
   },
@@ -99,6 +107,7 @@ const localization = {
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
+    console.log("setLocale from region selector");
     this.setLocale(selector.value)
   },
 }
