@@ -10,6 +10,7 @@
  * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
  */
 
+const version = '4.rc';
 const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
@@ -28,7 +29,7 @@ function ignoreErrors (fn) {
   } catch (e) {
     // We actually don't care, sadly, and this will probably never get logged.
     // If this fails, Cloudfront has changed...  An error here would result in a 503 on every response, so we ignore it.
-    console.log('Error@getHeaderCountryCode', e);
+    console.log(`v${version}: Error@getHeaderCountryCode`, e);
   }
 }
 
@@ -101,14 +102,14 @@ const handler = function (event, context, callback) {
     // if we don't want to localize the url, eg. Blogs
     for (let i=0; i < dontProcessLength; i++) {
       if (request.uri.match(dontProcess[i])) {
-        console.log(`Matched a dontProcess (${dontProcess[i]}), returning.`);
+        console.log(`v${version}: Matched a dontProcess (${dontProcess[i]}), returning.`);
         callback(null, response);
         return;
       }
     }
 
     if (response.status < 200 || response.status >= 300) {
-      console.log(`Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
+      console.log(`v${version}: Response status from origin was outside of 2xx; it's unlikely that localization would be valid.`);
       callback(null, response);
       return;
     }
@@ -121,16 +122,17 @@ const handler = function (event, context, callback) {
 
     if (cookieCountryCode !== undefined) {
       newUri = `/${cookieCountryCode}/${newUri}`;
-      console.log(`Localized using a cookie; new uri: ${newUri}`);
+      console.log(`v${version}: Localized using a cookie; new uri: ${newUri}`);
     } else if (headerCountryCode !== undefined) {
       newUri = `/${headerCountryCode}/${newUri}`;
-      console.log(`Localized using the cloudfront header; new uri: ${newUri}`);
+      console.log(`v${version}: Localized using the cloudfront header; new uri: ${newUri}`);
     }
 
     newUri = newUri.replace(/\/+/g, '/'); // replace duplicate forward slashes in path
 
     if (newUri === request.uri) {
-      console.log('URIs match, stopping.');
+      // render the page content without redirecting
+      console.log(`v${version}: URIs match, not redirecting.`);
       callback(null, response);
       return;
     }
