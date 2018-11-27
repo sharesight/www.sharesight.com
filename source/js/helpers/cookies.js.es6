@@ -23,6 +23,7 @@ const cookieManager = {
     let d = new Date()
     d.setTime(d.getTime() + (180*24*60*60*1000)) // 180 days
 
+    console.log("set cookie " + `${this.cookieName}=${value}`);
     document.cookie = `${this.cookieName}=${value};path=/;expires=${d.toUTCString()}`
     this.cookie = value
   },
