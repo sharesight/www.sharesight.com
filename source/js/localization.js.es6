@@ -34,7 +34,7 @@ const localization = {
     locale_id = locale_id.toLowerCase()
 
     this.setLocaleId = locale_id
-    cookieManager.setCookie(locale_id)
+    if (!cookieManager.getCookie()) cookieManager.setCookie(locale_id)
     this.modifyContent()
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
@@ -87,17 +87,18 @@ const localization = {
   },
 
   setRegionSelectorValue () {
-    console.log("setRegionSelectorValue 0");
+    // console.log("setRegionSelectorValue 0");
     const selector = this.getRegionSelectorNode();
-    console.log("setRegionSelectorValue 1");
-    const newLocaleId = this.getCurrentLocaleId();
-    console.log("setRegionSelectorValue 2 " + newLocaleId);
-    if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
-    console.log("setRegionSelectorValue 3");
-    if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
-    console.log("setRegionSelectorValue 4 " + this.getCurrentLocaleId());
-    if (selector.value === this.getCurrentLocaleId()) return
-    console.log("setRegionSelectorValue 5 " + selector.value);
+    if (!selector) return;
+    // console.log("setRegionSelectorValue 1");
+    // const newLocaleId = this.getCurrentLocaleId();
+    // console.log("setRegionSelectorValue 2 " + newLocaleId);
+    // if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
+    // console.log("setRegionSelectorValue 3");
+    // if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
+    // console.log("setRegionSelectorValue 4 " + this.getCurrentLocaleId());
+    if (selector.value === this.getCurrentLocaleId()) return // nothing to change then
+    // console.log("setRegionSelectorValue 5 " + selector.value);
 
     // set the region selector to match the current locale on unlocalized pages
     Array.from(selector.options).forEach(option => {
