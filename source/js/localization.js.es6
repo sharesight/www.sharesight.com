@@ -34,7 +34,7 @@ const localization = {
     locale_id = locale_id.toLowerCase()
 
     this.setLocaleId = locale_id
-    cookieManager.setCookie(locale_id)
+    if (!cookieManager.getCookie()) cookieManager.setCookie(locale_id)
     this.modifyContent()
 
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
