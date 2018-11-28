@@ -26,7 +26,7 @@ const localization = {
   },
 
   setLocale (locale_id) {
-    console.log("/setLocale(" + locale_id + ")");
+    console.log("setLocale(" + locale_id + ")");
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -34,13 +34,13 @@ const localization = {
     locale_id = locale_id.toLowerCase()
 
     this.setLocaleId = locale_id
-    if (!cookieManager.getCookie()) cookieManager.setCookie(locale_id)
+    if (cookieManager.getCookie().length === 0) cookieManager.setCookie(locale_id)
     this.modifyContent()
   },
 
   redirectToLocale (locale_id) {
+    console.log("redirectToLocale(" + locale_id + ")");
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
-    console.log("/locale_id = " + `/${locale_id}`);
     if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
       console.log("redirecting...");
       window.location.href = urlHelper.localizePath(window.location.pathname, locale_id);
