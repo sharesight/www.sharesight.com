@@ -48,9 +48,9 @@ const urlHelper = {
     path = path.replace(/\/+/g, '/') // trim all double slashes
     let split = path.split('/')
 
-    if (localeHelper.isValidLocaleId(split[0])) return split[0]
+    if (localeHelper.isValidLocaleId(split[1])) return split[1]
 
-    "global"
+    return "global"
   },
 
   localizePath: function (input = '', locale_id = localization.getCurrentLocaleId()) {
