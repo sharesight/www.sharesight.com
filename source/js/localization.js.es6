@@ -85,7 +85,7 @@ const localization = {
 
   ensureCookie () {
     if (cookieManager.getCookie().length > 0) return
-    setLocale(this.requestedLocaleId)
+    this.setLocale(this.requestedLocaleId)
   },
 
   initializeRegionSelector () {
