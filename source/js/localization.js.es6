@@ -28,7 +28,7 @@ const localization = {
     contentManager.updateContent()
   },
 
-  setLocale (locale_id) {
+  setLocale (locale_id, force = false) {
     console.log("setLocale(" + locale_id + ")");
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
@@ -38,7 +38,7 @@ const localization = {
 
     this.setLocaleId = locale_id
     console.log("cookieManager.getCookie() => " + cookieManager.getCookie());
-    if (cookieManager.getCookie().length == 0) {
+    if (force || cookieManager.getCookie().length == 0) {
       cookieManager.setCookie(locale_id)
     }
     this.modifyContent()
@@ -99,7 +99,7 @@ const localization = {
     // when it changes, set locale
     selector.onchange = function () {
       console.log("setLocale onchange");
-      self.setLocale(this.value);
+      self.setLocale(this.value, true);
       self.redirectToLocale(this.value);
     }
   },
