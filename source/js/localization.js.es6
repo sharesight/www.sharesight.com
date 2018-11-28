@@ -34,7 +34,10 @@ const localization = {
     locale_id = locale_id.toLowerCase()
 
     this.setLocaleId = locale_id
-    if (cookieManager.getCookie().length === 0) cookieManager.setCookie(locale_id)
+    console.log("cookieManager.getCookie() => " + cookieManager.getCookie());
+    if (cookieManager.getCookie().length == 0) {
+      cookieManager.setCookie(locale_id)
+    }
     this.modifyContent()
   },
 
