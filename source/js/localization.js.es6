@@ -36,7 +36,9 @@ const localization = {
     this.setLocaleId = locale_id
     if (!cookieManager.getCookie()) cookieManager.setCookie(locale_id)
     this.modifyContent()
+  },
 
+  redirectToLocale (locale_id) {
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
     console.log("/locale_id = " + `/${locale_id}`);
     if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
@@ -82,7 +84,8 @@ const localization = {
     // when it changes, set locale
     selector.onchange = function () {
       console.log("setLocale onchange");
-      self.setLocale(this.value)
+      self.setLocale(this.value);
+      self.redirectToLocale(this.value);
     }
   },
 
