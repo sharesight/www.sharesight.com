@@ -359,46 +359,46 @@ describe('localizationLambda', () => {
       expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
     });
 
-    test(`should respond with a 302 redirect when the cookie locale does not match the page locale`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/nz/faq', 'ca', 'nz');
-      const eventResponse = Object.assign({}, event.Records[0].cf.response)
-      const handled = handler(event, null, mockCallback);
+    // test(`should respond with a 302 redirect when the cookie locale does not match the page locale`, () => {
+    //   const mockCallback = jest.fn();
+    //   const event = generateCloudFrontEvent('/nz/faq', 'ca', 'nz');
+    //   const eventResponse = Object.assign({}, event.Records[0].cf.response)
+    //   const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/ca/faq');
-    });
+    //   expect(mockCallback.mock.calls.length).toEqual(1);
+    //   expect(mockCallback.mock.calls[0][0]).toEqual(null);
+    //   expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+    //   expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+    //   expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+    //   expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/ca/faq');
+    // });
 
-    test(`should respond with a 302 redirect to the global page when the cookie locale is global`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/nz/faq', 'global', 'nz');
-      const eventResponse = Object.assign({}, event.Records[0].cf.response)
-      const handled = handler(event, null, mockCallback);
+    // test(`should respond with a 302 redirect to the global page when the cookie locale is global`, () => {
+    //   const mockCallback = jest.fn();
+    //   const event = generateCloudFrontEvent('/nz/faq', 'global', 'nz');
+    //   const eventResponse = Object.assign({}, event.Records[0].cf.response)
+    //   const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/faq');
-    });
+    //   expect(mockCallback.mock.calls.length).toEqual(1);
+    //   expect(mockCallback.mock.calls[0][0]).toEqual(null);
+    //   expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+    //   expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+    //   expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+    //   expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/faq');
+    // });
 
-    test(`[as a side-effect] should respond with a 302 redirect when the case is incorrect on the locale`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/NZ/faq', 'nz', 'nz');
-      const eventResponse = Object.assign({}, event.Records[0].cf.response)
-      const handled = handler(event, null, mockCallback);
+    // test(`[as a side-effect] should respond with a 302 redirect when the case is incorrect on the locale`, () => {
+    //   const mockCallback = jest.fn();
+    //   const event = generateCloudFrontEvent('/NZ/faq', 'nz', 'nz');
+    //   const eventResponse = Object.assign({}, event.Records[0].cf.response)
+    //   const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/faq');
-    });
+    //   expect(mockCallback.mock.calls.length).toEqual(1);
+    //   expect(mockCallback.mock.calls[0][0]).toEqual(null);
+    //   expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+    //   expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+    //   expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+    //   expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/faq');
+    // });
   });
 });
