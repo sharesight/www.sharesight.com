@@ -57,7 +57,7 @@ describe 'Landing Pages Pages', :type => :feature do
         expect(page).to have_css('nav #site_logo img')
 
         landing_page[:sections]&.each do |section|
-          expect(page).to have_text(section[:title]) if section[:title] && !section[:title].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
+          expect(page).to have_text(section[:title]) if section[:title] && !section[:title].match(/[\*\_\~\-\#'(...)]+/) # this could be markdown, we don't test it then
           expect(page).to have_text(section[:text]) if section[:text] && !section[:text].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
 
           section[:contents]&.each do |content|
