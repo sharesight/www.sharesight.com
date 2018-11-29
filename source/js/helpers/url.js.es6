@@ -41,6 +41,18 @@ const urlHelper = {
     return this.removeLocalizationFromPath(path).split('/')[1] || 'index'
   },
 
+  getLocalisationFromPath: function(path = window.location.pathname) {
+    if (!path || path.indexOf('/') === -1) return path
+
+    path = '/' + path // force path to start with a slash
+    path = path.replace(/\/+/g, '/') // trim all double slashes
+    let split = path.split('/')
+
+    if (localeHelper.isValidLocaleId(split[1])) return split[1]
+
+    return "global"
+  },
+
   localizePath: function (input = '', locale_id = localization.getCurrentLocaleId()) {
     if (!this.shouldLocalizePath(input, locale_id)) return input
     if (locale_id == config.default_locale_id) locale_id = ''
