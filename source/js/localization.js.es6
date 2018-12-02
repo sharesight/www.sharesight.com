@@ -58,7 +58,8 @@ const localization = {
 
   getCurrentLocaleId () {
     if (this.setLocaleId) return this.setLocaleId;
-    return localeHelper.getCookieLocale();
+    // return localeHelper.getCookieLocale();
+    return urlHelper.getLocalisationFromPath();
   },
 
   updateUrls () {
@@ -69,7 +70,7 @@ const localization = {
         `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
-      element.pathname = urlHelper.localizePath(element.pathname)
+      element.pathname = urlHelper.localizePath(element.pathname, urlHelper.getLocalisationFromPath())
     })
   },
 
@@ -115,14 +116,14 @@ const localization = {
     // console.log("setRegionSelectorValue 3");
     // if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
     // console.log("setRegionSelectorValue 4 " + this.getCurrentLocaleId());
-    if (selector.value === this.getCurrentLocaleId()) return // nothing to change then
+    if (selector.value === localeHelper.getCookieLocale()) return // nothing to change then
     console.log("setRegionSelectorValue 5 " + selector.value);
 
     // set the region selector to match the current locale on unlocalized pages
     Array.from(selector.options).forEach(option => {
       option.removeAttribute('selected')
 
-      if (option.value.toLowerCase() === this.getCurrentLocaleId()) {
+      if (option.value.toLowerCase() === localeHelper.getCookieLocale()) {
         option.setAttribute('selected', true)
       }
     })
