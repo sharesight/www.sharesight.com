@@ -63,6 +63,7 @@ const localization = {
   },
 
   updateUrls () {
+    const localeId = this.isGlobalOnlyPage() ? localeHelper.getCookieLocale() : urlHelper.getLocalisationFromPath();
     ;[].concat.apply([], // flatten arrays of arrays
       [
         config.base_url, // absolute urls (www.sharesight.com)
@@ -70,11 +71,6 @@ const localization = {
         `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
-      let localeId = if (this.isGlobalOnlyPage()) {
-        localeHelper.getCookieLocale()
-      } else {
-        urlHelper.getLocalisationFromPath()
-      }
       element.pathname = urlHelper.localizePath(element.pathname, localeId)
     })
   },
