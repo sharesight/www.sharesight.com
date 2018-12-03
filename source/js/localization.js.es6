@@ -70,7 +70,12 @@ const localization = {
         `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
-      element.pathname = urlHelper.localizePath(element.pathname, urlHelper.getLocalisationFromPath())
+      let localeId = if (this.isGlobalOnlyPage()) {
+        localeHelper.getCookieLocale()
+      } else {
+        urlHelper.getLocalisationFromPath()
+      }
+      element.pathname = urlHelper.localizePath(element.pathname, localeId)
     })
   },
 
