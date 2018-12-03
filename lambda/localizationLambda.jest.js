@@ -339,6 +339,15 @@ describe('localizationLambda', () => {
       expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
     });
 
+    test(`should tell browsers not to cache the redirect response`, () => {
+      const mockCallback = jest.fn();
+      const event = generateCloudFrontEvent('/', false, 'nz');
+      const eventResponse = Object.assign({}, event.Records[0].cf.response)
+      const handled = handler(event, null, mockCallback);
+
+      expect(mockCallback.mock.calls[0][1].headers['cache-control'][0].value).toEqual('no-cache, no-store, must-revalidate');
+    });
+
     describe('cookie not set dude0', () => {
       test(`should redirect to the viewer country when no page locale is set`, () => {
         const mockCallback = jest.fn();

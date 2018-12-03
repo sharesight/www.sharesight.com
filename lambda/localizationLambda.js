@@ -10,7 +10,7 @@
  * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
  */
 
-const version = '4.0.0.rc';
+const version = '5';
 const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
@@ -151,6 +151,7 @@ const handler = function (event, context, callback) {
     response.statusDescription = 'Found';
     response.body = ''; // drop the body on redirects
     response.headers['location'] = [{ key: 'Location', value: newUri }];
+    response.headers['cache-control'] = [{ key: 'Cache-Control', value: 'no-cache, no-store, must-revalidate' }];
 
     // return a 302 to redirect them to the new page
     callback(null, response);
