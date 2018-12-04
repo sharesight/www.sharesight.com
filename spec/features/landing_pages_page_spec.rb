@@ -87,11 +87,27 @@ describe 'Landing Pages Pages', :type => :feature do
     expect(page).to have_text(string) if testable?(string)
   end
 
+  # kramdown converts certain ASCII characters into typographic symbols
+  # see https://kramdown.gettalong.org/syntax.html#typographic-symbols
+  # we have to do the same
   def normalised(string)
     return unless string
 
+    # single quotes
     string = string.gsub(/'/, '’')
+    # double quotes
+    string = string.gsub(/"/, '“')
+    # ellipsis
     string = string.gsub(/\.\.\./, '…')
+    # em-dash
+    string = string.gsub(/---/, '—')
+    # en-dash
+    string = string.gsub(/--/, '–')
+    # left guillemet
+    string = string.gsub(/<</, '«')
+    # right guillemet
+    string = string.gsub(/>>/, '»')
+
     string
   end
 
