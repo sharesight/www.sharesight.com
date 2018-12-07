@@ -14,6 +14,7 @@ const localization = {
     this.ensureCookie()
     this.initializeRegionSelector()
     this.modifyContent()
+    this.renderLocaleNotification()
   },
 
   isGlobalOnlyPage () {
@@ -26,6 +27,15 @@ const localization = {
   modifyContent () {
     this.updateUrls()
     contentManager.updateContent()
+  },
+
+  renderLocaleNotification () {
+    const countryBanner = document.getElementById('countryBanner');
+    const viewedCountryLabel = document.getElementById('viewedCountry');
+    const cookieCountryLabel = document.getElementById('cookieCountry');
+
+    viewedCountryLabel.textContent = this.getCurrentLocaleId();
+    cookieCountryLabel.textContent = localeHelper.getCookieLocale();
   },
 
   setLocale (locale_id, force = false) {
