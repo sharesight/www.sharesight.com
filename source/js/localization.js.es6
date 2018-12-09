@@ -34,8 +34,14 @@ const localization = {
     const viewedCountryLabel = document.getElementById('viewedCountry');
     const cookieCountryLabel = document.getElementById('cookieCountry');
 
-    viewedCountryLabel.textContent = this.getCurrentLocaleId();
-    cookieCountryLabel.textContent = localeHelper.getCookieLocale();
+    const viewedCountry = this.getCurrentLocaleId();
+    const cookieCountry = localeHelper.getCookieLocale();
+
+    if (viewedCountry !== cookieCountry) {
+      viewedCountryLabel.textContent = viewedCountry;
+      cookieCountryLabel.textContent = cookieCountry;
+      countryBanner.style.display = 'flex';
+    }
   },
 
   setLocale (locale_id, force = false) {
