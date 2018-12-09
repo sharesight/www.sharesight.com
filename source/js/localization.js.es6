@@ -30,18 +30,25 @@ const localization = {
   },
 
   renderLocaleNotification () {
-    const countryBanner = document.getElementById('countryBanner');
-    const viewedCountryLabel = document.getElementById('viewedCountry');
-    const cookieCountryLabel = document.getElementById('cookieCountry');
-
     const viewedCountry = urlHelper.getLocalisationFromPath();
     console.log("viewedCountry: " + viewedCountry);
     const cookieCountry = localeHelper.getCookieLocale();
     console.log("cookieCountry: " + cookieCountry);
 
     if (viewedCountry !== cookieCountry) {
+      const countryBanner = document.getElementById('countryBanner');
+      const viewedCountryLabel = document.getElementById('viewedCountry');
+      const cookieCountryLabel = document.getElementById('cookieCountry');
+      const cookieCountryLink = document.getElementById('cookieCountryLink');
+
+      // change country labels
       viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).name;
       cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).name;
+
+      // change link target
+      cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, localeHelper.getCookieLocale());
+
+      // show banner
       countryBanner.style.display = 'flex';
     }
   },
