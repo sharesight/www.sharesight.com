@@ -14,6 +14,7 @@ const localization = {
     this.ensureCookie()
     this.initializeRegionSelector()
     this.modifyContent()
+    this.renderLocaleNotification()
   },
 
   isGlobalOnlyPage () {
@@ -28,6 +29,30 @@ const localization = {
     contentManager.updateContent()
   },
 
+  renderLocaleNotification () {
+    const viewedCountry = urlHelper.getLocalisationFromPath();
+    console.log("viewedCountry: " + viewedCountry);
+    const cookieCountry = localeHelper.getCookieLocale();
+    console.log("cookieCountry: " + cookieCountry);
+
+    if (viewedCountry !== cookieCountry) {
+      const countryBanner = document.getElementById('countryBanner');
+      const viewedCountryLabel = document.getElementById('viewedCountry');
+      const cookieCountryLabel = document.getElementById('cookieCountry');
+      const cookieCountryLink = document.getElementById('cookieCountryLink');
+
+      // change country labels
+      viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).name;
+      cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).name;
+
+      // change link target
+      cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, localeHelper.getCookieLocale());
+
+      // show banner
+      countryBanner.style.display = 'flex';
+    }
+  },
+
   setLocale (locale_id, force = false) {
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
@@ -35,6 +60,7 @@ const localization = {
 
     locale_id = locale_id.toLowerCase()
 
+    console.log("setting setLocaleId to: " + locale_id);
     this.setLocaleId = locale_id
     if (force || cookieManager.getCookie().length == 0) {
       cookieManager.setCookie(locale_id)
@@ -50,8 +76,13 @@ const localization = {
   },
 
   getCurrentLocaleId () {
-    if (this.setLocaleId) return this.setLocaleId;
+    console.log("getCurrentLocaleId()");
+    if (this.setLocaleId) {
+      console.log("-> using setLocaleId: " + this.setLocaleId);
+      return this.setLocaleId;
+    }
     // return localeHelper.getCookieLocale();
+    console.log("-> using localizationFromPath: " + urlHelper.getLocalisationFromPath());
     return urlHelper.getLocalisationFromPath();
   },
 
@@ -75,11 +106,13 @@ const localization = {
   },
 
   initializeRequestedLocaleId () {
+    console.log("setting this.requestedLocaleId to: " + urlHelper.getLocalisationFromPath());
     this.requestedLocaleId = urlHelper.getLocalisationFromPath()
   },
 
   ensureCookie () {
     if (cookieManager.getCookie().length > 0) return
+    console.log("calling setLocale(" + this.requestedLocaleId + ") from ensureCookie()")
     this.setLocale(this.requestedLocaleId)
   },
 
@@ -93,6 +126,7 @@ const localization = {
 
     // when it changes, set locale
     selector.onchange = function () {
+      console.log("calling setLocale(" + this.value + ", true) from initializeRegionSelector()")
       self.setLocale(this.value, true);
       self.redirectToLocale(this.value);
     }
@@ -116,6 +150,7 @@ const localization = {
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
+    console.log("calling setLocale(" + selector.value + ") from setCookieFromRegionSelector()")
     this.setLocale(selector.value)
   },
 }
