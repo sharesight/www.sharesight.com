@@ -38,6 +38,7 @@ const localization = {
     if (viewedCountry !== cookieCountry) {
       const countryBanner = document.getElementById('countryBanner');
       const viewedCountryLabel = document.getElementById('viewedCountry');
+      const viewedCountryLink = document.getElementById('viewedCountryLink');
       const cookieCountryLabel = document.getElementById('cookieCountry');
       const cookieCountryLink = document.getElementById('cookieCountryLink');
 
@@ -50,6 +51,16 @@ const localization = {
 
       // show banner
       countryBanner.style.display = 'flex';
+
+      viewedCountryLink.onclick = function () {
+        // overwrite the cookie
+        cookieManager.setCookie(viewedCountry);
+
+        // close the banner
+        countryBanner.style.display = 'none';
+
+        return false;
+      }
     }
   },
 
