@@ -35,7 +35,7 @@ const localization = {
     const cookieCountry = localeHelper.getCookieLocale();
     console.log("cookieCountry: " + cookieCountry);
 
-    if (viewedCountry !== cookieCountry) {
+    if (!this.isGlobalOnlyPage() && viewedCountry !== cookieCountry) {
       const countryBanner = document.getElementById('countryBanner');
       const viewedCountryLabel = document.getElementById('viewedCountry');
       const viewedCountryLink = document.getElementById('viewedCountryLink');
