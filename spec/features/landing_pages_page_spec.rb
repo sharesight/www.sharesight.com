@@ -57,20 +57,20 @@ describe 'Landing Pages Pages', :type => :feature do
         expect(page).to have_css('nav #site_logo img')
 
         landing_page[:sections]&.each do |section|
-          expect(page).to have_text(section[:title]) if section[:title] && !section[:title].match(/[\*\_\~\-\#'(...)]+/) # this could be markdown, we don't test it then
-          expect(page).to have_text(section[:text]) if section[:text] && !section[:text].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
+          expect_page_text(section[:title])
+          expect_page_text(section[:text])
 
           section[:contents]&.each do |content|
-            expect(page).to have_text(content[:title]) if content[:title] && !content[:title].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
-            expect(page).to have_text(content[:text]) if content[:text] && !content[:text].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
+            expect_page_text(content[:title])
+            expect_page_text(content[:text])
 
             content[:buttons]&.each do |button|
-              expect(page).to have_text(button[:text]) if button[:text] && !button[:text].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
+              expect_page_text(button[:text])
             end
           end
 
           section[:buttons]&.each do |button|
-            expect(page).to have_text(button[:text]) if button[:text] && !button[:text].match(/[\*\_\~\-\#]+/) # this could be markdown, we don't test it then
+            expect_page_text(button[:text])
           end
         end
 
@@ -79,4 +79,45 @@ describe 'Landing Pages Pages', :type => :feature do
       end
     end
   end
+
+  private
+
+  def expect_page_text(string)
+    string = normalised(string)
+    expect(page).to have_text(string) if testable?(string)
+  end
+
+  # kramdown converts certain ASCII characters into typographic symbols
+  # see https://kramdown.gettalong.org/syntax.html#typographic-symbols
+  # we have to do the same
+  def normalised(string)
+    return unless string
+
+    # single quotes
+    string = string.gsub(/'/, '’')
+    # double quotes
+    string = string.gsub(/"/, '“')
+    # ellipsis
+    string = string.gsub(/\.\.\./, '…')
+    # em-dash
+    string = string.gsub(/---/, '—')
+    # en-dash
+    string = string.gsub(/--/, '–')
+    # left guillemet
+    string = string.gsub(/<</, '«')
+    # right guillemet
+    string = string.gsub(/>>/, '»')
+
+    string
+  end
+
+  def testable?(string)
+    return false unless string
+
+    # this could be markdown, we don't test it then
+    return false if string.match(/[\*\_\~\-\#]+/)
+
+    true
+  end
+
 end
