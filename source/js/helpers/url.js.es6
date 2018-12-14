@@ -53,7 +53,7 @@ const urlHelper = {
     return "global"
   },
 
-  localizePath: function (input = '', locale_id = urlHelper.getCookieLocale()) {
+  localizePath: function (input, locale_id) {
     if (!this.shouldLocalizePath(input, locale_id)) return input
     if (locale_id == config.default_locale_id) locale_id = ''
     if (!localeHelper.isValidLocaleId(locale_id)) locale_id = ''
