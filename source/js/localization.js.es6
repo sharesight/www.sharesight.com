@@ -43,8 +43,8 @@ const localization = {
       const cookieCountryLink = document.getElementById('cookieCountryLink');
 
       // change country labels
-      viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).name;
-      cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).name;
+      viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).adjective;
+      cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).adjective;
 
       // change link target
       cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, localeHelper.getCookieLocale());
