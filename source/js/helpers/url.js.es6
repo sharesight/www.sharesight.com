@@ -21,10 +21,10 @@ const urlHelper = {
     path = path.replace(/\/+/g, '/') // trim all double slashes
     let split = path.split('/')
 
-    // remove any valid locales or the current locale (via cookie, which could be an invalid locale) from the path
-    if (localeHelper.isValidLocaleId(split[0]) || split[0] === localization.getCurrentLocaleId()) {
+    // remove any valid locales from the path
+    if (localeHelper.isValidLocaleId(split[0])) {
       delete split[0]
-    } else if (!split[0] && (localeHelper.isValidLocaleId(split[1]) || split[1] === localization.getCurrentLocaleId())) {
+    } else if (!split[0] && localeHelper.isValidLocaleId(split[1])) {
       delete split[1]
     }
 
@@ -53,7 +53,7 @@ const urlHelper = {
     return "global"
   },
 
-  localizePath: function (input = '', locale_id = localization.getCurrentLocaleId()) {
+  localizePath: function (input, locale_id) {
     if (!this.shouldLocalizePath(input, locale_id)) return input
     if (locale_id == config.default_locale_id) locale_id = ''
     if (!localeHelper.isValidLocaleId(locale_id)) locale_id = ''

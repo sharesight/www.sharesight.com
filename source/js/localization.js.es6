@@ -14,6 +14,7 @@ const localization = {
     this.ensureCookie()
     this.initializeRegionSelector()
     this.modifyContent()
+    this.renderLocaleNotification()
   },
 
   isGlobalOnlyPage () {
@@ -28,8 +29,40 @@ const localization = {
     contentManager.updateContent()
   },
 
+  renderLocaleNotification () {
+    const viewedCountry = urlHelper.getLocalisationFromPath();
+    const cookieCountry = localeHelper.getCookieLocale();
+
+    if (!this.isGlobalOnlyPage() && viewedCountry !== cookieCountry) {
+      const countryBanner = document.getElementById('countryBanner');
+      const viewedCountryLabel = document.getElementById('viewedCountry');
+      const viewedCountryLink = document.getElementById('viewedCountryLink');
+      const cookieCountryLabel = document.getElementById('cookieCountry');
+      const cookieCountryLink = document.getElementById('cookieCountryLink');
+
+      // change country labels
+      viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).adjective;
+      cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).adjective;
+
+      // change link target
+      cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, localeHelper.getCookieLocale());
+
+      // show banner
+      countryBanner.style.display = 'flex';
+
+      viewedCountryLink.onclick = function () {
+        // overwrite the cookie
+        cookieManager.setCookie(viewedCountry);
+
+        // close the banner
+        countryBanner.style.display = 'none';
+
+        return false;
+      }
+    }
+  },
+
   setLocale (locale_id, force = false) {
-    console.log("setLocale(" + locale_id + ")");
     if (!locale_id || typeof locale_id !== 'string' || !localeHelper.isValidLocaleId(locale_id)) {
       locale_id = config.default_locale_id
     }
@@ -37,7 +70,6 @@ const localization = {
     locale_id = locale_id.toLowerCase()
 
     this.setLocaleId = locale_id
-    console.log("cookieManager.getCookie() => " + cookieManager.getCookie());
     if (force || cookieManager.getCookie().length == 0) {
       cookieManager.setCookie(locale_id)
     }
@@ -45,23 +77,22 @@ const localization = {
   },
 
   redirectToLocale (locale_id) {
-    console.log("redirectToLocale(" + locale_id + ")");
     // if we're not on a page that begins with the current locale, which should be localized, refresh the page and Cloudfront's localization should kick in
     if (!this.isGlobalOnlyPage() && window.location.pathname.indexOf(`/${locale_id}`) !== 0) {
-      console.log("redirecting...");
       window.location.href = urlHelper.localizePath(window.location.pathname, locale_id);
-    } else {
-      console.log("isGlobalOnlyPage = " + this.isGlobalOnlyPage());
-      console.log("window.location.pathname = " + window.location.pathname);
     }
   },
 
   getCurrentLocaleId () {
-    if (this.setLocaleId) return this.setLocaleId;
-    return localeHelper.getCookieLocale();
+    if (this.setLocaleId) {
+      return this.setLocaleId;
+    }
+    // return localeHelper.getCookieLocale();
+    return urlHelper.getLocalisationFromPath();
   },
 
   updateUrls () {
+    const localeId = this.isGlobalOnlyPage() ? localeHelper.getCookieLocale() : urlHelper.getLocalisationFromPath();
     ;[].concat.apply([], // flatten arrays of arrays
       [
         config.base_url, // absolute urls (www.sharesight.com)
@@ -69,7 +100,7 @@ const localization = {
         `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
-      element.pathname = urlHelper.localizePath(element.pathname)
+      element.pathname = urlHelper.localizePath(element.pathname, localeId)
     })
   },
 
@@ -98,31 +129,21 @@ const localization = {
 
     // when it changes, set locale
     selector.onchange = function () {
-      console.log("setLocale onchange");
       self.setLocale(this.value, true);
       self.redirectToLocale(this.value);
     }
   },
 
   setRegionSelectorValue () {
-    console.log("setRegionSelectorValue 0");
     const selector = this.getRegionSelectorNode();
     if (!selector) return;
-    console.log("setRegionSelectorValue 1");
-    // const newLocaleId = this.getCurrentLocaleId();
-    // console.log("setRegionSelectorValue 2 " + newLocaleId);
-    // if (!this.isGlobalOnlyPage()) return // only set the region selector on global pages (eg. blog, which has no locale attached to it)
-    // console.log("setRegionSelectorValue 3");
-    // if (this.getCurrentLocaleId() === config.default_locale_id) return // don't set a global cookie unless the user changes it themselves
-    // console.log("setRegionSelectorValue 4 " + this.getCurrentLocaleId());
-    if (selector.value === this.getCurrentLocaleId()) return // nothing to change then
-    console.log("setRegionSelectorValue 5 " + selector.value);
+    if (selector.value === localeHelper.getCookieLocale()) return // nothing to change then
 
     // set the region selector to match the current locale on unlocalized pages
     Array.from(selector.options).forEach(option => {
       option.removeAttribute('selected')
 
-      if (option.value.toLowerCase() === this.getCurrentLocaleId()) {
+      if (option.value.toLowerCase() === localeHelper.getCookieLocale()) {
         option.setAttribute('selected', true)
       }
     })
@@ -131,7 +152,6 @@ const localization = {
   setCookieFromRegionSelector () {
     const selector = this.getRegionSelectorNode()
     if (selector.value === config.default_locale_id) return // don't set a global cookie when the page loads
-    console.log("setLocale from region selector");
     this.setLocale(selector.value)
   },
 }

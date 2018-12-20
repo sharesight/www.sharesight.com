@@ -33,3 +33,4 @@ data/landing-pages/
 node_modules/
 .envrc
 yarn-error.log
+_ignore
