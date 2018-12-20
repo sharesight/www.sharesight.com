@@ -329,16 +329,6 @@ describe('localizationLambda', () => {
       });
     });
 
-    test('should do nothing when the cookie locale matches the request page locale', () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/nz/faq', 'nz', 'ca');
-      const handled = handler(event, null, mockCallback);
-
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
-    });
-
     test(`should do nothing when the cloudfront country matches the request page locale and there's no valid cookie locale`, () => {
       const mockCallback = jest.fn();
       const event = generateCloudFrontEvent('/nz/faq', 'us', 'nz');
@@ -349,56 +339,162 @@ describe('localizationLambda', () => {
       expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
     });
 
-    test(`should do nothing when the the cookie local is global and the current page locale is global`, () => {
+    test(`should tell browsers not to cache the redirect response`, () => {
       const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/faq', 'global', 'nz');
-      const handled = handler(event, null, mockCallback);
-
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
-    });
-
-    test(`should respond with a 302 redirect when the cookie locale does not match the page locale`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/nz/faq', 'ca', 'nz');
+      const event = generateCloudFrontEvent('/', false, 'nz');
       const eventResponse = Object.assign({}, event.Records[0].cf.response)
       const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/ca/faq');
+      expect(mockCallback.mock.calls[0][1].headers['cache-control'][0].value).toEqual('no-cache, no-store, must-revalidate');
     });
 
-    test(`should respond with a 302 redirect to the global page when the cookie locale is global`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/nz/faq', 'global', 'nz');
-      const eventResponse = Object.assign({}, event.Records[0].cf.response)
-      const handled = handler(event, null, mockCallback);
+    describe('cookie not set dude0', () => {
+      test(`should redirect to the viewer country when no page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/', false, 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/faq');
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+        expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+        expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+        expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/');
+      });
+
+      test(`should redirect to the viewer country with deep-link when no page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/faq/', false, 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+        expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+        expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+        expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/faq/');
+      });
+
+      test(`should render the requested page if the page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/', false, 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should render the requested deep-link page if the page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/faq/', false, 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
     });
 
-    test(`[as a side-effect] should respond with a 302 redirect when the case is incorrect on the locale`, () => {
-      const mockCallback = jest.fn();
-      const event = generateCloudFrontEvent('/NZ/faq', 'nz', 'nz');
-      const eventResponse = Object.assign({}, event.Records[0].cf.response)
-      const handled = handler(event, null, mockCallback);
+    describe('cookie set dude1', () => {
+      test(`should redirect to the cookie country when no page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/', 'uk', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
 
-      expect(mockCallback.mock.calls.length).toEqual(1);
-      expect(mockCallback.mock.calls[0][0]).toEqual(null);
-      expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
-      expect(mockCallback.mock.calls[0][1].status).toEqual(302);
-      expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
-      expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/nz/faq');
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+        expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+        expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+        expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/uk/');
+      });
+
+      test(`should render the global page when the cookie is global dude13`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/', 'global', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should redirect to the cookie country with deep-link when no page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/faq/', 'uk', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).not.toEqual(eventResponse);
+        expect(mockCallback.mock.calls[0][1].status).toEqual(302);
+        expect(mockCallback.mock.calls[0][1].statusDescription).toEqual('Found');
+        expect(mockCallback.mock.calls[0][1].headers.location[0].value).toEqual('/uk/faq/');
+      });
+
+      test(`should render the global page with deep-link when the cookie is global`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/faq/', 'global', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should render the requested page if the page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/', 'au', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should render the requested page if the page locale is set and the cookie is global`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/', 'global', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should render the requested deep-link page if the page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/faq/', 'au', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
+
+      test(`should render the requested deep-link page if the page locale is set and the cookie is global`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/uk/faq/', 'global', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(mockCallback.mock.calls[0][1]).toEqual(event.Records[0].cf.response);
+      });
     });
+
   });
 });
