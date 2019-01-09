@@ -33,6 +33,13 @@
   metas[:social_image]       ||= (page_path_name == 'xero') ? DEFAULT_XERO_SOCIAL_IMG[:url] : DEFAULT_SOCIAL_IMG[:url]
   metas[:social_image]         = "https:#{metas[:social_image]}" if metas[:social_image].is_a?(String) && metas[:social_image]&.start_with?('//') # converts //images.contentful.com to https://images.contentful.com for Facebook to not complain.
 
+  metas[:no_index]             = false
+  if locals[:no_index].present?
+    metas[:no_index]           = locals[:no_index]
+  elsif current_locale_page[:no_index].present?
+    metas[:no_index]           = current_locale_page[:no_index]
+  end
+
   pagination = locals[:pagination]
   if pagination && pagination&.current_page && pagination&.total_pages && pagination&.current_page > 1
     # metas[:description]          = "#{pagination.from_items}-#{pagination.to_items} of (#{pagination.total_items}) – #{metas[:description]}"
@@ -51,7 +58,15 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="<%= config[:env_name] == 'production' ? 'Index, Follow' : 'NoIndex, NoFollow' %>">
+
+<% if config[:env_name] != 'production' # don't index or follow non-production pages %>
+  <meta name="robots" content="NoIndex, NoFollow">
+<% elsif metas[:no_index] # explicitly don't index this page %>
+  <meta name="robots" content="NoIndex">
+<% else %>
+  <meta name="robots" content="Index, Follow">
+<% end %>
+
 <meta name="msvalidate.01" content="D71EF5876D9C5F2034E74AC314553CA3" />
 
 <meta name="application-name" content="<%= config[:site_name] %>">
