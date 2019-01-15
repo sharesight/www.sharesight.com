@@ -8,9 +8,9 @@ xml.rss version: "2.0", 'xmlns:dc' => "http://purl.org/dc/elements/1.1/", 'xmlns
     xml.language "en-US"
 
     number_of_items = 10
-    data.blog.posts.keys[-number_of_items..-1].reverse.each do |key|
-      post = data.blog.posts[key]
+    blog_posts(order: :youngest_first)[-number_of_items..-1].reverse.each do |post|
       next if post.title.blank?
+
       xml.item do
         url = post_url(post)
         author = post&.author&.display_name || "Sharesight Staff"
