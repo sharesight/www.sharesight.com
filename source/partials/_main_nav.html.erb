@@ -30,5 +30,5 @@
     </li>
   </ul>
 
-  <a href="<%= config[:signup_url] %>" class="btn-menu-signup" title="Sign up for Sharesight">Sign up</a>
+  <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="btn-menu-signup" title="Sign up for Sharesight">Sign up</a>
 </nav>
