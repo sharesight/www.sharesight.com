@@ -17,13 +17,12 @@ fold_start yarn.jest "yarn jest"
 fold_end yarn.jest
 
 ##########
-# TODO: 21 December 2018 temporarily commenting out the rspec tests because they are TOO SLOW for travis to finish
-# fold_start rspec "rspec spec tests"
-#   announce_time_start # Must use when working with env variables.
-#     echo "bundle exec rspec spec -p"
-#     APP_ENV=development bundle exec rspec spec -p # run in development so we don't have the s3_sync stuff
-#   announce_time_finish
-# fold_end rspec
+fold_start rspec "rspec spec tests"
+  announce_time_start # Must use when working with env variables.
+    echo "bundle exec rspec spec -p"
+    APP_ENV=development bundle exec rspec spec -p # run in development so we don't have the s3_sync stuff
+  announce_time_finish
+fold_end rspec
 
 ##########
 fold_start bundle_audit "bundle audit"
