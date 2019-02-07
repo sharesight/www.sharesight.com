@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'Blog Posts', :type => :model do
   before :all do
     @data = Capybara.app.data.blog.posts
-    @collection = get_blog_posts()
+    @collection = get_blog_posts(order: :youngest_first, limit: 10)
   end
 
   it "should have a directory" do

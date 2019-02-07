@@ -3,7 +3,7 @@ require 'spec_helper'
 
 describe 'Blog Post Pages', :type => :feature do
   before :all do
-    @posts = get_blog_posts()
+    @posts = get_blog_posts(order: :youngest_first, limit: 10)
     @categories = get_blog_categories(all: true)
   end
 

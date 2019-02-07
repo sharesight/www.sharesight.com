@@ -17,7 +17,7 @@ describe 'Space Middleman Helper', :type => :helper do
     end
 
     it "should be Blog on the first valid post" do
-      post = get_blog_posts().find{ |model| model[:title] }
+      post = get_blog_posts(order: :youngest_first, limit: 10).find{ |model| model[:title] }
       visit '/blog/' + @app.post_url(post)
       expect(@app.is_category_page?).to eq(false)
     end
@@ -64,7 +64,7 @@ describe 'Space Middleman Helper', :type => :helper do
     end
 
     it "should be Blog on the first valid post" do
-      post = get_blog_posts().find{ |model| model[:title] }
+      post = get_blog_posts(order: :youngest_first, limit: 10).find{ |model| model[:title] }
       visit '/blog/' + @app.post_url(post)
       expect(@app.space_category_title).to eq('Blog')
     end
@@ -106,7 +106,7 @@ describe 'Space Middleman Helper', :type => :helper do
     end
 
     it "should be correct on the first valid post" do
-      post = get_blog_posts().find{ |model| model[:title] }
+      post = get_blog_posts(order: :youngest_first, limit: 10).find{ |model| model[:title] }
       visit '/blog/' + @app.post_url(post)
       expect(@app.space_category_page_title).to eq('Sharesight Blog')
     end
@@ -149,7 +149,7 @@ describe 'Space Middleman Helper', :type => :helper do
     end
 
     it "should be correct on the first valid post" do
-      post = get_blog_posts().find{ |model| model[:title] }
+      post = get_blog_posts(order: :youngest_first, limit: 10).find{ |model| model[:title] }
       visit '/blog/' + @app.post_url(post)
       expect(@app.base_space_category_page_title).to eq('Sharesight Blog')
     end
