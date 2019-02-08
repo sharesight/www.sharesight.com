@@ -5,16 +5,16 @@ describe 'Partner Category Pages', :type => :feature do
     @path = 'partners/'
   end
 
-  it "should load" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should load for locale #{locale['id']}" do
       visit localize_path(@path, locale_id: locale[:id])
 
       expect(page).to respond_successfully
     end
   end
 
-  it "should have expected meta tags" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected meta tags for locale #{locale['id']}" do
       visit localize_path(@path, locale_id: locale[:id])
       current_locale_page = locale_page('partners', locale)
       base_page = base_locale_page('partners')
@@ -26,8 +26,8 @@ describe 'Partner Category Pages', :type => :feature do
     end
   end
 
-  it "should have expected urls" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected urls for locale #{locale['id']}" do
       visit localize_path(@path, locale_id: locale[:id])
 
       expect(page).to have_meta('og:url', base_url(@path), name_key: 'property')
@@ -41,8 +41,8 @@ describe 'Partner Category Pages', :type => :feature do
     end
   end
 
-  it "should have the expected elements" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have the expected elements for locale #{locale['id']}" do
       categories = get_partners_categories(locale, all: true)
       visit localize_path(@path, locale_id: locale[:id])
 
