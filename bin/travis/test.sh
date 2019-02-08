@@ -20,7 +20,7 @@ fold_end yarn.jest
 fold_start rspec "rspec spec tests"
   announce_time_start # Must use when working with env variables.
     echo "bundle exec rspec spec -p"
-    APP_ENV=development bundle exec rspec spec -p # run in development so we don't have the s3_sync stuff
+    APP_ENV=development bundle exec rspec spec -p --format d # run in development so we don't have the s3_sync stuff
   announce_time_finish
 fold_end rspec
 
