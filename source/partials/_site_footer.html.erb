@@ -38,7 +38,7 @@
 
       <div class="footer__buttons">
         <a href="<%= config[:login_url] %>" class="footer__login" title="Login to Sharesight">LOGIN</a>
-        <a href="<%= config[:signup_url] %>" class="footer__sign-up" title="Sign up for Sharesight">SIGN UP</a>
+        <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="footer__sign-up" title="Sign up for Sharesight">SIGN UP</a>
       </div>
 
       <div class="footer__apps">
