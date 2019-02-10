@@ -64,7 +64,8 @@ describe 'Partner Category Pages', :type => :feature do
 
   Capybara.app.data.locales.each do |locale|
     it "should have the expected elements for locale #{locale['id']}" do
-      get_partners_categories(locale, all: true).each do |category|
+      categories = get_partners_categories(locale, all: true)
+      categories.each do |category|
         visit category[:path]
 
         expect(page).to have_css('a.breadcrumb', text: 'Partners')
@@ -78,7 +79,7 @@ describe 'Partner Category Pages', :type => :feature do
 
         # Check for the navigation on the right.
         expect(page).to have_css('.partners-header__categories', text: 'Jump To')
-        get_partners_categories(locale, all: true).each do |cat|
+        categories.each do |cat|
           expect(page).to have_css(
             ".partners-header__categories-list li a.partners-header__category[href='#{cat[:url]}']",
             text: cat[:id] == 'all' ? cat[:name] : cat[:title]
