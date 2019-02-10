@@ -37,10 +37,12 @@ module CapybaraBlogHelpers
       # array of posts where one of the post_categories equals this one
       # category.posts = get_blog_posts()
 
-      if category.name != 'All'
-        category.posts = posts.select{ |post|
+      category.posts = if category.name != 'All'
+        posts.select{ |post|
           post.categories.select{ |post_category| post_category.id == category.id }.length >= 1 rescue false
         }
+      else
+        posts
       end
 
       category # return to map
