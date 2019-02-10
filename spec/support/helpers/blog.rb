@@ -12,6 +12,7 @@ module CapybaraBlogHelpers
 
   def get_blog_categories(check_length: true, all: false)
     categories = Capybara.app.data.blog.categories.map{ |tuple| tuple[1] }
+    posts = get_blog_posts
     categories = categories.select{ |category| category&.name } # only categories with a truthy name
     categories << OpenStruct.new({ name: 'All' }) if all
 
@@ -34,10 +35,10 @@ module CapybaraBlogHelpers
       category.url = base_url(category.path)
 
       # array of posts where one of the post_categories equals this one
-      category.posts = get_blog_posts()
+      # category.posts = get_blog_posts()
 
       if category.name != 'All'
-        category.posts = category.posts.select{ |post|
+        category.posts = posts.select{ |post|
           post.categories.select{ |post_category| post_category.id == category.id }.length >= 1 rescue false
         }
       end
