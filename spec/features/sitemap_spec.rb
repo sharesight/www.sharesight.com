@@ -28,25 +28,25 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  # Capybara.app.data.locales.each do |locale|
-  #   it "should have the right length of links for locale #{locale['id']}" do
-  #     visit localize_path('sitemap.xml', locale_id: locale[:id])
+  Capybara.app.data.locales.each do |locale|
+    it "should have the right length of links for locale #{locale['id']}" do
+      visit localize_path('sitemap.xml', locale_id: locale[:id])
 
-  #     expectation = 0
-  #     expectation += locale[:pages].reject{ |page| page.show_in_sitemap == false }.length
+      expectation = 0
+      expectation += locale[:pages].reject{ |page| page.show_in_sitemap == false }.length
 
-  #     expectation += get_blog_posts().length if locale[:id] == default_locale_id
-  #     expectation += get_blog_categories().length if locale[:id] == default_locale_id
+      expectation += get_blog_posts().length if locale[:id] == default_locale_id
+      expectation += get_blog_categories().length if locale[:id] == default_locale_id
 
-  #     expectation += get_partners_partners(locale).length
-  #     expectation += get_partners_categories(all: true).length
+      expectation += get_partners_partners(locale).length
+      expectation += get_partners_categories(all: true).length
 
-  #     expectation += get_landing_pages(locale).length
+      expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] }.length
 
-  #     expect(all(:xpath, '//urlset/url').length).to eq(expectation)
-  #     expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
-  #   end
-  # end
+      expect(all(:xpath, '//urlset/url').length).to eq(expectation)
+      expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
+    end
+  end
 
   it "should have all the blog posts on the global sitemap" do
     visit @path
@@ -108,24 +108,24 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  # Capybara.app.data.locales.each do |locale|
-  #   it "should have all landing pages for locale #{locale['id']}" do
-  #     visit localize_path('sitemap.xml', locale_id: locale[:id])
+  Capybara.app.data.locales.each do |locale|
+    it "should have all landing pages for locale #{locale['id']}" do
+      visit localize_path('sitemap.xml', locale_id: locale[:id])
 
-  #     get_landing_pages(locale).each do |landing_page|
-  #       url = localize_url(landing_page[:url_slug], locale_id: locale[:id])
+      get_landing_pages(locale).reject { |lp| lp[:no_index] }.each do |landing_page|
+        url = localize_url(landing_page[:url_slug], locale_id: locale[:id])
 
-  #       xpath = generate_xpath('//urlset/url/loc', text: url)
-  #       expect(page).to have_xpath(xpath), "#{landing_page.url_slug} is missing in sitemap (expected #{url})."
+        xpath = generate_xpath('//urlset/url/loc', text: url)
+        expect(page).to have_xpath(xpath), "#{landing_page.url_slug} is missing in sitemap (expected #{url})."
 
-  #       locales.each do |sublocale|
-  #         url = localize_url(landing_page[:url_slug], locale_id: sublocale.id)
-  #         xpath = generate_xpath('//urlset/url/link', args: { href: url })
-  #         expect(page).to have_xpath(xpath), "#{landing_page.name} is missing in sitemap (expected #{url})."
-  #       end
-  #     end
-  #   end
-  # end
+        locales.each do |sublocale|
+          url = localize_url(landing_page[:url_slug], locale_id: sublocale.id)
+          xpath = generate_xpath('//urlset/url/link', args: { href: url })
+          expect(page).to have_xpath(xpath), "#{landing_page.name} is missing in sitemap (expected #{url})."
+        end
+      end
+    end
+  end
 
   Capybara.app.data.locales.each do |locale|
     it "should have all the pages for locale #{locale['id']}" do
