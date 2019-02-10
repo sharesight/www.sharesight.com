@@ -29,6 +29,8 @@ module CapybaraPartnersHelpers
     categories = categories.map{ |category| Capybara.app.localize_entry(category, locale_obj[:lang], Capybara.app.default_locale_obj[:lang]) }
     categories << OpenStruct.new({ id: 'all', name: 'All', url_slug: 'all' }) if all == true
 
+    partners = get_partners_partners(locale_obj)
+
     # remap to new categories
     categories = categories.map do |category|
       category = OpenStruct.new(category) # category object does not like being mutable
@@ -53,13 +55,12 @@ module CapybaraPartnersHelpers
       category[:path] = localize_path("partners/#{category[:url_slug]}", locale_id: locale_obj[:id])
       category[:url] = localize_url(category[:path], locale_id: locale_obj[:id])
 
-      # array of partners where one of the partner_categories equals this one
-      category[:partners] = get_partners_partners(locale_obj)
-
-      if category[:id] != 'all'
-        category[:partners] = category.partners.select{ |partner|
+      category[:partners] = if category[:id] != 'all'
+        partners.select{ |partner|
           partner.categories.select{ |partner_category| partner_category[:id] == category[:id] }.length >= 1 rescue false
         }
+      else
+        partners
       end
 
       category # return to map
@@ -68,6 +69,6 @@ module CapybaraPartnersHelpers
     return categories unless check_length
 
     # only take categories with partners
-    return categories.select{ |category| category.partners&.length >= 1 }
+    categories.select { |category| category.partners&.length >= 1 }
   end
 end
