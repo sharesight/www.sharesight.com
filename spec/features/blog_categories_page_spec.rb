@@ -28,9 +28,14 @@ describe 'Blog Category Pages', :type => :feature do
   it "should have expected urls" do
     @categories.each do |category|
       subset = 0
+      last_page = (category.posts.length / @per_page) + 1
       while (category.posts.length - subset > 0) do
         subset += @per_page
         page_num = subset/@per_page
+
+        # only check a couple of pages
+        next unless [1, 2, last_page].include?(page_num)
+
         page_url = category[:path]
         page_url += "pages/#{page_num}" if page_num > 1
         page_url = base_path(page_url)
