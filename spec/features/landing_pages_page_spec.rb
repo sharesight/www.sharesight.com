@@ -2,8 +2,8 @@ require 'cgi'
 require 'spec_helper'
 
 describe 'Landing Pages Pages', :type => :feature do
-  it "should load" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should load for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
         visit landing_page[:path]
 
@@ -12,8 +12,8 @@ describe 'Landing Pages Pages', :type => :feature do
     end
   end
 
-  it "should have expected base metas" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected base metas for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
         visit landing_page[:path]
 
@@ -25,8 +25,8 @@ describe 'Landing Pages Pages', :type => :feature do
     end
   end
 
-  it "should have expected facebook metas" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected facebook metas for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
         visit landing_page[:path]
 
@@ -35,8 +35,8 @@ describe 'Landing Pages Pages', :type => :feature do
     end
   end
 
-  it "should have expected urls" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected urls for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
         visit landing_page[:path]
 
@@ -48,8 +48,8 @@ describe 'Landing Pages Pages', :type => :feature do
     end
   end
 
-  it "should have the expected elements" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have the expected elements for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
         visit landing_page[:path]
 

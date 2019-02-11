@@ -15,8 +15,8 @@ describe 'Sitemap', :type => :feature do
     expect(all(:xpath, '//sitemapindex/sitemap/loc').length).to eq(locales.length)
   end
 
-  it "should look like a sitemap" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should look like a sitemap for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
       expect(page).to have_xpath('//urlset')
 
@@ -28,8 +28,8 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have the right length of links" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have the right length of links for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       expectation = 0
@@ -41,7 +41,7 @@ describe 'Sitemap', :type => :feature do
       expectation += get_partners_partners(locale).length
       expectation += get_partners_categories(all: true).length
 
-      expectation += get_landing_pages(locale).length
+      expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] }.length
 
       expect(all(:xpath, '//urlset/url').length).to eq(expectation)
       expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
@@ -70,8 +70,8 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all the partners" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have all the partners for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       get_partners_partners().each do |partner|
@@ -89,8 +89,8 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all the partner categories" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have all the partner categories for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       get_partners_categories(all: true).each do |category|
@@ -108,11 +108,11 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all landing pages" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have all landing pages for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
-      get_landing_pages(locale).each do |landing_page|
+      get_landing_pages(locale).reject { |lp| lp[:no_index] }.each do |landing_page|
         url = localize_url(landing_page[:url_slug], locale_id: locale[:id])
 
         xpath = generate_xpath('//urlset/url/loc', text: url)
@@ -127,8 +127,8 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all the pages" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have all the pages for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       locale.pages.each do |page_data|
@@ -142,8 +142,8 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all valid links and locs" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have all valid links and locs for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       links = []

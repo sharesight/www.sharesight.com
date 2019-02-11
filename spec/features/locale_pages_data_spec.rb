@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe 'Locale Pages', :type => :feature do
-  it "should load" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should load for locale #{locale['id']}" do
       locale.pages.each do |page_data|
         visit localize_path(page_data[:page], locale_id: locale[:id])
 
@@ -11,8 +11,8 @@ describe 'Locale Pages', :type => :feature do
     end
   end
 
-  it "should have expected meta tags" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected meta tags for locale #{locale['id']}" do
       locale.pages.each do |page_data|
         visit localize_path(page_data[:page], locale_id: locale[:id])
         base_page_data = base_locale_page(page_data[:page])
@@ -25,8 +25,8 @@ describe 'Locale Pages', :type => :feature do
     end
   end
 
-  it "should have expected canonical urls" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected canonical urls for locale #{locale['id']}" do
       locale.pages.each do |page_data|
         visit localize_path(page_data[:page], locale_id: locale[:id])
 
@@ -43,8 +43,8 @@ describe 'Locale Pages', :type => :feature do
     end
   end
 
-  it "should have taglines where applicable" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have taglines where applicable for locale #{locale['id']}" do
       locale.pages.each do |page_data|
         visit localize_path(page_data[:page], locale_id: locale[:id])
 
@@ -55,8 +55,8 @@ describe 'Locale Pages', :type => :feature do
     end
   end
 
-  it "should have a footer" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have a footer for locale #{locale['id']}" do
       locale.pages.each do |page_data|
         visit localize_path(page_data[:page], locale_id: locale[:id])
 

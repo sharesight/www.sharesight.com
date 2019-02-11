@@ -5,8 +5,8 @@ describe 'Partner Category Pages', :type => :feature do
     @per_page = 30
   end
 
-  it "should load" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should load for locale #{locale['id']}" do
       get_partners_categories(locale, all: true).each do |category|
         visit category[:path]
 
@@ -15,8 +15,8 @@ describe 'Partner Category Pages', :type => :feature do
     end
   end
 
-  it "should have expected meta tags" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected meta tags for locale #{locale['id']}" do
       get_partners_categories(locale, all: true).each do |category|
         visit category[:path]
 
@@ -28,8 +28,8 @@ describe 'Partner Category Pages', :type => :feature do
     end
   end
 
-  it "should have expected urls" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected urls for locale #{locale['id']}" do
       get_partners_categories(locale, all: true).each do |category|
         subset = 0
         while (category[:partners].length - subset > 0) do
@@ -62,9 +62,10 @@ describe 'Partner Category Pages', :type => :feature do
     end
   end
 
-  it "should have the expected elements" do
-    locales.each do |locale|
-      get_partners_categories(locale, all: true).each do |category|
+  Capybara.app.data.locales.each do |locale|
+    it "should have the expected elements for locale #{locale['id']}" do
+      categories = get_partners_categories(locale, all: true)
+      categories.each do |category|
         visit category[:path]
 
         expect(page).to have_css('a.breadcrumb', text: 'Partners')
@@ -78,7 +79,7 @@ describe 'Partner Category Pages', :type => :feature do
 
         # Check for the navigation on the right.
         expect(page).to have_css('.partners-header__categories', text: 'Jump To')
-        get_partners_categories(locale, all: true).each do |cat|
+        categories.each do |cat|
           expect(page).to have_css(
             ".partners-header__categories-list li a.partners-header__category[href='#{cat[:url]}']",
             text: cat[:id] == 'all' ? cat[:name] : cat[:title]

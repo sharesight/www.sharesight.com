@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Blog Helper', :type => :helper do
   before :all do
-    @posts = get_blog_posts()
+    @posts = get_blog_posts(order: :youngest_first, limit: 10)
   end
 
   context "url slug" do

@@ -3,8 +3,8 @@ require 'spec_helper'
 
 describe 'Partners Partner Pages', :type => :feature do
 
-  it "should load" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should load for locale #{locale['id']}" do
       get_partners_partners(locale).each do |partner|
         visit partner[:path]
 
@@ -13,8 +13,8 @@ describe 'Partners Partner Pages', :type => :feature do
     end
   end
 
-  it "should have expected base metas" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected base metas for locale #{locale['id']}" do
       get_partners_partners(locale).each do |partner|
         visit partner[:path]
 
@@ -26,8 +26,8 @@ describe 'Partners Partner Pages', :type => :feature do
     end
   end
 
-  it "should have expected urls" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have expected urls for locale #{locale['id']}" do
       get_partners_partners(locale).each do |partner|
         visit partner[:path]
 
@@ -44,8 +44,8 @@ describe 'Partners Partner Pages', :type => :feature do
     end
   end
 
-  it "should have the expected elements" do
-    locales.each do |locale|
+  Capybara.app.data.locales.each do |locale|
+    it "should have the expected elements for locale #{locale['id']}" do
       get_partners_partners(locale).each do |partner|
         visit partner[:path]
 
