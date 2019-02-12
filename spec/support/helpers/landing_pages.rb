@@ -21,6 +21,6 @@ module CapybaraLandingPagesHelpers
       model
     end
 
-    return collection
+    collection
   end
 end

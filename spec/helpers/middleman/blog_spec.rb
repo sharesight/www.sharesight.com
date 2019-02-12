@@ -8,7 +8,7 @@ describe 'Blog Middleman Helper', :type => :helper do
   context "post_url" do
     # This is a proxy to other tested helpers.
     it "should return a string" do
-      get_blog_posts().each do |post|
+      get_blog_posts(order: :youngest_first, limit: 10).each do |post|
         expect(@app.post_url(post)).to be_kind_of(::String)
       end
     end
