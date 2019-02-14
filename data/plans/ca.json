@@ -9,6 +9,7 @@
   {
     "label": "Investor",
     "price": 25,
+    "portfolios": 6,
 
     "reports": {
       "capital_gains_tax_report": true
@@ -25,6 +26,7 @@
   {
     "label": "Expert",
     "price": 32,
+    "portfolios": 10,
 
     "reports": {
       "capital_gains_tax_report": true
