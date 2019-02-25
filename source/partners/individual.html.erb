@@ -61,9 +61,7 @@ layout: partners_partner
         <dd>
           <%= partner[:address] %>
           <%= '<br />' if partner[:city] || partner[:state] %>
-          <%= partner[:city] %>
-          <%= ',' if partner[:city] && partner[:state] %>
-          <%= partner[:state] %>
+          <%= [partner[:city], partner[:state]].compact.join(', ') %>
         </dd>
         <% end %>
 
