@@ -39,25 +39,31 @@ const localization = {
       const viewedCountryLink = document.getElementById('viewedCountryLink');
       const cookieCountryLink = document.getElementById('cookieCountryLink');
 
-      // change current country label, just incase it differs
-      viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).adjective;
+      const viewedCountryLocale = localeHelper.getLocale(viewedCountry);
+      const cookieCountryLocale = localeHelper.getLocale(cookieCountry);
 
-      // change the cookie country link to
-      cookieCountryLink.textContent = `return to the ${localeHelper.getLocale(cookieCountry).adjective} site`;
+      // change current country label, just incase it differs (should match the initial render)
+      viewedCountryLabel.textContent = viewedCountryLocale.adjective;
+      cookieCountryLink.setAttribute('title', `stay on the ${viewedCountryLocale.adjective} site`);
+
+      // change the cookie country link, title, and text
+      cookieCountryLink.textContent = `return to the ${cookieCountryLocale.adjective} site`;
+      cookieCountryLink.setAttribute('title', `return to the ${cookieCountryLocale.adjective} site`);
       cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, cookieCountry);
 
       // show banner
       countryBanner.style.display = 'flex';
 
-      viewedCountryLink.onclick = function () {
+      viewedCountryLink.addEventListener('click', (event) => {
         // overwrite the cookie
         cookieManager.setCookie(viewedCountry);
 
         // close the banner
         countryBanner.style.display = 'none';
 
+        event && event.preventDefault();
         return false;
-      }
+      });
     }
   },
 

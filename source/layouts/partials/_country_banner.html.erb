@@ -10,9 +10,9 @@
 
 <div id="countryBanner" class="section notice notice--primary">
   <div>
-  You are currently viewing the <strong id="viewedCountry"><%= locale_obj[:adjective] %></strong> site.
-  <a id="viewedCountryLink" href="<%= get_current_page_url %>">Stay on this site</a>
-  or
-  <a id="cookieCountryLink" href="<%= current_global_url %>">return to the global site</a>.
+    You are currently viewing the <strong id="viewedCountry"><%= locale_obj[:adjective] %></strong> site.
+    <a id="viewedCountryLink" title="stay on the <%= locale_obj[:adjective] %> site">Stay on this site</a>
+    or
+    <a id="cookieCountryLink" href="<%= current_global_url %>" title="return to the global site">return to the global site</a>.
   </div>
 </div>
