@@ -37,15 +37,14 @@ const localization = {
       const countryBanner = document.getElementById('countryBanner');
       const viewedCountryLabel = document.getElementById('viewedCountry');
       const viewedCountryLink = document.getElementById('viewedCountryLink');
-      const cookieCountryLabel = document.getElementById('cookieCountry');
       const cookieCountryLink = document.getElementById('cookieCountryLink');
 
-      // change country labels
+      // change current country label, just incase it differs
       viewedCountryLabel.textContent = localeHelper.getLocale(viewedCountry).adjective;
-      cookieCountryLabel.textContent = localeHelper.getLocale(cookieCountry).adjective;
 
-      // change link target
-      cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, localeHelper.getCookieLocale());
+      // change the cookie country link to
+      cookieCountryLink.textContent = `return to the ${localeHelper.getLocale(cookieCountry).adjective} site`;
+      cookieCountryLink.href = urlHelper.localizePath(window.location.pathname, cookieCountry);
 
       // show banner
       countryBanner.style.display = 'flex';
