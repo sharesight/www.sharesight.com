@@ -16,7 +16,7 @@
   <%= partial "layouts/partials/noscript" %>
   <script>document.body.className += ' js_menu_closed';</script>
 
-  <%= partial "layouts/partials/country_banner" %>
+  <%= partial "layouts/partials/country_banner", locals: { locale_obj: locale_obj } %>
 
   <nav class="a11y" role="navigation" tabindex="1">
     <ul role="menu">

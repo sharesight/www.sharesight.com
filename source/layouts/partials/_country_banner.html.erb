@@ -1,8 +1,18 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+
+  # NOTE: This view template has to have a _default version_ that's acceptable without Javascript enabled so GoogleBot reads it better.
+  # The contents of this, `viewedCountry` and `cookieCountryLink` are modified by our Javascript in:
+  # => `source/js/localization.js.es6#renderLocaleNotification`
+
+  # Since this is not displayed without javascript, this probably doesn't matter too much..
+%>
+
 <div id="countryBanner" class="section notice notice--primary">
   <div>
-  You are currently viewing the <b id="viewedCountry">viewedCountry</b> site.
-  <a id="viewedCountryLink" href="#">Stay on this site</a>
-  or
-  <a id="cookieCountryLink" href="#">return to the <span id="cookieCountry">cookieCountry</span> site</a>.
+    You are currently viewing the <strong id="viewedCountry"><%= locale_obj[:adjective] %></strong> site.
+    <a id="viewedCountryLink" title="stay on the <%= locale_obj[:adjective] %> site">Stay on this site</a>
+    or
+    <a id="cookieCountryLink" href="<%= current_global_url %>" title="return to the global site">return to the global site</a>.
   </div>
 </div>
