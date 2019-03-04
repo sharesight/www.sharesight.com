@@ -144,7 +144,7 @@
         "page_description": "Leading online share portfolio tracker & reporting tool for Australian investors. Sharesight tracks share prices, trades, dividends, performance & tax!",
         "tagline": "Simply the best share portfolio tracker for Australian investors.",
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "priority": 1
+        "sitemap_priority": 1
       },
       {
         "page": "partners",
