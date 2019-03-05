@@ -62,7 +62,7 @@ footer#footer {
     margin-bottom: $gutter;
 
     @include respond-to(md, min) {
-      margin-bottom: $gutter*2;
+      margin-bottom: $gutter*1.5;
     }
 
     > * + * {
@@ -198,7 +198,7 @@ footer#footer {
     margin-bottom: $gutter;
 
     @include respond-to(md, min) {
-      margin-bottom: $gutter*2;
+      margin-bottom: $gutter*1.5;
     }
 
     list-style: none;
