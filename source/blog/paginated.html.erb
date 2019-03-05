@@ -24,6 +24,14 @@ include_campaign_monitor: true
         <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading_page">Blog</h1></a>
       <% elsif is_top_20_category %>
         <h1 class="heading_page"><%= space_category_page_title %></h1>
+
+        <div class="campaign_monitor">
+          <%#
+            Campaign Monitor "Subscribe" Button.
+            TODO: This should be specifically for the Sharesight Top 20
+          %>
+          <div class="createsend-button" data-listid="r/58/BD4/ACC/5C6AB96D05E5929A"></div>
+        </div>
       <% else %>
         <h1 class="heading_page">Topic: <%= space_category_page_title %></h1>
       <% end %>
