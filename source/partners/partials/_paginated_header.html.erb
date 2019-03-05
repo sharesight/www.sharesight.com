@@ -10,7 +10,9 @@
 %>
 
 <header class="partners-header">
-  <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="breadcrumb" title="<%= locale_page(page: 'partners', locale_obj: locale_obj)[:page_title] %>"><% if category %>Partners<% end %></a>
+  <% if category %>
+    <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="breadcrumb" title="<%= locale_page(page: 'partners', locale_obj: locale_obj)[:page_title] %>">Partners</a>
+  <% end %>
 
   <h1 class="partners-header__title"><%= !category || category[:id] == 'all' ? 'Partners' : category[:name] %></h1>
 

@@ -4,13 +4,18 @@ section_class: 'blog_paginated section_blog'
 layout: blog_category
 include_campaign_monitor: true
 ---
-<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  is_all_category = category[:name] == 'All'
+%>
 
 <div class="blog">
   <header class="blog__header">
     <div class="container">
 
-      <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog"><% if category[:name] != 'All' %>Blog<% end %></a>
+      <% unless is_all_category %>
+        <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
+      <% end %>
 
       <% if category[:name] != 'All' %>
         <h1 class="heading heading_page heading_page_index">Topic: <%= space_category_page_title %></h1>
