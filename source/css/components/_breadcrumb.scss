@@ -4,13 +4,8 @@
   font-weight: 400;
   color: $colour_secondary;
   padding: $gutter/2 $gutter; // so we can click on it easier
-  margin-bottom: $gutter/2;
+  margin-bottom: $gutter/3;
   padding-left: 6px; // align with the likely below it
-
-  &:empty {
-    visibility: hidden;
-    opacity: 0;
-  }
 
   &:before {
     content: "";
