@@ -8,6 +8,8 @@ include_campaign_monitor: true
   locale_obj = locals[:locale_obj] || current_locale_obj
   is_all_category = category[:name] == 'All'
   is_top_20_category = sharesight_top_20_category && category[:id] == sharesight_top_20_category[:id]
+  show_menu = !is_top_20_category
+  posts_per_row = show_menu ? 2 : 3
 %>
 
 <div class="blog">
@@ -69,10 +71,10 @@ include_campaign_monitor: true
                 </section>
               </article>
 
-            <% if((idx + 1) % 2 == 0) %>
-              <% if (idx + 1 == 2) %>
+            <% if((idx + 1) % posts_per_row == 0) %>
+              <% if (idx + 1 == posts_per_row) && show_menu %>
                 <%= partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: category[:name], footer: false, on_individual_page: false} %>
-              <% else %>
+              <% elsif show_menu %>
                 <div class="cell"></div>
               <% end %>
               </div>
@@ -99,6 +101,13 @@ include_campaign_monitor: true
       </aside>
     </div>
 
-    <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: category[:name], footer: true, on_individual_page: false} %>
+    <% if show_menu %>
+      <%= partial 'blog/partials/blog_menu', locals: {
+        locale_id: locale_obj[:id],
+        category_name: category[:name],
+        footer: true,
+        on_individual_page: false
+      } %>
+    <% end %>
   </div>
 </div>
