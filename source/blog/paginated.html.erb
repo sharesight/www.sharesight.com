@@ -7,6 +7,7 @@ include_campaign_monitor: true
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
   is_all_category = category[:name] == 'All'
+  is_top_20_category = sharesight_top_20_category && category[:id] == sharesight_top_20_category[:id]
 %>
 
 <div class="blog">
@@ -17,10 +18,12 @@ include_campaign_monitor: true
         <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
       <% end %>
 
-      <% if category[:name] != 'All' %>
-        <h1 class="heading heading_page heading_page_index">Topic: <%= space_category_page_title %></h1>
+      <% if is_all_category %>
+        <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading_page">Blog</h1></a>
+      <% elsif is_top_20_category %>
+        <h1 class="heading_page"><%= space_category_page_title %></h1>
       <% else %>
-        <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading heading_page heading_page_index">Blog</h1></a>
+        <h1 class="heading_page">Topic: <%= space_category_page_title %></h1>
       <% end %>
     </div>
   </header>
