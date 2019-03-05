@@ -32,16 +32,6 @@
 }
 
 .blog {
-  .heading_page_index {
-    @include fontSize(2.625rem);
-    padding-bottom: $gutter;
-
-    @media (min-width: 768px) {
-      @include fontSize(3.5rem);
-      padding-top: 8px;
-    }
-  }
-
   p + blockquote {
     margin-top: 60px;
     margin-bottom: 50px;
