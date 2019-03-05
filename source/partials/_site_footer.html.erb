@@ -144,6 +144,19 @@
         </a>
       </li>
     </ul>
+
+    <ul class="footer__regional-links" role="menubar" aria-label="Regional Website Links">
+      <li role="none" class="footer__link-header">Available In</li>
+
+      <% data.locales.first(5).each do |locale| %>
+        <li role="menuitem">
+          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>" data-no-localize>
+            <%= locale[:name] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
   </div>
 </footer>
 

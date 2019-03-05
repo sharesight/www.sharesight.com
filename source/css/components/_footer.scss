@@ -205,6 +205,28 @@ footer#footer {
     outline: none;
   }
 
+  &__regional-links {
+    @extend %column--12;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: $gutter;
+
+    @include respond-to(md, min) {
+      margin-bottom: $gutter*1.5;
+    }
+
+    list-style: none;
+    outline: none;
+
+    li {
+      display: inline-block;
+    }
+
+    li + li {
+      margin-left: $gutter;
+    }
+  }
+
   &__link-header {
     @include fontSize(16px, 30px);
     font-weight: 600;
