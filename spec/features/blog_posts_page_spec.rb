@@ -49,7 +49,7 @@ describe 'Blog Post Pages', :type => :feature do
     @posts.each do |post|
       visit post.path
 
-      has_top_20_category = post.categories&.any?{ |cat| cat.id == Capybara.app.sharesight_top_20_category[:id] }
+      has_top_20_category = Capybara.app.sharesight_top_20_category && post.categories&.any?{ |cat| cat.id == Capybara.app.sharesight_top_20_category[:id] }
 
       expect(page).to have_css('a.breadcrumb', text: 'Blog')
 

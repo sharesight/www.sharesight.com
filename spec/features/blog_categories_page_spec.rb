@@ -62,7 +62,7 @@ describe 'Blog Category Pages', :type => :feature do
       visit category[:path]
 
       is_all_category = category.name == 'All'
-      is_top_20_category = category.id == Capybara.app.sharesight_top_20_category[:id]
+      is_top_20_category = Capybara.app.sharesight_top_20_category && category.id == Capybara.app.sharesight_top_20_category[:id]
 
       expect(page).to have_css('a.breadcrumb', text: 'Blog') unless is_all_category || is_top_20_category
 
