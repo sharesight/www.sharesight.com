@@ -13,7 +13,7 @@ include_campaign_monitor: true
       <div class="blog_content_container">
         <div class="blogpost">
           <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
-          <h1><%=post[:title]%></h1>
+          <h1 class="heading_page"><%= post[:title] %></h1>
 
           <div class="meta">
             <% post[:created_at] = Time.now if post[:created_at].blank? %>
