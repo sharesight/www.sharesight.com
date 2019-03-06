@@ -5,7 +5,10 @@ individual_page: true
 layout: blog_post
 include_campaign_monitor: true
 ---
-<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  has_top_20_category = sharesight_top_20_category && post[:categories]&.any?{ |category| category[:id] == sharesight_top_20_category[:id] }
+%>
 
 <div class="blog_page_wrapper blog_page blog">
   <div class="container blog-table blog_content_contained">
@@ -14,6 +17,10 @@ include_campaign_monitor: true
         <div class="blogpost">
           <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
           <h1 class="heading_page"><%= post[:title] %></h1>
+
+          <% if has_top_20_category %>
+            <%= partial 'blog/partials/campaign_monitor_top_20' %>
+          <% end %>
 
           <div class="meta">
             <% post[:created_at] = Time.now if post[:created_at].blank? %>
