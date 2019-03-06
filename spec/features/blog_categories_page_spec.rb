@@ -61,17 +61,24 @@ describe 'Blog Category Pages', :type => :feature do
     @categories.each do |category|
       visit category[:path]
 
-      expect(page).to have_css('a.breadcrumb', text: 'Blog') unless category.name == 'All'
+      is_all_category = category.name == 'All'
+      is_top_20_category = category.id == Capybara.app.sharesight_top_20_category[:id]
 
-      expect(page).to have_css('h1.heading', text: (category.name == 'All') ? category.title : "Topic: #{category.title}")
+      expect(page).to have_css('a.breadcrumb', text: 'Blog') unless is_all_category || is_top_20_category
+
+      expect(page).to have_css('h1.heading_page', text: (is_all_category || is_top_20_category) ? category.title : "Topic: #{category.title}")
 
       # Expect this to have posts.
       expect(page).to have_selector(:css, 'a.btn', text: 'Read Full Post', count: category.posts.length > @per_page ? @per_page : category.posts.length)
 
       # Check for the navigation on the right.
-      expect(page).to have_css('h4', text: 'Topics')
-      @categories.each do |cat|
-        expect(page).to have_css("nav[role='navigation'] li a[href='#{cat.url}']", text: "#{cat.title} (#{cat.posts.length})") unless cat.name == 'All'
+      if is_top_20_category
+        expect(page).not_to have_css('h4', text: 'Topics')
+      else
+        expect(page).to have_css('h4', text: 'Topics')
+        @categories.each do |cat|
+          expect(page).to have_css("nav[role='navigation'] li a[href='#{cat.url}']", text: "#{cat.title} (#{cat.posts.length})") unless cat.name == 'All'
+        end
       end
 
       # Check for the next page.
