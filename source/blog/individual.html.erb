@@ -8,6 +8,7 @@ include_campaign_monitor: true
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
   has_top_20_category = sharesight_top_20_category && post[:categories]&.any?{ |category| category[:id] == sharesight_top_20_category[:id] }
+  show_menu = !has_top_20_category
 %>
 
 <div class="blog_page_wrapper blog_page blog">
@@ -42,10 +43,12 @@ include_campaign_monitor: true
       </div>
     </div>
 
-    <div class="blog-column">
-      <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: false} %>
-    </div>
+    <% if show_menu %>
+      <div class="blog-column">
+        <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: false} %>
+      </div>
 
-    <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: true} %>
+      <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: true} %>
+    <% end %>
   </div>
 </div>
