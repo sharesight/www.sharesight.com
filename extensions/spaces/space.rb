@@ -86,14 +86,16 @@ module Middleman
         categories = []
 
         if withIndex == true
+          index_collection = collection.select{ |model| !model[:hide_from_feed] }
+
           categories.push({
             id: @index_category&.downcase,
             name: @index_category,
             description: nil,
             path: @index_path,
             url_slug: @index_slug,
-            count: collection.length,
-            set: collection
+            count: index_collection.length,
+            set: index_collection
           })
         end
 

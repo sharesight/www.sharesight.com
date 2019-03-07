@@ -62,17 +62,17 @@ describe 'Blog Category Pages', :type => :feature do
       visit category[:path]
 
       is_all_category = category.name == 'All'
-      is_top_20_category = Capybara.app.sharesight_top_20_category && category.id == Capybara.app.sharesight_top_20_category[:id]
+      is_sharesight20_category = Capybara.app.sharesight20_category && category.id == Capybara.app.sharesight20_category[:id]
 
-      expect(page).to have_css('a.breadcrumb', text: 'Blog') unless is_all_category || is_top_20_category
+      expect(page).to have_css('a.breadcrumb', text: 'Blog') unless is_all_category || is_sharesight20_category
 
-      expect(page).to have_css('h1.heading_page', text: (is_all_category || is_top_20_category) ? category.title : "Topic: #{category.title}")
+      expect(page).to have_css('h1.heading_page', text: (is_all_category || is_sharesight20_category) ? category.title : "Topic: #{category.title}")
 
       # Expect this to have posts.
       expect(page).to have_selector(:css, 'a.btn', text: 'Read Full Post', count: category.posts.length > @per_page ? @per_page : category.posts.length)
 
       # Check for the navigation on the right.
-      if is_top_20_category
+      if is_sharesight20_category
         expect(page).not_to have_css('h4', text: 'Topics')
       else
         expect(page).to have_css('h4', text: 'Topics')
