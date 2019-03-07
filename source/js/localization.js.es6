@@ -105,6 +105,7 @@ const localization = {
         `${config.base_path}/`.replace(/\/+/g, '/'), // relative urls (/faq); replace duplicate slashes
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
+      if (element.hasAttribute('data-no-localize')) return; // don't localize urls with no-localize
       element.pathname = urlHelper.localizePath(element.pathname, localeId)
     })
   },

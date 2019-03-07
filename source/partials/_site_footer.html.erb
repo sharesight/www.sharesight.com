@@ -76,7 +76,7 @@
       </li>
     </ul>
 
-    <ul class="footer__links" id="main-menu" role="menubar" aria-label="Website Links">
+    <ul class="footer__links" role="menubar" aria-label="Website Links">
       <li role="none" class="footer__link-header">&nbsp;</li>
       <li role="menuitem">
         <a href="<%= localize_url('faq', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'faq')[:page_title] %>">
@@ -97,7 +97,7 @@
       </li>
     </ul>
 
-    <ul class="footer__links" id="main-menu" role="menubar" aria-label="Resources Links">
+    <ul class="footer__links" role="menubar" aria-label="Resources Links">
       <li role="none" class="footer__link-header">Resources</li>
       <li role="menuitem">
         <a href="<%= config[:api_url] %>" class="footer__link" title="Sharesight Developer API">
@@ -124,7 +124,7 @@
       </li>
     </ul>
 
-    <ul class="footer__links" id="main-menu" role="menubar" aria-label="Support Links">
+    <ul class="footer__links" role="menubar" aria-label="Support Links">
       <li role="none" class="footer__link-header">Support</li>
       <li role="menuitem">
         <a href="<%= localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]) %>" class="footer__link" title="Help | <%= locale_obj[:append_title] %>">
@@ -144,6 +144,23 @@
         </a>
       </li>
     </ul>
+
+    <ul class="footer__regional-links" role="menubar" aria-label="Regional Website Links">
+      <li role="none" class="footer__link-header">Region</li>
+
+      <%#
+        These regional links are a test to see if these links will improve our index rate of non-global pages.
+        We only grab the first 5 because we may eventually add 20+ and this would be ugly.
+      %>
+      <% data.locales.first(5).each do |locale| %>
+        <li role="menuitem">
+          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>" data-no-localize>
+            <%= locale[:name] %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
   </div>
 </footer>
 
