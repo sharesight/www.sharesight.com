@@ -9,7 +9,7 @@ xml.rss version: "2.0", 'xmlns:dc' => "http://purl.org/dc/elements/1.1/", 'xmlns
 
     number_of_items = 10
     blog_posts(order: :youngest_first)[-number_of_items..-1].reverse.each do |post|
-      next if post.title.blank?
+      next if post[:title].blank?
 
       xml.item do
         url = post_url(post)
@@ -21,7 +21,7 @@ xml.rss version: "2.0", 'xmlns:dc' => "http://purl.org/dc/elements/1.1/", 'xmlns
         # remove script tags, etc.
         description = Rails::Html::WhiteListSanitizer.new.sanitize(description)
 
-        xml.title post.title
+        xml.title post[:title]
         xml.link url
         xml.description {
           xml.cdata!(
