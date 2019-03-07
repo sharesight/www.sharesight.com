@@ -23,11 +23,11 @@ include_campaign_monitor: true
       <% if is_all_category %>
         <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading_page">Blog</h1></a>
       <% elsif is_sharesight20_category %>
-        <h1 class="heading_page"><%= space_category_page_title %></h1>
+        <h1 class="heading_page"><%= space_category_title %></h1>
 
         <%= partial 'blog/partials/campaign_monitor_sharesight20' %>
       <% else %>
-        <h1 class="heading_page">Topic: <%= space_category_page_title %></h1>
+        <h1 class="heading_page">Topic: <%= space_category_title %></h1>
       <% end %>
     </div>
   </header>
