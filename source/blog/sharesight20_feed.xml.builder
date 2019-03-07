@@ -2,7 +2,7 @@ xml.instruct!
 xml.rss version: "2.0", 'xmlns:dc' => "http://purl.org/dc/elements/1.1/", 'xmlns:atom' => "http://www.w3.org/2005/Atom" do
   xml.channel do
     xml.title "Sharesight20 Feed"
-    xml.description "Perfect Share Portfolio Management"
+    xml.description "Sharesight20 snapshots look at the top 20 trades on both the ASX and NZX markets by Sharesight users weekly, monthly and yearly."
     xml.link base_url()
     xml.tag! 'atom:link', href: base_url('/blog/sharesight20_feed.xml'), rel: 'self', type: 'application/rss+xml'
     xml.language "en-US"
