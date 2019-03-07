@@ -21,7 +21,8 @@ module MiddlemanPartnersHelpers
   end
 
   def partners_collection(lang = default_locale_obj[:lang])
-    return data.partners.partners
+    @partners_collection ||= {}
+    @partners_collection[lang] ||= data.partners.partners
       .map{ |tuple| tuple[1] }
       .map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) }
       .select{ |model| PartnerHelper.is_valid_partner?(model) }
@@ -29,7 +30,8 @@ module MiddlemanPartnersHelpers
   end
 
   def categories_collection(lang = default_locale_obj[:lang])
-    return data.partners.categories
+    @categories_collection ||= {}
+    @categories_collection[lang] ||= data.partners.categories
       .map{ |tuple| tuple[1] }
       .map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) }
       .select{ |model| PartnerHelper.is_valid_category?(model) }
@@ -38,6 +40,10 @@ module MiddlemanPartnersHelpers
 
   # localize_value should always have a third argument: fallback_locale!
   def partners_categories(lang = default_locale_obj[:lang], withIndex: false)
+    @partners_categories ||= {}
+    @partners_categories[lang] ||= {}
+    return @partners_categories[lang][withIndex] if @partners_categories[lang][withIndex]
+
     array = []
     collection = partners_collection(lang)
     categories = categories_collection(lang)
@@ -74,6 +80,6 @@ module MiddlemanPartnersHelpers
     end
 
     # Stick the all category to the top.
-    return array.sort{ |a, b| sort_categories(a, b) }
+    @partners_categories[lang][withIndex] ||= array.sort{ |a, b| sort_categories(a, b) }
   end
 end
