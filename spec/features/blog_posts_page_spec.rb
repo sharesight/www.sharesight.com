@@ -49,13 +49,13 @@ describe 'Blog Post Pages', :type => :feature do
     @posts.each do |post|
       visit post.path
 
-      has_top_20_category = Capybara.app.sharesight_top_20_category && post.categories&.any?{ |cat| cat.id == Capybara.app.sharesight_top_20_category[:id] }
+      has_sharesight20_category = Capybara.app.sharesight20_category && post.categories&.any?{ |cat| cat.id == Capybara.app.sharesight20_category[:id] }
 
       expect(page).to have_css('a.breadcrumb', text: 'Blog')
 
       expect(page).to have_css('h1', text: post.title)
 
-      unless has_top_20_category
+      unless has_sharesight20_category
         # Check for the navigation on the right.
         expect(page).to have_css('h4', text: 'Topics')
         @categories.each do |cat|

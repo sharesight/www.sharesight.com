@@ -7,8 +7,8 @@ include_campaign_monitor: true
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
   is_all_category = category[:name] == 'All'
-  is_top_20_category = sharesight_top_20_category && category[:id] == sharesight_top_20_category[:id]
-  show_menu = !is_top_20_category
+  is_sharesight20_category = sharesight20_category && category[:id] == sharesight20_category[:id]
+  show_menu = !is_sharesight20_category
   posts_per_row = show_menu ? 2 : 3
 %>
 
@@ -22,10 +22,10 @@ include_campaign_monitor: true
 
       <% if is_all_category %>
         <a href="<%= unlocalized_url('blog') %>" title="Sharesight Blog"><h1 class="heading_page">Blog</h1></a>
-      <% elsif is_top_20_category %>
+      <% elsif is_sharesight20_category %>
         <h1 class="heading_page"><%= space_category_page_title %></h1>
 
-        <%= partial 'blog/partials/campaign_monitor_top_20' %>
+        <%= partial 'blog/partials/campaign_monitor_sharesight20' %>
       <% else %>
         <h1 class="heading_page">Topic: <%= space_category_page_title %></h1>
       <% end %>
