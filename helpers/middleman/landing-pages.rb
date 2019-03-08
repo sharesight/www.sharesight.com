@@ -14,7 +14,8 @@ module MiddlemanLandingPagesHelpers
   end
 
   def landing_pages_collection(lang = default_locale_obj[:lang])
-    return data['landing-pages'].pages
+    @landing_pages_collection ||= {}
+    @landing_pages_collection[lang] ||= data['landing-pages'].pages
       .map{ |tuple| tuple[1] }
       .map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) }
       .select{ |model| !model[:url_slug].blank? }
