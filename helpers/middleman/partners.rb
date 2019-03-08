@@ -42,44 +42,44 @@ module MiddlemanPartnersHelpers
   def partners_categories(lang = default_locale_obj[:lang], withIndex: false)
     @partners_categories ||= {}
     @partners_categories[lang] ||= {}
-    return @partners_categories[lang][withIndex] if @partners_categories[lang][withIndex]
+    @partners_categories[lang][!!withIndex] ||= begin
+      array = []
+      collection = partners_collection(lang)
+      categories = categories_collection(lang)
 
-    array = []
-    collection = partners_collection(lang)
-    categories = categories_collection(lang)
+      if withIndex == true
+        array.push({
+          id: 'all',
+          name: 'All',
+          description: nil,
+          _meta: nil,
+          path: "partners/all",
+          url_slug: "all",
+          count: collection.length,
+          set: collection
+        })
+      end
 
-    if withIndex == true
-      array.push({
-        id: 'all',
-        name: 'All',
-        description: nil,
-        _meta: nil,
-        path: "partners/all",
-        url_slug: "all",
-        count: collection.length,
-        set: collection
-      })
+      collection = categories.each do |category|
+        set = collection.select { |model|
+          # models that have the category id
+          model[:categories]&.find{ |model_category| model_category[:id].include?(category[:id]) }
+        }
+
+        array.push({
+          id: category[:id],
+          name: category[:name],
+          description: category[:description],
+          _meta: category[:_meta],
+          path: "partners/#{category[:url_slug]}",
+          url_slug: category[:url_slug],
+          count: set.length,
+          set: set
+        })
+      end
+
+      # Stick the all category to the top.
+      array.sort{ |a, b| sort_categories(a, b) }
     end
-
-    collection = categories.each do |category|
-      set = collection.select { |model|
-        # models that have the category id
-        model[:categories]&.find{ |model_category| model_category[:id].include?(category[:id]) }
-      }
-
-      array.push({
-        id: category[:id],
-        name: category[:name],
-        description: category[:description],
-        _meta: category[:_meta],
-        path: "partners/#{category[:url_slug]}",
-        url_slug: category[:url_slug],
-        count: set.length,
-        set: set
-      })
-    end
-
-    # Stick the all category to the top.
-    @partners_categories[lang][withIndex] ||= array.sort{ |a, b| sort_categories(a, b) }
   end
 end

@@ -26,35 +26,35 @@ module MiddlemanBlogHelpers
   end
 
   def blog_categories
-    return @blog_categories if @blog_categories
+    @blog_categories ||= begin
+      categories = []
+      collection = data.blog.posts
+        .map{ |tuple| tuple[1] }
+        .select{ |model| BlogHelper.is_valid_post?(model) }
 
-    categories = []
-    collection = data.blog.posts
-      .map{ |tuple| tuple[1] }
-      .select{ |model| BlogHelper.is_valid_post?(model) }
+      categories_collection = data.blog.categories
+        .map{ |tuple| tuple[1] }
+        .select{ |model| BlogHelper.is_valid_category?(model) }
 
-    categories_collection = data.blog.categories
-      .map{ |tuple| tuple[1] }
-      .select{ |model| BlogHelper.is_valid_category?(model) }
+      collection = categories_collection.each do |category|
+        set = collection.select { |model|
+          # models that have the category id
+          model[:categories]&.find{ |model_category| model_category[:id].include?(category[:id]) }
+        }
 
-    collection = categories_collection.each do |category|
-      set = collection.select { |model|
-        # models that have the category id
-        model[:categories]&.find{ |model_category| model_category[:id].include?(category[:id]) }
-      }
+        categories.push({
+          id: category[:id],
+          name: category[:name],
+          description: category[:description],
+          _meta: category[:_meta],
+          path: "blog/#{url_friendly_string(category[:name])}",
+          url_slug: url_friendly_string(category[:name]),
+          count: set.length,
+          set: set
+        })
+      end
 
-      categories.push({
-        id: category[:id],
-        name: category[:name],
-        description: category[:description],
-        _meta: category[:_meta],
-        path: "blog/#{url_friendly_string(category[:name])}",
-        url_slug: url_friendly_string(category[:name]),
-        count: set.length,
-        set: set
-      })
+      categories.sort_by{ |x| x[:name] }
     end
-
-    @blog_categories ||= categories.sort_by{ |x| x[:name] }
   end
 end
