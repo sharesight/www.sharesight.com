@@ -5,7 +5,11 @@ individual_page: true
 layout: blog_post
 include_campaign_monitor: true
 ---
-<% locale_obj = locals[:locale_obj] || current_locale_obj %>
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  has_sharesight20_category = sharesight20_category && post[:categories]&.any?{ |category| category[:id] == sharesight20_category[:id] }
+  show_menu = !has_sharesight20_category
+%>
 
 <div class="blog_page_wrapper blog_page blog">
   <div class="container blog-table blog_content_contained">
@@ -13,7 +17,11 @@ include_campaign_monitor: true
       <div class="blog_content_container">
         <div class="blogpost">
           <a href="<%= unlocalized_url('blog') %>" class="breadcrumb" title="Sharesight Blog">Blog</a>
-          <h1><%=post[:title]%></h1>
+          <h1 class="heading_page"><%= post[:title] %></h1>
+
+          <% if has_sharesight20_category %>
+            <%= partial 'blog/partials/campaign_monitor_sharesight20' %>
+          <% end %>
 
           <div class="meta">
             <% post[:created_at] = Time.now if post[:created_at].blank? %>
@@ -35,10 +43,12 @@ include_campaign_monitor: true
       </div>
     </div>
 
-    <div class="blog-column">
-      <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: false} %>
-    </div>
+    <% if show_menu %>
+      <div class="blog-column">
+        <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: false} %>
+      </div>
 
-    <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: true} %>
+      <%=partial 'blog/partials/blog_menu', locals: {locale_id: locale_obj[:id], category_name: "All", on_individual_page: true, footer: true} %>
+    <% end %>
   </div>
 </div>

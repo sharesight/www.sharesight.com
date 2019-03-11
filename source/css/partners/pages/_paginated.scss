@@ -19,15 +19,7 @@
 
   &__title {
     @extend .heading_page;
-    @extend .heading_page_index;
-
-    @include fontSize(2.625rem);
     padding-bottom: $gutter;
-
-    @include respond-to (sm, min) {
-      @include fontSize(3.5rem);
-      padding-top: $gutter / 3;
-    }
   }
 
   &__cards {

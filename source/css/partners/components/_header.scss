@@ -13,15 +13,7 @@ $__categories_list_bottom_margin: $gutter/2;
   }
 
   &__title {
-    @extend .heading_page;
-    @extend .heading_page_index;
-    @include fontSize(2.625rem);
-    padding-bottom: $gutter;
-
-    @include respond-to (sm, min) {
-      @include fontSize(3.5rem);
-      padding-top: $gutter / 3;
-    }
+    @extend .partners__title;
   }
 
   &__categories {

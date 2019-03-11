@@ -57,4 +57,11 @@ module MiddlemanBlogHelpers
       categories.sort_by{ |x| x[:name] }
     end
   end
+
+  # NOTE: This is a very specific, fragile, and magical category!
+  # We hack together a blog category to do a few specific things on the Sharesight20 category.
+  # If this category is removed or renamed, there may be some issues...
+  def sharesight20_category
+    @sharesight20_category ||= blog_categories.find{ |category| category[:name].include?('Sharesight20') }
+  end
 end
