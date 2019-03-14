@@ -31,7 +31,7 @@ undefined method `+' for nil:NilClass
 
 If you see this pattern: `undefined method `something` for nil:NilClass` it means there's a blank field that Ruby is trying to process (in this example, it's trying to add it). 
 
-Solution: Look for a field that's blank and related to the page mentioned. I guess here it was a tax rate?
+*Solution*: Look for a field that's blank and related to the page mentioned. I guess here it was a tax rate?
 
 ### NoMethodError for <Contentful::Asset
 
@@ -45,5 +45,5 @@ NoMethodError: undefined method `title' for <Contentful::Asset id='6rjArUk7BRsU9
 
 This is similar to the problem above, suggesting a title hasn't been entered yet for something. Contentful automatically generates Ruby methods based on the data it has, so if the data hasn't been entered yet, it won't create a method for that field.
 
-Solution: Look for a recently edited entry missing that field (in this case, a title).
+*Solution*: Look for a recently edited entry missing that field (in this case, a title).
 
