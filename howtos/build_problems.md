@@ -17,6 +17,7 @@ Please add more error types here and possible solutions as we see different sort
 ### NilClass?
 
 From https://travis-ci.org/sharesight/www.sharesight.com/jobs/506086753
+(screenshot)[undefined_method_nilclass.png]
 
 ```
  error  build/ca/tax/index.html
