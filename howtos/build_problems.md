@@ -10,7 +10,7 @@ You'll see the current builds going on, and if you look into the `Build History`
 
 Click on the build number link (e.g. `#1224 failed`) to dig in further. You'll see the sub-tasks (e.g. *Build*, *Test*, *Deploy*) marked with a tick if they passed or cross if they failed. Clicking on the failed task will show you more details, including the log file.
 
-The log files are pretty huge, so it's best to search in the page ('error' is a good starting search) to find what went wrong. Travis also collapses sections, so you might need to click on the triangle icon on the left to expand a section too.
+The log files are pretty huge, so it's best to search within the page (the URL will be something like `https://travis-ci.org/sharesight/www.sharesight.com/jobs/506544815`). 'error' is a good starting search, to find what went wrong. Travis also collapses sections, so you might need to click on the triangle icon on the left to expand a section too.
 
 ![collapsed log sections](collapsed_log_files.png)
 
@@ -49,3 +49,16 @@ You can also see in the screenshot that it was working on the _partners_ pages w
 
 *Solution*: Look for a recently edited entry—starting with partner pages—missing that field (in this case, a title).
 
+### KeyError
+
+From https://travis-ci.org/sharesight/www.sharesight.com/jobs/506544815
+
+![key error screenshot](key_error.png)
+
+```
+KeyError: key not found: :title
+```
+
+This is another case where a field is missing, in this case it's happening earlier during the initial data download from Contentful.
+
+*Solution*: Look for a recently edited entry missing that field (in this case, a title).
