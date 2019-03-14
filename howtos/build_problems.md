@@ -18,7 +18,7 @@ Please add more error types here and possible solutions as we see different sort
 
 From https://travis-ci.org/sharesight/www.sharesight.com/jobs/506086753
 
-````
+```
  error  build/ca/tax/index.html
 undefined method `+' for nil:NilClass
 ```
