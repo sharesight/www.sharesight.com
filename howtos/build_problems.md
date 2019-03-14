@@ -45,5 +45,7 @@ NoMethodError: undefined method `title' for <Contentful::Asset id='6rjArUk7BRsU9
 
 This is similar to the problem above, suggesting a title hasn't been entered yet for something. Contentful automatically generates Ruby methods based on the data it has, so if the data hasn't been entered yet, it won't create a method for that field.
 
-*Solution*: Look for a recently edited entry missing that field (in this case, a title).
+You can also see in the screenshot that it was working on the _partners_ pages when the error occurred, so that's a good place to start looking for the problem.
+
+*Solution*: Look for a recently edited entry—starting with partner pages—missing that field (in this case, a title).
 
