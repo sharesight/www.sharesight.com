@@ -29,9 +29,9 @@ From https://travis-ci.org/sharesight/www.sharesight.com/jobs/506086753
 undefined method `+' for nil:NilClass
 ```
 
-If you see this pattern: `undefined method `something` for nil:NilClass` it means there's a blank field that Ruby is trying to process (in this example, it's trying to add it). 
+If you see this pattern: `undefined method `something` for nil:NilClass` it means there's a blank field that Ruby is trying to process (in this example, it's trying to add/concatenate it with a `+` operation). 
 
-*Solution*: Look for a field that's blank and related to the page mentioned. I guess here it was a tax rate?
+*Solution*: Look for a field that's blank and related to the page mentioned - a tax reporting landing page, here, from the looks of it.
 
 ### NoMethodError for <Contentful::Asset
 
