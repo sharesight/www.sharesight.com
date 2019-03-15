@@ -61,4 +61,6 @@ KeyError: key not found: :title
 
 This is another case where a field is missing, in this case it's happening earlier during the initial data download from Contentful.
 
+That comment about `::Fixnum is deprecated` looks scary, but you can ignore deprecation warnings like that. This is just to let us developers know that a certain feature is going to be removed sometime soon.
+
 *Solution*: Look for a recently edited entry missing that field (in this case, a title).
