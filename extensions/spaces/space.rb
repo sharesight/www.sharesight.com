@@ -170,7 +170,7 @@ module Middleman
               total_items: category[:set].length,
               current_page: page_num,
               index_page: resources[0],
-              next_page: page_num < total_pages ? resources[index + 1] : nil,
+              next_page: index < total_pages ? resources[index + 1] : nil,
               prev_page: index > 0 ? resources[index - 1] : nil
             )
 
