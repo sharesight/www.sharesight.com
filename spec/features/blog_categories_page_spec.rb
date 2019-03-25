@@ -52,7 +52,7 @@ describe 'Blog Category Pages', :type => :feature do
         prev = base_url("#{category[:path]}/pages/#{page_num - 1}/") if page_num >= 3
         prev = category[:url] if page_num == 2
         expect(page).to have_head('link', args: { rel: 'prev', href: prev }, debug: :href) if prev
-        expect(page).to have_head('link', args: { rel: 'next', href: base_url("#{category[:path]}/pages/#{page_num + 1}/") }, debug: :href) if category.posts.length - subset > 0
+        expect(page).to have_head('link', args: { rel: 'next', href: base_url("#{category[:path]}/pages/#{page_num + 1}/") }, debug: :href) unless page_num == last_page
       end
     end
   end
