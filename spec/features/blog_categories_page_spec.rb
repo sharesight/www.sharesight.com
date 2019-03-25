@@ -28,7 +28,7 @@ describe 'Blog Category Pages', :type => :feature do
   it "should have expected urls" do
     @categories.each do |category|
       subset = 0
-      last_page = (category.posts.length / @per_page) + 1
+      last_page = (category.posts.length / @per_page).ceil
       while (category.posts.length - subset > 0) do
         subset += @per_page
         page_num = subset/@per_page
