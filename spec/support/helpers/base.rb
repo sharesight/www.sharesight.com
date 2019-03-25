@@ -23,7 +23,7 @@ module CapybaraBaseHelpers
     end
 
     ends_with.each do |key, value| # ends-with is XPath 2.0
-      xpath += "[substring(@#{key}, string-length(@#{key}) - string-length(\"#{value}\").ceil) = \"#{value}\"]" unless key&.to_sym == ignore&.to_sym
+      xpath += "[substring(@#{key}, string-length(@#{key}) - string-length(\"#{value}\") + 1) = \"#{value}\"]" unless key&.to_sym == ignore&.to_sym
     end
 
     starts_with.each do |key, value|
