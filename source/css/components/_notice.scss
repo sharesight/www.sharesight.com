@@ -10,7 +10,7 @@
   }
 
   &, &--secondary {
-    background-color: rgba($colour_secondary, .95);
+    background-color: $colour_secondary;
     color: $colour_pro;
   }
 
