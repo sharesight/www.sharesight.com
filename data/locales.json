@@ -71,6 +71,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "team",
+        "page_title": "Team | Sharesight",
+        "page_description": "…",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
+      },
+      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight",
         "page_description": "Sign up for Sharesight and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -184,6 +191,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "team",
+        "page_title": "Team | Sharesight",
+        "page_description": "…",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
+      },
+      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight Australia",
         "page_description": "Sign up for Sharesight Australia and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -288,6 +302,13 @@
         "page_description": "Sharesight Canada places the highest importance on respecting and protecting the privacy of our customers. Here is detailed information on our privacy policy.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 0.1
+      },
+      {
+        "page": "team",
+        "page_title": "Team | Sharesight",
+        "page_description": "…",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
       },
       {
         "page": "pricing",
@@ -396,6 +417,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "team",
+        "page_title": "Team | Sharesight",
+        "page_description": "…",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
+      },
+      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight New Zealand",
         "page_description": "Sign up for Sharesight New Zealand and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -501,6 +529,13 @@
         "page_description": "Sharesight UK places the highest importance on respecting and protecting the privacy of our customers. Here is detailed information on our privacy policy.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "sitemap_priority": 0.1
+      },
+      {
+        "page": "team",
+        "page_title": "Team | Sharesight",
+        "page_description": "…",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
       },
       {
         "page": "pricing",
