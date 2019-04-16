@@ -18,6 +18,10 @@
     </li>
 
     <li class="menu_group" role="menuitem">
+      <a href="<%= localize_url('team', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'team', locale_obj: locale_obj)[:page_title] %>">Executive Team</a>
+    </li>
+
+    <li class="menu_group" role="menuitem">
       <a href="<%= localize_url('about-sharesight', locale_id: locale_obj[:id]) %>" class="menu_item" title="<%= locale_page(page: 'about-sharesight', locale_obj: locale_obj)[:page_title] %>">About Us</a>
     </li>
 
