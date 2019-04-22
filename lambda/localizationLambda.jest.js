@@ -31,7 +31,7 @@ const codesInAllCases = [].concat.apply([], codes.filter(code => code !== 'globa
   code[0] + code[1].toUpperCase(),
 ]));
 
-const ignoreUris = ['/blog', '/blog/', '/blog/some-blog-url/', '/survey-thanks', '/survey-thanks/'];
+const ignoreUris = ['/blog', '/blog/', '/blog/some-blog-url/', '/team/', '/survey-thanks', '/survey-thanks/'];
 const assetUris = [
   '/js/some-file-12389a.js/',
   '/css/styles.css',
