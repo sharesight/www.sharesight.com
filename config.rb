@@ -5,7 +5,6 @@ require 'config/contentful'
 load 'helpers/middleman/helpers.rb'
 load 'helpers/basic_helper.rb'
 load 'helpers/blog_helper.rb'
-require 'helpers/s3_redirects_helper.rb'
 
 require 'mappers/default'
 
@@ -13,7 +12,6 @@ load 'extensions/landing-pages.rb'
 load 'extensions/blog.rb'
 load 'extensions/partners.rb'
 load 'extensions/routing.rb'
-require 'extensions/s3.rb'
 
 require 'aws/s3'
 require 'rack/rewrite'
@@ -64,7 +62,6 @@ activate :autoprefixer do |autoprefixer_config|
 end
 
 # Custom Middleman Extensions
-activate :init_s3
 activate :routing
 
 # Fetch via Contentful
