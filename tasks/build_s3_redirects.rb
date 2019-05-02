@@ -7,7 +7,7 @@ require_relative "../config/environments/#{ENV['APP_ENV']}"
 # execute: BuildS3Redirects::make_s3_redirects
 
 IGNORE_DIRECTORIES = ['..', '.', 'css', 'img', 'js', 'fonts']
-OVERRIDE_EXISTING = true
+OVERRIDE_EXISTING = false # toggle on to delete existing redirect files; full rebuild only (takes longer + minor outage)
 
 module BuildS3Redirects
 
@@ -62,11 +62,6 @@ module BuildS3Redirects
   def self.create_redirect(source_path, target_path, bucket_name, dry_run = false)
     create_redirect_file source_path, target_path, bucket_name, dry_run
   end
-
-  # delete old redirect, if existing
-  # def self.create_redirect!(source_path, target_path, bucket_name, dry_run = false)
-  #   create_redirect_file source_path, target_path, bucket_name, true, dry_run
-  # end
 
   def self.make_connection
     AWS::S3::Base.establish_connection!(
