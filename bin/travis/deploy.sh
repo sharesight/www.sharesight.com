@@ -14,6 +14,15 @@ fold_start middleman.s3_sync "middleman s3_sync"
   announce bundle exec middleman s3_sync $FORCE
 fold_end middleman.s3_sync
 
+##########
+fold_start build_s3_redirects "build s3 redirects"
+  if [ $FORCE ]; then
+    # NOTE: This will take a very long time!
+    announce bundle exec ruby tasks/build_s3_redirects.rb
+  fi
+fold_end build_s3_redirects
+
+##########
 fold_start bugsnag.release "notify bugsnag release"
   announce notify_bugsnag_release
 fold_end bugsnag.release
