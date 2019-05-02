@@ -1,13 +1,19 @@
 require 'aws/s3'
 require 'uri'
 
-# TODO: Untested Code
-# execute: S3RedirectsHelper::make_s3_redirects
+require_relative "../config/environments/#{ENV['APP_ENV']}"
 
-module S3RedirectsHelper
+# TODO: Untested Code
+# execute: BuildS3Redirects::make_s3_redirects
+
+IGNORE_DIRECTORIES = ['..', '.', 'css', 'img', 'js', 'fonts']
+OVERRIDE_EXISTING = true
+
+module BuildS3Redirects
 
   def self.make_s3_redirects(dry_run = false)
-    return unless ["staging", "production"].include?(ENV['APP_ENV']) && ENV['TRAVIS_PULL_REQUEST'] == "false"
+    return unless ::ApplicationConfig::S3
+    return unless ["staging", "production"].include?(ENV['APP_ENV'])
 
     bucket_name = ::ApplicationConfig::S3::BUCKET
 
@@ -19,6 +25,7 @@ module S3RedirectsHelper
       current_dir = directory_queue.pop
       build_directory = File.join("build", current_dir)
 
+      next if IGNORE_DIRECTORIES.include?(current_dir)
       next unless File.exist?(build_directory) && File.directory?(build_directory)
 
       Dir.entries(File.join("build", current_dir)).each do |object|
@@ -53,13 +60,13 @@ module S3RedirectsHelper
   end
 
   def self.create_redirect(source_path, target_path, bucket_name, dry_run = false)
-    create_redirect_file source_path, target_path, bucket_name, false, dry_run
+    create_redirect_file source_path, target_path, bucket_name, dry_run
   end
 
   # delete old redirect, if existing
-  def self.create_redirect!(source_path, target_path, bucket_name, dry_run = false)
-    create_redirect_file source_path, target_path, bucket_name, true, dry_run
-  end
+  # def self.create_redirect!(source_path, target_path, bucket_name, dry_run = false)
+  #   create_redirect_file source_path, target_path, bucket_name, true, dry_run
+  # end
 
   def self.make_connection
     AWS::S3::Base.establish_connection!(
@@ -70,10 +77,11 @@ module S3RedirectsHelper
 
   private
 
-  def self.create_redirect_file(source_path, target_path, bucket_name, override_existing = false, dry_run = false)
+  def self.create_redirect_file(source_path, target_path, bucket_name, dry_run = false)
+    # TODO: This is very slow, doing an AWS API request to see if the file exists.  Instead, we could get all s3 files once?
     if AWS::S3::S3Object.exists?(source_path, bucket_name)
       print "#{source_path} already exists "
-      if override_existing
+      if OVERRIDE_EXISTING
         puts "deleting old redirect..."
         AWS::S3::S3Object.delete(source_path, bucket_name) unless dry_run
       else
@@ -81,8 +89,13 @@ module S3RedirectsHelper
         return
       end
     end
+
+
     puts "Creating a 301 redirect for object #{source_path} to #{target_path}"
 
     AWS::S3::S3Object.store(source_path, nil, bucket_name, 'x-amz-website-redirect-location': URI.encode(target_path), 'Content-Type': 'text/html') unless dry_run
   end
 end
+
+# Immediately invokes.
+BuildS3Redirects::make_s3_redirects
