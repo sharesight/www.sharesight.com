@@ -13,7 +13,7 @@ module BuildS3Redirects
 
   def self.make_s3_redirects(dry_run = false)
     return unless ::ApplicationConfig::S3
-    return unless ["staging"].include?(ENV['APP_ENV'])
+    return unless ["staging", "production"].include?(ENV['APP_ENV'])
 
     bucket_name = ::ApplicationConfig::S3::BUCKET
 
