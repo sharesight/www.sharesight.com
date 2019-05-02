@@ -118,7 +118,7 @@ if ApplicationConfig.const_defined?(:S3)
     s3_sync.aws_secret_access_key      = ApplicationConfig::S3::SECRET_KEY
 
     s3_sync.delete                     = false
-    s3_sync.after_build                = false # We do not chain after the build step by default.
+    s3_sync.after_build                = true # This triggers 301 redirects between files
     s3_sync.prefer_gzip                = true
     s3_sync.path_style                 = true
     s3_sync.reduced_redundancy_storage = false
