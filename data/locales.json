@@ -40,6 +40,7 @@
         "page_title": "Sharesight Partners",
         "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_changefreq": "daily",
         "sitemap_priority": 0.8,
         "proxy": false
       },
@@ -48,6 +49,7 @@
         "page_title": "All Sharesight Partners",
         "page_description": "The Sharesight partner ecosystem includes online brokers, data & research providers, accountants & financial advisors, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.7,
         "proxy": false
       },
       {
@@ -159,6 +161,7 @@
         "page_title": "Sharesight Australia Partners",
         "page_description": "Our award-winning partnerships feature Australian brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
+        "sitemap_changefreq": "daily",
         "sitemap_priority": 0.8,
         "proxy": false
       },
@@ -167,6 +170,7 @@
         "page_title": "All Sharesight Australia Partners",
         "page_description": "The Sharesight Australia partner ecosystem includes online brokers, data & research providers, accountants & financial advisors, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
+        "sitemap_priority": 0.7,
         "proxy": false
       },
       {
@@ -264,6 +268,7 @@
         "page_title": "Sharesight Canada Partners",
         "page_description": "Our award-winning partnerships feature Canadian brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
+        "sitemap_changefreq": "daily",
         "sitemap_priority": 0.8,
         "proxy": false
       },
@@ -272,6 +277,7 @@
         "page_title": "All Sharesight Canadian Partners",
         "page_description": "The Sharesight Canada partner ecosystem includes online brokers, data & research providers, accountants & financial advisors, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
+        "sitemap_priority": 0.7,
         "proxy": false
       },
       {
@@ -369,6 +375,7 @@
         "page_title": "Sharesight New Zealand Partners",
         "page_description": "Our award-winning partnerships feature New Zealand brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
+        "sitemap_changefreq": "daily",
         "sitemap_priority": 0.8,
         "proxy": false
       },
@@ -377,6 +384,7 @@
         "page_title": "All Sharesight New Zealand Partners",
         "page_description": "The Sharesight New Zealand partner ecosystem includes online brokers, data & research providers, accountants & financial advisors, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
+        "sitemap_priority": 0.7,
         "proxy": false
       },
       {
@@ -475,6 +483,7 @@
         "page_title": "Sharesight UK Partners",
         "page_description": "Our award-winning partnerships feature UK brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
+        "sitemap_changefreq": "daily",
         "sitemap_priority": 0.8,
         "proxy": false
       },
@@ -483,6 +492,7 @@
         "page_title": "All Sharesight UK Partners",
         "page_description": "The Sharesight UK partner ecosystem includes online brokers, data & research providers, accountants & financial advisors, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
+        "sitemap_priority": 0.7,
         "proxy": false
       },
       {
