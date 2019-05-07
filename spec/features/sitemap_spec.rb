@@ -39,7 +39,7 @@ describe 'Sitemap', :type => :feature do
       expectation += get_blog_categories().length if locale[:id] == default_locale_id
 
       expectation += get_partners_partners(locale).length
-      expectation += get_partners_categories(all: true).length
+      expectation += get_partners_categories(all: false).length
 
       expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] }.length
 
