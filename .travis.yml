@@ -75,6 +75,8 @@ before_script:
   - if [ "$TRAVIS_BRANCH" = "develop" ] && [ "$TRAVIS_EVENT_TYPE" = "push" ]; then export RUN_TESTS=false; fi
   - if [[ "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_SYNC"* ]]; then FORCE="--force"; fi
   - ./bin/travis/build.sh
+  - echo \"AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID\"
+  - echo \"CONTENTFUL_PARTNERS_PREVIEW_TOKEN: $CONTENTFUL_PARTNERS_PREVIEW_TOKEN\"
 
 after_success:
   # Sync middleman contentful && middleman build to S3
