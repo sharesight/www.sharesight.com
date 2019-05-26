@@ -27,8 +27,11 @@
   <%end%>
 <% end %>
 
-<%# Iterate through every partner category with more than one post.  Include partners/all %>
-<% partners_categories(withIndex: true).select{ |category| category[:count] > 0 }.each do |category| %>
+<%#
+  Iterate through every partner category with more than zero partners.
+  Does not include partners/all (which is in locale_obj[:pages])
+%>
+<% partners_categories(withIndex: false).select{ |category| category[:count] > 0 }.each do |category| %>
   <% updated_at = category.dig(:_meta, :updated_at) || category.dig(:_meta, 'updated_at') %>
   <url>
     <loc><%= localize_url(category[:path], locale_id: locale_obj[:id]) %></loc>
