@@ -22,11 +22,5 @@
 		"name": "Youtube",
 		"image": "youtube.svg",
 		"url": "https://www.youtube.com/user/sharesightTV"
-	},
-	{
-		"id": "google-plus",
-		"name": "Google Plus",
-		"image": "google.svg",
-		"url": "https://plus.google.com/+SharesightLtd"
 	}
 ]
