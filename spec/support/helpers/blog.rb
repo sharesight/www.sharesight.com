@@ -16,6 +16,9 @@ module CapybaraBlogHelpers
     categories << OpenStruct.new({ name: 'All' }) if all
     posts = get_blog_posts
 
+    # Ensure we only get valid posts (same as category pagination does)
+    posts = posts.select{ |post| BlogHelper.is_valid_post?(post) rescue false }
+
     # remap to new categories
     categories = categories.map do |category|
       category = OpenStruct.new(category) # category object does not like being mutable
