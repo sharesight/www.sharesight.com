@@ -16,6 +16,9 @@ module CapybaraBlogHelpers
     categories << OpenStruct.new({ name: 'All' }) if all
     posts = get_blog_posts
 
+    # Ensure we only get valid posts (same as category pagination does)
+    posts = posts.select{ |post| BlogHelper.is_valid_post?(post) rescue false }
+
     # remap to new categories
     categories = categories.map do |category|
       category = OpenStruct.new(category) # category object does not like being mutable
@@ -39,7 +42,7 @@ module CapybaraBlogHelpers
           post.categories.select{ |post_category| post_category.id == category.id }.length >= 1 rescue false
         }
       else
-        posts
+        posts.select{ |model| !model[:hide_from_feed] } # Should match the `index_collection` in the "Space extension"!
       end
 
       category # return to map
