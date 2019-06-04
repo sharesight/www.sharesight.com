@@ -42,7 +42,7 @@ module CapybaraBlogHelpers
           post.categories.select{ |post_category| post_category.id == category.id }.length >= 1 rescue false
         }
       else
-        posts
+        posts.select{ |model| !model[:hide_from_feed] } # Should match the `index_collection` in the "Space extension"!
       end
 
       category # return to map
