@@ -1,0 +1,17 @@
+<% if locals[:campaignCodeCookie] %>
+  <script type="text/javascript">
+    const d = new Date();
+    d.setTime(d.getTime() + (30*24*60*60*1000)); // 30 days
+
+    try {
+      let cookie = `campaign_code=${encodeURIComponent(<%= locals[:campaignCodeCookie] %>)};`
+      cookie += `domain=.sharesight.com;`
+      cookie += `path=/;`
+      cookie += `expires=${d.toUTCString()};`;
+
+      document.cookie = cookie;
+    } catch {
+      console.error(`Unable to set a campaign code for this landing page.`)
+    }
+  </script>
+<% end %>
