@@ -9,6 +9,7 @@ describe 'Landing Pages Pages', :type => :feature do
         visit landing_page[:path]
 
         expect(page).to respond_successfully
+        expect_campaign_code_cookie(page, landing_page)
         expect_basic_metas(page, landing_page)
         expect_facebook_metas(page)
         expect_urls(page, landing_page)
@@ -18,6 +19,14 @@ describe 'Landing Pages Pages', :type => :feature do
   end
 
   private
+
+  def expect_campaign_code_cookie(page, landing_page)
+    if landing_page[:campaign_code_cookie]
+      expect(page).to have_css('script#campaign_code_cookie')
+    else
+      expect(page).not_to have_css('script#campaign_code_cookie')
+    end
+  end
 
   def expect_basic_metas(page, landing_page)
     expect(page).to have_base_metas()
