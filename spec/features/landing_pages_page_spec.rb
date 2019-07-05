@@ -83,19 +83,19 @@ describe 'Landing Pages Pages', :type => :feature do
     return unless string
 
     # single quotes
-    string = string.gsub(/'/, '’')
+    string = string&.gsub(/'/, '’')
     # double quotes
-    string = string.gsub(/"/, '“')
+    string = string&.gsub(/"/, '“')
     # ellipsis
-    string = string.gsub(/\.\.\./, '…')
+    string = string&.gsub(/\.\.\./, '…')
     # em-dash
-    string = string.gsub(/---/, '—')
+    string = string&.gsub(/---/, '—')
     # en-dash
-    string = string.gsub(/--/, '–')
+    string = string&.gsub(/--/, '–')
     # left guillemet
-    string = string.gsub(/<</, '«')
+    string = string&.gsub(/<</, '«')
     # right guillemet
-    string = string.gsub(/>>/, '»')
+    string = string&.gsub(/>>/, '»')
 
     string
   end
@@ -104,7 +104,7 @@ describe 'Landing Pages Pages', :type => :feature do
     return false unless string
 
     # this could be markdown, we don't test it then
-    return false if string.match(/[\*\_\~\-\#\<\>]+/)
+    return false if string&.match(/[\*\_\~\-\#\<\>]+/)
 
     true
   end
