@@ -72,6 +72,9 @@ describe 'Landing Pages Pages', :type => :feature do
   end
 
   def expect_page_text(string)
+    return unless string
+    raise "Found invalid page text: '#{string.inspect}' of class '#{string.class}'" unless string.is_a?(String)
+
     string = normalised(string)
     expect(page).to have_text(string) if testable?(string)
   end
