@@ -104,7 +104,7 @@ describe 'Landing Pages Pages', :type => :feature do
     return false unless string
 
     # this could be markdown, we don't test it then
-    return false if string.match(/[\*\_\~\-\#]+/)
+    return false if string.match(/[\*\_\~\-\#\<\>]+/)
 
     true
   end
