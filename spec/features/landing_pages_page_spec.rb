@@ -21,10 +21,11 @@ describe 'Landing Pages Pages', :type => :feature do
   private
 
   def expect_campaign_code_cookie(page, landing_page)
-    if landing_page[:campaign_code_cookie]
-      expect(page).to have_css('script#campaign_code_cookie')
+    unless landing_page[:campaign_code_cookie].blank?
+      expect(page).to have_selector('script#campaign_code_cookie', visible: :all)
+      expect(page.html).to include(landing_page[:campaign_code_cookie].html_safe)
     else
-      expect(page).not_to have_css('script#campaign_code_cookie')
+      expect(page).not_to have_selector('script#campaign_code_cookie', visible: :all)
     end
   end
 
