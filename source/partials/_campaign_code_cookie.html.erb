@@ -1,11 +1,11 @@
 <% unless locals[:campaign_code_cookie].blank? %>
   <script id="campaign_code_cookie">
      (function () {
-       const d = new Date();
+       var d = new Date();
        d.setTime(d.getTime() + (30*24*60*60*1000)); // 30 days
 
        try {
-         let cookie = 'campaign_code=' + encodeURIComponent("<%= locals[:campaign_code_cookie].html_safe %>");
+         var cookie = 'campaign_code=' + encodeURIComponent("<%= locals[:campaign_code_cookie].html_safe %>");
          cookie += ';domain=.sharesight.com';
          cookie += ';path=/';
          cookie += ';expires=' + d.toUTCString();
