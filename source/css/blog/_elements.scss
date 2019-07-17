@@ -269,8 +269,6 @@ code {
 
     li,
     p {
-      font-weight: normal;
-      line-height: 1.65;
       margin-bottom: $gutter/2;
       text-align: left;
 
@@ -280,8 +278,9 @@ code {
     }
 
     li {
-      margin: 0;
+      line-height: 1.65;
       list-style-position: outside;
+      margin: 0;
     }
   }
 
