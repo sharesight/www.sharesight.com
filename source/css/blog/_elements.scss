@@ -269,10 +269,10 @@ code {
 
     li,
     p {
-      list-style-position: inside;
-      font-weight: 300;
-      text-align: left;
+      font-weight: normal;
+      line-height: 1.65;
       margin-bottom: $gutter/2;
+      text-align: left;
 
       &:last-child {
         margin-bottom: 0;
@@ -281,7 +281,6 @@ code {
 
     li {
       margin: 0;
-      line-height: 35px;
       list-style-position: outside;
     }
   }
