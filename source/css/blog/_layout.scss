@@ -1,4 +1,8 @@
 .blog {
+  iframe {
+    margin-bottom: 4.875rem;
+  }
+  
   @include respond-to(md, min) {
     padding-top: $gutter;
   }
@@ -116,10 +120,6 @@ aside.table {
   footer {
     margin: 25px 0 10px;
   }
-}
-
-iframe {
-  margin-bottom: 4.875rem;
 }
 
 .page-heading {
