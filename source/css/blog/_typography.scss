@@ -41,10 +41,12 @@
   }
 
   a {
-    font-weight: 400;
+    font-weight: normal;
   }
 
   p {
+    font-weight: normal;
+    line-height: 1.65;
     margin: $gutter*3/4 0;
 
     img {

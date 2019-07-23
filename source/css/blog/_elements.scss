@@ -197,11 +197,6 @@
     padding-top: 30px;
   }
 
-  strong {
-    font-weight: 400;
-    color: #2b2a2a;
-  }
-
   small {
     margin-top: 0;
     display: block;
@@ -269,10 +264,8 @@ code {
 
     li,
     p {
-      list-style-position: inside;
-      font-weight: 300;
-      text-align: left;
       margin-bottom: $gutter/2;
+      text-align: left;
 
       &:last-child {
         margin-bottom: 0;
@@ -280,9 +273,9 @@ code {
     }
 
     li {
-      margin: 0;
       line-height: 35px;
       list-style-position: outside;
+      margin-bottom: $gutter/3;
     }
   }
 
