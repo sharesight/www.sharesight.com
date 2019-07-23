@@ -12,12 +12,17 @@ layout: layout_index
 <%= partial "sections/pricing", locals: { locale_obj: locale_obj } %>
 <%= partial "sections/partners", locals: { locale_obj: locale_obj } %>
 
-<%= partial "sections/testimonials", locals: {
-  json: data.testimonials,
-  testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading],
-  customer_type: 'Sharesight',
-  locale_obj: locale_obj
-} %>
+<% if locale_obj[:id] === "au" || locale_obj[:id] === "nz" %>
+  <%# product_review is specific to AU/NZ %>
+  <%= partial "sections/product_review", locals: { locale_obj: locale_obj } %>
+<% else %>
+  <%= partial "sections/testimonials", locals: {
+    json: data.testimonials,
+    testimonial_heading: data.seo_home.find{|x| x[:id] == locale_obj[:id] }[:testimonial_heading],
+    customer_type: 'Sharesight',
+    locale_obj: locale_obj
+  } %>
+<% end %>
 
 <div class="section section--text section_video">
   <div class="container">
