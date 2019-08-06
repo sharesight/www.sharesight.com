@@ -1,17 +1,17 @@
 [
   {
-    "image": "team/tony-ryburn.jpg",
-    "name": "Tony Ryburn",
-    "title": "Executive Chairman / Co-Founder",
-    "biography": "[Tony co-founded Sharesight with his son Scott in 2007.](/about-sharesight/) He has been a committed and enthusiastic investor in the Australian and New Zealand share markets for over 20 years, and he has over 30 years experience at the General Management/Director level in the finance sector including venture capital, development banking, finance companies and commercial banking. Tony has acted as an advisor to many private sector companies and government departments including Treasury, Ministry of Foreign Affairs and Trade and Ministry of Agriculture and Fisheries. Tony has a Bachelor of Commerce degree and has been a member of the Institute of Directors as well as of the Society of Accountants.",
-    "linkedin": "http://linkedin.com/pub/tony-ryburn/4/411/68a"
-  },
-  {
     "image": "team/andrew-bird.jpg",
     "name": "Andrew Bird",
-    "title": "Executive Director",
+    "title": "Executive Chairman",
     "biography": "Andrew joined Sharesight as an early investor in 2011. Previously, Andrew co-founded Aspect Huntley and grew the business to its current position as Australia's leading provider of independent equities information and research. In July 2006 Aspect Huntley was sold to Morningstar, Inc (Nasdaq: MORN). Following the acquisition, Andrew served as CEO for Morningstar Australia and New Zealand from 2006-2010. Beyond serving on the Sharesight board, Andrew also devotes his time to other Australian startups including [LegalVision](https://legalvision.com.au) and [TimeBase](https://www.timebase.com.au).",
     "linkedin": "http://linkedin.com/pub/andrew-bird/b/b1a/221"
+  },
+  {
+    "image": "team/tony-ryburn.jpg",
+    "name": "Tony Ryburn",
+    "title": "Executive Director / Co-Founder",
+    "biography": "[Tony co-founded Sharesight with his son Scott in 2007.](/about-sharesight/) He has been a committed and enthusiastic investor in the Australian and New Zealand share markets for over 20 years, and he has over 30 years experience at the General Management/Director level in the finance sector including venture capital, development banking, finance companies and commercial banking. Tony has acted as an advisor to many private sector companies and government departments including Treasury, Ministry of Foreign Affairs and Trade and Ministry of Agriculture and Fisheries. Tony has a Bachelor of Commerce degree and has been a member of the Institute of Directors as well as of the Society of Accountants.",
+    "linkedin": "http://linkedin.com/pub/tony-ryburn/4/411/68a"
   },
   {
     "image": "team/doug-morris.jpg",
