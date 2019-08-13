@@ -95,6 +95,14 @@ $__plans_count: 4;
     }
   }
 
+  &__plan-cap {
+    @include fontSize(14px, 40px);
+    border-radius: $gutter/2.5 $gutter/2.5 0 0;
+    margin: (-$gutter*1.5) (-$gutter) ($gutter); // overflow padding of parent `__plan`
+    color: $background_white;
+    background: $colour_primary;
+  }
+
   &__title {
     @include fontSize(24px, 1);
     color: $colour_pro;

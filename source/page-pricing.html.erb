@@ -28,6 +28,12 @@ section_class: 'section_default'
     <section class="pricing__plans">
       <% plans.each_with_index do |plan, index| %>
         <div class="pricing__plan">
+          <% if plan[:theme] === 'primary' %>
+            <div class="pricing__plan-cap">
+              Most Popular
+            </div>
+          <% end %>
+
           <h4 class="pricing__title"><%= plan[:label] %> plan</h4>
 
           <div class="pricing__price">
