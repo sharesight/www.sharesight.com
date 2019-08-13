@@ -42,6 +42,17 @@ section_class: 'section_default'
             <span class="pricing__unit">/mo</span>
           </div>
 
+          <div class="pricing__price_annual">
+            <span class="pricing__currency"><%= locale_obj[:currency_symbol] %></span>
+            <%#
+              NOTE: This should probably live in `price_annual` instead.
+              In the app, this is actually `(plan * 12 - (plan * .08333…)).round(2)`..
+            %>
+            <%= (plan[:price] * 11).round(0) %>
+            <span class="pricing__unit">/yr</span>
+            <span class="pricing__badge">1 month free</span>
+          </div>
+
           <div class="pricing__stats">
             <p><strong><%= plan[:portfolios] %></strong> <%= 'portfolio'.pluralize(plan[:portfolios]) %></p>
             <p><strong><%= plan[:holdings] %></strong> <%= 'holding'.pluralize(plan[:holdings]) %></p>

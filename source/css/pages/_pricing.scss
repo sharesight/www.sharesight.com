@@ -121,6 +121,33 @@ $__plans_count: 4;
     @include fontSize(60px);
     color: $colour_secondary;
     font-weight: 600;
+  }
+
+  &__price_annual {
+    @include fontSize(20px);
+    vertical-align: middle;
+    color: $colour_pro;
+    font-weight: 400;
+
+    margin-bottom: $gutter;
+
+    .pricing__currency {
+      @include fontSize(12px);
+      margin-right: -5px;
+    }
+
+    .pricing__unit {
+      @include fontSize(12px);
+      margin-left: -5px;
+    }
+  }
+
+  &__badge {
+    @include fontSize(12px, 20px); // match price_annual height
+    display: inline-block;
+    color: #fff;
+    background: $color_highlight;
+    padding: 0 $gutter/4;
 
     margin-bottom: $gutter;
   }
