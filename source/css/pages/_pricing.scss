@@ -41,10 +41,14 @@ $__plans_count: 4;
     }
   }
 
+  &__join {
+    font-weight: 400;
+  }
+
   &__cta {
     @include fontSize(20px, 2.25);
     padding: 0 $gutter;
-    margin: $gutter auto;
+    margin: 0 auto $gutter;
     box-shadow: 0 1px 2px 0 rgba($colour_pro, .15);
   }
 

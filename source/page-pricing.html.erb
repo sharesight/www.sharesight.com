@@ -13,14 +13,16 @@ section_class: 'section_default'
       <h1>Pricing</h1>
       <p>
         Your first <%= plans[0][:holdings] %> holdings are <strong>free</strong>!
-        <br />
-        Choose from any of our premium plans at any time to track additional
-        holdings or portfolios, and unlock advanced features.
-        <br />
-        <a href="<%= config[:signup_url] %>" class="btn btn--secondary btn--solid pricing__cta" title="Sign up for Sharesight">
-           get started for free
-        </a>
       </p>
+
+      <p class="pricing__join">
+        Join the over 100,000 investors who track their portfolios on Sharesight.
+      </p>
+
+      <a href="<%= config[:signup_url] %>" class="btn btn--secondary btn--solid pricing__cta" title="Sign up for Sharesight">
+         get started for free
+      </a>
+
     </section>
 
     <section class="pricing__plans">
