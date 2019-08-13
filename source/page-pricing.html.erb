@@ -13,25 +13,44 @@ section_class: 'section_default'
       <h1>Pricing</h1>
       <p>
         Your first <%= plans[0][:holdings] %> holdings are <strong>free</strong>!
-        <br />
-        Choose from any of our premium plans at any time to track additional
-        holdings or portfolios, and unlock advanced features.
-        <br />
-        <a href="<%= config[:signup_url] %>" class="btn btn--secondary btn--solid pricing__cta" title="Sign up for Sharesight">
-           get started for free
-        </a>
       </p>
+
+      <p class="pricing__join">
+        Join the over 100,000 investors who track their portfolios on Sharesight.
+      </p>
+
+      <a href="<%= config[:signup_url] %>" class="btn btn--secondary btn--solid pricing__cta" title="Sign up for Sharesight">
+         get started for free
+      </a>
+
     </section>
 
     <section class="pricing__plans">
       <% plans.each_with_index do |plan, index| %>
         <div class="pricing__plan">
+          <% if plan[:theme] === 'primary' %>
+            <div class="pricing__plan-cap">
+              Most Popular
+            </div>
+          <% end %>
+
           <h4 class="pricing__title"><%= plan[:label] %> plan</h4>
 
           <div class="pricing__price">
             <span class="pricing__currency"><%= locale_obj[:currency_symbol] %></span>
             <%= plan[:price] %>
             <span class="pricing__unit">/mo</span>
+          </div>
+
+          <div class="pricing__price_annual">
+            <span class="pricing__currency"><%= locale_obj[:currency_symbol] %></span>
+            <%#
+              NOTE: This should probably live in `price_annual` instead.
+              In the app, this is actually `(plan * 12 - (plan * .08333…)).round(2)`..
+            %>
+            <%= (plan[:price] * 11).round(0) %>
+            <span class="pricing__unit">/yr</span>
+            <span class="pricing__badge">1 month free</span>
           </div>
 
           <div class="pricing__stats">
@@ -62,6 +81,7 @@ section_class: 'section_default'
 
     <p class="pricing__small-print">
       Prices in <%= locale_obj[:currency] %> <% if locale_obj[:plans_include_tax] %>including GST<% else %>and tax-free<% end %>.
+      Sharesight might be tax-deductible, ask your accountant for details.
     </p>
 
     <section class="pricing__pro featured_link">
