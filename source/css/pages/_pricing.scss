@@ -41,10 +41,14 @@ $__plans_count: 4;
     }
   }
 
+  &__join {
+    font-weight: 400;
+  }
+
   &__cta {
     @include fontSize(20px, 2.25);
     padding: 0 $gutter;
-    margin: $gutter auto;
+    margin: 0 auto $gutter;
     box-shadow: 0 1px 2px 0 rgba($colour_pro, .15);
   }
 
@@ -91,6 +95,14 @@ $__plans_count: 4;
     }
   }
 
+  &__plan-cap {
+    @include fontSize(14px, 40px);
+    border-radius: $gutter/2.5 $gutter/2.5 0 0;
+    margin: (-$gutter*1.5) (-$gutter) ($gutter); // overflow padding of parent `__plan`
+    color: $background_white;
+    background: $colour_primary;
+  }
+
   &__title {
     @include fontSize(24px, 1);
     color: $colour_pro;
@@ -109,6 +121,34 @@ $__plans_count: 4;
     @include fontSize(60px);
     color: $colour_secondary;
     font-weight: 600;
+  }
+
+  &__price_annual {
+    @include fontSize(20px);
+    vertical-align: middle;
+    color: $colour_pro;
+    font-weight: 400;
+
+    margin-bottom: $gutter;
+
+    .pricing__currency {
+      @include fontSize(12px);
+      margin-right: -5px;
+    }
+
+    .pricing__unit {
+      @include fontSize(12px);
+      margin-left: -5px;
+    }
+  }
+
+  &__badge {
+    @include fontSize(12px, 20px); // match price_annual height
+    display: inline-block;
+    color: #fff;
+    background: $color_highlight;
+    padding: 0 $gutter/4;
+    margin-left: 5px;
 
     margin-bottom: $gutter;
   }

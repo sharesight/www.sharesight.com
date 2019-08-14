@@ -57,7 +57,10 @@
     "holdings": 20,
 
     "reports_text": "Limited",
-    "support_type": "Community forum support",
+    "support_type": [
+      "Chat support",
+      "Community forum support"
+    ],
 
     "features": {
       "sharesight_connect": "write access",
@@ -107,6 +110,7 @@
     "reports_text": "Advanced",
     "support_type": [
       "Email support",
+      "Chat support",
       "Community forum support"
     ],
 
@@ -160,6 +164,7 @@
     "reports_text": "Full",
     "support_type": [
       "**Priority** email support",
+      "**Priority** chat support",
       "Community forum support"
     ],
 
