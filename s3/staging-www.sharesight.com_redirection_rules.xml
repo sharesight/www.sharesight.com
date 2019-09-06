@@ -6,7 +6,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>blog/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -16,7 +15,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyWith>blog/feed.xml</ReplaceKeyWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -26,7 +24,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyWith>blog/feed.xml</ReplaceKeyWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -36,7 +33,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -46,7 +42,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -56,7 +51,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -66,7 +60,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -76,7 +69,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -86,7 +78,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -96,7 +87,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -106,7 +96,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -116,7 +105,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -126,7 +114,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -136,7 +123,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -146,7 +132,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -156,7 +141,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -166,7 +150,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -176,7 +159,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -186,7 +168,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -196,7 +177,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -206,7 +186,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -216,7 +195,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -226,7 +204,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -236,7 +213,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -246,7 +222,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -256,7 +231,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -266,7 +240,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -276,7 +249,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -286,7 +258,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -296,7 +267,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -306,7 +276,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -316,7 +285,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -326,7 +294,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -336,7 +303,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -346,7 +312,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -356,7 +321,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -366,7 +330,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -376,7 +339,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -386,7 +348,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -396,7 +357,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -406,7 +366,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -416,7 +375,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -426,7 +384,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -436,7 +393,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>date/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -446,7 +402,6 @@
     <Redirect>
       <HostName>staging-www.sharesight.com</HostName>
       <ReplaceKeyPrefixWith>blog/</ReplaceKeyPrefixWith>
-      <HttpRedirectCode>301</HttpRedirectCode>
     </Redirect>
   </RoutingRule>
 </RoutingRules>
