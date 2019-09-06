@@ -440,4 +440,22 @@
       <ReplaceKeyPrefixWith>pro</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>finimize</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.eventbrite.co.uk</HostName>
+      <ReplaceKeyPrefixWith>e/finimizecommunity-presents-what-to-avoid-when-investing-tickets-68811871159</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>finimize/</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.eventbrite.co.uk</HostName>
+      <ReplaceKeyPrefixWith>e/finimizecommunity-presents-what-to-avoid-when-investing-tickets-68811871159</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
 </RoutingRules>
