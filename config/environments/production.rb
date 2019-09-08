@@ -6,8 +6,6 @@ module ApplicationConfig
   COMMUNITY_URL = 'https://community.sharesight.com'
 
   module GoogleAnalytics
-    TRACKING_KEY = 'UA-807390-15'
-    OPTIMIZE_CONTAINER = 'GTM-K7956NL'
     TAG_MANAGER_CONTAINER = 'GTM-5HSWD9'
   end
 
