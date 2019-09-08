@@ -20,6 +20,16 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','<%= ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>');
   </script>
+
+  <!-- Anti-flicker Snippet (related to Google Optimize, via GTM)  -->
+  <style>.async-hide { opacity: 0 !important} </style>
+  <script>
+    (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'<%= ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>':true});
+  </script>
 <% end %>
 
 <% if ApplicationConfig.const_defined?(:AddThis) && ApplicationConfig::AddThis::ID %>
