@@ -42,7 +42,7 @@ jobs:
         echo SHOULD_DEPLOY=$SHOULD_DEPLOY
         echo SHOULD_TEST=$SHOULD_TEST
         echo GITHUB_REF_TEST=${{ GITHUB_REF }}
-    - name: TODO: Don't Actually Deploy
+    - name: TODO, Don't Actually Deploy
       run: echo ::set-env name=SHOULD_DEPLOY::false
 
 
