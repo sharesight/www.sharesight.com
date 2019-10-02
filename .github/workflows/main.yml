@@ -87,8 +87,8 @@ jobs:
     - name: bundle audit
       if: steps.calculated.outputs.should_test == 'true'
       run: |
-        announce bundle exec bundle-audit update
-        announce bundle exec bundle-audit check
+        bundle exec bundle-audit update
+        bundle exec bundle-audit check
 
 
     # -------- Deploy to S3 && Notifications
