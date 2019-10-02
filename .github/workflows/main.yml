@@ -24,26 +24,27 @@ jobs:
     - uses: actions/checkout@master
 
 
-    # ------- Environment Setup (calculated values)
-    - name: Convert GITHUB_REF into GITHUB_BRANCH_NAME=[develop, master]
-      run: echo ::set-env name=GITHUB_BRANCH_NAME::$(echo ${GITHUB_REF} | sed 's/^refs\/heads\/\(.*\)$/\1/')
-    - name: Convert GITHUB_BRANCH_NAME into APP_ENV=[staging, production]
-      run: echo ::set-env name=APP_ENV::$([ ${GITHUB_REF} == "master" ] && echo "production" || echo "staging")
-    - name: Set SHOULD_DEPLOY=[true, false]
-      # Only deploy for pushes to master or develop branches.
-      run: echo ::set-env name=SHOULD_DEPLOY::$(${github.event_name} == 'push' && (${GITHUB_BRANCH_NAME} == 'master' || ${GITHUB_BRANCH_NAME} == 'develop') && echo 'true' || echo 'false')
-    - name: Set SHOULD_TEST=[true, false]
-      # Don't test for pushes to the develop build (eg. drafts)
-      run: echo ::set-env name=SHOULD_TEST::$(${github.event_name} == 'push' && ${GITHUB_BRANCH_NAME} == 'develop' && echo 'false' || echo 'true')
+    # ------- Calculated Values
+    - name: Set Calculated Environment Output
+      id: calculated # access this with steps.calculated.outputs.[name]
+      # NOTE: Cannot use these inside of the same step, only in subsequent steps.
+      # This is why we compare against refs/heads/… instead of branch_name.
+      #
+      # branch_name = master|develop|branch-name (from refs/heads/master)
+      # app_env = production|staging
+      # should_deploy = true|false
+      # should_test = true|false
+      run: |
+        echo ::set-output name=branch_name::$(echo ${{ github.ref }} | sed 's/^refs\/heads\/\(.*\)$/\1/')
+        echo ::set-output name=app_env::$(${{ github.ref }} == 'refs/heads/master' && echo 'production' || echo 'staging')
+        echo ::set-output name=should_test::$(${{ github.event_name }} == 'push' && ${{ github.ref }} == 'refs/heads/develop' && echo 'false' || echo 'true')
+        echo ::set-output name=should_deploy::$(${{ github.event_name }} == 'push' && (${{ github.ref }} == 'refs/heads/master' || ${{ github.ref }} == 'refs/heads/develop') && echo 'true' || echo 'false')
     - name: List Calculated environment
       run: |
-        echo GITHUB_BRANCH_NAME=$GITHUB_BRANCH_NAME
-        echo APP_ENV=$APP_ENV
-        echo SHOULD_DEPLOY=$SHOULD_DEPLOY
-        echo SHOULD_TEST=$SHOULD_TEST
-        echo GITHUB_REF_TEST=$GITHUB_REF
-    - name: TODO, Don't Actually Deploy
-      run: echo ::set-env name=SHOULD_DEPLOY::false
+        echo branch_name=${{ steps.calculated.outputs.branch_name }}
+        echo app_env=${{ steps.calculated.outputs.app_env }}
+        echo should_test=${{ steps.calculated.outputs.should_test }}
+        echo should_deploy=${{ steps.calculated.outputs.should_deploy }}
 
 
     # -------- Ruby & Dependencies
@@ -75,29 +76,29 @@ jobs:
 
     # -------- Run Tests
     - name: jest tests
-      if: SHOULD_TEST == 'true'
+      if: steps.calculated.outputs.should_test == 'true'
       run: yarn run jest --runInBand
     - name: rspec tests
-      if: SHOULD_TEST == 'true'
+      if: steps.calculated.outputs.should_test == 'true'
       run: bundle exec rspec spec -p --format d
     - name: bundle audit
-      if: SHOULD_TEST == 'true'
+      if: steps.calculated.outputs.should_test == 'true'
       run: |
         announce bundle exec bundle-audit update
         announce bundle exec bundle-audit check
 
     # -------- Deploy to S3 && Notifications
     - name: Deploy to S3
-      if: success() && SHOULD_DEPLOY == 'true'
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
     - name: Notify Bugsnag of Release
-      if: success() && SHOULD_DEPLOY == 'true'
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
-        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=$APP_ENV&repository=sharesight/www.sharesight.com&branch=$GITHUB_BRANCH_NAME&revision=$GITHUB_SHA" https://notify.bugsnag.com/deploy)
+        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.branch_name }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
     - name: Slack Notification
       uses: homoluctus/slatify@master
-      if: always() && SHOULD_DEPLOY == 'true'
+      if: always() && steps.calculated.outputs.should_deploy == 'true'
       with:
         type: ${{ job.status }}
         job_name: 'Test and/or Deploy'
