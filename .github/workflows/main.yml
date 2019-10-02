@@ -88,7 +88,7 @@ jobs:
       if: steps.calculated.outputs.should_test == 'true'
       run: |
         bundle exec bundle-audit update
-        bundle exec bundle-audit check
+        bundle exec bundle-audit check --ignore CVE-2014-10077
 
 
     # -------- Deploy to S3 && Notifications
