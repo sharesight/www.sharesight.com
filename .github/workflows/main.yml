@@ -52,10 +52,8 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.4.x'
-    - name: Setup Ruby Dependencies
-      run: |
-        gem update bundler
-        bundle install --jobs 4 --retry 3
+    - run: gem install bundler
+    - run: bundle install --jobs 4 --retry 3
 
 
     # -------- JS & Dependencies
@@ -63,15 +61,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: Yarn Install
-      run: yarn install --frozen-lockfile --non-interactive
+    - run: yarn install --frozen-lockfile --non-interactive
 
 
     # -------- Build Static Files
     - name: Download Data from Contentful
       run: bundle exec middleman contentful
-    - name: Build Middleman Site
-      run: bundle exec middleman build --verbose
+    - run: bundle exec middleman build --verbose
 
 
     # -------- Run Tests
@@ -86,6 +82,7 @@ jobs:
       run: |
         announce bundle exec bundle-audit update
         announce bundle exec bundle-audit check
+
 
     # -------- Deploy to S3 && Notifications
     - name: Deploy to S3
