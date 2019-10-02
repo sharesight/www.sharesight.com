@@ -1,0 +1,102 @@
+name: Run Tests and/or Deploy to S3
+
+on:
+  pull_request:
+    branches:
+    # - master
+    # - develop
+    # - 'release/**'
+    # - 'hotfix/**'
+    - github-actions-ci-cd
+  push:
+    branches:
+    # - master
+    - github-actions-ci-cd
+  schedule:
+    - cron: 0 */8 * * * # every 8 hours
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # -------- Github Checkout
+    steps:
+    - uses: actions/checkout@master
+    
+
+    # ------- Environment Setup (calculated values)
+    - name: Convert GITHUB_REF into GITHUB_BRANCH_NAME=[develop, master]
+      run: echo ::set-env name=GITHUB_BRANCH_NAME::$(echo GITHUB_REF | sed 's/^refs\/heads\/\(.*\)$/\1/')
+    - name: Convert GITHUB_BRANCH_NAME into APP_ENV=[staging, production]
+      run: echo ::set-env name=APP_ENV::$([ GITHUB_REF == "master" ] && echo "production" || echo "staging")
+    - name: Set SHOULD_DEPLOY=[true, false]
+      # Only deploy for pushes to master or develop branches.
+      run: echo ::set-env name=SHOULD_DEPLOY::$(github.event_name == 'push' && (GITHUB_BRANCH_NAME == 'master' || GITHUB_BRANCH_NAME == 'develop'))
+    - name: Set SHOULD_TEST=[true, false]
+      # Don't test for pushes to the develop build (eg. drafts)
+      run: echo ::set-env name=SHOULD_TEST::$(!(github.event_name == 'push' && GITHUB_BRANCH_NAME == 'develop'))
+      
+
+    # -------- Ruby & Dependencies
+    - name: Install Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        version: 2.4.2
+    - name: Setup Ruby Dependencies
+      run: |
+        gem update bundler
+        bundle install --jobs 4 --retry 3
+    - name: Test Ruby Dependencies
+      run: |
+        bundle exec rake -T
+        
+
+    # -------- JS & Dependencies
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+        version: 10.16.x
+    - name: Yarn Install
+      run: yarn install --frozen-lockfile --non-interactive
+      
+
+    # -------- Build Static Files
+    - name: Download Data from Contentful
+      run: bundle exec middleman contentful
+    - name: Build Middleman Site
+      run: bundle exec middleman build --verbose
+      
+
+    # -------- Run Tests
+    - name: jest tests
+      if: SHOULD_TEST
+      run: yarn run jest --runInBand
+    - name: rspec tests
+      if: SHOULD_TEST
+      run: bundle exec rspec spec -p --format d
+    - name: bundle audit
+      if: SHOULD_TEST
+      run: |
+        announce bundle exec bundle-audit update
+        announce bundle exec bundle-audit check
+
+    # -------- Deploy to S3
+
+    - name: Deploy to S3
+      if: success() && SHOULD_DEPLOY
+      run: bundle exec middleman s3_sync
+    - name: Notify Bugsnag of Release
+      if: success() && SHOULD_DEPLOY
+      uses: wei/curl@v1
+      with:
+        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ APP_ENV }}&repository=${{ GITHUB_REPOSITORY }}&branch=${{ GITHUB_BRANCH_NAME }}&revision=${{ GITHUB_SHA }}" https://notify.bugsnag.com/deploy)
+    - name: Slack Notification
+      uses: homoluctus/slatify@master
+      if: always()
+      with:
+        type: ${{ job.status }}
+        job_name: 'Test and/or Deploy'
+        mention: 'here'
+        mention_if: 'failure'
+        channel: '#static_site_builds'
+        url: ${{ secrets.SLACK_WEBHOOK_URL }}
