@@ -1,6 +1,5 @@
 name: Run Tests and/or Deploy to S3
 
-
 on:
   pull_request:
     branches:
@@ -38,10 +37,12 @@ jobs:
       run: echo ::set-env name=SHOULD_TEST::$(github.event_name == 'push' && GITHUB_BRANCH_NAME == 'develop' && echo "false" || echo "true")
     - name: List Calculated environment
       run: |
-        echo GITHUB_BRANCH_NAME=${{ GITHUB_BRANCH_NAME }}
-        echo APP_ENV=${{ APP_ENV }}
-        echo SHOULD_DEPLOY=${{ SHOULD_DEPLOY }}
-        echo SHOULD_TEST=${{ SHOULD_TEST }}
+        echo GITHUB_BRANCH_NAME=$GITHUB_BRANCH_NAME
+        echo APP_ENV=$APP_ENV
+        echo SHOULD_DEPLOY=$SHOULD_DEPLOY
+        echo SHOULD_TEST=$SHOULD_TEST
+        echo GITHUB_REF1=$GITHUB_REF
+        echo GITHUB_REF2=${{ GITHUB_REF }}
 
 
     # -------- Ruby & Dependencies
@@ -92,7 +93,7 @@ jobs:
       if: success() && SHOULD_DEPLOY == true
       uses: wei/curl@v1
       with:
-        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ APP_ENV }}&repository=${{ GITHUB_REPOSITORY }}&branch=${{ GITHUB_BRANCH_NAME }}&revision=${{ GITHUB_SHA }}" https://notify.bugsnag.com/deploy)
+        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=$APP_ENV&repository=${{ GITHUB_REPOSITORY }}&branch=$GITHUB_BRANCH_NAME&revision=${{ GITHUB_SHA }}" https://notify.bugsnag.com/deploy)
     - name: Slack Notification
       uses: homoluctus/slatify@master
       if: always() && SHOULD_DEPLOY == true
