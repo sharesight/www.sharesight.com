@@ -25,17 +25,16 @@ jobs:
 
 
     # ------- Environment Setup (calculated values)
-    - name: 
     - name: Convert GITHUB_REF into GITHUB_BRANCH_NAME=[develop, master]
-      run: echo ::set-env name=GITHUB_BRANCH_NAME::$(echo ${{ GITHUB_REF }} | sed 's/^refs\/heads\/\(.*\)$/\1/')
+      run: echo ::set-env name=GITHUB_BRANCH_NAME::$(echo ${GITHUB_REF} | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: Convert GITHUB_BRANCH_NAME into APP_ENV=[staging, production]
-      run: echo ::set-env name=APP_ENV::$([ ${{ GITHUB_REF }} == "master" ] && echo "production" || echo "staging")
+      run: echo ::set-env name=APP_ENV::$([ ${GITHUB_REF} == "master" ] && echo "production" || echo "staging")
     - name: Set SHOULD_DEPLOY=[true, false]
       # Only deploy for pushes to master or develop branches.
-      run: echo ::set-env name=SHOULD_DEPLOY::$(${{ github.event_name }} == 'push' && (${{ GITHUB_BRANCH_NAME }} == 'master' || ${{ GITHUB_BRANCH_NAME }} == 'develop') && echo "true" || echo "false")
+      run: echo ::set-env name=SHOULD_DEPLOY::$(${github.event_name} == 'push' && (${GITHUB_BRANCH_NAME} == 'master' || ${GITHUB_BRANCH_NAME} == 'develop') && echo 'true' || echo 'false')
     - name: Set SHOULD_TEST=[true, false]
       # Don't test for pushes to the develop build (eg. drafts)
-      run: echo ::set-env name=SHOULD_TEST::$(github.event_name == 'push' && GITHUB_BRANCH_NAME == 'develop' && echo "false" || echo "true")
+      run: echo ::set-env name=SHOULD_TEST::$(${github.event_name} == 'push' && ${GITHUB_BRANCH_NAME} == 'develop' && echo 'false' || echo 'true')
     - name: List Calculated environment
       run: |
         echo GITHUB_BRANCH_NAME=$GITHUB_BRANCH_NAME
@@ -43,6 +42,8 @@ jobs:
         echo SHOULD_DEPLOY=$SHOULD_DEPLOY
         echo SHOULD_TEST=$SHOULD_TEST
         echo GITHUB_REF_TEST=${{ GITHUB_REF }}
+    - name: TODO: Don't Actually Deploy
+      run: echo ::set-env name=SHOULD_DEPLOY::false
 
 
     # -------- Ruby & Dependencies
@@ -74,29 +75,29 @@ jobs:
 
     # -------- Run Tests
     - name: jest tests
-      if: SHOULD_TEST
+      if: SHOULD_TEST == 'true'
       run: yarn run jest --runInBand
     - name: rspec tests
-      if: SHOULD_TEST
+      if: SHOULD_TEST == 'true'
       run: bundle exec rspec spec -p --format d
     - name: bundle audit
-      if: SHOULD_TEST
+      if: SHOULD_TEST == 'true'
       run: |
         announce bundle exec bundle-audit update
         announce bundle exec bundle-audit check
 
     # -------- Deploy to S3 && Notifications
     - name: Deploy to S3
-      if: success() && SHOULD_DEPLOY == true
+      if: success() && SHOULD_DEPLOY == 'true'
       run: bundle exec middleman s3_sync
     - name: Notify Bugsnag of Release
-      if: success() && SHOULD_DEPLOY == true
+      if: success() && SHOULD_DEPLOY == 'true'
       uses: wei/curl@v1
       with:
         args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=$APP_ENV&repository=sharesight/www.sharesight.com&branch=$GITHUB_BRANCH_NAME&revision=${{ GITHUB_SHA }}" https://notify.bugsnag.com/deploy)
     - name: Slack Notification
       uses: homoluctus/slatify@master
-      if: always() && SHOULD_DEPLOY == true
+      if: always() && SHOULD_DEPLOY == 'true'
       with:
         type: ${{ job.status }}
         job_name: 'Test and/or Deploy'
