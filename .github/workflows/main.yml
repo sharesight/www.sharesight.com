@@ -51,7 +51,7 @@ jobs:
     - name: Install Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.4.2
+        ruby-version: '2.4.x'
     - name: Setup Ruby Dependencies
       run: |
         gem update bundler
@@ -62,7 +62,7 @@ jobs:
     - name: Install Node
       uses: actions/setup-node@v1
       with:
-        version: 10.16.x
+        node-version: '10.x'
     - name: Yarn Install
       run: yarn install --frozen-lockfile --non-interactive
 
