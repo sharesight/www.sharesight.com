@@ -32,10 +32,10 @@ jobs:
       # should_test = true|false
       # branch_name = master|develop|branch-name (removes "refs/heads/" from "refs/heads/…")
       run: |
-        echo ::set-output name=app_env::$("${{ github.ref }}" == "refs/heads/master" && echo "production" || echo "staging")
-        echo ::set-output name=should_test::$("${{ github.event_name }}" != "pull_request" && "${{ github.ref }}" == "refs/heads/develop" && echo "false" || echo "true")
-        echo ::set-output name=should_deploy::$("${{ github.event_name }}" != "pull_request" && ("${{ github.ref }}" == "refs/heads/master" || "${{ github.ref }}" == "refs/heads/develop") && echo "true" || echo "false")
-        echo ::set-output name=branch_name::$(echo "${{ github.ref }}" | sed "s/^refs\/heads\/\(.*\)$/\1/")
+        echo ::set-output name=app_env::$("${{ github.ref }}" == 'refs/heads/master' && echo 'production' || echo 'staging')
+        echo ::set-output name=should_test::$("${{ github.event_name }}" != 'pull_request' && "${{ github.ref }}" == 'refs/heads/develop' && echo 'false' || echo 'true')
+        echo ::set-output name=should_deploy::$("${{ github.event_name }}" != 'pull_request' && ("${{ github.ref }}" == 'refs/heads/master' || "${{ github.ref }}" == 'refs/heads/develop') && echo 'true' || echo 'false')
+        echo ::set-output name=branch_name::$(echo "${{ github.ref }}" | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: List Calculated environment
       run: |
         echo app_env=${{ steps.calculated.outputs.app_env }}
@@ -48,7 +48,7 @@ jobs:
     - name: Install Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: "2.4.x"
+        ruby-version: '2.4.x'
     - run: gem install bundler
     - run: bundle install --jobs 4 --retry 3
 
@@ -57,7 +57,7 @@ jobs:
     - name: Install Node
       uses: actions/setup-node@v1
       with:
-        node-version: "10.x"
+        node-version: '10.x'
     - run: yarn install --frozen-lockfile --non-interactive
 
 
@@ -77,13 +77,13 @@ jobs:
 
     # -------- Run Tests
     - name: jest tests
-      if: steps.calculated.outputs.should_test == "true"
+      if: steps.calculated.outputs.should_test == 'true'
       run: yarn run jest --runInBand
     - name: rspec tests
-      if: steps.calculated.outputs.should_test == "true"
+      if: steps.calculated.outputs.should_test == 'true'
       run: bundle exec rspec spec -p --format d
     - name: bundle audit
-      if: steps.calculated.outputs.should_test == "true"
+      if: steps.calculated.outputs.should_test == 'true'
       run: |
         bundle exec bundle-audit update
         bundle exec bundle-audit check --ignore CVE-2014-10077
@@ -91,17 +91,17 @@ jobs:
 
     # -------- Deploy to S3 + Bugsnag Release
     - name: Deploy to S3
-      if: success() && steps.calculated.outputs.should_deploy == "true"
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
       env:
         AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
         AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
     - name: Notify Bugsnag of Release
-      if: success() && steps.calculated.outputs.should_deploy == "true"
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
         args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.branch_name }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
-        
+
 
     # -------- Slack Notification
     - name: Slack Notification
@@ -110,7 +110,7 @@ jobs:
       with:
         type: ${{ job.status }}
         job_name: "Github Actions test=${{ steps.calculated.outputs.should_test }} deploy=${{ steps.calculated.outputs.should_deploy }}"
-        mention: "here"
-        mention_if: "failure"
-        channel: "#static_site_builds"
+        mention: 'here'
+        mention_if: 'failure'
+        channel: '#static_site_builds'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
