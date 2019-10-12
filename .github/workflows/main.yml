@@ -101,7 +101,7 @@ jobs:
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
-        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
+        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy
 
 
     # -------- Slack Notification
