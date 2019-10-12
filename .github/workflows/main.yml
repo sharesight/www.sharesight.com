@@ -28,7 +28,7 @@ jobs:
       run: |
         echo ::set-output name=app_env::$(['${{ github.ref }}' == 'refs/heads/master'] && echo 'production' || echo 'staging')
         echo ::set-output name=should_test::$(['${{ github.event_name }}' == 'push'] && ['${{ github.ref }}' != 'refs/heads/master'] && echo 'false' || echo 'true')
-        echo ::set-output name=should_deploy::$(['${{ github.event_name }}' != 'pull_request'] && (['${{ github.ref }}' == 'refs/heads/master'] || ['${{ github.ref }}' != 'refs/heads/develop']) && echo 'true' || echo 'false')
+        echo ::set-output name=should_deploy::$(['${{ github.event_name }}' != 'pull_request'] && (['${{ github.ref }}' == 'refs/heads/master'] || ['${{ github.ref }}' == 'refs/heads/develop']) && echo 'true' || echo 'false')
         echo ::set-output name=bugsnag_branch::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: List Calculated environment
       # app_env = production|staging
