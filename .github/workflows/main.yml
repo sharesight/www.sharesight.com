@@ -3,14 +3,11 @@ name: Run Tests and/or Deploy to S3
 on:
   pull_request:
     branches:
-    # - master
-    # - develop
-    # - 'release/**'
-    # - 'hotfix/**'
-    - github-actions-ci-cd
+      - master
   push:
     branches:
-    # - master
+    - master
+    - develop
     - github-actions-ci-cd
   schedule:
     - cron: 0 */8 * * * # every 8 hours
@@ -28,23 +25,23 @@ jobs:
     - name: Set Calculated Environment Output
       id: calculated # access this with steps.calculated.outputs.[name]
       # NOTE: Cannot use these inside of the same step, only in subsequent steps.
-      # This is why we compare against refs/heads/… instead of branch_name.
+      # This is why we compare against refs/heads/… directly instead of branch_name.
       #
-      # branch_name = master|develop|branch-name (from refs/heads/master)
       # app_env = production|staging
       # should_deploy = true|false
       # should_test = true|false
+      # branch_name = master|develop|branch-name (removes 'refs/heads/' from 'refs/heads/…')
       run: |
-        echo ::set-output name=branch_name::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
         echo ::set-output name=app_env::$('${{ github.ref }}' == 'refs/heads/master' && echo 'production' || echo 'staging')
-        echo ::set-output name=should_test::$('${{ github.event_name }}' == 'push' && '${{ github.ref }}' == 'refs/heads/develop' && echo 'false' || echo 'true')
-        echo ::set-output name=should_deploy::$('${{ github.event_name }}' == 'push' && ('${{ github.ref }}' == 'refs/heads/master' || '${{ github.ref }}' == 'refs/heads/develop') && echo 'true' || echo 'false')
+        echo ::set-output name=should_test::$('${{ github.event_name }}' != 'pull_request' && '${{ github.ref }}' == 'refs/heads/develop' && echo 'false' || echo 'true')
+        echo ::set-output name=should_deploy::$('${{ github.event_name }}' != 'pull_request' && ('${{ github.ref }}' == 'refs/heads/master' || '${{ github.ref }}' == 'refs/heads/develop') && echo 'true' || echo 'false')
+        echo ::set-output name=branch_name::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: List Calculated environment
       run: |
-        echo branch_name=${{ steps.calculated.outputs.branch_name }}
         echo app_env=${{ steps.calculated.outputs.app_env }}
         echo should_test=${{ steps.calculated.outputs.should_test }}
         echo should_deploy=${{ steps.calculated.outputs.should_deploy }}
+        echo branch_name=${{ steps.calculated.outputs.branch_name }}
 
 
     # -------- Ruby & Dependencies
@@ -68,6 +65,7 @@ jobs:
     - name: Download Data from Contentful
       run: bundle exec middleman contentful
       env:
+        APP_ENV: ${{ steps.calculated.outputs.app_env }}
         CONTENTFUL_BLOG_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_BLOG_ACCESS_TOKEN }}
         CONTENTFUL_BLOG_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_BLOG_PREVIEW_TOKEN }}
         CONTENTFUL_PARTNERS_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_ACCESS_TOKEN }}
@@ -91,7 +89,7 @@ jobs:
         bundle exec bundle-audit check --ignore CVE-2014-10077
 
 
-    # -------- Deploy to S3 && Notifications
+    # -------- Deploy to S3 + Bugsnag Release
     - name: Deploy to S3
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
@@ -103,12 +101,15 @@ jobs:
       uses: wei/curl@v1
       with:
         args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.branch_name }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
+        
+
+    # -------- Slack Notification
     - name: Slack Notification
       uses: homoluctus/slatify@master
-      if: always() && steps.calculated.outputs.should_deploy == 'true'
+      if: always()
       with:
         type: ${{ job.status }}
-        job_name: 'Test and/or Deploy'
+        job_name: 'Github Actions test=${{ steps.calculated.outputs.should_test }} deploy=${{ steps.calculated.outputs.should_deploy }}'
         mention: 'here'
         mention_if: 'failure'
         channel: '#static_site_builds'
