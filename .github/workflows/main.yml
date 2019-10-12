@@ -7,12 +7,11 @@ on:
   push:
     branches:
     # NOTE: ANY branches listed here will be deployed to due to `should_deploy` logic.
-    # - master # TODO: Enable when merging into master.
+    - master
     - develop
-  # schedule:
+  schedule:
     # This will be ran against [default branch = master]
-    # TODO: Only enable this when merging into master as I don't know what will happen now..
-    # - cron: 0 */8 * * * # every 8 hours
+    - cron: 0 */8 * * * # every 8 hours
 
 jobs:
   build:
@@ -102,7 +101,7 @@ jobs:
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
-        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy
+        args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
 
 
     # -------- Slack Notification
