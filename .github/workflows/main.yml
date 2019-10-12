@@ -71,6 +71,8 @@ jobs:
         CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN }}
         CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN }}
     - run: bundle exec middleman build --verbose
+      env:
+        APP_ENV: ${{ steps.calculated.outputs.app_env }}
 
 
     # -------- Run Tests
@@ -92,6 +94,7 @@ jobs:
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
       env:
+        APP_ENV: ${{ steps.calculated.outputs.app_env }}
         AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
         AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
     - name: Notify Bugsnag of Release
