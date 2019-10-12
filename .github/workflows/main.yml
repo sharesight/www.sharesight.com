@@ -23,24 +23,21 @@ jobs:
     # ------- Calculated Values
     - name: Set Calculated Environment Output
       id: calculated # access this with steps.calculated.outputs.[name]
-      # NOTE: Cannot use these inside of the same step, only in subsequent steps.
-      # This is why we compare against refs/heads/… directly instead of branch_name.
-      #
-      # app_env = production|staging
-      # should_deploy = true|false
-      # should_test = true|false
-      # branch_name = master|develop|branch-name (removes "refs/heads/" from "refs/heads/…")
       run: |
         echo ::set-output name=app_env::$("${{ github.ref }}" == 'refs/heads/master' && echo 'production' || echo 'staging')
         echo ::set-output name=should_test::$("${{ github.event_name }}" != 'pull_request' && "${{ github.ref }}" == 'refs/heads/develop' && echo 'false' || echo 'true')
         echo ::set-output name=should_deploy::$("${{ github.event_name }}" != 'pull_request' && ("${{ github.ref }}" == 'refs/heads/master' || "${{ github.ref }}" == 'refs/heads/develop') && echo 'true' || echo 'false')
-        echo ::set-output name=branch_name::$(echo "${{ github.ref }}" | sed 's/^refs\/heads\/\(.*\)$/\1/')
+        echo ::set-output name=bugsnag_branch::$(echo "${{ github.ref }}" | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: List Calculated environment
+      # app_env = production|staging
+      # should_deploy = true|false
+      # should_test = true|false
+      # bugsnag_branch = master|develop or refs/pulls/123/merge (something unintelligble to Bugsnag)
       run: |
         echo app_env=${{ steps.calculated.outputs.app_env }}
         echo should_test=${{ steps.calculated.outputs.should_test }}
         echo should_deploy=${{ steps.calculated.outputs.should_deploy }}
-        echo branch_name=${{ steps.calculated.outputs.branch_name }}
+        echo bugsnag_branch=${{ steps.calculated.outputs.bugsnag_branch }}
 
 
     # -------- Ruby & Dependencies
@@ -99,7 +96,7 @@ jobs:
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
-        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.branch_name }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
+        args: -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}" https://notify.bugsnag.com/deploy)
 
 
     # -------- Slack Notification
