@@ -7,7 +7,7 @@ rvm: 2.4.2
 branches:
   only:
     - master
-    - develop
+    # - develop # NOTE: This is on Github Actions for now.
     - /^release\/.*$/
     - /^hotfix\/.*$/
 
