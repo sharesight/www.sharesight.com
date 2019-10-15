@@ -1,12 +1,16 @@
 name: Run Tests and Deploy
 
 on:
+  deployment:
+    branches:
+    # - master # TODO: Enable when merging into master.
+      - develop
   pull_request:
     branches:
       - master
   push:
     branches:
-    # NOTE: ANY branches listed here will be deployed to due to `should_deploy` logic.
+    # NOTE: Pushing to ANY branch listed here will be deployed to due to `should_deploy` logic.
     # - master # TODO: Enable when merging into master.
     - develop
   # schedule:
@@ -95,6 +99,12 @@ jobs:
 
 
     # -------- Deploy to S3 + Bugsnag Release
+    - name: 'Deployment Pending'
+      uses: 'deliverybot/status@master'
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
+      with:
+        state: 'pending'
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Deploy to S3
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
@@ -107,6 +117,18 @@ jobs:
       uses: wei/curl@v1
       with:
         args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
+    - name: 'Deployment Succeeded'
+      if: success() && steps.calculated.outputs.should_deploy == 'true'
+      uses: 'deliverybot/status@master'
+      with:
+        state: 'success'
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: 'Deployment Failed'
+      if: failure() && steps.calculated.outputs.should_deploy == 'true'
+      uses: 'deliverybot/status@master'
+      with:
+        state: 'failure'
+        token: ${{ secrets.GITHUB_TOKEN }}
 
 
     # -------- Send Slack Notification
