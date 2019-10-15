@@ -1,4 +1,4 @@
-name: Run Tests and/or Deploy to S3
+name: Run Tests and Deploy
 
 on:
   pull_request:
@@ -24,14 +24,14 @@ jobs:
 
 
     # ------- Calculated Values
-    - name: Set Calculated Environment Output
+    - name: Calculate Logic
       id: calculated # access this with steps.calculated.outputs.[name]
       run: |
         echo ::set-output name=app_env::$([ '${{ github.ref }}' == 'refs/heads/master' ] && echo 'production' || echo 'staging')
         echo ::set-output name=should_test::$([ '${{ github.event_name }}' == 'push' ] && [ '${{ github.ref }}' != 'refs/heads/master' ] && echo 'false' || echo 'true')
         echo ::set-output name=should_deploy::$([ '${{ github.event_name }}' != 'pull_request' ] && ( [ '${{ github.ref }}' == 'refs/heads/master' ] || [ '${{ github.ref }}' == 'refs/heads/develop' ] ) && echo 'true' || echo 'false')
         echo ::set-output name=bugsnag_branch::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
-    - name: List Calculated environment
+    - name: [debug] Calculated Logic
       # app_env = production|staging
       # should_test = true|false # doesn't test pushes into develop
       # should_deploy = true|false # deploys unless event==pull_request
@@ -48,8 +48,10 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         ruby-version: '2.4.x'
-    - run: gem install bundler
-    - run: bundle install --jobs 4 --retry 3
+    - name: Install Ruby Dependencies
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
 
 
     # -------- JS & Dependencies
@@ -57,7 +59,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - run: yarn install --frozen-lockfile --non-interactive
+    - name: Install Javascript Dependencies
+      run: yarn install --frozen-lockfile --non-interactive
 
 
     # -------- Build Static Files
@@ -71,19 +74,20 @@ jobs:
         CONTENTFUL_PARTNERS_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_PREVIEW_TOKEN }}
         CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN }}
         CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN }}
-    - run: bundle exec middleman build --verbose
+    - name: Build Static HTML
+      run: bundle exec middleman build --verbose
       env:
         APP_ENV: ${{ steps.calculated.outputs.app_env }}
 
 
     # -------- Run Tests
-    - name: jest tests
+    - name: Run Javascript Tests
       if: steps.calculated.outputs.should_test == 'true'
       run: yarn run jest --runInBand
-    - name: rspec tests
+    - name: Run Ruby Tests
       if: steps.calculated.outputs.should_test == 'true'
       run: bundle exec rspec spec -p --format d
-    - name: bundle audit
+    - name: Ruby Security Audit
       if: steps.calculated.outputs.should_test == 'true'
       run: |
         bundle exec bundle-audit update
@@ -98,15 +102,15 @@ jobs:
         APP_ENV: ${{ steps.calculated.outputs.app_env }}
         AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
         AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
-    - name: Notify Bugsnag of Release
+    - name: Notify Bugsnag of Released Code
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       uses: wei/curl@v1
       with:
         args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
 
 
-    # -------- Slack Notification
-    - name: Slack Notification
+    # -------- Send Slack Notification
+    - name: Send Slack Notification
       uses: homoluctus/slatify@master
       if: always()
       with:
@@ -115,4 +119,5 @@ jobs:
         mention: 'here'
         mention_if: 'failure'
         channel: '#static_site_builds'
+        icon_emoji: ':rocket:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
