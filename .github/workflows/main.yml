@@ -22,29 +22,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # -------- Github Checkout
-    steps:
-    - uses: actions/checkout@master
-
-
     # ------- Calculated Values
-    - name: Calculate Logic
+    - name: Precalculate Values
+      id: precalculate
+      run: |
+        echo ::set-output name=ref::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.ref }}' ] && echo '${{ github.event.deployment.ref }}' ) || echo '${{ github.ref }}')
+    - name: Calculated Variables
       id: calculated # access this with steps.calculated.outputs.[name]
       run: |
-        echo ::set-output name=app_env::$([ '${{ github.ref }}' == 'refs/heads/master' ] && echo 'production' || echo 'staging')
-        echo ::set-output name=should_test::$([ '${{ github.event_name }}' == 'push' ] && [ '${{ github.ref }}' != 'refs/heads/master' ] && echo 'false' || echo 'true')
-        echo ::set-output name=should_deploy::$([ '${{ github.event_name }}' != 'pull_request' ] && ( [ '${{ github.ref }}' == 'refs/heads/master' ] || [ '${{ github.ref }}' == 'refs/heads/develop' ] ) && echo 'true' || echo 'false')
-        echo ::set-output name=bugsnag_branch::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
+        echo ::set-output name=app_env::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.environment }}' ] && echo '${{ github.event.deployment.environment }}' ) || ( [ '${{ steps.precalculate.outputs.ref }}' == 'refs/heads/master' ] && echo 'production' || echo 'staging' ))
+        echo ::set-output name=should_test::$([ '${{ github.event_name }}' == 'push' ] && [ '${{ steps.precalculate.outputs.ref }}' != 'refs/heads/master' ] && echo 'false' || echo 'true')
+        echo ::set-output name=should_deploy::$([ '${{ github.event_name }}' != 'pull_request' ] && ( [ '${{ steps.precalculate.outputs.ref }}' == 'refs/heads/master' ] || [ '${{ steps.precalculate.outputs.ref }}' == 'refs/heads/develop' ] ) && echo 'true' || echo 'false')
+        echo ::set-output name=bugsnag_branch::$(echo '${{ steps.precalculate.outputs.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
     - name: [debug] Calculated Logic
       # app_env = production|staging
       # should_test = true|false # doesn't test pushes into develop
       # should_deploy = true|false # deploys unless event==pull_request
-      # bugsnag_branch = master|develop or refs/pulls/123/merge (something unintelligble to Bugsnag)
+      # bugsnag_branch = master|develop or 
+      s/pulls/123/merge (something unintelligble to Bugsnag)
       run: |
+        echo ref=${{ steps.precalculate.outputs.ref }}
         echo app_env=${{ steps.calculated.outputs.app_env }}
         echo should_test=${{ steps.calculated.outputs.should_test }}
         echo should_deploy=${{ steps.calculated.outputs.should_deploy }}
         echo bugsnag_branch=${{ steps.calculated.outputs.bugsnag_branch }}
+
+
+    # -------- Github Checkout
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: ${{ steps.precalculate.outputs.ref }}
 
 
     # -------- Ruby & Dependencies
