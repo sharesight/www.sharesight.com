@@ -25,8 +25,10 @@ jobs:
     # ------- Calculated Values
     - name: Precalculate Values
       id: precalculate
+      # NOTE: We prepend `refs/heads/` to `github.event.deployment.ref` to match `github.ref` as they are different values, yet named the same..
+      # Unfortunately there's no `github.branch` to use as the ref in Github Actions (and it wouldn't be ideal, given Pull Requests)
       run: |
-        echo ::set-output name=ref::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.ref }}' ] && echo '${{ github.event.deployment.ref }}' ) || echo '${{ github.ref }}')
+        echo ::set-output name=ref::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.ref }}' ] && echo 'refs/heads/${{ github.event.deployment.ref }}' ) || echo '${{ github.ref }}')
     - name: Calculated Variables
       id: calculated # access this with steps.calculated.outputs.[name]
       run: |
