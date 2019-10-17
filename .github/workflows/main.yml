@@ -10,7 +10,7 @@ on:
       - master
   push:
     branches:
-    # NOTE: Pushing to ANY branch listed here will be deployed to due to `should_deploy` logic.
+    # NOTE: Pushing to ANY branch listed here will be deployed to due to should_deploy logic.
     # - master # TODO: Enable when merging into master.
       - develop
   # schedule:
@@ -22,10 +22,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    steps:
     # ------- Calculated Values
     - name: Precalculate Values
-      id: precalculate
-      # NOTE: We only support `github.event.deployment.ref` set to be `refs/heads/branch`, to match `github.ref`.
+      id: precalculate # NOTE: We only support github.event.deployment.ref matching syntax like refs/heads/[branch] as it must match what we get for github.ref.
       run: |
         echo ::set-output name=ref::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.ref }}' ] && echo '${{ github.event.deployment.ref }}' ) || echo '${{ github.ref }}')
     - name: Calculated Variables
@@ -35,7 +35,7 @@ jobs:
         echo ::set-output name=should_test::$([ '${{ github.event_name }}' == 'push' ] && [ '${{ steps.precalculate.outputs.ref }}' != 'refs/heads/master' ] && echo 'false' || echo 'true')
         echo ::set-output name=should_deploy::$([ '${{ github.event_name }}' != 'pull_request' ] && ( [ '${{ steps.precalculate.outputs.ref }}' == 'refs/heads/master' ] || [ '${{ steps.precalculate.outputs.ref }}' == 'refs/heads/develop' ] ) && echo 'true' || echo 'false')
         echo ::set-output name=bugsnag_branch::$(echo '${{ steps.precalculate.outputs.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
-    - name: [debug] Calculated Logic
+    - name: DEBUG Calculated Logic
       # app_env = production|staging
       # should_test = true|false # doesn't test pushes into develop
       # should_deploy = true|false # deploys unless event==pull_request
@@ -49,7 +49,6 @@ jobs:
 
 
     # -------- Github Checkout
-    steps:
     - uses: actions/checkout@master
       with:
         ref: ${{ steps.precalculate.outputs.ref }}
