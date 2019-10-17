@@ -12,7 +12,7 @@ on:
     branches:
     # NOTE: Pushing to ANY branch listed here will be deployed to due to `should_deploy` logic.
     # - master # TODO: Enable when merging into master.
-    - develop
+      - develop
   # schedule:
     # This will be ran against [default branch = master]
     # TODO: Enable when merging into master.
