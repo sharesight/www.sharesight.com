@@ -15,6 +15,9 @@ jobs:
 
     steps:
 
+    # -------- Github Checkout
+    - uses: actions/checkout@master
+
 
     # -------- Ruby & Dependencies
     - name: Install Ruby
