@@ -1,0 +1,45 @@
+name: Bundle Audit
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+
+    # -------- Ruby & Dependencies
+    - name: Install Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.4.x'
+
+    - name: Install Ruby Dependencies
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+
+    - name: Ruby Security Audit
+      run: |
+        bundle exec bundle-audit update
+        bundle exec bundle-audit check --ignore CVE-2014-10077
+
+
+    # -------- Slack Notification when Failed
+    - name: Send Failure Notification
+      uses: homoluctus/slatify@master
+      if: steps.calculated.outputs.should_deploy == 'true' && failure()
+      with:
+        type: ${{ job.status }}
+        job_name: "[www] Security Audit"
+        channel: '#static_site_builds'
+        icon_emoji: ':warning:'
+        url: ${{ secrets.SLACK_WEBHOOK_URL }}
