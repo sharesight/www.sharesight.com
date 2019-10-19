@@ -89,10 +89,6 @@ jobs:
       run: yarn run jest --runInBand
     - name: Run Ruby Tests
       run: bundle exec rspec spec -p --format d
-    - name: Ruby Security Audit
-      run: |
-        bundle exec bundle-audit update
-        bundle exec bundle-audit check --ignore CVE-2014-10077
 
 
     # -------- Deploy to S3 + Bugsnag Release
