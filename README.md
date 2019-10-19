@@ -5,6 +5,7 @@
 - Ruby 2.4.2+
 - Middleman 3.4.1
 
+
 ## Installation
 
 1. Clone this repo into a local directory
@@ -18,6 +19,7 @@ Individual Commands (see package.json):
 2. Build the site: `middleman build`
 3. Or run a local server: `middleman`
 
+
 ## Testing
 
 Most things are tested – both in `rspec` and `jest`.  Every page is tested that it renders, has a title, meta tags, etc.
@@ -29,53 +31,52 @@ Commands (see package.json):
  - `yarn rspec` / `yarn rspec:tdd`
  - `yarn jest` / `yarn jest:tdd`
 
+
 ## Testing Coverage Holes
 
 	1. Extensions are not tested
 	2. The logic in the config file is not tested.
 
+
 ## Cloudfront Localization via Lambda
  - See `lambda/README.md`!
+ 
 
 ## Manual Deploys
 
-The website automatically deploys to staging and production from the Travis-CI
-build, so normally you don't need to deploy anything manually.
+The website automatically deploys to staging and production via Github Actions, so normally you don't need to deploy anything manually.
+
+If you **must** force a local deploy, ensure your environment is all setup (see Environment Configuration), and run this, where `env=production|staging`..  See Github Actions workflow for full details how it does it.
+
+		git checkout [branch]
+		git pull origin [branch]
+		APP_ENV=[env] bundle exec middleman build
+		APP_ENV=[env] bundle exec middleman s3_sync
+
+
+## CI/CD
+
+1. Github Actions manages all of our testing and deployments.  This requires a fair bit of setup.  See `howtos/environment.md`.
+	- Deploys whenever pushed to `develop` or `master` (eg. commit, pull request merge, etc).
+	- Deploys whenever a `deployment` is trigger (eg. an inbound API action from Contentful).
+2. Contentful deploys automatically via a [Create Deployments API webhook](https://developer.github.com/v3/repos/deployments/).
+	- This requires a Personal Access Token from an authorized user to make this request.  Sharesight has a machine user to hold this key and it lives as a secret in Contentful.
+
 
 ### Building/Deploying to STAGING:
 
-1. Create PR
+1. Create a PR
 2. Merge PR into `develop` branch.
-3. Travis will deploy it to `staging-www.sharesight.com`.
+3. Github Actions will deploy it to `staging-www.sharesight.com`.
 4. Once build is complete, may take up to 15 minutes to resolve caches.
 
-*Note:* When Travis-CI builds the `develop` branch, it will automatically deploy
-the code to `staging-www.sharesight.com` after any successful build. The
-instructions below are just for those cases when you want to manually deploy.
-
-Make sure you've modified your configuration settings (as described below) before proceeding with deploying to staging or production.
-
-		git checkout develop
-		git pull origin develop
-		APP_ENV=staging bundle exec middleman build
-		APP_ENV=staging bundle exec middleman s3_sync
 
 ### Building/Deploying to PRODUCTION:
 
 1. Merge PR into `master` branch.
-3. Travis will deploy it to `www.sharesight.com`.
+2. Github Actions will deploy it to `www.sharesight.com`.
 3. Once build is complete, may take up to 15 minutes to resolve caches.
 
-*Note:* When Travis-CI builds the `master` branch, it will automatically deploy
-the code to `www.sharesight.com` after any successful build. The
-instructions below are just for those cases when you want to manually deploy.
-
-Make sure you've modified your configuration settings (as described below) before proceeding with deploying to staging or production.
-
-		git checkout master
-		git pull origin master
-		APP_ENV=production bundle exec middleman build
-		APP_ENV=production bundle exec middleman s3_sync
 
 ## How to add a new Locale
 
@@ -86,6 +87,7 @@ Make sure you've modified your configuration settings (as described below) befor
 3. Ensure the Helpsite and Marketing site have the same locales!  Else you will link to a non-existent locale.
 
 Do note, the default_locale_id is set in config.rb.
+
 
 ## How to change the redirection rules on Amazon S3
 
