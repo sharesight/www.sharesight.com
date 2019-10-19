@@ -85,7 +85,7 @@ jobs:
 
     # -------- Deploy to S3 + Bugsnag Release
     - name: 'Deployment Pending'
-      uses: 'deliverybot/status@master'
+      uses: 'deliverybot/deployment-status@master'
       if: success() && steps.calculated.outputs.should_deploy == 'true'
       with:
         state: 'pending'
@@ -104,13 +104,13 @@ jobs:
         args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
     - name: 'Deployment Succeeded'
       if: success() && steps.calculated.outputs.should_deploy == 'true'
-      uses: 'deliverybot/status@master'
+      uses: 'deliverybot/deployment-status@master'
       with:
         state: 'success'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: 'Deployment Failed'
       if: failure() && steps.calculated.outputs.should_deploy == 'true'
-      uses: 'deliverybot/status@master'
+      uses: 'deliverybot/deployment-status@master'
       with:
         state: 'failure'
         token: ${{ secrets.GITHUB_TOKEN }}
