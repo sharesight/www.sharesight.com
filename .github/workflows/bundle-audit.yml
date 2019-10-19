@@ -42,7 +42,7 @@ jobs:
       if: failure()
       with:
         type: ${{ job.status }}
-        job_name: "[www-${{ github.ref }}] Security Audit Failed"
+        job_name: "[www-${{ github.ref }}] Security Audit"
         channel: '#static_site_builds'
         icon_emoji: ':warning:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
