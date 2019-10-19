@@ -21,3 +21,6 @@ As this is a public repo, everything is stored in local environment keys.
 
 #### Github Actions Secrets
   - All of these go into https://github.com/sharesight/www.sharesight.com/settings/secrets under the same name.
+
+#### Contentful Webhooks
+  - API Webhooks require a Personal Access Token with `repo_deployment` access from Github to this branch for API Authorization.  We use a Machine User for this.
