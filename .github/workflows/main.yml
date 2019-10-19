@@ -83,10 +83,11 @@ jobs:
       run: bundle exec rspec spec -p --format d
 
 
-    # -------- Deploy to S3 + Bugsnag Release
-    - name: 'Deployment Pending'
+    # -------- Deploy to S3 ++ Notify Bugsnag and Github Deployment of Status
+    - name: Update deployment status to pending
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       uses: 'deliverybot/deployment-status@master'
-      if: success() && steps.calculated.outputs.should_deploy == 'true'
+      if: github.event_name == 'deployment' && success() && steps.calculated.outputs.should_deploy == 'true'
       with:
         state: 'pending'
         token: ${{ secrets.GITHUB_TOKEN }}
@@ -102,14 +103,16 @@ jobs:
       uses: wei/curl@v1
       with:
         args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
-    - name: 'Deployment Succeeded'
-      if: success() && steps.calculated.outputs.should_deploy == 'true'
+    - name: Update deployment status to success
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
+      if:  github.event_name == 'deployment' && success() && steps.calculated.outputs.should_deploy == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'success'
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: 'Deployment Failed'
-      if: failure() && steps.calculated.outputs.should_deploy == 'true'
+    - name: Update deployment status to failure
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
+      if:  github.event_name == 'deployment' && failure() && steps.calculated.outputs.should_deploy == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'failure'
