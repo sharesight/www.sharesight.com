@@ -39,10 +39,10 @@ jobs:
     # -------- Slack Notification when Failed
     - name: Send Failure Notification
       uses: homoluctus/slatify@master
-      if: steps.calculated.outputs.should_deploy == 'true' && failure()
+      if: failure()
       with:
         type: ${{ job.status }}
-        job_name: "[www] Security Audit"
+        job_name: "[www-${{ github.ref }}] Security Audit Failed"
         channel: '#static_site_builds'
         icon_emoji: ':warning:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
