@@ -133,7 +133,7 @@ jobs:
       if: steps.calculated.outputs.should_deploy == 'false' && failure()
       with:
         type: ${{ job.status }}
-        job_name: "[www-${{ github.ref }}] Tests Failed"
+        job_name: "[www-${{ github.ref }}] Tests"
         channel: '#static_site_builds'
         icon_emoji: ':goose:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
