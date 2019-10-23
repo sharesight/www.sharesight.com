@@ -41,10 +41,8 @@ directory YAML files and use it, e.g.:
 
 Branches
 --------
-1. When you push to `develop`, the travis build will run `middleman build`.
-and if there are no errors, it will also deploy the site to the testing `https://staging-www.sharesight.com/` site.
-2. When finished, merge to master. The master build also deploys
-automatically to `https://www.sharesight.com/` on a successful build.
+The `develop` branch is our `staging` environment and should be replicated on https://staging-www.sharesight.com/
+The `master` branch is our default branch and `production` environment and should be replicated on https://www.sharesight.com/
 
 Middleman Docs
 --------------
