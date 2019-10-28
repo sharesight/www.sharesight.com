@@ -13,26 +13,42 @@ on:
     # - master # TODO: Enable when merging into master.
       - develop
 
+# ------- Environment
+env:
+  # calculated values
+  APP_ENV: ${{ (github.event_name == 'deployment' && github.event.deployment.environment) || (github.ref == 'refs/heads/master' && 'production') || 'staging' }}
+  SHOULD_DEPLOY: ${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop') && 'true' || 'false' }}
+
+  # for deploy
+  AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
+  AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
+
+  # build, test, and deploy
+  CONTENTFUL_BLOG_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_BLOG_ACCESS_TOKEN }}
+  CONTENTFUL_BLOG_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_BLOG_PREVIEW_TOKEN }}
+  CONTENTFUL_PARTNERS_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_ACCESS_TOKEN }}
+  CONTENTFUL_PARTNERS_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_PREVIEW_TOKEN }}
+  CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN }}
+  CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN }}
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    # ------- Calculated Values
-    - name: Calculated Variables
-      id: calculated # access this with steps.calculated.outputs.[name]
+    - name: Convert Environment to Output
+      id: env
+      # Unfortunately we are unable to access env (eg. SHOULD_DEPLOY) inside of an expression (eg. if, with, etc).
+      # So we have to convert environment variables to output variables.
       run: |
-        echo ::set-output name=app_env::$(( [ '${{ github.event_name }}' == 'deployment' ] && [ '${{ github.event.deployment.environment }}' ] && echo '${{ github.event.deployment.environment }}' ) || ( [ '${{ github.ref }}' == 'refs/heads/master' ] && echo 'production' || echo 'staging' ))
-        echo ::set-output name=should_deploy::$([ '${{ github.event_name }}' != 'pull_request' ] && ( [ '${{ github.ref }}' == 'refs/heads/master' ] || [ '${{ github.ref }}' == 'refs/heads/develop' ] ) && echo 'true' || echo 'false')
-        echo ::set-output name=bugsnag_branch::$(echo '${{ github.ref }}' | sed 's/^refs\/heads\/\(.*\)$/\1/')
-    - name: DEBUG Calculated Logic
-      # app_env = production|staging
-      # should_deploy = true|false # deploys if event != pull_request on develop and master branches
-      # bugsnag_branch = master|develop or refs/pulls/123/merge (something unintelligble to Bugsnag)
+        echo ::set-output name=should_deploy::$SHOULD_DEPLOY
+    - name: DEBUG Calculated Environment
+      # app_env = String production|staging
+      # should_deploy = String true|false # deploys if event != pull_request on develop and master branches
       run: |
-        echo app_env=${{ steps.calculated.outputs.app_env }}
-        echo should_deploy=${{ steps.calculated.outputs.should_deploy }}
-        echo bugsnag_branch=${{ steps.calculated.outputs.bugsnag_branch }}
+        echo "app_env=$APP_ENV"
+        echo "should_deploy=${{ steps.env.outputs.should_deploy }}"
 
 
     # -------- Github Checkout
@@ -62,18 +78,8 @@ jobs:
     # -------- Build Static Files
     - name: Download Data from Contentful
       run: bundle exec middleman contentful
-      env:
-        APP_ENV: ${{ steps.calculated.outputs.app_env }}
-        CONTENTFUL_BLOG_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_BLOG_ACCESS_TOKEN }}
-        CONTENTFUL_BLOG_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_BLOG_PREVIEW_TOKEN }}
-        CONTENTFUL_PARTNERS_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_ACCESS_TOKEN }}
-        CONTENTFUL_PARTNERS_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_PREVIEW_TOKEN }}
-        CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN }}
-        CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN }}
     - name: Build Static HTML
       run: bundle exec middleman build --verbose
-      env:
-        APP_ENV: ${{ steps.calculated.outputs.app_env }}
 
 
     # -------- Run Tests
@@ -87,32 +93,38 @@ jobs:
     - name: Update deployment status to pending
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       uses: 'deliverybot/deployment-status@master'
-      if: github.event_name == 'deployment' && success() && steps.calculated.outputs.should_deploy == 'true'
+      if: github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
       with:
         state: 'pending'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Deploy to S3
-      if: success() && steps.calculated.outputs.should_deploy == 'true'
+      if: success() && steps.env.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
-      env:
-        APP_ENV: ${{ steps.calculated.outputs.app_env }}
-        AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
-        AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
     - name: Notify Bugsnag of Released Code
-      if: success() && steps.calculated.outputs.should_deploy == 'true'
-      uses: wei/curl@v1
-      with:
-        args: https://notify.bugsnag.com/deploy -d "apiKey=${{ secrets.BUGSNAG_API_KEY }}&releaseStage=${{ steps.calculated.outputs.app_env }}&repository=${{ github.repository }}&branch=${{ steps.calculated.outputs.bugsnag_branch }}&revision=${{ github.sha }}"
+      if: success() && steps.env.outputs.should_deploy == 'true'
+      run: |
+        curl https://build.bugsnag.com/ \
+          --header "Content-Type: application/json" \
+          --data '{
+            "apiKey": ${{ secrets.BUGSNAG_API_KEY }},
+            "releaseStage": $APP_ENV,
+            "builderName": "Github Actions",
+            "sourceControl": {
+              "provider": "github",
+              "repository": ${{ github.repository }},
+              "revision": ${{ github.sha }}
+            }
+          }'
     - name: Update deployment status to success
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
-      if:  github.event_name == 'deployment' && success() && steps.calculated.outputs.should_deploy == 'true'
+      if:  github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'success'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Update deployment status to failure
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
-      if:  github.event_name == 'deployment' && failure() && steps.calculated.outputs.should_deploy == 'true'
+      if:  github.event_name == 'deployment' && failure() && steps.env.outputs.should_deploy == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'failure'
@@ -122,18 +134,16 @@ jobs:
     # -------- Slack Notifications (different for test vs. deploy).
     - name: Send Deploy Notification
       uses: homoluctus/slatify@master
-      if: steps.calculated.outputs.should_deploy == 'true' && always()
+      if: steps.env.outputs.should_deploy == 'true' && always()
       with:
         type: ${{ job.status }}
-        job_name: "[www-${{ steps.calculated.outputs.app_env }}] Deploy"
-        mention: 'here'
-        mention_if: 'failure'
+        job_name: "[www-$APP_ENV] Deploy"
         channel: '#static_site_builds'
         icon_emoji: ':rocket:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
     - name: Send Test Failed Notification
       uses: homoluctus/slatify@master
-      if: steps.calculated.outputs.should_deploy == 'false' && failure()
+      if: steps.env.outputs.should_deploy == 'false' && failure()
       with:
         type: ${{ job.status }}
         job_name: "[www-${{ github.ref }}] Tests"
