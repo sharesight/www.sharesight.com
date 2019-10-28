@@ -42,8 +42,8 @@ jobs:
       # Unfortunately we are unable to access env (eg. SHOULD_DEPLOY) inside of an expression (eg. if, with, etc).
       # So we have to convert environment variables to output variables.
       run: |
-      echo ::set-output name=app_env::$APP_ENV
-      echo ::set-output name=should_deploy::$SHOULD_DEPLOY
+        echo ::set-output name=app_env::$APP_ENV
+        echo ::set-output name=should_deploy::$SHOULD_DEPLOY
     - name: DEBUG Calculated Environment
       # app_env = String production|staging
       # should_deploy = String true|false # deploys if event != pull_request on develop and master branches
