@@ -39,7 +39,7 @@ jobs:
     steps:
     - name: Convert Environment to Output
       id: env
-      # Unfortunately we are unable to access $SHOULD_DEPLOY in inside of an expression (if, with, etc).
+      # Unfortunately we are unable to access env (eg. SHOULD_DEPLOY) inside of an expression (eg. if, with, etc).
       # So we have to convert environment variables to output variables.
       run: |
         echo ::set-output name=should_deploy::$SHOULD_DEPLOY
@@ -49,12 +49,6 @@ jobs:
       run: |
         echo "app_env=$APP_ENV"
         echo "should_deploy=${{ steps.env.outputs.should_deploy }}"
-    - name: DEBUG Should Deploy True
-      if: steps.env.outputs.should_deploy == 'true'
-      run: echo "${{ steps.env.outputs.should_deploy }} is true"
-    - name: DEBUG Should Deploy True
-      if: steps.env.outputs.should_deploy == 'false'
-      run: echo "${{ steps.env.outputs.should_deploy }} is false"
 
 
     # -------- Github Checkout
