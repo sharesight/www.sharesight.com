@@ -41,14 +41,14 @@ jobs:
       # app_env = STRING production|staging
       # should_deploy = STRING true|false # deploys if event != pull_request on develop and master branches
       run: |
-        echo app_env=${{ APP_ENV }}
-        echo should_deploy=${{ SHOULD_DEPLOY }}
+        echo app_env=$APP_ENV
+        echo should_deploy=$SHOULD_DEPLOY
     - name: DEBUG Should Deploy True
       if: SHOULD_DEPLOY == 'true'
-      run: echo ${{ SHOULD_DEPLOY }} is true
+      run: echo $SHOULD_DEPLOY is true
     - name: DEBUG Should Deploy True
       if: SHOULD_DEPLOY == 'false'
-      run: echo ${{ SHOULD_DEPLOY }} is false
+      run: echo $SHOULD_DEPLOY is false
 
 
     # -------- Github Checkout
@@ -107,7 +107,7 @@ jobs:
           --header "Content-Type: application/json" \
           --data '{
             "apiKey": ${{ secrets.BUGSNAG_API_KEY }},
-            "releaseStage": ${{ APP_ENV }},
+            "releaseStage": $APP_ENV,
             "builderName": "Github Actions",
             "sourceControl": {
               "provider": "github",
@@ -137,7 +137,7 @@ jobs:
       if: SHOULD_DEPLOY == 'true' && always()
       with:
         type: ${{ job.status }}
-        job_name: "[www-${{ APP_ENV }}] Deploy"
+        job_name: "[www-$APP_ENV] Deploy"
         mention: 'here'
         mention_if: 'failure'
         channel: '#static_site_builds'
