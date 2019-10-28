@@ -138,8 +138,6 @@ jobs:
       with:
         type: ${{ job.status }}
         job_name: "[www-$APP_ENV] Deploy"
-        mention: 'here'
-        mention_if: 'failure'
         channel: '#static_site_builds'
         icon_emoji: ':rocket:'
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
