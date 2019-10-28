@@ -44,10 +44,10 @@ jobs:
         echo "app_env=$APP_ENV"
         echo "should_deploy=$SHOULD_DEPLOY"
     - name: DEBUG Should Deploy True
-      if: SHOULD_DEPLOY == 'true'
+      if: $SHOULD_DEPLOY == 'true'
       run: echo "$SHOULD_DEPLOY is true"
     - name: DEBUG Should Deploy True
-      if: SHOULD_DEPLOY == 'false'
+      if: $SHOULD_DEPLOY == 'false'
       run: echo "$SHOULD_DEPLOY is false"
 
 
@@ -93,15 +93,15 @@ jobs:
     - name: Update deployment status to pending
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       uses: 'deliverybot/deployment-status@master'
-      if: github.event_name == 'deployment' && success() && SHOULD_DEPLOY == 'true'
+      if: github.event_name == 'deployment' && success() && $SHOULD_DEPLOY == 'true'
       with:
         state: 'pending'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Deploy to S3
-      if: success() && SHOULD_DEPLOY == 'true'
+      if: success() && $SHOULD_DEPLOY == 'true'
       run: bundle exec middleman s3_sync
     - name: Notify Bugsnag of Released Code
-      if: success() && SHOULD_DEPLOY == 'true'
+      if: success() && $SHOULD_DEPLOY == 'true'
       run: |
         curl https://build.bugsnag.com/ \
           --header "Content-Type: application/json" \
@@ -117,14 +117,14 @@ jobs:
           }'
     - name: Update deployment status to success
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
-      if:  github.event_name == 'deployment' && success() && SHOULD_DEPLOY == 'true'
+      if:  github.event_name == 'deployment' && success() && $SHOULD_DEPLOY == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'success'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Update deployment status to failure
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
-      if:  github.event_name == 'deployment' && failure() && SHOULD_DEPLOY == 'true'
+      if:  github.event_name == 'deployment' && failure() && $SHOULD_DEPLOY == 'true'
       uses: 'deliverybot/deployment-status@master'
       with:
         state: 'failure'
@@ -134,7 +134,7 @@ jobs:
     # -------- Slack Notifications (different for test vs. deploy).
     - name: Send Deploy Notification
       uses: homoluctus/slatify@master
-      if: SHOULD_DEPLOY == 'true' && always()
+      if: $SHOULD_DEPLOY == 'true' && always()
       with:
         type: ${{ job.status }}
         job_name: "[www-$APP_ENV] Deploy"
@@ -143,7 +143,7 @@ jobs:
         url: ${{ secrets.SLACK_WEBHOOK_URL }}
     - name: Send Test Failed Notification
       uses: homoluctus/slatify@master
-      if: SHOULD_DEPLOY == 'false' && failure()
+      if: $SHOULD_DEPLOY == 'false' && failure()
       with:
         type: ${{ job.status }}
         job_name: "[www-${{ github.ref }}] Tests"
