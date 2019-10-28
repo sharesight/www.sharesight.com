@@ -1,0 +1,153 @@
+name: Run Tests and Deploy
+
+on:
+  deployment:
+    branches:
+    # - master # TODO: Enable when merging into master.
+      - develop
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+    # - master # TODO: Enable when merging into master.
+      - develop
+
+# ------- Environment
+env:
+  # calculated values (for steps.env.outputs.*)
+  APP_ENV: ${{ (github.event_name == 'deployment' && github.event.deployment.environment) || (github.ref == 'refs/heads/master' && 'production') || 'staging' }}
+  SHOULD_DEPLOY: ${{ github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop') && 'true' || 'false' }}
+
+  # for deploy
+  AWS_DEPLOY_ACCESS_ID: ${{ secrets.AWS_DEPLOY_ACCESS_ID }}
+  AWS_DEPLOY_SECRET_KEY: ${{ secrets.AWS_DEPLOY_SECRET_KEY }}
+
+  # build, test, and deploy
+  CONTENTFUL_BLOG_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_BLOG_ACCESS_TOKEN }}
+  CONTENTFUL_BLOG_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_BLOG_PREVIEW_TOKEN }}
+  CONTENTFUL_PARTNERS_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_ACCESS_TOKEN }}
+  CONTENTFUL_PARTNERS_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_PARTNERS_PREVIEW_TOKEN }}
+  CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN }}
+  CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN: ${{ secrets.CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN }}
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Convert Environment to Output
+      id: env
+      # Unfortunately we are unable to access env (eg. SHOULD_DEPLOY) inside of an expression (eg. if, with, etc).
+      # So we have to convert environment variables to output variables.
+      run: |
+        echo ::set-output name=app_env::$APP_ENV
+        echo ::set-output name=should_deploy::$SHOULD_DEPLOY
+    - name: DEBUG Calculated Environment
+      # app_env = String production|staging
+      # should_deploy = String true|false # deploys if event != pull_request on develop and master branches
+      run: |
+        echo "app_env=${{ steps.env.outputs.app_env }}"
+        echo "should_deploy=${{ steps.env.outputs.should_deploy }}"
+
+
+    # -------- Github Checkout
+    - uses: actions/checkout@master
+
+
+    # -------- Ruby & Dependencies
+    - name: Install Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.4.x'
+    - name: Install Ruby Dependencies
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+
+
+    # -------- JS & Dependencies
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: Install Javascript Dependencies
+      run: yarn install --frozen-lockfile --non-interactive
+
+
+    # -------- Build Static Files
+    - name: Download Data from Contentful
+      run: bundle exec middleman contentful
+    - name: Build Static HTML
+      run: bundle exec middleman build --verbose
+
+
+    # -------- Run Tests
+    - name: Run Javascript Tests
+      run: yarn run jest --runInBand
+    - name: Run Ruby Tests
+      run: bundle exec rspec spec -p --format d
+
+
+    # -------- Deploy to S3 ++ Notify Bugsnag and Github Deployment of Status
+    - name: Update deployment status to pending
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
+      uses: 'deliverybot/deployment-status@master'
+      if: github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
+      with:
+        state: 'pending'
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy to S3
+      if: success() && steps.env.outputs.should_deploy == 'true'
+      run: bundle exec middleman s3_sync
+    - name: Notify Bugsnag of Released Code
+      if: success() && steps.env.outputs.should_deploy == 'true'
+      run: |
+        curl https://build.bugsnag.com/ \
+          --header "Content-Type: application/json" \
+          --data '{
+            "apiKey": ${{ secrets.BUGSNAG_API_KEY }},
+            "releaseStage": ${{ steps.env.outputs.app_env }},
+            "builderName": "Github Actions",
+            "sourceControl": {
+              "provider": "github",
+              "repository": ${{ github.repository }},
+              "revision": ${{ github.sha }}
+            }
+          }'
+    - name: Update deployment status to success
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
+      if:  github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'success'
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Update deployment status to failure
+      # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
+      if:  github.event_name == 'deployment' && failure() && steps.env.outputs.should_deploy == 'true'
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'failure'
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+
+    # -------- Slack Notifications (different for test vs. deploy).
+    - name: Send Deploy Notification
+      uses: homoluctus/slatify@master
+      if: steps.env.outputs.should_deploy == 'true' && always()
+      with:
+        type: ${{ job.status }}
+        job_name: "[www-${{ steps.env.outputs.app_env }}] Deploy"
+        channel: '#static_site_builds'
+        icon_emoji: ':rocket:'
+        url: ${{ secrets.SLACK_WEBHOOK_URL }}
+    - name: Send Test Failed Notification
+      uses: homoluctus/slatify@master
+      if: steps.env.outputs.should_deploy == 'false' && failure()
+      with:
+        type: ${{ job.status }}
+        job_name: "[www-${{ github.ref }}] Tests"
+        channel: '#static_site_builds'
+        icon_emoji: ':goose:'
+        url: ${{ secrets.SLACK_WEBHOOK_URL }}

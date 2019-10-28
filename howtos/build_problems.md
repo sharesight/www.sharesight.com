@@ -1,8 +1,13 @@
 # Figuring Out Middleman Build Problems
 
-For the *marketing* site, look at: https://travis-ci.org/sharesight/www.sharesight.com
+Look at the logs from Github Actions https://github.com/sharesight/help.sharesight.com/actions
 
-For the *help* site, look at: https://travis-ci.org/sharesight/help.sharesight.com
+### NOTE: This document is outdated as we've switched over from Travis to Github Actions, but the errors have stayed the same.
+
+2019-10-23:
+If this is still needed, please request an updated version of this document!
+
+-------
 
 You'll see the current builds going on, and if you look into the `Build History` tab (e.g. https://travis-ci.org/sharesight/help.sharesight.com/builds) also the recent ones.  You can also look under branches, if you're only interested in one (say `develop` for the staging site).
 
@@ -29,7 +34,7 @@ From https://travis-ci.org/sharesight/www.sharesight.com/jobs/506086753
 undefined method `+' for nil:NilClass
 ```
 
-If you see this pattern: `undefined method `something` for nil:NilClass` it means there's a blank field that Ruby is trying to process (in this example, it's trying to add/concatenate it with a `+` operation). 
+If you see this pattern: `undefined method `something` for nil:NilClass` it means there's a blank field that Ruby is trying to process (in this example, it's trying to add/concatenate it with a `+` operation).
 
 *Solution*: Look for a field that's blank and related to the page mentioned - a tax reporting landing page, here, from the looks of it.
 

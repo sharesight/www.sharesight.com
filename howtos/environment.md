@@ -15,11 +15,12 @@ As this is a public repo, everything is stored in local environment keys.
      - CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN
      - CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN
  - For deploys to AWS, see `config/environment/*.rb`
-   - Use your own AWS Keys!
+   - Use your own AWS Keys! The Github Actions secrets are tied to the user `www_deploy`
    - AWS_DEPLOY_ACCESS_ID
    - AWS_DEPLOY_SECRET_KEY
 
-#### Travis Specific Environment:
- - For Travis Build Caching via aws-cli (currently linked to the `travis-ci` user, which is currently shared by both [www] and [help]):
-   - AWS_ACCESS_KEY_ID
-   - AWS_SECRET_ACCESS_KEY
+#### Github Actions Secrets
+  - All of these go into https://github.com/sharesight/www.sharesight.com/settings/secrets under the same name.
+
+#### Contentful Webhooks
+  - API Webhooks require a Personal Access Token with `repo_deployment` access from Github to this branch for API Authorization.  We use a Machine User for this.
