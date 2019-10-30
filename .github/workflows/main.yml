@@ -3,14 +3,14 @@ name: Run Tests and Deploy
 on:
   deployment:
     branches:
-    # - master # TODO: Enable when merging into master.
+      - master
       - develop
   pull_request:
     branches:
       - master
   push:
     branches:
-    # - master # TODO: Enable when merging into master.
+      - master
       - develop
 
 # ------- Environment
