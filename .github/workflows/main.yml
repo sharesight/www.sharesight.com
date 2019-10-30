@@ -93,7 +93,7 @@ jobs:
     # -------- Deploy to S3 ++ Notify Bugsnag and Github Deployment of Status
     - name: Update deployment status to pending
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
-      uses: 'deliverybot/deployment-status@master'
+      uses: 'deliverybot/deployment-status@v1'
       if: github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
       with:
         state: 'pending'
@@ -119,14 +119,14 @@ jobs:
     - name: Update deployment status to success
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       if:  github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'
-      uses: 'deliverybot/deployment-status@master'
+      uses: 'deliverybot/deployment-status@v1'
       with:
         state: 'success'
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Update deployment status to failure
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       if:  github.event_name == 'deployment' && failure() && steps.env.outputs.should_deploy == 'true'
-      uses: 'deliverybot/deployment-status@master'
+      uses: 'deliverybot/deployment-status@v1'
       with:
         state: 'failure'
         token: ${{ secrets.GITHUB_TOKEN }}
