@@ -14,7 +14,7 @@
   - Run `yarn jest`.
 
 ## Deployment
-  - Always run these steps on the `develop` branch when testing. There could be multiple testing versions of this lambda file around and you should always work with the merged copy, not your own copy, when modifying staging.
+  - Merge your changes to the `develop` branch before running this steps. There could be multiple testing versions of this lambda file around and you should always work with the merged copy, not your own copy, when modifying staging.
   - Test code changes first via `yarn jest` and improve `./localizationLambda.jest.js` whenever you make changes!
   - Visit the [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/localizeCloudfrontResponse/versions/$LATEST)
   - Paste the contents of `./localizationLambda.js` into the code section of `$LATEST`.
