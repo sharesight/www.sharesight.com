@@ -10,7 +10,7 @@
  * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
  */
 
-const version = '7';
+const version = '8';
 const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
