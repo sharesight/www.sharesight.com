@@ -1,16 +1,16 @@
 'use strict';
 
 /*
- * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v6.10.
- * If the Node version changes, this code may need major refactor.
+ * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v10.x
  * It takes a request + response and returns a response.
  * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
+ * This lambda function includes `strict-transport-security` headers to all responses.
  *
  * This must be deployed *MANUALLY*.  See `../lambda/README.md`.
- * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
+ * If you are viewing this file inside of AWS, this code comes from the `lambda` folder on https://github.com/sharesight/www.sharesight.com/.
  */
 
-const version = '7';
+const version = '9';
 const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
@@ -96,9 +96,15 @@ function pathWithoutCountryCode (path) {
   return path;
 }
 
+function getStrictTransportSecurityHeader () {
+  return [{key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubdomains; preload'}];
+}
+
 const handler = function (event, context, callback) {
     const request = event.Records[0].cf.request;
     const response = event.Records[0].cf.response;
+
+    response.headers['strict-transport-security'] = getStrictTransportSecurityHeader();
 
     // if we don't want to localize the url, eg. Blogs
     for (let i=0; i < dontProcessLength; i++) {
@@ -169,6 +175,7 @@ module.exports = {
   getPathCountryCode: getPathCountryCode,
   getHeaderCountryCode: getHeaderCountryCode,
   getCookieCountryCode: getCookieCountryCode,
+  getStrictTransportSecurityHeader: getStrictTransportSecurityHeader,
   pathWithoutCountryCode: pathWithoutCountryCode,
   handler: handler,
 };

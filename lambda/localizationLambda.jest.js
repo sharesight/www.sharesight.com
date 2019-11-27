@@ -8,6 +8,7 @@ const {
   getPathCountryCode,
   getHeaderCountryCode,
   getCookieCountryCode,
+  getStrictTransportSecurityHeader,
   pathWithoutCountryCode,
   handler,
 } = require('./localizationLambda.js');
@@ -496,5 +497,49 @@ describe('localizationLambda', () => {
       });
     });
 
+    describe(`security headers`, () => {
+      test(`should be included even on ignored urls`, () => {
+        const allUris = ignoreUris.concat(assetUris);
+        expect.assertions(allUris.length * 4);
+
+        allUris.forEach(uri => {
+          const mockCallback = jest.fn();
+          const event = generateCloudFrontEvent(uri);
+          const handled = handler(event, null, mockCallback);
+
+          const headers = mockCallback.mock.calls[0][1]['headers'];
+          expect(mockCallback.mock.calls.length).toEqual(1);
+          expect(mockCallback.mock.calls[0][0]).toEqual(null);
+          expect(headers['strict-transport-security']).not.toBeNull();
+          expect(headers['strict-transport-security']).toEqual(getStrictTransportSecurityHeader());
+        });
+      });
+      test(`should be included when cloudfront country matches the request page locale`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/nz/faq', 'us', 'nz');
+        const handled = handler(event, null, mockCallback);
+
+
+        const headers = mockCallback.mock.calls[0][1]['headers'];
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(headers['strict-transport-security']).not.toBeNull();
+        expect(headers['strict-transport-security']).toEqual(getStrictTransportSecurityHeader());
+      });
+
+      test(`should be included when redirecting to the cookie country when no page locale is set`, () => {
+        const mockCallback = jest.fn();
+        const event = generateCloudFrontEvent('/', 'uk', 'nz');
+        const eventResponse = Object.assign({}, event.Records[0].cf.response)
+        const handled = handler(event, null, mockCallback);
+
+
+        const headers = mockCallback.mock.calls[0][1]['headers'];
+        expect(mockCallback.mock.calls.length).toEqual(1);
+        expect(mockCallback.mock.calls[0][0]).toEqual(null);
+        expect(headers['strict-transport-security']).not.toBeNull();
+        expect(headers['strict-transport-security']).toEqual(getStrictTransportSecurityHeader());
+      });
+    });
   });
 });

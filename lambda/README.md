@@ -1,4 +1,4 @@
-# Cloudfront + Lambda for localization
+# Cloudfront + Lambda for localization and security headers
 
 ## WARNING
 #### AWS May change!
@@ -9,12 +9,13 @@
 
 ## Why
   - We want to serve users their localized content.
+  - We want to include security headers to static website response.
 
 ## Tests
   - Run `yarn jest`.
 
 ## Deployment
-  - Merge your changes to the `develop` branch before running this steps. There could be multiple testing versions of this lambda file around and you should always work with the merged copy, not your own copy, when modifying staging.
+  - Merge your changes to the `develop` branch before running these steps. There could be multiple testing versions of this lambda file around and you should always work with the merged copy, not your own copy, when modifying staging.
   - Test code changes first via `yarn jest` and improve `./localizationLambda.jest.js` whenever you make changes!
   - Visit the [Lambda](https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/localizeCloudfrontResponse/versions/$LATEST)
   - Paste the contents of `./localizationLambda.js` into the code section of `$LATEST`.
