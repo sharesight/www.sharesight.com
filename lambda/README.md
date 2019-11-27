@@ -1,4 +1,4 @@
-# Cloudfront + Lambda for localization
+# Cloudfront + Lambda for localization and security headers
 
 ## WARNING
 #### AWS May change!
@@ -9,6 +9,7 @@
 
 ## Why
   - We want to serve users their localized content.
+  - We want to include security headers to static website response.
 
 ## Tests
   - Run `yarn jest`.

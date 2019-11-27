@@ -1,13 +1,13 @@
 'use strict';
 
 /*
- * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v6.10.
- * If the Node version changes, this code may need major refactor.
+ * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v10.x
  * It takes a request + response and returns a response.
  * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
+ * This lambda function includes `strict-transport-security` headers to all responses.
  *
  * This must be deployed *MANUALLY*.  See `../lambda/README.md`.
- * If you are viewing this file inside of AWS, this code comes from https://github.com/sharesight/www.sharesight.com/.
+ * If you are viewing this file inside of AWS, this code comes from the `lambda` folder on https://github.com/sharesight/www.sharesight.com/.
  */
 
 const version = '9';
