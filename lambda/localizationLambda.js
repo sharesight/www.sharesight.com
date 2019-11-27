@@ -96,9 +96,15 @@ function pathWithoutCountryCode (path) {
   return path;
 }
 
+function getStrictTransportSecurityHeader () {
+  return [{key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubdomains; preload'}];
+}
+
 const handler = function (event, context, callback) {
     const request = event.Records[0].cf.request;
     const response = event.Records[0].cf.response;
+
+    response.headers['strict-transport-security'] = getStrictTransportSecurityHeader();
 
     // if we don't want to localize the url, eg. Blogs
     for (let i=0; i < dontProcessLength; i++) {
@@ -169,6 +175,7 @@ module.exports = {
   getPathCountryCode: getPathCountryCode,
   getHeaderCountryCode: getHeaderCountryCode,
   getCookieCountryCode: getCookieCountryCode,
+  getStrictTransportSecurityHeader: getStrictTransportSecurityHeader,
   pathWithoutCountryCode: pathWithoutCountryCode,
   handler: handler,
 };
