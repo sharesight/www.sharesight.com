@@ -51,7 +51,7 @@ section_class: 'section_default'
               %>
               <%= (plan[:price] * 11).round(0) %>
               <span class="pricing__unit">/yr</span>
-              <span class="pricing__badge">Save 1 month</span>
+              <span class="pricing__badge">save 1 month</span>
             </div>
           <% end %>
 
@@ -69,7 +69,7 @@ section_class: 'section_default'
 
           <div class="pricing__support">
             <%# :support_type can be either array or string %>
-            <% Array(plan[:support_type]).each do |support| %>
+            <% Array(plan[:support_list]).each do |support| %>
               <%= partial "partials/components/markdown", locals: { markdown: support } %>
             <% end %>
           </div>
@@ -119,7 +119,8 @@ section_class: 'section_default'
         :custom_groups,
         "[Organise your portfolio](#{localize_url('custom-groups', base_url: config[:help_url], locale_id: locale_obj[:id])}){:target='_blank'}
         according to your preferred asset allocation methodology"
-      ]
+      ],
+      ["Support Level", :support_level]
     ],
     title: "Compare Plans"
   } %>
