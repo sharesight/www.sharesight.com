@@ -45,13 +45,9 @@ section_class: 'section_default'
           <% if plan[:price] > 0 %>
             <div class="pricing__price_annual">
               <span class="pricing__currency"><%= locale_obj[:currency_symbol] %></span>
-              <%#
-                NOTE: This should probably live in `price_annual` instead.
-                In the app, this is actually `(plan * 12 - (plan * .08333…)).round(2)`..
-              %>
-              <%= (plan[:price] * 11).round(0) %>
+              <%= plan[:price_annual] %>
               <span class="pricing__unit">/yr</span>
-              <span class="pricing__badge">save 1 month</span>
+              <span class="pricing__badge">25% discount</span>
             </div>
           <% end %>
 

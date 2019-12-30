@@ -4,14 +4,17 @@
   },
   {
     "label": "Starter",
-    "price": 9
+    "price": 11,
+    "price_annual": 99
   },
   {
     "label": "Investor",
-    "price": 15
+    "price": 19,
+    "price_annual": 171
   },
   {
     "label": "Expert",
-    "price": 19
+    "price": 24,
+    "price_annual": 216
   }
 ]

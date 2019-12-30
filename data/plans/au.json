@@ -8,7 +8,8 @@
   },
   {
     "label": "Starter",
-    "price": 15,
+    "price": 19,
+    "price_annual": 171,
 
     "reports": {
       "capital_gains_tax_report": true
@@ -16,7 +17,8 @@
   },
   {
     "label": "Investor",
-    "price": 25,
+    "price": 31,
+    "price_annual": 279,
 
     "reports": {
       "capital_gains_tax_report": true,
@@ -33,7 +35,8 @@
   },
   {
     "label": "Expert",
-    "price": 39,
+    "price": 48,
+    "price_annual": 432,
 
     "reports": {
       "capital_gains_tax_report": true,
