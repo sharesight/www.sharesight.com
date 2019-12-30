@@ -4,11 +4,13 @@
   },
   {
     "label": "Starter",
-    "price": 15
+    "price": 19,
+    "price_annual": 171
   },
   {
     "label": "Investor",
-    "price": 25,
+    "price": 31,
+    "price_annual": 279,
 
     "reports": {
       "diversity_report": false
@@ -16,7 +18,8 @@
   },
   {
     "label": "Expert",
-    "price": 39,
+    "price": 48,
+    "price_annual": 432,
     "portfolios": 4,
 
     "reports": {

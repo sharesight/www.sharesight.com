@@ -55,7 +55,8 @@
     "label": "Starter",
     "theme": "secondary",
 
-    "price": 12,
+    "price": 15,
+    "price_annual": 135,
     "portfolios": 1,
     "custom_groups": 1,
     "holdings": 20,
@@ -108,7 +109,8 @@
     "label": "Investor",
     "theme": "primary",
 
-    "price": 19,
+    "price": 24,
+    "price_annual": 216,
     "portfolios": 3,
     "custom_groups": 2,
     "holdings": "Unlimited",
@@ -164,7 +166,8 @@
     "label": "Expert",
     "theme": "secondary",
 
-    "price": 25,
+    "price": 31,
+    "price_annual": 279,
     "portfolios": 5,
     "custom_groups": 5,
     "holdings": "Unlimited",
