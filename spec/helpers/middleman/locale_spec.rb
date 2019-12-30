@@ -133,15 +133,18 @@ describe 'Helper', :type => :helper do
 
       plan_label = 'starter'
       plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(15)
+      expect(plan.price).to eq(19)
+      expect(plan.price_annual).to eq(171)
 
       plan_label = 'investor'
       plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(25)
+      expect(plan.price).to eq(31)
+      expect(plan.price_annual).to eq(279)
 
       plan_label = 'expert'
       plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(39)
+      expect(plan.price).to eq(48)
+      expect(plan.price_annual).to eq(432)
     end
 
     it "should give custom reports for au plans" do
