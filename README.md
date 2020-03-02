@@ -1,5 +1,7 @@
 # Sharesight Static Website
 
+![Run Tests and Deploy](https://github.com/sharesight/www.sharesight.com/workflows/Run%20Tests%20and%20Deploy/badge.svg)
+
 ## Dependencies
 
 - Ruby 2.4.2+
@@ -40,7 +42,7 @@ Commands (see package.json):
 
 ## Cloudfront Localization via Lambda
  - See `lambda/README.md`!
- 
+
 
 ## Manual Deploys
 
