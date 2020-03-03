@@ -94,7 +94,15 @@ describe 'Space Middleman Helper', :type => :helper do
 
     it "should be the Category Name on the first partner category" do
       category = get_partners_categories().find{ |model| model[:name] }
+
       visit '/partners/' + @app.url_friendly_string(category[:name])
+
+      pp '@@@debug@@@'
+      pp category[:id], @app.url_friendly_string(category[:name]), @app.space_category_title, category[:name]
+      pp '----all----'
+      pp get_partners_categories().map{|m| "#{m[:id]}=#{m[:name]}" }
+      pp '@@@@@@@@@@@'
+
       expect(@app.space_category_title).to eq("#{category[:name]} Partners")
     end
   end
