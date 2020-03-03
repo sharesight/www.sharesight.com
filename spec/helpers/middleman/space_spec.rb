@@ -101,6 +101,10 @@ describe 'Space Middleman Helper', :type => :helper do
       pp category[:id], @app.url_friendly_string(category[:name]), @app.space_category_title, category[:name]
       pp '----all----'
       pp get_partners_categories().map{|m| "#{m[:id]}=#{m[:name]}" }
+      pp '--metadata--'
+      pp @app.current_page.metadata
+      pp '---locals---'
+      pp @app.current_page.metadata && @app.current_page.metadata[:locals]
       pp '@@@@@@@@@@@'
 
       expect(@app.space_category_title).to eq("#{category[:name]} Partners")
