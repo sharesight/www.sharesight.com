@@ -57,7 +57,7 @@ module CapybaraPartnersHelpers
 
       category[:partners] = if category[:id] != 'all'
         partners.select{ |partner|
-          partner.categories.select{ |partner_category| partner_category[:id] == category[:id] }.length >= 1 rescue false
+          partner[:categories].select{ |partner_category| partner_category[:id] == category[:id] }.length >= 1 rescue false
         }
       else
         partners
@@ -69,6 +69,6 @@ module CapybaraPartnersHelpers
     return categories unless check_length
 
     # only take categories with partners
-    categories.select { |category| category.partners&.length >= 1 }
+    categories.select { |category| category[:partners]&.length >= 1 }
   end
 end
