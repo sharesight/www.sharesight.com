@@ -1,0 +1,101 @@
+.index-hero {
+  background: #fff;
+  padding-top: 0;
+  padding-bottom: $gutter;
+  overflow: hidden;
+  text-align: center;
+
+  @include respond-to(sm, min) {
+    padding-top: $gutter;
+    text-align: left;
+  }
+
+  &__text {
+    @include respond-to(sm, min) {
+      float: left;
+      width: 33%;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    color: $colour_secondary;
+
+    @include respond-to(xs, max) {
+      @include fontSize(35px, 1.035);
+    }
+
+    @media (min-width: 375px) { // $screen-xs-min + 55px to next breakpoint
+       @include fontSize(40px, .888);
+    }
+
+    @media (min-width: 425px) { // $screen-xs-min + 105px
+       @include fontSize(45px, 1);
+    }
+
+    @media (min-width: (($screen-sm-min + $screen-md-min) / 2)) { // Average between sm and md.
+       @include fontSize(60px, 1.05);
+    }
+
+    @include respond-to(md, min) {
+      @include fontSize(65px, 1.05);
+    }
+
+    @media (min-width: (($screen-md-min + $screen-lg-min) / 2)) {
+       @include fontSize(70px, 1.05);
+    }
+
+    @include respond-to(lg, min) {
+       @include fontSize(75px, 1.05);
+    }
+  }
+
+  &__intro {
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 36px;
+
+    display: none;
+    color: $colour_primary;
+    @include fontSize(14px, 1.5);
+    font-weight: 300;
+    margin: $gutter/2 0;
+
+    @include respond-to(xs, min) {
+      display: block;
+      @include fontSize(18px, 1.5);
+    }
+
+    @include respond-to(md, min) {
+      @include fontSize(20px, 1.3);
+      margin: $gutter 0;
+    }
+    @include respond-to(lg, min) {
+      @include fontSize(30px, 1.25);
+      margin: 30px 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: scale-down;
+    max-width: 600px;
+    max-height: 60vh;
+    margin: 0 auto;
+
+    @include respond-to(sm, min) {
+      max-width: 50%;
+      float: right;
+    }
+
+    @include respond-to(lg, min) {
+      max-height: 65vh;
+    }
+
+    @media (min-width: 1600px) {
+      max-height: 75vh;
+      max-width: 750px;
+      margin-right: 10%;
+    }
+  }
+}
