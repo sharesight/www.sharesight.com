@@ -11,6 +11,10 @@
   font-weight: bold;
   padding-top: 10px;
 
+  &--small {
+    font-size: 1.125rem;
+  }
+
   > li + li {
     padding-bottom: 0;
   }
