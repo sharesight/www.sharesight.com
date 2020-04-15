@@ -75,6 +75,10 @@
       flex-basis: auto;
     }
 
+    &-100 {
+      flex-basis: 100%; // Fit into halves, but account for padding
+    }
+
     &-50 {
       flex-basis: 45%; // Fit into halves, but account for padding
     }
