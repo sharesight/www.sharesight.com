@@ -62,4 +62,37 @@
     font-weight: 300;
     line-height: 1.45;
   }
+
+  /**
+   * Flex fitting setting per-column
+   */
+  &--fit {
+    &-match {
+      flex-basis: 0;
+    }
+
+    &-auto {
+      flex-basis: auto;
+    }
+
+    &-100 {
+      flex-basis: 100%; // Fit into halves, but account for padding
+    }
+
+    &-50 {
+      flex-basis: 45%; // Fit into halves, but account for padding
+    }
+
+    &-33 {
+      flex-basis: 30%; // Fit into thirds, but account for padding
+    }
+
+    &-25 {
+      flex-basis: 22.5%; // Fit into quarters, but account for padding
+    }
+
+    &-20 {
+      flex-basis: 17.5%; // Fit into fifths, but account for padding
+    }
+  }
 }
