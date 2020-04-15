@@ -4,6 +4,7 @@
   classes = ['section__content']
   classes << 'hero__content' if locals[:hero]
   classes << 'section__content--card' if locals[:with_background]
+  classes << "section__content--fit-#{locals[:fit]}" if locals[:fit]
   classes << "section__content--#{locals[:alignment]}" if locals[:alignment]
 %>
 
