@@ -5,6 +5,7 @@
   /* 16:9 */
   height: 0;
   overflow: hidden;
+  border: 5px solid #ccc;
 }
 
 .external_video {
@@ -17,7 +18,6 @@
 }
 
 .video_overlay {
-  background-image: image-url("video/tony_ryburn.jpg");
   background-size: 101%;
   background-repeat: no-repeat;
   position: absolute;
@@ -26,8 +26,12 @@
   height: 101%;
   min-width: 101%;
 
-  &.xero {
-    background-image: image-url("https://i.vimeocdn.com/video/485090548_640.webp");
+  &.tony {
+    background-image: image-url("video/tony_ryburn.jpg");
+  }
+
+  &.explainer {
+    background-image: image-url("video/explainer.jpg");
   }
 }
 
