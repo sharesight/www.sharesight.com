@@ -5,11 +5,11 @@
   }
 
   .heading_important {
-    @include fontSize(50px);
+    @include fontSize(45px);
     line-height: 1.25;
 
     @media (min-width: $screen-sm-min) {
-       @include fontSize(60px);
+       @include fontSize(50px);
     }
   }
 

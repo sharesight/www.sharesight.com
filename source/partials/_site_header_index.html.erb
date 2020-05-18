@@ -1,4 +1,4 @@
-<header class="masthead" id="js-banner" tabindex="0" role="banner">
+<header class="masthead masthead_tier masthead_blank" tabindex="0" role="banner">
   <div class="masthead_nav_wrapper">
     <div class="container">
       <nav role="navigation" class="nav">
@@ -8,33 +8,27 @@
       </nav>
     </div>
   </div>
-
-  <div id="js-video-wrapper">
-  </div>
-
-  <img src="<%=image_path('banner.jpg')%>" class="masthead_image" id="js-banner-image" alt="Portfolio Management Tool - Sharesight">
-  <div class="container">
-    <div class="masthead_content" id="banner_heading">
-      <h1 class="hero_title heading_light">Meet Sharesight</h1>
-
-      <h2 class="hero_intro heading_normal">
-        <%= locale_page(page: 'index', locale_obj: locale_obj)[:tagline] %>
-      </h2>
-
-      <a href="<%= config[:signup_url] %>" class="btn btn--solid btn--secondary" title="Sign up for Sharesight">GET STARTED – <strong>FOR FREE</strong></a>
-    </div>
-  </div>
 </header>
 
-<div class="all_menus" id="js-sliding-menu" data-menu-visibility="1">
-  <div id="menu_mask" class="mask"></div>
+<div class="container index-hero">
+  <img
+    src="<%= image_path('devices@1200w.png') %>"
+    srcset="<%= image_path('devices.png') %> 2x"
+    alt="<%= locale_obj[:default_title] %>"
+    class="index-hero__image"
+  />
 
-  <div class="menu" id="menu">
-    <div id="js-close" class="close_wrapper" tabindex="0" aria-label="Exit Extended Menu">
-      <span class="close_text">Close</span>
-      <%= image_tag "/img/icons/close.svg", class: "icon close" %>
-    </div>
+  <div class="index-hero__text">
+    <h1 class="index-hero__title">Meet Sharesight</h1>
 
-    <%= partial "partials/main_nav", locals: { locale_obj: locale_obj } %>
+    <h2 class="index-hero__intro">
+      <%= locale_page(page: 'index', locale_obj: locale_obj)[:tagline] %>
+    </h2>
+
+    <a href="<%= config[:signup_url] %>" class="index-hero__button btn btn--solid btn--secondary" title="Sign up for Sharesight">
+      GET STARTED – <strong>FOR FREE</strong>
+    </a>
   </div>
 </div>
+
+<%= partial "partials/main_nav", locals: { locale_obj: locale_obj } %>

@@ -99,6 +99,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
         "page": "404",
         "page_title": "Page Not Found | Sharesight",
         "page_description": "The leading online stock portfolio tracker & reporting tool for DIY investors. Track prices, trades, dividends, performance and tax!",
@@ -212,6 +219,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight Australia",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Australia. Using the Sharesight Referral Program means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
         "page": "404",
         "page_title": "Page Not Found | Sharesight Australia",
         "page_description": "The leading online share portfolio tracker & reporting tool for Australian DIY investors. Track share prices, trades, dividends, performance and tax!",
@@ -314,6 +328,13 @@
         "page": "sharesight-professional-terms-of-use",
         "page_title": "Terms of Use | Sharesight Pro Canada",
         "page_description": "Terms of Use apply to your usage of Sharesight Pro Canada services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight Canada",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Canada. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 0.1
       },
@@ -424,6 +445,13 @@
         "sitemap_priority": 0.1
       },
       {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight New Zealand",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight New Zealand. Using the Sharesight Referral Program means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
         "page": "404",
         "page_title": "Page Not Found | Sharesight New Zealand",
         "page_description": "The leading online share portfolio tracker & reporting tool for New Zealand DIY investors. Track share prices, trades, dividends, performance and tax!",
@@ -527,6 +555,13 @@
         "page": "sharesight-professional-terms-of-use",
         "page_title": "Terms of Use | Sharesight UK",
         "page_description": "Terms of Use apply to your usage of Sharesight Pro UK services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight UK",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight UK. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "sitemap_priority": 0.1
       },

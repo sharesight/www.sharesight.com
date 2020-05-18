@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sharesight/www.sharesight.com#readme",
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^26.0.1"
   },
   "dependencies": {}
 }
