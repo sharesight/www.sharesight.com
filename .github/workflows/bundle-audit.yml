@@ -35,7 +35,7 @@ jobs:
     - name: Ruby Security Audit
       run: |
         bundle exec bundle-audit update
-        bundle exec bundle-audit check --ignore CVE-2014-10077
+        bundle exec bundle-audit check --ignore CVE-2014-10077 CVE-2020-8161 CVE-2020-8165
 
 
     # -------- Slack Notification when Failed
