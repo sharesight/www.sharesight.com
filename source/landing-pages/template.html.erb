@@ -4,6 +4,8 @@
 
   locals = locals.with_indifferent_access # this all comes from the Contentful model; it's merged in with locale_obj.
   sections = locals[:sections] || []
+
+  puts "@@@@template: #{locals[:test]}"
 %>
 
 <% sections.each_with_index do |section, index| %>

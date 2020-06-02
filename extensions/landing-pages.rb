@@ -25,7 +25,7 @@ module Middleman
           app.proxy(
             path_for_proxy(model.url_slug, locale_obj[:id]),
             "/landing-pages/template.html",
-            locals: model.merge({ locale_obj: locale_obj }).with_indifferent_access,
+            locals: model.merge({ locale_obj: locale_obj, test: 'foo' }).with_indifferent_access,
             layout: model.layout || 'layout',
             ignore: true
           )
