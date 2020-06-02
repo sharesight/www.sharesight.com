@@ -15,6 +15,7 @@
 
   # Make the locals variable seem a bit less magical.
   metas = {}
+  locals = locals.with_indifferent_access
   metas[:og_type]              = locals[:og_type] || 'website'
 
   metas[:canonical_url]        = locals[:canonical_url] || canonical_url

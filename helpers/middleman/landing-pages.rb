@@ -13,6 +13,10 @@ module MiddlemanLandingPagesHelpers
     landing_page[:url_slug]
   end
 
+  def landing_page_title(landing_page, locale_obj: default_locale_obj)
+    "#{landing_page[:page_title]} | #{locale_obj[:append_title]}"
+  end
+
   def landing_pages_collection(lang = default_locale_obj[:lang])
     @landing_pages_collection ||= {}
     @landing_pages_collection[lang] ||= data['landing-pages'].pages

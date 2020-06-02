@@ -10,7 +10,7 @@ describe 'Landing Pages Pages', :type => :feature do
 
         expect(page).to respond_successfully
         expect_campaign_code_cookie(page, landing_page)
-        expect_basic_metas(page, landing_page)
+        expect_basic_metas(page, landing_page, locale)
         expect_facebook_metas(page)
         expect_urls(page, landing_page)
         expect_elements(page, landing_page)
@@ -29,10 +29,11 @@ describe 'Landing Pages Pages', :type => :feature do
     end
   end
 
-  def expect_basic_metas(page, landing_page)
-    expect(page).to have_base_metas()
-    expect(page).to have_social_metas()
-    expect(page).to have_titles(landing_page[:page_title])
+  def expect_basic_metas(page, landing_page, locale)
+    expect(page).to have_base_metas
+    expect(page).to have_social_metas
+    expect(page.title).to match(/(#{landing_page[:page_title]})/)
+    expect(page.title).to end_with("#{locale[:append_title]}")
     expect(page).to have_descriptions(landing_page[:meta_description])
   end
 

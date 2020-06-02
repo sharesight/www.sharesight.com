@@ -8,6 +8,7 @@ module Middleman
   module Spaces
     class LandingPages < Middleman::Extension
       include ::ContentfulMiddleman::Helpers # grabs localize_entry
+      include MiddlemanLandingPagesHelpers
 
       def after_configuration
         if has_contentful_data? # this file will be ran before data is loaded, so we should protect it
@@ -21,10 +22,10 @@ module Middleman
 
       # Generate all Landing Pages
       def proxy_landing_pages(locale_obj)
-        process_collection(locale_obj[:lang]).each do |model|
+        process_collection(locale_obj).each do |model|
           app.proxy(
             path_for_proxy(model.url_slug, locale_obj[:id]),
-            "/landing-pages/template.html",
+            '/landing-pages/template.html',
             locals: model.merge({ locale_obj: locale_obj }).with_indifferent_access,
             layout: model.layout || 'layout',
             ignore: true
@@ -32,11 +33,13 @@ module Middleman
         end
       end
 
-      def process_collection(lang)
-        collection = app.data['landing-pages'].pages
-        collection = collection.map{ |tuple| tuple[1] } # contentful passes ["id", { ... }]
-        collection = collection.map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) }
-        return collection
+      def process_collection(locale_obj)
+        app.data['landing-pages'].pages.map do |tuple|
+          model = tuple[1] # contentful passes ["id", { ... }]
+          localized_model = localize_entry(model, locale_obj[:lang], default_locale_obj[:lang])
+          localized_model[:title] = landing_page_title(localized_model, locale_obj: locale_obj)
+          localized_model
+        end
       end
 
       def has_contentful_data?
