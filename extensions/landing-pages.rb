@@ -22,7 +22,7 @@ module Middleman
 
       # Generate all Landing Pages
       def proxy_landing_pages(locale_obj)
-        process_collection(locale_obj).each do |model|
+        landing_pages_collection(locale_obj: locale_obj, app_data: app.data).each do |model|
           app.proxy(
             path_for_proxy(model.url_slug, locale_obj[:id]),
             '/landing-pages/template.html',
@@ -30,15 +30,6 @@ module Middleman
             layout: model.layout || 'layout',
             ignore: true
           )
-        end
-      end
-
-      def process_collection(locale_obj)
-        app.data['landing-pages'].pages.map do |tuple|
-          model = tuple[1] # contentful passes ["id", { ... }]
-          localized_model = localize_entry(model, locale_obj[:lang], default_locale_obj[:lang])
-          localized_model[:title] = landing_page_title(localized_model, locale_obj: locale_obj)
-          localized_model
         end
       end
 

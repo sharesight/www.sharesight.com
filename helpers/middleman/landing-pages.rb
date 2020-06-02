@@ -17,11 +17,15 @@ module MiddlemanLandingPagesHelpers
     "#{landing_page[:page_title]} | #{locale_obj[:append_title]}"
   end
 
-  def landing_pages_collection(lang = default_locale_obj[:lang])
+  def landing_pages_collection(locale_obj: default_locale_obj, app_data: data)
+    lang = locale_obj[:lang]
+
     @landing_pages_collection ||= {}
-    @landing_pages_collection[lang] ||= data['landing-pages'].pages
-      .map{ |tuple| tuple[1] }
-      .map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) }
-      .select{ |model| !model[:url_slug].blank? }
+    @landing_pages_collection[lang] ||= app_data['landing-pages'].pages.map do |tuple|
+      model = tuple[1]
+      localized_model = localize_entry(model, lang, default_locale_obj[:lang])
+      localized_model[:title] = landing_page_title(localized_model, locale_obj: locale_obj)
+      localized_model
+    end.reject{ |model| model[:url_slug].blank? }
   end
 end
