@@ -32,7 +32,7 @@ describe 'Landing Pages Pages', :type => :feature do
   def expect_basic_metas(page, landing_page, locale)
     expect(page).to have_base_metas
     expect(page).to have_social_metas
-    expect(page.title).to match(/(#{landing_page[:page_title]})/)
+    expect(page.title).to start_with(landing_page[:page_title])
     expect(page.title).to end_with("#{locale[:append_title]}")
     expect(page).to have_descriptions(landing_page[:meta_description])
   end
