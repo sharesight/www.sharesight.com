@@ -21,6 +21,10 @@
             <%= image_tag "icons/#{col.icon}.svg", class: "icon" %>
             <h3 class="heading"><%= col.title %></h3>
             <p><%= col.description %></p>
+            <br />
+            <a href="<%= col.link %>" title="Learn More" class="featured_link__learn-more btn--solid btn--secondary">
+              LEARN MORE
+            </a>
           </div>
         <%end%>
       </div>

@@ -37,4 +37,21 @@
       margin-top: $gutter;
     }
   }
+
+  &__learn-more {
+    @extend .btn;
+    @extend .btn--solid;
+    @extend .btn--pro;
+
+    font-weight: 600;
+
+    color: #fff;
+    border-color: #F5A623;
+    background-color: #F5A623;
+
+    @include respond-to(sm, max) {
+      display: block;
+      width: 100%;
+    }
+  }
 }
