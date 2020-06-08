@@ -46,8 +46,8 @@
     font-weight: 600;
 
     color: #fff;
-    border-color: #F5A623;
-    background-color: #F5A623;
+    border-color: $colour_secondary;
+    background-color: $colour_secondary;
 
     @include respond-to(sm, max) {
       display: block;
