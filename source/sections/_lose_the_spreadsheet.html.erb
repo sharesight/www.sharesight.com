@@ -22,7 +22,7 @@
             <h3 class="heading"><%= col.title %></h3>
             <p><%= col.description %></p>
             <br />
-            <a href="<%= localize_path(col.link, locale_id: locale_obj[:id]) %>" title="Learn More" class="featured_link__learn-more btn--solid btn--secondary">
+            <a href="<%= localize_url(col.link, locale_id: locale_obj[:id]) %>" title="Learn More" class="featured_link__learn-more btn--solid btn--secondary">
               LEARN MORE
             </a>
           </div>
