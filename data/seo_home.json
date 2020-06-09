@@ -8,17 +8,20 @@
       {
         "icon": "buzzing_magnet",
         "title": "Track your dividends",
-        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated."
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated.",
+        "link": "/dividend-tracker"
       },
       {
         "icon": "stacked_coins_and_chart",
         "title": "Know your true performance",
-        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts.",
+        "link": "/investment-portfolio-performance"
       },
       {
         "icon": "report_on_computer_screen",
         "title": "Save time and money",
-        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time.",
+        "link": "/investment-portfolio-tax"
       }
     ]
   },
@@ -31,17 +34,20 @@
       {
         "icon": "buzzing_magnet",
         "title": "Track your dividends",
-        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated."
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated.",
+        "link": "/dividend-tracker"
       },
       {
         "icon": "stacked_coins_and_chart",
         "title": "Know your true performance",
-        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts.",
+        "link": "/investment-portfolio-performance"
       },
       {
         "icon": "report_on_computer_screen",
         "title": "Save time and money",
-        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time.",
+        "link": "/investment-portfolio-tax"
       }
     ]
   },
@@ -54,17 +60,20 @@
       {
         "icon": "buzzing_magnet",
         "title": "Track your dividends",
-        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated."
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, DRPs and share splits are automatically incorporated.",
+        "link": "/dividend-tracker"
       },
       {
         "icon": "stacked_coins_and_chart",
         "title": "Know your true performance",
-        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts.",
+        "link": "/investment-portfolio-performance"
       },
       {
         "icon": "report_on_computer_screen",
         "title": "Save time and money",
-        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time.",
+        "link": "/investment-portfolio-tax"
       }
     ]
   },
@@ -77,17 +86,20 @@
       {
         "icon": "buzzing_magnet",
         "title": "Track your dividends",
-        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated."
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends, and stock splits are automatically incorporated.",
+        "link": "/dividend-tracker"
       },
       {
         "icon": "stacked_coins_and_chart",
         "title": "Know your true performance",
-        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts.",
+        "link": "/investment-portfolio-performance"
       },
       {
         "icon": "report_on_computer_screen",
         "title": "Save time and money",
-        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time.",
+        "link": "/investment-portfolio-tax"
       }
     ]
   },
@@ -100,17 +112,20 @@
       {
         "icon": "buzzing_magnet",
         "title": "Track your dividends",
-        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated."
+        "description": "Import your trading history, then sit back and watch as corporate actions such as dividends and share splits are automatically incorporated.",
+        "link": "/dividend-tracker"
       },
       {
         "icon": "stacked_coins_and_chart",
         "title": "Know your true performance",
-        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts."
+        "description": "Understand exactly how your investments are performing with daily price & currency updates, plus powerful reports and optional email alerts.",
+        "link": "/investment-portfolio-performance"
       },
       {
         "icon": "report_on_computer_screen",
         "title": "Save time and money",
-        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time."
+        "description": "Share access to your portfolio and tax reports with your accountant in a few clicks and you’ll be on your way to saving time and money during tax time.",
+        "link": "/investment-portfolio-tax"
       }
     ]
   }
