@@ -61,6 +61,7 @@ describe 'Landing Pages Middleman Helper', :type => :helper do
       expect(data).to be_kind_of(Array)
       data.each do |a|
         expect(a).to include(:id)
+        expect(a).to include(:description)
       end
     end
   end

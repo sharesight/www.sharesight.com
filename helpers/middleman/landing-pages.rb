@@ -22,9 +22,11 @@ module MiddlemanLandingPagesHelpers
 
     @landing_pages_collection ||= {}
     @landing_pages_collection[lang] ||= app_data['landing-pages'].pages.map do |tuple|
-      model = tuple[1]
+      model = tuple[1] # contentful passes ["id", { ... }]
       localized_model = localize_entry(model, lang, default_locale_obj[:lang])
       localized_model[:title] = landing_page_title(localized_model, locale_obj: locale_obj)
+      localized_model[:description] = localized_model[:page_description]
+
       localized_model
     end.reject{ |model| model[:url_slug].blank? }
   end
