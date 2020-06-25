@@ -53,7 +53,7 @@ jobs:
 
 
     # -------- Github Checkout
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
 
 
     # -------- Ruby & Dependencies
