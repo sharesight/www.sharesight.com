@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+    timezone: Pacific/Auckland
+  open-pull-requests-limit: 99
+  reviewers:
+  - kylorhall
+  labels:
+  - bot-pr
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+    timezone: Pacific/Auckland
+  open-pull-requests-limit: 99
+  labels:
+  - bot-pr
+  versioning-strategy: lockfile-only
