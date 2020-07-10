@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+    timezone: Pacific/Auckland
+  open-pull-requests-limit: 99
+  reviewers:
+  - kylorhall
+  labels:
+  - bot-pr
+  - dependencies
+  - javascript
+
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+    timezone: Pacific/Auckland
+  open-pull-requests-limit: 99
+  reviewers:
+  - irwalker 
+  labels:
+  - bot-pr
+  - dependencies
+  - ruby
+  versioning-strategy: lockfile-only
