@@ -34,16 +34,32 @@
     }
   }
 
-  &--left {
-    text-align: left;
+  &--text-align {
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
   }
 
-  &--center {
-    text-align: center;
-  }
+  &--flex-align {
+    &-top {
+      align-self: flex-start;
+    }
 
-  &--right {
-    text-align: right;
+    &-center {
+      align-self: center;
+    }
+
+    &-bottom {
+      align-self: flex-end;
+    }
   }
 
   &-icon {
