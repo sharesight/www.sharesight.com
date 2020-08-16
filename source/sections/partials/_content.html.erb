@@ -5,7 +5,8 @@
   classes << 'hero__content' if locals[:hero]
   classes << 'section__content--card' if locals[:with_background]
   classes << "section__content--fit-#{locals[:fit]}" if locals[:fit]
-  classes << "section__content--#{locals[:alignment]}" if locals[:alignment]
+  classes << "section__content--text-align-#{locals[:alignment]}" if locals[:alignment] # text alignment left/right/center
+  classes << "section__content--flex-align-#{locals[:flex_align]}" if locals[:flex_align] # flex top/bottom/center
 %>
 
 <div class="<%= classes.join(' ') %>">
