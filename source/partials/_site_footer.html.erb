@@ -103,7 +103,7 @@
       </li>
 
       <li role="menuitem">
-        <a href="<%= localize_url('events', locale_id: locale_obj[:id]) %>" class="footer__link" title="Check out our Webinars & Events.">
+        <a href="<%= localize_url('events', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'events')[:page_title] %>">
           Webinars & Events
         </a>
       </li>
