@@ -96,18 +96,9 @@ footer#footer {
     outline: none;
 
     flex: 1 1 50%;
+
     &--double-width {
       flex-basis: 100%;
-    }
-
-    @include respond-to(md, min) {
-      flex-basis: 25%;
-      &--double-width {
-        flex-basis: 40%; // NOTE: Not actually "double" here, just larger.
-      }
-    }
-
-    &--double-width {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -116,17 +107,29 @@ footer#footer {
 
       li {
         flex-basis: 100%;
+      }
+    }
 
+    @include respond-to(xs, min) {
+      &--double-width {
         // Headers should only be 50% width, left-aligned.
-        &[role="none"] {
+        li[role="none"] {
           flex-basis: 50%;
           margin-right: 50%;
         }
 
         // Menu Items are 50% width and should be laid out in a grid below.
-        &[role="menuitem"] {
+        li[role="menuitem"] {
           flex-basis: 50%;
         }
+      }
+    }
+
+    @include respond-to(md, min) {
+      flex-basis: 25%;
+
+      &--double-width {
+        flex-basis: 40%; // NOTE: Not actually "double" here, just larger.
       }
     }
   }
