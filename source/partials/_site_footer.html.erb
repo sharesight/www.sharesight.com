@@ -171,7 +171,7 @@
       %>
       <% data.locales.first(5).each do |locale| %>
         <li role="menuitem">
-          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>" data-no-localize>
+          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="Share Portfolio Tracker | <%= locale[:name] %>" data-no-localize>
             <%= locale[:name] %>
           </a>
         </li>
