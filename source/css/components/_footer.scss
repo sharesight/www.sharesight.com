@@ -55,6 +55,7 @@ footer#footer {
 
     @include respond-to(sm, min) {
       flex-basis: percentage(1/2);
+      padding-right: $gutter;
     }
 
     @include respond-to(md, min) {
