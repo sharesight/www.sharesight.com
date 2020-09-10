@@ -317,7 +317,7 @@ GEM
       parallel
       ruby-progressbar
       unf
-    middleman-sprockets (3.4.2)
+    middleman-sprockets (3.5.0)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)
