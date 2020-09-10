@@ -55,107 +55,112 @@
       </div>
     </div>
 
-    <ul class="footer__links" id="main-menu" role="menubar" aria-label="Company Links">
-      <li role="none" class="footer__link-header">Company</li>
-      <li role="menuitem">
-        <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index')[:page_title] %>">
-          Home
-        </a>
-      </li>
+    <div class="footer__links_container">
+      <ul class="footer__links footer__links--double-width" id="main-menu" role="menubar" aria-label="Company Links">
+        <li role="none" class="footer__link-header">Company</li>
+        <li role="menuitem">
+          <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index')[:page_title] %>">
+            Home
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('team', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'team')[:page_title] %>">
-          Executive Team
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('faq', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'faq')[:page_title] %>">
+            FAQ
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('about-sharesight', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'about-sharesight')[:page_title] %>">
-          About Us
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('team', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'team')[:page_title] %>">
+            Executive Team
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('pricing', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'pricing')[:page_title] %>">
-          Pricing
-        </a>
-      </li>
-    </ul>
+        <li role="menuitem">
+          <a href="<%= unlocalized_url('blog') %>" class="footer__link" title="Sharesight Blog">
+            Blog
+          </a>
+        </li>
 
-    <ul class="footer__links" role="menubar" aria-label="Website Links">
-      <li role="none" class="footer__link-header">&nbsp;</li>
-      <li role="menuitem">
-        <a href="<%= localize_url('faq', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'faq')[:page_title] %>">
-          FAQ
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('about-sharesight', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'about-sharesight')[:page_title] %>">
+            About Us
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= unlocalized_url('blog') %>" class="footer__link" title="Sharesight Blog">
-          Blog
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('events', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'events')[:page_title] %>">
+            Webinars & Events
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('events', locale_id: locale_obj[:id]) %>" class="footer__link" title="Check out our Webinars & Events.">
-          Webinars & Events
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('pricing', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'pricing')[:page_title] %>">
+            Pricing
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'partners')[:page_title] %>">
-          Partners
-        </a>
-      </li>
-    </ul>
+        <li role="menuitem">
+          <a href="<%= localize_url('partners', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'partners')[:page_title] %>">
+            Partners
+          </a>
+        </li>
 
-    <ul class="footer__links" role="menubar" aria-label="Resources Links">
-      <li role="none" class="footer__link-header">Resources</li>
-      <li role="menuitem">
-        <a href="<%= config[:api_url] %>" class="footer__link" title="Sharesight Developer API">
-          Developer API
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('reviews', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'reviews')[:page_title] %>">
+            Reviews
+          </a>
+        </li>
+      </ul>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('privacy-policy', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'privacy-policy')[:page_title] %>">
-          Privacy Policy
-        </a>
-      </li>
+      <ul class="footer__links" role="menubar" aria-label="Resources Links">
+        <li role="none" class="footer__link-header">Resources</li>
+        <li role="menuitem">
+          <a href="<%= config[:api_url] %>" class="footer__link" title="Sharesight Developer API">
+            Developer API
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('sharesight-terms-of-use', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'sharesight-terms-of-use')[:page_title] %>">
-          Terms of Use
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('privacy-policy', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'privacy-policy')[:page_title] %>">
+            Privacy Policy
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="<%= localize_url('sharesight-professional-terms-of-use', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'sharesight-professional-terms-of-use')[:page_title] %>">
-          Pro Terms of Use
-        </a>
-      </li>
-    </ul>
+        <li role="menuitem">
+          <a href="<%= localize_url('sharesight-terms-of-use', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'sharesight-terms-of-use')[:page_title] %>">
+            Terms of Use
+          </a>
+        </li>
 
-    <ul class="footer__links" role="menubar" aria-label="Support Links">
-      <li role="none" class="footer__link-header">Support</li>
-      <li role="menuitem">
-        <a href="<%= localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]) %>" class="footer__link" title="Help | <%= locale_obj[:append_title] %>">
-          Help
-        </a>
-      </li>
+        <li role="menuitem">
+          <a href="<%= localize_url('sharesight-professional-terms-of-use', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'sharesight-professional-terms-of-use')[:page_title] %>">
+            Pro Terms of Use
+          </a>
+        </li>
+      </ul>
 
-      <li role="menuitem">
-        <a href="<%= config[:community_url] %>" class="footer__link" title="Sharesight Community Forum">
-          Community Forum
-        </a>
-      </li>
+      <ul class="footer__links" role="menubar" aria-label="Support Links">
+        <li role="none" class="footer__link-header">Support</li>
+        <li role="menuitem">
+          <a href="<%= localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]) %>" class="footer__link" title="Help | <%= locale_obj[:append_title] %>">
+            Help
+          </a>
+        </li>
 
-      <li role="menuitem">
-        <a href="mailto:sales@sharesight.com" class="footer__link" title="Email the Sales Team">
-          sales@sharesight.com
-        </a>
-      </li>
-    </ul>
+        <li role="menuitem">
+          <a href="<%= config[:community_url] %>" class="footer__link" title="Sharesight Community Forum">
+            Community Forum
+          </a>
+        </li>
+
+        <li role="menuitem">
+          <a href="mailto:sales@sharesight.com" class="footer__link" title="Email the Sales Team">
+            sales@sharesight.com
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <ul class="footer__regional-links" role="menubar" aria-label="Regional Website Links">
       <li role="none" class="footer__link-header">Region</li>
@@ -166,7 +171,7 @@
       %>
       <% data.locales.first(5).each do |locale| %>
         <li role="menuitem">
-          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>" data-no-localize>
+          <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="Share Portfolio Tracker | <%= locale[:name] %>" data-no-localize>
             <%= locale[:name] %>
           </a>
         </li>
