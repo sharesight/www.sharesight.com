@@ -107,6 +107,17 @@
       }
     }
 
+    &.btn--highlight {
+      color: #fff;
+      border-color: $color_highlight;
+      background-color: $color_highlight;
+
+      &:hover {
+        border-color: lighten($color_highlight, 12%);
+        background-color: lighten($color_highlight, 12%);
+      }
+    }
+
     &.btn--pro {
       color: white;
       border-color: $colour_pro;

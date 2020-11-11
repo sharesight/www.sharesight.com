@@ -89,6 +89,7 @@
         </li>
 
         <li role="menuitem">
+          <%# Contentful Page %>
           <a href="<%= localize_url('events', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'events')[:page_title] %>">
             Webinars & Events
           </a>
@@ -107,12 +108,21 @@
         </li>
 
         <li role="menuitem">
+          <%# Contentful Page %>
           <a href="<%= localize_url('reviews', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'reviews')[:page_title] %>">
             Reviews
           </a>
         </li>
 
         <li role="menuitem">
+          <%# Contentful Page %>
+          <a href="<%= localize_url('become-a-partner', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'become-a-partner')[:page_title] %>">
+            Become a Partner
+          </a>
+        </li>
+
+        <li role="menuitem">
+          <%# Contentful Page %>
           <a href="<%= localize_url('affiliates', locale_id: locale_obj[:id]) %>" class="footer__link" title="<%= locale_page(page: 'affiliates')[:page_title] %>">
             Affiliates
           </a>
