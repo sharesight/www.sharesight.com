@@ -13,7 +13,7 @@ describe 'Footer', type: :feature do
       /^Blog/,
       /^Webinars & Events/,
       /^Partners/,
-      /^Partner with Us/,
+      /^Become a Partner/,
       /^Developer API/,
       /^Privacy Policy/,
       /^Terms of Use/,
