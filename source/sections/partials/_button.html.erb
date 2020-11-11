@@ -6,8 +6,12 @@
   # color, title (=text), text, url
 
   is_remote = locals[:url].match(/^(http:|https:)?\/\//)
+  is_anchor = locals[:url].match(/^#/)
 
   url = if is_remote
+    locals[:url]
+  elsif is_anchor
+    # Don't localize `#link-to-anchor`, just let it link on the page.
     locals[:url]
   else
     localize_url(locals[:url], locale_id: locale_obj[:id])
