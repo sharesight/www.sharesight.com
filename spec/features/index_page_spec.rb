@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'Index Page', :type => :feature do
   it "should have a hero title" do
     visit '/'
-    expect(page).to have_css('h1', text: 'Meet Sharesight')
+    expect(page).to have_css('h1', text: 'Become a better investor')
   end
 
   it "should have a get started button in the hero" do
