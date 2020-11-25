@@ -14,7 +14,7 @@ describe 'Index Page', :type => :feature do
   Capybara.app.data.locales.each do |locale|
     it "should have localized text for locale #{locale['id']}" do
       visit locale.path
-      expect(page).to have_text("Simply the best #{locale.cert_type} portfolio tracker for #{locale.for_country} investors".squeeze(' '))
+      expect(page).to have_text("With the best #{locale.cert_type} portfolio tracker for #{locale.for_country} investors.".squeeze(' '))
     end
   end
 end
