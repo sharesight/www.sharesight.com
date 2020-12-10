@@ -38,5 +38,5 @@ end
 
 group :development, :test do
   # gem 'byebug'
-  gem "bundle-audit"
+  gem "bundler-audit"
 end
