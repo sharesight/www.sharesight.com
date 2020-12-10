@@ -1,0 +1,12 @@
+// Tweaks for Contentful landing pages.
+// NOTE: Should not target a specific page, but rather all, generically.
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: $gutter/4 0;
+  }
+}
