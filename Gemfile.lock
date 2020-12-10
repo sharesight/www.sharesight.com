@@ -32,8 +32,6 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     builder (3.2.2)
-    bundle-audit (0.1.0)
-      bundler-audit
     bundler-audit (0.6.0)
       bundler (~> 1.2)
       thor (~> 0.18)
@@ -419,7 +417,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-s3
-  bundle-audit
+  bundler-audit
   capybara
   capybara-selenium
   chromedriver-helper

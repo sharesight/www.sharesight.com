@@ -33,5 +33,5 @@ group :test do
 end
 
 group :development, :test do
-  gem "bundle-audit"
+  gem "bundler-audit"
 end
