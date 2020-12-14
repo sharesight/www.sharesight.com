@@ -19,10 +19,10 @@ table.supported-markets {
   }
 
   td {
-    background: $background_offset_white;
+    background: $background_white;
 
-    &:nth-child(even) {
-      background: $background_white;
+    tr:nth-child(even) & {
+      background: $background_offset_white;
     }
   }
 }
