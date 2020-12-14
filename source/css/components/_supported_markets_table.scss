@@ -1,0 +1,28 @@
+table.supported-markets {
+  margin: $gutter 0;
+  width: 100%;
+  max-width: 100%;
+
+  th, td {
+    padding: $gutter/2;
+
+    // Hide the "last column" in  mobile.
+    @media (max-width: $screen-sm-max) {
+      &:last-of-type {
+        display: none;
+      }
+    }
+  }
+
+  th {
+    background: $background_pearl;
+  }
+
+  td {
+    background: $background_offset_white;
+
+    &:nth-child(even) {
+      background: $background_white;
+    }
+  }
+}
