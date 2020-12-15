@@ -1,3 +1,6 @@
+// NOTE: This is still here because Xero FAQ uses it.
+// We do not have an FAQ page anymore—this is in Contentful.
+
 (function() {
   const headings = document.querySelectorAll(".faq-heading");
   if (!headings || !headings.length) return;
