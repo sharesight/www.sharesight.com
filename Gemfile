@@ -8,9 +8,9 @@ gem 'middleman-cloudfront'
 gem 'middleman-autoprefixer'
 gem 'middleman-minify-html'
 gem 'middleman-sprockets'
-gem "middleman-es6", git: "https://github.com/vast/middleman-es6"
+gem 'middleman-es6', git: 'https://github.com/vast/middleman-es6'
 gem 'uglifier'
-gem "contentful_middleman", '~> 2.1.2'
+gem 'contentful_middleman', '~> 2.1.2'
 gem 'middleman-pagination'
 gem 'middleman-remover'
 gem 'middleman-syntax'
@@ -33,5 +33,5 @@ group :test do
 end
 
 group :development, :test do
-  gem "bundler-audit"
+  gem 'bundler-audit'
 end
