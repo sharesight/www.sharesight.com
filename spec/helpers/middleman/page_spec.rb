@@ -38,8 +38,10 @@ describe 'Page Helper', :type => :helper do
         # [input, expectation]
         ['/', 'index'],
         ['/nz', 'index'],
-        ['/ca/faq', 'faq'],
-        ['/faq', 'faq'],
+        ['/ca/xero', 'xero'],
+        ['/xero', 'xero'],
+        ['/ca/pro', 'pro'],
+        ['/pro', 'pro'],
         ['/nz/partners', 'partners'],
         ['/partners/all', 'partners/all'],
         ['/blog', 'blog'],
@@ -82,11 +84,11 @@ describe 'Page Helper', :type => :helper do
       visit '/nz'
       expect(@app.page_path_name).to eq('index')
 
-      visit '/ca/faq'
-      expect(@app.page_path_name).to eq('faq')
+      visit '/ca/pro'
+      expect(@app.page_path_name).to eq('pro')
 
-      visit '/faq'
-      expect(@app.page_path_name).to eq('faq')
+      visit '/pro'
+      expect(@app.page_path_name).to eq('pro')
 
       visit '/nz/partners'
       expect(@app.page_path_name).to eq('partners')
@@ -171,8 +173,8 @@ describe 'Page Helper', :type => :helper do
     it "should respond with the right page id" do
       expect(@app.locale_page(page: 'index')[:page]).to eq('index')
       expect(@app.locale_page(page: 'blog')[:page]).to eq('blog')
-      expect(@app.locale_page(page: 'faq')[:page]).to eq('faq')
-      expect(@app.locale_page(page: 'faq', locale_obj: @app.get_locale_obj('nz'))[:page]).to eq('faq')
+      expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
+      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('nz'))[:page]).to eq('pro')
 
       expect(@app.locale_page(page: 'fake-page')).to eq(nil)
     end
@@ -241,7 +243,7 @@ describe 'Page Helper', :type => :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('faq', locale[:id])).to be true
+        expect(@app.is_valid_locale_id_for_page?('pro', locale[:id])).to be true
       end
 
       locales.each do |locale|
@@ -285,8 +287,8 @@ describe 'Page Helper', :type => :helper do
       expect(@app.is_unlocalized_page?('index')).to be false
     end
 
-    it "should return false for faq" do
-      expect(@app.is_unlocalized_page?('faq')).to be false
+    it "should return false for pro" do
+      expect(@app.is_unlocalized_page?('pro')).to be false
     end
 
     it "should return false for an unknown page" do
