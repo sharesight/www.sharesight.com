@@ -1,8 +1,9 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
+  text_align = locals[:text_align] || 'center'
 %>
 
-<div class="section section--center <%= locals[:class_name] %>">
+<div class="section section--<%= text_align %> <%= locals[:class_name] %>">
   <div class="container">
     <% if locals[:title] %>
       <h2 class="section__heading">

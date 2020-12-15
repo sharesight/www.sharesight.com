@@ -21,7 +21,7 @@
   metas[:canonical_url]        = locals[:canonical_url] || canonical_url
   metas[:social_url]           = locals[:social_url] || current_global_url
 
-  metas[:title]                = BasicHelper.replace_quotes(locals[:title] || current_locale_page[:page_title] || current_page&.data&.page_title || current_locale_obj[:default_title])
+  metas[:title]                = BasicHelper.replace_quotes(locals[:page_title] || locals[:title] || current_locale_page[:page_title] || current_page&.data&.page_title || current_locale_obj[:default_title])
   metas[:social_title]         = locals[:social_title] || base_locale_page[:page_title] || metas[:title]
   metas[:social_title]         = generate_social_title(metas[:social_title])
   metas[:social_title]         = BasicHelper.replace_quotes(metas[:social_title])
