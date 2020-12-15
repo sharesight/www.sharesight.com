@@ -67,4 +67,15 @@
       padding-top: 40px;
     }
   }
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: $gutter/4 0;
+    }
+  }
+
 }
