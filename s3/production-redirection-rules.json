@@ -260,5 +260,50 @@
       "HostName": "www.sharesight.com",
       "ReplaceKeyPrefixWith": "ca/become-a-partner"
     }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/partners/jarden-direct"
+    }
   }
 ]
