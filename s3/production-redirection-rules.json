@@ -5,7 +5,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "blog/"
+      "ReplaceKeyPrefixWith": "blog"
     }
   },
   {
@@ -132,7 +132,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "xero/"
+      "ReplaceKeyPrefixWith": "xero"
     }
   },
   {
@@ -141,7 +141,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "xero/"
+      "ReplaceKeyPrefixWith": "xero"
     }
   },
   {
@@ -150,7 +150,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "pro/"
+      "ReplaceKeyPrefixWith": "pro"
     }
   },
   {
@@ -159,7 +159,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "pro/"
+      "ReplaceKeyPrefixWith": "pro"
     }
   },
   {
@@ -177,7 +177,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "faq/"
+      "ReplaceKeyPrefixWith": "faq"
     }
   },
   {
@@ -186,7 +186,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "nz/faq/"
+      "ReplaceKeyPrefixWith": "nz/faq"
     }
   },
   {
@@ -195,7 +195,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "au/faq/"
+      "ReplaceKeyPrefixWith": "au/faq"
     }
   },
   {
@@ -204,7 +204,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "uk/faq/"
+      "ReplaceKeyPrefixWith": "uk/faq"
     }
   },
   {
@@ -213,7 +213,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "ca/faq/"
+      "ReplaceKeyPrefixWith": "ca/faq"
     }
   },
   {
@@ -222,7 +222,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "become-a-partner/"
+      "ReplaceKeyPrefixWith": "become-a-partner"
     }
   },
   {
@@ -231,7 +231,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "nz/become-a-partner/"
+      "ReplaceKeyPrefixWith": "nz/become-a-partner"
     }
   },
   {
@@ -240,7 +240,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "au/become-a-partner/"
+      "ReplaceKeyPrefixWith": "au/become-a-partner"
     }
   },
   {
@@ -249,7 +249,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "uk/become-a-partner/"
+      "ReplaceKeyPrefixWith": "uk/become-a-partner"
     }
   },
   {
@@ -258,7 +258,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "ca/become-a-partner/"
+      "ReplaceKeyPrefixWith": "ca/become-a-partner"
     }
   }
 ]
