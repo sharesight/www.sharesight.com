@@ -258,7 +258,7 @@
     },
     "Redirect": {
       "HostName": "staging-www.sharesight.com",
-      "ReplaceKeyPrefixWith": "ca/become-a-partner//"
+      "ReplaceKeyPrefixWith": "ca/become-a-partner/"
     }
   },
   {

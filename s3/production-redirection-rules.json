@@ -132,7 +132,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "xero"
+      "ReplaceKeyPrefixWith": "xero/"
     }
   },
   {
@@ -141,7 +141,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "xero"
+      "ReplaceKeyPrefixWith": "xero/"
     }
   },
   {
@@ -150,7 +150,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "pro"
+      "ReplaceKeyPrefixWith": "pro/"
     }
   },
   {
@@ -159,7 +159,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "pro"
+      "ReplaceKeyPrefixWith": "pro/"
     }
   },
   {
@@ -168,7 +168,7 @@
     },
     "Redirect": {
       "HostName": "www.eventbrite.co.uk",
-      "ReplaceKeyPrefixWith": "e/finimizecommunity-presents-what-to-avoid-when-investing-tickets-68811871159"
+      "ReplaceKeyPrefixWith": "e/finimizecommunity-presents-what-to-avoid-when-investing-tickets-68811871159/"
     }
   },
   {
@@ -177,7 +177,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "faq"
+      "ReplaceKeyPrefixWith": "faq/"
     }
   },
   {
@@ -186,7 +186,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "nz/faq"
+      "ReplaceKeyPrefixWith": "nz/faq/"
     }
   },
   {
@@ -195,7 +195,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "au/faq"
+      "ReplaceKeyPrefixWith": "au/faq/"
     }
   },
   {
@@ -204,7 +204,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "uk/faq"
+      "ReplaceKeyPrefixWith": "uk/faq/"
     }
   },
   {
@@ -213,7 +213,52 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "ca/faq"
+      "ReplaceKeyPrefixWith": "ca/faq/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "become-a-partner/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/become-a-partner/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/become-a-partner/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/become-a-partner/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/become-a-partner/"
     }
   }
 ]
