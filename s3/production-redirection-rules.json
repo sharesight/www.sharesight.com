@@ -5,7 +5,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": "blog"
+      "ReplaceKeyPrefixWith": "blog/"
     }
   },
   {
