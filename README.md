@@ -93,24 +93,14 @@ Do note, the default_locale_id is set in config.rb.
 
 ## How to change the redirection rules on Amazon S3
 
-  1. Change the XML source file
+#### Always test on Staging first:
+1. Change the JSON file at `s3/staging-redirection-rules.json`.  NOTE: This should exactly match the Production version, but the `HostName` field will differ.
+2. Commit and push your changes.
+3. Copy the JSON and apply it in the `Properties > Static Website Hosting > Redirection Rules` section in [the staging bucket](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=staging-middleman-www&prefix=) on AWS S3.
+4. Test your rules.
 
-        # for production
-        s3/www.sharesight.com_redirection_rules.xml
-
-        # for staging
-        s3/staging-www.sharesight.com_redirection_rules.xml
-
-  2. Commit and push your changes
-  3. Copy the content of the file to the
-  [production bucket properties](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=middleman-www&prefix=)
-  or
-  [staging bucket properties](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=staging-middleman-www&prefix=)
-  on AWS
-
-    using `Properties`, then `Static Website Hosting`, and finally paste
-    them into the textarea
-
-    ![bucket properties](s3/bucket_properties.png)
-
-    and press the `Save` button.
+#### To Production:
+1. Change the JSON file at `s3/production-redirection-rules.json`.
+2. Commit and push your changes.
+3. Copy the JSON and apply it in the `Properties > Static Website Hosting > Redirection Rules` section in [the production bucket](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=middleman-www&prefix=) on AWS S3.
+4. Test your rules.

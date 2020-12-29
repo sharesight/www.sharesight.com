@@ -1,0 +1,309 @@
+[
+  {
+    "Condition": {
+      "KeyPrefixEquals": "category/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "blog/feed/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyWith": "blog/feed.xml"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "feed/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyWith": "blog/feed.xml"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2007/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2008/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2009/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2010/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2011/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2012/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2013/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2014/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2015/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "2016/"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "date/",
+      "HttpErrorCodeReturnedEquals": "404"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyWith": "blog/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "cashbook"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "xero"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "tour/connect-xero"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "xero"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "pro/pro"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "pro"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "pro//pro"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "pro"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "finimize"
+    },
+    "Redirect": {
+      "HostName": "www.eventbrite.co.uk",
+      "ReplaceKeyPrefixWith": "e/finimizecommunity-presents-what-to-avoid-when-investing-tickets-68811871159/"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "faqs"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "faq"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/faqs"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/faq"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/faqs"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/faq"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/faqs"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/faq"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/faqs"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/faq"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "become-a-partner"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/become-a-partner"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/become-a-partner"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/become-a-partner"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/partner-with-us"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/become-a-partner"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/partners/jarden-direct"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/partners/direct-broking"
+    },
+    "Redirect": {
+      "HostName": "www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/partners/jarden-direct"
+    }
+  }
+]
