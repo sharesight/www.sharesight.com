@@ -1,5 +1,11 @@
-.a11y {
+.a11y-button {
   position: absolute;
-  left: -999em;
-  top: -999em;
+  left: -9999rem;
+  top: -9999rem;
+
+  &:focus, &:focus-within {
+    left: $gutter;
+    top: $gutter;
+    z-index: 100;
+  }
 }

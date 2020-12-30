@@ -18,18 +18,13 @@
 
   <%= partial "layouts/partials/country_banner", locals: { locale_obj: locale_obj } %>
 
-  <nav class="a11y" role="navigation" tabindex="1">
-    <ul role="menu">
-      <li role="menuitem"><a href="#main-menu">Skip to main menu</a></li>
-      <li role="menuitem"><a href="#main-area">Skip to main content</a></li>
-    </ul>
-  </nav>
+  <a role="button" href="#main-area" class="a11y-button btn btn--solid btn--secondary">Skip to Main Content</a>
 
   <% if header %>
     <%= partial header, locals: locals.merge({ locale_obj: locale_obj }) %>
   <% end %>
 
-  <main role="main" id="main-area" aria-label="Start on main content">
+  <main role="main" id="main-area" aria-label="Main Content">
     <%= yield %>
 
     <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
