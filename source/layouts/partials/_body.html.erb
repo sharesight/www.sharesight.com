@@ -34,15 +34,6 @@
     <%= yield_content :javascript %>
   <% end %>
 
-  <script>
-    window.onload = function(){
-      var s = document.createElement('script');
-      s.async = 1;
-      s.src = "<%= asset_path(:js, 'site') %>";
-      document.body.appendChild(s);
-    }
-  </script>
-
   <% if include_campaign_monitor %>
     <%# Include createsend // campaignmonitor for the Subscribe button %>
     <script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>

@@ -31,4 +31,5 @@
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <%= stylesheet_link_tag "pro.css" if locals[:pro] == true %>
   <%= stylesheet_link_tag "site.css" %>
+  <%= javascript_include_tag "site.js", defer: true, async: true %>
 </head>
