@@ -1,11 +1,6 @@
 <%
   # NOTE: Body must have a yield.  It will not function without.
   locale_obj = locals[:locale_obj] || current_locale_obj
-  header = if locals[:header].nil?
-    'partials/site_header'
-  else
-    locals[:header]
-  end
 
   page_classes = locals[:page_classes] || current_page.data.page_classes
   section_class = locals[:section_class] || current_page.data.section_class
@@ -22,15 +17,17 @@
 
   <a role="button" href="#main-area" class="a11y-button btn btn--solid btn--secondary">Skip to Main Content</a>
 
-  <% if header %>
-    <%= partial header, locals: locals.merge({ locale_obj: locale_obj }) %>
+  <%= partial 'partials/header', locals: locals.merge({ locale_obj: locale_obj }) %>
+
+  <% if locals[:hero] %>
+    <%= partial locals[:hero], locals: locals.merge({ locale_obj: locale_obj }) %>
   <% end %>
 
   <main role="main" id="main-area" aria-label="Main Content">
     <%= yield %>
-
-    <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
   </main>
+
+  <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
 
   <% if content_for?(:javascript) %>
     <%= yield_content :javascript %>
