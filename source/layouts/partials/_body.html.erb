@@ -9,10 +9,12 @@
 
   page_classes = locals[:page_classes] || current_page.data.page_classes
   section_class = locals[:section_class] || current_page.data.section_class
+  body_class = [page_classes, section_class].join(' ').strip
+
   include_campaign_monitor = locals[:include_campaign_monitor] || current_page.data.include_campaign_monitor
 %>
 
-<body class="<% if section_class %> <%= section_class %><% end %><% if page_classes %> <%= page_classes %><% end %>">
+<body class="<%= body_class %>">
   <%= partial "layouts/partials/noscript" %>
   <script>document.body.className += ' js_menu_closed';</script>
 
