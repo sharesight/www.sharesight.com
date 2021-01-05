@@ -1,0 +1,36 @@
+<%
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  tag_id = locale_obj[:id] # This should be au, nz, ca, uk, global, etc…
+
+  # NOTE: For global, this should be "en-US"
+  trustpilot_lang = locale_obj[:lang] # This should be en-AU, en-NZ, en-CA, en-GB, en-US, etc…
+  trustpilot_lang = "en-US" if tag_id == "global"
+
+  # NOTE: For global, this should be "www"
+  trustpilot_subdomain = tag_id # This should be au, nz, ca, uk, etc…
+  trustpilot_subdomain = "www" if tag_id == "global"
+%>
+
+<section class="section alternate">
+  <div class="container">
+    <!-- snippet from Trustpilot -->
+    <div
+      class="trustpilot-widget"
+      data-locale="<%= trustpilot_lang %>"
+      data-template-id="539adbd6dec7e10e686debee"
+      data-businessunit-id="5e4b8f349f19c6000198ff88"
+      data-style-height="450px"
+      data-style-width="100%"
+      data-theme="light"
+      data-tags="widget-general-<%= tag_id %>"
+      data-stars="4,5"
+      data-review-languages="en"
+    >
+      <a href="https://<%= trustpilot_subdomain %>.trustpilot.com/review/www.sharesight.com" target="_blank" rel="noopener noreferrer">
+        See what our customers are saying on Trustpilot
+      </a>
+    </div>
+
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  </div>
+</section>
