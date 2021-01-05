@@ -54,6 +54,7 @@ $gutter: 20px;
 
 $btn-height: 46px;
 $btn-border-width: 2px;
+$btn-line-height: $btn-height - ($btn-border-width * 2);
 
 // must be in order
 @import "tools/mixins";

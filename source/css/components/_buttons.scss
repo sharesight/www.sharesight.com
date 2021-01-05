@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   max-width: 349px;
   height: $btn-height;
-  line-height: $btn-height - ($btn-border-width * 2); // height - border
+  line-height: $btn-line-height;
   cursor: pointer;
   appearance: none;
   user-select: none;
