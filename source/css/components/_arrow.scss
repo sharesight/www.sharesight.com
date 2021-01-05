@@ -1,0 +1,30 @@
+// To be used with partials/components/_arrow.html.erb
+svg.arrow {
+  position: relative;
+  margin-left: $gutter/4;
+  stroke: $colour_pro;
+  stroke-width: 2px;
+  fill: none;
+  transition: 150ms opacity;
+  opacity: 1;
+  will-change: opacity;
+
+  .arrow__tip,
+  .arrow__line {
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: 150ms all;
+
+    %root-hover-focus & {
+      opacity: 1;
+    }
+  }
+
+  %root-hover-focus & {
+    opacity: 1;
+
+    .arrow__tip {
+      transform: translateX(3px);
+    }
+  }
+}
