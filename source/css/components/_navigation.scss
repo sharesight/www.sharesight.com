@@ -1,0 +1,278 @@
+$nav-height: 65px;
+
+$menu-padding: $gutter * 1.5;
+$menu-border-radius: 3px;
+
+%button-reset {
+  /* Reset the `<button />` and `<a />` appearance to be more consistent. */
+  appearance: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+
+  &__container {
+    overflow: visible;
+  }
+
+  #site_logo {
+    flex-shrink: 0;
+
+    img {
+      display: block;
+      max-height: 50px;
+    }
+  }
+
+  &__hamburger {
+    @extend %button-reset;
+    flex: 0 0 auto; // keep this shape consistent
+    background: $color_highlight;
+    color: #fff;
+    border-radius: $gutter;
+    width: $gutter * 2.25;
+    height: $gutter * 1.75;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond-to(md, min) {
+      display: none;
+    }
+  }
+
+  &__menubar {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    @include respond-to(sm, max) {
+      display: none;
+    }
+  }
+
+  &__menubar-item {
+    display: block;
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__menubar-button {
+    @extend %button-reset;
+
+    height: $nav-height;
+    display: block;
+    color: $colour_base;
+    line-height: $nav-height; // NOTE: We do not use a border, so we just use the height.
+    font-weight: 500;
+    padding: 0 $gutter/2;
+    margin: 0 $gutter/2;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    position: relative; // For the ::after to attach to.
+
+    // The "caret" icon
+    svg[role="img"] {
+      margin-left: 3px;
+    }
+
+    // When either hovered/focused/etc or currently expanded.
+    &%root-hover-focus,
+    &[aria-expanded="true"] {
+      color: $color_highlight;
+    }
+
+    // A caret to point at the current menu you're looking at.
+    &::after {
+      display: none;
+
+      content: " ";
+      position: absolute;
+      bottom: -6px;
+      right: $gutter/2; // Aligned with the downward caret as they're the same width.
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+      border-top-left-radius: 3px;
+      background-color: $color_highlight;
+      z-index: 1;
+
+      will-change: display;
+    }
+
+    // When currently expanded, make the "::after" caret visible.
+    &[aria-expanded="true"]::after {
+      display: block;
+    }
+  }
+
+  &__cta {
+    @extend .btn;
+    @extend .btn--solid;
+
+    margin-left: auto;
+    display: block;
+    text-transform: capitalize; // "Log In" not "Log in" to be consistent
+    border-radius: $gutter;
+
+    & + & {
+      margin-left: 5px;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: $nav-height;
+  left: -50%;
+  width: fit-content;
+  min-width: 550px;
+  z-index: 1000;
+  background: #fff;
+  padding: $menu-padding;
+  border-radius: $menu-border-radius; // Should be less than the border-top-width
+  box-shadow: 0 5px 10px rgba($colour_pro, 0.20);
+  border-top: 5px solid $color_highlight;
+  font-size: 0.85rem;
+
+  display: none;
+  will-change: display;
+
+  @include respond-to(md, max) {
+    min-width: 450px;
+  }
+
+  [aria-haspopup][aria-expanded="true"] ~ & {
+    display: block;
+  }
+
+  // Have the last two menus have a right start rather than a left start so they don't drift out of view.
+  li:nth-last-child(2) [aria-haspopup] ~ &,
+  li:last-child [aria-haspopup] ~ & {
+    left: unset;
+    right: -50%;
+  }
+
+  &__link {
+    display: flex;
+    color: $colour_base;
+    font-weight: 600;
+    position: relative;
+
+    & + & {
+      margin-top: $gutter * 1.5;
+
+      &--compact {
+        margin-top: $gutter/2;
+      }
+    }
+
+    &-img {
+      left: 0;
+      max-width: 20px;
+      position: absolute;
+      top: 0;
+      color: $colour_pro;
+      opacity: 0.75;
+
+      transition: 150ms opacity;
+      will-change: opacity;
+
+      .menu__link--compact & {
+        max-width: 16px;
+        margin-left: 6px;
+      }
+
+      %root-hover-focus & {
+        opacity: 1;
+        color: $color_highlight;
+      }
+    }
+
+    &-label {
+      padding-left: 30px; // large enough to encapsulate the img with whitespace
+    }
+
+    &-description {
+      margin-top: 3px;
+      font-size: 95%;
+      font-weight: 400;
+      opacity: 0.6;
+      display: block;
+
+      %root-hover-focus & {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $colour_default;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: $gutter/2;
+  }
+
+  &__separator {
+    margin: $gutter (-$menu-padding);
+    border: 0;
+    border-top: 1px solid $colour_table-lines;
+  }
+
+  &__background {
+    margin: $gutter (-$menu-padding);
+    background: #f2f2f2;
+    padding: $menu-padding;
+
+    &:first-child {
+      margin-top: -$menu-padding;
+      border-radius: $menu-border-radius $menu-border-radius 0 0;
+    }
+
+    &:last-child {
+      margin-bottom: -$menu-padding;
+      border-radius: 0 0 $menu-border-radius $menu-border-radius;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Requires a `<div class="menu__row" />` around it.
+  &__half {
+    flex: 0 0 50%;
+  }
+
+  // Requires a `<div class="menu__row" />` around it.
+  &__column {
+    flex: 0 0 33.333%;
+  }
+}

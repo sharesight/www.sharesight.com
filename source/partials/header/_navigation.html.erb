@@ -1,0 +1,195 @@
+<%#
+  Accessibility Notes:
+   - Ensure you maintain the level of `aria-` and `role` attributes when adding or changing anything.
+   - Add descriptive `aria-label` or `aria-labelledby` tags as able.
+
+  We are not fully complaint with w3, eg. https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/menubar-1.html
+    - Neither is anyone else.  This passes the functionally accessible test.
+    - We do not do keyboard navigation like up/down/left/right/home/end, etc.
+    - We do not do keyboard search like "c" to go to "Company", etc. (I can't find a real-world example of thise anyways)
+%>
+
+<nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
+  <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
+    <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
+  </a>
+
+  <%# WARNING: Only the FIRST Navigation should have a tabindex="0" all else should be "-1" %>
+  <ul class="nav__menubar" role="menubar" aria-label="Sharesight">
+    <li class="nav__menubar-item" role="none">
+      <button class="nav__menubar-button" aria-controls="menu-features" aria-haspopup="true" aria-expanded="false" id="nav-features" tabindex="0">
+        Features
+
+        <%= partial "partials/header/caret" %>
+      </button>
+
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-features" id="menu-features">
+        <div class="menu__row">
+          <div class="menu__half">
+            <div class="menu__title" role="separator">Features</div>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Performance',
+              href: '/reviews',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Dividends',
+              href: '/reviews',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Tax Reporting',
+              href: '/reviews',
+            } %>
+          </div>
+
+          <div class="menu__half">
+            <div class="menu__title" role="separator">What we Track</div>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Supported Investments',
+              href: '/reviews',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Supported Exchanges',
+              href: '/reviews',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: image_path("icons/globe.svg"),
+              title: 'Supported Brokers',
+              href: '/reviews',
+            } %>
+          </div>
+        </div>
+
+        <div class="menu__row menu__background">
+          <div class="menu__half">
+            <%= partial "partials/header/link", locals: {
+              title: 'Frequently Asked Questions',
+              href: '/reviews',
+            } %>
+          </div>
+
+          <div class="menu__half">
+            <%= partial "partials/header/link", locals: {
+              title: 'Data Security',
+              href: '/reviews',
+            } %>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="nav__menubar-item" role="none">
+      <button class="nav__menubar-button" aria-controls="menu-why" aria-haspopup="true" aria-expanded="false" id="nav-why" tabindex="0">
+        Why Sharesight
+
+        <%= partial "partials/header/caret" %>
+      </button>
+
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-why" id="menu-why">
+        <%= partial "partials/header/link", locals: {
+          icon: image_path("icons/globe.svg"),
+          title: 'Investors',
+          href: '/1',
+          description: 'Over 150,000 Investors around the world track their portfolios with Sharesight.'
+        } %>
+
+        <%= partial "partials/header/link", locals: {
+          compact: true,
+          title: 'Read the Reviews',
+          href: '/reviews',
+        } %>
+
+        <%= partial "partials/header/link", locals: {
+          icon: image_path("icons/dollar-symbol.svg"),
+          title: 'Finance Professionals',
+          href: '/2',
+          description: 'Use Sharesight Pro to grow your business.'
+        } %>
+
+        <%= partial "partials/header/link", locals: {
+          icon: image_path("icons/dollar-symbol.svg"),
+          title: 'Finance Companies',
+          href: '/3',
+          description: 'Partner with Sharesight and grow your business.'
+        } %>
+
+      </div>
+    </li>
+
+    <li class="nav__menubar-item" role="none">
+      <a class="nav__menubar-button" href="<%= localize_url('pricing', locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title] %>" tabindex="0">
+        Pricing
+      </a>
+    </li>
+
+
+    <li class="nav__menubar-item" role="none">
+      <button class="nav__menubar-button" aria-controls="menu-company" aria-haspopup="true" aria-expanded="false" id="nav-company" tabindex="0">
+        Company
+
+        <%= partial "partials/header/caret" %>
+      </button>
+
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-company" id="menu-company">
+        <a href="" role="menuitem" tabindex="0">Hello Company</a>
+
+        <div>
+          From the Blog
+
+          <% data.blog.posts.values.first(3).each do |blog_post| %>
+            <br />
+            <a href="<%= post_url(blog_post) %>" title="<%= blog_post[:title] %>">
+              <%= blog_post[:title] %>
+            </a>
+          <% end %>
+        </div>
+      </div>
+    </li>
+
+    <li class="nav__menubar-item" role="none">
+      <button class="nav__menubar-button" aria-controls="menu-support" aria-haspopup="true" aria-expanded="false" id="nav-support" tabindex="0">
+        Support
+
+        <%= partial "partials/header/caret" %>
+      </button>
+
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-support" id="menu-support">
+        <a href="" role="menuitem" tabindex="0">Hello Support</a>
+      </div>
+    </li>
+  </ul>
+
+  <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log in to Sharesight">Log in</a>
+  <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+    <span class="show-mobile hide-desktop">Sign Up</span>
+    <span class="show-desktop hide-mobile">Get Sharesight Free</span>
+  </a>
+
+  <button class="nav__hamburger" aria-label="Open Mobile Navigation">
+    <svg width="16" height="10" viewBox="0 0 16 10">
+      <title>Open Mobile Navigation</title>
+
+      <g fill="#fff" fill-rule="evenodd">
+        <rect y="8" width="16" height="2" rx="1"></rect>
+        <rect y="4" width="16" height="2" rx="1"></rect>
+        <rect y="0" width="16" height="2" rx="1"></rect>
+      </g>
+    </svg>
+  </button>
+</nav>

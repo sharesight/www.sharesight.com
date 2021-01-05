@@ -1,0 +1,19 @@
+<%
+  classes = ['menu__link']
+  classes << 'menu__link--compact' if locals[:compact]
+%>
+
+<a href="<%= locals[:href] %>" role="menuitem" title="<%= locals[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
+  <% if locals[:icon] %>
+    <img src="<%= locals[:icon] %>" class="menu__link-img" role="img" alt="<%= locals[:title] %>"/>
+  <% end %>
+
+  <div class="menu__link-label">
+    <%= locals[:title] %>
+    <%= partial "partials/components/arrow" %>
+
+    <% if locals[:description] %>
+      <span class="menu__link-description"><%= locals[:description] %></span>
+    <% end %>
+  </div>
+</a>

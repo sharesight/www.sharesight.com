@@ -1,3 +1,4 @@
+//= require "./src/navigation"
 //= require "./src/video"
 //= require "./src/testimonials"
 
