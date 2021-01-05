@@ -8,8 +8,8 @@
   background-color: transparent;
   -webkit-font-smoothing: antialiased;
   max-width: 349px;
-  height: 46px;
-  line-height: 43px;
+  height: $btn-height;
+  line-height: $btn-height - ($btn-border-width * 2); // height - border
   cursor: pointer;
   appearance: none;
   user-select: none;
@@ -21,9 +21,6 @@
      @include fontSize(15px);
   }
   @media (min-width: 426px) {
-     @include fontSize(13px);
-  }
-  @media (min-width: $screen-md-min) {
      @include fontSize(13px);
   }
   @media (min-width: $screen-lg-min) {
@@ -42,9 +39,9 @@
 
     background-color: transparent;
     color: rgba($colour_primary, .8);
-    border: 2px solid rgba($colour_primary, .6);
+    border: $btn-border-width solid rgba($colour_primary, .6);
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       color: #fff;
       background-color: $colour_primary;
     }
@@ -54,9 +51,9 @@
     }
 
     &.secondary {
-      border: 2px solid rgba($colour_secondary, .6);
+      border: $btn-border-width solid rgba($colour_secondary, .6);
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         background-color: $colour_secondary;
       }
     }
@@ -70,7 +67,7 @@
     letter-spacing: 1px;
     transition: 250ms all;
 
-    border: 2px solid darken($background_offset_white, 12%);
+    border: $btn-border-width solid darken($background_offset_white, 12%);
     background-color: $background_white;
     color: #333;
     font-weight: 400;
@@ -79,7 +76,7 @@
       margin-left: 10px;
     }
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       border-color: $colour_secondary;
       background-color: lighten($background_white, 12%);
     }
@@ -89,7 +86,7 @@
       border-color: $colour_secondary;
       background-color: $colour_secondary;
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         color: #fff;
         border-color: lighten($colour_pro, 12%);
         background-color: lighten($colour_pro, 12%);
@@ -101,7 +98,7 @@
       border-color: $colour_primary;
       background-color: $colour_primary;
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         border-color: lighten($colour_primary, 12%);
         background-color: lighten($colour_primary, 12%);
       }
@@ -112,7 +109,7 @@
       border-color: $color_highlight;
       background-color: $color_highlight;
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         border-color: lighten($color_highlight, 12%);
         background-color: lighten($color_highlight, 12%);
       }
@@ -123,7 +120,7 @@
       border-color: $colour_pro;
       background-color: $colour_pro;
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         border-color: lighten($colour_pro, 12%);
         background-color: lighten($colour_pro, 12%);
       }
@@ -133,47 +130,47 @@
   &--transparent {
     color: $colour_default;
 
-    &, &:hover {
+    &, &:hover, &:focus, &:focus-within {
       border-color: transparent;
       background: transparent;
     }
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       color: darken($colour_default, 12%);
     }
   }
 
 
   &-default {
-    border: 2px solid $colour_default;
+    border: $btn-border-width solid $colour_default;
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       background-color: $colour_default;
     }
   }
 
   &-primary {
-    border: 2px solid $colour_primary;
+    border: $btn-border-width solid $colour_primary;
 
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       background-color: $colour_primary;
     }
   }
 
   &-secondary {
-    border: 2px solid $colour_secondary;
+    border: $btn-border-width solid $colour_secondary;
 
-    &:hover {
+    &:hover, &:focus, &:focus-within {
       background-color: $colour_secondary;
     }
 
     &.inverse {
       background-color: $colour_secondary;
-      border: 2px solid $colour_secondary;
+      border: $btn-border-width solid $colour_secondary;
       color: white;
 
-      &:hover {
+      &:hover, &:focus, &:focus-within {
         outline: none;
         color: white;
         border-color: transparent;

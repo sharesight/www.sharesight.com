@@ -52,6 +52,9 @@ $breakpoints: (
 $grid-columns: 12;
 $gutter: 20px;
 
+$btn-height: 46px;
+$btn-border-width: 2px;
+
 // must be in order
 @import "tools/mixins";
 @import "tools/functions";
