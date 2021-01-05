@@ -7,20 +7,6 @@
   }
 }
 
-.masthead_blank {
-  position: relative;
-  height: 0;
-  padding-bottom: 50%;
-  overflow: hidden;
-  z-index: 1;
-  background: none !important;
-  @include respond-to(xs, max) {
-    overflow: visible;
-    height: auto;
-    padding-bottom: 0;
-  }
-}
-
 .masthead {
   outline: none; // get rid of focus outline
   position: relative;
@@ -58,9 +44,6 @@
   }
 }
 
-.masthead_light {
-  background-image: none;
-}
 .masthead_content {
   position: absolute;
   top: 25%;
@@ -196,51 +179,5 @@
         padding: 0;
       }
     }
-  }
-}
-
-.masthead_footer {
-  width: 100%;
-  padding: 0;
-  text-align: center;
-  position: relative;
-  top: -50px;
-  z-index: 1;
-
-  @include respond-to(xs, max) {
-    display: none;
-  }
-
-  .masthead_footer_list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .masthead_footer_list_item {
-    display: inline-block;
-    margin-right: 70px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .masthead_footer_tagline {
-    @include fontSize(30px);
-    margin-top: 20px;
-  }
-}
-
-.masthead_tier {
-  height: 70px;
-  padding-bottom: 0;
-
-  @include respond-to(sm, min) {
-    height: 80px;
-  }
-
-  @include respond-to(md, min) {
-    height: 100px;
   }
 }
