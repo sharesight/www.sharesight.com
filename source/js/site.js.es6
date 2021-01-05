@@ -1,4 +1,3 @@
-//= require "./src/hamburger"
 //= require "./src/video"
 //= require "./src/testimonials"
 

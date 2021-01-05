@@ -179,22 +179,3 @@
     }
   }
 }
-
-.btn-menu-signup {
-  display: block;
-  height: 62px;
-  line-height: 62px;
-  width: 142px;
-  text-align: center;
-  border: 1px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  margin: $gutter*2 auto 0;
-  text-decoration: none;
-
-  &:hover {
-    border-color: $colour_secondary;
-    background-color: $colour_secondary;
-    color: #fff;
-  }
-}
