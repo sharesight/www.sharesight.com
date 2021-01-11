@@ -30,7 +30,6 @@ group :test do
   gem 'capybara-selenium'
   gem 'chromedriver-helper' # for headless chrome
   gem 'rspec'
-  gem 'guard-rspec', require: false
 end
 
 group :development, :test do
