@@ -1,7 +1,8 @@
-<%# if hide_global_footer_cta is set to true (typically from a layout file), we don't show the notice %>
 <%
+  # if hide_global_footer_cta is set to true (typically from a layout file), we don't show the notice
   hide_global_footer_cta = locals[:hide_global_footer_cta] || current_page.data.hide_global_footer_cta
 
+  # NOTE: This is almost replicated 1:1 on the helpsite as well—updates in here should go in there.
   footer_columns_links = {
     # label => items
     #   - item: { name, page, href, title }
