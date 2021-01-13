@@ -7,36 +7,31 @@
     # label => items
     #   - item: { name, page, href, title }
     #   - href and title can be auto-generated from a `page`
-    'Company' => [
+    'Sharesight' => [
       { name: 'Home', page: 'index', href: localize_url(locale_id: locale_obj[:id]) },
-      { name: 'Executive Team', page: 'team' },
       { name: 'About Us', page: 'about-sharesight' },
+      { name: 'Executive Team', page: 'team' },
       { name: 'FAQ', page: 'faq' },
       { name: 'Pricing', page: 'pricing' },
-      { name: 'Webinars & Events', page: 'events' }
+      { name: 'Reviews', page: 'reviews' },
     ],
 
-    # This has an empty label—no header, but still space
-    '' => [
+    'Partners' => [
       { name: 'Sharesight Pro', page: 'pro' },
-      { name: 'Partners', page: 'partners' },
+      { name: 'Partner Directory', page: 'partners' },
       { name: 'Become a Partner', page: 'become-a-partner' },
-      { name: 'Affiliates', page: 'affiliates' },
-      { name: 'Reviews', page: 'reviews' }
+      { name: 'Become an Affiliate', page: 'affiliates' },
+      { name: 'Sharesight API', href: config[:api_url], title: 'Sharesight API Documentation' },
+      { name: 'sales@sharesight.com', href: 'mailto:sales@sharesight.com', title: 'Email the Sales & Partnerships Team' },
     ],
 
     'Resources' => [
+      { name: 'Help Centre', href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]), title: "Help Centre | #{locale_obj[:append_title]}" },
       { name: 'Blog', href: unlocalized_url('blog'), title: 'Sharesight Blog' },
-      { name: 'API Documentation', href: config[:api_url], title: 'Sharesight Developer API Documentation' },
+      { name: 'Webinars & Events', page: 'events' },
       { name: 'Privacy Policy', page: 'privacy-policy' },
       { name: 'Terms of Use', page: 'sharesight-terms-of-use' },
-      { name: 'Pro Terms of Use', page: 'sharesight-professional-terms-of-use' }
-    ],
-
-    'Support' => [
-      { name: 'Help', href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]), title: "Help | #{locale_obj[:append_title]}" },
-      { name: 'Community Forum', href: config[:community_url], title: 'Sharesight Community Forum' },
-      { name: 'sales@sharesight.com', href: 'mailto:sales@sharesight.com', title: 'Email the Sales Team' },
+      { name: 'Pro Terms of Use', page: 'sharesight-professional-terms-of-use' },
     ]
   }
 %>
@@ -98,8 +93,8 @@
     <div class="footer__links_container" id="main-menu">
       <% footer_columns_links.each do |label, items| %>
 
-        <ul class="footer__links footer__links" role="menubar" aria-label="<%= label ? "#{label} Links" : "" %>">
-          <li role="none" class="footer__link-header"><%= label %>&#8203;</li><!-- NOTE: `&#8203;` here is a special space that ensures it always takes up the line-height -->
+        <ul class="footer__links footer__links" role="menubar" aria-label="<%= "#{label} Links" %>">
+          <li role="none" class="footer__link-header"><%= label %></li>
 
           <%
             items.each do |item|
