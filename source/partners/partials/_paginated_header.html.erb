@@ -32,4 +32,12 @@
       <% end %>
     </ul>
   </div>
+
+  <a
+    href="<%= localize_url('become-a-partner', locale_id: locale_obj[:id]) %>"
+    class="partners-header__become-a-partner"
+    title="<%= locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title] %>"
+  >
+    Become a Partner
+  </a>
 </header>
