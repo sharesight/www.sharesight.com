@@ -1,6 +1,16 @@
 $__categories_list_bottom_margin: $gutter/2;
 
+%partners-pill-btn {
+  display: inline-block;
+  padding: 0 $gutter/2;
+  border-radius: $gutter / 4;
+  font-weight: 100;
+}
+
 .partners-header {
+  @include fontSize(13px);
+  @include lineHeight(28px);
+
   @extend %container;
   margin-bottom: $gutter - $__categories_list_bottom_margin;
 
@@ -17,10 +27,6 @@ $__categories_list_bottom_margin: $gutter/2;
   }
 
   &__categories {
-    @include fontSize(13px);
-    @include lineHeight(28px);
-    font-weight: 100;
-
     ul, li {
       display: inline-block;
       list-style: none;
@@ -29,18 +35,15 @@ $__categories_list_bottom_margin: $gutter/2;
     }
 
     &-list {
-      margin-left: $gutter / 3;
+      // margin-left: $gutter / 3;
     }
   }
 
   &__category {
-    display: inline-block;
-    margin: 0 $gutter/4 $__categories_list_bottom_margin;
-    padding: 0 $gutter/2;
-    border-radius: $gutter / 4;
+    @extend %partners-pill-btn;
+    margin: 0 $gutter/4 $__categories_list_bottom_margin 0;
     color: $colour_primary;
     background-color: $background_offset_white;
-    font-weight: inherit;
 
     &:hover {
       background: darken($background_offset_white, 12%);
@@ -54,6 +57,17 @@ $__categories_list_bottom_margin: $gutter/2;
       &:hover {
         background: lighten($colour_secondary, 12%);
       }
+    }
+  }
+
+  &__become-a-partner {
+    @extend %partners-pill-btn;
+    margin-top: $gutter/2;
+    color: #fff;
+    background-color: $color_highlight;
+
+    &:hover {
+      background: darken($color_highlight, 12%);
     }
   }
 }
