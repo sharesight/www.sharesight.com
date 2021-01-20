@@ -114,11 +114,12 @@ footer#footer {
 
       // Mobile View:
       @include respond-to(sm, max) {
-        &.footer__link-header {
-          flex-basis: 100%;
-        }
-
         flex-basis: 50%;
+
+        &.footer__link-header {
+          // Make this align with the other navigation's left column.
+          margin-right: 50%;
+        }
       }
     }
   }
