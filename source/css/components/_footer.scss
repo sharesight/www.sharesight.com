@@ -94,42 +94,32 @@ footer#footer {
   &__links {
     list-style: none;
     outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
 
-    flex: 1 1 50%;
-
-    &--double-width {
+    // Mobile View:
+    @include respond-to(sm, max) {
+      align-items: flex-start;
       flex-basis: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: start;
 
-      li {
-        flex-basis: 100%;
+      // Whitespace between link containers
+      & + & {
+        margin-top: $gutter/2;
       }
     }
 
-    @include respond-to(xs, min) {
-      &--double-width {
-        // Headers should only be 50% width, left-aligned.
-        li[role="none"] {
-          flex-basis: 50%;
+    & > li {
+      flex: 1 1 100%;
+
+      // Mobile View:
+      @include respond-to(sm, max) {
+        flex-basis: 50%;
+
+        &.footer__link-header {
+          // Make this align with the other navigation's left column.
           margin-right: 50%;
         }
-
-        // Menu Items are 50% width and should be laid out in a grid below.
-        li[role="menuitem"] {
-          flex-basis: 50%;
-        }
-      }
-    }
-
-    @include respond-to(md, min) {
-      flex-basis: 25%;
-
-      &--double-width {
-        flex-basis: 40%; // NOTE: Not actually "double" here, just larger.
       }
     }
   }
@@ -284,16 +274,25 @@ footer#footer {
     }
   }
 
+  &__link,
   &__link-header {
     @include fontSize(16px, 30px);
+    padding: 0;
+    color: #fff;
+  }
+
+  &__link-header {
     font-weight: 600;
     text-transform: lowercase;
     font-variant: small-caps;
+
+    @include respond-to(sm, max) {
+      @include fontSize(20px);
+    }
   }
 
   &__link {
-    @include fontSize(15px, 30px); // match link-header
-    color: white;
+    @include fontSize(15px); // same line-height, different size as link-header
     font-weight: 100;
   }
 
