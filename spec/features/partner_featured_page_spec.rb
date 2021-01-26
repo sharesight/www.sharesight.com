@@ -64,6 +64,9 @@ describe 'Partner Category Pages', :type => :feature do
       )
     end
 
+    # Have a "Become a Partner" button.
+    expect(page).to have_css("a[href='#{localize_url('become-a-partner', locale_id: locale[:id])}']", text: 'Become a Partner')
+
     # Have a footer.
     expect(page).to have_css('.footer__copyright', text: 'All rights reserved.')
   end

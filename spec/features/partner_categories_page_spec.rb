@@ -86,6 +86,9 @@ describe 'Partner Category Pages', :type => :feature do
           )
         end
 
+        # Have a "Become a Partner" button.
+        expect(page).to have_css("a[href='#{localize_url('become-a-partner', locale_id: locale[:id])}']", text: 'Become a Partner')
+
         # Check for the next page.
         expect(page).to have_css("a[href='#{localize_url("#{category[:path]}/pages/2/", locale_id: locale[:id])}']", text: 'Next Page') if category[:partners].length > @per_page
 
