@@ -81,6 +81,7 @@ activate :routing
     f.space             = { space::NAME => space::SPACE_ID }
     f.cda_query         = space::CDA_QUERY
     f.all_entries       = space::ALL_ENTRIES
+    f.all_entries_page_size = 500 # Reduce the number of entries downloaded to avoid resource limits.  Defaults to 1000.
 
     # This maps the content types; takes ['schema', 'array']; returns { 'schemas' => 'schema', 'arrays' => 'array' }
     f.content_types     = space::SCHEMAS.reduce(Hash.new(0)) { |memo, schema|
