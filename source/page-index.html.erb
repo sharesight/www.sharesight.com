@@ -12,7 +12,7 @@ layout: layout_index
 <%= partial "sections/pricing", locals: { locale_obj: locale_obj } %>
 <%= partial "sections/partners", locals: { locale_obj: locale_obj } %>
 
-<%= partial "sections/trustpilot", locals: { locale_obj: locale_obj } %>
+<%= partial "sections/trustpilot", locals: { locale_obj: locale_obj, tags: "widget-general-#{locale_obj[:id]}" } %>
 
 <div class="section section--text section_video">
   <div class="container">
