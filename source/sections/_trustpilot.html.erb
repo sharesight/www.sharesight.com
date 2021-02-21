@@ -1,14 +1,14 @@
 <%
+  tags = Array(locals[:tags]) # accepts a non-array, always castas as an array
   locale_obj = locals[:locale_obj] || current_locale_obj
-  tag_id = locale_obj[:id] # This should be au, nz, ca, uk, global, etc…
 
   # NOTE: For global, this should be "en-US"
   trustpilot_lang = locale_obj[:lang] # This should be en-AU, en-NZ, en-CA, en-GB, en-US, etc…
-  trustpilot_lang = "en-US" if tag_id == "global"
+  trustpilot_lang = "en-US" if locale_obj[:id] == "global"
 
   # NOTE: For global, this should be "www"
-  trustpilot_subdomain = tag_id # This should be au, nz, ca, uk, etc…
-  trustpilot_subdomain = "www" if tag_id == "global"
+  trustpilot_subdomain = locale_obj[:id] # This should be au, nz, ca, uk, etc…
+  trustpilot_subdomain = "www" if locale_obj[:id] == "global"
 %>
 
 <section class="section alternate">
@@ -22,7 +22,7 @@
       data-style-height="450px"
       data-style-width="100%"
       data-theme="light"
-      data-tags="widget-general-<%= tag_id %>"
+      data-tags="<%= tags.join(',') %>"
       data-stars="4,5"
       data-review-languages="en"
     >
