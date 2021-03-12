@@ -41,7 +41,7 @@ jobs:
 
     # -------- Slack Notification when Failed
     - name: Send Failure Notification
-      uses: lazy-actions/slatify@3.0.0
+      uses: lazy-actions/slatify@v3.0.0
       if: failure()
       with:
         type: ${{ job.status }}
