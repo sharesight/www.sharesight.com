@@ -22,9 +22,22 @@ updates:
     timezone: Pacific/Auckland
   open-pull-requests-limit: 99
   reviewers:
-  - irwalker 
+  - irwalker
   labels:
   - bot-pr
   - dependencies
   - ruby
   versioning-strategy: lockfile-only
+
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+    timezone: "Pacific/Auckland"
+  labels:
+  - dependencies
+  - bot-pr
+  - gh-actions
+  reviewers:
+  - "sharesight/dev-ops"
