@@ -18,7 +18,7 @@ jobs:
     steps:
 
     # -------- Github Checkout
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
 
 
     # -------- Ruby & Dependencies
@@ -41,7 +41,7 @@ jobs:
 
     # -------- Slack Notification when Failed
     - name: Send Failure Notification
-      uses: homoluctus/slatify@master
+      uses: lazy-actions/slatify@3.0.0
       if: failure()
       with:
         type: ${{ job.status }}
