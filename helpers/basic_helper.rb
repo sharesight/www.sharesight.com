@@ -10,4 +10,10 @@ module BasicHelper
   def self.replace_quotes(str)
     str&.gsub(/"/, "'")
   end
+
+  def self.truncate(string, max_length, after_text: '…')
+    return string unless string.length > max_length
+
+    "#{string[0...max_length]}#{after_text}"
+  end
 end
