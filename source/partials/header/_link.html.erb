@@ -1,19 +1,22 @@
 <%
   classes = ['menu__link']
   classes << 'menu__link--compact' if locals[:compact]
+
+  text = locals[:title]
+  text = BasicHelper.truncate(text, locals[:truncate]) if locals[:truncate]
 %>
 
 <a href="<%= locals[:href] %>" role="menuitem" title="<%= locals[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
-  <% if locals[:icon] %>
-    <img src="<%= locals[:icon] %>" class="menu__link-img" role="img" alt="<%= locals[:title] %>"/>
-  <% end %>
-
-  <div class="menu__link-label">
-    <%= locals[:title] %>
-    <%= partial "partials/components/arrow" %>
-
-    <% if locals[:description] %>
-      <span class="menu__link-description"><%= locals[:description] %></span>
+  <span class="menu__label <%= "menu__label--no-icon" unless locals[:icon] %>">
+    <% if locals[:icon] %>
+      <i class="ph-<%= locals[:icon] %> menu__icon" data-ph-hover-weight="bold" role="img" aria-label="<%= locals[:title] %>"></i>
     <% end %>
-  </div>
+
+    <%= text %>
+    <%= partial "partials/components/arrow" %>
+  </span>
+
+  <% if locals[:description] %>
+    <div class="menu__description"><%= locals[:description] %></div>
+  <% end %>
 </a>

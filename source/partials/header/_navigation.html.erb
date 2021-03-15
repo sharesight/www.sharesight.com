@@ -30,23 +30,23 @@
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'trend-up',
               title: 'Performance',
-              href: '/reviews',
+              href: '/TODO',
             } %>
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'coin',
               title: 'Dividends',
-              href: '/reviews',
+              href: '/TODO',
             } %>
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'receipt',
               title: 'Tax Reporting',
-              href: '/reviews',
+              href: '/TODO',
             } %>
           </div>
 
@@ -55,23 +55,23 @@
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'squares-four',
               title: 'Supported Investments',
-              href: '/reviews',
+              href: '/TODO',
             } %>
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'globe-hemisphere-west',
               title: 'Supported Exchanges',
-              href: '/reviews',
+              href: '/TODO',
             } %>
 
             <%= partial "partials/header/link", locals: {
               compact: true,
-              icon: image_path("icons/globe.svg"),
+              icon: 'bank',
               title: 'Supported Brokers',
-              href: '/reviews',
+              href: '/TODO',
             } %>
           </div>
         </div>
@@ -79,15 +79,17 @@
         <div class="menu__row menu__background">
           <div class="menu__half">
             <%= partial "partials/header/link", locals: {
+              icon: 'question',
               title: 'Frequently Asked Questions',
-              href: '/reviews',
+              href: '/faq',
             } %>
           </div>
 
           <div class="menu__half">
             <%= partial "partials/header/link", locals: {
+              icon: 'shield-check',
               title: 'Data Security',
-              href: '/reviews',
+              href: '/TODO',
             } %>
           </div>
         </div>
@@ -95,17 +97,17 @@
     </li>
 
     <li class="nav__menubar-item" role="none">
-      <button class="nav__menubar-button" aria-controls="menu-why" aria-haspopup="true" aria-expanded="false" id="nav-why" tabindex="0">
-        Why Sharesight
+      <button class="nav__menubar-button" aria-controls="menu-benefits" aria-haspopup="true" aria-expanded="false" id="nav-benefits" tabindex="0">
+        Benefits
 
         <%= partial "partials/header/caret" %>
       </button>
 
-      <div class="nav__menu menu" role="menu" aria-labelledby="nav-why" id="menu-why">
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-benefits" id="menu-benefits">
         <%= partial "partials/header/link", locals: {
-          icon: image_path("icons/globe.svg"),
+          icon: 'user',
           title: 'Investors',
-          href: '/1',
+          href: '/TODO',
           description: 'Over 150,000 Investors around the world track their portfolios with Sharesight.'
         } %>
 
@@ -116,16 +118,16 @@
         } %>
 
         <%= partial "partials/header/link", locals: {
-          icon: image_path("icons/dollar-symbol.svg"),
+          icon: 'users',
           title: 'Finance Professionals',
-          href: '/2',
+          href: '/TODO',
           description: 'Use Sharesight Pro to grow your business.'
         } %>
 
         <%= partial "partials/header/link", locals: {
-          icon: image_path("icons/dollar-symbol.svg"),
+          icon: 'buildings',
           title: 'Finance Companies',
-          href: '/3',
+          href: '/TODO',
           description: 'Partner with Sharesight and grow your business.'
         } %>
 
@@ -138,39 +140,31 @@
       </a>
     </li>
 
-
     <li class="nav__menubar-item" role="none">
-      <button class="nav__menubar-button" aria-controls="menu-company" aria-haspopup="true" aria-expanded="false" id="nav-company" tabindex="0">
-        Company
+      <button class="nav__menubar-button" aria-controls="menu-resources" aria-haspopup="true" aria-expanded="false" id="nav-resources" tabindex="0">
+        Resources
 
         <%= partial "partials/header/caret" %>
       </button>
 
-      <div class="nav__menu menu" role="menu" aria-labelledby="nav-company" id="menu-company">
-        <a href="" role="menuitem" tabindex="0">Hello Company</a>
+      <div class="nav__menu menu" role="menu" aria-labelledby="nav-resources" id="menu-resources">
+        <a href="" role="menuitem" tabindex="0">Hello Resources!</a>
 
-        <div>
-          From the Blog
+        <div class="menu__background menu__blog">
+          <div class="menu__label menu__title" role="separator">
+            <i class="ph-pencil-circle menu__icon" role="img" aria-label="From the Blog"></i>
+            From the Blog
+          </div>
 
           <% data.blog.posts.values.first(3).each do |blog_post| %>
-            <br />
-            <a href="<%= post_url(blog_post) %>" title="<%= blog_post[:title] %>">
-              <%= blog_post[:title] %>
-            </a>
+            <%= partial "partials/header/link", locals: {
+              title: blog_post[:title],
+              href: post_url(blog_post),
+              truncate: 60,
+              compact: true
+            } %>
           <% end %>
         </div>
-      </div>
-    </li>
-
-    <li class="nav__menubar-item" role="none">
-      <button class="nav__menubar-button" aria-controls="menu-support" aria-haspopup="true" aria-expanded="false" id="nav-support" tabindex="0">
-        Support
-
-        <%= partial "partials/header/caret" %>
-      </button>
-
-      <div class="nav__menu menu" role="menu" aria-labelledby="nav-support" id="menu-support">
-        <a href="" role="menuitem" tabindex="0">Hello Support</a>
       </div>
     </li>
   </ul>

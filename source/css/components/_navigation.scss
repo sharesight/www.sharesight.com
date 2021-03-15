@@ -1,7 +1,9 @@
-$nav-height: 65px;
+$__nav-height: 65px;
 
-$menu-padding: $gutter * 1.5;
-$menu-border-radius: 3px;
+$__menu-padding: $gutter * 1.5;
+$__menu-border-radius: 3px;
+
+$__link_indentation: 28px; // indentation to have links and icons be a bit consistent
 
 %button-reset {
   /* Reset the `<button />` and `<a />` appearance to be more consistent. */
@@ -82,10 +84,10 @@ $menu-border-radius: 3px;
   &__menubar-button {
     @extend %button-reset;
 
-    height: $nav-height;
+    height: $__nav-height;
     display: block;
     color: $colour_base;
-    line-height: $nav-height; // NOTE: We do not use a border, so we just use the height.
+    line-height: $__nav-height; // NOTE: We do not use a border, so we just use the height.
     font-weight: 500;
     padding: 0 $gutter/2;
     margin: 0 $gutter/2;
@@ -146,14 +148,14 @@ $menu-border-radius: 3px;
 
 .menu {
   position: absolute;
-  top: $nav-height;
+  top: $__nav-height;
   left: -50%;
   width: fit-content;
   min-width: 550px;
   z-index: 1000;
   background: #fff;
-  padding: $menu-padding;
-  border-radius: $menu-border-radius; // Should be less than the border-top-width
+  padding: $__menu-padding;
+  border-radius: $__menu-border-radius; // Should be less than the border-top-width
   box-shadow: 0 5px 10px rgba($colour_pro, 0.20);
   border-top: 5px solid $color_highlight;
   font-size: 0.85rem;
@@ -176,11 +178,61 @@ $menu-border-radius: 3px;
     right: -50%;
   }
 
-  &__link {
+  &__icon {
+    font-size: 22px;
+    height: 22px; // match our font-size so line-height is a bit cleaner
+    color: $colour_pro;
+
+    .menu__link--compact & {
+      font-size: 18px;
+      height: 18px; // match our font-size so line-height is a bit cleaner
+    }
+
+    %root-can-hover-focus & {
+      opacity: 0.75;
+      transition: 150ms opacity;
+      will-change: opacity;
+    }
+
+    %root-hover-focus & {
+      opacity: 1;
+      color: $color_highlight;
+    }
+  }
+
+  &__description {
+    margin-top: 3px;
+    font-size: 95%;
+    font-weight: 400;
+    display: block;
+    padding-left: $__link_indentation;
+
+    %root-can-hover-focus & {
+      opacity: 0.6;
+    }
+
+    %root-hover-focus & {
+      opacity: 1;
+    }
+  }
+
+  &__label {
     display: flex;
+    align-items: center;
+
+    i[class*="ph-"] {
+      margin-right: 5px;
+    }
+
+    &--no-icon {
+      padding-left: $__link_indentation;
+    }
+  }
+
+  &__link {
+    display: block;
     color: $colour_base;
     font-weight: 600;
-    position: relative;
 
     & + & {
       margin-top: $gutter * 1.5;
@@ -189,73 +241,45 @@ $menu-border-radius: 3px;
         margin-top: $gutter/2;
       }
     }
-
-    &-img {
-      left: 0;
-      max-width: 20px;
-      position: absolute;
-      top: 0;
-      color: $colour_pro;
-      opacity: 0.75;
-
-      transition: 150ms opacity;
-      will-change: opacity;
-
-      .menu__link--compact & {
-        max-width: 16px;
-        margin-left: 6px;
-      }
-
-      %root-hover-focus & {
-        opacity: 1;
-        color: $color_highlight;
-      }
-    }
-
-    &-label {
-      padding-left: 30px; // large enough to encapsulate the img with whitespace
-    }
-
-    &-description {
-      margin-top: 3px;
-      font-size: 95%;
-      font-weight: 400;
-      opacity: 0.6;
-      display: block;
-
-      %root-hover-focus & {
-        opacity: 1;
-      }
-    }
   }
 
   &__title {
     text-transform: uppercase;
     color: $colour_default;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin-bottom: $gutter/2;
+
+    .menu__icon {
+      color: $colour_default;
+    }
   }
 
   &__separator {
-    margin: $gutter (-$menu-padding);
+    margin: $gutter (-$__menu-padding);
     border: 0;
     border-top: 1px solid $colour_table-lines;
   }
 
   &__background {
-    margin: $gutter (-$menu-padding);
+    margin: $gutter (-$__menu-padding);
     background: #f2f2f2;
-    padding: $menu-padding;
+    padding: $__menu-padding;
 
     &:first-child {
-      margin-top: -$menu-padding;
-      border-radius: $menu-border-radius $menu-border-radius 0 0;
+      margin-top: -$__menu-padding;
+      border-radius: $__menu-border-radius $__menu-border-radius 0 0;
     }
 
     &:last-child {
-      margin-bottom: -$menu-padding;
-      border-radius: 0 0 $menu-border-radius $menu-border-radius;
+      margin-bottom: -$__menu-padding;
+      border-radius: 0 0 $__menu-border-radius $__menu-border-radius;
+    }
+  }
+
+  &__blog {
+    .menu__link {
+      font-weight: normal;
     }
   }
 
