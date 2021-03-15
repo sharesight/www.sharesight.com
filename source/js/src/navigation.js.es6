@@ -42,11 +42,10 @@
           return;
       }
 
-      e.preventDefault(); // if we did something here, prevent the default action
+      event.preventDefault(); // if we did something here, prevent the default action
     }
 
-    document.addEventListener('keypress', function handleKeyboardGlobal (event) {
-      console.log('@@body', event.key)
+    document.addEventListener('keydown', function handleKeyboardGlobal (event) {
       switch (String(event.key).toLowerCase()) {
         case 'esc':
         case 'escape':
@@ -58,11 +57,11 @@
           return;
       }
 
-      e.preventDefault(); // if we did something here, prevent the default action
+      event.preventDefault(); // if we did something here, prevent the default action
     });
 
     menuTargets.forEach((node) => {
-      node.addEventListener('keypress', handleKeyboardMenu);
+      node.addEventListener('keydown', handleKeyboardMenu);
 
       node.addEventListener('click', handleShowMenu);
       node.addEventListener('focusin', handleShowMenu);
