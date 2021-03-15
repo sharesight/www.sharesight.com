@@ -5,26 +5,40 @@ svg.arrow {
   stroke: $colour_pro;
   stroke-width: 2px;
   fill: none;
-  transition: 150ms opacity;
-  opacity: 1;
-  will-change: opacity;
 
   .arrow__tip,
   .arrow__line {
-    opacity: 0;
+    opacity: 0.65;
     will-change: opacity, transform;
     transition: 150ms all;
+  }
 
-    %root-hover-focus & {
+  %root-hover-focus & {
+    stroke: $color_highlight;
+
+    &, .arrow__tip, .arrow__line {
       opacity: 1;
     }
   }
 
-  %root-hover-focus & {
-    opacity: 1;
-
+  &--forced-visible {
+    // Always have the arrow "slid in".
     .arrow__tip {
       transform: translateX(3px);
+    }
+  }
+
+  &--hidden {
+    // "slide" the arrow in when we're hovering.
+    .arrow__tip {
+      %root-hover-focus & {
+        transform: translateX(3px);
+      }
+    }
+
+    .arrow__tip,
+    .arrow__line {
+      opacity: 0;
     }
   }
 }
