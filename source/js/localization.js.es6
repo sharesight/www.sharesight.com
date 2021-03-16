@@ -166,7 +166,9 @@ const localization = {
 
 ;(function() {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', localization.onLoad);
+    document.addEventListener('DOMContentLoaded', () => {
+      localization.onLoad();
+    });
   } else {
     localization.onLoad();
   }
