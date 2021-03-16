@@ -4,15 +4,19 @@
 
   text = locals[:title]
   text = BasicHelper.truncate(text, locals[:truncate]) if locals[:truncate]
+
+  # NOTE: `icon_hover` should not include `ph-`
+  icon_hover = locals[:icon_hover] || "#{locals[:icon]}-fill"
 %>
 
 <a href="<%= locals[:href] %>" role="menuitem" title="<%= locals[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
   <span class="menu__label <%= "menu__label--no-icon" unless locals[:icon] %>">
     <% if locals[:icon] %>
-      <i class="ph-<%= locals[:icon] %> menu__icon" data-ph-hover-weight="bold" role="img" aria-label="<%= locals[:title] %>"></i>
+      <i class="ph-<%= locals[:icon] %> menu__icon" data-ph-hover="<%= "ph-#{icon_hover}" %>" role="img" aria-label="<%= locals[:title] %>"></i>
     <% end %>
 
-    <%= text %>
+    <span class="menu__label-text"><%= text %></span>
+
     <%= partial "partials/components/arrow" %>
   </span>
 

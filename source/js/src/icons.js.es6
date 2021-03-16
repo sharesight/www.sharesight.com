@@ -1,75 +1,63 @@
 (function() {
   /* Force icons to change their font weight when focused or hovered. */
   document.addEventListener('DOMContentLoaded', () => {
-    const phIconSelector = 'i[data-ph-hover-weight]';
-    const weights = ['bold', 'regular', 'light', 'thin', 'fill'];
-    const weightClassRegex = new RegExp(`-(${weights.join('|')})$`);
-
-    function stripWeightFromClass (className) {
-      return className.replace(weightClassRegex, '');
-    }
-
+    const phIconSelector = 'i[data-ph-hover]';
     const icons = document.querySelectorAll(phIconSelector);
 
-    function setWeightHover (event) {
-      const icon = event.currentTarget;
-      changeToWeight(icon, icon.getAttribute('data-ph-hover-weight'));
+    function getIcon (event) {
+      let icon = event.currentTarget;
+      if (!icon.matches(phIconSelector)) {
+        icon = event.currentTarget.querySelector(phIconSelector);
+      }
+
+      return icon;
     }
 
-    function setContainerWeightHover (event) {
-      const icon = event.currentTarget.querySelector(phIconSelector);
-      changeToWeight(icon, icon.getAttribute('data-ph-hover-weight'));
-    }
+    function cacheOriginalIcon (node) {
+      if (node.getAttribute('data-ph-original')) return;
 
-    function resetWeight (event) {
-      const icon = event.currentTarget;
-      changeToWeight(icon, icon.getAttribute('data-ph-weight'));
-    }
-
-    function resetContainerWeight (event) {
-      const icon = event.currentTarget.querySelector(phIconSelector);
-      changeToWeight(icon, icon.getAttribute('data-ph-weight'));
-    }
-
-    function changeToWeight (icon, weight) {
-      icon.classList.forEach(className => {
+      // Find the "original weight" for the icon and set it as a data attribute.
+      node.classList.forEach(className => {
         if (!/^ph-[A-z-]+$/.test(className)) return;
-        icon.classList.remove(className);
-
-        // Add the new weight, eg. "-fill".
-        let newClassName = stripWeightFromClass(className);
-        if (weight) newClassName += `-${weight}`;
-        icon.classList.add(newClassName);
-      })
+        node.setAttribute('data-ph-original', className);
+      });
     }
 
+    function setIcon (event) {
+      const icon = getIcon(event);
+      if (!icon) return;
+
+      cacheOriginalIcon(icon);
+      changeIcon(icon, icon.getAttribute('data-ph-hover'));
+    }
+
+    function resetIcon (event) {
+      const icon = getIcon(event);
+      if (!icon) return;
+
+      changeIcon(icon, icon.getAttribute('data-ph-original'));
+    }
+
+    function changeIcon (node, newIcon) {
+      node.classList.forEach(className => {
+        if (!/^ph-[A-z-]+$/.test(className)) return;
+        node.classList.remove(className);
+        node.classList.add(newIcon);
+      });
+    }
 
     icons.forEach((icon) => {
-      // Find the "original weight" for the icon and set it as a data attribute.
-      icon.classList.forEach(className => {
-        if (!/^ph-[A-z-]+$/.test(className)) return;
-        const weightMatch = className.match(weightClassRegex);
-        if (weightMatch) {
-          const weightFromClassName = weightMatch[1];
-
-          if (weights.includes(weightFromClassName)) {
-            icon.setAttribute('data-ph-weight', weightFromClassName)
-            return true;
-          }
-        }
-      });
-
-      icon.addEventListener('focusin', setWeightHover);
-      icon.addEventListener('mouseover', setWeightHover);
-      icon.addEventListener('focusout', resetWeight);
-      icon.addEventListener('mouseout', resetWeight);
+      icon.addEventListener('focusin', setIcon);
+      icon.addEventListener('mouseover', setIcon);
+      icon.addEventListener('focusout', resetIcon);
+      icon.addEventListener('mouseout', resetIcon);
 
       const container = icon.closest('a, button');
       if (container) {
-        container.addEventListener('focusin', setContainerWeightHover);
-        container.addEventListener('mouseover', setContainerWeightHover);
-        container.addEventListener('focusout', resetContainerWeight);
-        container.addEventListener('mouseout', resetContainerWeight);
+        container.addEventListener('focusin', setIcon);
+        container.addEventListener('mouseover', setIcon);
+        container.addEventListener('focusout', resetIcon);
+        container.addEventListener('mouseout', resetIcon);
       }
     });
   })
