@@ -72,10 +72,18 @@ function registerNavigation () {
   });
 }
 
+function registerMobileNavigation () {
+
+}
+
 ;(function() {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', registerNavigation);
+    document.addEventListener('DOMContentLoaded', () => {
+      registerNavigation();
+      registerMobileNavigation();
+    });
   } else {
     registerNavigation();
+    registerMobileNavigation();
   }
 })();
