@@ -147,20 +147,118 @@
         <%= partial "partials/header/caret" %>
       </button>
 
-      <div class="nav__menu menu" role="menu" aria-labelledby="nav-resources" id="menu-resources">
-        <a href="" role="menuitem" tabindex="0">Hello Resources!</a>
+      <div class="nav__menu menu menu--lg" role="menu" aria-labelledby="nav-resources" id="menu-resources">
+        <div class="menu__row">
+          <div class="menu__column">
+            <div class="menu__title" role="separator">Company</div>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'magnifying-glass',
+              title: 'About Sharesight',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'user-rectangle',
+              title: 'Executive Team',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'briefcase',
+              title: 'Careers',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'megaphone',
+              title: 'Media Center',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'smiley',
+              icon_hover: 'smiley-wink-fill',
+              title: 'Reviews',
+              href: '/TODO',
+            } %>
+          </div>
+
+          <div class="menu__column">
+            <div class="menu__title" role="separator">Work with Us</div>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'identification-card',
+              title: 'Partner Directory',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'handshake',
+              title: 'Become a Partner',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'share',
+              title: 'Become an Affiliate',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'envelope-simple',
+              icon_hover: 'envelope-simple-open',
+              title: 'sales@sharesight.com',
+              href: 'mailto:sales@sharesight.com',
+            } %>
+          </div>
+
+          <div class="menu__column">
+            <div class="menu__title" role="separator">Resources</div>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'info',
+              title: 'Help Centre',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'code',
+              title: 'Sharesight API',
+              href: '/TODO',
+            } %>
+
+            <%= partial "partials/header/link", locals: {
+              compact: true,
+              icon: 'monitor-play',
+              title: 'Events & Webinars',
+              href: '/TODO',
+            } %>
+          </div>
+        </div>
 
         <div class="menu__background menu__blog">
-          <div class="menu__label menu__title" role="separator">
+          <a class="menu__label menu__title" role="separator" href="/blog">
             <i class="ph-pencil-circle menu__icon" role="img" aria-label="From the Blog"></i>
-            From the Blog
-          </div>
+            <span class="menu__label-text">From the Blog</span>
+          </a>
 
           <% data.blog.posts.values.first(3).each do |blog_post| %>
             <%= partial "partials/header/link", locals: {
               title: blog_post[:title],
               href: post_url(blog_post),
-              truncate: 60,
+              truncate: 75,
               compact: true
             } %>
           <% end %>
