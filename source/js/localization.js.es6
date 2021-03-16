@@ -164,8 +164,10 @@ const localization = {
   },
 }
 
-;(() => {
-  document.addEventListener('DOMContentLoaded', () => {
-    localization.onLoad()
-  })
-})()
+;(function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', localization.onLoad);
+  } else {
+    localization.onLoad();
+  }
+})();
