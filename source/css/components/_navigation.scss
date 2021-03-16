@@ -308,12 +308,12 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   // Requires a `<div class="menu__row" />` around it.
-  &__half {
+  &__split-2 {
     flex: 1 1 50%;
   }
 
   // Requires a `<div class="menu__row" />` around it.
-  &__column {
+  &__split-3 {
     flex: 1 1 percentage(1/3);
   }
 }

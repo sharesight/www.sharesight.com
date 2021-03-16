@@ -9,12 +9,240 @@
     - We do not do keyboard search like "c" to go to "Company", etc. (I can't find a real-world example of thise anyways)
 %>
 
+<%
+  # We store this menu data in here to be used for both Desktop and Mobile navigation..
+  menus = [
+    {
+      label: 'Features',
+      rows: [
+        {
+          columns: [
+            {
+              label: 'Features',
+              links: [
+                {
+                  compact: true,
+                  icon: 'trend-up',
+                  icon_hover: 'chart-line-up-bold',
+                  title: 'Performance',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'coin',
+                  title: 'Dividends',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'receipt',
+                  icon_hover: 'article-fill',
+                  title: 'Tax Reporting',
+                  href: '/TODO',
+                }
+              ]
+            },
+            {
+              label: 'What we Track',
+              links: [
+                {
+                  compact: true,
+                  icon: 'squares-four',
+                  icon_hover: 'grid-four-fill',
+                  title: 'Supported Investments',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'globe-hemisphere-west',
+                  icon_hover: 'globe-hemisphere-east-fill',
+                  title: 'Supported Exchanges',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'bank',
+                  title: 'Supported Brokers',
+                  href: '/TODO',
+                }
+              ]
+            }
+          ]
+        },
+        {
+          class: 'menu__background',
+          columns: [
+            {
+              links: [
+                {
+                  icon: 'question',
+                  title: 'Frequently Asked Questions',
+                  href: '/faq',
+                },
+              ]
+            },
+            {
+              links: [
+                {
+                  icon: 'shield',
+                  icon_hover: 'shield-check-fill',
+                  title: 'Data Security',
+                  href: '/TODO',
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      label: 'Benefits',
+      rows: [
+        {
+          columns: [
+            {
+              links: [
+                {
+                  icon: 'user',
+                  title: 'Investors',
+                  href: '/TODO',
+                  description: 'Over 150,000 Investors around the world track their portfolios with Sharesight.'
+                },
+                {
+                  icon: 'users',
+                  title: 'Finance Professionals',
+                  href: '/TODO',
+                  description: 'Use Sharesight Pro to grow your business.'
+                },
+                {
+                  icon: 'buildings',
+                  title: 'Finance Companies',
+                  href: '/TODO',
+                  description: 'Partner with Sharesight and grow your business.'
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      label: 'Pricing',
+      href: localize_url('pricing', locale_id: locale_obj[:id]),
+      title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
+    },
+    {
+      label: 'Resources',
+      class: 'menu--lg',
+      rows: [
+        {
+          columns: [
+            {
+              label: 'Company',
+              links: [
+                {
+                  compact: true,
+                  icon: 'magnifying-glass',
+                  title: 'About Sharesight',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'user-rectangle',
+                  title: 'Executive Team',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'briefcase',
+                  title: 'Careers',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'megaphone-simple',
+                  title: 'Media Center',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'smiley',
+                  icon_hover: 'smiley-wink-fill',
+                  title: 'Reviews',
+                  href: '/TODO',
+                }
+              ],
+            }, {
+              label: 'Work with Us',
+              links: [
+                {
+                  compact: true,
+                  icon: 'identification-card',
+                  title: 'Partner Directory',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'handshake',
+                  title: 'Become a Partner',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'share-network',
+                  icon_hover: 'fire-fill',
+                  title: 'Become an Affiliate',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'envelope-simple',
+                  icon_hover: 'envelope-simple-open',
+                  title: 'sales@sharesight.com',
+                  href: 'mailto:sales@sharesight.com',
+                }
+              ]
+            }, {
+              label: 'Resources',
+              links: [
+                {
+                  compact: true,
+                  icon: 'info',
+                  title: 'Help Centre',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'code',
+                  title: 'Sharesight API',
+                  href: '/TODO',
+                },
+                {
+                  compact: true,
+                  icon: 'monitor-play',
+                  icon_hover: 'monitor-fill',
+                  title: 'Events & Webinars',
+                  href: '/TODO',
+                }
+              ]
+            }
+          ]
+        },
+        {
+          # For this row, we just use a specific blog partial rather than try to fit it into this format…
+          partial: 'partials/header/blog',
+        }
+      ]
+    }
+  ]
+%>
+
 <nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
   <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
     <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
   </a>
 
-  <%= partial "partials/header/desktop_navigation" %>
+  <%= partial "partials/header/desktop_navigation", locals: { menus: menus } %>
 
   <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log in to Sharesight">Log in</a>
   <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
@@ -22,5 +250,5 @@
     <span class="show-desktop hide-mobile">Get Sharesight Free</span>
   </a>
 
-  <%= partial "partials/header/mobile_navigation" %>
+  <%= partial "partials/header/mobile_navigation", locals: { menus: menus } %>
 </nav>
