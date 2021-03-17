@@ -119,6 +119,12 @@ module MiddlemanMenuHelpers
                   description: 'Over 150,000 Investors around the world track their portfolios with Sharesight.',
                 },
                 {
+                  # This looks like a "child" to Investors.
+                  label: 'Read the Reviews',
+                  title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('reviews', locale_id: locale_obj[:id]),
+                },
+                {
                   icon: 'users',
                   label: 'Finance Professionals',
                   title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
