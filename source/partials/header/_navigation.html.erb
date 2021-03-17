@@ -52,12 +52,12 @@
                   icon: 'globe-hemisphere-west',
                   icon_hover: 'globe-hemisphere-east-fill',
                   title: 'Supported Exchanges',
-                  href: '/TODO',
+                  href: localize_url('supported-stock-exchanges-and-managed-funds', locale_id: locale_obj[:id], base_url: config[:help_url]),
                 },
                 {
                   icon: 'bank',
                   title: 'Supported Brokers',
-                  href: '/TODO',
+                  href: localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: config[:help_url]),
                 }
               ]
             }
@@ -77,8 +77,9 @@
                 },
                 {
                   icon: 'question',
-                  title: 'Frequently Asked Questions',
-                  href: '/faq',
+                  label: 'Frequently Asked Questions',
+                  title: locale_page(page: 'faq', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('faq', locale_id: locale_obj[:id]),
                 },
               ]
             },
@@ -88,7 +89,7 @@
                   icon: 'shield',
                   icon_hover: 'shield-check-fill',
                   title: 'Data Security',
-                  href: '/TODO',
+                  href: localize_url('how-sharesight-protects-your-data-', locale_id: locale_obj[:id], base_url: config[:help_url])
                 }
               ]
             }
@@ -112,14 +113,16 @@
                 },
                 {
                   icon: 'users',
-                  title: 'Finance Professionals',
-                  href: '/TODO',
-                  description: 'Use Sharesight Pro to grow your business.'
+                  label: 'Finance Professionals',
+                  title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('pro', locale_id: locale_obj[:id]),
+                  description: 'Use **Sharesight Pro** to grow your business.'
                 },
                 {
                   icon: 'buildings',
-                  title: 'Finance Companies',
-                  href: '/TODO',
+                  label: 'Finance Companies',
+                  title: locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('become-a-partner', locale_id: locale_obj[:id]),
                   description: 'Partner with Sharesight and grow your business.'
                 }
               ]
@@ -145,13 +148,15 @@
               links: [
                 {
                   icon: 'magnifying-glass',
-                  title: 'About Sharesight',
-                  href: '/TODO',
+                  label: 'About Sharesight',
+                  title: locale_page(page: 'about-sharesight', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('about-sharesight', locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'user-rectangle',
-                  title: 'Executive Team',
-                  href: '/TODO',
+                  label: 'Executive Team',
+                  title: locale_page(page: 'team', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('team', locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'briefcase',
@@ -166,8 +171,9 @@
                 {
                   icon: 'smiley',
                   icon_hover: 'smiley-wink-fill',
-                  title: 'Reviews',
-                  href: '/TODO',
+                  label: 'Reviews',
+                  title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('reviews', locale_id: locale_obj[:id]),
                 }
               ],
             }, {
@@ -175,24 +181,28 @@
               links: [
                 {
                   icon: 'identification-card',
-                  title: 'Partner Directory',
-                  href: '/TODO',
+                  label: 'Partner Directory',
+                  title: locale_page(page: 'partners', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('partners', locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'handshake',
-                  title: 'Become a Partner',
-                  href: '/TODO',
+                  label: 'Become a Partner',
+                  title: locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('become-a-partner', locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'share-network',
                   icon_hover: 'fire-fill',
-                  title: 'Become an Affiliate',
-                  href: '/TODO',
+                  label: 'Become an Affiliate',
+                  title: locale_page(page: 'affiliates', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('affiliates', locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'envelope-simple',
                   icon_hover: 'envelope-simple-open',
-                  title: 'sales@sharesight.com',
+                  label: 'sales@sharesight.com',
+                  title: 'Email the Sales & Partnerships Team',
                   href: 'mailto:sales@sharesight.com',
                 }
               ]
@@ -202,18 +212,20 @@
                 {
                   icon: 'info',
                   title: 'Help Centre',
-                  href: '/TODO',
+                  href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
                 },
                 {
                   icon: 'code',
-                  title: 'Sharesight API',
-                  href: '/TODO',
+                  label: 'Sharesight API',
+                  title: 'Sharesight API Documentation',
+                  href: config[:api_url],
                 },
                 {
                   icon: 'monitor-play',
                   icon_hover: 'monitor-fill',
-                  title: 'Events & Webinars',
-                  href: '/TODO',
+                  label: 'Events & Webinars',
+                  title: locale_page(page: 'events', locale_obj: locale_obj)[:page_title],
+                  href: localize_url('events', locale_id: locale_obj[:id]),
                 }
               ]
             }
