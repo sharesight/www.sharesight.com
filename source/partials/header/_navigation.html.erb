@@ -21,20 +21,17 @@
               label: 'Features',
               links: [
                 {
-                  compact: true,
                   icon: 'trend-up',
                   icon_hover: 'chart-line-up-bold',
                   title: 'Performance',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'coin',
                   title: 'Dividends',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'receipt',
                   icon_hover: 'article-fill',
                   title: 'Tax Reporting',
@@ -46,21 +43,18 @@
               label: 'What we Track',
               links: [
                 {
-                  compact: true,
                   icon: 'squares-four',
                   icon_hover: 'grid-four-fill',
                   title: 'Supported Investments',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'globe-hemisphere-west',
                   icon_hover: 'globe-hemisphere-east-fill',
                   title: 'Supported Exchanges',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'bank',
                   title: 'Supported Brokers',
                   href: '/TODO',
@@ -74,6 +68,13 @@
           columns: [
             {
               links: [
+                {
+                  visible_desktop: false,
+                  label: 'Pricing',
+                  icon: 'wallet',
+                  href: localize_url('pricing', locale_id: locale_obj[:id]),
+                  title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
+                },
                 {
                   icon: 'question',
                   title: 'Frequently Asked Questions',
@@ -101,6 +102,7 @@
         {
           columns: [
             {
+              label_mobile: 'Benefits',
               links: [
                 {
                   icon: 'user',
@@ -127,6 +129,7 @@
       ]
     },
     {
+      visible_mobile: false,
       label: 'Pricing',
       href: localize_url('pricing', locale_id: locale_obj[:id]),
       title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
@@ -141,31 +144,26 @@
               label: 'Company',
               links: [
                 {
-                  compact: true,
                   icon: 'magnifying-glass',
                   title: 'About Sharesight',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'user-rectangle',
                   title: 'Executive Team',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'briefcase',
                   title: 'Careers',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'megaphone-simple',
                   title: 'Media Center',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'smiley',
                   icon_hover: 'smiley-wink-fill',
                   title: 'Reviews',
@@ -176,26 +174,22 @@
               label: 'Work with Us',
               links: [
                 {
-                  compact: true,
                   icon: 'identification-card',
                   title: 'Partner Directory',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'handshake',
                   title: 'Become a Partner',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'share-network',
                   icon_hover: 'fire-fill',
                   title: 'Become an Affiliate',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'envelope-simple',
                   icon_hover: 'envelope-simple-open',
                   title: 'sales@sharesight.com',
@@ -206,19 +200,16 @@
               label: 'Resources',
               links: [
                 {
-                  compact: true,
                   icon: 'info',
                   title: 'Help Centre',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'code',
                   title: 'Sharesight API',
                   href: '/TODO',
                 },
                 {
-                  compact: true,
                   icon: 'monitor-play',
                   icon_hover: 'monitor-fill',
                   title: 'Events & Webinars',

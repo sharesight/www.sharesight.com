@@ -1,26 +1,27 @@
 <%
-  classes = ['menu__link']
-  classes << 'menu__link--compact' if locals[:compact]
+  link = locals[:link]
 
-  text = locals[:title]
-  text = BasicHelper.truncate(text, locals[:truncate]) if locals[:truncate]
+  show_description = !!(locals[:mobile] != true && link[:description])
+
+  classes = ['menu__link']
+  classes << 'menu__link--compact' if !show_description
 
   # NOTE: `icon_hover` should not include `ph-`
-  icon_hover = locals[:icon_hover] || "#{locals[:icon]}-fill"
+  icon_hover = link[:icon_hover] || "#{link[:icon]}-fill"
 %>
 
-<a href="<%= locals[:href] %>" role="menuitem" title="<%= locals[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
-  <span class="menu__label <%= "menu__label--no-icon" unless locals[:icon] %>">
-    <% if locals[:icon] %>
-      <i class="ph-<%= locals[:icon] %> menu__icon" data-ph-hover="<%= "ph-#{icon_hover}" %>" role="img" aria-label="<%= locals[:title] %>"></i>
+<a href="<%= link[:href] %>" role="menuitem" title="<%= link[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
+  <span class="menu__label <%= "menu__label--no-icon" unless link[:icon] %>">
+    <% if link[:icon] %>
+      <i class="ph-<%= link[:icon] %> menu__icon" data-ph-hover="<%= "ph-#{icon_hover}" %>" role="img" aria-label="<%= link[:title] %>"></i>
     <% end %>
 
-    <span class="menu__label-text"><%= text %></span>
+    <span class="menu__label-text"><%= link[:label] || link[:title] %></span>
 
     <%= partial "partials/components/arrow" %>
   </span>
 
-  <% if locals[:description] %>
-    <div class="menu__description"><%= locals[:description] %></div>
+  <% if show_description %>
+    <div class="menu__description"><%= link[:description] %></div>
   <% end %>
 </a>

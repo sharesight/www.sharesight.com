@@ -1,0 +1,24 @@
+<%
+  column = locals[:column]
+
+  label = nil
+  label = column[:label_mobile] if locals[:mobile]
+  label ||= column[:label]
+%>
+
+<div class="menu__split-<%= locals[:total_columns] %> %>">
+  <% if label %>
+    <div class="menu__title" role="separator"><%= label %></div>
+  <% end %>
+
+  <% column[:links].select{ |link|
+    return false if link[:visible_mobile] == false && locals[:mobile] == true
+    return false if link[:visible_desktop] == false && locals[:mobile] == false
+    true
+  }.each do |link| %>
+    <%= partial "partials/header/link", locals: {
+      link: link,
+      mobile: locals[:mobile]
+    } %>
+  <% end %>
+</div> <%# closes "menu__split-#" %>

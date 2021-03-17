@@ -4,16 +4,10 @@
 
 <div class="menu__row <%= row[:class] %>">
   <% row[:columns].each do |column| %>
-    <div class="menu__split-<%= row[:columns].length %>">
-
-      <% if column[:label] %>
-        <div class="menu__title" role="separator"><%= column[:label] %></div>
-      <% end %>
-
-      <% column[:links].each do |link| %>
-        <%= partial "partials/header/link", locals: link %>
-      <% end %>
-
-    </div> <%# closes "menu__split-#" %>
+    <%= partial "partials/header/column", locals: {
+      column: column,
+      total_columns: row[:columns].length,
+      mobile: locals[:mobile]
+    } %>
   <% end %> <%# ends row[:columns].each %>
 </div> <%# closes "menu__row" %>

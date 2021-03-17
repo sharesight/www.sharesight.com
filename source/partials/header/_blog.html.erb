@@ -6,10 +6,10 @@
 
   <% data.blog.posts.values.first(3).each do |blog_post| %>
     <%= partial "partials/header/link", locals: {
-      title: blog_post[:title],
-      href: post_url(blog_post),
-      truncate: 75,
-      compact: true
+      link: {
+        title: blog_post[:title],
+        href: post_url(blog_post)
+      }
     } %>
   <% end %>
 </div>
