@@ -1,7 +1,8 @@
 <%
   link = locals[:link]
+  mobile = !!locals[:mobile]
 
-  show_description = !!(locals[:mobile] != true && link[:description])
+  show_description = !!(!mobile && link[:description])
 
   classes = ['menu__link']
   classes << 'menu__link--compact' if !show_description
