@@ -23,6 +23,8 @@
   </span>
 
   <% if show_description %>
-    <div class="menu__description"><%= link[:description] %></div>
+    <div class="menu__description">
+      <%= partial "partials/components/markdown", locals: { markdown: link[:description], inline: true } %>
+    </div>
   <% end %>
 </a>
