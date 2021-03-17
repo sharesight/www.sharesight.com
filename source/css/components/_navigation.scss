@@ -378,10 +378,11 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__close {
+    z-index: 100;
     position: absolute;
-    top: $gutter;
-    right: $gutter;
-    padding: $gutter;
+    top: $gutter * 1.5;
+    right: $gutter * 1.5;
+    padding: $gutter/2;
     cursor: pointer;
   }
 
