@@ -1,6 +1,4 @@
 function handleKeyboardAction ({ event, onOpen, onEscape }) {
-  console.log('@@handleKeyboardAction', String(event.key))
-
   switch (String(event.key).toLowerCase()) {
     case ' ':
     case 'spacebar':
