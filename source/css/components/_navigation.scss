@@ -54,6 +54,10 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     align-items: center;
     justify-content: center;
 
+    &%root-hover-focus {
+      background-color: lighten($color_highlight, 12%);
+    }
+
     @include respond-to(md, min) {
       display: none;
     }
@@ -160,7 +164,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   border-top: 5px solid $color_highlight;
   font-size: 0.95rem;
 
-  display: none;
+  display: none; // enabled via Javascript setting [aria-expanded="true"]
   will-change: display;
 
   &--lg {
@@ -235,6 +239,12 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     }
 
     &-text {
+      // NOTE: This is auto-truncated!
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
       %root-hover-focus & {
         text-decoration: underline;
         text-underline-offset: 2px;
@@ -305,6 +315,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     justify-content: space-between;
     width: 100%;
     width: stretch; // lets the content
+    flex-wrap: wrap;
   }
 
   // Requires a `<div class="menu__row" />` around it.
@@ -315,5 +326,96 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   // Requires a `<div class="menu__row" />` around it.
   &__split-3 {
     flex: 1 1 percentage(1/3);
+  }
+
+  &__split-2, &__split-3 {
+    @include respond-to(md, max) {
+      flex-basis: 50%;
+
+      & + & {
+        padding-top: $gutter/2;
+
+        > .menu__title {
+          margin-top: $gutter/2;
+        }
+      }
+    }
+
+    @include respond-to(xs, max) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.mobile-nav {
+  display: none; // enabled via Javascript setting `aria-hidden=false`
+  &[aria-hidden="false"] {
+    display: block;
+  }
+
+  will-change: display;
+  font-size: 85%; // NOTE: This changes all children font-sizes as they use `rem`!
+
+  // This is the primary container to it, which has a bit of an overlay effect.
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: $gutter;
+  background: rgba($colour_pro, 0.20);
+
+  &__box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: $__menu-border-radius; // Should be less than the border-top-width
+    box-shadow: 0 5px 10px rgba($colour_pro, 0.20);
+  }
+
+  &__close {
+    position: absolute;
+    top: $gutter;
+    right: $gutter;
+    padding: $gutter;
+    cursor: pointer;
+  }
+
+  &__menubar {
+    overflow-y: scroll;
+
+    list-style-type: none;
+    padding: $gutter;
+    padding-bottom: 0;
+    margin: 0;
+
+    .menu__background {
+      box-sizing: content-box;
+      width: 100%;
+      margin: $gutter #{-$gutter} 0;
+      background: #f2f2f2;
+      padding: $gutter;
+    }
+
+    .nav__menubar-item + .nav__menubar-item {
+      margin-top: $gutter;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $colour_pro;
+    padding: $gutter;
+
+    & > * {
+      flex: 1 1 auto;
+    }
   }
 }

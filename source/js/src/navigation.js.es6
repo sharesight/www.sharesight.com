@@ -1,3 +1,33 @@
+function handleKeyboardAction ({ event, onOpen, onEscape }) {
+  console.log('@@handleKeyboardAction', String(event.key))
+
+  switch (String(event.key).toLowerCase()) {
+    case ' ':
+    case 'spacebar':
+    case 'space':
+    case 'enter':
+    case 'return':
+      if (typeof onOpen === 'function') {
+        onOpen();
+        event.preventDefault(); // if we did something here, prevent the default action
+      }
+
+      break;
+
+    case 'esc':
+    case 'escape':
+      if (typeof onEscape === 'function') {
+        onEscape();
+        event.preventDefault(); // if we did something here, prevent the default action
+      }
+      break;
+
+    default:
+      // Default, we exit.  Do nothing, do not preventDefault!
+      return;
+  }
+}
+
 function registerNavigation () {
   const nav = document.getElementById('site_navigation');
   const menuTargets = nav.querySelectorAll('[role="menubar"] [aria-haspopup="true"]');
@@ -29,38 +59,21 @@ function registerNavigation () {
     setExpanded(button, false);
   }
 
-  function handleKeyboardMenu (event) {
-    switch (String(event.key).toLowerCase()) {
-      case 'space':
-      case 'enter':
-        setExpanded(event.currentTarget, true);
-        break;
-
-      default:
-        // Default, we exit.  Do nothing, do not preventDefault!
-        return;
-    }
-
-    event.preventDefault(); // if we did something here, prevent the default action
+  function handleKeyboardOpen (event) {
+    return handleKeyboardAction({
+      event,
+      onOpen: () => setExpanded(event.currentTarget, true),
+    });
   }
 
-  document.addEventListener('keydown', function handleKeyboardGlobal (event) {
-    switch (String(event.key).toLowerCase()) {
-      case 'esc':
-      case 'escape':
-        closeAll();
-        break;
+  function handleKeyboardEscape (event) {
+    return handleKeyboardAction({ event, onEscape: closeAll });
+  }
 
-      default:
-        // Default, we exit.  Do nothing, do not preventDefault!
-        return;
-    }
-
-    event.preventDefault(); // if we did something here, prevent the default action
-  });
+  document.addEventListener('keydown', handleKeyboardEscape);
 
   menuTargets.forEach((node) => {
-    node.addEventListener('keydown', handleKeyboardMenu);
+    node.addEventListener('keydown', handleKeyboardOpen);
 
     node.addEventListener('click', handleShowMenu);
     node.addEventListener('focusin', handleShowMenu);
@@ -73,7 +86,38 @@ function registerNavigation () {
 }
 
 function registerMobileNavigation () {
+  const hamburger = document.getElementById('nav__hamburger');
+  const menu = document.getElementById('mobile-nav');
+  const closeIcon = menu.querySelector('.mobile-nav__close');
 
+  function closeMenu () {
+    menu.setAttribute('aria-hidden', true);
+  }
+
+  function openMenu () {
+    menu.setAttribute('aria-hidden', false);
+  }
+
+
+  function handleKeyboardEscape (event) {
+    return handleKeyboardAction({ event, onEscape: closeMenu });
+  }
+
+  document.addEventListener('keydown', handleKeyboardEscape);
+
+  function handleKeyboardOpen (event) {
+    return handleKeyboardAction({ event, onOpen: openMenu });
+  }
+
+  hamburger.addEventListener('keydown', handleKeyboardOpen);
+  hamburger.addEventListener('click', openMenu);
+
+  function handleKeyboardCloseIcon (event) {
+    return handleKeyboardAction({ event, onOpen: closeMenu});
+  }
+
+  closeIcon.addEventListener('click', closeMenu);
+  closeIcon.addEventListener('keydown', handleKeyboardCloseIcon);
 }
 
 ;(function() {
