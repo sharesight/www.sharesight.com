@@ -116,7 +116,7 @@ module MiddlemanMenuHelpers
                   icon: 'user',
                   title: 'Investors',
                   href: '/TODO',
-                  description: 'Over 150,000 Investors around the world track their portfolios with Sharesight.',
+                  description: 'Over **200,000** Investors around the world track their portfolios with Sharesight.',
                 },
                 {
                   # This looks like a "child" to Investors.
