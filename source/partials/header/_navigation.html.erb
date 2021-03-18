@@ -1,0 +1,36 @@
+<%#
+  Accessibility Notes:
+   - Ensure you maintain the level of `aria-` and `role` attributes when adding or changing anything.
+   - Add descriptive `aria-label` or `aria-labelledby` tags as able.
+
+  We are not fully complaint with w3, eg. https://www.w3.org/TR/wai-aria-practices/examples/menubar/menubar-1/menubar-1.html
+    - Neither is anyone else.  This passes the functionally accessible test.
+    - We do not do keyboard navigation like up/down/left/right/home/end, etc.
+    - We do not do keyboard search like "c" to go to "Company", etc. (I can't find a real-world example of thise anyways)
+%>
+
+<%
+  # We store this menu data in here to be used for both Desktop and Mobile navigation..
+  locale_obj = locals[:locale_obj] || current_locale_obj
+  menus = get_menu_config(locale_obj: locale_obj)
+%>
+
+<div class="container nav__container">
+  <nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
+    <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
+      <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
+    </a>
+
+    <%= partial "partials/header/desktop_navigation", locals: { menus: menus, professional: locals[:professional] } %>
+
+    <div class="nav__ctas">
+      <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent" title="Log In to Sharesight">Log In</a>
+      <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+        <span class="show-mobile hide-desktop">Sign Up</span>
+        <span class="show-desktop hide-mobile">Get Sharesight Free</span>
+      </a>
+    </div>
+
+    <%= partial "partials/header/mobile_navigation", locals: { menus: menus, professional: locals[:professional] } %>
+  </nav>
+</div>

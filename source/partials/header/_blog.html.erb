@@ -1,0 +1,15 @@
+<div class="menu__background menu__blog">
+  <a class="menu__label menu__title" role="separator" href="<%= unlocalized_url('blog') %>" title="Read the Sharesight Blog">
+    <i class="ph-pencil-circle menu__icon" role="img" aria-label="From the Blog"></i>
+    <span class="menu__label-text">From the Blog</span>
+  </a>
+
+  <% data.blog.posts.values.first(3).each do |blog_post| %>
+    <%= partial "partials/header/link", locals: {
+      link: {
+        title: blog_post[:title],
+        href: post_url(blog_post)
+      }
+    } %>
+  <% end %>
+</div>
