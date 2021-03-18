@@ -119,7 +119,8 @@ module MiddlemanMenuHelpers
                   description: 'Over **200,000** Investors around the world track their portfolios with Sharesight.',
                 },
                 {
-                  # This looks like a "child" to Investors.
+                  # This looks like a "child" to Investors on Desktop.
+                  visible_mobile: false,
                   label: 'Read the Reviews',
                   title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
                   href: localize_url('reviews', locale_id: locale_obj[:id]),
@@ -177,16 +178,17 @@ module MiddlemanMenuHelpers
                   title: locale_page(page: 'team', locale_obj: locale_obj)[:page_title],
                   href: localize_url('team', locale_id: locale_obj[:id]),
                 },
-                {
-                  icon: 'briefcase',
-                  title: 'Careers',
-                  href: '/TODO',
-                },
-                {
-                  icon: 'megaphone-simple',
-                  title: 'Media Center',
-                  href: '/TODO',
-                },
+                # TODO: Once there's content, we could add these.  If not, delete.
+                # {
+                #   icon: 'briefcase',
+                #   title: 'Careers',
+                #   href: '/NOT-YET-CREATED',
+                # },
+                # {
+                #   icon: 'megaphone-simple',
+                #   title: 'Media Center',
+                #   href: '/NOT-YET-CREATED',
+                # },
                 {
                   icon: 'smiley',
                   icon_hover: 'smiley-wink-fill',
@@ -242,7 +244,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'monitor-play',
                   icon_hover: 'monitor-fill',
-                  label: 'Events & Webinars',
+                  label: 'Webinars & Events',
                   title: locale_page(page: 'events', locale_obj: locale_obj)[:page_title],
                   href: localize_url('events', locale_id: locale_obj[:id]),
                 }
