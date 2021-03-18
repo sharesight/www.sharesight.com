@@ -4,7 +4,9 @@
 
 <button class="nav__hamburger" id="nav__hamburger" aria-controls="mobile-nav" aria-label="Open Mobile Navigation" tabindex="0">
   <svg width="16" height="10" viewBox="0 0 16 10">
-    <title>Open Mobile Navigation</title>
+    <%# NOTE: We should have a title here, but we can't because capybara + rspec cannot handle a nested title on a page.
+      <title>Open Mobile Navigation</title>
+    %>
 
     <g fill="#fff" fill-rule="evenodd">
       <rect y="8" width="16" height="2" rx="1"></rect>
