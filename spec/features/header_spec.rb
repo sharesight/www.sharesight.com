@@ -105,7 +105,7 @@ describe 'Header', type: :feature do
       end
 
       it "has a login and signup button" do
-        links = page.all(:css, 'nav [role="menubar"] ~ a')
+        links = page.all(:css, 'nav .nav__ctas a[href].nav__cta')
 
         expect(links.length).to eq(2)
         expect(links[0].text).to eq('Log In')
@@ -118,7 +118,7 @@ describe 'Header', type: :feature do
       it "pro has a different signup url" do
         visit '/pro'
 
-        links = page.all(:css, 'nav [role="menubar"] ~ a')
+        links = page.all(:css, 'nav .nav__ctas a[href].nav__cta')
 
         expect(links.length).to eq(2)
         expect(links[0].text).to eq('Log In')
