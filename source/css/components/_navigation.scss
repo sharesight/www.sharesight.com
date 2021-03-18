@@ -109,6 +109,12 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     &%root-hover-focus,
     &[aria-expanded="true"] {
       color: $color_highlight;
+
+      // If this is a link, underline when we hover.
+      &[href] {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
     }
 
     // A caret to point at the current menu you're looking at.
