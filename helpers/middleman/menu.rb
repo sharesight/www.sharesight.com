@@ -5,7 +5,6 @@ module MiddlemanMenuHelpers
   include MiddlemanLocaleHelpers # for current_locale_obj method
   include MiddlemanPageHelpers # for locale_page method
 
-
   def get_menu_config(locale_obj: current_locale_obj)
     return [
       get_features_menu(locale_obj: locale_obj),

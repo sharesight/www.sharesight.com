@@ -141,7 +141,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
     margin-left: auto;
     display: block;
-    text-transform: capitalize; // "Log In" not "Log in" to be consistent
+    text-transform: capitalize; // "Log In" capitalized to be consistent.
     border-radius: $gutter;
 
     & + & {
