@@ -21,7 +21,7 @@
       <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
     </a>
 
-    <%= partial "partials/header/desktop_navigation", locals: { menus: menus } %>
+    <%= partial "partials/header/desktop_navigation", locals: { menus: menus, professional: locals[:professional] } %>
 
     <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log in to Sharesight">Log In</a>
     <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
@@ -29,6 +29,6 @@
       <span class="show-desktop hide-mobile">Get Sharesight Free</span>
     </a>
 
-    <%= partial "partials/header/mobile_navigation", locals: { menus: menus } %>
+    <%= partial "partials/header/mobile_navigation", locals: { menus: menus, professional: locals[:professional] } %>
   </nav>
 </div>
