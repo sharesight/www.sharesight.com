@@ -17,7 +17,7 @@
 
   <a role="button" href="#main-area" class="a11y-button btn btn--solid btn--secondary">Skip to Main Content</a>
 
-  <%= partial 'partials/header', locals: locals.merge({ locale_obj: locale_obj }) %>
+  <%= partial 'partials/header/navigation', locals: locals.merge({ locale_obj: locale_obj }) %>
 
   <% if locals[:hero] %>
     <%= partial locals[:hero], locals: locals.merge({ locale_obj: locale_obj }) %>

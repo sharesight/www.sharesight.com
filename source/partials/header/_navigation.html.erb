@@ -11,21 +11,24 @@
 
 <%
   # We store this menu data in here to be used for both Desktop and Mobile navigation..
+  locale_obj = locals[:locale_obj] || current_locale_obj
   menus = get_menu_config(locale_obj: locale_obj)
 %>
 
-<nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
-  <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
-    <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
-  </a>
+<div class="container nav__container">
+  <nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
+    <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
+      <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
+    </a>
 
-  <%= partial "partials/header/desktop_navigation", locals: { menus: menus } %>
+    <%= partial "partials/header/desktop_navigation", locals: { menus: menus } %>
 
-  <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log in to Sharesight">Log in</a>
-  <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
-    <span class="show-mobile hide-desktop">Sign Up</span>
-    <span class="show-desktop hide-mobile">Get Sharesight Free</span>
-  </a>
+    <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log in to Sharesight">Log in</a>
+    <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+      <span class="show-mobile hide-desktop">Sign Up</span>
+      <span class="show-desktop hide-mobile">Get Sharesight Free</span>
+    </a>
 
-  <%= partial "partials/header/mobile_navigation", locals: { menus: menus } %>
-</nav>
+    <%= partial "partials/header/mobile_navigation", locals: { menus: menus } %>
+  </nav>
+</div>

@@ -1,10 +1,12 @@
+load File::expand_path('./locale.rb', __dir__)
 load File::expand_path('./page.rb', __dir__)
 
 module MiddlemanMenuHelpers
+  include MiddlemanLocaleHelpers # for current_locale_obj method
   include MiddlemanPageHelpers # for locale_page method
 
 
-  def get_menu_config(locale_obj: default_locale_obj)
+  def get_menu_config(locale_obj: current_locale_obj)
     return [
       get_features_menu(locale_obj: locale_obj),
       get_benefits_menu(locale_obj: locale_obj),
@@ -15,7 +17,7 @@ module MiddlemanMenuHelpers
 
   private
 
-  def get_features_menu(locale_obj: default_locale_obj)
+  def get_features_menu(locale_obj: current_locale_obj)
     return {
       label: 'Features',
       rows: [
@@ -103,7 +105,7 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_benefits_menu(locale_obj: default_locale_obj)
+  def get_benefits_menu(locale_obj: current_locale_obj)
     return {
       label: 'Benefits',
       rows: [
@@ -147,7 +149,8 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_pricing_menu(locale_obj: default_locale_obj)
+  def get_pricing_menu(locale_obj: current_locale_obj)
+
     return {
       visible_mobile: false,
       label: 'Pricing',
@@ -156,7 +159,7 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_resources_menu(locale_obj: default_locale_obj)
+  def get_resources_menu(locale_obj: current_locale_obj)
     return {
       label: 'Resources',
       class: 'menu--lg',
