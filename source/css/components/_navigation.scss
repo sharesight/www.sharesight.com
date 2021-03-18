@@ -3,6 +3,8 @@ $__nav-height: 65px;
 $__menu-padding: $gutter * 1.5;
 $__menu-border-radius: 3px;
 $__menu-button-gutter: $gutter*2/3;
+$__hamburger-height: $gutter * 1.75;
+$__hamburger-width: $gutter * 2.25;
 
 $__link_indentation: 28px; // indentation to have links and icons be a bit consistent
 
@@ -27,6 +29,14 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+  min-height: $__nav-height;
+
+  // Mobile: align the "Login + Signup" w/ the Hamburger Menu.
+  @include respond-to(sm, max) {
+    flex-wrap: wrap;
+    padding-right: $__hamburger-width + $gutter/2;
+  }
 
   &__container {
     overflow: visible;
@@ -43,23 +53,27 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
   &__hamburger {
     @extend %button-reset;
+
+    align-items: center;
+    justify-content: center;
     flex: 0 0 auto; // keep this shape consistent
     background: $color_highlight;
     color: #fff;
     border-radius: $gutter;
-    width: $gutter * 2.25;
-    height: $gutter * 1.75;
+    width: $__hamburger-width;
+    height: $__hamburger-height;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none; // mobile only
+    position: absolute;
+    top: ($__nav-height - $__hamburger-height) / 2;
+    right: 0;
 
     &%root-hover-focus {
       background-color: lighten($color_highlight, 12%);
     }
 
-    @include respond-to(md, min) {
-      display: none;
+    @include respond-to(sm, max) {
+      display: flex;
     }
   }
 
@@ -141,14 +155,23 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     }
   }
 
+  &__ctas {
+    margin: $gutter/2 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__cta {
     @extend .btn;
     @extend .btn--solid;
 
-    margin-left: auto;
-    display: block;
-    text-transform: capitalize; // "Log In" capitalized to be consistent.
+    display: inline-block;
     border-radius: $gutter;
+
+    @include respond-to(sm, max) {
+      line-height: $__hamburger-height - $btn-border-width * 2;
+    }
 
     & + & {
       margin-left: 5px;

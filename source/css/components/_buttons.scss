@@ -128,7 +128,7 @@
   }
 
   &--transparent {
-    color: $colour_default;
+    color: $colour_primary;
 
     &, &:hover, &:focus, &:focus-within {
       border-color: transparent;
@@ -136,7 +136,20 @@
     }
 
     &:hover, &:focus, &:focus-within {
-      color: darken($colour_default, 12%);
+      color: darken($colour_primary, 12%);
+    }
+  }
+
+  &--transparent-white {
+    color: white;
+
+    &, &:hover, &:focus, &:focus-within {
+      border-color: transparent;
+      background: transparent;
+    }
+
+    &:hover, &:focus, &:focus-within {
+      color: darken(#fff, 12%);
     }
   }
 

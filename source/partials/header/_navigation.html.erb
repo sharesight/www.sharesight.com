@@ -23,11 +23,13 @@
 
     <%= partial "partials/header/desktop_navigation", locals: { menus: menus, professional: locals[:professional] } %>
 
-    <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent hide-mobile" title="Log In to Sharesight">Log In</a>
-    <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
-      <span class="show-mobile hide-desktop">Sign Up</span>
-      <span class="show-desktop hide-mobile">Get Sharesight Free</span>
-    </a>
+    <div class="nav__ctas">
+      <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent" title="Log In to Sharesight">Log In</a>
+      <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+        <span class="show-mobile hide-desktop">Sign Up</span>
+        <span class="show-desktop hide-mobile">Get Sharesight Free</span>
+      </a>
+    </div>
 
     <%= partial "partials/header/mobile_navigation", locals: { menus: menus, professional: locals[:professional] } %>
   </nav>
