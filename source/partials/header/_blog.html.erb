@@ -4,7 +4,7 @@
     <span class="menu__label-text">From the Blog</span>
   </a>
 
-  <% data.blog.posts.values.first(3).each do |blog_post| %>
+  <% blog_posts_for_menu.each do |blog_post| %>
     <%= partial "partials/header/link", locals: {
       link: {
         title: blog_post[:title],

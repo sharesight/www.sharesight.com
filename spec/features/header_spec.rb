@@ -55,7 +55,8 @@ describe 'Header', type: :feature do
             # The Blog Links are pushed in below.
           ]
 
-          Capybara.app.data.blog.posts.values.first(3).each do |blog_post|
+          # Uses the blog_posts_for_menu helper!
+          Capybara.app.blog_posts_for_menu.each do |blog_post|
             expected_links.push([blog_post[:title], Capybara.app.post_url(blog_post)])
           end
 
@@ -171,20 +172,14 @@ describe 'Header', type: :feature do
             ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
+            ["Blog", base_url("blog")],
             ["Help Centre", Capybara.app.config[:help_url]],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
 
-            ["From the Blog", base_url("blog")],
-            # The Blog Links are pushed in below.
-
             ["Log In", Capybara.app.config[:login_url]],
             ["Sign Up", Capybara.app.config[:signup_url]]
           ]
-
-          Capybara.app.data.blog.posts.values.first(3).each do |blog_post|
-            expected_links.push([blog_post[:title], Capybara.app.post_url(blog_post)])
-          end
 
           expect(links.length).to eq(expected_links.length)
 

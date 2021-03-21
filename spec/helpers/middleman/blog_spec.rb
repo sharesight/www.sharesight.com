@@ -3,6 +3,33 @@ require 'spec_helper'
 describe 'Blog Middleman Helper', :type => :helper do
   before :all do
     @app = Capybara.app
+
+  context "blog_posts_for_menu" do
+    it "should have 3 blog posts in it" do
+      posts = @app.blog_posts_for_menu
+
+      expect(posts.length).to eq(3)
+    end
+
+    it "all blog posts should be in expected categories" do
+      category_name_regexes = [
+        /Company News/,
+        /Investing Tips/,
+        /Release Notes/,
+        /Sharesight Features .* Tips/
+      ]
+
+      posts = @app.blog_posts_for_menu
+      posts.each do |post|
+        has_expected_category = post.categories.any? do |category|
+          category_name_regexes.any? do |name_regex|
+            category[:name] =~ name_regex
+          end
+        end
+
+        expect(has_expected_category).to eq(true)
+      end
+    end
   end
 
   context "post_url" do

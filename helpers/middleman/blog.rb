@@ -21,6 +21,34 @@ module MiddlemanBlogHelpers
       end
   end
 
+  def blog_posts_for_menu
+    category_name_regexes = [
+      /Company News/,
+      /Investing Tips/,
+      /Release Notes/,
+      /Sharesight Features .* Tips/
+    ]
+
+    # get and cache a list of categories for the menu's list of blog posts
+    @__menu_blog_post_category_ids ||= blog_categories.select do |category|
+      category_name_regexes.any? do |name_regex|
+        category[:name] =~ name_regex
+      end
+    end.map do |category|
+      category[:id]
+    end
+
+    # filter the blog posts by these categories
+    posts = blog_posts(order: :youngest_first).select do |post|
+      post.categories&.find do |category|
+        @__menu_blog_post_category_ids.include?(category[:id])
+      end
+    end
+
+    # return the first 3
+    return posts.first(3)
+  end
+
   def post_url(post)
     return unlocalized_url("blog/#{BlogHelper::url_slug(post)}")
   end
