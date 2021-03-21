@@ -233,6 +233,13 @@ module MiddlemanMenuHelpers
               label: 'Resources',
               links: [
                 {
+                  visible_desktop: false,
+                  icon: 'pencil-circle',
+                  title: 'Read the Sharesight Blog',
+                  label: 'Blog',
+                  href: unlocalized_url('blog'),
+                },
+                {
                   icon: 'info',
                   title: 'Help Centre',
                   href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
@@ -255,6 +262,7 @@ module MiddlemanMenuHelpers
           ]
         },
         {
+          visible_mobile: false,
           # For this row, we just use a specific blog partial rather than try to fit it into this format…
           partial: 'partials/header/blog',
         }

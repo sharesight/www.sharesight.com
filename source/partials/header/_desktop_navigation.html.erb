@@ -30,7 +30,7 @@
 
       <% if has_nested_links %>
         <div class="nav__menu menu <%= menu[:class] %>" role="menu" aria-labelledby="nav-<%= menu[:label] %>" id="menu-<%= menu[:label] %>">
-          <% menu[:rows].each do |row| %>
+          <% menu[:rows].select{ |menu| menu[:visible_desktop] != false }.each do |row| %>
             <%= partial row[:partial] || 'partials/header/row', locals: { row: row } %>
           <% end %> <%# ends menu[:rows].each %>
         </div> <%# closes "nav__menu menu" %>
