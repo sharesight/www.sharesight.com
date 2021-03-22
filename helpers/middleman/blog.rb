@@ -8,7 +8,7 @@ module MiddlemanBlogHelpers
     return @blog_posts[order] if @blog_posts[order]
 
     @blog_posts[order] ||= case order
-      when :youngest_first
+    when :latest_first
         data.blog.posts.values.sort do |a,b|
           a['created_at'] <=> b['created_at']
         end
@@ -17,7 +17,7 @@ module MiddlemanBlogHelpers
           b['created_at'] <=> a['created_at']
         end
       else
-        data.blog.posts
+        data.blog.posts.values
       end
   end
 
