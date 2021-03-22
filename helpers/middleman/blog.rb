@@ -3,21 +3,21 @@ load File::expand_path('../blog_helper.rb', __dir__)
 
 module MiddlemanBlogHelpers
 
-  def blog_posts(order: nil)
+  def blog_posts(order: :latest_first)
     @blog_posts ||= {}
     return @blog_posts[order] if @blog_posts[order]
 
     @blog_posts[order] ||= case order
-      when :youngest_first
-        data.blog.posts.values.sort do |a,b|
-          a['created_at'] <=> b['created_at']
-        end
       when :oldest_first
         data.blog.posts.values.sort do |a,b|
-          b['created_at'] <=> a['created_at']
+          a['created_at'].to_i <=> b['created_at'].to_i
+        end
+      when :latest_first
+        data.blog.posts.values.sort do |a,b|
+          b['created_at'].to_i <=> a['created_at'].to_i
         end
       else
-        data.blog.posts
+        data.blog.posts.values
       end
   end
 
