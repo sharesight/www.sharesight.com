@@ -285,14 +285,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     display: block;
     color: $colour_base;
     font-weight: 600;
-
-    & + & {
-      margin-top: $gutter * 1.5;
-
-      &--compact {
-        margin-top: $gutter/2;
-      }
-    }
+    line-height: $gutter * 1.5; // Adds a bit of a "clickable area"
   }
 
   &__title {
@@ -300,7 +293,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     color: $colour_default;
     font-weight: 600;
     font-size: 0.85rem;
-    margin-bottom: $gutter/2;
+    margin-bottom: $gutter/4;
 
     .menu__icon {
       color: $colour_default;
