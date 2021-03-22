@@ -213,12 +213,13 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
   &__icon {
     font-size: 22px;
-    height: 22px; // match our font-size so line-height is a bit cleaner
-    color: $colour_pro;
+    height: 22px; // match font-size so it flexes to center better
+    min-width: 22px; // when the icon is loading, it should take up the space
 
     .menu__link--compact & {
       font-size: 18px;
-      height: 18px; // match our font-size so line-height is a bit cleaner
+      height: 18px;
+      min-width: 18px;
     }
 
     %root-can-hover-focus & {
