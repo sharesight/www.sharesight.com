@@ -286,7 +286,18 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     display: block;
     color: $colour_base;
     font-weight: 600;
-    line-height: $gutter * 1.5; // Adds a bit of a "clickable area"
+
+    & + & {
+      margin-top: $gutter/2; // margin between for non-compact links
+    }
+
+    &--compact {
+      line-height: $gutter * 1.5; // Adds a bit of a "clickable area"
+
+      & + & {
+        margin-top: 0; // managed with line-height
+      }
+    }
   }
 
   &__title {
