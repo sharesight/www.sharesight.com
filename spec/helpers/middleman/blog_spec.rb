@@ -17,7 +17,13 @@ describe 'Blog Middleman Helper', :type => :helper do
     it "can be ordered by :latest_first" do
       posts = @app.blog_posts(order: :latest_first)
 
-      expect(posts.first[:created_at]).to be > posts.last[:created_at]
+      # The newest blog post is probably always this or the previous year…probably.
+      expect(posts.first[:created_at].year).to be >= Time.now.year - 1
+      # The oldest blog post is from 2007.
+      expect(posts.last[:created_at].year).to be(2007)
+
+      expect(posts.first[:created_at].to_i).to be > posts[1][:created_at].to_i
+      expect(posts.first[:created_at].to_i).to be > posts[posts.length - 1][:created_at].to_i
 
       expect(posts.length).to eq(@total_blog_posts)
     end
@@ -34,8 +40,13 @@ describe 'Blog Middleman Helper', :type => :helper do
     it "can be ordered by :oldest_first" do
       posts = @app.blog_posts(order: :oldest_first)
 
-      expect(posts.first[:created_at]).to be < posts[1][:created_at]
-      expect(posts.first[:created_at]).to be < posts[posts.length - 1][:created_at]
+      # The oldest blog post is from 2007.
+      expect(posts.first[:created_at].year).to be(2007)
+      # The newest blog post is probably always this or the previous year…probably.
+      expect(posts.last[:created_at].year).to be >= Time.now.year - 1
+
+      expect(posts.first[:created_at].to_i).to be < posts[1][:created_at].to_i
+      expect(posts.first[:created_at].to_i).to be < posts[posts.length - 1][:created_at].to_i
 
       expect(posts.length).to eq(@total_blog_posts)
     end
