@@ -19,7 +19,7 @@
         <%= "title=\"#{menu[:title]}\"" if menu[:title] %>
         <%= "href=\"#{menu[:href]}\"" if menu[:href] %>
         <%= "role=\"menuitem\"" if menu[:href] %>
-        tabindex="<%= index === 0 ? 0 : -1 %>" <%# NOTE: Only the FIRST Navigation should have a tabindex="0" all else should be "-1" %>
+        tabindex="0"
       >
         <%= menu[:label] %>
 
