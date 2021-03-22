@@ -358,8 +358,8 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__split-2, &__split-3 {
-    @include respond-to(md, max) {
-      flex-basis: 50%;
+    @include respond-to(xs, max) {
+      flex-basis: 100%;
 
       & + & {
         padding-top: $gutter/2;
@@ -369,9 +369,19 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
         }
       }
     }
+  }
 
-    @include respond-to(xs, max) {
-      flex-basis: 100%;
+  &__split-3 {
+    @include respond-to(md, max) {
+      flex-basis: 50%;
+
+      &:nth-child(3) {
+        padding-top: $gutter/2;
+
+        > .menu__title {
+          margin-top: $gutter/2;
+        }
+      }
     }
   }
 }
