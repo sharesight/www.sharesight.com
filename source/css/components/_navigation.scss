@@ -1,4 +1,5 @@
-$__nav-height: 65px;
+$__nav-height: 45px;
+$__offset-logo-aligment: -20px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
 
 $__menu-padding: $gutter * 1.5;
 $__menu-border-radius: 3px;
@@ -32,6 +33,11 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   position: relative;
   min-height: $__nav-height;
 
+  // // HACK: See comment on `$__offset-logo-aligment` variable.
+  @include respond-to(md, min) {
+    padding-top: $__offset-logo-aligment * -1;
+  }
+
   // Mobile: align the "Login + Signup" w/ the Hamburger Menu.
   @include respond-to(sm, max) {
     flex-wrap: wrap;
@@ -48,6 +54,11 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     img {
       display: block;
       max-height: 50px;
+
+      // // HACK: See comment on `$__offset-logo-aligment` variable.
+      @include respond-to(md, min) {
+        margin-top: $__offset-logo-aligment; // HACK: See comment on variable.
+      }
     }
   }
 
@@ -156,7 +167,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__ctas {
-    margin: $gutter/2 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
+    margin: $gutter/4 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
     display: flex;
     justify-content: center;
     align-items: center;
