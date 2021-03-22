@@ -29,12 +29,10 @@ describe 'Blog Middleman Helper', :type => :helper do
     end
 
     it "is ordered by :latest_first by default" do
-      posts = @app.blog_posts()
+      posts_default = @app.blog_posts()
+      posts_latest_first = @app.blog_posts(order: :latest_first)
 
-      expect(posts.first[:created_at]).to be > posts[1][:created_at]
-      expect(posts.first[:created_at]).to be > posts[posts.length - 1][:created_at]
-
-      expect(posts.length).to eq(@total_blog_posts)
+      expect(posts_default).to eq(posts_latest_first)
     end
 
     it "can be ordered by :oldest_first" do
