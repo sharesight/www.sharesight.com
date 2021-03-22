@@ -3,7 +3,7 @@ load File::expand_path('../blog_helper.rb', __dir__)
 
 module MiddlemanBlogHelpers
 
-  def blog_posts(order: nil)
+  def blog_posts(order: :latest_first)
     @blog_posts ||= {}
     return @blog_posts[order] if @blog_posts[order]
 
