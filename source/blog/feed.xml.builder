@@ -8,7 +8,7 @@ xml.rss version: "2.0", 'xmlns:dc' => "http://purl.org/dc/elements/1.1/", 'xmlns
     xml.language "en-US"
 
     number_of_items = 10
-    blog_posts(order: :latest_first)[-number_of_items..-1].reverse.each do |post|
+    blog_posts(order: :latest_first)[0..number_of_items].each do |post|
       next if post[:title].blank?
       next if post[:hide_from_feed]
 

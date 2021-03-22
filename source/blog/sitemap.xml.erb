@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <% data&.blog&.posts&.map {|p| p[1] }.select{ |p| p[:created_at] && p[:title] }.sort_by { |p| p[:created_at] }.reverse.take(2).each do |post| %>
+  <% blog_posts(order: :latest_first).select{ |p| p[:created_at] && p[:title] }.take(2).each do |post| %>
     <% if !post.title.blank? %>
       <url>
         <loc><%= post_url(post) %></loc>

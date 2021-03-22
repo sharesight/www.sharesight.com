@@ -8,13 +8,13 @@ module MiddlemanBlogHelpers
     return @blog_posts[order] if @blog_posts[order]
 
     @blog_posts[order] ||= case order
-    when :latest_first
-        data.blog.posts.values.sort do |a,b|
-          a['created_at'] <=> b['created_at']
-        end
       when :oldest_first
         data.blog.posts.values.sort do |a,b|
-          b['created_at'] <=> a['created_at']
+          a['created_at'].to_i <=> b['created_at'].to_i
+        end
+      when :latest_first
+        data.blog.posts.values.sort do |a,b|
+          b['created_at'].to_i <=> a['created_at'].to_i
         end
       else
         data.blog.posts.values
