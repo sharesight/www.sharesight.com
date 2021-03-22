@@ -18,19 +18,17 @@ describe 'Header', type: :feature do
             # label, path, title
 
             # Features:
-            ["Performance", '/TODO'],
-            ["Dividends", '/TODO'],
-            ["Tax Reporting", '/TODO'],
-            ["Supported Investments", '/TODO'],
-            ["Supported Exchanges", localize_url('supported-stock-exchanges-and-managed-funds', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Performance", localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
+            ["Dividends", localize_path('dividend-tracker', locale_id: locale_obj[:id])],
+            ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
+            ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
+            ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
             ["Supported Brokers", localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
-            # ["Pricing", localize_path('pricing', locale_id: locale_obj[:id])], # NOTE: Mobile-only!
             ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
-            ["Data Security", localize_url('how-sharesight-protects-your-data-', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
             ["Investors", '/TODO'],
-            ["Read the Reviews", localize_path('reviews', locale_id: locale_obj[:id])],
             ["Finance Professionals", localize_path('pro', locale_id: locale_obj[:id])],
             ["Finance Companies", localize_path('become-a-partner', locale_id: locale_obj[:id])],
 
@@ -147,15 +145,15 @@ describe 'Header', type: :feature do
             # label, path, title
 
             # Features:
-            ["Performance", '/TODO'],
-            ["Dividends", '/TODO'],
-            ["Tax Reporting", '/TODO'],
-            ["Supported Investments", '/TODO'],
-            ["Supported Exchanges", localize_url('supported-stock-exchanges-and-managed-funds', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Performance", localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
+            ["Dividends", localize_path('dividend-tracker', locale_id: locale_obj[:id])],
+            ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
+            ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
+            ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
             ["Supported Brokers", localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
             ["Pricing", localize_path('pricing', locale_id: locale_obj[:id])], # NOTE: Mobile-only!
             ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
-            ["Data Security", localize_url('how-sharesight-protects-your-data-', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
             ["Investors", '/TODO'],

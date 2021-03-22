@@ -51,7 +51,7 @@ describe 'Menu Helper', :type => :helper do
       menus = @app.get_menu_config()
       resources = menus[3]
 
-      expect(resources[:rows][1]).to eq({ partial: 'partials/header/blog' })
+      expect(resources[:rows][1]).to eq({ visible_mobile: false, partial: 'partials/header/blog' })
     end
 
     it "should have expected top-level menu labels" do
