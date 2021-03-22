@@ -38,7 +38,7 @@ describe 'Blog Posts', :type => :model do
 
     expect(schema).to include(
       :id, :_meta, :title, :content, :author, :categories, :created_at,
-      :meta_description, :featured_image, :wordpress_url
+      :meta_description, :featured_image, :hide_from_feed, :slug, :path, :url, :page_title
     )
   end
 end
