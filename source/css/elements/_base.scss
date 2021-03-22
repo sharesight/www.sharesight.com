@@ -3,24 +3,28 @@
   src: url('../fonts/opensans-bold-webfont-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-light-webfont-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/opensans-regular-webfont-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'merriweatheritalic';
   src: url('../fonts/merriweather-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
