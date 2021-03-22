@@ -41,7 +41,7 @@
     color: rgba($colour_primary, .8);
     border: $btn-border-width solid rgba($colour_primary, .6);
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       color: #fff;
       background-color: $colour_primary;
     }
@@ -53,7 +53,7 @@
     &.secondary {
       border: $btn-border-width solid rgba($colour_secondary, .6);
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         background-color: $colour_secondary;
       }
     }
@@ -76,7 +76,7 @@
       margin-left: 10px;
     }
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       border-color: $colour_secondary;
       background-color: lighten($background_white, 12%);
     }
@@ -86,7 +86,7 @@
       border-color: $colour_secondary;
       background-color: $colour_secondary;
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         color: #fff;
         border-color: lighten($colour_pro, 12%);
         background-color: lighten($colour_pro, 12%);
@@ -98,7 +98,7 @@
       border-color: $colour_primary;
       background-color: $colour_primary;
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         border-color: lighten($colour_primary, 12%);
         background-color: lighten($colour_primary, 12%);
       }
@@ -109,7 +109,7 @@
       border-color: $color_highlight;
       background-color: $color_highlight;
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         border-color: lighten($color_highlight, 12%);
         background-color: lighten($color_highlight, 12%);
       }
@@ -120,7 +120,7 @@
       border-color: $colour_pro;
       background-color: $colour_pro;
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         border-color: lighten($colour_pro, 12%);
         background-color: lighten($colour_pro, 12%);
       }
@@ -130,26 +130,30 @@
   &--transparent {
     color: $colour_primary;
 
-    &, &:hover, &:focus, &:focus-within {
+    &, &%root-hover-focus {
       border-color: transparent;
       background: transparent;
     }
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       color: darken($colour_primary, 12%);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
   }
 
   &--transparent-white {
     color: white;
 
-    &, &:hover, &:focus, &:focus-within {
+    &, &%root-hover-focus {
       border-color: transparent;
       background: transparent;
     }
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       color: darken(#fff, 12%);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
   }
 
@@ -157,7 +161,7 @@
   &-default {
     border: $btn-border-width solid $colour_default;
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       background-color: $colour_default;
     }
   }
@@ -166,7 +170,7 @@
     border: $btn-border-width solid $colour_primary;
 
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       background-color: $colour_primary;
     }
   }
@@ -174,7 +178,7 @@
   &-secondary {
     border: $btn-border-width solid $colour_secondary;
 
-    &:hover, &:focus, &:focus-within {
+    &%root-hover-focus {
       background-color: $colour_secondary;
     }
 
@@ -183,7 +187,7 @@
       border: $btn-border-width solid $colour_secondary;
       color: white;
 
-      &:hover, &:focus, &:focus-within {
+      &%root-hover-focus {
         outline: none;
         color: white;
         border-color: transparent;
