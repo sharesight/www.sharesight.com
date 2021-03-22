@@ -5,13 +5,8 @@
   # Fields:
   # color, title (=text), text, url
 
-  is_remote = locals[:url].match(/^(http:|https:)?\/\//)
-  is_anchor = locals[:url].match(/^#/)
-
-  url = if is_remote
-    locals[:url]
-  elsif is_anchor
-    # Don't localize `#link-to-anchor`, just let it link on the page.
+  # Don't localize the url if it looks like `https://` or `#anchor-tag`
+  url = if locals[:url].match(/^(http:|https:)?\/\//) || locals[:url].match(/^#/)
     locals[:url]
   else
     localize_url(locals[:url], locale_id: locale_obj[:id])
@@ -25,8 +20,8 @@
   href="<%= url %>"
   class="<%= classes.join(' ') %>"
   title="<%= locals[:title] || locals[:text] %>"
-  <%= is_remote ? "target='_blank'" : '' %>
-  <%= is_remote ? "rel='noopener noreferrer'" : '' %>
+  <%= is_remote_url?(locals[:url]) ? "target='_blank'" : '' %>
+  <%= is_third_party_url?(locals[:url]) ? "rel='noopener noreferrer'" : '' %>
 >
   <%= partial 'partials/components/markdown', locals: { markdown: locals[:text], inline: true } %>
 </a>

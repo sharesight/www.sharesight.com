@@ -11,7 +11,15 @@
   icon_hover = link[:icon_hover] || "#{link[:icon]}-fill"
 %>
 
-<a href="<%= link[:href] %>" role="menuitem" title="<%= link[:title] %>" class="<%= classes.join(' ') %>" tabindex="0">
+<a
+  href="<%= link[:href] %>"
+  role="menuitem"
+  title="<%= link[:title] %>"
+  class="<%= classes.join(' ') %>"
+  tabindex="0"
+  <%= is_remote_url?(link[:href]) ? "target='_blank'" : '' %>
+  <%= is_third_party_url?(link[:href]) ? "rel='noopener noreferrer'" : '' %>
+>
   <span class="menu__label <%= "menu__label--no-icon" unless link[:icon] %>">
     <% if link[:icon] %>
       <i class="ph-<%= link[:icon] %> menu__icon" data-ph-hover="<%= "ph-#{icon_hover}" %>" role="img" aria-label="<%= link[:title] %>"></i>

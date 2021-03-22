@@ -1,4 +1,5 @@
-$__nav-height: 65px;
+$__nav-height: 45px;
+$__offset-logo-aligment: -20px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
 
 $__menu-padding: $gutter * 1.5;
 $__menu-border-radius: 3px;
@@ -32,6 +33,11 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   position: relative;
   min-height: $__nav-height;
 
+  // // HACK: See comment on `$__offset-logo-aligment` variable.
+  @include respond-to(md, min) {
+    padding-top: $__offset-logo-aligment * -1;
+  }
+
   // Mobile: align the "Login + Signup" w/ the Hamburger Menu.
   @include respond-to(sm, max) {
     flex-wrap: wrap;
@@ -48,6 +54,11 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     img {
       display: block;
       max-height: 50px;
+
+      // // HACK: See comment on `$__offset-logo-aligment` variable.
+      @include respond-to(md, min) {
+        margin-top: $__offset-logo-aligment; // HACK: See comment on variable.
+      }
     }
   }
 
@@ -156,7 +167,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__ctas {
-    margin: $gutter/2 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
+    margin: $gutter/4 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,12 +224,13 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
   &__icon {
     font-size: 22px;
-    height: 22px; // match our font-size so line-height is a bit cleaner
-    color: $colour_pro;
+    height: 22px; // match font-size so it flexes to center better
+    min-width: 22px; // when the icon is loading, it should take up the space
 
     .menu__link--compact & {
       font-size: 18px;
-      height: 18px; // match our font-size so line-height is a bit cleaner
+      height: 18px;
+      min-width: 18px;
     }
 
     %root-can-hover-focus & {
@@ -287,10 +299,14 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     font-weight: 600;
 
     & + & {
-      margin-top: $gutter * 1.5;
+      margin-top: $gutter/2; // margin between for non-compact links
+    }
 
-      &--compact {
-        margin-top: $gutter/2;
+    &--compact {
+      line-height: $gutter * 1.5; // Adds a bit of a "clickable area"
+
+      & + & {
+        margin-top: 0; // managed with line-height
       }
     }
   }
@@ -300,7 +316,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     color: $colour_default;
     font-weight: 600;
     font-size: 0.85rem;
-    margin-bottom: $gutter/2;
+    margin-bottom: $gutter/4;
 
     .menu__icon {
       color: $colour_default;
@@ -358,8 +374,8 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__split-2, &__split-3 {
-    @include respond-to(md, max) {
-      flex-basis: 50%;
+    @include respond-to(xs, max) {
+      flex-basis: 100%;
 
       & + & {
         padding-top: $gutter/2;
@@ -369,9 +385,19 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
         }
       }
     }
+  }
 
-    @include respond-to(xs, max) {
-      flex-basis: 100%;
+  &__split-3 {
+    @include respond-to(md, max) {
+      flex-basis: 50%;
+
+      &:nth-child(3) {
+        padding-top: $gutter/2;
+
+        > .menu__title {
+          margin-top: $gutter/2;
+        }
+      }
     }
   }
 }
@@ -392,8 +418,10 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw; // fallback if stretch/fill/fill-available does not work
+  width: stretch; // works better than vw on mobile devices
+  height: 100vh; // fallback if stretch/fill/fill-available does not work
+  height: stretch; // works better than vh on mobile devices
   padding: $gutter;
   background: rgba($colour_pro, 0.20);
 
@@ -420,7 +448,6 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
     list-style-type: none;
     padding: $gutter;
-    padding-bottom: 0;
     margin: 0;
 
     .menu__background {

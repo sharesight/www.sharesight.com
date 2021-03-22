@@ -43,7 +43,7 @@
 
           <% if has_nested_links %>
             <div>
-              <% menu[:rows].each do |row| %>
+              <% menu[:rows].select{ |menu| menu[:visible_mobile] != false }.each do |row| %>
                 <%= partial row[:partial] || 'partials/header/row', locals: { row: row, mobile: true } %>
               <% end %> <%# ends menu[:rows].each %>
             </div>

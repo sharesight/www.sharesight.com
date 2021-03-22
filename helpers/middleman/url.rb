@@ -1,3 +1,5 @@
+require 'uri/http'
+
 load File::expand_path('./locale.rb', __dir__)
 
 module MiddlemanUrlHelpers
@@ -153,5 +155,32 @@ module MiddlemanUrlHelpers
   # An absolute url for the image (eg. for Facebook/Twitter)
   def image_url(source)
     return absolute_url(image_path(source))
+  end
+
+  def is_remote_url?(url)
+    uri = URI.parse(url)
+    base_uri = URI.parse(config[:base_url])
+
+    return false if uri.host.nil?
+    return true unless ['http', 'https'].include?(uri.scheme) # eg. Schemes like `ftp://` or `ws://` are just treated as remote..
+
+    return false if uri.host == base_uri.host
+
+    return true
+  end
+
+  def is_third_party_url?(url)
+    return false if is_remote_url?(url) == false # we treat local urls as non-third party
+
+    uri = URI.parse(url)
+    base_uri = URI.parse(config[:base_url])
+
+    return false if uri.host.nil?
+
+    return false if uri.host == base_uri.host
+    return false if uri.host == 'sharesight.com' # accept a non-subdomained url
+    return false if uri.host.end_with?('.sharesight.com') # accept any subdomain
+
+    return true
   end
 end

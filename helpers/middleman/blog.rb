@@ -3,22 +3,50 @@ load File::expand_path('../blog_helper.rb', __dir__)
 
 module MiddlemanBlogHelpers
 
-  def blog_posts(order: nil)
+  def blog_posts(order: :latest_first)
     @blog_posts ||= {}
     return @blog_posts[order] if @blog_posts[order]
 
     @blog_posts[order] ||= case order
-      when :youngest_first
-        data.blog.posts.values.sort do |a,b|
-          a['created_at'] <=> b['created_at']
-        end
       when :oldest_first
         data.blog.posts.values.sort do |a,b|
-          b['created_at'] <=> a['created_at']
+          a['created_at'].to_i <=> b['created_at'].to_i
+        end
+      when :latest_first
+        data.blog.posts.values.sort do |a,b|
+          b['created_at'].to_i <=> a['created_at'].to_i
         end
       else
-        data.blog.posts
+        data.blog.posts.values
       end
+  end
+
+  def blog_posts_for_menu
+    category_name_regexes = [
+      /Company News/,
+      /Investing Tips/,
+      /Release Notes/,
+      /Sharesight Features .* Tips/
+    ]
+
+    # get and cache a list of categories for the menu's list of blog posts
+    @__menu_blog_post_category_ids ||= blog_categories.select do |category|
+      category_name_regexes.any? do |name_regex|
+        category[:name] =~ name_regex
+      end
+    end.map do |category|
+      category[:id]
+    end
+
+    # filter the blog posts by these categories
+    posts = blog_posts(order: :youngest_first).select do |post|
+      post.categories&.find do |category|
+        @__menu_blog_post_category_ids.include?(category[:id])
+      end
+    end
+
+    # return the first 3
+    return posts.first(3)
   end
 
   def post_url(post)

@@ -28,19 +28,22 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'trend-up',
                   icon_hover: 'chart-line-up-bold',
-                  title: 'Performance',
-                  href: '/TODO',
+                  label: 'Performance',
+                  href: localize_path('investment-portfolio-performance', locale_id: locale_obj[:id]),
+                  title: locale_page(page: 'investment-portfolio-performance', locale_obj: locale_obj)[:page_title],
                 },
                 {
                   icon: 'coin',
-                  title: 'Dividends',
-                  href: '/TODO',
+                  label: 'Dividends',
+                  href: localize_path('dividend-tracker', locale_id: locale_obj[:id]),
+                  title: locale_page(page: 'dividend-tracker', locale_obj: locale_obj)[:page_title],
                 },
                 {
                   icon: 'receipt',
                   icon_hover: 'article-fill',
-                  title: 'Tax Reporting',
-                  href: '/TODO',
+                  label: 'Tax Reporting',
+                  href: localize_url('investment-portfolio-tax', locale_id: locale_obj[:id]),
+                  title: locale_page(page: 'investment-portfolio-tax', locale_obj: locale_obj)[:page_title],
                 }
               ]
             },
@@ -51,13 +54,13 @@ module MiddlemanMenuHelpers
                   icon: 'squares-four',
                   icon_hover: 'grid-four-fill',
                   title: 'Supported Investments',
-                  href: '/TODO',
+                  href: localize_url('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight",
                 },
                 {
                   icon: 'globe-hemisphere-west',
                   icon_hover: 'globe-hemisphere-east-fill',
                   title: 'Supported Exchanges',
-                  href: localize_url('supported-stock-exchanges-and-managed-funds', locale_id: locale_obj[:id], base_url: config[:help_url]),
+                  href: localize_url('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support",
                 },
                 {
                   icon: 'bank',
@@ -94,7 +97,7 @@ module MiddlemanMenuHelpers
                   icon: 'shield',
                   icon_hover: 'shield-check-fill',
                   title: 'Data Security',
-                  href: localize_url('how-sharesight-protects-your-data-', locale_id: locale_obj[:id], base_url: config[:help_url])
+                  href: localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: config[:help_url])
                 }
               ]
             }
@@ -119,13 +122,13 @@ module MiddlemanMenuHelpers
                   href: '/TODO',
                   description: 'Over **200,000** Investors around the world track their portfolios with Sharesight.',
                 },
-                {
-                  # This looks like a "child" to Investors on Desktop.
-                  visible_mobile: false,
-                  label: 'Read the Reviews',
-                  title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
-                  href: localize_url('reviews', locale_id: locale_obj[:id]),
-                },
+                # FYI: You can add "child links" here to look like they're nested under this.
+                # This is kept around for future reference.
+                # {
+                #   label: 'Read the Reviews',
+                #   title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
+                #   href: localize_url('reviews', locale_id: locale_obj[:id]),
+                # },
                 {
                   icon: 'users',
                   label: 'Finance Professionals',
@@ -233,6 +236,12 @@ module MiddlemanMenuHelpers
               label: 'Resources',
               links: [
                 {
+                  icon: 'pencil-circle',
+                  title: 'Read the Sharesight Blog',
+                  label: 'Blog',
+                  href: unlocalized_url('blog'),
+                },
+                {
                   icon: 'info',
                   title: 'Help Centre',
                   href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
@@ -255,6 +264,7 @@ module MiddlemanMenuHelpers
           ]
         },
         {
+          visible_mobile: false,
           # For this row, we just use a specific blog partial rather than try to fit it into this format…
           partial: 'partials/header/blog',
         }

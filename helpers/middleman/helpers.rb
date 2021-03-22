@@ -1,7 +1,8 @@
 require 'ostruct'
-load File::expand_path('../basic_helper.rb', __dir__)
 
-# Load these as they're prone to change.
+# Use `load` to hot-reload these when they change.
+# NOTE: It appears if you use `require_relative` it does not hot-reload them…
+load File::expand_path('../basic_helper.rb', __dir__)
 load File::expand_path('./blog.rb', __dir__)
 load File::expand_path('./landing-pages.rb', __dir__)
 load File::expand_path('./locale.rb', __dir__)
