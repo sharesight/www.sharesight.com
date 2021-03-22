@@ -45,6 +45,7 @@ describe 'Header', type: :feature do
             ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
+            ["Blog", base_url("blog")],
             ["Help Centre", Capybara.app.config[:help_url]],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],

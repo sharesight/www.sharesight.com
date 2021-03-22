@@ -236,7 +236,6 @@ module MiddlemanMenuHelpers
               label: 'Resources',
               links: [
                 {
-                  visible_desktop: false,
                   icon: 'pencil-circle',
                   title: 'Read the Sharesight Blog',
                   label: 'Blog',
