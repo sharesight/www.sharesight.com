@@ -16,7 +16,7 @@
   <% end %>
 
   <%# Iterates through every post. %>
-  <% blog_posts(order: :latest_first).select{ |post| post[:title]&.present? }.each do |post| %>
+  <% blog_posts(order: :latest_first).select{ |post| post[:title].present? }.each do |post| %>
     <% updated_at = post[:_meta][:updated_at] %>
     <url>
       <loc><%= post_url(post) %></loc>
