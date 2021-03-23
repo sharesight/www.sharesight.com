@@ -236,15 +236,16 @@ module MiddlemanMenuHelpers
               label: 'Resources',
               links: [
                 {
-                  icon: 'pencil-circle',
-                  title: 'Read the Sharesight Blog',
-                  label: 'Blog',
-                  href: unlocalized_url('blog'),
+                  icon: 'info',
+                  label: 'Help Centre',
+                  title: "Help Centre | #{locale_obj[:append_title]}",
+                  href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
                 },
                 {
-                  icon: 'info',
-                  title: 'Help Centre',
-                  href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
+                  icon: 'pencil-circle',
+                  title: 'Read the Sharesight Blog',
+                  label: 'Sharesight Blog',
+                  href: unlocalized_url('blog'),
                 },
                 {
                   icon: 'code',
