@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 expected_descriptions = [
-  'Join over 200,000 investors who track their portfolios with Sharesight.',
+  'Join 200,000+ investors who track their portfolios with Sharesight.',
   'Grow your business with Sharesight Pro.',
-  'Partner with Sharesight and grow your business.'
+  'Grow your business by partnering with Sharesight.'
 ]
 
 describe 'Header', type: :feature do
