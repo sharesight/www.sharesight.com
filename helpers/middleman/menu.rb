@@ -53,18 +53,21 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'squares-four',
                   icon_hover: 'grid-four-fill',
-                  title: 'Supported Investments',
+                  label: 'Supported Investments',
+                  title: "Supported Investments | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight",
                 },
                 {
                   icon: 'globe-hemisphere-west',
                   icon_hover: 'globe-hemisphere-east-fill',
-                  title: 'Supported Exchanges',
+                  label: 'Supported Exchanges',
+                  title: "Supported Exchanges | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support",
                 },
                 {
                   icon: 'bank',
-                  title: 'Supported Brokers',
+                  label: 'Supported Brokers',
+                  title: "Supported Brokers | #{locale_obj[:append_title]}",
                   href: localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: config[:help_url]),
                 }
               ]
@@ -96,7 +99,8 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'shield',
                   icon_hover: 'shield-check-fill',
-                  title: 'Data Security',
+                  label: 'Data Security',
+                  title: "Data Security | #{locale_obj[:append_title]}",
                   href: localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: config[:help_url])
                 }
               ]
@@ -120,7 +124,7 @@ module MiddlemanMenuHelpers
                   icon: 'user',
                   title: 'Investors',
                   href: '/TODO',
-                  description: 'Over **200,000** Investors around the world track their portfolios with Sharesight.',
+                  description: 'Join over **200,000** investors who track their portfolios with Sharesight.',
                 },
                 # FYI: You can add "child links" here to look like they're nested under this.
                 # This is kept around for future reference.
@@ -134,7 +138,7 @@ module MiddlemanMenuHelpers
                   label: 'Finance Professionals',
                   title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
                   href: localize_url('pro', locale_id: locale_obj[:id]),
-                  description: 'Use **Sharesight Pro** to grow your business.'
+                  description: 'Grow your business with **Sharesight Pro**.'
                 },
                 {
                   icon: 'buildings',
@@ -236,15 +240,16 @@ module MiddlemanMenuHelpers
               label: 'Resources',
               links: [
                 {
-                  icon: 'pencil-circle',
-                  title: 'Read the Sharesight Blog',
-                  label: 'Blog',
-                  href: unlocalized_url('blog'),
+                  icon: 'info',
+                  label: 'Help Centre',
+                  title: "Help Centre | #{locale_obj[:append_title]}",
+                  href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
                 },
                 {
-                  icon: 'info',
-                  title: 'Help Centre',
-                  href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]),
+                  icon: 'pencil-circle',
+                  title: 'Read the Sharesight Blog',
+                  label: 'Sharesight Blog',
+                  href: unlocalized_url('blog'),
                 },
                 {
                   icon: 'code',

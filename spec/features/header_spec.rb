@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 expected_descriptions = [
-  'Over 200,000 Investors around the world track their portfolios with Sharesight.',
-  'Use Sharesight Pro to grow your business.',
+  'Join over 200,000 investors who track their portfolios with Sharesight.',
+  'Grow your business with Sharesight Pro.',
   'Partner with Sharesight and grow your business.'
 ]
 
@@ -51,8 +51,8 @@ describe 'Header', type: :feature do
             ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
-            ["Blog", base_url("blog")],
             ["Help Centre", Capybara.app.config[:help_url]],
+            ["Sharesight Blog", base_url("blog")],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
 
@@ -205,8 +205,8 @@ describe 'Header', type: :feature do
             ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
-            ["Blog", base_url("blog")],
             ["Help Centre", Capybara.app.config[:help_url]],
+            ["Sharesight Blog", base_url("blog")],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
 
