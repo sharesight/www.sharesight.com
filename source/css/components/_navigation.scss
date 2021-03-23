@@ -403,31 +403,27 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   // Requires a `<div class="menu__row" />` around it.
   &__split-3 {
     flex: 1 1 percentage(1/3);
-  }
 
-  &__split-2, &__split-3 {
-    @include respond-to(xs, max) {
-      flex-basis: 100%;
+    // Let a 3 column split turn into 2 then 1 column, with a margin between the rows.
+    @include respond-to(md, max) {
+      flex-basis: 50%;
 
-      & + & {
-        padding-top: $gutter/2;
-
+      &:nth-child(3) {
         > .menu__title {
-          margin-top: $gutter/2;
+          margin-top: $gutter;
         }
       }
     }
   }
 
-  &__split-3 {
-    @include respond-to(md, max) {
-      flex-basis: 50%;
+  &__split-2, &__split-3 {
+    // [hardcoded value that worked] at 500px, let's move these from columns to full-width
+    @media (max-width: 500px) {
+      flex-basis: 100%;
 
-      &:nth-child(3) {
-        padding-top: $gutter/2;
-
+      & + & {
         > .menu__title {
-          margin-top: $gutter/2;
+          margin-top: $gutter;
         }
       }
     }
