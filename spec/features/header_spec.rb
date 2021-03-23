@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 expected_descriptions = [
-  'Over 200,000 Investors around the world track their portfolios with Sharesight.',
-  'Use Sharesight Pro to grow your business.',
+  'Join over 200,000 investors who track their portfolios with Sharesight.',
+  'Grow your business with Sharesight Pro.',
   'Partner with Sharesight and grow your business.'
 ]
 

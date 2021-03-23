@@ -120,7 +120,7 @@ module MiddlemanMenuHelpers
                   icon: 'user',
                   title: 'Investors',
                   href: '/TODO',
-                  description: 'Over **200,000** Investors around the world track their portfolios with Sharesight.',
+                  description: 'Join over **200,000** investors who track their portfolios with Sharesight.',
                 },
                 # FYI: You can add "child links" here to look like they're nested under this.
                 # This is kept around for future reference.
@@ -134,7 +134,7 @@ module MiddlemanMenuHelpers
                   label: 'Finance Professionals',
                   title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
                   href: localize_url('pro', locale_id: locale_obj[:id]),
-                  description: 'Use **Sharesight Pro** to grow your business.'
+                  description: 'Grow your business with **Sharesight Pro**.'
                 },
                 {
                   icon: 'buildings',
