@@ -189,6 +189,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
     // Mobile: When this is wrapped to a new row, add a margin to it.
     @include respond-to(sm, max) {
+      align-self: start;
       margin-top: $__hamburger-top;
     }
 
@@ -390,7 +391,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    width: stretch; // lets the content
+    width: stretch;
     flex-wrap: wrap;
   }
 
