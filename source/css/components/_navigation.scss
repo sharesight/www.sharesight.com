@@ -8,6 +8,7 @@ $__menu-button-gutter: $gutter*2/3;
 $__hamburger-height: $gutter * 1.75;
 $__hamburger-width: $gutter * 2.25;
 $__hamburger-top: $gutter/2;
+$__hamburger-wrap-max-width: 450px; // This is just an arbitrary number that works.  It might break with zooming/etc.
 
 $__link_indentation: 28px; // indentation to have links and icons be a bit consistent
 
@@ -35,15 +36,21 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   position: relative;
   min-height: $__nav-height;
 
-  // // HACK: See comment on `$__offset-logo-aligment` variable.
+  // HACK: See comment on `$__offset-logo-aligment` variable.
   @include respond-to(md, min) {
     padding-top: $__offset-logo-aligment;
   }
 
-  // Mobile: align the "Login + Signup" w/ the Hamburger Menu.
+  // Mobile: make room for the Hamburger menu.
   @include respond-to(sm, max) {
     flex-wrap: wrap;
     padding-right: $__hamburger-width + $gutter/2;
+  }
+
+  // Mobile: move the "Login" and "Signup" to the next row.
+  @media (max-width: $__hamburger-wrap-max-width) {
+    padding-right: 0;
+    flex-direction: column;
   }
 
   &__container {
@@ -175,9 +182,15 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     justify-content: center;
     align-items: center;
 
+    // Mobile: When this is wrapped to a new row, add a margin to it.
     @include respond-to(sm, max) {
-      // align with the hamburger and flow better when wrapping in mobile
-      margin: $__hamburger-top auto 0;
+      margin-top: $__hamburger-top;
+    }
+
+    // Mobile: When we're forcibly wrapping this to the next row, center it.
+    @media (max-width: $__hamburger-wrap-max-width) {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
