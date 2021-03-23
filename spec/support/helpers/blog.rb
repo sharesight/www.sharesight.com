@@ -57,20 +57,7 @@ module CapybaraBlogHelpers
   private
 
   def _blog_posts(order: nil, limit: nil)
-    posts = Capybara.app.data.blog.posts.map{ |tuple| tuple[1] }
-
-    case order
-    when :youngest_first
-      posts.sort do |a,b|
-        a['created_at'] <=> b['created_at']
-      end
-    when :oldest_first
-      posts.sort do |a,b|
-        b['created_at'] <=> a['created_at']
-      end
-    else
-      posts
-    end
+    posts = Capybara.app.blog_posts(order: order)
 
     if limit
       posts = posts[0..limit]

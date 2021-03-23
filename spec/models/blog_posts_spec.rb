@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'Blog Posts', :type => :model do
   before :all do
     @data = Capybara.app.data.blog.posts
-    @collection = get_blog_posts(order: :youngest_first, limit: 10)
+    @collection = get_blog_posts(order: :latest_first, limit: 10)
   end
 
   it "should have a directory" do
@@ -38,7 +38,7 @@ describe 'Blog Posts', :type => :model do
 
     expect(schema).to include(
       :id, :_meta, :title, :content, :author, :categories, :created_at,
-      :meta_description, :featured_image, :wordpress_url
+      :meta_description, :featured_image, :hide_from_feed, :slug, :path, :url, :page_title
     )
   end
 end
