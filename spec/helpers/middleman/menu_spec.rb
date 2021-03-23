@@ -74,6 +74,52 @@ describe 'Menu Helper', :type => :helper do
         expect(pricing[:title]).to eq("Pricing | Sharesight #{locale_obj[:country]}".strip)
         expect(pricing[:href]).to match(%r{#{locale_obj[:path]}pricing\/$})
       end
+
+      [
+        ['About Sharesight', 'About Us'], # page from codebase
+        ['Data Security', 'Data Security'], # manually
+        ['Become a Partner', 'Partner with Sharesight'], # page from Contentful. NOTE: This may change!
+        ['Sharesight Blog', 'Read the Sharesight Blog', true], # hardcoded title, no localization
+        ['Sharesight API', 'Sharesight API Documentation', true], # hardcoded title, no localization
+      ].each do |label, title, ignore_localization|
+        it "#{locale_obj[:country]} should have an an expected, localized title for #{label}" do
+          # NOTE: We test global above.
+          menus = @app.get_menu_config(locale_obj: locale_obj)
+
+          link = find_menu_link(menus, label)
+          raise "Could not find label: #{label} in #{locale_obj[:country]}!" unless link
+
+          title_localized = if ignore_localization
+            title
+          else
+            "#{title} | #{locale_obj[:append_title]}"
+          end
+
+          expect(link[:label]).to eq(label)
+          expect(link[:title]).to eq(title_localized)
+        end
+      end
+    end
+  end
+
+  private
+
+  def find_menu_link(menus, label)
+    menus.each do |menu|
+      next unless menu[:rows]
+
+      menu[:rows].each do |row|
+        next unless row[:columns]
+
+        row[:columns].each do |column|
+          next unless column[:links]
+
+          column[:links].each do |link|
+            return link if link[:label] == label
+            return link if link[:label].blank? && link[:title] == label
+          end
+        end
+      end
     end
   end
 end
