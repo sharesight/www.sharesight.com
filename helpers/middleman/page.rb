@@ -47,7 +47,7 @@ module MiddlemanPageHelpers
     page = page&.downcase&.sub(/\.html$/, '')
 
     # Look through the current locale's pages for the page; if not found, look in the default locale's pages; return the output.
-    found_page = locale_obj.pages.find{ |y| y[:page] == page }
+    found_page = locale_obj[:pages].find{ |y| y[:page] == page }
 
     if found_page.nil?
       # Not found, find the first one where the page is found.
@@ -56,7 +56,7 @@ module MiddlemanPageHelpers
     end
 
     if found_page.nil?
-      found_page = get_landing_page(page)
+      found_page = get_landing_page(page, locale_obj: locale_obj)
     end
 
     return found_page # may return a nil here!
@@ -64,7 +64,7 @@ module MiddlemanPageHelpers
 
   def page_alternative_locales(page_name = valid_page_from_path)
     return false if !is_valid_page?(page_name)
-    return data.locales if get_landing_page(page_name)
+    return data.locales if get_landing_page(page_name, locale_obj: default_locale_obj)
 
     @page_alternative_locales ||= data.locales.reduce({}) do |hash, locale|
       locale.pages.each do |page_data|
@@ -92,7 +92,7 @@ module MiddlemanPageHelpers
   end
 
   def is_landing_page?(page_name = valid_page_from_path)
-    return !!get_landing_page(page_name)
+    return !!get_landing_page(page_name, locale_obj: default_locale_obj)
   end
 
   def is_valid_locale_id_for_page?(page_name, locale_id)
@@ -119,8 +119,8 @@ module MiddlemanPageHelpers
     return locales[0]
   end
 
-  def get_landing_page(page_name = valid_page_from_path)
-    found = landing_pages_collection.find{ |page| page.url_slug == page_name }
+  def get_landing_page(page_name = valid_page_from_path, locale_obj: current_locale_obj)
+    found = landing_pages_collection(locale_obj: locale_obj).find{ |page| page.url_slug == page_name }
     return unless found
 
     found.with_indifferent_access

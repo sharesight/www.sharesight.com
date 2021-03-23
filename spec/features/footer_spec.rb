@@ -1,8 +1,11 @@
 require 'spec_helper'
 
 describe 'Footer', type: :feature do
-  it 'should have all expected links' do
+  before :each do
     visit '/'
+  end
+
+  it 'should have all expected links' do
     links = page.all(:css, 'a.footer__link')
 
     expected_links = [
@@ -60,5 +63,36 @@ describe 'Footer', type: :feature do
 
 
     expect(expected_links.length).to(eq(0), "Found leftover links in expected_links: #{expected_links}")
+  end
+
+  Capybara.app.data.locales.each do |locale_obj|
+    [
+      ['About Us', 'About Us'], # page from codebase
+      ['Become a Partner', 'Partner with Sharesight'], # page from Contentful. NOTE: This may change!
+      ['Help Centre', 'Help Centre'], # manual title w/ manual localization
+      ['Blog', 'Sharesight Blog', true], # hardcoded title, no localization
+      ['sales@sharesight.com', 'Email the Sales & Partnerships Team', true], # hardcoded title, no localization
+      ['Sharesight API', 'Sharesight API Documentation', true], # hardcoded title, no localization
+    ].each do |label, title, ignore_localization|
+      it "#{locale_obj[:country]} should have an an expected, localized title for #{label}" do
+        visit locale_obj[:path]
+
+        links = page.all(:css, 'a.footer__link')
+        link = links.find do |link|
+          link.text.include?(label)
+        end
+
+        raise "Could not find label: #{label} in #{locale_obj[:id]}!" unless link
+
+        title_localized = if ignore_localization
+          title
+        else
+          "#{title} | #{locale_obj[:append_title]}"
+        end
+
+        expect(link.text).to eq(label)
+        expect(link[:title]).to eq(title_localized)
+      end
+    end
   end
 end
