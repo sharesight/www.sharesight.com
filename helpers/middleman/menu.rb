@@ -53,18 +53,21 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'squares-four',
                   icon_hover: 'grid-four-fill',
-                  title: 'Supported Investments',
+                  label: 'Supported Investments',
+                  title: "Supported Investments | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight",
                 },
                 {
                   icon: 'globe-hemisphere-west',
                   icon_hover: 'globe-hemisphere-east-fill',
-                  title: 'Supported Exchanges',
+                  label: 'Supported Exchanges',
+                  title: "Supported Exchanges | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support",
                 },
                 {
                   icon: 'bank',
-                  title: 'Supported Brokers',
+                  label: 'Supported Brokers',
+                  title: "Supported Brokers | #{locale_obj[:append_title]}",
                   href: localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: config[:help_url]),
                 }
               ]
@@ -96,7 +99,8 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'shield',
                   icon_hover: 'shield-check-fill',
-                  title: 'Data Security',
+                  label: 'Data Security',
+                  title: "Data Security | #{locale_obj[:append_title]}",
                   href: localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: config[:help_url])
                 }
               ]
