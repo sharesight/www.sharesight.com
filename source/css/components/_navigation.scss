@@ -201,7 +201,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 .menu {
   position: absolute;
   top: $__nav-height;
-  left: -75%;
+  left: -50px;
   width: fit-content;
   min-width: 550px;
   z-index: 1000;
@@ -223,11 +223,16 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     display: block;
   }
 
-  // Have the last two menus have a right start rather than a left start so they don't drift out of view.
-  li:nth-last-child(2) [aria-haspopup] ~ &,
+  // Have the 2nd to last menu have a right-start that doesn't go out of view.
+  li:nth-last-child(2) [aria-haspopup] ~ & {
+    left: unset;
+    right: -150px;
+  }
+
+  // Have the last menu have a right-start that doesn't go out of view.  Test this in
   li:last-child [aria-haspopup] ~ & {
     left: unset;
-    right: -100%;
+    right: -200px;
   }
 
   &__icon {
