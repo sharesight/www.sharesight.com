@@ -27,7 +27,7 @@ module MiddlemanLocaleHelpers
     return current_locale_id == locale_id
   end
 
-  def get_locale_obj(locale_id = current_locale_id )
+  def get_locale_obj(locale_id = current_locale_id)
     locale_id = locale_id&.downcase
 
     locale_obj = data.locales.find { |x| x[:id] == locale_id }

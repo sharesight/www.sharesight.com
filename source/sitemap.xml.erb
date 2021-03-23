@@ -16,7 +16,7 @@
   <% end %>
 
   <%# Iterates through every post. %>
-  <% blog_posts(order: :latest_first).select{ |post| post[:title]&.present? }.each do |post| %>
+  <% blog_posts(order: :latest_first).select{ |post| post[:title].present? }.each do |post| %>
     <% updated_at = post[:_meta][:updated_at] %>
     <url>
       <loc><%= post_url(post) %></loc>
@@ -67,7 +67,7 @@
 <%end%>
 
 <%# Iterates through every landing page. %>
-<% landing_pages_collection().select{ |landing_page| landing_page[:no_index] != true }.each do |landing_page| %>
+<% landing_pages_collection(locale_obj: locale_obj).select{ |landing_page| landing_page[:no_index] != true }.each do |landing_page| %>
   <% updated_at = landing_page[:_meta][:updated_at] %>
 
   <url>
