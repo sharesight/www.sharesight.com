@@ -130,11 +130,15 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     line-height: $__nav-height; // NOTE: We do not use a border, so we just use the height.
     font-weight: 500;
     padding: 0 $__menu-button-gutter;
-    margin: 0 $__menu-button-gutter;
     cursor: pointer;
     white-space: nowrap;
     font-size: 1rem;
     position: relative; // For the ::after to attach to.
+
+    // Large Desktop: Add some extra spacing between buttons.
+    @include respond-to(lg, min) {
+      margin: 0 $__menu-button-gutter;
+    }
 
     // The "caret" icon
     svg[role="img"] {
