@@ -1,11 +1,13 @@
 $__nav-height: 45px;
-$__offset-logo-aligment: -20px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
+$__offset-logo-aligment: 14px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
 
 $__menu-padding: $gutter * 1.5;
 $__menu-border-radius: 3px;
 $__menu-button-gutter: $gutter*2/3;
+
 $__hamburger-height: $gutter * 1.75;
 $__hamburger-width: $gutter * 2.25;
+$__hamburger-top: $gutter/2;
 
 $__link_indentation: 28px; // indentation to have links and icons be a bit consistent
 
@@ -26,7 +28,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
@@ -35,7 +37,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
   // // HACK: See comment on `$__offset-logo-aligment` variable.
   @include respond-to(md, min) {
-    padding-top: $__offset-logo-aligment * -1;
+    padding-top: $__offset-logo-aligment;
   }
 
   // Mobile: align the "Login + Signup" w/ the Hamburger Menu.
@@ -45,6 +47,8 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__container {
+    padding-top: $gutter/2;
+    padding-bottom: $gutter/2;
     overflow: visible;
   }
 
@@ -55,9 +59,9 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
       display: block;
       max-height: 50px;
 
-      // // HACK: See comment on `$__offset-logo-aligment` variable.
+      // HACK: See comment on `$__offset-logo-aligment` variable.
       @include respond-to(md, min) {
-        margin-top: $__offset-logo-aligment; // HACK: See comment on variable.
+        margin-top: -$__offset-logo-aligment; // negative margin
       }
     }
   }
@@ -76,7 +80,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
 
     display: none; // mobile only
     position: absolute;
-    top: ($__nav-height - $__hamburger-height) / 2;
+    top: $__hamburger-top;
     right: 0;
 
     &%root-hover-focus {
@@ -167,10 +171,14 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   }
 
   &__ctas {
-    margin: $gutter/4 auto; // we use a margin to let this flow a bit better when it wraps in tiny screens
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond-to(sm, max) {
+      // align with the hamburger and flow better when wrapping in mobile
+      margin: $__hamburger-top auto 0;
+    }
   }
 
   &__cta {
