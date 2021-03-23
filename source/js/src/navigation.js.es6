@@ -84,9 +84,7 @@ function registerNavigation () {
 }
 
 function registerMobileNavigation () {
-  const hamburger = document.getElementById('nav__hamburger');
   const menu = document.getElementById('mobile-nav');
-  const closeIcon = menu.querySelector('.mobile-nav__close');
 
   function closeMenu () {
     menu.setAttribute('aria-hidden', true);
@@ -96,24 +94,34 @@ function registerMobileNavigation () {
     menu.setAttribute('aria-hidden', false);
   }
 
-
   function handleKeyboardEscape (event) {
     return handleKeyboardAction({ event, onEscape: closeMenu });
   }
-
-  document.addEventListener('keydown', handleKeyboardEscape);
 
   function handleKeyboardOpen (event) {
     return handleKeyboardAction({ event, onOpen: openMenu });
   }
 
+  function handleKeyboardCloseIcon (event) {
+    return handleKeyboardAction({ event, onOpen: closeMenu });
+  }
+
+  function handleClickOverlayBlur (event) {
+    if (event.target !== event.currentTarget) return;
+    closeMenu();
+  }
+
+  document.addEventListener('keydown', handleKeyboardEscape);
+
+
+  const hamburger = document.getElementById('nav__hamburger');
   hamburger.addEventListener('keydown', handleKeyboardOpen);
   hamburger.addEventListener('click', openMenu);
 
-  function handleKeyboardCloseIcon (event) {
-    return handleKeyboardAction({ event, onOpen: closeMenu});
-  }
+  // Clicking on the menu overlay (just the "grey blur area") will close as well.
+  menu.addEventListener('click', handleClickOverlayBlur);
 
+  const closeIcon = menu.querySelector('.mobile-nav__close');
   closeIcon.addEventListener('click', closeMenu);
   closeIcon.addEventListener('keydown', handleKeyboardCloseIcon);
 }
