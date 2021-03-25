@@ -145,7 +145,7 @@ module MiddlemanMenuHelpers
                   label: 'Finance Companies',
                   title: locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title],
                   href: localize_url('become-a-partner', locale_id: locale_obj[:id]),
-                  description: 'Grow your business by partnering with Sharesight.'
+                  description: 'Connect with Sharesight to power your business.'
                 }
               ]
             }
