@@ -34,7 +34,7 @@ describe 'Header', type: :feature do
             ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
-            ["Investors", '/TODO'],
+            ["Investors",  localize_path('investors', locale_id: locale_obj[:id])],
             ["Finance Professionals", localize_path('pro', locale_id: locale_obj[:id])],
             ["Finance Companies", localize_path('become-a-partner', locale_id: locale_obj[:id])],
 
@@ -191,7 +191,7 @@ describe 'Header', type: :feature do
             ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
-            ["Investors", '/TODO'],
+            ["Investors",  localize_path('investors', locale_id: locale_obj[:id])],
             ["Finance Professionals", localize_path('pro', locale_id: locale_obj[:id])],
             ["Finance Companies", localize_path('become-a-partner', locale_id: locale_obj[:id])],
 
