@@ -97,7 +97,7 @@
         "page_title": "Referral Program Terms and Conditions | Sharesight",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.1
+        "show_in_sitemap": false
       },
       {
         "page": "404",
@@ -211,7 +211,7 @@
         "page_title": "Referral Program Terms and Conditions | Sharesight Australia",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Australia. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.1
+        "show_in_sitemap": false
       },
       {
         "page": "404",
@@ -318,7 +318,7 @@
         "page_title": "Referral Program Terms and Conditions | Sharesight Canada",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Canada. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 0.1
+        "show_in_sitemap": false
       },
       {
         "page": "404",
@@ -425,7 +425,7 @@
         "page_title": "Referral Program Terms and Conditions | Sharesight New Zealand",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight New Zealand. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.1
+        "show_in_sitemap": false
       },
       {
         "page": "404",
@@ -533,7 +533,7 @@
         "page_title": "Referral Program Terms and Conditions | Sharesight UK",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight UK. Using the Sharesight Referral Program means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 0.1
+        "show_in_sitemap": false
       },
       {
         "page": "404",
