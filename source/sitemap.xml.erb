@@ -86,7 +86,7 @@
 <%end%>
 
 <%# This is a list of pages on this current locale %>
-<% locale_obj[:pages].reject{ |page| page.show_in_sitemap == false }.each do |page_data| %>
+<% locale_obj[:pages].reject{ |page| page[:no_index] == true }.each do |page_data| %>
   <% alternative_locales = page_alternative_locales(page_data[:page]) %>
   <url>
     <%# Some pages can be strictly non-global, eg. a canadian landing page, so grabs the first locale. %>
