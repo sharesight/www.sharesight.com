@@ -35,7 +35,7 @@ function registerNavigation () {
   }
 
   function closeAll () {
-    menuTargets.forEach(target => {
+    Array.from(menuTargets).forEach(target => {
       setExpanded(target, false);
     });
   }
@@ -70,7 +70,7 @@ function registerNavigation () {
 
   document.addEventListener('keydown', handleKeyboardEscape);
 
-  menuTargets.forEach((node) => {
+  Array.from(menuTargets).forEach((node) => {
     node.addEventListener('keydown', handleKeyboardOpen);
 
     node.addEventListener('click', handleShowMenu);
