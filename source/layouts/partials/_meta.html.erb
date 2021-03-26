@@ -41,6 +41,13 @@
     metas[:no_index]           = current_locale_page[:no_index]
   end
 
+  # NOTE: We have this strictly because we don't index or follow non-production pages!!
+  # WARNING: This is not tested very well—our tests only assert "NoIndex, NoFollow" because mocking production would be annoying…
+  raw_robots_content = "Index, Follow"
+  raw_robots_content = "NoIndex" if metas[:no_index]
+  robots_content = raw_robots_content
+  robots_content = "NoIndex, NoFollow" if config[:env_name] != 'production'
+
   pagination = locals[:pagination]
   if pagination && pagination&.current_page && pagination&.total_pages && pagination&.current_page > 1
     # metas[:description]          = "#{pagination.from_items}-#{pagination.to_items} of (#{pagination.total_items}) – #{metas[:description]}"
@@ -60,13 +67,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<% if config[:env_name] != 'production' # don't index or follow non-production pages %>
-  <meta name="robots" content="NoIndex, NoFollow">
-<% elsif metas[:no_index] # explicitly don't index this page %>
-  <meta name="robots" content="NoIndex">
-<% else %>
-  <meta name="robots" content="Index, Follow">
+<% if config[:env_name] != 'production'  %>
+  <!-- [<%= config[:env_name] %> override] If merged into production, this would be: "<%= raw_robots_content %>" -->
 <% end %>
+<meta name="robots" content="<%= robots_content %>">
 
 <meta name="msvalidate.01" content="D71EF5876D9C5F2034E74AC314553CA3" />
 

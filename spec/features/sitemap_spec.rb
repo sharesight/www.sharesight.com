@@ -33,7 +33,7 @@ describe 'Sitemap', :type => :feature do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       expectation = 0
-      expectation += locale[:pages].reject{ |page| page.show_in_sitemap == false }.length
+      expectation += locale[:pages].reject{ |page| page[:no_index] == true }.length
 
       expectation += get_blog_posts().length if locale[:id] == default_locale_id
       expectation += get_blog_categories().length if locale[:id] == default_locale_id
@@ -41,7 +41,7 @@ describe 'Sitemap', :type => :feature do
       expectation += get_partners_partners(locale).length
       expectation += get_partners_categories(all: false).length
 
-      expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] }.length
+      expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] == true }.length
 
       expect(all(:xpath, '//urlset/url').length).to eq(expectation)
       expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
@@ -135,7 +135,9 @@ describe 'Sitemap', :type => :feature do
         url = localize_url("/#{page_data.page}", locale_id: locale.id)
         xpath = generate_xpath('//urlset/url/loc', text: url)
 
-        unless page_data.show_in_sitemap == false
+        if page_data[:no_index] == true
+          expect(page).not_to have_xpath(xpath)
+        else
           expect(page).to have_xpath(xpath)
         end
       end
