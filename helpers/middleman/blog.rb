@@ -39,7 +39,7 @@ module MiddlemanBlogHelpers
     end
 
     # filter the blog posts by these categories
-    posts = blog_posts(order: :youngest_first).select do |post|
+    posts = blog_posts(order: :latest_first).select do |post|
       post.categories&.find do |category|
         @__menu_blog_post_category_ids.include?(category[:id])
       end
