@@ -16,7 +16,7 @@ function registerPhIconHover () {
     if (node.getAttribute('data-ph-original')) return;
 
     // Find the "original weight" for the icon and set it as a data attribute.
-    node.classList.forEach(className => {
+    Array.from(node.classList).forEach(className => {
       if (!/^ph-[A-z-]+$/.test(className)) return;
       node.setAttribute('data-ph-original', className);
     });
@@ -38,14 +38,14 @@ function registerPhIconHover () {
   }
 
   function changeIcon (node, newIcon) {
-    node.classList.forEach(className => {
+    Array.from(node.classList).forEach(className => {
       if (!/^ph-[A-z-]+$/.test(className)) return;
       node.classList.remove(className);
       node.classList.add(newIcon);
     });
   }
 
-  icons.forEach((icon) => {
+  Array.from(icons).forEach((icon) => {
     icon.addEventListener('focusin', setIcon);
     icon.addEventListener('mouseover', setIcon);
     icon.addEventListener('focusout', resetIcon);
