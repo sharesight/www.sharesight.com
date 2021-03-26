@@ -499,6 +499,8 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     background: $colour_pro;
     padding: $gutter;
 
+    margin-top: auto; // Affix these CTAs to the "bottom" of the mobile navigation.
+
     & > * {
       flex: 1 1 auto;
     }
