@@ -446,10 +446,8 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw; // fallback if stretch/fill/fill-available does not work
-  width: stretch; // works better than vw on mobile devices
-  height: 100vh; // fallback if stretch/fill/fill-available does not work
-  height: stretch; // works better than vh on mobile devices
+  width: 100%;
+  height: 100%;
   padding: $gutter;
   background: rgba($colour_pro, 0.20);
 
