@@ -174,7 +174,7 @@
     text-decoration: none;
     text-transform: lowercase;
     font-variant: small-caps;
-    font-weight: normal;
+    font-weight: unset;
     @include fontSize(20px, 44px);
 
     &:hover,
@@ -264,7 +264,7 @@
   .hero_title {
     width: 406px;
     color: $colour_secondary;
-    font-weight: 300;
+    font-weight: 400;
     @include respond-to(xs, max) {
       width: 80%;
       @include fontSize(35px, 1.035);
@@ -315,7 +315,7 @@
     width: 344px;
     color: $colour_primary;
     @include fontSize(14px, 1.5);
-    font-weight: 300;
+    font-weight: 400;
     margin: $gutter/2 0;
 
     @include respond-to(xs, min) {

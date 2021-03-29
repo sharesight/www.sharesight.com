@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 34px;
 }
 @mixin uc-small() {
@@ -183,7 +183,7 @@
     dd {
       margin: 0;
       // padding: 0 0 0.5em 0;
-      font-weight: 300;
+      font-weight: 400;
       // margin-bottom: 25px;
       line-height: 34px;
     }
