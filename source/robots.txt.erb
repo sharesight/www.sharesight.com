@@ -11,7 +11,7 @@ Disallow: /
 <% end %>
 
 <% data.locales.each do |locale| %>
-  <% locale.pages.select{ |locale_page| locale_page[:show_in_sitemap] == false }.each do |locale_page| %>
+  <% locale.pages.select{ |locale_page| locale_page[:no_index] == true }.each do |locale_page| %>
 Disallow: <%= localize_path(locale_page[:page], locale_id: locale[:id]) %>
   <% end %>
 <% end %>

@@ -160,6 +160,9 @@ configure :build do
   activate :asset_hash, :ignore => [/touch-icon/, /opengraph/]
 
   activate :minify_html do |html|
+    html.remove_comments = config[:env_name] == 'production'
+    html.preserve_line_breaks = config[:env_name] != 'production'
+
     html.remove_http_protocol    = false
     html.remove_input_attributes = false
     html.remove_quotes           = true
