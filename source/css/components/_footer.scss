@@ -294,6 +294,7 @@ footer#footer {
   &__link {
     @include fontSize(15px); // same line-height, different size as link-header
     font-weight: 100;
+    text-decoration: none;
   }
 
   &__copyright {
