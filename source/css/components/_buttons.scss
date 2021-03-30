@@ -14,8 +14,13 @@
   appearance: none;
   user-select: none;
   white-space: nowrap;
-  text-decoration: none;
   vertical-align: middle;
+
+  @at-root a#{&} {
+    &, &:hover {
+      text-decoration: none;
+    }
+  }
 
   @media (min-width: 320px) and (max-width: 425px) {
      @include fontSize(15px);
