@@ -83,7 +83,7 @@
 
     &%root-hover-focus {
       border-color: $colour_secondary;
-      background-color: lighten($background_white, 12%);
+      background-color: darken($background_white, 12%);
     }
 
     &.btn--secondary {
@@ -93,8 +93,8 @@
 
       &%root-hover-focus {
         color: #fff;
-        border-color: lighten($colour_pro, 12%);
-        background-color: lighten($colour_pro, 12%);
+        border-color: darken($colour_pro, 12%);
+        background-color: darken($colour_pro, 12%);
       }
     }
 
@@ -104,8 +104,8 @@
       background-color: $colour_primary;
 
       &%root-hover-focus {
-        border-color: lighten($colour_primary, 12%);
-        background-color: lighten($colour_primary, 12%);
+        border-color: darken($colour_primary, 12%);
+        background-color: darken($colour_primary, 12%);
       }
     }
 
@@ -115,8 +115,8 @@
       background-color: $color_highlight;
 
       &%root-hover-focus {
-        border-color: lighten($color_highlight, 12%);
-        background-color: lighten($color_highlight, 12%);
+        border-color: darken($color_highlight, 12%);
+        background-color: darken($color_highlight, 12%);
       }
     }
 
@@ -126,8 +126,8 @@
       background-color: $colour_pro;
 
       &%root-hover-focus {
-        border-color: lighten($colour_pro, 12%);
-        background-color: lighten($colour_pro, 12%);
+        border-color: darken($colour_pro, 12%);
+        background-color: darken($colour_pro, 12%);
       }
     }
   }
