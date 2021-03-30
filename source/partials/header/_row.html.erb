@@ -1,0 +1,13 @@
+<%
+  row = locals[:row]
+%>
+
+<div class="menu__row <%= row[:class] %>">
+  <% row[:columns].each do |column| %>
+    <%= partial "partials/header/column", locals: {
+      column: column,
+      total_columns: row[:columns].length,
+      mobile: locals[:mobile]
+    } %>
+  <% end %> <%# ends row[:columns].each %>
+</div> <%# closes "menu__row" %>

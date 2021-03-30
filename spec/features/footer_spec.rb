@@ -29,7 +29,7 @@ describe 'Footer', type: :feature do
 
       # Resources:
       ["Help Centre", Capybara.app.config[:help_url]],
-      ["Blog", base_url("/blog/")],
+      ["Sharesight Blog", base_url("/blog/")],
       ["Webinars & Events", base_url("/events/")],
       ["Privacy Policy", base_url("/privacy-policy/")],
       ["Terms of Use", base_url("/sharesight-terms-of-use/")],
@@ -70,7 +70,7 @@ describe 'Footer', type: :feature do
       ['About Us', 'About Us'], # page from codebase
       ['Become a Partner', 'Partner with Sharesight'], # page from Contentful. NOTE: This may change!
       ['Help Centre', 'Help Centre'], # manual title w/ manual localization
-      ['Blog', 'Sharesight Blog', true], # hardcoded title, no localization
+      ['Sharesight Blog', 'Read the Sharesight Blog', true], # hardcoded title, no localization
       ['sales@sharesight.com', 'Email the Sales & Partnerships Team', true], # hardcoded title, no localization
       ['Sharesight API', 'Sharesight API Documentation', true], # hardcoded title, no localization
     ].each do |label, title, ignore_localization|

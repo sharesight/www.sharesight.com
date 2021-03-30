@@ -1,52 +1,37 @@
 <%
   # NOTE: Body must have a yield.  It will not function without.
   locale_obj = locals[:locale_obj] || current_locale_obj
-  header = if locals[:header].nil?
-    'partials/site_header'
-  else
-    locals[:header]
-  end
 
   page_classes = locals[:page_classes] || current_page.data.page_classes
   section_class = locals[:section_class] || current_page.data.section_class
+  body_class = [page_classes, section_class].join(' ').strip
+
   include_campaign_monitor = locals[:include_campaign_monitor] || current_page.data.include_campaign_monitor
 %>
 
-<body class="<% if section_class %> <%= section_class %><% end %><% if page_classes %> <%= page_classes %><% end %>">
+<body class="<%= body_class %>">
   <%= partial "layouts/partials/noscript" %>
   <script>document.body.className += ' js_menu_closed';</script>
 
   <%= partial "layouts/partials/country_banner", locals: { locale_obj: locale_obj } %>
 
-  <nav class="a11y" role="navigation" tabindex="1">
-    <ul role="menu">
-      <li role="menuitem"><a href="#main-menu">Skip to main menu</a></li>
-      <li role="menuitem"><a href="#main-area">Skip to main content</a></li>
-    </ul>
-  </nav>
+  <a role="button" href="#main-area" class="a11y-button btn btn--solid btn--secondary">Skip to Main Content</a>
 
-  <% if header %>
-    <%= partial header, locals: locals.merge({ locale_obj: locale_obj }) %>
+  <%= partial 'partials/header/navigation', locals: locals.merge({ locale_obj: locale_obj }) %>
+
+  <% if locals[:hero] %>
+    <%= partial locals[:hero], locals: locals.merge({ locale_obj: locale_obj }) %>
   <% end %>
 
-  <main role="main" id="main-area" aria-label="Start on main content">
+  <main role="main" id="main-area" aria-label="Main Content">
     <%= yield %>
-
-    <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
   </main>
+
+  <%= partial "partials/site_footer", locals: locals.merge({ locale_obj: locale_obj }) %>
 
   <% if content_for?(:javascript) %>
     <%= yield_content :javascript %>
   <% end %>
-
-  <script>
-    window.onload = function(){
-      var s = document.createElement('script');
-      s.async = 1;
-      s.src = "<%= asset_path(:js, 'site') %>";
-      document.body.appendChild(s);
-    }
-  </script>
 
   <% if include_campaign_monitor %>
     <%# Include createsend // campaignmonitor for the Subscribe button %>

@@ -1,0 +1,40 @@
+<%
+  menus = locals[:menus]
+%>
+
+<ul class="nav__menubar" role="menubar" aria-label="Sharesight Navigation Menu">
+  <% menus.select{ |menu| menu[:visible_desktop] != false }.each_with_index do |menu, index| %>
+    <%
+      button_element = menu[:href] ? 'a' : 'button'
+      has_nested_links = menu[:rows]&.length
+    %>
+
+    <li class="nav__menubar-item" role="none">
+      <<%= button_element %>
+        class="nav__menubar-button"
+        id="nav-<%= menu[:label] %>"
+        <%= "aria-controls=\"menu-#{menu[:label]}\"" if has_nested_links %>
+        <%= "aria-haspopup=\"true\"" if has_nested_links %>
+        <%= "aria-expanded=\"false\"" if has_nested_links %>
+        <%= "title=\"#{menu[:title]}\"" if menu[:title] %>
+        <%= "href=\"#{menu[:href]}\"" if menu[:href] %>
+        <%= "role=\"menuitem\"" if menu[:href] %>
+        tabindex="0"
+      >
+        <%= menu[:label] %>
+
+        <% if has_nested_links %>
+          <%= partial "partials/header/caret" %>
+        <% end %>
+      </<%= button_element %>>
+
+      <% if has_nested_links %>
+        <div class="nav__menu menu <%= menu[:class] %>" role="menu" aria-labelledby="nav-<%= menu[:label] %>" id="menu-<%= menu[:label] %>">
+          <% menu[:rows].select{ |menu| menu[:visible_desktop] != false }.each do |row| %>
+            <%= partial row[:partial] || 'partials/header/row', locals: { row: row } %>
+          <% end %> <%# ends menu[:rows].each %>
+        </div> <%# closes "nav__menu menu" %>
+      <% end %>
+    </li>
+  <% end %> <%# ends menus.each_with_index %>
+</ul>

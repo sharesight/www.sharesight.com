@@ -1,0 +1,15 @@
+<section class="masthead masthead--pro" role="banner">
+  <img src="<%=image_path('banner_pro_mobile.jpg')%>" class="masthead_image" id="js-banner-image" alt="Portfolio Management Tool - Sharesight">
+  <div class="container">
+    <div class="masthead_content" id="banner_heading">
+
+      <h1 class="hero_title heading_light">Sharesight Pro</h1>
+
+      <h2 class="hero_intro heading_normal">
+        <%= locale_page(page: 'pro', locale_obj: locale_obj)[:tagline] %>
+      </h2>
+
+      <a href="<%= config[:pro_signup_url] %>" class="btn btn-secondary inverse" title="Sign up for Sharesight Pro">BECOME A PRO PARTNER</a>
+    </div>
+  </div>
+</section>

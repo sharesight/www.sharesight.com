@@ -294,4 +294,91 @@ describe 'URL Middleman Helper', :type => :helper do
       skip "Add testing."
     end
   end
+
+  context "is_remote_url?" do
+    ['ftp', 'ws', 'ssh'].each do |scheme|
+      it "should be true for scheme=#{scheme}" do
+        url = "#{scheme}://#{Capybara.app.config[:base_url]}/faq/"
+
+        expect(Capybara.app.is_remote_url?(url)).to be true
+      end
+    end
+
+    [
+      Capybara.app.config[:base_url],
+      Capybara.app.config[:base_url],
+      "#{Capybara.app.config[:base_url]}/faq/",
+      "#{Capybara.app.config[:base_url]}/weird.path.com/"
+    ].each do |url|
+      it "should be false when the host matches our base url, testing #{url}" do
+        expect(Capybara.app.is_remote_url?(url)).to be false
+      end
+    end
+
+    [
+      Capybara.app.config[:help_url],
+      Capybara.app.config[:portfolio_url],
+      "https://wwww.sharesight.com/", # too many ws!
+      "https://www.sharesight.com.hacking.us/", # bad host
+    ].each do |url|
+      it "should be true for a different host, testing #{url}" do
+        expect(Capybara.app.is_remote_url?(url)).to be true
+      end
+    end
+
+    [
+      "/faq/",
+      "/",
+      "",
+      "#anchor-tag",
+      "?query=string",
+      "javascript:;",
+      "maito:sales@sharesight.com",
+    ].each do |url|
+      it "should be false when there is no host, testing #{url}" do
+        expect(Capybara.app.is_remote_url?(url)).to be false
+      end
+    end
+  end
+
+  context "is_third_party_url?" do
+    [
+      Capybara.app.config[:base_url],
+      Capybara.app.config[:help_url],
+      Capybara.app.config[:portfolio_url],
+      "https://wwwwwww.sharesight.com/",
+      "https://any.other.domain.sharesight.com/",
+      "https://sharesight.com/",
+    ].each do |url|
+      it "should be false for a sharesight ecosystem host, testing #{url}" do
+        expect(Capybara.app.is_third_party_url?(url)).to be false
+      end
+    end
+
+    [
+      "https://www.google.com/",
+      "https://www.notsharesight.com/",
+      "https://www.sharesight.co.nz/", # not whitelisted, even though we own it
+      "https://www.sharesight.io/",
+      "https://www.sharesight.com.hacking.us/",
+    ].each do |url|
+      it "should be true for a different host, testing #{url}" do
+        expect(Capybara.app.is_third_party_url?(url)).to be true
+      end
+    end
+
+    [
+      "/faq/",
+      "/",
+      "",
+      "#anchor-tag",
+      "?query=string",
+      "javascript:;",
+      "maito:sales@sharesight.com",
+    ].each do |url|
+      it "should be false when there is no host, testing #{url}" do
+        expect(Capybara.app.is_third_party_url?(url)).to be false
+      end
+    end
+  end
 end
