@@ -84,7 +84,8 @@ $__logo_height--sm: 110px;
     display: inline-block; // don't be clickable outside of the text
     margin: 0 0 $gutter/2;
     @include fontSize(16px);
-    color: rgba($colour_secondary, .75);
+    color: rgba($color_highlight, .75);
+    text-decoration: none;
 
     a#{&}:hover {
       text-decoration: underline;

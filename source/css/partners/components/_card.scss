@@ -64,10 +64,6 @@ $__card_header_height: 100px;
 
   &__title {
     color: $colour_base;
-
-    a#{&}:hover {
-      text-decoration: underline;
-    }
   }
 
   &__category {
