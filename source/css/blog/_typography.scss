@@ -17,6 +17,11 @@
   }
 }
 
+.post__title-link {
+  text-decoration: none;
+  color: $colour_base;
+}
+
 %blog_content_heading {
   margin-top: 0;
   margin-bottom: 30px;
@@ -42,8 +47,6 @@
 
   a {
     font-weight: unset;
-    text-decoration: underline;
-    text-underline-offset: 2px;
   }
 
   p {

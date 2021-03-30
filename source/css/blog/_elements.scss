@@ -49,18 +49,15 @@
   }
 
   .meta {
-    font-size: 18px;
-  }
+    font-size: 1.25rem;
+    font-weight: 300;
 
-  .meta .blog-post-date {
-    font-weight: 600;
-    margin-bottom: 0; // overrides bottom margin on <small>
-    @media (min-width: 768px) {
-      padding-top: $gutter;
-      font-size: 1.125rem;
+    .blog-post-date {
+      font-weight: 600;
+      margin-bottom: 0; // overrides bottom margin on <small>
 
-      & ~ small {
-        font-size: 1.125rem;
+      @media (min-width: 768px) {
+        padding-top: $gutter;
       }
     }
   }
