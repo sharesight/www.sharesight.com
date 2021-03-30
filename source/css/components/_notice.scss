@@ -20,7 +20,7 @@
     background-color: $colour_secondary;
     color: $colour_pro;
 
-    a {
+    .notice__description a {
       color: $colour_pro;
     }
   }
@@ -29,7 +29,7 @@
     background-color: $colour_primary;
     color: white;
 
-    a {
+    .notice__description a {
       color: $colour_secondary;
     }
   }
@@ -43,7 +43,7 @@
     background-color: $colour_pro;
     color: white;
 
-    a {
+    .notice__description a {
       color: $colour_secondary;
     }
   }
