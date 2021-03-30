@@ -1,0 +1,62 @@
+<%
+  menus = locals[:menus]
+%>
+
+<button class="nav__hamburger" id="nav__hamburger" aria-controls="mobile-nav" aria-label="Open Mobile Navigation" tabindex="0">
+  <svg width="16" height="10" viewBox="0 0 16 10">
+    <%# NOTE: We should have a title here, but we can't because capybara + rspec cannot handle a nested title on a page.
+      <title>Open Mobile Navigation</title>
+    %>
+
+    <g fill="#fff" fill-rule="evenodd">
+      <rect y="8" width="16" height="2" rx="1"></rect>
+      <rect y="4" width="16" height="2" rx="1"></rect>
+      <rect y="0" width="16" height="2" rx="1"></rect>
+    </g>
+  </svg>
+</button>
+
+<div class="mobile-nav" id="mobile-nav" aria-labelledby="nav__hamburger" aria-modal="true" aria-hidden="true" aria-label="Sharesight Mobile Navigation Menu">
+  <div class="mobile-nav__box">
+    <div class="mobile-nav__close" aria-label="Close Mobile Navigation" tabindex="0">
+      <i class="ph-x-bold" role="img"></i>
+    </div>
+
+    <ul class="mobile-nav__menubar" role="menu">
+      <% menus.select{ |menu| menu[:visible_mobile] != false }.each_with_index do |menu, index| %>
+        <%
+          has_nested_links = menu[:rows]&.length
+        %>
+
+        <li class="nav__menubar-item" role="none">
+          <% if menu[:href] %>
+            <%= partial "partials/header/link", locals: {
+              link: {
+                label: menu[:label],
+                icon: menu[:icon_mobile],
+                title: menu[:title],
+                href: menu[:href]
+              },
+              mobile: true
+            } %>
+          <% end %>
+
+          <% if has_nested_links %>
+            <div>
+              <% menu[:rows].select{ |menu| menu[:visible_mobile] != false }.each do |row| %>
+                <%= partial row[:partial] || 'partials/header/row', locals: { row: row, mobile: true } %>
+              <% end %> <%# ends menu[:rows].each %>
+            </div>
+          <% end %>
+        </li>
+      <% end %> <%# ends menus.each_with_index %>
+    </ul>
+
+    <div class="mobile-nav__cta" role="none">
+      <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent-white" title="Log In to Sharesight">Log In</a>
+      <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+        Sign Up
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<%
+  hidden = if locals[:hidden].nil?
+    true # hidden by default
+  else
+    !!locals[:hidden]
+  end
+%>
+
+<svg class="arrow <%= hidden ? "arrow--hidden" : "arrow--forced-visible" %>" width="10" height="10" viewBox="0 0 10 10" aria-hidden="<%= hidden %>" role="img">
+  <g fill-rule="evenodd">
+    <path class="arrow__line" d="M0 5h6.5"></path>
+    <path class="arrow__tip" d="M1 1.5l3.25 3.5-3.25 3.5"></path>
+  </g>
+</svg>

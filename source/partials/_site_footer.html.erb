@@ -27,7 +27,7 @@
 
     'Resources' => [
       { name: 'Help Centre', href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]), title: "Help Centre | #{locale_obj[:append_title]}" },
-      { name: 'Blog', href: unlocalized_url('blog'), title: 'Sharesight Blog' },
+      { name: 'Sharesight Blog', href: unlocalized_url('blog'), title: 'Read the Sharesight Blog' },
       { name: 'Webinars & Events', page: 'events' },
       { name: 'Privacy Policy', page: 'privacy-policy' },
       { name: 'Terms of Use', page: 'sharesight-terms-of-use' },
@@ -72,7 +72,7 @@
       </label>
 
       <div class="footer__buttons">
-        <a href="<%= config[:login_url] %>" class="footer__login" title="Login to Sharesight">LOGIN</a>
+        <a href="<%= config[:login_url] %>" class="footer__login" title="Log In to Sharesight">Log In</a>
         <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="footer__sign-up" title="Sign up for Sharesight">SIGN UP</a>
       </div>
 

@@ -1,0 +1,506 @@
+$__nav-height: 45px;
+$__offset-logo-aligment: 14px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
+
+$__menu-padding: $gutter * 1.5;
+$__menu-border-radius: 3px;
+$__menu-button-gutter: $gutter*2/3;
+
+$__hamburger-height: $gutter * 1.75;
+$__hamburger-width: $gutter * 2.25;
+$__hamburger-top: $gutter/2;
+$__hamburger-wrap-max-width: 450px; // This is just an arbitrary number that works.  It might break with zooming/etc.
+
+$__link_indentation: 28px; // indentation to have links and icons be a bit consistent
+
+%button-reset {
+  /* Reset the `<button />` and `<a />` appearance to be more consistent. */
+  appearance: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  min-height: $__nav-height;
+
+  // HACK: See comment on `$__offset-logo-aligment` variable.
+  @include respond-to(md, min) {
+    padding-top: $__offset-logo-aligment;
+  }
+
+  // Mobile: make room for the Hamburger menu.
+  @include respond-to(sm, max) {
+    flex-wrap: wrap;
+    padding-right: $__hamburger-width + $gutter;
+  }
+
+  // Mobile: move the "Login" and "Signup" to the next row.
+  @media (max-width: $__hamburger-wrap-max-width) {
+    padding-right: 0;
+    flex-direction: column;
+  }
+
+  &__container {
+    padding-top: $gutter/2;
+    padding-bottom: $gutter/2;
+    overflow: visible;
+  }
+
+  #site_logo {
+    flex-shrink: 0;
+    align-self: start; // HACK: Related to the comment on `$__offset-logo-aligment` variable.
+
+    img {
+      display: block;
+      max-height: 50px;
+
+      // HACK: See comment on `$__offset-logo-aligment` variable.
+      @include respond-to(md, min) {
+        margin-top: -$__offset-logo-aligment; // negative margin
+      }
+    }
+  }
+
+  &__hamburger {
+    @extend %button-reset;
+
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto; // keep this shape consistent
+    background: $color_highlight;
+    color: #fff;
+    border-radius: $gutter;
+    width: $__hamburger-width;
+    height: $__hamburger-height;
+
+    display: none; // mobile only
+    position: absolute;
+    top: $__hamburger-top;
+    right: 0;
+
+    &%root-hover-focus {
+      background-color: lighten($color_highlight, 12%);
+    }
+
+    @include respond-to(sm, max) {
+      display: flex;
+    }
+  }
+
+  &__menubar {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    @include respond-to(sm, max) {
+      display: none;
+    }
+  }
+
+  &__menubar-item {
+    display: block;
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  &__menubar-button {
+    @extend %button-reset;
+
+    height: $__nav-height;
+    display: block;
+    color: $colour_base;
+    line-height: $__nav-height; // NOTE: We do not use a border, so we just use the height.
+    font-weight: 500;
+    padding: 0 $__menu-button-gutter;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    position: relative; // For the ::after to attach to.
+
+    // Large Desktop: Add some extra spacing between buttons.
+    @include respond-to(lg, min) {
+      margin: 0 $__menu-button-gutter;
+    }
+
+    // The "caret" icon
+    svg[role="img"] {
+      margin-left: 3px;
+    }
+
+    // When either hovered/focused/etc or currently expanded.
+    &%root-hover-focus,
+    &[aria-expanded="true"] {
+      color: $color_highlight;
+
+      // If this is a link, underline when we hover.
+      &[href] {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+
+    // A caret to point at the current menu you're looking at.
+    &::after {
+      display: none;
+
+      content: " ";
+      position: absolute;
+      bottom: -6px;
+      right: $__menu-button-gutter; // Aligned with the downward caret as they're the same width.
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+      border-top-left-radius: 3px;
+      background-color: $color_highlight;
+      z-index: 1;
+
+      will-change: display;
+    }
+
+    // When currently expanded, make the "::after" caret visible.
+    &[aria-expanded="true"]::after {
+      display: block;
+    }
+  }
+
+  &__ctas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Mobile: When this is wrapped to a new row, add a margin to it.
+    @include respond-to(sm, max) {
+      align-self: start;
+      margin-top: $__hamburger-top;
+    }
+
+    // Mobile: When we're forcibly wrapping this to the next row, center it.
+    @media (max-width: $__hamburger-wrap-max-width) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__cta {
+    @extend .btn;
+    @extend .btn--solid;
+
+    display: inline-block;
+    border-radius: $gutter;
+
+    @include respond-to(sm, max) {
+      line-height: $__hamburger-height - $btn-border-width * 2;
+    }
+
+    & + & {
+      margin-left: 5px;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: $__nav-height;
+  width: fit-content;
+  min-width: 550px;
+  z-index: 1000;
+  background: #fff;
+  padding: $__menu-padding;
+  border-radius: $__menu-border-radius; // Should be less than the border-top-width
+  box-shadow: 0 5px 10px rgba($colour_pro, 0.20);
+  border-top: 5px solid $color_highlight;
+  font-size: 0.95rem;
+
+  display: none; // enabled via Javascript setting [aria-expanded="true"]
+  will-change: display;
+
+  &--lg {
+    min-width: 750px;
+  }
+
+  [aria-haspopup][aria-expanded="true"] ~ & {
+    display: block;
+  }
+
+  li:first-child [aria-haspopup] ~ & {
+    left: -50px;
+  }
+
+  li:nth-child(2) [aria-haspopup] ~ & {
+    left: -125px;
+  }
+
+  // Have the last menu have a right-start that doesn't go out of view.  Test this in
+  li:last-child [aria-haspopup] ~ & {
+    right: -200px;
+  }
+
+  &__icon {
+    font-size: 22px;
+    height: 22px; // match font-size so it flexes to center better
+    min-width: 22px; // when the icon is loading, it should take up the space
+
+    .menu__link--compact & {
+      font-size: 18px;
+      height: 18px;
+      min-width: 18px;
+    }
+
+    %root-can-hover-focus & {
+      opacity: 0.75;
+      transition: 150ms opacity;
+      will-change: opacity;
+    }
+
+    %root-hover-focus & {
+      opacity: 1;
+      color: $color_highlight;
+    }
+  }
+
+  &__description {
+    margin-top: 3px;
+    font-size: 95%;
+    font-weight: 400;
+    display: block;
+    padding-left: $__link_indentation;
+
+    %root-can-hover-focus & {
+      opacity: 0.6;
+    }
+
+    %root-hover-focus & {
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    > * {
+      // Ensure children do not wrap.
+      flex: 0 0 auto;
+    }
+
+    i[class*="ph-"] {
+      margin-right: 5px;
+    }
+
+    &--no-icon {
+      padding-left: $__link_indentation;
+    }
+
+    &-text {
+      // NOTE: This is auto-truncated!
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      %root-hover-focus & {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $colour_base;
+    font-weight: 600;
+
+    & + & {
+      margin-top: $gutter/2; // margin between for non-compact links
+    }
+
+    &--compact {
+      line-height: $gutter * 1.5; // Adds a bit of a "clickable area"
+
+      & + & {
+        margin-top: 0; // managed with line-height
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $colour_default;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: $gutter/4;
+
+    .menu__icon {
+      color: $colour_default;
+    }
+  }
+
+  &__separator {
+    margin: $gutter (-$__menu-padding);
+    border: 0;
+    border-top: 1px solid $colour_table-lines;
+  }
+
+  &__background {
+    box-sizing: content-box;
+    width: 100%;
+    // width: calc(100% + #{$__menu-padding*2});
+    margin: $gutter (-$__menu-padding);
+    background: #f2f2f2;
+    padding: $__menu-padding;
+
+    &:first-child {
+      margin-top: -$__menu-padding;
+      border-radius: $__menu-border-radius $__menu-border-radius 0 0;
+    }
+
+    &:last-child {
+      margin-bottom: -$__menu-padding;
+      border-radius: 0 0 $__menu-border-radius $__menu-border-radius;
+    }
+  }
+
+  &__blog {
+    .menu__link {
+      font-weight: normal;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    width: stretch;
+    flex-wrap: wrap;
+  }
+
+  // Requires a `<div class="menu__row" />` around it.
+  &__split-2 {
+    flex: 1 1 50%;
+  }
+
+  // Requires a `<div class="menu__row" />` around it.
+  &__split-3 {
+    flex: 1 1 percentage(1/3);
+
+    // Let a 3 column split turn into 2 then 1 column, with a margin between the rows.
+    @include respond-to(md, max) {
+      flex-basis: 50%;
+
+      &:nth-child(3) {
+        > .menu__title {
+          margin-top: $gutter;
+        }
+      }
+    }
+  }
+
+  &__split-2, &__split-3 {
+    // [hardcoded value that worked] at 500px, let's move these from columns to full-width
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+
+      & + & {
+        > .menu__title {
+          margin-top: $gutter;
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  display: none; // enabled via Javascript setting `aria-hidden=false`
+  &[aria-hidden="false"] {
+    display: block;
+  }
+
+  will-change: display;
+  font-size: 85%; // NOTE: This changes all children font-sizes as they use `rem`!
+
+  // This is the primary container to it, which has a bit of an overlay effect.
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: $gutter;
+  background: rgba($colour_pro, 0.20);
+
+  &__box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: $__menu-border-radius; // Should be less than the border-top-width
+    box-shadow: 0 5px 10px rgba($colour_pro, 0.20);
+  }
+
+  &__close {
+    z-index: 100;
+    position: absolute;
+    top: $gutter * 1.5;
+    right: $gutter * 1.5;
+    padding: $gutter/2;
+    cursor: pointer;
+  }
+
+  &__menubar {
+    overflow-y: scroll;
+
+    list-style-type: none;
+    padding: $gutter;
+    margin: 0;
+
+    .menu__background {
+      box-sizing: content-box;
+      width: 100%;
+      margin: $gutter #{-$gutter} 0;
+      background: #f2f2f2;
+      padding: $gutter;
+    }
+
+    .nav__menubar-item + .nav__menubar-item {
+      margin-top: $gutter;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $colour_pro;
+    padding: $gutter;
+
+    margin-top: auto; // Affix these CTAs to the "bottom" of the mobile navigation.
+
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
+}
