@@ -70,14 +70,13 @@ section_class: 'section_home'
     </div>
   </section>
 
-  <% if locale_obj[:xero_cashbook] %>
+  <% if true || locale_obj[:xero_cashbook] %>
     <div class="alternate layout-med">
       <div class="container cards_container">
         <div class="o-video_wrapper">
-          <div id="js-about-overlay"></div>
-          <iframe id="content_video" class="external_video" src="https://player.vimeo.com/video/102970230?color=ff7b30&amp;title=0&amp;byline=0&amp;portrait=0&amp;api=1" width="500" height="281" frameborder="0"
-            allowfullscreen=""></iframe>
-          </div>
+          <div data-vimeo-id="102970230" data-vimeo-width="500" data-vimeo-height="281"></div>
+        </div>
+
         <p class="paragraph_important">If you like the investment insight you get from Sharesight, you’ll love the complete financial picture you get by connecting your portfolio to Xero.</p>
       </div>
     </div>
