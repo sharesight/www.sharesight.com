@@ -125,9 +125,8 @@ if ApplicationConfig.const_defined?(:S3)
   end
 
   default_caching_policy                    max_age: (60 * 60 * 24 * 365), public: true
-  caching_policy 'text/html',               max_age: (60 * 15), public: true, must_revalidate: true
-  caching_policy 'application/xml',         max_age: (60 * 15), public: true
-  caching_policy 'application/javascript',  max_age: (60 * 15), public: true
+  caching_policy 'text/html',               max_age: (60 * 15), public: true, must_revalidate: true # html only last 15 minutes
+  caching_policy 'application/xml',         max_age: (60 * 15), public: true, must_revalidate: true # sitemaps, etc only last 15 minutes
 
   activate :cloudfront do |cf|
     cf.access_key_id = ApplicationConfig::S3::ACCESS_ID
