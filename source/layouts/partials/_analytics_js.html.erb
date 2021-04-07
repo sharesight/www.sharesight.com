@@ -1,4 +1,7 @@
-<%# NOTE: These go into the <head>.  For JS that should be appended to the <body>, use `./_body_js.html.erb` %
+<%#
+  # NOTE: These go into the <head>.
+  # For JS that should be appended to the <body>, use `./_body_js.html.erb`
+%>
 
 <% if ApplicationConfig.const_defined?(:Bugsnag) && ApplicationConfig::Bugsnag::API_KEY %>
   <!-- Bugsnag -->
