@@ -1,3 +1,5 @@
+<%# NOTE: These go into the <head>.  For JS that should be appended to the <body>, use `./_body_js.html.erb` %
+
 <% if ApplicationConfig.const_defined?(:Bugsnag) && ApplicationConfig::Bugsnag::API_KEY %>
   <!-- Bugsnag -->
   <script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
@@ -30,8 +32,4 @@
     })(window,document.documentElement,'async-hide','dataLayer',4000,
     {'<%= ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>':true});
   </script>
-<% end %>
-
-<% if ApplicationConfig.const_defined?(:AddThis) && ApplicationConfig::AddThis::ID %>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<%= ApplicationConfig::AddThis::ID %>"></script>
 <% end %>
