@@ -40,6 +40,9 @@
   <link rel="preload" href="<%= asset_url("fonts/opensans-light-webfont-webfont.woff") %>" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="<%= asset_url("fonts/opensans-regular-webfont-webfont.woff") %>" as="font" type="font/woff2" crossorigin>
 
+  <!-- Preload some Javascript files we will load in the future. -->
+  <link rel="preload" href="https://player.vimeo.com/api/player.js" as="script">
+
   <%= stylesheet_link_tag "pro.css" if locals[:pro] == true %>
   <%= stylesheet_link_tag "site.css" %>
   <%= javascript_include_tag "site.js", defer: true, async: true %>
