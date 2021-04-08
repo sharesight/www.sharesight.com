@@ -23,10 +23,10 @@ require(['https://player.vimeo.com/api/player.js'], function(Player) {
     const playOverlay = vimeoSrc.parentNode.querySelector('.video_overlay');
     if (playOverlay) {
       vimeo.on('play', function() {
-        playOverlay.style.display = "none";
+        playOverlay.style.display = 'none';
       });
 
-      playOverlay.addEventListener("click", function(e) {
+      playOverlay.addEventListener('click', function(e) {
         e.preventDefault();
 
         vimeo.play();
