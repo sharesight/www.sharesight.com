@@ -1,8 +1,10 @@
 <% if locals[:include_campaign_monitor] || current_page.data.include_campaign_monitor %>
   <%# Include createsend // campaignmonitor for the Subscribe button %>
-  <script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+  <script type="text/javascript">
+    (function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();
+  </script>
 <% end %>
 
-<% if ApplicationConfig.const_defined?(:AddThis) && ApplicationConfig::AddThis::ID %>
+<% if (locals[:include_addthis] || current_page.data.include_addthis) && ApplicationConfig.const_defined?(:AddThis) && ApplicationConfig::AddThis::ID %>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<%= ApplicationConfig::AddThis::ID %>"  async="async"></script>
 <% end %>
