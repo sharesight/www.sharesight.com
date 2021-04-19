@@ -68,7 +68,7 @@ module MiddlemanMenuHelpers
                   icon: 'bank',
                   label: 'Supported Brokers',
                   title: "Supported Brokers | #{locale_obj[:append_title]}",
-                  href: localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: config[:help_url]),
+                  href: localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: config[:help_url]),
                 }
               ]
             }
