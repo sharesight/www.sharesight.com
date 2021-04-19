@@ -29,7 +29,7 @@ describe 'Header', type: :feature do
             ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
             ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
             ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
-            ["Supported Brokers", localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Supported Brokers", localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
             ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
             ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
 
@@ -185,7 +185,7 @@ describe 'Header', type: :feature do
             ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
             ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
             ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
-            ["Supported Brokers", localize_url('supported_brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ["Supported Brokers", localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
             ["Pricing", localize_path('pricing', locale_id: locale_obj[:id])], # NOTE: Mobile-only!
             ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
             ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
