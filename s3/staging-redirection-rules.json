@@ -305,5 +305,50 @@
       "HostName": "staging-www.sharesight.com",
       "ReplaceKeyPrefixWith": "ca/partners/jarden-direct"
     }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "partners/accounting-software"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "partners/software-providers"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "nz/partners/accounting-software"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "nz/software-providers"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/partners/accounting-software"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "au/software-providers"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "uk/partners/accounting-software"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "uk/software-providers"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "ca/partners/accounting-software"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "ca/software-providers"
+    }
   }
 ]
