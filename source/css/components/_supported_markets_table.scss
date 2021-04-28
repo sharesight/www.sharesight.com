@@ -5,13 +5,6 @@ table.supported-markets {
 
   th, td {
     padding: $gutter/2;
-
-    // Hide the "last column" in  mobile.
-    @media (max-width: $screen-sm-max) {
-      &:last-of-type {
-        display: none;
-      }
-    }
   }
 
   th {
