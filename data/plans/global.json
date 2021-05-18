@@ -43,7 +43,8 @@
       "diversity_report": false,
       "contributions_analysis_report": false,
       "traders_tax_report": false,
-      "foreign_investment_fund_report": false
+      "foreign_investment_fund_report": false,
+      "multi_currency_valuation_report": false
     },
 
     "info": [
@@ -97,7 +98,8 @@
       "diversity_report": false,
       "contributions_analysis_report": false,
       "traders_tax_report": false,
-      "foreign_investment_fund_report": false
+      "foreign_investment_fund_report": false,
+      "multi_currency_valuation_report": false
     },
 
     "info": [
@@ -152,7 +154,9 @@
       "diversity_report": true,
       "contributions_analysis_report": false,
       "traders_tax_report": false,
-      "foreign_investment_fund_report": false
+      "foreign_investment_fund_report": false,
+      "multi_currency_valuation_report": false
+
     },
 
     "info": [
@@ -209,7 +213,9 @@
       "diversity_report": true,
       "contributions_analysis_report": true,
       "traders_tax_report": false,
-      "foreign_investment_fund_report": false
+      "foreign_investment_fund_report": false,
+      "multi_currency_valuation_report": true
+
     },
 
     "info": [
