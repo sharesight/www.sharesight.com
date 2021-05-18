@@ -56,12 +56,16 @@ body {
 }
 
 a {
-  color: $colour_secondary;
-  text-decoration: none;
+  color: $color_highlight;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
   font-weight: 600;
 
   &:hover {
     cursor: pointer;
+    text-decoration: underline; // NOTE: Overrides if you have `text-decoration: none;`
+    text-decoration-thickness: 2px;
   }
 
   img {
@@ -71,6 +75,6 @@ a {
 
 p {
   margin-top: 0;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.65;
 }

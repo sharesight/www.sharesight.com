@@ -64,21 +64,14 @@ $__card_header_height: 100px;
 
   &__title {
     color: $colour_base;
-
-    a#{&}:hover {
-      text-decoration: underline;
-    }
   }
 
   &__category {
+    @include fontSize(14px);
     display: inline-block; // don't be clickable outside of the text
     margin: 0 0 $gutter/2;
-    @include fontSize(14px);
-    color: rgba($colour_secondary, .75);
-
-    a#{&}:hover {
-      text-decoration: underline;
-    }
+    color: rgba($color_highlight, .75);
+    text-decoration: none;
   }
 
   &__description {

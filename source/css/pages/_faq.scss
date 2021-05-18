@@ -16,7 +16,7 @@
 
     @media (min-width:768px) {
       @include fontSize(3.375rem, 1.2);
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 45px;
     }
   }
@@ -50,7 +50,7 @@
     margin-right: 6px;
     border-radius: 50%;
     border: 1px solid $colour_default;
-    font-weight: bold;
+    font-weight: 600;
     color: $colour_default;
     text-align: center;
     font-size: 18px;
@@ -81,7 +81,7 @@
     padding: 15px 0 15px 65px;
 
     li {
-      font-weight: 300;
+      font-weight: 400;
       line-height: 2.2;
     }
   }

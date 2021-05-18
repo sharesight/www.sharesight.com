@@ -155,7 +155,7 @@ $__plans_count: 4;
 
   &__currency,
   &__unit {
-    font-weight: 300;
+    font-weight: 400;
   }
 
   &__currency {
@@ -306,7 +306,7 @@ $__plans_count: 4;
 
   &__feature-value {
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     width: percentage(((100 - 25) / $__plans_count) / 100);
 
     @include respond-to (md, min) {
