@@ -58,15 +58,18 @@
   }
 
   .blog-table {
-    @media (min-width: 768px) {
-      display: table;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(md, min) {
+      flex-direction: row;
     }
   }
 
   .blog_content {
-    // padding-right: 0;
+    flex: 1;
+
     @include respond-to(md, min) {
-      display: table-cell;
       padding-right: 100px;
       vertical-align: top;
     }
