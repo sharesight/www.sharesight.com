@@ -7,7 +7,6 @@
 - Ruby 2.4.2+
 - Middleman 3.4.1
 
-
 ## Installation
 
 1. Clone this repo into a local directory
@@ -17,9 +16,9 @@
 5. `yarn start` – it's not a javascript package, but it's helpful nevertheless
 
 Individual Commands (see package.json):
-1. Load content: `middleman contentful`
-2. Build the site: `middleman build`
-3. Or run a local server: `middleman`
+1. Load content: `bundle exec middleman contentful`
+2. Build the site: `bundle exec middleman build`
+3. Or run a local server: `bundle exec middleman`
 
 
 ## Testing
