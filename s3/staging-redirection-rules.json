@@ -350,5 +350,59 @@
       "HostName": "staging-www.sharesight.com",
       "ReplaceKeyPrefixWith": "ca/partners/software-providers"
     }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "pro/partners"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "partners"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "privacy_policy"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "privacy-policy"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "blog/05/12/announcing-new-strategic-partner-stockspot"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "partners"
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "au/ylc"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": ""
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "wealthmorning"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": ""
+    }
+  },
+  {
+    "Condition": {
+      "KeyPrefixEquals": "blog/calculate-your-capital-gains-tax-without-a-spreadsheet-or-calculator/"
+    },
+    "Redirect": {
+      "HostName": "staging-www.sharesight.com",
+      "ReplaceKeyPrefixWith": "blog/capital-gains-tax-calculator-for-australian-investors/"
+    }
   }
 ]
