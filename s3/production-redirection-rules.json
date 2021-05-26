@@ -384,7 +384,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": ""
+      "ReplaceKeyWith": ""
     }
   },
   {
@@ -393,7 +393,7 @@
     },
     "Redirect": {
       "HostName": "www.sharesight.com",
-      "ReplaceKeyPrefixWith": ""
+      "ReplaceKeyWith": ""
     }
   },
   {
