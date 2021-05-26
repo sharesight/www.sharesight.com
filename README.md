@@ -6,8 +6,6 @@
 
 - Ruby 2.4.2+
 - Middleman 3.4.1
-- Contentful API keys setup
-
 
 ## Installation
 
