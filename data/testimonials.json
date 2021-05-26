@@ -23,7 +23,7 @@
 		"author": "Stephen Colman",
 		"image_id": "stephen_colman",
 		"role": "Sharesight Customer",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	// {
 	// 	"id": "marilyn_bryce",
@@ -37,7 +37,7 @@
 		"author": "Martin Dowse",
 		"image_id": "martin_dowse",
 		"role": "Xero Business Community",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "david_mcewen",
@@ -45,7 +45,7 @@
 		"author": "David McEwen",
 		"image_id": "david_mcewen",
 		"role": "Sharesight Customer",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "peter_naude",
@@ -53,7 +53,7 @@
 		"author": "Peter Naude",
 		"image_id": "peter_naude",
 		"role": "Sharesight Customer",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "mike_deam",
@@ -61,6 +61,6 @@
 		"author": "Mike Deam",
 		"image_id": "mike_deam",
 		"role": "Sharesight Customer",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	}
 ]

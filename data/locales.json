@@ -450,7 +450,6 @@
       }
     ]
   },
-
   {
     "id": "uk",
     "path": "/uk/",
@@ -553,6 +552,120 @@
         "page": "pro",
         "page_title": "Sharesight Pro UK",
         "page_description": "Cutting-edge online share portfolio management software for UK accountants & financial advisers. Track prices, dividends, performance and tax!",
+        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
+        "sitemap_priority": 0.8
+      }
+    ]
+  },
+  {
+    "id": "us",
+    "path": "/us/",
+    "name": "USA",
+    "adjective": "US",
+    "lang": "en-US",
+    "currency": "USD",
+    "currency_symbol": "$",
+    "plans_include_tax": false,
+    "cert_type": "stock",
+    "country": "USA",
+    "for_country": "American",
+    "default_title": "Stock Portfolio Tracker | Sharesight",
+    "append_title": "Sharesight",
+    "footer_ios_alt": "Sharesight Portfolio Tracker iOS App",
+    "footer_android_alt": "Sharesight Portfolio Tracker Android App",
+    "xero_cashbook": false,
+    "pages": [
+      {
+        "page": "index",
+        "page_title": "Stock Portfolio Tracker | Sharesight",
+        "page_description": "Leading online stock portfolio tracker & reporting tool for investors. Sharesight tracks stock prices, trades, dividends, performance and tax!",
+        "tagline": "With the best stock portfolio tracker for American investors.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 1,
+        "sitemap_changefreq": "daily"
+      },
+      {
+        "page": "partners",
+        "page_title": "Sharesight Partners",
+        "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.8,
+        "proxy": false
+      },
+      {
+        "page": "partners/all",
+        "page_title": "All Sharesight Partners",
+        "page_description": "Sharesight’s full list of ecosystem partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.8,
+        "proxy": false
+      },
+      {
+        "page": "about-sharesight",
+        "page_title": "About Us | Sharesight",
+        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best stock portfolio tracker & reporting tool for DIY investors.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors."
+      },
+      {
+        "page": "privacy-policy",
+        "page_title": "Privacy Policy | Sharesight",
+        "page_description": "Sharesight places the highest importance on respecting and protecting the privacy of our customers. Here is detailed information on our privacy policy.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
+        "page": "team",
+        "page_title": "Executive Team | Sharesight",
+        "page_description": "Meet our executive leadership team and learn the stories of our highly-experienced executives who are leading Sharesight to build award-winning technology.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
+      },
+      {
+        "page": "pricing",
+        "page_title": "Pricing | Sharesight USA",
+        "page_description": "Sign up for Sharesight and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.9
+      },
+      {
+        "page": "sharesight-terms-of-use",
+        "page_title": "Terms of Use | Sharesight",
+        "page_description": "Terms of Use apply to your usage of Sharesight services and our obligations to you. Accessing Sharesight means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
+        "page": "sharesight-professional-terms-of-use",
+        "page_title": "Terms of Use | Sharesight Pro",
+        "page_description": "Terms of Use apply to your usage of Sharesight Pro services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.1
+      },
+      {
+        "page": "referral-terms-and-conditions",
+        "page_title": "Referral Program Terms and Conditions | Sharesight",
+        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "no_index": true
+      },
+      {
+        "page": "404",
+        "page_title": "Page Not Found | Sharesight",
+        "page_description": "The leading online stock portfolio tracker & reporting tool for DIY investors. Track prices, trades, dividends, performance and tax!",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "no_index": true
+      },
+      {
+        "page": "xero",
+        "page_title": "Xero + Sharesight Portfolio Tracker",
+        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
+        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
+        "sitemap_priority": 0.8
+      },
+      {
+        "page": "pro",
+        "page_title": "Sharesight Pro",
+        "page_description": "Cutting-edge online stock portfolio management software for accountants & financial advisers. Track prices, dividends, performance and tax!",
         "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
         "sitemap_priority": 0.8
       }
