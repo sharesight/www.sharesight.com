@@ -18,7 +18,7 @@ describe 'Pro Page', :type => :feature do
   Capybara.app.data.locales.each do |locale|
     it "should have header text for locale #{locale['id']}" do
       visit localize_url('pro', locale_id: locale.id)
-      expect(page).to have_text("A comprehensive investment portfolio tracker and reporting tool for financial professionals.")
+      expect(page).to have_text(/A comprehensive investment portfolio tracker and reporting tool for(\s\w+)? financial professionals./)
     end
   end
 end

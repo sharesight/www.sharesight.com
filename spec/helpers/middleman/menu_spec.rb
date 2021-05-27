@@ -71,7 +71,7 @@ describe 'Menu Helper', :type => :helper do
 
         pricing = menus[2]
         expect(pricing[:label]).to eq('Pricing')
-        expect(pricing[:title]).to eq("Pricing | Sharesight #{locale_obj[:country]}".strip)
+        expect(pricing[:title]).to match(/Pricing | Sharesight(\s\w+)?/)
         expect(pricing[:href]).to match(%r{#{locale_obj[:path]}pricing\/$})
       end
 
