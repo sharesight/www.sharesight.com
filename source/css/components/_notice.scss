@@ -19,19 +19,11 @@
   &, &--secondary {
     background-color: $colour_secondary;
     color: $colour_pro;
-
-    .notice__description a {
-      color: $colour_pro;
-    }
   }
 
   &--primary {
     background-color: $colour_primary;
     color: white;
-
-    .notice__description a {
-      color: $colour_secondary;
-    }
   }
 
   &--white {
@@ -42,10 +34,6 @@
   &--pro {
     background-color: $colour_pro;
     color: white;
-
-    .notice__description a {
-      color: $colour_secondary;
-    }
   }
 
   @include respond-to(sm, max) {

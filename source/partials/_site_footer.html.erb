@@ -57,7 +57,7 @@
     </div>
 
     <div class="footer__actions">
-      <label for="region_selector" class="footer__locale" aria-label="Change Region">
+      <label for="region_selector" class="footer__locale">
         <select id="region_selector">
           <% data.locales.select{ |locale| locale.id != default_locale_id }.each do |locale| %>
             <option label="Region: <%= locale.name.upcase %>" value="<%= locale.id %>" <% if locale_obj[:id] == locale.id %>selected<% end %>>

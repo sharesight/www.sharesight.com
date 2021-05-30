@@ -18,7 +18,7 @@
   }
 
   &__title {
-    font-weight: 400;
+    font-weight: 300;
     color: $colour_secondary;
 
     @include respond-to(xs, max) {
@@ -58,7 +58,7 @@
     display: none;
     color: $colour_primary;
     @include fontSize(14px, 1.5);
-    font-weight: 400;
+    font-weight: 300;
     margin: $gutter/2 0;
 
     @include respond-to(xs, min) {

@@ -21,6 +21,7 @@ h3 {
 
 h4 {
   @include fontSize(26px);
+  font-weight: normal;
 }
 
 h5 {
@@ -36,7 +37,7 @@ h5 {
 .heading_page {
   @include fontSize(2.5rem);
   @include lineHeight(3.5rem);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .heading_section {

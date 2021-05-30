@@ -253,7 +253,7 @@ footer#footer {
       height: $__locale-height;
       color: #fff;
       font-family: 'Open Sans', helvetica, sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       text-align: left;
       border-radius: 0;
       letter-spacing: 1px;
@@ -293,8 +293,7 @@ footer#footer {
 
   &__link {
     @include fontSize(15px); // same line-height, different size as link-header
-    text-decoration: none;
-    font-weight: 300;
+    font-weight: 100;
   }
 
   &__copyright {

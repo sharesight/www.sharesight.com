@@ -53,12 +53,6 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     flex-direction: column;
   }
 
-  [role="menu"] a {
-    &, &:hover {
-      text-decoration: none;
-    }
-  }
-
   &__container {
     padding-top: $gutter/2;
     padding-bottom: $gutter/2;
@@ -142,10 +136,6 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
     font-size: 1rem;
     position: relative; // For the ::after to attach to.
 
-    &[href] {
-      text-decoration: none;
-    }
-
     // Large Desktop: Add some extra spacing between buttons.
     @include respond-to(lg, min) {
       margin: 0 $__menu-button-gutter;
@@ -164,6 +154,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
       // If this is a link, underline when we hover.
       &[href] {
         text-decoration: underline;
+        text-underline-offset: 2px;
       }
     }
 
