@@ -29,6 +29,7 @@
       for (let i = 0; i < this.elements.length; i++) {
         const container = this.elements[i];
         this.videos.push({
+          id: container.querySelector('.embedly-embed').id,
           container: container,
           playButton: container.querySelector('.btn-play'),
           overlay: container.querySelector('.video_overlay'),
@@ -39,12 +40,15 @@
             e.preventDefault();
 
             if (!this.loaded) {
-              this.loadEmbedly().then(function(v) {
-                console.log('click!loaded', video, v);
+              this.loadEmbedly().then(function() {
+                embedly('player', function (player) {
+                  const selected = this.videos.find(video => video.container.contains(player.frame.elem));
+                  selected.player = player;
+                }.bind(this));
+
                 this.playVideo(video);
               }.bind(this));
             } else {
-              console.log('click', video);
               this.playVideo(video);
             }
           });
@@ -54,7 +58,7 @@
 
     /**
      * Play the video
-     * @param video
+     * @param {Object} video The video to play
      */
     playVideo: function(video) {
       video.overlay.addEventListener('transitionend', () => {
@@ -81,13 +85,8 @@
             }
           });
 
-          embedly('player', function (player) {
-            this.videos[i].player = player;
-          }.bind(this));
-
           this.loaded = true;
-
-          resolve(this.videos);
+          resolve();
         }.bind(this), function (err) {
           reject(err);
         });
@@ -108,5 +107,7 @@
     initialized = true;
   }
 
-  document.addEventListener('DOMContentLoaded', initialize);
+  document.addEventListener('DOMContentLoaded', () => {
+    initialize();
+  });
 })();
