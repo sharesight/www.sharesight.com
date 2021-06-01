@@ -28,8 +28,20 @@ describe 'Blog Helper', :type => :helper do
       end
     end
 
-    it "should return the correct url when a wordpress_url is provided" do
-      @posts.select{ |post| post.wordpress_url&.present? }.each do |post|
+    it 'should return the correct url when a url slug is provided' do
+      @posts.select { |post| post.url_slug.present? }.each do |post|
+        expect(BlogHelper::url_slug(post)).to eq(post.url_slug)
+      end
+    end
+
+    it 'should use the prioritise using the url slug over the wordpress url' do
+      @posts.select { |post| post.url_slug.present? && post.wordpress_url&.present? }.each do |post|
+        expect(BlogHelper::url_slug(post)).to eq(post.url_slug)
+      end
+    end
+
+    it "should return the correct url when a wordpress_url is provided and no url slug" do
+      @posts.select{ |post| post.wordpress_url&.present? && !post.url_slug&.present?}.each do |post|
         expect(BlogHelper::url_slug(post)).to eq(BlogHelper::url_slug_from_wordpress_url(post[:wordpress_url]))
       end
     end

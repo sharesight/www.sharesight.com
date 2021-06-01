@@ -3,6 +3,8 @@ module BlogHelper
   # Try to switch over to super.url_slug, if possible!
   def self.url_slug(post)
     # This is Split out for Testing Purposes.
+    return post.url_slug if post&.url_slug&.present?
+
     return url_slug_from_wordpress_url(post&.wordpress_url) if post&.wordpress_url&.present?
     return url_slug_from_title(post&.title)
   end
