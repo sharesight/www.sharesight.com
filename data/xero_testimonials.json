@@ -7,7 +7,7 @@
 		"role": "Xero Business Community",
 		"source_title": "Xero Business Community",
 		"source_url": "https://community.xero.com/business/discussion/2212560",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "andrew_haynes",
@@ -17,7 +17,7 @@
 		"role": "",
 		"source_title": "Twitter",
 		"source_url": "https://twitter.com/andrew_haynes/status/12557651552",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "jonathan_herrman",
@@ -27,7 +27,7 @@
 		"role": "Xero Business Community",
 		"source_title": "Xero Business Community",
 		"source_url": "https://community.xero.com/business/discussion/2212560",
-		"visible": ["nz", "ca", "uk", "au", "global"]
+		"visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "mike_deam",
@@ -37,7 +37,7 @@
 		"role": "Xero Business Community",
 		"source_title": "Twitter",
 		"source_url": "https://twitter.com/MikeDeam/status/557660125117571072",
-    "visible": ["nz", "ca", "uk", "au", "global"]
+    "visible": ["nz", "ca", "uk", "au", "us", "global"]
 	},
 	{
 		"id": "kimberley_middlemis",
@@ -47,6 +47,6 @@
 		"role": "",
 		"source_title": "Twitter",
 		"source_url": "https://twitter.com/kmiddlemis/status/536769140694851584",
-		"visible": ["nz", "ca", "uk", "au", "global"]
+		"visible": ["nz", "ca", "uk", "au", "us", "global"]
 	}
 ]

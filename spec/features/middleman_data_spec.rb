@@ -4,7 +4,7 @@ require 'spec_helper'
 
 describe 'Middleman Data', :type => :feature do
   it "should have expected data set for locales" do
-    expect(locales.length).to eq(5)
+    expect(locales.length).to eq(6)
 
     locales.each do |locale|
       # converts to hash before getting keys!
