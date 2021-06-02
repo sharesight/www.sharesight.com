@@ -37,7 +37,7 @@
       },
       {
         "page": "partners",
-        "page_title": "Sharesight Partners",
+        "page_title": "Sharesight US Partners",
         "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
         "sitemap_priority": 0.8,
@@ -629,7 +629,7 @@
       },
       {
         "page": "sharesight-terms-of-use",
-        "page_title": "Terms of Use | Sharesight",
+        "page_title": "Terms of Use | Sharesight US",
         "page_description": "Terms of Use apply to your usage of Sharesight US services and our obligations to you. Accessing Sharesight means you agree to these Terms.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.1

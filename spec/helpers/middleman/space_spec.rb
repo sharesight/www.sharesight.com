@@ -164,7 +164,7 @@ describe 'Space Middleman Helper', :type => :helper do
     it "should be correct on partners" do
       locales.each do |locale|
         visit localize_path('partners', locale_id: locale[:id])
-        expect(@app.base_space_category_page_title).to eq("#{default_locale_obj[:append_title]} Partners")
+        expect(@app.base_space_category_page_title).to match(/#{default_locale_obj[:append_title]}(\s\w+)? Partners/)
       end
     end
 
@@ -172,7 +172,7 @@ describe 'Space Middleman Helper', :type => :helper do
       locales.each do |locale|
         partner = get_partners_partners().find{ |model| model[:name] }
         visit @app.partner_path(partner, locale_id: locale[:id])
-        expect(@app.base_space_category_page_title).to eq("#{default_locale_obj[:append_title]} Partners")
+        expect(@app.base_space_category_page_title).to match(/#{default_locale_obj[:append_title]}(\s\w+)? Partners/)
       end
     end
 
