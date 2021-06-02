@@ -74,7 +74,20 @@ section_class: 'section_home'
     <div class="alternate layout-med">
       <div class="container cards_container">
         <div class="o-video_wrapper">
-          <div data-vimeo-id="102970230" data-vimeo-width="500" data-vimeo-height="281"></div>
+          <div class="video_overlay xero">
+            <a class="btn-play_wrapper" id="js-play-button" tabindex="0" aria-label="Play Sharesight Video">
+              <%= image_tag '/img/icons/button_play_video--black.svg', alt: 'Play Sharesight Video', class: 'btn-play' %>
+            </a>
+          </div>
+          <iframe
+            class="embedly-embed"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            loading="lazy"
+            src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F102970230&url=https%3A%2F%2Fvimeo.com%2F102970230&type=text%2Fhtml&schema=vimeo"
+            width="1920"
+            height="800"></iframe>
         </div>
 
         <p class="paragraph_important">If you like the investment insight you get from Sharesight, you’ll love the complete financial picture you get by connecting your portfolio to Xero.</p>
