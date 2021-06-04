@@ -13,7 +13,7 @@ describe 'Blog Helper', :type => :helper do
         ['2017', ' 2017 '],
         ['foo--bar', ' foo --  bar']
       ].each do |arr|
-        fake_post = OpenStruct.new(title: arr[1], wordpress_url: '')
+        fake_post = OpenStruct.new(title: arr[1])
         expect(arr[0]).to eq(BlogHelper::url_slug(fake_post))
       end
 
@@ -23,19 +23,19 @@ describe 'Blog Helper', :type => :helper do
         ['2017 ', ' 2017 '],
         ['foo-bar', ' foo --  bar']
       ].each do |arr|
-        fake_post = OpenStruct.new(title: arr[1], wordpress_url: '')
+        fake_post = OpenStruct.new(title: arr[1])
         expect(arr[0]).not_to eq(BlogHelper::url_slug(fake_post))
       end
     end
 
-    it "should return the correct url when a wordpress_url is provided" do
-      @posts.select{ |post| post.wordpress_url&.present? }.each do |post|
-        expect(BlogHelper::url_slug(post)).to eq(BlogHelper::url_slug_from_wordpress_url(post[:wordpress_url]))
+    it 'should return the correct url when a url slug is provided' do
+      @posts.select { |post| post.url_slug.present? }.each do |post|
+        expect(BlogHelper::url_slug(post)).to eq(post.url_slug)
       end
     end
 
-    it "should return the correct url when a wordpress_url is not provided" do
-      @posts.select{ |post| !post.wordpress_url&.present? }.each do |post|
+    it "should return the correct url when a url_slug is not provided" do
+      @posts.select{ |post| !post.url_slug&.present? }.each do |post|
         expect(BlogHelper::url_slug(post)).to eq(BlogHelper::url_slug_from_title(post[:title]))
       end
     end
@@ -45,7 +45,7 @@ describe 'Blog Helper', :type => :helper do
     it "should be valid" do
       [
         OpenStruct.new({ title: 'title', author: { name: 'name' }, featured_image: { url: 'url' } }),
-        OpenStruct.new({ title: 'title', author: { name: 'name' }, featured_image: { url: 'url' }, wordpress_url: 'foo-bar' }),
+        OpenStruct.new({ title: 'title', author: { name: 'name' }, featured_image: { url: 'url' } }),
       ].each do |obj|
         expect(BlogHelper.is_valid_post?(obj)).to be(true)
       end
@@ -53,7 +53,7 @@ describe 'Blog Helper', :type => :helper do
 
     it "should be invalid" do
       [
-        OpenStruct.new({ title: ' ', author: { name: 'name' }, featured_image: { url: 'url' }, wordpress_url: 'foo-bar' }),
+        OpenStruct.new({ title: ' ', author: { name: 'name' }, featured_image: { url: 'url' } }),
         OpenStruct.new({ id: '123' }),
         OpenStruct.new({ title: 'title', author: {}, featured_image: {} }),
         OpenStruct.new({ title: 'title', author: {}, featured_image: {} }),
