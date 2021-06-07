@@ -29,7 +29,10 @@ describe 'Blog Helper', :type => :helper do
     end
 
     it 'should return the correct url when a url slug is provided' do
-      @posts.select { |post| post.url_slug.present? }.each do |post|
+      url_slug_posts = @posts.select { |post| post.url_slug.present? }
+
+      expect(url_slug_posts.length).to be >= 1
+      url_slug_posts.each do |post|
         expect(BlogHelper::url_slug(post)).to eq(post.url_slug)
       end
     end
