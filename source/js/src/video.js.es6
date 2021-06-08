@@ -1,52 +1,102 @@
 //= require "../lib/require.2.3.6.min.js"
 
-// NOTE: We use require.js to load Vimeo, then initialize Vimeo.
-// NOTE: …/player.js is preloaded in the <head>!
-require(['https://player.vimeo.com/api/player.js'], function(Player) {
-  let initialized = false;
+// Videos
+const videos = {
+  videos: [],
+  elements: [],
+  loaded: false,
 
-  function initialize () {
-    if (initialized) return;
-
-    const vimeoSrc = document.querySelector('[data-vimeo-url], [data-vimeo-id]');
-    if (!vimeoSrc) return false;
-    initialized = true;
-
-    const vimeo = new Player(vimeoSrc, {
-      color: 'F5A623',
-      title: false,
-      byline: false,
-      portrait: false
-    });
-
-    // If we have an overlay (eg. a background + play button, we interact with that instead)
-    const playOverlay = vimeoSrc.parentNode.querySelector('.video_overlay');
-    if (playOverlay) {
-      vimeo.on('play', function() {
-        playOverlay.style.display = 'none';
-      });
-
-      playOverlay.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        vimeo.play();
-      });
-
-      playOverlay.addEventListener('keypress', function(e) {
-        if (e.which === 13 || e.keyCode === 13 || e.key === 'Enter') {
-          e.preventDefault();
-          vimeo.play();
-        }
-      });
+  /**
+   * Initialize embedly videos
+   * @param {NodeList} elements List of static video containers
+   */
+  initialize: function (elements) {
+    if (!elements || !elements.length) {
+      this.loadEmbedly().then();
+    } else {
+      this.elements = elements;
+      this.attachEvents();
     }
-  }
+  },
 
-  ;(function() {
-    // Note: We do protect against double initialization.
-    initialize();
+  /**
+   * Attach event handlers for play buttons
+   */
+  attachEvents: function () {
+    for (let i = 0; i < this.elements.length; i++) {
+      const container = this.elements[i];
+      this.videos.push({
+        id: container.querySelector('.embedly-embed').id,
+        container: container,
+        playButton: container.querySelector('.btn-play'),
+        overlay: container.querySelector('.video_overlay'),
+      });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      initialize();
+      this.videos.forEach(function(video) {
+        video.playButton.addEventListener('click', e => {
+          e.preventDefault();
+
+          if (!this.loaded) {
+            this.loadEmbedly().then(function() {
+              embedly('player', function (player) {
+                const selected = this.videos.find(video => video.container.contains(player.frame.elem));
+                selected.player = player;
+              }.bind(this));
+
+              this.playVideo(video);
+            }.bind(this));
+          } else {
+            this.playVideo(video);
+          }
+        });
+      }.bind(this));
+    }
+  },
+
+  /**
+   * Play the video
+   * @param {Object} video The video to play
+   */
+  playVideo: function(video) {
+    video.overlay.addEventListener('transitionend', () => {
+      video.overlay.style.display = 'none';
+      video.player.play();
     });
-  })();
-});
+
+    video.overlay.classList.add('hidden');
+  },
+
+  /**
+   * Load embedly JS and initialize default settings
+   * @returns {Promise<unknown>}
+   */
+  loadEmbedly: function () {
+    return new Promise((resolve, reject) => {
+      require(['//cdn.embedly.com/widgets/platform.js'], function () {
+        embedly('defaults', {
+          cards: {
+            key: '29eeda9e10194668b8297779af3ec8eb',
+            override: true,
+            recommend: 0,
+            chrome: 0,
+          }
+        });
+
+        this.loaded = true;
+        resolve();
+      }.bind(this), function (err) {
+        reject(err);
+      });
+    });
+  }
+};
+
+;(function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      videos.initialize(document.querySelectorAll('.o-video_wrapper'));
+    });
+  } else {
+    videos.initialize(document.querySelectorAll('.o-video_wrapper'));
+  }
+})();
