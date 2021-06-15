@@ -264,6 +264,13 @@ module MiddlemanMenuHelpers
                   label: 'Webinars & Events',
                   title: locale_page(page: 'events', locale_obj: locale_obj)[:page_title],
                   href: localize_url('events', locale_id: locale_obj[:id]),
+                },
+                {
+                  icon: 'users',
+                  icon_hover: 'users-fill',
+                  label: 'Community Forum',
+                  title: 'Community Forum',
+                  href: localize_url(base_url: config[:community_url], locale_id: locale_obj[:id]),
                 }
               ]
             }
