@@ -8,7 +8,7 @@ module.exports = function (migration) {
     from: ['wordpress_url', 'urlSlug'],
     to: ['urlSlug'],
     transformEntryForLocale: function (fromFields, currentLocale) {
-      const wordPressUrl = fromFields.wordpressUrl;
+      const wordPressUrl = fromFields.wordpress_url;
       if (wordPressUrl == null || wordPressUrl == undefined || wordPressUrl == "") {
         console.log("No wordpress url; nothing to do");
         return;
@@ -21,7 +21,11 @@ module.exports = function (migration) {
       }
 
       const wordPressUrlValue = wordPressUrl[currentLocale].toString();
-      const newSlug = wordPressUrlValue.match(/\/\/([\S]+)/)[1];
+      console.log("WordPressURL: " + wordPressUrlValue);
+
+      const urlArray = wordPressUrlValue.split("/");
+      const newSlug = urlArray[urlArray.length - 2]; // there is a trailing '/' on wordpress URL
+
       console.log(`Migrating to new slug: ${newSlug} from: ${wordPressUrlValue}`)
       return { urlSlug: newSlug};
     }
