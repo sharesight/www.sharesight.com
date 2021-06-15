@@ -269,7 +269,6 @@ module MiddlemanMenuHelpers
                   icon: 'users',
                   icon_hover: 'users-fill',
                   label: 'Community Forum',
-                  title: 'Community Forum',
                   href: unlocalized_url(base_url: config[:community_url]),
                 }
               ]
