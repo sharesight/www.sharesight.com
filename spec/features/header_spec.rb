@@ -210,6 +210,7 @@ describe 'Header', type: :feature do
             ["Sharesight Blog", base_url("blog")],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
+            ["Community Forum", Capybara.app.config[:community_url]],
 
             ["Log In", Capybara.app.config[:login_url]],
             ["Sign Up", Capybara.app.config[:signup_url]]
