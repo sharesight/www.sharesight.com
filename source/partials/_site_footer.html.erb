@@ -27,9 +27,9 @@
 
     'Resources' => [
       { name: 'Help Centre', href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]), title: "Help Centre | #{locale_obj[:append_title]}" },
+      { name: 'Community Forum', href: unlocalized_url(base_url: config[:community_url]), title: 'Community Forum' },
       { name: 'Sharesight Blog', href: unlocalized_url('blog'), title: 'Read the Sharesight Blog' },
       { name: 'Webinars & Events', page: 'events' },
-      { name: 'Community Forum', href: unlocalized_url(base_url: config[:community_url]), title: 'Community Forum' },
       { name: 'Privacy Policy', page: 'privacy-policy' },
       { name: 'Terms of Use', page: 'sharesight-terms-of-use' },
       { name: 'Pro Terms of Use', page: 'sharesight-professional-terms-of-use' },

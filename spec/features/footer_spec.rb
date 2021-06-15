@@ -31,6 +31,7 @@ describe 'Footer', type: :feature do
       ["Help Centre", Capybara.app.config[:help_url]],
       ["Sharesight Blog", base_url("/blog/")],
       ["Webinars & Events", base_url("/events/")],
+      ["Community Forum", Capybara.app.config[:community_url]],
       ["Privacy Policy", base_url("/privacy-policy/")],
       ["Terms of Use", base_url("/sharesight-terms-of-use/")],
       ["Pro Terms of Use", base_url("/sharesight-professional-terms-of-use/")],
