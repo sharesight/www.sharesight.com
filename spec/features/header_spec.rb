@@ -52,10 +52,10 @@ describe 'Header', type: :feature do
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
             ["Help Centre", Capybara.app.config[:help_url]],
+            ["Community Forum", Capybara.app.config[:community_url]],
             ["Sharesight Blog", base_url("blog")],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
-            ["Community Forum", Capybara.app.config[:community_url]],
 
             ["From the Blog", base_url("blog")],
             # The Blog Links are pushed in below.
@@ -207,10 +207,10 @@ describe 'Header', type: :feature do
             ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
 
             ["Help Centre", Capybara.app.config[:help_url]],
+            ["Community Forum", Capybara.app.config[:community_url]],
             ["Sharesight Blog", base_url("blog")],
             ["Sharesight API", Capybara.app.config[:api_url]],
             ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
-            ["Community Forum", Capybara.app.config[:community_url]],
 
             ["Log In", Capybara.app.config[:login_url]],
             ["Sign Up", Capybara.app.config[:signup_url]]
