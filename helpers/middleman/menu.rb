@@ -5,18 +5,24 @@ module MiddlemanMenuHelpers
   include MiddlemanLocaleHelpers # for current_locale_obj method
   include MiddlemanPageHelpers # for locale_page method
 
-  def get_menu_config(locale_obj: current_locale_obj)
+  def get_menu_config(locale_obj: current_locale_obj, professional: false)
     return [
-      get_features_menu(locale_obj: locale_obj),
-      get_benefits_menu(locale_obj: locale_obj),
-      get_pricing_menu(locale_obj: locale_obj),
-      get_resources_menu(locale_obj: locale_obj)
+      get_features_menu(locale_obj: locale_obj, professional: professional),
+      get_benefits_menu(locale_obj: locale_obj, professional: professional),
+      get_pricing_menu(locale_obj: locale_obj, professional: professional),
+      get_resources_menu(locale_obj: locale_obj, professional: professional)
     ]
   end
 
   private
 
-  def get_features_menu(locale_obj: current_locale_obj)
+  def get_pricing_href(locale_obj: current_locale_obj, professional: false)
+    return '#pricing' if professional
+    
+    return localize_url('pricing', locale_id: locale_obj[:id])
+  end
+
+  def get_features_menu(locale_obj: current_locale_obj, professional: false)
     return {
       label: 'Features',
       rows: [
@@ -83,7 +89,7 @@ module MiddlemanMenuHelpers
                   visible_desktop: false,
                   label: 'Pricing',
                   icon: 'wallet',
-                  href: localize_url('pricing', locale_id: locale_obj[:id]),
+                  href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
                   title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
                 },
                 {
@@ -111,7 +117,7 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_benefits_menu(locale_obj: current_locale_obj)
+  def get_benefits_menu(locale_obj: current_locale_obj, professional: false)
     return {
       label: 'Benefits',
       rows: [
@@ -156,17 +162,16 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_pricing_menu(locale_obj: current_locale_obj)
-
+  def get_pricing_menu(locale_obj: current_locale_obj, professional: false)
     return {
       visible_mobile: false,
       label: 'Pricing',
-      href: localize_url('pricing', locale_id: locale_obj[:id]),
+      href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
       title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
     }
   end
 
-  def get_resources_menu(locale_obj: current_locale_obj)
+  def get_resources_menu(locale_obj: current_locale_obj, professional: false)
     return {
       label: 'Resources',
       class: 'menu--lg',
