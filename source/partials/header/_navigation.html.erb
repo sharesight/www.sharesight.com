@@ -12,7 +12,7 @@
 <%
   # We store this menu data in here to be used for both Desktop and Mobile navigation..
   locale_obj = locals[:locale_obj] || current_locale_obj
-  menus = get_menu_config(locale_obj: locale_obj)
+  menus = get_menu_config(locale_obj: locale_obj, professional: locals[:professional])
 %>
 
 <div class="container nav__container">
