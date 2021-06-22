@@ -12,12 +12,14 @@ class LandingPagesPageMapper < ContentfulMiddleman::Mapper::Base
         case layout
         when 'default'
           'layout'
-        when 'index'
-          'layout_index'
-        when 'pro'
-          'layout_pro'
-        when 'blog_post'
-          'blog_post'
+        # NOTE: We don't actually support anything by 'default' here! 
+        # Content Model: https://app.contentful.com/spaces/cbgsdqa84fjb/content_types/page/fields
+        # when 'index'
+        #   'layout_index'
+        # when 'pro'
+        #   'layout_pro'
+        # when 'blog_post'
+        #   'blog_post'
         else
           layout
         end
