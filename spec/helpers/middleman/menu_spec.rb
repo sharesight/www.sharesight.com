@@ -63,6 +63,43 @@ describe 'Menu Helper', :type => :helper do
       expect(menus[3][:label]).to eq('Resources')
     end
 
+    it "should have a different link when professional=true" do
+      menus = @app.get_menu_config()
+      menus_pro = @app.get_menu_config(professional: true)
+
+      ####
+      # Desktop Item
+      regular_menu = menus[2]
+      pro_menu = menus_pro[2]
+      expect(regular_menu[:label]).to eq('Pricing')
+      expect(regular_menu[:visible_mobile]).to eq(false)
+      expect(pro_menu[:label]).to eq('Pricing')
+      expect(pro_menu[:visible_mobile]).to eq(false)
+
+      # Labels are as expected
+      expect(regular_menu[:href]).to end_with('/pricing/')
+      expect(pro_menu[:href]).to eq('#pricing')
+      expect(pro_menu[:href]).not_to eq(regular_menu[:href]) # don't match
+      # End Desktop
+      ####
+
+      ####
+      # Mobile Item
+      regular_menu = menus[0][:rows][1][:columns][0][:links][0]
+      pro_menu = menus_pro[0][:rows][1][:columns][0][:links][0]
+      expect(regular_menu[:label]).to eq('Pricing')
+      expect(regular_menu[:visible_desktop]).to eq(false)
+      expect(pro_menu[:label]).to eq('Pricing')
+      expect(pro_menu[:visible_desktop]).to eq(false)
+
+      # Labels are as expected
+      expect(regular_menu[:href]).to end_with('/pricing/')
+      expect(pro_menu[:href]).to eq('#pricing')
+      expect(pro_menu[:href]).not_to eq(regular_menu[:href]) # don't match
+      # End Desktop
+      ####
+    end
+
     # NOTE: This does also test global, because it has no "path" or "country" differences.
     Capybara.app.data.locales.each do |locale_obj|
       it "#{locale_obj[:country]} should have an expected pricing link" do
