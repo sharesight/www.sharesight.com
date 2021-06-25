@@ -58,7 +58,7 @@ module MiddlemanUrlHelpers
 
   def localize_url(append = '/', locale_id: current_locale_id, base_url: config[:base_url])
     locale_id ||= current_locale_id
-    locale_id = locale_id.downcase if locale_id
+    locale_id &&= locale_id.downcase
     page = page_from_path(append)
 
     raise ArgumentError.new("Attempted to localize a url that already has a scheme: #{append}.") if append&.match(/\A(http[s]?:)?\/\//) # already a url (https://, http://, //)
@@ -78,12 +78,12 @@ module MiddlemanUrlHelpers
     append = strip_index_from_path(append)
 
     # Set no locale, default locale, or unlocalized pages to have no locale path..
-    if !locale_id || locale_id == default_locale_id || is_unlocalized_page?(page)
+    if locale_id.nil? || locale_id == default_locale_id || is_unlocalized_page?(page) || (!is_valid_locale_id_for_base_url?(locale_id, base_url))
       append = '' if append == '/' # Just incase.  No trailing slash for empty appends, like `sharesight.com`, but still for `sharesight.com/xero/`.
       return "#{base_url}#{append}"
     end
 
-    base_url = "#{base_url}/" if base_url
+    base_url += "/" if !base_url.end_with?('/') && !locale_id.start_with?('/')
 
     return "#{base_url}#{locale_id}#{append}"
   end

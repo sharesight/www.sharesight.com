@@ -39,6 +39,13 @@ module MiddlemanLocaleHelpers
     return !!data.locales.find { |x| x[:id]&.downcase == locale_id&.downcase }
   end
 
+  def is_valid_locale_id_for_base_url?(locale_id, base_url)
+    return true if locale_id.nil?
+    return true unless locale_id == 'us'
+
+    !base_url.match?(/help.sharesight.com/)
+  end
+
   def locale_cert_type(locale_obj = current_locale_obj)
     get_locale_obj(locale_obj[:id])&.cert_type&.to_s || 'stock'
   end
