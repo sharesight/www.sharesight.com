@@ -64,8 +64,8 @@ const urlHelper = {
     if (!this.shouldLocalizePath(path, locale_id)) return path
     if (locale_id == config.default_locale_id) locale_id = ''
     if (!localeHelper.isValidLocaleId(locale_id)) locale_id = ''
-    let path = this.removeLocalizationFromPath(path)
 
+    path = this.removeLocalizationFromPath(path)
     path = `/${locale_id}/${path}`
     path = path.replace(/\/+/g, '/') // roughly trim down all duplicate slashes // => /
     return path
