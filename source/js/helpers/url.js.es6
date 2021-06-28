@@ -14,6 +14,13 @@ const urlHelper = {
     return true
   },
 
+  shouldLocalizeUrl: function(url, locale_id) {
+    // Our help site doesn't support locale 'us'
+    if (locale_id == 'us' && url.match(/http(s)?:\/\/help\.sharesight\.com/)) return false
+
+    return true
+  },
+
   // we've very redundant in these adding and removing slashes.
   // For delete[0], etc., to be accurate accessors, we have to add/remove/squeeze slashes a lot!
   removeLocalizationFromPath: function(path) {
@@ -53,12 +60,12 @@ const urlHelper = {
     return "global"
   },
 
-  localizePath: function (input, locale_id) {
-    if (!this.shouldLocalizePath(input, locale_id)) return input
+  localizePath: function (path, locale_id) {
+    if (!this.shouldLocalizePath(path, locale_id)) return path
     if (locale_id == config.default_locale_id) locale_id = ''
     if (!localeHelper.isValidLocaleId(locale_id)) locale_id = ''
-    let path = this.removeLocalizationFromPath(input)
 
+    path = this.removeLocalizationFromPath(path)
     path = `/${locale_id}/${path}`
     path = path.replace(/\/+/g, '/') // roughly trim down all duplicate slashes // => /
     return path

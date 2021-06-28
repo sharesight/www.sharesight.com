@@ -28,7 +28,7 @@ describe 'Base Middleman Helpers', :type => :unit do
     base_urls = [
       Capybara.app.config[:base_url],
       Capybara.app.config[:help_url],
-      'https://foo.bar/'
+      'https://foo.bar'
     ]
 
     base_urls.each do |base|
@@ -42,7 +42,7 @@ describe 'Base Middleman Helpers', :type => :unit do
     base_urls = [
       Capybara.app.config[:base_url],
       Capybara.app.config[:help_url],
-      'https://foo.bar/'
+      'https://foo.bar'
     ]
 
     base_urls.each do |base|

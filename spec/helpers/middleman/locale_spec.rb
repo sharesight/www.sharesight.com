@@ -67,6 +67,20 @@ describe 'Helper', :type => :helper do
     end
   end
 
+  context "is_valid_locale_id_for_base_url?" do
+    # This might be only temporary until we add US support to help.sharesight.com
+    it "should not allow 'us' locale to help.sharesight.com" do
+      expect(@app.is_valid_locale_id_for_base_url?(nil, 'https://help.sharesight.com/')).to be(true)
+
+      all_but_us_locales = locales.reject { |l| l[:id] == 'us' }
+      all_but_us_locales.each do |locale|
+        expect(@app.is_valid_locale_id_for_base_url?(locale[:id], 'https://help.sharesight.com/')).to be(true), "Didn't do for #{locale[:id]}"
+      end
+
+      expect(@app.is_valid_locale_id_for_base_url?('us', 'https://help.sharesight.com/')).to be(false)
+    end
+  end
+
   context "locale_cert_type" do
     it "should give the correct response" do
       visit '/'
