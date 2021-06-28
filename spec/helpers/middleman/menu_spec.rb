@@ -44,7 +44,7 @@ describe 'Menu Helper', :type => :helper do
       # These are just hardcoded values.
       expect(rows_length).to eq(5)
       expect(columns_length).to eq(8)
-      expect(links_length).to eq(23)
+      expect(links_length).to eq(24)
     end
 
     it "should have a partial for blogs in place of a column" do
