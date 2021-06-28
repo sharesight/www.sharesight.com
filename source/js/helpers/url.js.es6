@@ -15,10 +15,10 @@ const urlHelper = {
   },
 
   shouldLocalizeUrl: function(url, locale_id) {
-    // Our help page doesn't support US locales
+    // Our help site doesn't support locale 'us'
     if (locale_id == 'us' && url.match(/http(s)?:\/\/help\.sharesight\.com/)) return false
 
-    true
+    return true
   },
 
   // we've very redundant in these adding and removing slashes.

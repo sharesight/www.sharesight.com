@@ -43,6 +43,7 @@ module MiddlemanLocaleHelpers
     return true if locale_id.nil?
     return true unless locale_id == 'us'
 
+    # Our help site doesn't support locale 'us'
     !base_url.match?(/help.sharesight.com/)
   end
 
