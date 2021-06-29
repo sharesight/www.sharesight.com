@@ -11,7 +11,7 @@
  */
 
 const version = '9';
-const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
+const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk', us: 'us' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
 // dontProcess turns off all processing (ultimately, localization)
