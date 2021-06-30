@@ -34,23 +34,23 @@ module Middleman
       end
 
       def has_contentful_data?
-        return app.data.respond_to?('landing-pages') && !app.data['landing-pages'].pages.nil?
+        app.data.respond_to?('landing-pages') && !app.data['landing-pages'].pages.nil?
       end
 
       def path_for_proxy(slug, locale_id)
-        base = (locale_id != default_locale_id) ? "#{locale_id}/" : ''
+        base = locale_id != default_locale_id ? "#{locale_id}/" : ''
         path = "#{base}/#{slug}"
 
         path += '.html'
-        return path.squeeze('/')
+        path.squeeze('/')
       end
 
       def default_locale_id
-        return app.config[:default_locale_id]
+        app.config[:default_locale_id]
       end
 
       def default_locale_obj
-        return app.default_locale_obj
+        app.default_locale_obj
       end
     end
   end

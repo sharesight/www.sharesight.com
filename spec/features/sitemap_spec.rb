@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe 'Sitemap', :type => :feature do
+describe 'Sitemap', type: :feature do
   before :all do
     @path = 'sitemap.xml'
     @validated = []
   end
 
-  it "should have a sitemap index" do
+  it 'should have a sitemap index' do
     visit '/sitemapindex.xml'
     expect(page).to have_xpath('//sitemapindex')
 
@@ -33,10 +33,10 @@ describe 'Sitemap', :type => :feature do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       expectation = 0
-      expectation += locale[:pages].reject{ |page| page[:no_index] == true }.length
+      expectation += locale[:pages].reject { |page| page[:no_index] == true }.length
 
-      expectation += get_blog_posts().length if locale[:id] == default_locale_id
-      expectation += get_blog_categories().length if locale[:id] == default_locale_id
+      expectation += get_blog_posts.length if locale[:id] == default_locale_id
+      expectation += get_blog_categories.length if locale[:id] == default_locale_id
 
       expectation += get_partners_partners(locale).length
       expectation += get_partners_categories(all: false).length
@@ -48,10 +48,10 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all the blog posts on the global sitemap" do
+  it 'should have all the blog posts on the global sitemap' do
     visit @path
 
-    get_blog_posts().each do |post|
+    get_blog_posts.each do |post|
       url = Capybara.app.post_url(post)
 
       xpath = generate_xpath('//urlset/url/loc', text: url)
@@ -59,11 +59,11 @@ describe 'Sitemap', :type => :feature do
     end
   end
 
-  it "should have all the blog categories on the global sitemap" do
+  it 'should have all the blog categories on the global sitemap' do
     visit @path
 
-    get_blog_categories().each do |category|
-      url = base_url("/blog/#{BasicHelper::url_friendly_string(category.name)}")
+    get_blog_categories.each do |category|
+      url = base_url("/blog/#{BasicHelper.url_friendly_string(category.name)}")
 
       xpath = generate_xpath('//urlset/url/loc', text: url)
       expect(page).to have_xpath(xpath), "#{category.name} is missing in sitemap (expected #{url})."
@@ -74,7 +74,7 @@ describe 'Sitemap', :type => :feature do
     it "should have all the partners for locale #{locale['id']}" do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
-      get_partners_partners().each do |partner|
+      get_partners_partners.each do |partner|
         url = Capybara.app.partner_url(partner, locale_id: locale[:id])
 
         xpath = generate_xpath('//urlset/url/loc', text: url)
@@ -149,17 +149,17 @@ describe 'Sitemap', :type => :feature do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       links = []
-      links << all('//urlset/url/loc').map{ |xpath| xpath.text() }
-      links << all('//urlset/url/link').map{ |xpath| xpath['href'] }
+      links << all('//urlset/url/loc').map { |xpath| xpath.text }
+      links << all('//urlset/url/link').map { |xpath| xpath['href'] }
       links = links.flatten.uniq
 
       links.each do |link|
         # don't re-visit every url
-        if !@validated.include?(link)
-          visit link
-          @validated << link
-          expect(page).to respond_successfully
-        end
+        next if @validated.include?(link)
+
+        visit link
+        @validated << link
+        expect(page).to respond_successfully
       end
     end
   end

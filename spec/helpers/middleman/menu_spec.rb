@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Menu Helper', :type => :helper do
+describe 'Menu Helper', type: :helper do
   before :all do
     @app = Capybara.app
   end
@@ -16,8 +16,8 @@ describe 'Menu Helper', :type => :helper do
   #
   #######
 
-  context "get_menu_config" do
-    it "should be an array with an expected number of rows, columns, and links" do
+  context 'get_menu_config' do
+    it 'should be an array with an expected number of rows, columns, and links' do
       menus = @app.get_menu_config
       expect(menus).to be_kind_of(::Array)
       expect(menus.length).to eq(4)
@@ -26,17 +26,15 @@ describe 'Menu Helper', :type => :helper do
       columns_length = 0
       links_length = 0
       menus.each do |menu|
-        if menu[:rows]
-          rows_length += menu[:rows].length
-          menu[:rows].each do |row|
-            if row[:columns]
-              columns_length += row[:columns].length
-              row[:columns].each do |column|
-                if column[:links]
-                  links_length += column[:links].length
-                end
-              end
-            end
+        next unless menu[:rows]
+
+        rows_length += menu[:rows].length
+        menu[:rows].each do |row|
+          next unless row[:columns]
+
+          columns_length += row[:columns].length
+          row[:columns].each do |column|
+            links_length += column[:links].length if column[:links]
           end
         end
       end
@@ -47,15 +45,15 @@ describe 'Menu Helper', :type => :helper do
       expect(links_length).to eq(24)
     end
 
-    it "should have a partial for blogs in place of a column" do
-      menus = @app.get_menu_config()
+    it 'should have a partial for blogs in place of a column' do
+      menus = @app.get_menu_config
       resources = menus[3]
 
       expect(resources[:rows][1]).to eq({ visible_mobile: false, partial: 'partials/header/blog' })
     end
 
-    it "should have expected top-level menu labels" do
-      menus = @app.get_menu_config()
+    it 'should have expected top-level menu labels' do
+      menus = @app.get_menu_config
 
       expect(menus[0][:label]).to eq('Features')
       expect(menus[1][:label]).to eq('Benefits')
@@ -63,8 +61,8 @@ describe 'Menu Helper', :type => :helper do
       expect(menus[3][:label]).to eq('Resources')
     end
 
-    it "should have a different link when professional=true" do
-      menus = @app.get_menu_config()
+    it 'should have a different link when professional=true' do
+      menus = @app.get_menu_config
       menus_pro = @app.get_menu_config(professional: true)
 
       ####
@@ -109,7 +107,7 @@ describe 'Menu Helper', :type => :helper do
         pricing = menus[2]
         expect(pricing[:label]).to eq('Pricing')
         expect(pricing[:title]).to eq("Pricing | Sharesight #{locale_obj[:country]}".strip)
-        expect(pricing[:href]).to match(%r{#{locale_obj[:path]}pricing\/$})
+        expect(pricing[:href]).to match(%r{#{locale_obj[:path]}pricing/$})
       end
 
       [
@@ -117,7 +115,7 @@ describe 'Menu Helper', :type => :helper do
         ['Data Security', 'Data Security'], # manually
         ['Become a Partner', 'Partner with Sharesight'], # page from Contentful. NOTE: This may change!
         ['Sharesight Blog', 'Read the Sharesight Blog', true], # hardcoded title, no localization
-        ['Sharesight API', 'Sharesight API Documentation', true], # hardcoded title, no localization
+        ['Sharesight API', 'Sharesight API Documentation', true] # hardcoded title, no localization
       ].each do |label, title, ignore_localization|
         it "#{locale_obj[:country]} should have an an expected, localized title for #{label}" do
           # NOTE: We test global above.
@@ -127,10 +125,10 @@ describe 'Menu Helper', :type => :helper do
           raise "Could not find label: #{label} in #{locale_obj[:country]}!" unless link
 
           title_localized = if ignore_localization
-            title
-          else
-            "#{title} | #{locale_obj[:append_title]}"
-          end
+                              title
+                            else
+                              "#{title} | #{locale_obj[:append_title]}"
+                            end
 
           expect(link[:label]).to eq(label)
           expect(link[:title]).to eq(title_localized)

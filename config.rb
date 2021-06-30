@@ -33,8 +33,10 @@ config[:facebook_app_id] = '1028405463915894'
 config[:ios_store_url] = 'https://itunes.apple.com/app/sharesight-reader/id1147841214?mt=8'
 config[:google_store_url] = 'https://play.google.com/store/apps/details?id=com.sharesight.reader&hl=en'
 
-config[:default_locale_id] = data.locales.find{|x| x[:id] == 'global' }[:id] # I understand this is weird, but I want to validate that `global` exists in the data too.
-raise Exception.new("Missing the default locale, should be `global`.") if !config[:default_locale_id]
+config[:default_locale_id] = data.locales.find do |x|
+  x[:id] == 'global'
+end [:id]
+raise Exception, 'Missing the default locale, should be `global`.' unless config[:default_locale_id]
 
 require "config/environments/#{config[:env_name]}" # ApplicationConfig comes from this.
 config[:base_url] = ApplicationConfig::BASE_URL
@@ -49,7 +51,7 @@ config[:login_url] = "#{config[:portfolio_url]}/login"
 config[:pro_signup_url] = "#{config[:portfolio_url]}/professional_signup"
 
 # Activate Middleman Extensions
-activate :syntax, :line_numbers => true
+activate :syntax, line_numbers: true
 activate :es6
 activate :directory_indexes
 activate :automatic_alt_tags
@@ -58,7 +60,7 @@ activate :autoprefixer do |autoprefixer_config|
     'last 5 versions',
     'Explorer >= 9'
   ]
-  autoprefixer_config.cascade  = false
+  autoprefixer_config.cascade = false
 end
 
 # Custom Middleman Extensions
@@ -67,9 +69,9 @@ activate :routing
 # Fetch via Contentful
 # NOTE: This must exist in this file, cannot be an extension as `middleman-contentful` doesn't appear to be able to initiate from any source other than config.rb.
 # Do note, you MUST run `middleman contentful` prior to `middleman [build|server]` as contentful does not work properly with lifecycle hooks and data will be parsed post-configuration, pre-build (where other things can't hook into it)
-[ ContentfulConfig::BlogSpace, ContentfulConfig::PartnersSpace, ContentfulConfig::LandingPagesSpace ].each do |space|
+[ContentfulConfig::BlogSpace, ContentfulConfig::PartnersSpace, ContentfulConfig::LandingPagesSpace].each do |space|
   use_preview_api = config[:env_name] != 'production'
-  contentful_access_token = (use_preview_api) ? space::PREVIEW_ACCESS_TOKEN : space::ACCESS_TOKEN
+  contentful_access_token = use_preview_api ? space::PREVIEW_ACCESS_TOKEN : space::ACCESS_TOKEN
 
   # This pulls the data from contentful and puts it into data[space::NAME][plural_name]
   activate :contentful do |f|
@@ -84,7 +86,7 @@ activate :routing
     f.all_entries_page_size = space::PAGINATION_SIZE
 
     # This maps the content types; takes ['schema', 'array']; returns { 'schemas' => 'schema', 'arrays' => 'array' }
-    f.content_types     = space::SCHEMAS.reduce(Hash.new(0)) { |memo, schema|
+    f.content_types = space::SCHEMAS.each_with_object(Hash.new(0)) do |schema, memo|
       mapper = ::DefaultMapper
       name = schema
 
@@ -94,11 +96,11 @@ activate :routing
         schema = schema[:contentful_schema_id] || name
       end
 
-      raise Exception.new("Invalid schema for Contentful.") if !name || !schema
+      raise Exception, 'Invalid schema for Contentful.' if !name || !schema
 
       memo[name.pluralize(2)] = { id: schema, mapper: mapper }
-      memo # return
-    }
+      # return
+    end
   end
 end
 
@@ -111,7 +113,7 @@ activate :landing_pages_space # creates pages and routing
 if ApplicationConfig.const_defined?(:S3)
   activate :s3_sync do |s3_sync|
     s3_sync.bucket                     = ApplicationConfig::S3::BUCKET # The name of the S3 bucket you are targeting. This is globally unique.
-    s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+    s3_sync.region                     = 'us-east-1' # The AWS region for your bucket.
     s3_sync.aws_access_key_id          = ApplicationConfig::S3::ACCESS_ID
     s3_sync.aws_secret_access_key      = ApplicationConfig::S3::SECRET_KEY
 
@@ -142,21 +144,21 @@ helpers MiddlemanHelpers # includes every helper in helpers/middleman/*
 # Build-specific configuration
 configure :build do
   activate :gzip do |gzip|
-    gzip.exts = %w(.js .css .html .htm .svg .txt .ico .png .jpg)
+    gzip.exts = %w[.js .css .html .htm .svg .txt .ico .png .jpg]
   end
 
   remove_paths = ['.DS_Store']
-  activate :remover, :paths => remove_paths
+  activate :remover, paths: remove_paths
 
   # For example, change the Compass output style for deployment
   activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
-  config[:js_compressor] = Uglifier.new()
+  config[:js_compressor] = Uglifier.new
 
   # Enable cache buster
-  activate :asset_hash, :ignore => [/touch-icon/, /opengraph/]
+  activate :asset_hash, ignore: [/touch-icon/, /opengraph/]
 
   activate :minify_html do |html|
     html.remove_comments = config[:env_name] == 'production'

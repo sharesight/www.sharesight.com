@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe 'Sitemap', :type => :feature do
+describe 'Sitemap', type: :feature do
   before :each do
     visit '/robots.txt'
   end
 
-  it "should have a sitemap index" do
+  it 'should have a sitemap index' do
     expect(page).to have_text('User-agent: *')
     expect(page).to have_text('Disallow: /survey-thanks')
     expect(page).to have_text('Disallow: /404')

@@ -7,8 +7,7 @@ expected_descriptions = [
 ]
 
 describe 'Header', type: :feature do
-
-  context "navigation" do
+  context 'navigation' do
     before :each do
       visit '/'
     end
@@ -24,40 +23,45 @@ describe 'Header', type: :feature do
             # label, path
 
             # Features:
-            ["Performance", localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
-            ["Dividends", localize_path('dividend-tracker', locale_id: locale_obj[:id])],
-            ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
-            ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
-            ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
-            ["Supported Brokers", localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
-            ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
-            ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ['Performance', localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
+            ['Dividends', localize_path('dividend-tracker', locale_id: locale_obj[:id])],
+            ['Tax Reporting', localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
+            ['Supported Investments',
+             localize_path('faq', locale_id: locale_obj[:id]) + '#what-can-i-track-in-sharesight'],
+            ['Supported Exchanges',
+             localize_path('faq', locale_id: locale_obj[:id]) + '#which-stock-exchanges-does-sharesight-support'],
+            ['Supported Brokers',
+             localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ['Frequently Asked Questions', localize_path('faq', locale_id: locale_obj[:id])],
+            ['Data Security',
+             localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id],
+                                                               base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
-            ["Investors",  localize_path('investors', locale_id: locale_obj[:id])],
-            ["Finance Professionals", localize_path('pro', locale_id: locale_obj[:id])],
-            ["Finance Companies", localize_path('become-a-partner', locale_id: locale_obj[:id])],
+            ['Investors', localize_path('investors', locale_id: locale_obj[:id])],
+            ['Finance Professionals', localize_path('pro', locale_id: locale_obj[:id])],
+            ['Finance Companies', localize_path('become-a-partner', locale_id: locale_obj[:id])],
 
             # Pricing:
-            ["Pricing", localize_path('pricing', locale_id: locale_obj[:id])],
+            ['Pricing', localize_path('pricing', locale_id: locale_obj[:id])],
 
             # Resources:
-            ["About Sharesight", localize_path('about-sharesight', locale_id: locale_obj[:id])],
-            ["Executive Team", localize_path('team', locale_id: locale_obj[:id])],
-            ["Reviews", localize_path('reviews', locale_id: locale_obj[:id])],
+            ['About Sharesight', localize_path('about-sharesight', locale_id: locale_obj[:id])],
+            ['Executive Team', localize_path('team', locale_id: locale_obj[:id])],
+            ['Reviews', localize_path('reviews', locale_id: locale_obj[:id])],
 
-            ["Partner Directory", localize_path('partners', locale_id: locale_obj[:id])],
-            ["Become a Partner", localize_path('become-a-partner', locale_id: locale_obj[:id])],
-            ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
-            ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
+            ['Partner Directory', localize_path('partners', locale_id: locale_obj[:id])],
+            ['Become a Partner', localize_path('become-a-partner', locale_id: locale_obj[:id])],
+            ['Become an Affiliate', localize_path('affiliates', locale_id: locale_obj[:id])],
+            ['sales@sharesight.com', 'mailto:sales@sharesight.com'],
 
-            ["Help Centre", Capybara.app.config[:help_url]],
-            ["Community Forum", Capybara.app.config[:community_url]],
-            ["Sharesight Blog", base_url("blog")],
-            ["Sharesight API", Capybara.app.config[:api_url]],
-            ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
+            ['Help Centre', Capybara.app.config[:help_url]],
+            ['Community Forum', Capybara.app.config[:community_url]],
+            ['Sharesight Blog', base_url('blog')],
+            ['Sharesight API', Capybara.app.config[:api_url]],
+            ['Webinars & Events', localize_path('events', locale_id: locale_obj[:id])],
 
-            ["From the Blog", base_url("blog")],
+            ['From the Blog', base_url('blog')]
             # The Blog Links are pushed in below.
           ]
 
@@ -78,7 +82,8 @@ describe 'Header', type: :feature do
 
             expected_href = matched_link[1]
             if expected_href
-              expect(link[:href]).to(match(expected_href), "Link '#{link.text}' did not match expected href of '#{expected_href}', got #{link[:href]}.")
+              expect(link[:href]).to(match(expected_href),
+                                     "Link '#{link.text}' did not match expected href of '#{expected_href}', got #{link[:href]}.")
             end
 
             expected_links.delete(matched_link)
@@ -88,12 +93,14 @@ describe 'Header', type: :feature do
         end
       end
 
-      it "has expected menus with expected attributes to be a menu" do
+      it 'has expected menus with expected attributes to be a menu' do
         menus = page.all(:css, 'nav [role="menubar"] li')
         expect(menus.length).to eq(4)
 
         expect(menus[0].text).to start_with('Features')
-        expect(menus[0]).to have_css('button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Features"]', text: 'Features')
+        expect(menus[0]).to have_css(
+          'button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Features"]', text: 'Features'
+        )
         expect(menus[0]).to have_css('#menu-Features[role="menu"][aria-labelledby="nav-Features"]')
 
         # Pricing has no menu!
@@ -103,15 +110,19 @@ describe 'Header', type: :feature do
         expect(menus[2]).not_to have_css('#menu-Pricing')
 
         expect(menus[1].text).to start_with('Benefits')
-        expect(menus[1]).to have_css('button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Benefits"]', text: 'Benefits')
+        expect(menus[1]).to have_css(
+          'button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Benefits"]', text: 'Benefits'
+        )
         expect(menus[1]).to have_css('#menu-Benefits[role="menu"][aria-labelledby="nav-Benefits"]')
 
         expect(menus[3].text).to start_with('Resources')
-        expect(menus[3]).to have_css('button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Resources"]', text: 'Resources')
+        expect(menus[3]).to have_css(
+          'button[aria-haspopup="true"][aria-expanded="false"][aria-controls="menu-Resources"]', text: 'Resources'
+        )
         expect(menus[3]).to have_css('#menu-Resources[role="menu"][aria-labelledby="nav-Resources"]')
       end
 
-      it "has a login and signup button" do
+      it 'has a login and signup button' do
         links = page.all(:css, 'nav .nav__ctas a[href].nav__cta')
 
         expect(links.length).to eq(2)
@@ -122,7 +133,7 @@ describe 'Header', type: :feature do
         expect(links[1][:href]).to eq(Capybara.app.config[:signup_url])
       end
 
-      it "pro has a different signup url" do
+      it 'pro has a different signup url' do
         visit '/pro'
 
         links = page.all(:css, 'nav .nav__ctas a[href].nav__cta')
@@ -135,7 +146,7 @@ describe 'Header', type: :feature do
         expect(links[1][:href]).to eq(Capybara.app.config[:pro_signup_url])
       end
 
-      it "has expected descriptions" do
+      it 'has expected descriptions' do
         descriptions = page.all(:css, 'nav [role="menubar"] .menu__description')
 
         expect(descriptions.length).to eq(expected_descriptions.length)
@@ -147,7 +158,7 @@ describe 'Header', type: :feature do
 
       [
         # Just a few spot-checks.  Could do some more or merge into the large localized test above.
-        ['Reviews', 'smiley', 'smiley-wink-fill'],
+        %w[Reviews smiley smiley-wink-fill],
         ['Executive Team', 'user-rectangle', 'user-rectangle-fill'],
         ['Become a Partner', 'handshake', 'handshake-fill'],
         ['Help Centre', 'info', 'info-fill']
@@ -181,39 +192,44 @@ describe 'Header', type: :feature do
             # label, path
 
             # Features:
-            ["Performance", localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
-            ["Dividends", localize_path('dividend-tracker', locale_id: locale_obj[:id])],
-            ["Tax Reporting", localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
-            ["Supported Investments", localize_path('faq', locale_id: locale_obj[:id]) + "#what-can-i-track-in-sharesight"],
-            ["Supported Exchanges", localize_path('faq', locale_id: locale_obj[:id]) + "#which-stock-exchanges-does-sharesight-support"],
-            ["Supported Brokers", localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
-            ["Pricing", localize_path('pricing', locale_id: locale_obj[:id])], # NOTE: Mobile-only!
-            ["Frequently Asked Questions", localize_path('faq', locale_id: locale_obj[:id])],
-            ["Data Security", localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ['Performance', localize_path('investment-portfolio-performance', locale_id: locale_obj[:id])],
+            ['Dividends', localize_path('dividend-tracker', locale_id: locale_obj[:id])],
+            ['Tax Reporting', localize_path('investment-portfolio-tax', locale_id: locale_obj[:id])],
+            ['Supported Investments',
+             localize_path('faq', locale_id: locale_obj[:id]) + '#what-can-i-track-in-sharesight'],
+            ['Supported Exchanges',
+             localize_path('faq', locale_id: locale_obj[:id]) + '#which-stock-exchanges-does-sharesight-support'],
+            ['Supported Brokers',
+             localize_url('supported-brokers', locale_id: locale_obj[:id], base_url: Capybara.app.config[:help_url])],
+            ['Pricing', localize_path('pricing', locale_id: locale_obj[:id])], # NOTE: Mobile-only!
+            ['Frequently Asked Questions', localize_path('faq', locale_id: locale_obj[:id])],
+            ['Data Security',
+             localize_url('how-sharesight-protects-your-data', locale_id: locale_obj[:id],
+                                                               base_url: Capybara.app.config[:help_url])],
 
             # Benefits:
-            ["Investors",  localize_path('investors', locale_id: locale_obj[:id])],
-            ["Finance Professionals", localize_path('pro', locale_id: locale_obj[:id])],
-            ["Finance Companies", localize_path('become-a-partner', locale_id: locale_obj[:id])],
+            ['Investors', localize_path('investors', locale_id: locale_obj[:id])],
+            ['Finance Professionals', localize_path('pro', locale_id: locale_obj[:id])],
+            ['Finance Companies', localize_path('become-a-partner', locale_id: locale_obj[:id])],
 
             # Resources:
-            ["About Sharesight", localize_path('about-sharesight', locale_id: locale_obj[:id])],
-            ["Executive Team", localize_path('team', locale_id: locale_obj[:id])],
-            ["Reviews", localize_path('reviews', locale_id: locale_obj[:id])],
+            ['About Sharesight', localize_path('about-sharesight', locale_id: locale_obj[:id])],
+            ['Executive Team', localize_path('team', locale_id: locale_obj[:id])],
+            ['Reviews', localize_path('reviews', locale_id: locale_obj[:id])],
 
-            ["Partner Directory", localize_path('partners', locale_id: locale_obj[:id])],
-            ["Become a Partner", localize_path('become-a-partner', locale_id: locale_obj[:id])],
-            ["Become an Affiliate", localize_path('affiliates', locale_id: locale_obj[:id])],
-            ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
+            ['Partner Directory', localize_path('partners', locale_id: locale_obj[:id])],
+            ['Become a Partner', localize_path('become-a-partner', locale_id: locale_obj[:id])],
+            ['Become an Affiliate', localize_path('affiliates', locale_id: locale_obj[:id])],
+            ['sales@sharesight.com', 'mailto:sales@sharesight.com'],
 
-            ["Help Centre", Capybara.app.config[:help_url]],
-            ["Community Forum", Capybara.app.config[:community_url]],
-            ["Sharesight Blog", base_url("blog")],
-            ["Sharesight API", Capybara.app.config[:api_url]],
-            ["Webinars & Events", localize_path('events', locale_id: locale_obj[:id])],
+            ['Help Centre', Capybara.app.config[:help_url]],
+            ['Community Forum', Capybara.app.config[:community_url]],
+            ['Sharesight Blog', base_url('blog')],
+            ['Sharesight API', Capybara.app.config[:api_url]],
+            ['Webinars & Events', localize_path('events', locale_id: locale_obj[:id])],
 
-            ["Log In", Capybara.app.config[:login_url]],
-            ["Sign Up", Capybara.app.config[:signup_url]]
+            ['Log In', Capybara.app.config[:login_url]],
+            ['Sign Up', Capybara.app.config[:signup_url]]
           ]
 
           expect(links.length).to eq(expected_links.length)
@@ -228,7 +244,8 @@ describe 'Header', type: :feature do
 
             expected_href = matched_link[1]
             if expected_href
-              expect(link[:href]).to(match(expected_href), "Link '#{link.text}' did not match expected href of '#{expected_href}', got #{link[:href]}.")
+              expect(link[:href]).to(match(expected_href),
+                                     "Link '#{link.text}' did not match expected href of '#{expected_href}', got #{link[:href]}.")
             end
 
             expected_links.delete(matched_link)
@@ -238,7 +255,7 @@ describe 'Header', type: :feature do
         end
       end
 
-      it "pro has a different signup url inside the modal" do
+      it 'pro has a different signup url inside the modal' do
         visit '/pro'
 
         links = page.all(:css, 'nav #mobile-nav a')
@@ -251,7 +268,7 @@ describe 'Header', type: :feature do
         expect(sign_up[:href]).to eq(Capybara.app.config[:pro_signup_url])
       end
 
-      it "has no descriptions" do
+      it 'has no descriptions' do
         mobile_nav = page.all(:css, 'nav #mobile-nav')
 
         expected_descriptions.each do |description|
@@ -263,11 +280,11 @@ describe 'Header', type: :feature do
 
       [
         # Just a few spot-checks.  Could do some more or merge into the large localized test above.
-        ['Reviews', 'smiley', 'smiley-wink-fill'],
+        %w[Reviews smiley smiley-wink-fill],
         ['Executive Team', 'user-rectangle', 'user-rectangle-fill'],
         ['Become a Partner', 'handshake', 'handshake-fill'],
         ['Help Centre', 'info', 'info-fill'],
-        ['Pricing', 'wallet', 'wallet-fill'], # NOTE: Mobile only.
+        %w[Pricing wallet wallet-fill] # NOTE: Mobile only.
       ].each do |name, icon, icon_hover|
         it "has an expected icon for the #{name} link" do
           links = page.all(:css, 'nav #mobile-nav a')
@@ -281,5 +298,4 @@ describe 'Header', type: :feature do
       end
     end
   end
-
 end

@@ -23,8 +23,8 @@ expectations = [
   { append: 'au/pricing?foo&bar#baz', locale_id: 'global', output: '/pricing?foo&bar#baz' }
 ]
 
-describe 'Base Middleman Helpers', :type => :unit do
-  it "localize_url should handle urls as expected" do
+describe 'Base Middleman Helpers', type: :unit do
+  it 'localize_url should handle urls as expected' do
     base_urls = [
       Capybara.app.config[:base_url],
       Capybara.app.config[:help_url],
@@ -33,12 +33,13 @@ describe 'Base Middleman Helpers', :type => :unit do
 
     base_urls.each do |base|
       expectations.each do |hash|
-        expect(Capybara.app.localize_url(hash[:append], locale_id: hash[:locale_id], base_url: base)).to eq(base + hash[:output])
+        expect(Capybara.app.localize_url(hash[:append], locale_id: hash[:locale_id],
+                                                        base_url: base)).to eq(base + hash[:output])
       end
     end
   end
 
-  it "base_url should handle urls as expected" do
+  it 'base_url should handle urls as expected' do
     base_urls = [
       Capybara.app.config[:base_url],
       Capybara.app.config[:help_url],
@@ -53,7 +54,7 @@ describe 'Base Middleman Helpers', :type => :unit do
     end
   end
 
-  it "localize_path should handle paths as expected" do
+  it 'localize_path should handle paths as expected' do
     # base_url does not care about the base url (https://) and just returns a relative, localized path
     expectations.each do |hash|
       expect(Capybara.app.localize_path(hash[:append], locale_id: hash[:locale_id])).to eq(hash[:output])

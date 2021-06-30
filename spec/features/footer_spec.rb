@@ -12,36 +12,36 @@ describe 'Footer', type: :feature do
       # text, href
 
       # Sharesight:
-      ["Home", base_url('/')],
-      ["Executive Team", base_url("/team/")],
-      ["About Us", base_url("/about-sharesight/")],
-      ["FAQ", base_url("/faq/")],
-      ["Pricing", base_url("/pricing/")],
-      ["Reviews", base_url("/reviews/")],
+      ['Home', base_url('/')],
+      ['Executive Team', base_url('/team/')],
+      ['About Us', base_url('/about-sharesight/')],
+      ['FAQ', base_url('/faq/')],
+      ['Pricing', base_url('/pricing/')],
+      ['Reviews', base_url('/reviews/')],
 
       # Partners:
-      ["Sharesight Pro", base_url("/pro/")],
-      ["Partner Directory", base_url("/partners/")],
-      ["Become a Partner", base_url("/become-a-partner/")],
-      ["Become an Affiliate", base_url("/affiliates/")],
-      ["Sharesight API", Capybara.app.config[:api_url]],
-      ["sales@sharesight.com", 'mailto:sales@sharesight.com'],
+      ['Sharesight Pro', base_url('/pro/')],
+      ['Partner Directory', base_url('/partners/')],
+      ['Become a Partner', base_url('/become-a-partner/')],
+      ['Become an Affiliate', base_url('/affiliates/')],
+      ['Sharesight API', Capybara.app.config[:api_url]],
+      ['sales@sharesight.com', 'mailto:sales@sharesight.com'],
 
       # Resources:
-      ["Help Centre", Capybara.app.config[:help_url]],
-      ["Sharesight Blog", base_url("/blog/")],
-      ["Webinars & Events", base_url("/events/")],
-      ["Community Forum", Capybara.app.config[:community_url]],
-      ["Privacy Policy", base_url("/privacy-policy/")],
-      ["Terms of Use", base_url("/sharesight-terms-of-use/")],
-      ["Pro Terms of Use", base_url("/sharesight-professional-terms-of-use/")],
+      ['Help Centre', Capybara.app.config[:help_url]],
+      ['Sharesight Blog', base_url('/blog/')],
+      ['Webinars & Events', base_url('/events/')],
+      ['Community Forum', Capybara.app.config[:community_url]],
+      ['Privacy Policy', base_url('/privacy-policy/')],
+      ['Terms of Use', base_url('/sharesight-terms-of-use/')],
+      ['Pro Terms of Use', base_url('/sharesight-professional-terms-of-use/')],
 
       # locales:
-      ["Global", base_url('/')],
-      ["Australia", base_url('/au/')],
-      ["Canada", base_url('/ca/')],
-      ["New Zealand", base_url('/nz/')],
-      ["United Kingdom", base_url('/uk/')],
+      ['Global', base_url('/')],
+      ['Australia', base_url('/au/')],
+      ['Canada', base_url('/ca/')],
+      ['New Zealand', base_url('/nz/')],
+      ['United Kingdom', base_url('/uk/')]
     ]
 
     expect(links.length).to eq(expected_links.length)
@@ -56,12 +56,12 @@ describe 'Footer', type: :feature do
 
       expected_href = matched_link[1]
       if expected_href
-        expect(link[:href]).to(match(expected_href), "Link '#{link.text}' did not match expected href of '#{expected_href}'.")
+        expect(link[:href]).to(match(expected_href),
+                               "Link '#{link.text}' did not match expected href of '#{expected_href}'.")
       end
 
       expected_links.delete(matched_link)
     end
-
 
     expect(expected_links.length).to(eq(0), "Found leftover links in expected_links: #{expected_links}")
   end
@@ -73,7 +73,7 @@ describe 'Footer', type: :feature do
       ['Help Centre', 'Help Centre'], # manual title w/ manual localization
       ['Sharesight Blog', 'Read the Sharesight Blog', true], # hardcoded title, no localization
       ['sales@sharesight.com', 'Email the Sales & Partnerships Team', true], # hardcoded title, no localization
-      ['Sharesight API', 'Sharesight API Documentation', true], # hardcoded title, no localization
+      ['Sharesight API', 'Sharesight API Documentation', true] # hardcoded title, no localization
     ].each do |label, title, ignore_localization|
       it "#{locale_obj[:country]} should have an an expected, localized title for #{label}" do
         visit locale_obj[:path]
@@ -86,10 +86,10 @@ describe 'Footer', type: :feature do
         raise "Could not find label: #{label} in #{locale_obj[:id]}!" unless link
 
         title_localized = if ignore_localization
-          title
-        else
-          "#{title} | #{locale_obj[:append_title]}"
-        end
+                            title
+                          else
+                            "#{title} | #{locale_obj[:append_title]}"
+                          end
 
         expect(link.text).to eq(label)
         expect(link[:title]).to eq(title_localized)

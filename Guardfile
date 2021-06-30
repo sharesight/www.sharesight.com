@@ -1,8 +1,8 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard :rspec, cmd: "bundle exec rspec --fail-fast" do
-  require "guard/rspec/dsl"
+guard :rspec, cmd: 'bundle exec rspec --fail-fast' do
+  require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
 
   # RSpec files
@@ -16,7 +16,7 @@ guard :rspec, cmd: "bundle exec rspec --fail-fast" do
   dsl.watch_spec_files_for(ruby.lib_files)
 
   watch(%r{^helpers/(.+)\.rb$})             { |m| "spec/helpers/#{m[1]}_spec.rb" }
-  watch(%r{^data/(.+)\.json$})              { "spec" }
-  watch('config.rb.rb')                     { "spec" }
-  watch('spec/spec_helper.rb')              { "spec" }
+  watch(%r{^data/(.+)\.json$})              { 'spec' }
+  watch('config.rb.rb')                     { 'spec' }
+  watch('spec/spec_helper.rb')              { 'spec' }
 end

@@ -9,16 +9,22 @@ class PartnersPartnerMapper < ContentfulMiddleman::Mapper::Base
     keys = entry.fields_with_locales.keys
 
     if keys.include?(:name)
-      context.name = map_locales(context.name){ |value| value&.to_s.squeeze(' ').strip } rescue entry.try(:name)
+      context.name = begin
+        map_locales(context.name) { |value| value&.to_s.squeeze(' ').strip }
+      rescue StandardError
+        entry.try(:name)
+      end
     end
 
     if keys.include?(:priority)
       # There must be a priority of 0 at all times and it's a bit tricky to ensure it's set via the Contentful UI.
-      if context.priority.is_a?(::Hash) && !context.priority[:en]
-        context.priority[:en] = 0
-      end
+      context.priority[:en] = 0 if context.priority.is_a?(::Hash) && !context.priority[:en]
 
-      context.priority = map_locales(context.priority){ |value| value || 0 } rescue entry.try(:priority)
+      context.priority = begin
+        map_locales(context.priority) { |value| value || 0 }
+      rescue StandardError
+        entry.try(:priority)
+      end
     end
   end
 
@@ -26,11 +32,12 @@ class PartnersPartnerMapper < ContentfulMiddleman::Mapper::Base
     # TODO: Maybe take some of the logic from contentful_middleman/mappers
 
     return block.call(entry) unless entry.is_a?(::Hash)
+
     mapped_entry = ::Thor::CoreExt::HashWithIndifferentAccess.new
     entry.each do |field, value|
       mapped_entry[field] = block.call(value)
     end
 
-    return mapped_entry
+    mapped_entry
   end
 end

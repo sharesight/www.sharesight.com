@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe 'Index Page', :type => :feature do
-  it "should have a hero title" do
+describe 'Index Page', type: :feature do
+  it 'should have a hero title' do
     visit '/'
     expect(page).to have_css('h1', text: 'Become a Better Investor')
   end
 
-  it "should have a get started button in the hero" do
+  it 'should have a get started button in the hero' do
     visit '/'
     expect(page).to have_css('.index-hero a.btn', text: 'GET STARTED – FOR FREE')
   end

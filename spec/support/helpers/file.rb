@@ -6,6 +6,6 @@ module CapybaraFileHelpers
   private
 
   def root_path
-    @root_path ||= File.expand_path(File.dirname(__FILE__) + "../../../..")
+    @root_path ||= File.expand_path(File.dirname(__FILE__) + '../../../..')
   end
 end

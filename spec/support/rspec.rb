@@ -20,7 +20,7 @@ RSpec::Matchers.define :have_img do |src|
     expect(page).to have_xpath("//img[contains(@src,\"#{src}\")]")
   end
 
-  failure_message do |actual|
+  failure_message do |_actual|
     "expected to have img #{src} on #{current_path}"
   end
 end
@@ -33,7 +33,7 @@ RSpec::Matchers.define :have_base_metas do
     expect(page).to have_meta('application-name', 'Sharesight')
   end
 
-  failure_message do |actual|
+  failure_message do |_actual|
     "expected to have base metas (charset, viewport, etc) on #{current_path}"
   end
 end
@@ -51,7 +51,7 @@ RSpec::Matchers.define :have_social_metas do
     og_image_value = get_meta('og:image', name_key: 'property')
     is_local_image = og_image_value.start_with?(Capybara.app.config[:base_url])
 
-    expect(og_image_value).to start_with('https://') if !is_local_image
+    expect(og_image_value).to start_with('https://') unless is_local_image
 
     if is_local_image
       expect(page).to have_meta('og:image:type', name_key: 'property')
@@ -62,7 +62,7 @@ RSpec::Matchers.define :have_social_metas do
     true # must return true as `expect() if false` would return nil and returning a nil fails a matcher
   end
 
-  failure_message do |actual|
+  failure_message do |_actual|
     "expected to have social metas (twitter:site:id, og:site_name, og:image:*, etc) on #{current_path}"
   end
 end
@@ -87,7 +87,7 @@ RSpec::Matchers.define :have_descriptions do |description, social_description|
     expect(page).to have_meta('og:description', social_description, name_key: 'property')
   end
 
-  failure_message do |actual|
+  failure_message do |_actual|
     "expected to have descriptions of #{description} and #{social_description} on #{current_path}"
   end
 end
@@ -103,15 +103,17 @@ end
 
 RSpec::Matchers.define :have_head do |tagname, args: {}, contains: {}, ends_with: {}, starts_with: {}, debug: nil|
   match do |page|
-    xpath = generate_xpath("//html/head/#{tagname}", args: args, contains: contains, ends_with: ends_with, starts_with: starts_with)
+    xpath = generate_xpath("//html/head/#{tagname}", args: args, contains: contains, ends_with: ends_with,
+                                                     starts_with: starts_with)
 
     expect(page).to have_xpath(xpath, visible: false)
   end
 
   failure_message do |actual|
-    if !debug.nil?
+    unless debug.nil?
       expectation = args[debug] || contains[debug] || ends_with[debug] || starts_with[debug]
-      actual = get_head(tagname, args: args, contains: contains, ends_with: ends_with, starts_with: starts_with, return_key: debug)
+      actual = get_head(tagname, args: args, contains: contains, ends_with: ends_with, starts_with: starts_with,
+                                 return_key: debug)
       return "No head.#{tagname} matching #{debug} found. Expected: #{expectation}; actual: #{actual} on #{current_path}"
     end
   end

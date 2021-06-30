@@ -1,22 +1,22 @@
 source 'https://rubygems.org'
 
-gem 'rake'
 gem 'middleman', '~> 3.4.1'
-gem 'middleman-livereload'
-gem 'middleman-s3_sync', '~> 3.0'
-gem 'middleman-cloudfront', '0.2.1'
 gem 'middleman-autoprefixer'
-gem 'middleman-minify-html'
-gem 'middleman-sprockets'
+gem 'middleman-cloudfront', '0.2.1'
 gem 'middleman-es6', git: 'https://github.com/vast/middleman-es6'
+gem 'middleman-livereload'
+gem 'middleman-minify-html'
+gem 'middleman-s3_sync', '~> 3.0'
+gem 'middleman-sprockets'
+gem 'rake'
 # gem 'babel-transpiler'
-gem 'uglifier'
-gem "contentful_middleman", '3.0.1'
+gem 'aws-s3'
+gem 'contentful_middleman', '3.0.1'
 gem 'middleman-pagination'
 gem 'middleman-remover'
 gem 'middleman-syntax'
 gem 'string-urlize'
-gem 'aws-s3'
+gem 'uglifier'
 
 # support re-writing in the middleman configuration
 gem 'rack-rewrite'
@@ -35,4 +35,6 @@ end
 group :development, :test do
   # gem 'byebug'
   gem 'bundler-audit'
+  gem 'rubocop', '~> 1.18'
+  gem 'rubocop-rspec'
 end

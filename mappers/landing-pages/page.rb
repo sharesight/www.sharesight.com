@@ -8,22 +8,26 @@ class LandingPagesPageMapper < ContentfulMiddleman::Mapper::Base
     keys = entry.fields_with_locales.keys
 
     if keys.include?(:layout)
-      context.layout = map_locales(context.layout) do |layout|
-        case layout
-        when 'default'
-          'layout'
-        # NOTE: We don't actually support anything by 'default' here! 
-        # Content Model: https://app.contentful.com/spaces/cbgsdqa84fjb/content_types/page/fields
-        # when 'index'
-        #   'layout_index'
-        # when 'pro'
-        #   'layout_pro'
-        # when 'blog_post'
-        #   'blog_post'
-        else
-          layout
+      context.layout = begin
+        map_locales(context.layout) do |layout|
+          case layout
+          when 'default'
+            'layout'
+          # NOTE: We don't actually support anything by 'default' here!
+          # Content Model: https://app.contentful.com/spaces/cbgsdqa84fjb/content_types/page/fields
+          # when 'index'
+          #   'layout_index'
+          # when 'pro'
+          #   'layout_pro'
+          # when 'blog_post'
+          #   'blog_post'
+          else
+            layout
+          end
         end
-      end rescue entry.layout
+      rescue StandardError
+        entry.layout
+      end
     end
   end
 
@@ -31,11 +35,12 @@ class LandingPagesPageMapper < ContentfulMiddleman::Mapper::Base
     # TODO: Maybe take some of the logic from contentful_middleman/mappers
 
     return block.call(entry) unless entry.is_a?(::Hash)
+
     mapped_entry = ::Thor::CoreExt::HashWithIndifferentAccess.new
     entry.each do |field, value|
       mapped_entry[field] = block.call(value)
     end
 
-    return mapped_entry
+    mapped_entry
   end
 end

@@ -2,11 +2,11 @@ require 'ostruct'
 
 module MiddlemanLandingPagesHelpers
   def landing_page_url(landing_page, locale_id: default_locale_id)
-    return localize_url(landing_page_slug(landing_page), locale_id: locale_id)
+    localize_url(landing_page_slug(landing_page), locale_id: locale_id)
   end
 
   def landing_page_path(landing_page, locale_id: default_locale_id)
-    return localize_path(landing_page_slug(landing_page), locale_id: locale_id)
+    localize_path(landing_page_slug(landing_page), locale_id: locale_id)
   end
 
   def landing_page_slug(landing_page)

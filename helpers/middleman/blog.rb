@@ -1,24 +1,23 @@
 require 'ostruct'
-load File::expand_path('../blog_helper.rb', __dir__)
+load File.expand_path('../blog_helper.rb', __dir__)
 
 module MiddlemanBlogHelpers
-
   def blog_posts(order: :latest_first)
     @blog_posts ||= {}
     return @blog_posts[order] if @blog_posts[order]
 
     @blog_posts[order] ||= case order
-      when :oldest_first
-        data.blog.posts.values.sort do |a,b|
-          a['created_at'] <=> b['created_at']
-        end
-      when :latest_first
-        data.blog.posts.values.sort do |a,b|
-          b['created_at'] <=> a['created_at']
-        end
-      else
-        data.blog.posts.values
-      end
+                           when :oldest_first
+                             data.blog.posts.values.sort do |a, b|
+                               a['created_at'] <=> b['created_at']
+                             end
+                           when :latest_first
+                             data.blog.posts.values.sort do |a, b|
+                               b['created_at'] <=> a['created_at']
+                             end
+                           else
+                             data.blog.posts.values
+                           end
   end
 
   def blog_posts_for_menu
@@ -46,43 +45,43 @@ module MiddlemanBlogHelpers
     end
 
     # return the first 3
-    return posts.first(3)
+    posts.first(3)
   end
 
   def post_url(post)
-    return unlocalized_url("blog/#{BlogHelper::url_slug(post)}")
+    unlocalized_url("blog/#{BlogHelper.url_slug(post)}")
   end
 
   def blog_categories
     @blog_categories ||= begin
       categories = []
       collection = data.blog.posts
-        .map{ |tuple| tuple[1] }
-        .select{ |model| BlogHelper.is_valid_post?(model) }
+                       .map { |tuple| tuple[1] }
+                       .select { |model| BlogHelper.is_valid_post?(model) }
 
       categories_collection = data.blog.categories
-        .map{ |tuple| tuple[1] }
-        .select{ |model| BlogHelper.is_valid_category?(model) }
+                                  .map { |tuple| tuple[1] }
+                                  .select { |model| BlogHelper.is_valid_category?(model) }
 
       collection = categories_collection.each do |category|
-        set = collection.select { |model|
+        set = collection.select do |model|
           # models that have the category id
-          model[:categories]&.find{ |model_category| model_category[:id].include?(category[:id]) }
-        }
+          model[:categories]&.find { |model_category| model_category[:id].include?(category[:id]) }
+        end
 
         categories.push({
-          id: category[:id],
-          name: category[:name],
-          description: category[:description],
-          _meta: category[:_meta],
-          path: "blog/#{url_friendly_string(category[:name])}",
-          url_slug: url_friendly_string(category[:name]),
-          count: set.length,
-          set: set
-        })
+                          id: category[:id],
+                          name: category[:name],
+                          description: category[:description],
+                          _meta: category[:_meta],
+                          path: "blog/#{url_friendly_string(category[:name])}",
+                          url_slug: url_friendly_string(category[:name]),
+                          count: set.length,
+                          set: set
+                        })
       end
 
-      categories.sort_by{ |x| x[:name] }
+      categories.sort_by { |x| x[:name] }
     end
   end
 
@@ -90,6 +89,6 @@ module MiddlemanBlogHelpers
   # We hack together a blog category to do a few specific things on the Sharesight20 category.
   # If this category is removed or renamed, there may be some issues...
   def sharesight20_category
-    @sharesight20_category ||= blog_categories.find{ |category| category[:name].include?('Sharesight20') }
+    @sharesight20_category ||= blog_categories.find { |category| category[:name].include?('Sharesight20') }
   end
 end

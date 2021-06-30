@@ -12,7 +12,7 @@ module Middleman
 
       attr_accessor :space
 
-      def initialize(app, options_hash={}, &block)
+      def initialize(app, options_hash = {}, &block)
         super
         @resources = []
         @space = nil
@@ -31,8 +31,8 @@ module Middleman
       end
 
       def after_configuration
-        @index_path = @index_path.gsub(/\/$/, '') || "#{space}/#{BasicHelper::url_friendly_string(@index_category)}"
-        @index_slug = @index_path.gsub(/^#{space}\/?/, '')
+        @index_path = @index_path.gsub(%r{/$}, '') || "#{space}/#{BasicHelper.url_friendly_string(@index_category)}"
+        @index_slug = @index_path.gsub(%r{^#{space}/?}, '')
 
         if has_contentful_data?
           get_locales_array.each do |locale_obj|
@@ -49,6 +49,7 @@ module Middleman
       def proxy_individual_pages(locale_obj)
         paginated_collection(locale_obj[:lang]).each do |model|
           next unless is_valid_paginated_model?(model)
+
           app.proxy path_for_proxy("#{space}/#{url_slug(model)}", locale_obj[:id]), "/#{space.downcase}/individual.html", locals: {
             @paginated_model.to_sym => model,
             locale_obj: locale_obj
@@ -57,28 +58,27 @@ module Middleman
       end
 
       def process_collection_by_name(name, lang)
-        @processed_collections = {} if !@processed_collections
+        @processed_collections ||= {}
         @processed_collections[name] = {} if name && !@processed_collections&.dig(name)
         return @processed_collections[name][lang] if @processed_collections&.dig(name, lang)
-        return @processed_collections[name][lang] = process_collection(app.data[space][name], lang)
+
+        @processed_collections[name][lang] = process_collection(app.data[space][name], lang)
       end
 
       def process_collection(collection, lang)
-        collection = collection.map{ |tuple| tuple[1] } # contentful passes ["id", { ... }]
-        collection = collection.map{ |model| localize_entry(model, lang, default_locale_obj[:lang]) } if @localize
-        collection = collection.sort{ |a,b| sort_pagination(a, b) }
+        collection = collection.map { |tuple| tuple[1] } # contentful passes ["id", { ... }]
+        collection = collection.map { |model| localize_entry(model, lang, default_locale_obj[:lang]) } if @localize
+        collection = collection.sort { |a, b| sort_pagination(a, b) }
       end
 
       def paginated_collection(lang = default_locale_obj[:lang])
         collection = process_collection_by_name(@paginated_collection, lang)
-        collection = collection.select{ |model| is_valid_paginated_model?(model) }
-        return collection
+        collection.select { |model| is_valid_paginated_model?(model) }
       end
 
       def categories_collection(lang = default_locale_obj[:lang])
         collection = process_collection_by_name(@categories_collection, lang)
-        collection = collection.select{ |model| is_valid_category_model?(model) }
-        return collection
+        collection.select { |model| is_valid_category_model?(model) }
       end
 
       def categories_list(lang = default_locale_obj[:lang], withIndex: true)
@@ -86,38 +86,38 @@ module Middleman
         categories = []
 
         if withIndex == true
-          index_collection = collection.select{ |model| !model[:hide_from_feed] }
+          index_collection = collection.select { |model| !model[:hide_from_feed] }
 
           categories.push({
-            id: @index_category&.downcase,
-            name: @index_category,
-            description: nil,
-            path: @index_path,
-            url_slug: @index_slug,
-            count: index_collection.length,
-            set: index_collection
-          })
+                            id: @index_category&.downcase,
+                            name: @index_category,
+                            description: nil,
+                            path: @index_path,
+                            url_slug: @index_slug,
+                            count: index_collection.length,
+                            set: index_collection
+                          })
         end
 
         categories_collection(lang).each do |category|
-          set = collection.select { |model|
+          set = collection.select do |model|
             # models that have the category id
-            model[@categories_collection.to_sym]&.find{ |model_category| model_category[:id].include?(category[:id]) }
-          }
+            model[@categories_collection.to_sym]&.find { |model_category| model_category[:id].include?(category[:id]) }
+          end
 
           categories.push({
-            id: category[:id],
-            name: category[:name],
-            description: category[:description],
-            _meta: category[:_meta],
-            path: "#{space}/#{category_slug(category)}",
-            url_slug: category_slug(category),
-            count: set.length,
-            set: set
-          })
+                            id: category[:id],
+                            name: category[:name],
+                            description: category[:description],
+                            _meta: category[:_meta],
+                            path: "#{space}/#{category_slug(category)}",
+                            url_slug: category_slug(category),
+                            count: set.length,
+                            set: set
+                          })
         end
 
-        return categories
+        categories
       end
 
       # No pagination or anything on the index page; eg. partners/featured.html
@@ -149,12 +149,12 @@ module Middleman
           # We need a list of resources so we can have prev_page and next_page context.
           page_num = 1
           resources = []
-          while page_num <= total_pages do
+          while page_num <= total_pages
             resources.push(::Middleman::Sitemap::Resource.new(
-              app.sitemap,
-              paginated_path(category[:path], page_num, locale_obj[:id]),
-              file_path
-            ))
+                             app.sitemap,
+                             paginated_path(category[:path], page_num, locale_obj[:id]),
+                             file_path
+                           ))
             page_num += 1
           end
 
@@ -183,26 +183,25 @@ module Middleman
       end
 
       def path_for_proxy(slug, locale_id)
-        return paginated_path(slug, nil, locale_id)
+        paginated_path(slug, nil, locale_id)
       end
 
       def paginated_path(path, page_num = 1, locale_id)
-        base = (locale_id != default_locale_id) ? "#{locale_id}/" : ''
+        base = locale_id != default_locale_id ? "#{locale_id}/" : ''
 
         newPath = "#{base}/#{path}"
-        newPath += "/pages/#{page_num}" if !page_num.nil? && page_num > 1 # only pages > 1 use path/pages/2.html links; else path.html
+        newPath += "/pages/#{page_num}" if !page_num.nil? && page_num > 1
 
         newPath += '.html'
-        newPath = newPath.squeeze('/')
-        return newPath
+        newPath.squeeze('/')
       end
 
       def url_slug(model)
-        return model[:url_slug] || BasicHelper::url_friendly_string(model[@paginated_model_entry.to_sym])
+        model[:url_slug] || BasicHelper.url_friendly_string(model[@paginated_model_entry.to_sym])
       end
 
       def category_slug(model)
-        return model[:url_slug] || BasicHelper::url_friendly_string(model[@categories_model_entry.to_sym])
+        model[:url_slug] || BasicHelper.url_friendly_string(model[@categories_model_entry.to_sym])
       end
 
       def sort_pagination(a, b)
@@ -212,36 +211,37 @@ module Middleman
       end
 
       def has_contentful_data?
-        return app.data.respond_to?(space.to_sym) && !app.data[space.to_sym][@paginated_collection.to_sym].nil? && !app.data[space.to_sym][@categories_collection.to_sym].nil?
+        app.data.respond_to?(space.to_sym) && !app.data[space.to_sym][@paginated_collection.to_sym].nil? && !app.data[space.to_sym][@categories_collection.to_sym].nil?
       end
 
       # Extended by Child Class.
       def is_valid_paginated_model?(model)
-        return model
+        model
       end
 
       # Extended by Child Class.
       def is_valid_category_model?(model)
-        return model
+        model
       end
 
       # This is a helper to return only the default locale (eg. no localization) or the full list, depending on @localize
       def get_locales_array
         return app.data.locales if @localize
-        return [ default_locale_obj ]
+
+        [default_locale_obj]
       end
 
       # The default|get_locale_* are from helpers/middleman/helpers; no way to inject them in as they don't have access to app.
       def default_locale_id
-        return app.config[:default_locale_id]
+        app.config[:default_locale_id]
       end
 
       def default_locale_obj
-        return app.default_locale_obj
+        app.default_locale_obj
       end
 
       def get_locale_obj(locale_id)
-        return app.get_locale_obj(locale_id)
+        app.get_locale_obj(locale_id)
       end
     end
   end

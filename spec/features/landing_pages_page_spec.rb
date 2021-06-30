@@ -1,8 +1,7 @@
 require 'cgi'
 require 'spec_helper'
 
-describe 'Landing Pages Pages', :type => :feature do
-
+describe 'Landing Pages Pages', type: :feature do
   Capybara.app.data.locales.each do |locale|
     it "should load for locale #{locale['id']}" do
       get_landing_pages(locale).each do |landing_page|
@@ -21,11 +20,11 @@ describe 'Landing Pages Pages', :type => :feature do
   private
 
   def expect_campaign_code_cookie(page, landing_page)
-    unless landing_page[:campaign_code_cookie].blank?
+    if landing_page[:campaign_code_cookie].blank?
+      expect(page).not_to have_selector('script#campaign_code_cookie', visible: :all)
+    else
       expect(page).to have_selector('script#campaign_code_cookie', visible: :all)
       expect(page.html).to include(landing_page[:campaign_code_cookie].html_safe)
-    else
-      expect(page).not_to have_selector('script#campaign_code_cookie', visible: :all)
     end
   end
 
@@ -33,7 +32,7 @@ describe 'Landing Pages Pages', :type => :feature do
     expect(page).to have_base_metas
     expect(page).to have_social_metas
     expect(page.title).to start_with(landing_page[:page_title])
-    expect(page.title).to end_with("#{locale[:append_title]}")
+    expect(page.title).to end_with((locale[:append_title]).to_s)
     expect(page).to have_descriptions(landing_page[:meta_description])
   end
 
@@ -100,18 +99,15 @@ describe 'Landing Pages Pages', :type => :feature do
     # left guillemet
     string = string.gsub(/<</, '«')
     # right guillemet
-    string = string.gsub(/>>/, '»')
-
-    string
+    string.gsub(/>>/, '»')
   end
 
   def testable?(string)
     return false unless string
 
     # this could be markdown, we don't test it then
-    return false if string.match(/[\[\]\(\)\*\_\~\-\#\<\>]+/)
+    return false if string.match(/[\[\]()*_~\-\#<>]+/)
 
     true
   end
-
 end

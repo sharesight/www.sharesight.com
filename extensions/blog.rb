@@ -5,7 +5,7 @@ load 'helpers/blog_helper.rb'
 module Middleman
   module Spaces
     class Blog < Base
-      def initialize(app, options_hash={}, &block)
+      def initialize(app, options_hash = {}, &block)
         super
 
         @space = 'blog'
@@ -16,18 +16,18 @@ module Middleman
       end
 
       def url_slug(model)
-        return BlogHelper.url_slug(model)
+        BlogHelper.url_slug(model)
       end
 
       private
 
       # Logical Helpers
       def is_valid_paginated_model?(model)
-        return BlogHelper.is_valid_post?(model)
+        BlogHelper.is_valid_post?(model)
       end
 
       def is_valid_category_model?(model)
-        return BlogHelper.is_valid_category?(model)
+        BlogHelper.is_valid_category?(model)
       end
     end
   end

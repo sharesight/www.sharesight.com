@@ -1,31 +1,31 @@
 require 'spec_helper'
 
-describe 'Landing Pages Middleman Helper', :type => :helper do
+describe 'Landing Pages Middleman Helper', type: :helper do
   before :all do
     @app = Capybara.app
   end
 
-  describe "landing_page_url" do
+  describe 'landing_page_url' do
     # This is a proxy to other tested helpers.
-    it "should return a string" do
+    it 'should return a string' do
       get_landing_pages.each do |landing_page|
         expect(@app.landing_page_url(landing_page)).to be_a(String)
       end
     end
   end
 
-  describe "landing_page_path" do
+  describe 'landing_page_path' do
     # This is a proxy to other tested helpers.
-    it "should return a string" do
-      get_landing_pages().each do |landing_page|
+    it 'should return a string' do
+      get_landing_pages.each do |landing_page|
         expect(@app.landing_page_path(landing_page)).to be_a(String)
       end
     end
   end
 
-  describe "landing_page_slug" do
-    it "should work as expected" do
-      get_landing_pages().each do |landing_page|
+  describe 'landing_page_slug' do
+    it 'should work as expected' do
+      get_landing_pages.each do |landing_page|
         expect(@app.landing_page_slug(landing_page)).to eq(landing_page[:url_slug])
       end
     end
@@ -55,9 +55,9 @@ describe 'Landing Pages Middleman Helper', :type => :helper do
     end
   end
 
-  describe "landing_pages_collection" do
-    it "should be an array of hashes" do
-      data = @app.landing_pages_collection()
+  describe 'landing_pages_collection' do
+    it 'should be an array of hashes' do
+      data = @app.landing_pages_collection
       expect(data).to be_kind_of(Array)
       data.each do |a|
         expect(a).to include(:id)

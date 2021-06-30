@@ -4,23 +4,28 @@ module BlogHelper
   def self.url_slug(post)
     # This is Split out for Testing Purposes.
     return post.url_slug if post&.url_slug&.present?
-    return url_slug_from_title(post&.title)
+
+    url_slug_from_title(post&.title)
   end
 
   def self.url_slug_from_title(title)
     # Using this original version for SEO purposes – don't want to update urls to new ones.
-    return title&.to_s.strip.downcase.urlize.gsub('--', '-')
+    title&.to_s.strip.downcase.urlize.gsub('--', '-')
   end
 
   def self.is_valid_post?(post)
-    return !!(
-      post && !post[:author].blank? && !post[:title].blank? && !post[:featured_image].blank? && !self.url_slug(post).empty?
-    ) rescue false
+    !!(
+    post && !post[:author].blank? && !post[:title].blank? && !post[:featured_image].blank? && !url_slug(post).empty?
+  )
+  rescue StandardError
+    false
   end
 
   def self.is_valid_category?(category)
-    return !!(
-      category && !category[:name].blank?
-    ) rescue false
+    !!(
+    category && !category[:name].blank?
+  )
+  rescue StandardError
+    false
   end
 end
