@@ -13,8 +13,8 @@ const {
   handler,
 } = require('./localizationLambda.js');
 
-const codes = ['global', 'au', 'ca', 'nz', 'gb', 'uk'];
-const badCodes = ['us', 'EU', 'NZD', 'aud', 'ie', '1'];
+const codes = ['global', 'au', 'ca', 'nz', 'gb', 'uk', 'us'];
+const badCodes = ['EU', 'NZD', 'aud', 'ie', '1'];
 
 // account for gb
 const getCode = (code) => {
@@ -165,7 +165,6 @@ describe('localizationLambda', () => {
     });
 
     test('should return undefined when unknown', () => {
-      expect(getCountryCode('US')).toEqual(undefined);
       expect(getCountryCode('EU')).toEqual(undefined);
       expect(getCountryCode(1)).toEqual(undefined);
       expect(getCountryCode({})).toEqual(undefined);
@@ -183,7 +182,6 @@ describe('localizationLambda', () => {
     });
 
     test('should return undefined when country code is unknown', () => {
-      expect(getPathCountryCode('/US')).toEqual(undefined);
       expect(getPathCountryCode('/EU/')).toEqual(undefined);
       expect(getPathCountryCode('/nz1/something')).toEqual(undefined);
       expect(getPathCountryCode('/no-locale')).toEqual(undefined);
@@ -251,7 +249,7 @@ describe('localizationLambda', () => {
           { value: `sharesight_country; country=au;` },
           { value: `sharesight_country;=ca;` }, // does splits on semi-colons
           { value: `sharesight_country=;;;; au=ca` },
-          { value: `sharesight_country=us` }, // first legit response, but not valid
+          { value: `sharesight_country=es` }, // first legit response, but not valid
           { value: `;;;ca;; sharesight_country=nz ;;;` }, // first valid response, this is the expectation!
           { value: `sharesight_country=uk` },
           { value: `sharesight_country=ca` },
