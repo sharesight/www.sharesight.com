@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Blog Helper', type: :helper do
@@ -38,7 +40,7 @@ describe 'Blog Helper', type: :helper do
     end
 
     it 'should return the correct url when a url_slug is not provided' do
-      @posts.select { |post| !post.url_slug&.present? }.each do |post|
+      @posts.reject { |post| post.url_slug&.present? }.each do |post|
         expect(BlogHelper.url_slug(post)).to eq(BlogHelper.url_slug_from_title(post[:title]))
       end
     end

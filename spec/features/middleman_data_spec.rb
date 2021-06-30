@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 # This tests that the auto-generated portion of the spec matches what we expect it to!
@@ -17,14 +19,14 @@ describe 'Middleman Data', type: :feature do
   end
 
   it 'should have expected locales' do
-    expect(locales.map { |x| x.id }).to include('global', 'au', 'ca', 'nz', 'uk')
+    expect(locales.map(&:id)).to include('global', 'au', 'ca', 'nz', 'uk')
   end
 
   it 'should have expected locale paths' do
-    expect(locales.map { |x| x.path }).to include('/', '/au/', '/ca/', '/nz/', '/uk/')
+    expect(locales.map(&:path)).to include('/', '/au/', '/ca/', '/nz/', '/uk/')
   end
 
   it 'should have expected languages' do
-    expect(locales.map { |x| x.lang }).to include('en', 'en-AU', 'en-CA', 'en-NZ', 'en-GB')
+    expect(locales.map(&:lang)).to include('en', 'en-AU', 'en-CA', 'en-NZ', 'en-GB')
   end
 end

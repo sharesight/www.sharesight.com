@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rack'
 require 'rack/contrib/try_static'
 require 'rack-zippy'

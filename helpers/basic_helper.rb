@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BasicHelper
   # Converts "Sharesight & Xero Are Magical!" => "sharesight-xero-are-magical!"
   # NOTE: Must keep the same formatting as we used to – no replacing !@#$%^&*()… as that could break older posts?

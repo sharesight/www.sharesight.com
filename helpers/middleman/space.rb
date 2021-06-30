@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 load File.expand_path('./page.rb', __dir__)
 
 module MiddlemanSpaceHelpers

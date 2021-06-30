@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module MiddlemanLocaleHelpers
   # Locale Helpers
   def default_locale_id
@@ -31,7 +33,7 @@ module MiddlemanLocaleHelpers
     locale_id = locale_id&.downcase
 
     locale_obj = data.locales.find { |x| x[:id] == locale_id }
-    raise Exception, "Missing locale data for #{locale_id}." if locale_obj.nil? || locale_obj[:id].nil?
+    raise StandardError, "Missing locale data for #{locale_id}." if locale_obj.nil? || locale_obj[:id].nil?
 
     locale_obj || {} # default to an empty hash
   end

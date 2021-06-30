@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Space Middleman Helper', type: :helper do
@@ -18,13 +20,13 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be Blog on the first valid post' do
       post = get_blog_posts(order: :latest_first, limit: 10).find { |model| model[:title] }
-      visit '/blog/' + @app.post_url(post)
+      visit "/blog/#{@app.post_url(post)}"
       expect(@app.is_category_page?).to eq(false)
     end
 
     it 'should be true on the first blog category' do
       category = get_blog_categories.find { |model| model[:name] }
-      visit '/blog/' + @app.url_friendly_string(category[:name])
+      visit "/blog/#{@app.url_friendly_string(category[:name])}"
       expect(@app.is_category_page?).to eq(true)
     end
 
@@ -47,7 +49,7 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be true on the first partner category' do
       category = get_partners_categories.find { |model| model[:name] }
-      visit '/partners/' + @app.url_friendly_string(category[:name])
+      visit "/partners/#{@app.url_friendly_string(category[:name])}"
       expect(@app.is_category_page?).to eq(true)
     end
   end
@@ -65,13 +67,13 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be Blog on the first valid post' do
       post = get_blog_posts(order: :latest_first, limit: 10).find { |model| model[:title] }
-      visit '/blog/' + @app.post_url(post)
+      visit "/blog/#{@app.post_url(post)}"
       expect(@app.space_category_title).to eq('Blog')
     end
 
     it 'should be the Category Name on the first blog category' do
       category = get_blog_categories.find { |model| model[:name] }
-      visit '/blog/' + @app.url_friendly_string(category[:name])
+      visit "/blog/#{@app.url_friendly_string(category[:name])}"
       expect(@app.space_category_title).to eq(category[:name])
     end
 
@@ -94,7 +96,7 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be the Category Name on the first partner category' do
       category = get_partners_categories.find { |model| model[:name] }
-      visit '/partners/' + @app.url_friendly_string(category[:name])
+      visit "/partners/#{@app.url_friendly_string(category[:name])}"
       expect(@app.space_category_title).to eq("#{category[:name]} Partners")
     end
   end
@@ -107,13 +109,13 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be correct on the first valid post' do
       post = get_blog_posts(order: :latest_first, limit: 10).find { |model| model[:title] }
-      visit '/blog/' + @app.post_url(post)
+      visit "/blog/#{@app.post_url(post)}"
       expect(@app.space_category_page_title).to eq('Sharesight Blog')
     end
 
     it 'should include the Category Name on the first blog category' do
       category = get_blog_categories.find { |model| model[:name] }
-      visit '/blog/' + @app.url_friendly_string(category[:name])
+      visit "/blog/#{@app.url_friendly_string(category[:name])}"
       expect(@app.space_category_page_title).to eq("#{category[:name]} | Sharesight")
     end
 
@@ -136,7 +138,7 @@ describe 'Space Middleman Helper', type: :helper do
     it 'should include the Category Name on the first partner category' do
       locales.each do |locale|
         category = get_partners_categories.find { |model| model[:name] }
-        visit localize_path('partners/' + @app.url_friendly_string(category[:name]), locale_id: locale[:id])
+        visit localize_path("partners/#{@app.url_friendly_string(category[:name])}", locale_id: locale[:id])
         expect(@app.space_category_page_title).to eq("#{category[:name]} Partners | #{locale[:append_title]}")
       end
     end
@@ -150,13 +152,13 @@ describe 'Space Middleman Helper', type: :helper do
 
     it 'should be correct on the first valid post' do
       post = get_blog_posts(order: :latest_first, limit: 10).find { |model| model[:title] }
-      visit '/blog/' + @app.post_url(post)
+      visit "/blog/#{@app.post_url(post)}"
       expect(@app.base_space_category_page_title).to eq('Sharesight Blog')
     end
 
     it 'should include the Category Name on the first blog category' do
       category = get_blog_categories.find { |model| model[:name] }
-      visit '/blog/' + @app.url_friendly_string(category[:name])
+      visit "/blog/#{@app.url_friendly_string(category[:name])}"
       expect(@app.base_space_category_page_title).to eq("#{category[:name]} | Sharesight")
     end
 
@@ -179,7 +181,7 @@ describe 'Space Middleman Helper', type: :helper do
     it 'should include the Category Name on the first partner category' do
       locales.each do |locale|
         category = get_partners_categories.find { |model| model[:name] }
-        visit localize_path('partners/' + @app.url_friendly_string(category[:name]), locale_id: locale[:id])
+        visit localize_path("partners/#{@app.url_friendly_string(category[:name])}", locale_id: locale[:id])
         expect(@app.base_space_category_page_title).to eq("#{category[:name]} Partners | #{default_locale_obj[:append_title]}")
       end
     end

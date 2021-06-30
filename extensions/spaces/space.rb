@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'middleman-core'
 require 'contentful_middleman/helpers'
 require 'date'
@@ -86,7 +88,7 @@ module Middleman
         categories = []
 
         if withIndex == true
-          index_collection = collection.select { |model| !model[:hide_from_feed] }
+          index_collection = collection.reject { |model| model[:hide_from_feed] }
 
           categories.push({
                             id: @index_category&.downcase,
@@ -171,7 +173,7 @@ module Middleman
               current_page: page_num,
               index_page: resources[0],
               next_page: index < total_pages ? resources[index + 1] : nil,
-              prev_page: index > 0 ? resources[index - 1] : nil
+              prev_page: index.positive? ? resources[index - 1] : nil
             )
 
             locals = { category: category, pagination: pagination, locale_obj: locale_obj }

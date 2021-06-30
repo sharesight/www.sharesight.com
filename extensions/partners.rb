@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'middleman-core'
 load 'extensions/spaces/space.rb'
 load 'helpers/partner_helper.rb'

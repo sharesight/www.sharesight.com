@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Page Helper', type: :helper do
@@ -271,7 +273,7 @@ describe 'Page Helper', type: :helper do
   context 'is_valid_locale_id_for_page?' do
     it 'should match expectations' do
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('blog', locale[:id])).to be !!(locale[:id] == 'global')
+        expect(@app.is_valid_locale_id_for_page?('blog', locale[:id])).to be !(locale[:id] == 'global').nil?
       end
 
       locales.each do |locale|
@@ -291,7 +293,7 @@ describe 'Page Helper', type: :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
+        expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !(locale[:id] == 'global').nil?
       end
 
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ostruct'
 load File.expand_path('../partner_helper.rb', __dir__)
 
@@ -43,7 +45,7 @@ module MiddlemanPartnersHelpers
   def partners_categories(lang = default_locale_obj[:lang], withIndex: false)
     @partners_categories ||= {}
     @partners_categories[lang] ||= {}
-    @partners_categories[lang][!!withIndex] ||= begin
+    @partners_categories[lang][!withIndex.nil?] ||= begin
       array = []
       collection = partners_collection(lang)
       categories = categories_collection(lang)

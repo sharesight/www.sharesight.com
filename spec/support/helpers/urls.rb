@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CapybaraUrlHelpers
   def absolute_url(append = '/', base_url: Capybara.app.config[:base_url])
     Capybara.app.absolute_url(append, base_url: base_url)

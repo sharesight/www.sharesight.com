@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CapybaraBaseHelpers
   def get_meta(name, name_key: 'name', return_key: :content)
     get_head('meta', args: { name_key => name }, return_key: return_key)
@@ -13,7 +15,7 @@ module CapybaraBaseHelpers
   def generate_xpath(tagname, text: nil, args: {}, contains: {}, ends_with: {}, starts_with: {}, ignore: nil, visible: true)
     xpath = tagname.to_s
 
-    xpath += "[text()=\"#{text}\"]" if !('text' == ignore) && (text && text.is_a?(String))
+    xpath += "[text()=\"#{text}\"]" if ignore != 'text' && text.is_a?(String)
 
     args.each do |key, value|
       xpath += "[@#{key}=\"#{value}\"]" unless key&.to_sym == ignore&.to_sym
@@ -24,9 +26,7 @@ module CapybaraBaseHelpers
     end
 
     ends_with.each do |key, value| # ends-with is XPath 2.0
-      unless key&.to_sym == ignore&.to_sym
-        xpath += "[substring(@#{key}, string-length(@#{key}) - string-length(\"#{value}\") + 1) = \"#{value}\"]"
-      end
+      xpath += "[substring(@#{key}, string-length(@#{key}) - string-length(\"#{value}\") + 1) = \"#{value}\"]" unless key&.to_sym == ignore&.to_sym
     end
 
     starts_with.each do |key, value|

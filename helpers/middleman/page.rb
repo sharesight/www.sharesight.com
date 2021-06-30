@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 load File.expand_path('./locale.rb', __dir__)
 load File.expand_path('./url.rb', __dir__)
 

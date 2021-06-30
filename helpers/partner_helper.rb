@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 module PartnerHelper
   def self.is_valid_partner?(model)
-    !!(
+    !(
     model && !model[:name].blank? && !model[:url_slug].blank?
-  )
+  ).nil?
   rescue StandardError
     false
   end
 
   def self.is_valid_category?(model)
-    !!(
+    !(
     model && !model[:name].blank? && !model[:url_slug].blank?
-  )
+  ).nil?
   rescue StandardError
     false
   end

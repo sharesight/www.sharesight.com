@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationConfig
   APP_ENV = 'staging'
   BASE_URL = 'https://staging-www.sharesight.com'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 # NOTE: Really can't use actual content here as they can be invalid (eg. drafts).

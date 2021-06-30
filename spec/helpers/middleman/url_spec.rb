@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'URL Middleman Helper', type: :helper do
@@ -17,11 +19,11 @@ describe 'URL Middleman Helper', type: :helper do
     it 'should be an absolute url' do
       skip 'This does not work – Middleman does not seem to update the `current_page`..  The base function is tested, however.'
 
-      visit @url + '/blog/anything'
-      expect(Capybara.app.canonical_url).to eq(@url + '/blog/anything/')
+      visit "#{@url}/blog/anything"
+      expect(Capybara.app.canonical_url).to eq("#{@url}/blog/anything/")
 
-      visit @url + '/nz/partners'
-      expect(Capybara.app.canonical_url).to eq(@url + '/nz/partners/')
+      visit "#{@url}/nz/partners"
+      expect(Capybara.app.canonical_url).to eq("#{@url}/nz/partners/")
     end
   end
 
@@ -29,25 +31,25 @@ describe 'URL Middleman Helper', type: :helper do
     it 'should be the current absolute url' do
       skip 'This does not work – Middleman does not seem to update the `current_page`..'
 
-      visit @url + '/'
+      visit "#{@url}/"
       expect(Capybara.app.current_global_url).to eq(@url)
-      visit @url + '/nz/partners'
-      expect(Capybara.app.current_global_url).to eq(@url + '/partners/')
+      visit "#{@url}/nz/partners"
+      expect(Capybara.app.current_global_url).to eq("#{@url}/partners/")
     end
   end
 
   context 'absolute_url' do
     it 'should return if already providing a full url' do
       expect(@app.absolute_url(@url)).to eq(@url)
-      expect(@app.absolute_url(@url + '/index.html')).to eq(@url + '/index.html')
+      expect(@app.absolute_url("#{@url}/index.html")).to eq("#{@url}/index.html")
     end
 
     it 'should strip out .html' do
-      expect(@app.absolute_url('something.html')).to eq(@url + '/something/')
+      expect(@app.absolute_url('something.html')).to eq("#{@url}/something/")
     end
 
     it 'should strip out index' do
-      expect(@app.absolute_url('blog/index')).to eq(@url + '/blog/')
+      expect(@app.absolute_url('blog/index')).to eq("#{@url}/blog/")
     end
 
     it 'should return no trailing slash when no path' do
@@ -56,7 +58,7 @@ describe 'URL Middleman Helper', type: :helper do
 
     it 'should return an absolute url with a different base' do
       expect(@app.absolute_url('', base_url: @external_url)).to eq(@external_url)
-      expect(@app.absolute_url('/nz/faq', base_url: @external_url)).to eq(@external_url + '/nz/faq/')
+      expect(@app.absolute_url('/nz/faq', base_url: @external_url)).to eq("#{@external_url}/nz/faq/")
     end
   end
 
@@ -94,12 +96,12 @@ describe 'URL Middleman Helper', type: :helper do
   context 'base_url' do
     it 'should match our expectations' do
       [
-        ['/xero', @url + '/xero/'],
-        ['/ca//xero', @url + '/xero/'],
-        ['/nz/xero/', @url + '/xero/'],
-        ['/partners/all.html', @url + '/partners/all/'],
-        ['/nz/partners/all', @url + '/partners/all/'],
-        ['/ca/partners/all', @external_url + '/partners/all/', @external_url],
+        ['/xero', "#{@url}/xero/"],
+        ['/ca//xero', "#{@url}/xero/"],
+        ['/nz/xero/', "#{@url}/xero/"],
+        ['/partners/all.html', "#{@url}/partners/all/"],
+        ['/nz/partners/all', "#{@url}/partners/all/"],
+        ['/ca/partners/all', "#{@external_url}/partners/all/", @external_url],
         ['/ca/', @url],
         ['/ca', @external_url, @external_url],
         ['index.html', @url],
@@ -145,17 +147,17 @@ describe 'URL Middleman Helper', type: :helper do
   context 'localize_url' do
     it 'should match our expectations' do
       [
-        ['/xero.html', @url + '/xero/'],
-        ['/ca//xero', @url + '/nz/xero/', 'nz'],
-        ['/ca//xero', @url + '/ca/xero/', 'ca'],
-        ['/nz/xero/', @url + '/nz/xero/', 'nz'],
-        ['/partners/all.html', @url + '/partners/all/'],
-        ['/partners//all.html', @url + '/ca/partners/all/', 'ca'],
-        ['/nz/partners/all', @url + '/uk/partners/all/', 'uk'],
-        ['/ca/partners/all', @external_url + '/nz/partners/all/', 'nz', @external_url],
+        ['/xero.html', "#{@url}/xero/"],
+        ['/ca//xero', "#{@url}/nz/xero/", 'nz'],
+        ['/ca//xero', "#{@url}/ca/xero/", 'ca'],
+        ['/nz/xero/', "#{@url}/nz/xero/", 'nz'],
+        ['/partners/all.html', "#{@url}/partners/all/"],
+        ['/partners//all.html', "#{@url}/ca/partners/all/", 'ca'],
+        ['/nz/partners/all', "#{@url}/uk/partners/all/", 'uk'],
+        ['/ca/partners/all', "#{@external_url}/nz/partners/all/", 'nz', @external_url],
         ['/ca/', @url],
-        ['/ca', @external_url + '/nz/', 'nz', @external_url],
-        ['/', @url + '/nz/', 'nz']
+        ['/ca', "#{@external_url}/nz/", 'nz', @external_url],
+        ['/', "#{@url}/nz/", 'nz']
       ].each do |arr|
         assume = arr[0]
         expect = arr[1]

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'cgi'
 
 module CapybaraBlogHelpers
@@ -49,8 +51,8 @@ module CapybaraBlogHelpers
                            false
                          end
                        else
-                         posts.select do |model|
-                           !model[:hide_from_feed]
+                         posts.reject do |model|
+                           model[:hide_from_feed]
                          end
                        end
 

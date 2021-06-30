@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'uri/http'
 
 load File.expand_path('./locale.rb', __dir__)
@@ -61,9 +63,7 @@ module MiddlemanUrlHelpers
     locale_id = locale_id.downcase if locale_id
     page = page_from_path(append)
 
-    if append&.match(%r{\A(https?:)?//})
-      raise ArgumentError, "Attempted to localize a url that already has a scheme: #{append}."
-    end
+    raise ArgumentError, "Attempted to localize a url that already has a scheme: #{append}." if append&.match(%r{\A(https?:)?//})
 
     if (base_url == config[:base_url] || base_url == '') && is_valid_page?(page) && !is_valid_locale_id_for_page?(page,
                                                                                                                   locale_id)
@@ -103,7 +103,7 @@ module MiddlemanUrlHelpers
     path = strip_locale_from_path(path)
     split = path&.split('/') || []
 
-    return 'index' if split.length == 0 # this is with locale removed
+    return 'index' if split.length.zero? # this is with locale removed
 
     i = 0
     while i < split.length

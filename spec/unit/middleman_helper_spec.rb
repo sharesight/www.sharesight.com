@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 # This tests that the middleman helpers (not testable directly) work as expected.

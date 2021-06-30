@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ostruct'
 load File.expand_path('../blog_helper.rb', __dir__)
 

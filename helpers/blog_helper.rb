@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BlogHelper
   # Use url_friendly_string for non-posts; may be able to phase this out..
   # Try to switch over to super.url_slug, if possible!
@@ -14,17 +16,17 @@ module BlogHelper
   end
 
   def self.is_valid_post?(post)
-    !!(
+    !(
     post && !post[:author].blank? && !post[:title].blank? && !post[:featured_image].blank? && !url_slug(post).empty?
-  )
+  ).nil?
   rescue StandardError
     false
   end
 
   def self.is_valid_category?(category)
-    !!(
+    !(
     category && !category[:name].blank?
-  )
+  ).nil?
   rescue StandardError
     false
   end

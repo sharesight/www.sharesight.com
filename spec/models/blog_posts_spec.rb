@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Blog Posts', type: :model do
@@ -34,7 +36,7 @@ describe 'Blog Posts', type: :model do
 
   it 'should have the required schema fields' do
     schema = @collection.map { |x| x.to_h.keys }.flatten.uniq # list of all keys in all models
-    schema = schema.map { |x| x.to_sym }
+    schema = schema.map(&:to_sym)
 
     expect(schema).to include(
       :id, :_meta, :title, :content, :author, :categories, :created_at,

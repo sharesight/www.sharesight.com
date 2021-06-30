@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Build Sanity', type: :feature do
@@ -66,7 +68,7 @@ describe 'Build Sanity', type: :feature do
 
   it 'should not include git conflict markers in source' do # checks for <<<<<<< (7 of those)
     ignore_files = ['favicon.ico', '.woff', '.jpg', '.png', '.mp4', '.webm', '.mov'] # ignore non-texty files
-    Find.find(File.expand_path(File.dirname(__FILE__) + '/../../source')) do |path|
+    Find.find(File.expand_path("#{File.dirname(__FILE__)}/../../source")) do |path|
       next unless ignore_files.none? { |ignore| path.match(ignore) } && FileTest.file?(path)
 
       begin

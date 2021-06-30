@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CapybaraLocaleHelpers
   def locales
     Capybara.app.data.locales

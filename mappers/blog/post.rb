@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This normalizes the data coming from contentful.
 class BlogPostMapper < ContentfulMiddleman::Mapper::Base
   def map(context, entry)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Middleman
   class Routing < Extension
     def initialize(app, options_hash = {}, &block)

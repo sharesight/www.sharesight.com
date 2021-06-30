@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 load File.expand_path('./locale.rb', __dir__)
 load File.expand_path('./page.rb', __dir__)
 
@@ -61,7 +63,7 @@ module MiddlemanMenuHelpers
                   icon_hover: 'grid-four-fill',
                   label: 'Supported Investments',
                   title: "Supported Investments | #{locale_obj[:append_title]}",
-                  href: localize_url('faq', locale_id: locale_obj[:id]) + '#what-can-i-track-in-sharesight'
+                  href: "#{localize_url('faq', locale_id: locale_obj[:id])}#what-can-i-track-in-sharesight"
                 },
                 {
                   icon: 'globe-hemisphere-west',

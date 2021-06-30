@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This normalizes the data coming from contentful.  It's more of a Proof of Concept.
 
 # WARNING: localized fields require a localize mapping!

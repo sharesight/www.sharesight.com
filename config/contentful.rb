@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mappers/blog/post'
 require 'mappers/partners/partner'
 require 'mappers/landing-pages/page'
@@ -13,7 +15,7 @@ module ContentfulConfig
     SPACE_ID = '91sm3pewxzag'
     ACCESS_TOKEN = ENV['CONTENTFUL_BLOG_ACCESS_TOKEN'] # For Published Content
     PREVIEW_ACCESS_TOKEN = ENV['CONTENTFUL_BLOG_PREVIEW_TOKEN'] # For All, Unpublished: Draft Content
-    CDA_QUERY = {}
+    CDA_QUERY = {}.freeze
     ALL_ENTRIES = true
     PAGINATION_SIZE = 500 # This must result in an API response of <7mb, else the gem or API throws an error.
 
@@ -21,7 +23,7 @@ module ContentfulConfig
       { name: 'post', mapper: ::BlogPostMapper },
       'category',
       'author'
-    ]
+    ].freeze
   end
 
   module PartnersSpace
@@ -29,14 +31,14 @@ module ContentfulConfig
     SPACE_ID = 'rafbawofr5bl'
     ACCESS_TOKEN = ENV['CONTENTFUL_PARTNERS_ACCESS_TOKEN'] # For Published Content
     PREVIEW_ACCESS_TOKEN = ENV['CONTENTFUL_PARTNERS_PREVIEW_TOKEN'] # For All, Unpublished: Draft Content
-    CDA_QUERY = { locale: '*' }
+    CDA_QUERY = { locale: '*' }.freeze
     ALL_ENTRIES = true
     PAGINATION_SIZE = 500
 
     SCHEMAS = [
       { name: 'partner', mapper: ::PartnersPartnerMapper },
       'category'
-    ]
+    ].freeze
   end
 
   module LandingPagesSpace
@@ -44,7 +46,7 @@ module ContentfulConfig
     SPACE_ID = 'cbgsdqa84fjb'
     ACCESS_TOKEN = ENV['CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN'] # For Published Content
     PREVIEW_ACCESS_TOKEN = ENV['CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN'] # For All, Unpublished: Draft Content
-    CDA_QUERY = { locale: '*' }
+    CDA_QUERY = { locale: '*' }.freeze
     ALL_ENTRIES = true
 
     # TODO: This needs to be lowered, else we will reach the limit of ~7mb of data download eventually.
@@ -59,6 +61,6 @@ module ContentfulConfig
       'section',
       'button',
       'content'
-    ]
+    ].freeze
   end
 end

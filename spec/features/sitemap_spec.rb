@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'Sitemap', type: :feature do
@@ -149,7 +151,7 @@ describe 'Sitemap', type: :feature do
       visit localize_path('sitemap.xml', locale_id: locale[:id])
 
       links = []
-      links << all('//urlset/url/loc').map { |xpath| xpath.text }
+      links << all('//urlset/url/loc').map(&:text)
       links << all('//urlset/url/link').map { |xpath| xpath['href'] }
       links = links.flatten.uniq
 

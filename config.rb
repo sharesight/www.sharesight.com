@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Configuration
 require 'config/contentful'
 
@@ -36,7 +38,7 @@ config[:google_store_url] = 'https://play.google.com/store/apps/details?id=com.s
 config[:default_locale_id] = data.locales.find do |x|
   x[:id] == 'global'
 end [:id]
-raise Exception, 'Missing the default locale, should be `global`.' unless config[:default_locale_id]
+raise StandardError, 'Missing the default locale, should be `global`.' unless config[:default_locale_id]
 
 require "config/environments/#{config[:env_name]}" # ApplicationConfig comes from this.
 config[:base_url] = ApplicationConfig::BASE_URL
@@ -96,7 +98,7 @@ activate :routing
         schema = schema[:contentful_schema_id] || name
       end
 
-      raise Exception, 'Invalid schema for Contentful.' if !name || !schema
+      raise StandardError, 'Invalid schema for Contentful.' if !name || !schema
 
       memo[name.pluralize(2)] = { id: schema, mapper: mapper }
       # return

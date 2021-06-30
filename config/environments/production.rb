@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationConfig
   APP_ENV = 'production'
   BASE_URL = 'https://www.sharesight.com'
