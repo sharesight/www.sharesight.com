@@ -37,7 +37,7 @@
       },
       {
         "page": "partners",
-        "page_title": "Sharesight US Partners",
+        "page_title": "Sharesight Partners",
         "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
         "sitemap_priority": 0.8,
@@ -586,7 +586,7 @@
       },
       {
         "page": "partners",
-        "page_title": "Sharesight Partners",
+        "page_title": "Sharesight US Partners",
         "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.8,
@@ -595,7 +595,7 @@
       {
         "page": "partners/all",
         "page_title": "All Sharesight Partners",
-        "page_description": "Sharesight’s full list of ecosystem partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
+        "page_description": "Sharesight’s full list of ecosystem partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo-advisors.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.8,
         "proxy": false
@@ -665,7 +665,7 @@
       {
         "page": "pro",
         "page_title": "Sharesight Pro US",
-        "page_description": "Cutting-edge online stock portfolio management software for US accountants & financial advisers. Track prices, dividends, performance and tax!",
+        "page_description": "Cutting-edge online stock portfolio management software for US accountants & financial advisors. Track prices, dividends, performance and tax!",
         "tagline": "A comprehensive investment portfolio tracker and reporting tool for US financial professionals.",
         "sitemap_priority": 0.8
       }
