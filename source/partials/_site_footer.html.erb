@@ -120,9 +120,9 @@
 
       <%#
         These regional links are a test to see if these links will improve our index rate of non-global pages.
-        We only grab the first 5 because we may eventually add 20+ and this would be ugly.
+        We only grab the first 6 because we may eventually add 20+ and this would be ugly.
       %>
-      <% data.locales.first(5).each do |locale| %>
+      <% data.locales.first(6).each do |locale| %>
         <li role="menuitem">
           <a href="<%= localize_url(locale_id: locale[:id]) %>" class="footer__link" title="Share Portfolio Tracker | <%= locale[:name] %>" data-no-localize>
             <%= locale[:name] %>

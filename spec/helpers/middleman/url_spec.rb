@@ -155,15 +155,17 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/ca/partners/all', @external_url + '/nz/partners/all/', 'nz', @external_url],
         ['/ca/', @url],
         ['/ca', @external_url + '/nz/', 'nz', @external_url],
-        ['/', @url + '/nz/', 'nz']
+        ['/', @url + '/nz/', 'nz'],
+        ['path', 'https://something.without.slash/path/', nil, 'https://something.without.slash'],
+        ['', 'https://help.sharesight.com/', 'us', 'https://help.sharesight.com/'], # should not attach :us locale to help-site (US doens't exist yet)
       ].each do |arr|
-        assume = arr[0]
+        append = arr[0]
         expect = arr[1]
         locale_id = arr[2]
         locale_id ||= default_locale_id
         url = arr[3]
         url ||= @url
-        expect(@app.localize_url(assume, locale_id: locale_id, base_url: url)).to eq(expect)
+        expect(@app.localize_url(append, locale_id: locale_id, base_url: url)).to eq(expect)
       end
     end
   end

@@ -1,7 +1,7 @@
 'use strict';
 
 /*
- * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v10.x
+ * NOTE: This is an ORIGIN RESPONSE Lambda running on Node v14.x
  * It takes a request + response and returns a response.
  * When we should redirect, the response is a 302 in the case of "We found the proper locale for you", in all other cases it simply returns the response you were meant to have.
  * This lambda function includes `strict-transport-security` headers to all responses.
@@ -10,8 +10,8 @@
  * If you are viewing this file inside of AWS, this code comes from the `lambda` folder on https://github.com/sharesight/www.sharesight.com/.
  */
 
-const version = '9';
-const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk' };
+const version = '10';
+const validCountryCodes = { global: '', au: 'au', ca: 'ca', nz: 'nz', gb: 'uk', uk: 'uk', us: 'us' };
 const validCountryCodesLength = Object.keys(validCountryCodes).length; // cache this
 
 // dontProcess turns off all processing (ultimately, localization)

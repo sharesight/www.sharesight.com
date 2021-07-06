@@ -108,6 +108,8 @@ const localization = {
       ].map(path => Array.from(document.querySelectorAll(`a[href^="${path}"]`)))
     ).forEach((element) => {
       if (element.hasAttribute('data-no-localize')) return; // don't localize urls with no-localize
+      if (!urlHelper.shouldLocalizeUrl(element.href, localeId)) return; // don't localize
+
       element.pathname = urlHelper.localizePath(element.pathname, localeId)
     })
   },

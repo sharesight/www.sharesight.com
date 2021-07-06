@@ -21,7 +21,7 @@
 		"author": "Peter Small",
 		"image_id": "peter_small",
 		"company": "Fluid Financial Planning, Australia",
-    "visible": ["nz", "au", "ca", "uk", "global"]
+    "visible": ["nz", "au", "ca", "uk", "us", "global"]
 	},
   {
     "id": "andrew_haynes",
@@ -29,7 +29,7 @@
     "author": "Andrew Haynes",
     "image_id": "andrew_haynes",
     "company": "Growthwise, Australia",
-    "visible": ["nz", "au", "ca", "uk", "global"]
+    "visible": ["nz", "au", "ca", "uk", "us", "global"]
   },
   {
     "id": "peter_naude",
@@ -37,7 +37,7 @@
     "author": "Peter Naude",
     "image_id": "peter_naude",
     "company": "Outsourced Resource Pty Ltd, Australia",
-    "visible": ["nz", "au", "ca", "uk", "global"]
+    "visible": ["nz", "au", "ca", "uk", "us", "global"]
   },
 	{
     "id": "martin_dowse",
@@ -45,6 +45,6 @@
 		"author": "Martin Dowse",
 		"image_id": "martin_dowse",
 		"company": "Dowse Murray Chartered Accountants, New Zealand",
-    "visible": ["nz", "au", "ca", "uk", "global"]
+    "visible": ["nz", "au", "ca", "uk", "us", "global"]
 	}
 ]

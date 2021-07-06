@@ -42,6 +42,7 @@ describe 'Footer', type: :feature do
       ["Canada", base_url('/ca/')],
       ["New Zealand", base_url('/nz/')],
       ["United Kingdom", base_url('/uk/')],
+      ["United States", base_url('/us/')],
     ]
 
     expect(links.length).to eq(expected_links.length)
