@@ -41,9 +41,9 @@
 
     <% data.locales.each do |locale| %>
       <% if locale[:id] == default_locale_id %>
-        <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" />
+        <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="x-default" />
       <% end %>
-      <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" />
+      <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
     <%end%>
   </url>
 <% end %>
@@ -59,9 +59,9 @@
 
     <% data.locales.each do |locale| %>
       <% if locale[:id] == default_locale_id %>
-        <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" />
+        <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="x-default" />
       <% end %>
-      <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" />
+      <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
     <%end%>
   </url>
 <%end%>
@@ -78,9 +78,9 @@
 
     <% data.locales.each do |locale| %>
       <% if locale[:id] == default_locale_id %>
-        <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" />
+        <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" hreflang="x-default" />
       <% end %>
-      <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" />
+      <xhtml:link rel="alternate" href="<%= landing_page_url(landing_page, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
     <%end%>
   </url>
 <%end%>
@@ -97,9 +97,9 @@
     <% alternative_locales.each do |locale| %>
       <%# Set a default language alternate link in addition to the en-* versions we have %>
       <% if locale[:id] == default_locale_id %>
-        <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>"/>
+        <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>" hreflang="x-default" />
       <% end %>
-      <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>"/>
+      <xhtml:link rel="alternate" href="<%= localize_url(page_data.page, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
     <% end %>
   </url>
 <% end %>
