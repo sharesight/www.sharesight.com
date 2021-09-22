@@ -6,11 +6,9 @@
 //= require "./helpers/url"
 
 const localization = {
-  requestedLocaleId: 'global',
-  setLocaleId: false,
+  overrideCurrentLocaleId: undefined,
 
   onLoad() {
-    this.initializeRequestedLocaleId();
     this.ensureCookie();
     this.initializeRegionSelector();
     this.modifyContent();
@@ -79,20 +77,18 @@ const localization = {
   },
 
   setLocale(locale_id, force = false) {
-    if (
-      !locale_id ||
-      typeof locale_id !== 'string' ||
-      !localeHelper.isValidLocaleId(locale_id)
-    ) {
-      locale_id = config.default_locale_id;
+    if (localeHelper.isValidLocaleId(locale_id)) {
+      locale_id = locale_id.toLowerCase();
+
+      // We override if it's a non-global cookie and the user doesn't have a cookie
+      // …or `force=true`
+      const shouldOverride = locale_id !== config.default_locale_id && cookieManager.getCookie().length == 0;
+      if (force || shouldOverride) {
+        this.overrideCurrentLocaleId = locale_id;
+        cookieManager.setCookie(locale_id);
+      }
     }
 
-    locale_id = locale_id.toLowerCase();
-
-    this.setLocaleId = locale_id;
-    if (force || cookieManager.getCookie().length == 0) {
-      cookieManager.setCookie(locale_id);
-    }
     this.modifyContent();
   },
 
@@ -110,10 +106,10 @@ const localization = {
   },
 
   getCurrentLocaleId() {
-    if (this.setLocaleId) {
-      return this.setLocaleId;
+    if (this.overrideCurrentLocaleId) {
+      return this.overrideCurrentLocaleId;
     }
-    // return localeHelper.getCookieLocale();
+
     return urlHelper.getLocalisationFromPath();
   },
 
@@ -146,13 +142,19 @@ const localization = {
     return this.regionSelector;
   },
 
-  initializeRequestedLocaleId() {
-    this.requestedLocaleId = urlHelper.getLocalisationFromPath();
-  },
-
+  /**
+   * Ensure a user's non-global locale cookie is set.
+   * If the user has a cookie or they're on a global path, keep it unset.
+   */
   ensureCookie() {
     if (cookieManager.getCookie().length > 0) return;
-    this.setLocale(this.requestedLocaleId);
+
+    const pathLocaleId = urlHelper.getLocalisationFromPath();
+
+    // Do not set the locale if it's the global locale.
+    if (pathLocaleId && pathLocaleId !== config.default_locale_id) {
+      this.setLocale(pathLocaleId);
+    }
   },
 
   initializeRegionSelector() {
@@ -160,10 +162,13 @@ const localization = {
     const selector = this.getRegionSelectorNode();
     if (!selector || !selector.options || !selector.options.length) return;
 
+    // Modify the Region Selector to have the current cookie value…
     this.setRegionSelectorValue();
-    this.setCookieFromRegionSelector();
 
-    // when it changes, set locale
+    // Then…now that we've set it…set the cookie?  NOTE: This seems a bit cyclical; confused by old code here.
+    this.initializeLocaleCookieFromRegionSelector();
+
+    // When the Region Selector changes, forcibly set the locale cookie and go to that locale.
     selector.onchange = function () {
       self.setLocale(this.value, true);
       self.redirectToLocale(this.value);
@@ -185,9 +190,12 @@ const localization = {
     });
   },
 
-  setCookieFromRegionSelector() {
+  initializeLocaleCookieFromRegionSelector() {
     const selector = this.getRegionSelectorNode();
-    if (selector.value === config.default_locale_id) return; // don't set a global cookie when the page loads
+
+    // don't set a global cookie when the page loads
+    if (!selector.value || selector.value === config.default_locale_id) return;
+
     this.setLocale(selector.value);
   },
 };
