@@ -40,3 +40,17 @@
  * Requesting `/pricing`
     * We determine the user's country via AWS Cloudfront's Country Header and redirect them.
     * Eg. `/pricing` => `/nz/pricing/`
+    * With an override cookie: We redirect to the override, eg. `/au/pricing`.
+
+
+## US Users
+
+_:us: We do not redirect US users by default, but it's still treated as a locale.  This is because everyone has servers in the US and it messes with SEO, SEM, and scrapers of all sorts…_
+
+ * Requesting current locale: `/us/pricing`
+    * We stay there.
+ * Requesting another locale: `/au/pricing`
+    * We stay there.
+ * Requesting `/pricing`
+    * We stay there.  We ignore when AWS Clodufront's Country Header is `us`.
+    * With an override cookie: We redirect to the override, eg. `/us/pricing`.
