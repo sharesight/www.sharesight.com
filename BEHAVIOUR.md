@@ -1,6 +1,6 @@
 # Localization behaviour for the marketing site
 
-**:warning: This document is out of date and may not be maintained as this repo is no longer in development.**
+**:warning: This document may not be maintained as this repo is no longer being developed; it should move elsewhere in the future.**
 
 **Definitions:**
  - An _override cookie_ means `sharesight_country`, wherein a user would override their country to AU even if they are in NZ.
