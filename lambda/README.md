@@ -1,7 +1,9 @@
 # Cloudfront + Lambda for localization and security headers
 
-## WARNING
+## ⚠️ WARNING ⚠️
+**This is currently only used on https://help.sharesight.com.  The new source is at https://github.com/sharesight/static-cloudfront.**
 
+---
 #### AWS May change!
 
 - AWS may not support the latest or LTS Node version.
