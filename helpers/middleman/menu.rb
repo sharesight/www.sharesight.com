@@ -131,7 +131,7 @@ module MiddlemanMenuHelpers
                   label: 'Investors',
                   title: locale_page(page: 'investors', locale_obj: locale_obj)[:page_title],
                   href: localize_url('investors', locale_id: locale_obj[:id]),
-                  description: 'Join **250,000+** investors who track their portfolios with Sharesight.',
+                  description: 'Join **300,000+** investors who track their portfolios with Sharesight.',
                 },
                 # FYI: You can add "child links" here to look like they're nested under this.
                 # This is kept around for future reference.
