@@ -123,19 +123,9 @@ $__logo_height--sm: 110px;
       padding: $gutter;
       background: $background_offset_white;
 
-      @include respond-to(sm, max) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-
       dt, dd {
-        display: inline-block;
+        display: block;
         margin: 0;
-
-        @include respond-to(sm, max) {
-          width: 50%;
-        }
       }
 
       dt {
@@ -147,15 +137,8 @@ $__logo_height--sm: 110px;
           margin-top: $gutter;
 
           @include respond-to(sm, max) {
-            &, & ~ dd {
-              margin-top: $gutter;
-            }
+            margin-top: $gutter/2;
           }
-        }
-
-        @include respond-to(md, min) {
-          display: block;
-          margin-right: 0;
         }
       }
 
