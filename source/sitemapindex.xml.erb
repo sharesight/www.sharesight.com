@@ -2,8 +2,15 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <% data.locales.each do |locale| %>
     <sitemap>
-      <loc><%= localize_url('/sitemap.xml', locale_id: locale[:id] )%></loc>
-      <lastmod><%= Time.now.utc.iso8601 %></lastmod>
+      <loc><%= localize_url('/sitemap.xml', locale_id: locale[:id]) %></loc>
+    </sitemap>
+
+    <%
+     # We inject a sitemap from Gatsby from the code at https://www.github.com/sharesight/static-www
+     # NOTE: This will not be available locally in development…I have no solution for you.
+    %>
+    <sitemap>
+      <loc><%= localize_url('/gatsby/sitemap-index.xml', locale_id: locale[:id]) %></loc>
     </sitemap>
   <% end %>
 </sitemapindex>
