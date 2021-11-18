@@ -11,6 +11,7 @@ describe 'Sitemap', :type => :feature do
     expect(page).to have_text(base_url('/sitemapindex.xml'))
 
     locales.each do |locale|
+      expect(page).to have_text("Disallow: #{localize_path('/404', locale_id: locale[:id])}")
       expect(page).to have_text(localize_url('/sitemap.xml', locale_id: locale[:id]))
     end
   end
