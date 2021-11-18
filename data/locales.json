@@ -100,13 +100,6 @@
         "no_index": true
       },
       {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight",
-        "page_description": "The leading online stock portfolio tracker & reporting tool for DIY investors. Track prices, trades, dividends, performance and tax!",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
@@ -214,13 +207,6 @@
         "no_index": true
       },
       {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight Australia",
-        "page_description": "The leading online share portfolio tracker & reporting tool for Australian DIY investors. Track share prices, trades, dividends, performance and tax!",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Australia.",
@@ -317,13 +303,6 @@
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight Canada",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Canada. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "no_index": true
-      },
-      {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight Canada",
-        "page_description": "The leading online stock portfolio tracker & reporting tool for Canadian DIY investors. Track prices, trades, dividends, performance and tax!",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "no_index": true
       },
@@ -428,13 +407,6 @@
         "no_index": true
       },
       {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight New Zealand",
-        "page_description": "The leading online share portfolio tracker & reporting tool for New Zealand DIY investors. Track share prices, trades, dividends, performance and tax!",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in New Zealand.",
@@ -531,13 +503,6 @@
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight UK",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight UK. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "no_index": true
-      },
-      {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight UK",
-        "page_description": "The leading online share portfolio tracker & reporting tool for UK DIY investors. Track share prices, trades, dividends, performance and tax!",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "no_index": true
       },
@@ -645,13 +610,6 @@
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight US",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "no_index": true
-      },
-      {
-        "page": "404",
-        "page_title": "Page Not Found | Sharesight US",
-        "page_description": "The leading online stock portfolio tracker & reporting tool for US DIY investors. Track prices, trades, dividends, performance and tax!",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "no_index": true
       },
