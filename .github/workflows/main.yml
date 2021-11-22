@@ -67,15 +67,6 @@ jobs:
         bundle install --jobs 4 --retry 3
 
 
-    # -------- JS & Dependencies
-    - name: Install Node
-      uses: actions/setup-node@v2.4.0
-      with:
-        node-version: '14.x'
-    - name: Install Javascript Dependencies
-      run: yarn install --frozen-lockfile --non-interactive
-
-
     # -------- Build Static Files
     - name: Download Data from Contentful
       run: bundle exec middleman contentful
@@ -84,8 +75,6 @@ jobs:
 
 
     # -------- Run Tests
-    - name: Run Javascript Tests
-      run: yarn run jest --runInBand
     - name: Run Ruby Tests
       run: bundle exec rspec spec -p --format d
 

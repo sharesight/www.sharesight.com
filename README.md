@@ -23,14 +23,13 @@ Individual Commands (see package.json):
 
 ## Testing
 
-Most things are tested – both in `rspec` and `jest`.  Every page is tested that it renders, has a title, meta tags, etc.
+Most things are tested – both in `rspec`.  Every page is tested that it renders, has a title, meta tags, etc.
 
-You need to install packages and run `yarn contentful` first.
+You would need load up Contentful first.
 
 Commands (see package.json):
  - `yarn test`
  - `yarn rspec` / `yarn rspec:tdd`
- - `yarn jest` / `yarn jest:tdd`
 
 
 ## Testing Coverage Holes
@@ -39,8 +38,8 @@ Commands (see package.json):
 	2. The logic in the config file is not tested.
 
 
-## Cloudfront Localization via Lambda
- - See `lambda/README.md`!
+## Cloudfront Components:
+ - See https://www.github.com/sharesight/static-cloudfront
 
 
 ## Manual Deploys
