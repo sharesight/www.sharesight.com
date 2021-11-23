@@ -13,6 +13,7 @@
     "for_country": "",
     "default_title": "Stock Portfolio Tracker | Sharesight",
     "append_title": "Sharesight",
+    "append_pro_title": "Sharesight Pro",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App",
     "xero_cashbook": false,
@@ -79,13 +80,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight Pro",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.1
-      },
-      {
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
@@ -129,6 +123,7 @@
     "for_country": "Australian",
     "default_title": "Share Portfolio Tracker | Sharesight Australia",
     "append_title": "Sharesight Australia",
+    "append_pro_title": "Sharesight Pro Australia",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App Australia",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Australia",
     "xero_cashbook": true,
@@ -179,13 +174,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight Pro Australia",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro Australia services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.1
-      },
-      {
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight Australia",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Australia. Using the Sharesight Referral Program means you agree to these Terms.",
@@ -222,6 +210,7 @@
     "for_country": "Canadian",
     "default_title": "Stock Portfolio Tracker | Sharesight Canada",
     "append_title": "Sharesight Canada",
+    "append_pro_title": "Sharesight Pro Canada",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App Canada",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Canada",
     "xero_cashbook": false,
@@ -272,13 +261,6 @@
         "sitemap_priority": 0.8
       },
       {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight Pro Canada",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro Canada services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 0.1
-      },
-      {
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight Canada",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Canada. Using the Sharesight Referral Program means you agree to these Terms.",
@@ -315,6 +297,7 @@
     "for_country": "New Zealand",
     "default_title": "Share Portfolio Tracker | Sharesight New Zealand",
     "append_title": "Sharesight New Zealand",
+    "append_pro_title": "Sharesight Pro New Zealand",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App New Zealand",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App New Zealand",
     "xero_cashbook": true,
@@ -365,13 +348,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight Pro New Zealand",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro New Zealand services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.1
-      },
-      {
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight New Zealand",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight New Zealand. Using the Sharesight Referral Program means you agree to these Terms.",
@@ -408,6 +384,7 @@
     "for_country": "UK",
     "default_title": "Share Portfolio Tracker | Sharesight UK",
     "append_title": "Sharesight UK",
+    "append_pro_title": "Sharesight Pro UK",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App UK",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App UK",
     "xero_cashbook": false,
@@ -458,13 +435,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight UK",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro UK services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 0.1
-      },
-      {
         "page": "referral-terms-and-conditions",
         "page_title": "Referral Program Terms and Conditions | Sharesight UK",
         "page_description": "Terms and Conditions applying to the Referral Program for Sharesight UK. Using the Sharesight Referral Program means you agree to these Terms.",
@@ -501,6 +471,7 @@
     "for_country": "United States",
     "default_title": "Stock Portfolio Tracker | Sharesight US",
     "append_title": "Sharesight US",
+    "append_pro_title": "Sharesight Pro US",
     "footer_ios_alt": "Sharesight Portfolio Tracker iOS App",
     "footer_android_alt": "Sharesight Portfolio Tracker Android App",
     "xero_cashbook": false,
@@ -556,13 +527,6 @@
         "page_description": "Sign up for Sharesight US and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.9
-      },
-      {
-        "page": "sharesight-professional-terms-of-use",
-        "page_title": "Terms of Use | Sharesight Pro US",
-        "page_description": "Terms of Use apply to your usage of Sharesight Pro US services and our obligations to you. Accessing Sharesight Pro means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.1
       },
       {
         "page": "referral-terms-and-conditions",
