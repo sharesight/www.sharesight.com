@@ -32,7 +32,7 @@
       { name: 'Webinars & Events', page: 'events' },
       { name: 'Privacy Policy', page: 'privacy-policy' },
       { name: 'Terms of Use', page: 'sharesight-terms-of-use' },
-      { name: 'Pro Terms of Use', page: 'sharesight-professional-terms-of-use' },
+      { name: 'Pro Terms of Use', href: localize_url('sharesight-professional-terms-of-use', locale_id: locale_obj[:id]), title: "Terms of Use | #{locale_obj[:append_pro_title]}" },
     ]
   }
 %>
