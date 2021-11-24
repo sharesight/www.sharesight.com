@@ -218,7 +218,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
       expect(@app.page_counts['index']).to eq(6)
-      expect(@app.page_counts['404']).to eq(6)
       expect(@app.page_counts['xero']).to eq(6)
       expect(@app.page_counts['partners']).to eq(6)
 
@@ -236,7 +235,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
       expect(@app.page_alternative_locales('index').length).to eq(6)
-      expect(@app.page_alternative_locales('404').length).to eq(6)
       expect(@app.page_alternative_locales('xero').length).to eq(6)
       expect(@app.page_alternative_locales('partners').length).to eq(6)
 
@@ -248,7 +246,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations" do
       expect(@app.is_valid_page?('blog')).to be true
       expect(@app.is_valid_page?('xero')).to be true
-      expect(@app.is_valid_page?('404')).to be true
       expect(@app.is_valid_page?('partners')).to be true
 
       expect(@app.is_valid_page?(nil)).to be false
