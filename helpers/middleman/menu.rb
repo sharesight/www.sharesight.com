@@ -42,7 +42,7 @@ module MiddlemanMenuHelpers
                   icon: 'coin',
                   label: 'Dividends',
                   href: localize_path('dividend-tracker', locale_id: locale_obj[:id]),
-                  title: locale_page(page: 'dividend-tracker', locale_obj: locale_obj)[:page_title],
+                  title: "Dividend Tracker | Track Your Dividends | #{locale_obj[:append_title]}",
                 },
                 {
                   icon: 'receipt',
