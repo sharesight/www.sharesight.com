@@ -2,6 +2,8 @@
 
 **:warning: This document may not be maintained as this repo is no longer being developed; it should move elsewhere in the future.**
 
+The source of truth is now in https://github.com/sharesight/static-cloudfront, see `lambda-origin-response`.
+
 **Definitions:**
  - An _override cookie_ means `sharesight_country`, wherein a user would override their country to AU even if they are in NZ.
  - _Locale_ would mean AU, NZ, CA, UK, US and may be mixed with the terminology of country.

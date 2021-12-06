@@ -91,14 +91,4 @@ Do note, the default_locale_id is set in config.rb.
 
 ## How to change the redirection rules on Amazon S3
 
-#### Always test on Staging first:
-1. Change the JSON file at `s3/staging-redirection-rules.json`.  NOTE: This should exactly match the Production version, but the `HostName` field will differ.
-2. Commit and push your changes.
-3. Copy the JSON and apply it in the `Properties > Static Website Hosting > Redirection Rules` section in [the staging bucket](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=staging-middleman-www&prefix=) on AWS S3.
-4. Test your rules.
-
-#### To Production:
-1. Change the JSON file at `s3/production-redirection-rules.json`.
-2. Commit and push your changes.
-3. Copy the JSON and apply it in the `Properties > Static Website Hosting > Redirection Rules` section in [the production bucket](https://console.aws.amazon.com/s3/home?region=us-west-1#&bucket=middleman-www&prefix=) on AWS S3.
-4. Test your rules.
+This is now done in https://github.com/sharesight/static-cloudfront, see `lambda-viewer-request/redirects/…`
