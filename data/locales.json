@@ -73,13 +73,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
@@ -160,13 +153,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight Australia",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Australia. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Australia.",
@@ -238,13 +224,6 @@
         "page_description": "Sign up for Sharesight Canada and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 0.8
-      },
-      {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight Canada",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight Canada. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "no_index": true
       },
       {
         "page": "xero",
@@ -320,13 +299,6 @@
         "sitemap_priority": 0.9
       },
       {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight New Zealand",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight New Zealand. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "no_index": true
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in New Zealand.",
@@ -398,13 +370,6 @@
         "page_description": "Sign up for Sharesight UK and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "sitemap_priority": 0.9
-      },
-      {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight UK",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight UK. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "no_index": true
       },
       {
         "page": "xero",
@@ -485,13 +450,6 @@
         "page_description": "Sign up for Sharesight US and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.9
-      },
-      {
-        "page": "referral-terms-and-conditions",
-        "page_title": "Referral Program Terms and Conditions | Sharesight US",
-        "page_description": "Terms and Conditions applying to the Referral Program for Sharesight. Using the Sharesight Referral Program means you agree to these Terms.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "no_index": true
       },
       {
         "page": "xero",
