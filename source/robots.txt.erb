@@ -17,7 +17,12 @@ Disallow: <%= localize_path(locale_page[:page], locale_id: locale[:id]) %>
 <% end %>
 
 <% data.locales.each do |locale| %>
-Disallow: <%= localize_path('/404', locale_id: locale[:id] )%>
+Disallow: <%= localize_path('/404', locale_id: locale[:id]) %>
+
+<%# Disallow a hardcoded list of pages (external to this repo) %>
+<% ['/referral-terms-and-conditions'].each do |disallow_page| %>
+Disallow: <%= localize_path(disallow_page, locale_id: locale[:id]) %>
+<% end %>
 <% end %>
 
 Sitemap: <%= base_url('/sitemapindex.xml') %>
