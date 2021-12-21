@@ -190,7 +190,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'user-rectangle',
                   label: 'Executive Team',
-                  title: locale_page(page: 'team', locale_obj: locale_obj)[:page_title],
+                  title: "Executive Team | #{locale_obj[:append_title]}",
                   href: localize_url('team', locale_id: locale_obj[:id]),
                 },
                 # TODO: Once there's content, we could add these.  If not, delete.

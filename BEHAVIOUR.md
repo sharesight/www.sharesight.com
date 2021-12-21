@@ -15,7 +15,7 @@ The source of truth is now in https://github.com/sharesight/static-cloudfront, s
  * All parameters are maintained in when redirecting (localization or trailing slashes)
     * `/blog?utm_source=google` => `/blog/?utm_source=google`
     * `/pricing/?utm_source=google` => `/nz/pricing/?utm_source=google`
- * Requesting `/blog`, `/team`, or a 404ing page
+ * Requesting `/blog` or a 404ing page
     * We never localize these pages and a cookie is never set.
  * Requesting a localized variant, eg. `/nz/pricing`, `/us/pricing`, etc will never set a cookie.
     * A cookie now only set when the user overrides their setting, eg. says they are specifically from New Zealand.
