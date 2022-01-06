@@ -59,13 +59,6 @@
         "footer_tagline": "Simply the best portfolio management tool for DIY investors."
       },
       {
-        "page": "team",
-        "page_title": "Executive Team | Sharesight",
-        "page_description": "Meet our executive leadership team and learn the stories of our highly-experienced executives who are leading Sharesight to build award-winning technology.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.9
-      },
-      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight",
         "page_description": "Sign up for Sharesight and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -436,13 +429,6 @@
         "page_title": "About Us | Sharesight US",
         "page_description": "Sharesight was started by investors, for investors. We're focused on building the best stock portfolio tracker & reporting tool for DIY investors.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors."
-      },
-      {
-        "page": "team",
-        "page_title": "Executive Team | Sharesight US",
-        "page_description": "Meet our executive leadership team and learn the stories of our highly-experienced executives who are leading Sharesight to build award-winning technology.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.9
       },
       {
         "page": "pricing",

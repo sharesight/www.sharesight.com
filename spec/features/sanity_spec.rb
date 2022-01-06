@@ -36,7 +36,6 @@ describe 'Build Sanity', :type => :feature do
 
     # directories only in root directory
     expect(root_dir).to include("blog")
-    expect(root_dir).to include("team")
 
     # files only in root directory
     expect(root_dir).to include("favicon.ico")

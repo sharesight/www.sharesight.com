@@ -10,7 +10,7 @@
     'Sharesight' => [
       { name: 'Home', page: 'index', href: localize_url(locale_id: locale_obj[:id]) },
       { name: 'About Us', page: 'about-sharesight' },
-      { name: 'Executive Team', page: 'team' },
+      { name: 'Executive Team', href: localize_url('team', locale_id: locale_obj[:id]), title: "Executive Team | #{locale_obj[:append_title]}"},
       { name: 'FAQ', page: 'faq' },
       { name: 'Pricing', page: 'pricing' },
       { name: 'Reviews', page: 'reviews' },
