@@ -53,12 +53,6 @@
         "proxy": false
       },
       {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best stock portfolio tracker & reporting tool for DIY investors.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors."
-      },
-      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight",
         "page_description": "Sign up for Sharesight and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -133,12 +127,6 @@
         "proxy": false
       },
       {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight Australia",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best share portfolio tracker & reporting tool for Australian investors.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors."
-      },
-      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight Australia",
         "page_description": "Sign up for Sharesight Australia and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -204,12 +192,6 @@
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 0.8,
         "proxy": false
-      },
-      {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight Canada",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best stock portfolio tracker & reporting tool for Canadian investors.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors."
       },
       {
         "page": "pricing",
@@ -279,12 +261,6 @@
         "proxy": false
       },
       {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight New Zealand",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best share portfolio tracker & reporting tool for New Zealand investors.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors."
-      },
-      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight New Zealand",
         "page_description": "Sign up for Sharesight New Zealand and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -352,12 +328,6 @@
         "proxy": false
       },
       {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight UK",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best share portfolio tracker & reporting tool for UK investors.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors."
-      },
-      {
         "page": "pricing",
         "page_title": "Pricing | Sharesight UK",
         "page_description": "Sign up for Sharesight UK and track 10 holdings for Free. Add more holdings and portfolios by upgrading to an Investor or Expert plan at any time.",
@@ -423,12 +393,6 @@
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 0.8,
         "proxy": false
-      },
-      {
-        "page": "about-sharesight",
-        "page_title": "About Us | Sharesight US",
-        "page_description": "Sharesight was started by investors, for investors. We're focused on building the best stock portfolio tracker & reporting tool for DIY investors.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors."
       },
       {
         "page": "pricing",

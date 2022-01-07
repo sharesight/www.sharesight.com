@@ -184,8 +184,8 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'magnifying-glass',
                   label: 'About Sharesight',
-                  title: locale_page(page: 'about-sharesight', locale_obj: locale_obj)[:page_title],
-                  href: localize_url('about-sharesight', locale_id: locale_obj[:id]),
+                  title: "About Us | #{locale_obj[:append_title]}",
+                  href: localize_url('about-sharesight', locale_id: locale_obj[:id])
                 },
                 {
                   icon: 'user-rectangle',
