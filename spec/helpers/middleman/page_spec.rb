@@ -187,12 +187,12 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should respond with a localized 'landing_page' based page" do
-      expect(@app.locale_page(page: 'pricing')[:page_title]).to eq('About Us | Sharesight')
-      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('global'))[:page_title]).to eq('About Us | Sharesight')
-      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('au'))[:page_title]).to eq('About Us | Sharesight Australia')
-      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('ca'))[:page_title]).to eq('About Us | Sharesight Canada')
-      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('nz'))[:page_title]).to eq('About Us | Sharesight New Zealand')
-      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('uk'))[:page_title]).to eq('About Us | Sharesight UK')
+      expect(@app.locale_page(page: 'pricing')[:page_title]).to eq('Pricing | Sharesight')
+      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('global'))[:page_title]).to eq('Pricing | Sharesight')
+      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('au'))[:page_title]).to eq('Pricing | Sharesight Australia')
+      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('ca'))[:page_title]).to eq('Pricing | Sharesight Canada')
+      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('nz'))[:page_title]).to eq('Pricing | Sharesight New Zealand')
+      expect(@app.locale_page(page: 'pricing', locale_obj: @app.get_locale_obj('uk'))[:page_title]).to eq('Pricing | Sharesight UK')
     end
 
     it "should return a page from the global locale when it doesn't exist on the requested locale" do
