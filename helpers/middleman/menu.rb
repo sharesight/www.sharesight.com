@@ -36,7 +36,7 @@ module MiddlemanMenuHelpers
                   icon_hover: 'chart-line-up-bold',
                   label: 'Performance',
                   href: localize_path('investment-portfolio-performance', locale_id: locale_obj[:id]),
-                  title: locale_page(page: 'investment-portfolio-performance', locale_obj: locale_obj)[:page_title],
+                  title: "Investment Portfolio Performance | #{locale_obj[:append_title]}",
                 },
                 {
                   icon: 'coin',
