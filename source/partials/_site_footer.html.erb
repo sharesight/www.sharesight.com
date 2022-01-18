@@ -29,7 +29,7 @@
       { name: 'Help Centre', href: localize_url(base_url: config[:help_url], locale_id: locale_obj[:id]), title: "Help Centre | #{locale_obj[:append_title]}" },
       { name: 'Community Forum', href: unlocalized_url(base_url: config[:community_url]), title: 'Community Forum' },
       { name: 'Sharesight Blog', href: unlocalized_url('blog'), title: 'Read the Sharesight Blog' },
-      { name: 'Webinars & Events', page: localize_url('events', locale_id: locale_obj[:id]), title: "Webinars & Events | #{locale_obj[:append_title]}" },
+      { name: 'Webinars & Events', href: localize_url('events', locale_id: locale_obj[:id]), title: "Webinars & Events | #{locale_obj[:append_title]}" },
       { name: 'Privacy Policy', href: localize_url('privacy-policy', locale_id: locale_obj[:id]), title: "Privacy Policy | #{locale_obj[:append_title]}" },
       { name: 'Terms of Use', href: localize_url('sharesight-terms-of-use', locale_id: locale_obj[:id]), title: "Terms of Use | #{locale_obj[:append_title]}" },
       { name: 'Pro Terms of Use', href: localize_url('sharesight-professional-terms-of-use', locale_id: locale_obj[:id]), title: "Terms of Use | #{locale_obj[:append_pro_title]}" },
