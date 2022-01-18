@@ -95,7 +95,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'question',
                   label: 'Frequently Asked Questions',
-                  title: locale_page(page: 'faq', locale_obj: locale_obj)[:page_title],
+                  title: "FAQ | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]),
                 },
               ]
