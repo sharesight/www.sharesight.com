@@ -231,7 +231,7 @@ module MiddlemanMenuHelpers
                   icon: 'share-network',
                   icon_hover: 'fire-fill',
                   label: 'Become an Affiliate',
-                  title: locale_page(page: 'affiliates', locale_obj: locale_obj)[:page_title],
+                  title: "Affiliates | #{locale_obj[:append_title]}",
                   href: localize_url('affiliates', locale_id: locale_obj[:id]),
                 },
                 {
