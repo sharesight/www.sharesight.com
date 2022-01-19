@@ -36,7 +36,7 @@ module MiddlemanMenuHelpers
                   icon_hover: 'chart-line-up-bold',
                   label: 'Performance',
                   href: localize_path('investment-portfolio-performance', locale_id: locale_obj[:id]),
-                  title: locale_page(page: 'investment-portfolio-performance', locale_obj: locale_obj)[:page_title],
+                  title: "Investment Portfolio Performance | #{locale_obj[:append_title]}",
                 },
                 {
                   icon: 'coin',
@@ -95,7 +95,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'question',
                   label: 'Frequently Asked Questions',
-                  title: locale_page(page: 'faq', locale_obj: locale_obj)[:page_title],
+                  title: "FAQ | #{locale_obj[:append_title]}",
                   href: localize_url('faq', locale_id: locale_obj[:id]),
                 },
               ]
@@ -267,7 +267,7 @@ module MiddlemanMenuHelpers
                   icon: 'monitor-play',
                   icon_hover: 'monitor-fill',
                   label: 'Webinars & Events',
-                  title: locale_page(page: 'events', locale_obj: locale_obj)[:page_title],
+                  title: "Webinars & Events | #{locale_obj[:append_title]}",
                   href: localize_url('events', locale_id: locale_obj[:id]),
                 },
                 {
