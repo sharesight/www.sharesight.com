@@ -267,7 +267,7 @@ module MiddlemanMenuHelpers
                   icon: 'monitor-play',
                   icon_hover: 'monitor-fill',
                   label: 'Webinars & Events',
-                  title: locale_page(page: 'events', locale_obj: locale_obj)[:page_title],
+                  title: "Webinars & Events | #{locale_obj[:append_title]}",
                   href: localize_url('events', locale_id: locale_obj[:id]),
                 },
                 {
