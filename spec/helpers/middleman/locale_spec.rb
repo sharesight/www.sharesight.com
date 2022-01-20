@@ -141,26 +141,6 @@ describe 'Helper', :type => :helper do
       end
     end
 
-    it "should give custom pricing for au plans" do
-      plans = @app.locale_plans('au')
-      expect(plans.length).to eq(4)
-
-      plan_label = 'starter'
-      plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(19)
-      expect(plan.price_annual).to eq(171)
-
-      plan_label = 'investor'
-      plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(31)
-      expect(plan.price_annual).to eq(279)
-
-      plan_label = 'expert'
-      plan = plans.find{ |plan| plan[:label]&.downcase == plan_label }
-      expect(plan.price).to eq(48)
-      expect(plan.price_annual).to eq(432)
-    end
-
     it "should give custom reports for au plans" do
       plans = @app.locale_plans('au')
       expect(plans.length).to eq(4)
