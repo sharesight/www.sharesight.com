@@ -1,6 +1,5 @@
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
-  plans = locale_plans(locale_obj[:id])
   title = locals[:title] || 'Pricing'
 
   buttons = if locals[:buttons]&.length
@@ -13,7 +12,7 @@
       url: 'pricing',
       remote: false
     }, {
-      text: 'get started – **for free**',
+      text: 'get started – **for free**',
       title: 'Sign up for Sharesight',
       color: 'pro',
       url: config[:signup_url],
@@ -30,7 +29,7 @@
       </h2>
 
       <p>
-        Your first <%= plans[0][:holdings] %> holdings are <strong>free!</strong>
+        Your first 10 holdings are <strong>free!</strong>
       </p>
 
       <p>
