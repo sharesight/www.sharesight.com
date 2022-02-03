@@ -50,7 +50,7 @@
 
   pagination = locals[:pagination]
   if pagination && pagination&.current_page && pagination&.total_pages && pagination&.current_page > 1
-    # metas[:description]          = "#{pagination.from_items}-#{pagination.to_items} of (#{pagination.total_items}) – #{metas[:description]}"
+    # metas[:description]          = "#{pagination.from_items}-#{pagination.to_items} of (#{pagination.total_items}) – #{metas[:description]}"
     metas[:title]                = "Page #{pagination.current_page}/#{pagination.total_pages} – #{metas[:title]}"
 
     # Social stuff should keep the 'base' descriptions and urls.
@@ -78,7 +78,7 @@
 <meta name="application-name" content="<%= config[:site_name] %>">
 
 <%# Favicons %>
-<link rel="shortcut icon" href="<%= image_url('/favicon.ico') %>?v=2" type="image/x-icon">
+<link rel="shortcut icon" href="<%= image_url('/favicon.ico') %>?v=3" type="image/x-icon">
 <link rel="icon" type="image/png" sizes="32x32" href="<%= image_url('/favicon-32x32.png') %>">
 <link rel="icon" type="image/png" sizes="16x16" href="<%= image_url('/favicon-16x16.png') %>">
 <meta name="theme-color" content="#f5a623">
