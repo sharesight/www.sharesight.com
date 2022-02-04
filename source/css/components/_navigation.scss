@@ -1,5 +1,7 @@
 $__nav-height: 45px;
 $__offset-logo-aligment: 5px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
+$__horizontal-offset-logo-aligment: 8px; // HACK: We try to align the logo "Sharesight" text with the other text, so we have do this…
+
 
 $__menu-padding: $gutter * 1.5;
 $__menu-border-radius: 3px;
@@ -70,6 +72,7 @@ $__link_indentation: 28px; // indentation to have links and icons be a bit consi
       // HACK: See comment on `$__offset-logo-aligment` variable.
       @include respond-to(md, min) {
         margin-top: -$__offset-logo-aligment; // negative margin
+        padding-left: $__horizontal-offset-logo-aligment;
       }
     }
   }
