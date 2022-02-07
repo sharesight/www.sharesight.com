@@ -13,7 +13,7 @@
 2. Change to your new local directory
 3. Setup local environment keys.  `.envrc` works great!  See `howtos/environment.md`.
 4. `bundle install && yarn`
-5. `yarn start` – it's not a javascript package, but it's helpful nevertheless
+5. `yarn start` – it's not a javascript package, but it's helpful nevertheless
 
 Individual Commands (see package.json):
 1. Load content: `bundle exec middleman contentful`
@@ -23,7 +23,7 @@ Individual Commands (see package.json):
 
 ## Testing
 
-Most things are tested – both in `rspec`.  Every page is tested that it renders, has a title, meta tags, etc.
+Most things are tested – both in `rspec`.  Every page is tested that it renders, has a title, meta tags, etc.
 
 You would need load up Contentful first.
 
@@ -83,8 +83,7 @@ If you **must** force a local deploy, ensure your environment is all setup (see 
 0. Use proper language and country codes – there's a reason why UK is GB.  https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 1. Open `data/locales.json` and copy one of the existing locales.  *The first locale is the default: global*
  	Ensure to maintain capitalization – the `id` field should be lowercased.
-2. Create the file `plans/[country_id].json`. Every plan defaults from `plans/[default_locale_id].json` (via merge), so only overrides need to be in the country plans file.
-3. Ensure the Helpsite and Marketing site have the same locales!  Else you will link to a non-existent locale.
+2. Ensure the Helpsite and Marketing site have the same locales!  Else you will link to a non-existent locale.
 
 Do note, the default_locale_id is set in config.rb.
 

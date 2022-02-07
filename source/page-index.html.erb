@@ -5,7 +5,6 @@ layout: layout_index
 ---
 <%
   locale_obj = locals[:locale_obj] || current_locale_obj
-  plans = locale_plans(locale_obj[:id])
 %>
 
 <%= partial "sections/lose_the_spreadsheet", locals: { locale_obj: locale_obj } %>

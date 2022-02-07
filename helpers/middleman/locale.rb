@@ -50,17 +50,4 @@ module MiddlemanLocaleHelpers
   def locale_cert_type(locale_obj = current_locale_obj)
     get_locale_obj(locale_obj[:id])&.cert_type&.to_s || 'stock'
   end
-
-  def locale_plans(locale_id = current_locale_id)
-    global = data.plans[default_locale_id]
-    locale = data.plans[locale_id]
-
-    # For each global plan, merge the locale plan ontop of it.
-    # Global = defaults, locale = overrides!
-    return locale.map{ |plan|
-      global.find{ |p|
-        p[:label] == plan[:label]
-      }.deep_merge(plan)
-    }
-  end
 end

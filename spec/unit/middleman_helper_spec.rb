@@ -19,8 +19,6 @@ expectations = [
 
   { append: 'blog/sitemap.xml', locale_id: nil, output: '/blog/sitemap.xml' },
   { append: 'foo.bar#baz', locale_id: nil, output: '/foo.bar#baz' },
-  { append: 'nz/pricing?foo&bar', locale_id: 'au', output: '/au/pricing?foo&bar', base_output: '/pricing?foo&bar' },
-  { append: 'au/pricing?foo&bar#baz', locale_id: 'global', output: '/pricing?foo&bar#baz' }
 ]
 
 describe 'Base Middleman Helpers', :type => :unit do

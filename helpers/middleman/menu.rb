@@ -90,7 +90,7 @@ module MiddlemanMenuHelpers
                   label: 'Pricing',
                   icon: 'wallet',
                   href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
-                  title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
+                  title: "Pricing | #{locale_obj[:append_title]}",
                 },
                 {
                   icon: 'question',
@@ -167,7 +167,7 @@ module MiddlemanMenuHelpers
       visible_mobile: false,
       label: 'Pricing',
       href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
-      title: locale_page(page: 'pricing', locale_obj: locale_obj)[:page_title],
+      title: "Pricing | #{locale_obj[:append_title]}",
     }
   end
 
