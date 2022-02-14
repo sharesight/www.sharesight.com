@@ -129,7 +129,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'user',
                   label: 'Investors',
-                  title: locale_page(page: 'investors', locale_obj: locale_obj)[:page_title],
+                  title: "Investors | #{locale_obj[:append_title]}",
                   href: localize_url('investors', locale_id: locale_obj[:id]),
                   description: 'Join **300,000+** investors who track their portfolios with Sharesight.',
                 },
