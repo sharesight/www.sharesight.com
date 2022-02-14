@@ -49,7 +49,7 @@ module MiddlemanMenuHelpers
                   icon_hover: 'article-fill',
                   label: 'Tax Reporting',
                   href: localize_url('investment-portfolio-tax', locale_id: locale_obj[:id]),
-                  title: locale_page(page: 'investment-portfolio-tax', locale_obj: locale_obj)[:page_title],
+                  title: "Investment Portfolio Tax Reporting | #{locale_obj[:append_title]}",
                 }
               ]
             },
