@@ -21,8 +21,6 @@ updates:
     time: "04:00"
     timezone: Pacific/Auckland
   open-pull-requests-limit: 99
-  reviewers:
-  - irwalker
   labels:
   - bot-pr
   - dependencies
