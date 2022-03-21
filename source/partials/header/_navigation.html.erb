@@ -17,7 +17,7 @@
 
 <div class="container nav__container">
   <nav role="navigation" class="nav" aria-label="Sharesight" id="site_navigation" >
-    <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">
+    <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" id="site_logo" title="Stock Portfolio Tracker | <%= locale_obj[:append_title] %>">
       <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
     </a>
 
