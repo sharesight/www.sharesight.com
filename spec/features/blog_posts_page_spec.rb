@@ -41,7 +41,6 @@ describe 'Blog Post Pages', :type => :feature do
       expect(page).to have_head('link', args: { rel: 'canonical', href: URI::unescape(post.url) }, debug: :href)
       expect(page).to have_meta('og:url', URI::unescape(post.url), name_key: 'property')
 
-      expect(page).to have_head('link', args: { rel: 'alternate', href: base_url('blog/feed.xml') }, debug: :href)
     end
   end
 

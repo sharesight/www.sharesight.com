@@ -44,7 +44,6 @@ describe 'Landing Pages Pages', :type => :feature do
   def expect_urls(page, landing_page)
     expect(page).to have_head('link', args: { rel: 'canonical', href: landing_page[:url] }, debug: :href)
     expect(page).to have_meta('og:url', base_url(landing_page[:path]), name_key: 'property')
-    expect(page).to have_head('link', args: { rel: 'alternate', href: base_url('blog/feed.xml') }, debug: :href)
   end
 
   def expect_elements(page, landing_page)
