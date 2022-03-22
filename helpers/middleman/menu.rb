@@ -150,7 +150,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'buildings',
                   label: 'Finance Companies',
-                  title: locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title],
+                  title: "Partner with Sharesight | #{locale_obj[:append_title]}",
                   href: localize_url('become-a-partner', locale_id: locale_obj[:id]),
                   description: 'Connect with Sharesight to power your business.'
                 }
@@ -224,7 +224,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'handshake',
                   label: 'Become a Partner',
-                  title: locale_page(page: 'become-a-partner', locale_obj: locale_obj)[:page_title],
+                  title: "Partner with Sharesight | #{locale_obj[:append_title]}",
                   href: localize_url('become-a-partner', locale_id: locale_obj[:id]),
                 },
                 {
