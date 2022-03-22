@@ -8,7 +8,7 @@
     #   - item: { name, page, href, title }
     #   - href and title can be auto-generated from a `page`
     'Sharesight' => [
-      { name: 'Home', href: localize_url(locale_id: locale_obj[:id]) title: "#{locale_obj[:default_title]}"},
+      { name: 'Home', href: localize_url(locale_id: locale_obj[:id]), title: "#{locale_obj[:default_title]}"},
       { name: 'About Us', href: localize_url('about-sharesight', locale_id: locale_obj[:id]), title: "About Us | #{locale_obj[:append_title]}"},
       { name: 'Executive Team', href: localize_url('team', locale_id: locale_obj[:id]), title: "Executive Team | #{locale_obj[:append_title]}"},
       { name: 'FAQ', href: localize_url('faq', locale_id: locale_obj[:id]), title: "FAQ | #{locale_obj[:append_title]}" },
