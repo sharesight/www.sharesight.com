@@ -28,7 +28,6 @@ describe 'Locale Pages', :type => :feature do
 
   def expect_canonical_urls(page, page_data, locale)
     expect(page).to have_meta('og:url', base_url(page_data[:page]), name_key: 'property')
-    expect(page).to have_head('link', args: { rel: 'canonical', href: localize_url(page_data[:page], locale_id: locale[:id])}, debug: :href)
 
     Capybara.app.page_alternative_locales(page_data[:page]).each do |alternate_locale|
       if alternate_locale[:id] == default_locale_id

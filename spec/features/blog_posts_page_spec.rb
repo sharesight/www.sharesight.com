@@ -38,7 +38,6 @@ describe 'Blog Post Pages', :type => :feature do
     @posts.each do |post|
       visit post.path
 
-      expect(page).to have_head('link', args: { rel: 'canonical', href: URI::unescape(post.url) }, debug: :href)
       expect(page).to have_meta('og:url', URI::unescape(post.url), name_key: 'property')
 
     end

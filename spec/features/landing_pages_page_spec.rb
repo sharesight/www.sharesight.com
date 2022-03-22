@@ -42,7 +42,6 @@ describe 'Landing Pages Pages', :type => :feature do
   end
 
   def expect_urls(page, landing_page)
-    expect(page).to have_head('link', args: { rel: 'canonical', href: landing_page[:url] }, debug: :href)
     expect(page).to have_meta('og:url', base_url(landing_page[:path]), name_key: 'property')
   end
 
