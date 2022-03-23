@@ -19,7 +19,7 @@
     'Partners' => [
       { name: 'Sharesight Pro', page: 'pro' },
       { name: 'Partner Directory', page: 'partners' },
-      { name: 'Become a Partner', href: 'become-a-partner', title: "Partner with Sharesight | #{locale_obj[:append_title]}" },
+      { name: 'Become a Partner', href:localize_url('become-a-partner', locale_id: locale_obj[:id]), title: "Partner with Sharesight | #{locale_obj[:append_title]}" },
       { name: 'Become an Affiliate', href: localize_url('affiliates', locale_id: locale_obj[:id]), title: "Affiliates | #{locale_obj[:append_title]}" },
       { name: 'Sharesight API', href: config[:api_url], title: 'Sharesight API Documentation' },
       { name: 'sales@sharesight.com', href: 'mailto:sales@sharesight.com', title: 'Email the Sales & Partnerships Team' },
