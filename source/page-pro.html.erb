@@ -118,7 +118,7 @@ layout: layout_pro
       </dl>
       <a href="<%= config[:pro_signup_url] %>" class="btn btn-secondary inverse" title="Sign up for Sharesight Pro">Start your <span class="hide-phone">30-day</span> free trial</a>
 
-      <p>Need fewer than 5 portfolios? The retail edition of <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_page(page: 'index', locale_obj: locale_obj)[:page_title] %>">Sharesight</a> might be for you.</p>
+      <p>Need fewer than 5 portfolios? The retail edition of <a href="<%= localize_url(locale_id: locale_obj[:id]) %>" title="<%= locale_obj[:default_title] %>">Sharesight</a> might be for you.</p>
     </section>
 
   </div>
