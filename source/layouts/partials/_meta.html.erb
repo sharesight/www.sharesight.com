@@ -115,3 +115,12 @@
 <meta name="twitter:site" content="@sharesight">
 <meta name="twitter:site:id" content="<%= config[:twitter_site_id] %>">
 
+<%# Links; next/prev should be canonical. %>
+<link rel="canonical" href="<%= metas[:canonical_url] %>">
+<%= partial "layouts/partials/alternate_links" %>
+<% if pagination&.next_page&.url %>
+  <link rel="next" href="<%= localize_url(pagination.next_page.url) %>">
+<% end %>
+<% if pagination&.prev_page&.url %>
+  <link rel="prev" href="<%= localize_url(pagination.prev_page.url) %>">
+<% end %>

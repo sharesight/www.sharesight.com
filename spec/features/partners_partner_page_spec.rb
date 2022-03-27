@@ -27,6 +27,7 @@ describe 'Partners Partner Pages', :type => :feature do
 
   def expect_urls(page, partner)
     expect(page).to have_meta('og:url', base_url(partner[:path]), name_key: 'property')
+    expect(page).to have_head('link', args: { rel: 'canonical', href: absolute_url(partner[:path]) }, debug: :href)
 
     locales.each do |alternate_locale|
       if alternate_locale[:id] == default_locale_id
