@@ -18,15 +18,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App",
     "xero_cashbook": false,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Stock Portfolio Tracker | Sharesight",
-        "page_description": "Leading online stock portfolio tracker & reporting tool for investors. Sharesight tracks stock prices, trades, dividends, performance and tax!",
-        "tagline": "With the best stock portfolio tracker for investors.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+      
       {
         "page": "blog",
         "page_title": "Sharesight Blog",
@@ -94,15 +86,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Australia",
     "xero_cashbook": true,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Share Portfolio Tracker | Sharesight Australia",
-        "page_description": "Leading online share portfolio tracker & reporting tool for Australian investors. Sharesight tracks share prices, trades, dividends, performance & tax!",
-        "tagline": "With the best share portfolio tracker for Australian investors.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+      
       {
         "page": "partners",
         "page_title": "Sharesight Australia Partners",
@@ -154,15 +138,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App Canada",
     "xero_cashbook": false,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Stock Portfolio Tracker | Sharesight Canada",
-        "page_description": "Leading online stock portfolio tracker & reporting tool for Canadian investors. Sharesight tracks stock prices, trades, dividends, performance and tax!",
-        "tagline": "With the best stock portfolio tracker for Canadian investors.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+     
       {
         "page": "partners",
         "page_title": "Sharesight Canada Partners",
@@ -214,15 +190,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App New Zealand",
     "xero_cashbook": true,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Share Portfolio Tracker | Sharesight New Zealand",
-        "page_description": "Leading online share portfolio tracker & reporting tool for New Zealand investors. Sharesight tracks share prices, trades, dividends, performance & tax!",
-        "tagline": "With the best share portfolio tracker for New Zealand investors.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+     
       {
         "page": "partners",
         "page_title": "Sharesight New Zealand Partners",
@@ -274,15 +242,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App UK",
     "xero_cashbook": false,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Share Portfolio Tracker | Sharesight UK",
-        "page_description": "Leading online share portfolio tracker & reporting tool for UK investors. Sharesight tracks share prices, trades, dividends, performance & tax!",
-        "tagline": "With the best share portfolio tracker for UK investors.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+     
       {
         "page": "partners",
         "page_title": "Sharesight UK Partners",
@@ -334,15 +294,7 @@
     "footer_android_alt": "Sharesight Portfolio Tracker Android App",
     "xero_cashbook": false,
     "pages": [
-      {
-        "page": "index",
-        "page_title": "Stock Portfolio Tracker | Sharesight US",
-        "page_description": "Leading online stock portfolio tracker & reporting tool for investors. Sharesight tracks stock prices, trades, dividends, performance and tax!",
-        "tagline": "With the best stock portfolio tracker for United States investors.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 1,
-        "sitemap_changefreq": "daily"
-      },
+    
       {
         "page": "partners",
         "page_title": "Sharesight US Partners",
