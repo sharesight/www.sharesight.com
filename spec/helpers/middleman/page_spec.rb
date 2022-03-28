@@ -140,7 +140,6 @@ describe 'Page Helper', :type => :helper do
 
   context "base_locale_page" do
     it "should be the page of the global locale" do
-      expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
       expect(@app.base_locale_page(page: 'xero')[:page_title]).to eq("Xero + Sharesight Portfolio Tracker")
 
       visit '/pro'
@@ -171,7 +170,6 @@ describe 'Page Helper', :type => :helper do
 
   context "locale_page" do
     it "should respond with the right page id" do
-      expect(@app.locale_page(page: 'index')[:page]).to eq('index')
       expect(@app.locale_page(page: 'blog')[:page]).to eq('blog')
       expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
     end
