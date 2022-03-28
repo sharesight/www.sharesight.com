@@ -6,7 +6,7 @@ module MiddlemanUrlHelpers
   include MiddlemanLocaleHelpers
 
   def get_current_page_url
-    return current_page.url
+    return current_page&.url || ''
   end
 
   def canonical_url

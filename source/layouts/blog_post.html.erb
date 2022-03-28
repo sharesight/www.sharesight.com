@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <% # this is assigned by default, but this makes it more clear
-  post = current_page.metadata[:locals][:post]
+  post = current_page&.metadata[:locals][:post]
 %>
 
 <html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">

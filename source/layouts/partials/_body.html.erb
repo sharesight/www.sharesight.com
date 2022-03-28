@@ -2,8 +2,8 @@
   # NOTE: Body must have a yield.  It will not function without.
   locale_obj = locals[:locale_obj] || current_locale_obj
 
-  page_classes = locals[:page_classes] || current_page.data.page_classes
-  section_class = locals[:section_class] || current_page.data.section_class
+  page_classes = locals[:page_classes] || current_page&.data.page_classes
+  section_class = locals[:section_class] || current_page&.data.section_class
   body_class = [page_classes, section_class].join(' ').strip
 %>
 

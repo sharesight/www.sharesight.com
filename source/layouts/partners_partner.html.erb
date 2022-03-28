@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <% # this is assigned by default, but this makes it more clear
-  partner = current_page.metadata[:locals][:partner]
+  partner = current_page&.metadata[:locals][:partner]
 %>
 
 <html lang="<%= current_locale_obj[:lang] || 'en' %>" class="no-js">

@@ -5,11 +5,11 @@ module MiddlemanPageHelpers
   include MiddlemanLocaleHelpers
   include MiddlemanUrlHelpers
 
-  def current_path_array(path: current_page.path)
+  def current_path_array(path: current_page&.path || '')
     return path.split("/")
   end
 
-  def full_page_path_name(path: current_page.path)
+  def full_page_path_name(path: current_page&.path || '')
     path = strip_html_from_path(path)
     path = strip_locale_from_path(path)
 
@@ -23,7 +23,7 @@ module MiddlemanPageHelpers
     return path || ''
   end
 
-  def page_path_name(path: current_page.path)
+  def page_path_name(path: current_page&.path || '')
     # first valid split
     return full_page_path_name(path: path).split('/').find{ |split| (split || '') != '' }
   end
@@ -32,7 +32,7 @@ module MiddlemanPageHelpers
     return locale_page
   end
 
-  def valid_page_from_path(path: current_page.path)
+  def valid_page_from_path(path: current_page&.path || '')
     full = full_page_path_name(path: path)
     base = page_path_name(path: path)
     return full if is_valid_page?(full)
