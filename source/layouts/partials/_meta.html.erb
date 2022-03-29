@@ -116,6 +116,7 @@
 <meta name="twitter:site:id" content="<%= config[:twitter_site_id] %>">
 
 <%# Links; next/prev should be canonical. %>
+<link rel="alternate" type="application/rss+xml" title="Sharesight RSS Feed" href="<%= base_url('/blog/feed.xml') %>">
 <link rel="canonical" href="<%= metas[:canonical_url] %>">
 <%= partial "layouts/partials/alternate_links" %>
 <% if pagination&.next_page&.url %>

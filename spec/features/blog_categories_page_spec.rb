@@ -45,6 +45,7 @@ describe 'Blog Category Pages', :type => :feature do
         expect(page).to respond_successfully
 
         expect(page).to have_head('link', args: { rel: 'canonical', href: absolute_url(page_url) }, debug: :href)
+        expect(page).to have_head('link', args: { rel: 'alternate', href: base_url('blog/feed.xml') }, debug: :href)
         expect(page).to have_meta('og:url', base_url(category[:path]), name_key: 'property') # no /pages/2...stuff
 
         prev = nil # reset on each loop
