@@ -18,11 +18,6 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should include what we expect" do
-      expect(@app.current_path_array).to include('index.html')
-
-      visit '/nz/partners/foo-bar'
-      expect(@app.current_path_array).to eq(['index.html']) # invalid page, falls back to previous path
-
       visit '/nz/partners/all'
       expect(@app.current_path_array).to include('partners', 'all.html')
     end
@@ -36,8 +31,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations for valid pages" do
       [
         # [input, expectation]
-        ['/', 'index'],
-        ['/nz', 'index'],
         ['/ca/xero', 'xero'],
         ['/xero', 'xero'],
         ['/ca/pro', 'pro'],
@@ -79,11 +72,6 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should match what we expect" do
-      expect(@app.page_path_name).to eq('index')
-
-      visit '/nz'
-      expect(@app.page_path_name).to eq('index')
-
       visit '/ca/pro'
       expect(@app.page_path_name).to eq('pro')
 
@@ -104,8 +92,6 @@ describe 'Page Helper', :type => :helper do
   context "current_locale_page" do
     # This is a 1:1 proxy of locale_page
     it "should be the page we expect" do
-      expect(@app.current_locale_page[:page]).to eq('index')
-
       visit '/blog'
       expect(@app.current_locale_page[:page]).to eq('blog')
 
@@ -119,7 +105,6 @@ describe 'Page Helper', :type => :helper do
     it "should be the page we expect" do
       [
         # [input, expectation]
-        ['/', 'index'],
         ['/blog', 'blog'],
         ['/nz/partners', 'partners'],
         ['/ca/partners/all', 'partners/all'],
@@ -205,7 +190,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_counts['blog']).to eq(1)
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
-      expect(@app.page_counts['index']).to eq(6)
       expect(@app.page_counts['xero']).to eq(6)
       expect(@app.page_counts['partners']).to eq(6)
 
@@ -222,7 +206,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_alternative_locales('blog').length).to eq(1)
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
-      expect(@app.page_alternative_locales('index').length).to eq(6)
       expect(@app.page_alternative_locales('xero').length).to eq(6)
       expect(@app.page_alternative_locales('partners').length).to eq(6)
 
@@ -260,14 +243,9 @@ describe 'Page Helper', :type => :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
       end
 
-      expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
       expect(@app.is_valid_locale_id_for_page?('blog', 'uka')).to be false
       expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
       expect(@app.is_valid_locale_id_for_page?('partners', 'nzd')).to be false
@@ -278,7 +256,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations" do
       expect(@app.get_page_base_locale('blog')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
-      expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('partners')[:id]).to eq(default_locale_id)
 
       # Bad pages always get default
@@ -294,10 +271,6 @@ describe 'Page Helper', :type => :helper do
 
     it "should return false for xero" do
       expect(@app.is_unlocalized_page?('xero')).to be false
-    end
-
-    it "should return false for index" do
-      expect(@app.is_unlocalized_page?('index')).to be false
     end
 
     it "should return false for pro" do
