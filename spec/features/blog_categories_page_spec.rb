@@ -60,7 +60,6 @@ describe 'Blog Category Pages', :type => :feature do
     end
   end
 
-
   it "should have the expected elements" do
     @categories.each do |category|
       visit category[:path]

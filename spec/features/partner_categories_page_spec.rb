@@ -42,7 +42,6 @@ describe 'Partner Category Pages', :type => :feature do
           visit page_path
 
           expect(page).to respond_successfully
-          
           expect(page).to have_head('link', args: { rel: 'canonical', href: localize_url(page_path, locale_id: locale[:id]) }, debug: :href)
           expect(page).to have_meta('og:url', base_url(category[:path]), name_key: 'property') # no /pages/2...stuff
           locales.each do |alternate_locale|
