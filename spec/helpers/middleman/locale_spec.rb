@@ -6,7 +6,7 @@ describe 'Helper', :type => :helper do
   end
 
   before :each do
-    visit '/'
+    visit '/partners'
   end
 
   context "default_locale_id" do
@@ -83,7 +83,7 @@ describe 'Helper', :type => :helper do
 
   context "locale_cert_type" do
     it "should give the correct response" do
-      visit '/'
+      visit '/partners'
       expect(@app.locale_cert_type).to eq('stock')
 
       visit '/au'

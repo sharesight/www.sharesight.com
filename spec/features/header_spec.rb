@@ -10,7 +10,7 @@ describe 'Header', type: :feature do
 
   context "navigation" do
     before :each do
-      visit '/'
+      visit '/partners'
     end
 
     context 'desktop' do

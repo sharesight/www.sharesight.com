@@ -6,7 +6,7 @@ describe 'Menu Helper', :type => :helper do
   end
 
   before :each do
-    visit '/'
+    visit '/partners'
   end
 
   #######

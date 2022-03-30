@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'Footer', type: :feature do
   before :each do
-    visit '/'
+    visit '/partners'
   end
 
   it 'should have all expected links' do

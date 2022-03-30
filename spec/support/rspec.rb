@@ -1,7 +1,7 @@
 RSpec.configure do |config|
   config.before(:all) do
     # start with a current_path (and other global variables) in middleman
-    visit '/'
+    visit '/partners'
   end
 end
 

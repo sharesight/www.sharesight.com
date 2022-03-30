@@ -6,7 +6,7 @@ describe 'Page Helper', :type => :helper do
   end
 
   before :each do
-    visit '/'
+    visit '/partners'
   end
 
   context "current_path_array" do
