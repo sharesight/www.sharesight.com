@@ -266,10 +266,6 @@ describe 'Page Helper', :type => :helper do
   end
 
   context "is_unlocalized_page" do
-    it "should return true for blog" do
-      expect(@app.is_unlocalized_page?('blog')).to be true
-    end
-
     it "should return false for xero" do
       expect(@app.is_unlocalized_page?('xero')).to be false
     end

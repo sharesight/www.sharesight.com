@@ -42,7 +42,7 @@ describe 'Menu Helper', :type => :helper do
       end
 
       # These are just hardcoded values.
-      expect(rows_length).to eq(5)
+      expect(rows_length).to eq(4)
       expect(columns_length).to eq(8)
       expect(links_length).to eq(24)
     end
