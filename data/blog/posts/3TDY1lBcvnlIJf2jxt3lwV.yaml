@@ -1,0 +1,137 @@
+---
+:id: 3TDY1lBcvnlIJf2jxt3lwV
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-10-28T06:12:32+00:00'
+  :created_at: '2019-06-20T04:12:36+00:00'
+  :id: 3TDY1lBcvnlIJf2jxt3lwV
+:title: How to track exchange-traded funds (ETFs)
+:url_slug: how-to-track-exchange-traded-funds-etfs
+:content: "Exchange-traded funds (ETFs) are an increasingly popular type of investment
+  fund that can be bought and sold directly on stock exchanges. Among Sharesight users,
+  the share of ETFs within investor portfolios has grown steadily [over the last decade
+  from <1% to almost 10%](https://www.sharesight.com/blog/exchange-traded-fund-etf-growth-in-investment-portfolios/)
+  as investors increasingly switch from managed funds (managed trusts) to ETFs. Like
+  all investments, it’s critical to track the performance of ETFs in your portfolio.
+  In this article we’ll cover:\n\n* [ETF history](#etf-history)\n\n* [Tracking ETF
+  performance](#tracking-etf-performance)\n\n* [ETF tax considerations](#etf-tax-considerations)\n\n*
+  [ETF benchmarking with Sharesight](#etf-benchmarking-with-sharesight)\n\n![How to
+  track ETFs (1)](//images.ctfassets.net/91sm3pewxzag/5f8EK26jNzsIqKEZeD5ZsV/a1d3c40fd9efc42dca1ba3ef3f9471da/How_to_track_ETFs__1_.jpg?w=950)\n\n##
+  ETF history \n\nThere is some contention over which ETF commands the title as [\"the
+  first ETF\"](https://www.investopedia.com/articles/exchangetradedfunds/12/brief-history-exchange-traded-funds.asp).
+  However, the concept of using a listed investment trust structure as a vehicle to
+  invest in a broad range of underlying stocks gained traction in the early 1990s,
+  with the launch of the [S&P 500 Trust ETF](https://www.investopedia.com/terms/s/spiders.asp)
+  “SPDR” (NYSE: SPY) on January 22 of 1993.\n\nInitially, ETFs followed in the footsteps
+  of the SPDR ETF and allowed investors to gain exposure to a fund that sought to
+  replicate (minus fees) the performance of a ‘passive’ market index like the S&P
+  500. Over time fund managers added \"smart-beta\" (seeking to replicate an ‘alternative’
+  index) and “active” (actively managed by a fund manager with a strategy aiming to
+  beat the market) ETFs to their offerings, further blurring the lines between managed
+  funds and their exchange-traded fund cousins.\n\nRead our guide on [what to look
+  for when buying ETFs](https://www.sharesight.com/blog/what-to-look-for-when-buying-etfs/)
+  if you’re considering investing in exchange traded funds.\n\n## Tracking ETF performance\n\nETFs
+  have an open ended structure, which means that when investors seek to purchase additional
+  units of the fund, the fund manager (or issuer) can issue additional units to the
+  exchange. This means that unlike [listed investment companies](https://www.sharesight.com/blog/etfs-versus-lics-what-you-need-to-know/)
+  that can trade significantly above or below their [Net Asset Value](https://en.wikipedia.org/wiki/Net_asset_value),
+  ETFs trade at a unit price close to the value of the underlying assets each unit
+  holds. And unlike managed funds, which can have opaque price discovery, tracking
+  the performance of ETFs is much like any other stock, because ETFs are listed (and
+  traded) on stock exchanges.\n\n### ETF tax considerations\n\nTracking the performance
+  of your ETF investments is only one part of the puzzle; managing the tax implications
+  is the other. ETFs are a unitised trust structure that hold a number of underlying
+  assets that each have their own tax implications on distributions earned by the
+  ETF. The tax implications will vary by region; for example in the USA distributions
+  earned by the ETF are typically [treated as ‘ordinary dividends’](https://www.investopedia.com/articles/exchangetradedfunds/08/etf-taxes-introduction.asp)
+  and taxed accordingly, whereas in Australia most ETFs use the [Attribution Managed
+  Investment Trust (AMIT) structure](https://www.sharesight.com/blog/attribution-managed-investment-trust-amit-tax-calculations/)
+  and are a [tax nightmare.](https://www.sharesight.com/blog/attribution-managed-investment-trust-amit-tax-calculations/)
+  ETFs also create complexity for UK investors, as depending whether the ETF has reporting
+  status or not, or whether it was purchased through an ISA or SIPP, this can have
+  significant implications on [how it is taxed](https://www.justetf.com/en/news/passive-investing/how-etfs-are-taxed-in-the-uk.html).\n\nHere
+  are all the ways [Sharesight makes ETF tax calculations easy.](https://www.sharesight.com/blog/how-sharesight-makes-etf-tax-admin-easy/)\n\n##
+  How to track ETFs in Sharesight\n\nIt’s easy to track the price and performance
+  of your ETF investments, with Sharesight’s support for [over 40 global stock exchanges](https://www.sharesight.com/blog/track-stocks-global-exchanges-sharesight/).
+  Here’s how to add an ETF to your Sharesight portfolio(s):\n\n1. Sign up for a [FREE
+  Sharesight account](https://portfolio.sharesight.com/signup).\n\n2. You can add
+  an ETF to your portfolio(s) by manually adding a trade and searching for the ETF’s
+  name in the relevant market (eg. NYSE: SPY). You can also use the [Sharesight File
+  Importer](https://www.sharesight.com/blog/import-trades-with-the-sharesight-file-importer/)
+  to bulk import trades to your portfolio.\n\n3. Sharesight converts the prices and
+  valuations of your holdings from their listed market to your portfolio’s base currency.
+  It also automatically calculates any currency fluctuations on a daily basis and
+  backfills past dividends and distributions (and continues to add new ones as they
+  are announced).\n\n![Sharesight ETF tracking](//images.ctfassets.net/91sm3pewxzag/4tfwJRuY8Yr05qPG0lLdWI/18813df90de169a44cf5d68de04def7a/Sharesight_ETF_tracking.jpg?w=950)\n\n<small>
+  With Sharesight, investors can clearly see the impact of capital gains, dividends
+  and foreign currency fluctuations on the performance of their ETFs. </small>\n\n##
+  ETF benchmarking with Sharesight\n\nExchange traded funds make for excellent ‘index
+  tracking’ (such as the S&P 500) benchmarks because they take into account all the
+  inner workings of a real portfolio, including fees, dividends and any [franking
+  credits](https://www.sharesight.com/blog/what-is-a-franked-dividend/) that may apply.
+  Sharesight allows investors to benchmark against ETFs as well as [any managed fund,
+  trust or stock tracked by Sharesight.](https://www.sharesight.com/blog/benchmark-your-portfolio-against-any-stock-etf-or-fund/)\n\n![Tracking
+  ETF holding Sharesight](//images.ctfassets.net/91sm3pewxzag/3JlQcMlOrLbqaP9YSpsoE2/378c707ac1f01bf1cc5b59e2b1e9d98e/Tracking_ETF_holding_Sharesight.png?w=950)\n\n<small>
+  An example of an ETF-based portfolio benchmarked against the S&P 500. </small>\n\nTo
+  select an ETF as a benchmark, simply click **\"Add a Benchmark\"** on the portfolio’s
+  **Overview page**. You can either select from a common ETF benchmark or type in
+  the market code and select the ETF of your choice. \n\n## Track your ETFs (and the
+  rest of your portfolio) with Sharesight\n\nJoin thousands of global investors using
+  Sharesight to track their ETFs along with the rest of their investments. [Sign up](https://portfolio.sharesight.com/signup)
+  for Sharesight so you can: \n\n* Track all your investments in one place, including
+  over 170,000 global stocks, ETFs, [mutual/managed funds](https://help.sharesight.com/au/supported-stock-exchanges-and-managed-funds/),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Run powerful reports built for investors, including [Performance](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/),
+  [Portfolio Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/),
+  [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/),
+  [Multi-Period](https://www.sharesight.com/blog/multi-period-report/) and [Multi-Currency
+  Valuation](https://www.sharesight.com/blog/value-your-investments-in-any-currency-with-sharesight/)\n\n*
+  See the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  Easily [share access to your portfolio](https://help.sharesight.com/au/memberships_index/)
+  with family members, your accountant or other financial professionals so they can
+  see the same picture of your investments that you do.\n\n[Sign up for a FREE Sharesight
+  account](https://portfolio.sharesight.com/signup?_ga=2.50834272.890835150.1634514849-1579815040.1595575078)
+  and get started tracking your investment performance (and tax) today.\n\n![Sharesight
+  hero image global](//images.ctfassets.net/91sm3pewxzag/1kF5n7IcCq98io5r8Chpbk/76180e973531a6903064ec99a7c386c6/Sharesight_hero_image_global.jpg?w=950)\n\n###
+  FURTHER READING\n\n* [Types of exchange-traded funds (ETFs) - explained](https://www.sharesight.com/blog/types-of-exchange-traded-funds-etfs-explained/)\n\n*
+  [How your broker’s performance numbers mislead you](https://www.sharesight.com/blog/how-your-brokers-performance-numbers-mislead-you/)\n\n*
+  [How one couple saves time and money using Sharesight](https://www.sharesight.com/blog/how-one-couple-saves-time-and-money-using-sharesight/)"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2021-10-20 10:00:00.000000000 +10:00
+:meta_description: Like all investments, it’s critical to track the performance of
+  and distributions earned by exchange-traded funds (ETFs) in your portfolio.
+:featured_image:
+  :title: How to track ETFs (1)
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/5f8EK26jNzsIqKEZeD5ZsV/a1d3c40fd9efc42dca1ba3ef3f9471da/How_to_track_ETFs__1_.jpg"
+  :_meta:
+    :updated_at: '2021-10-20T04:30:24+00:00'
+    :created_at: '2021-10-20T04:30:00+00:00'
+    :id: 5f8EK26jNzsIqKEZeD5ZsV
+:hide_from_feed: false
+:slug: how-to-track-exchange-traded-funds-etfs

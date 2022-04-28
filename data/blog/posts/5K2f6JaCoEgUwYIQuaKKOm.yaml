@@ -1,0 +1,72 @@
+---
+:id: 5K2f6JaCoEgUwYIQuaKKOm
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-06-17T07:19:09+00:00'
+  :created_at: '2018-08-07T01:38:25+00:00'
+  :id: 5K2f6JaCoEgUwYIQuaKKOm
+:title: Improved LIC capital gain reporting for Australian investors
+:content: "Just in time for FY2017/2018 tax returns we’ve added a helpful new feature
+  to Sharesight to assist Australian investors in Listed Investment Companies (LICs).\n\n##
+  What’s new? \n\nBecause of the way the [Australian Tax Office (ATO) treats capital
+  gains in dividends from LICs](https://www.ato.gov.au/General/Capital-gains-tax/Shares,-units-and-similar-investments/CGT-listed-investment-companies-concession/)
+  these need to be treated differently from a normal dividend payment. We’ve now added
+  an additional ‘LIC Capital Gain’ field to the dividend payout form to correctly
+  record this payment.\n\n![LIC Capital Gain](//images.ctfassets.net/91sm3pewxzag/6KYd6eKqtySUIIoGEyewyo/164efa47b72170a038ab81e5fc13f416/LIC_Capital_Gain.PNG)\n\nWhile
+  Sharesight is unable to automatically populate this field with a figure (you’ll
+  need to enter it manually once the LIC notifies you of these values) once entered
+  the LIC Capital Gain value will be correctly shown as a deduction (at a rate of
+  50% CGT discount) in the improved Sharesight taxable income report, to easily record
+  in the D8 section of your income tax return.\n\n![Dividend deductions](//images.ctfassets.net/91sm3pewxzag/1CzxAzCksQosMi0CUYgYOw/1eb49e2f3cee666d4f1ca9e5cd30dbd7/Dividend_deductions.PNG)\n\n##
+  Who will see this new LIC capital gains feature?\n\nOn payout forms:\n\n- A tax
+  residency set to “Australia”\n\nOn the taxable income report:\n\n- A tax residency
+  set to “Australia”\n\nOn the Income Tax Return section of the taxable income report:\n\n-
+  A tax residency set to “Australia” and;\n- A tax entity type set to “Individual
+  or Trust” (although it’s only relevant to individual tax entities)\n\n### Notes
+  on the Income tax return section\n\n- The tax return field references are based
+  on the tax return for individuals 2018 and tax return for individuals (supplementary
+  section) 2018.\n- Sharesight does not provide taxation advice and this report does
+  not constitute personal taxation advice. If you have any questions about your tax
+  position we recommend you contact your accountant or tax advisor.\n\n## Share your
+  feedback\nPlease share any feedback in our dedicated [LIC capital gains forum topic](https://c.getsatisfaction.com/sharesight/topics/how-to-record-capital-gains-components-of-dividend-distributions).\n\n###
+  FURTHER READING\n- [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)\n-
+  [Capital gains tax calculator for Australian investors](/blog/capital-gains-tax-calculator-for-australian-investors/)\n-
+  [Tax loss selling for Australian investors](/blog/tax-loss-selling-for-australian-investors/)"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-08-07 10:00:00.000000000 +10:00
+:meta_description: 'Just in time for FY2017/2018 tax returns we’ve added a helpful
+  new feature to Sharesight to assist Australian investors in Listed Investment Companies
+  (LICs).
+
+  '
+:featured_image:
+  :title: featured - improved LIC capital gain reporting
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5sa9XlfUycYg0Y8KauEE2u/13f5b809a6695e327ecd2879e068d0a8/featured_lic-capital-gain-reporting.png"
+  :_meta:
+    :updated_at: '2018-08-24T04:58:30+00:00'
+    :created_at: '2018-08-07T01:46:10+00:00'
+    :id: 5sa9XlfUycYg0Y8KauEE2u
+:slug: improved-lic-capital-gain-reporting-for-australian-investors

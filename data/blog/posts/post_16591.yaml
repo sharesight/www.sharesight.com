@@ -1,0 +1,73 @@
+---
+:id: post_16591
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:30+00:00'
+  :created_at: '2016-06-29T23:16:03+00:00'
+  :id: post_16591
+:title: Handling cash investments with Sharesight
+:url_slug: handling-cash-investments-with-sharesight
+:content: |-
+  Cash is king, right? Not anymore. On a recent trip to Chicago, I noticed that Chase bank were offering a 24 month term deposit at 0.15%, which beats the pants of a savings account rate of 0.01%.
+
+  Even so, whether you invest in term deposits, fixed interest funds, or cash ETFs, cash is a critical asset class for investors and savers. So how do you account for cash in [Sharesight](/)?
+
+  The first option is to simply click “+ Add New Holding” on the portfolio overview page.
+
+  Using the “Market” dropdown, select “Other,” then tick the box for “Add New?”
+
+  Then give the investment a name, e.g. “August 2013 Cash Deposit,” and then set the dropdown to “Fixed Interest and you’re able to enter all the details necessary for a cash holding including coupon rate, payment date and frequency. Because the form is also designed to support bonds and other tradable fixed interest securities, the form contains a “quantity” “price” and “face value” field. For a term deposit, set the price and face value to $1 and record the dollar value of the initial investment in the quantity field (i.e. for a $10,000 term deposit assume 10,000 $1 units).
+
+  ![Handling Cash Investments with Sharesight](//images.ctfassets.net/91sm3pewxzag/49HHR7Qcb6AsIIMQu02iuI/2b990e305e9835eddb1045a39fbe998a/add-an-other-holding.jpg?w=950)
+
+  Once entered, this investment will be incorporated into the portfolio and your interest payments are automatically calculated and recorded in the same way as dividends are for your share holdings.
+
+  For transaction accounts such as your trading account, the best option is to take advantage of [our connection with Xero](/xero/), which is ideal for accountants (Business Plans) and DIY investors (Partner Plans).
+
+  Within the Sharesight Settings menu, click [“Xero settings”](https://help.sharesight.com/xero_settings/), then click “connect to XERO,” and follow the prompts from here.
+
+  ![sharesight Xero settings](//images.ctfassets.net/91sm3pewxzag/48Yea88iq4Mama4qCASga2/5cd850c3f94ff6ee20912b1c54475d8e/sharesight-Xero-settings.png?w=950)
+
+  Once hooked up Sharesight and Xero talk to one another automatically. You can then map all Sharesight transaction activity to the Xero chart of accounts. Since Xero works directly with banks to reconcile account activity (including the cash accounts hooked up to brokerage accounts), Sharesight transactions such as dividends, interest income, or asset sales will be synchronised to Xero where you can reconcile them against the line items in your bank statement. Within Xero, you can even link back to the specific transaction record in Sharesight. No matter which method you use, Sharesight makes handling cash easy.
+
+  ### FURTHER READING
+
+  - Help -- [Tracking cash investments using Sharesight](https://help.sharesight.com/tracking-cash-investments-using-sharesight/)
+  - Blog -- [Introducing 20 minute delayed pricing for ASX holdings](https://www.sharesight.com/blog/introducing-20-minute-delayed-pricing-for-asx-holdings/)
+  - Blog -- [Managed funds live on Sharesight](https://www.sharesight.com/blog/managed-funds-live-on-sharesight/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2013-09-10 00:00:00.000000000 Z
+:meta_description: Follow our detailed step-by-step instructions and learn how easy
+  it is to track cash investments with Sharesight, and the Xero accounting software.
+:featured_image:
+  :title: Sharesight + Xero - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/10yaKVs1q8gGMsOUiiU2CM/f38e9493dc26292bc16c6b8d5ea630d9/featured_sharesight_xero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:23:05+00:00'
+    :created_at: '2016-09-09T05:22:53+00:00'
+    :id: 10yaKVs1q8gGMsOUiiU2CM
+:wordpress_url: "/2013/09/10/handling-cash-investments-with-sharesight/"
+:slug: handling-cash-investments-with-sharesight

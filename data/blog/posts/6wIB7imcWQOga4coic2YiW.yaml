@@ -1,0 +1,91 @@
+---
+:id: 6wIB7imcWQOga4coic2YiW
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-08-23T05:34:34+00:00'
+  :created_at: '2017-05-12T06:07:25+00:00'
+  :id: 6wIB7imcWQOga4coic2YiW
+:title: Why I use Sharesight to track my portfolio
+:content: "When I first started working at [Sharesight](/), I set out to understand
+  why an investor wouldn’t just use their broker to check how their shares were performing.
+  I learnt quickly that [you can’t rely on your broker for portfolio performance](/blog/how-your-brokers-performance-numbers-mislead-you/),
+  and have my very own experience to share with you.\n              \nA few months
+  ago I made my first investment. I wanted to experience exactly what a Sharesight
+  customer would experience to help with my marketing role. Plus, based on some of
+  the tips I picked up from Sharesight staff it sounded like a good financial decision.\n\nI
+  was logging in to my broker’s website many times a day to see how my shares were
+  performing because it was all so new and exciting. It was incredible to see that
+  in just one day I was making (or losing) a lot more than the interest I was earning
+  each month on my savings account.\n\n![featured - Emily Grunberg](//images.ctfassets.net/91sm3pewxzag/2yRSnZXPcwmSsYEgwSWOEE/223a7c159b3f03778c8ddc01a42c952c/featured_emily-grunberg.jpg?w=950)\n\nOne
+  day I logged in to see a market value of zero. I figured it was a glitch but after
+  a day or two with no change and no communications, I became a bit concerned. I contacted
+  my broker who notified me that there had been a share split, and my investment was
+  currently trading under a different symbol. As a new investor, I was confused and
+  unsure if everything would go back to normal. What was I meant to do with this new
+  symbol? I decided to wait and see.\n\nThis is when the Sharesight magic truly started
+  for me. An email came through to let me know there had been a [share split](https://help.sharesight.com/share-splits/),
+  and prompted me to sign in and confirm the [corporate action](https://help.sharesight.com/corporate-actions/).
+  Everything was filled out for me, I just had to press a button to confirm everything
+  looked correct and my portfolio went back to normal.\n\n![screenshot - email: ijr-asx](//images.ctfassets.net/91sm3pewxzag/5QKLelJMSksoMcwKWYsUmC/16bf4107c4295d8effcf6e5189bab149/screenshot_ijr-asx-email.png?w=950)\n\nAt
+  the same time, my investment reappeared in my broker’s profit/loss -- but my return
+  was way off.\n\nI purchased my 50 shares of ASX:IJR for a grand total of $8,972
+  ($179.44 per share). After the share split I owned 100 shares at market value of
+  $9,380 ($93.80 per share), but my broker told me that my return was -47.73%.\n\nI
+  only have one holding, so it was pretty obvious that it was incorrect. Would other
+  investors with multiple investments have noticed this on a quick portfolio performance
+  check, or would that return figure have been drowned out? I’m not so sure.\n\nSo
+  what happened? Why was my broker telling me I lost 47.73% of my money when my current
+  value was almost the same as when I made my initial investment?  It seems the only
+  thing my broker had done after the share split was update the number of shares I
+  owned from 50 to 100. And to calculate my initial value, they simply multiplied
+  100 by the price I paid for my 50 shares: 100 x $179.44 = $17,944. Ah-ha!\n\n| &nbsp;
+  | Reality | My broker says | Sharesight says |\n| ---------- | ---------- | ----------
+  | ---------- |\n| Purchased | 50 shares | 100 shares ❌ | 50 shares ✅ |\n| Paid |
+  $8,972<br>($179.44 per share) | $17,944 ❌ | $8,972 ✅ |\n| After share split I own
+  | 100 shares | 100 shares ✅ | 100 shares ✅ |\n| Today my 100 shares are worth |
+  $9,380<br>($93.80 per share) | $9,380 ✅ | $9,380 ✅ |\n| My return is | &nbsp; |
+  -47.73% ❌ | 4.95% ✅<br>including dividend income |\n\nNot only is my broker calculating
+  my performance based on the wrong initial value, it also isn’t incorporating my
+  [dividend income](/blog/3-reasons-why-you-need-to-be-tracking-dividends/) into my
+  performance calculations.\n\n![screenshot - ijr-asx](//images.ctfassets.net/91sm3pewxzag/5FP5kj1sli0mg0Q0awCoyC/c54649a205f762b44e2191654cc64a19/screenshot_ijr-asx.png?w=950)\n\n**When
+  it comes to trading, you go to your broker. When you need to understand performance,
+  you can count on Sharesight. For all investors out there, the best time to set up
+  your Sharesight portfolio is on day one. The next best time is [right now](https://portfolio.sharesight.com/signup)!**\n\n###
+  FURTHER READING\n- [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)\n-
+  [Corporate actions and your investment performance](/blog/corporate-actions-and-your-investment-performance/)\n-
+  [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)"
+:author:
+  :id: 43C3Hfsv9ei6u0oEwo6AmA
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-02-10T23:57:31+00:00'
+    :created_at: '2017-05-12T06:24:04+00:00'
+    :id: 43C3Hfsv9ei6u0oEwo6AmA
+  :display_name: Emily Grunberg
+  :first_name: Emily
+  :last_name: Grunberg
+  :title: Product Marketing Manager
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-05-15 13:20:00.000000000 +10:00
+:meta_description: Sharesight Analytical Marketing Manager Emily Grunberg explains
+  why she doesn't rely on her broker for her investment portfolio performance.
+:featured_image:
+  :title: featured - Emily Grunberg
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2yRSnZXPcwmSsYEgwSWOEE/223a7c159b3f03778c8ddc01a42c952c/featured_emily-grunberg.jpg"
+  :_meta:
+    :updated_at: '2017-05-12T06:29:03+00:00'
+    :created_at: '2017-05-12T06:28:42+00:00'
+    :id: 2yRSnZXPcwmSsYEgwSWOEE
+:slug: why-i-use-sharesight-to-track-my-portfolio

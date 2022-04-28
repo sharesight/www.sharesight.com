@@ -1,0 +1,83 @@
+---
+:id: post_2902
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:58+00:00'
+  :created_at: '2016-06-29T23:18:22+00:00'
+  :id: post_2902
+:title: Is Sharesight in Cloud cuckoo land?
+:url_slug: is-sharesight-in-cloud-cuckoo-land
+:content: "No we are not!\n\nWe are all down-to-earth characters here at [Sharesight](/)
+  and definitely not in cloud cuckoo land – but we are [In the Cloud](/blog/how-does-sharesight-operate-in-the-cloud/).\n\nWe
+  have encountered a lot of confusion from our customers about what being ‘In the
+  Cloud’ means. Some ask us questions like ‘how do I transfer Sharesight onto my new
+  computer’? Or ‘my computer is stuffed – does that mean all my Sharesight data is
+  lost’?\n\nMost of you know more about cloud computing than this of course but we
+  do encounter a lot of people who are worried by exaggerated stories about the risks
+  of Cloud Computing.\n\nThis is the first in a series of articles that will look
+  at Cloud Computing. My aim is to keep it really simple to help our customers who
+  do not have a good handle on Cloud Computing. I will look at:\n\n1. What is Cloud
+  Computing?\n2. [How Sharesight operates in the cloud](/blog/how-does-sharesight-operate-in-the-cloud/)\n3.
+  How do you benefit as a Sharesight customer?\n4. How Cloud based services can join
+  forces to offer you benefits you have never dreamed of\n5. Finally I’ll look at
+  perceived disadvantages of The Cloud and set your minds at rest.\n\nSo let’s get
+  started.\n\n### What is Cloud Computing?\nThis is a big topic so to keep things
+  manageable I will just focus what matters to you as an individual Sharesight customer.\n\nBecause
+  Sharesight operates ‘In the Cloud’ it means that when you use Sharesight you don’t
+  use your computer - you use ours! That is a bit of an exaggeration of course because
+  you do have to turn your computer on to use Sharesight. But it doesn’t do much more
+  than act as a messenger. Your computer sends a message to Sharesight when you log
+  on. Sharesight then sends a copy of all your information to your computer. When
+  you log off again nothing is stored on your computer. \n\nThis is why it doesn’t
+  matter if your computer packs up. Well, it does of course, but not as far as your
+  Sharesight data is concerned. You can use any computer you like, anywhere in the
+  world, to see your Sharesight portfolio because all it has to do is be a messenger.\n\nSharesight’s
+  servers do all the thousands of calculations that are needed keep your portfolio
+  up to date and make sure it is securely stored and backed up.\n\nI’ll tell you a
+  bit more about servers in the next article because they play a very important part
+  in making sure your data is secure, does not get lost and is available to you when
+  you want it.\n\nThe main message that I want to leave you with from this first article
+  is that because Sharesight operates in ‘The Cloud’ it can look after all the nuts
+  and bolts. This is not another of my exaggerations! I think it is actually an understatement
+  because Sharesight in the cloud takes a big weight off your shoulders. You do not
+  have to worry about downloading software onto your computer, keeping it up-to-date
+  and having a software licence. And you don’t have to worry about viruses, backing
+  up data so you don’t lose it or running out of space on your computer.\n\nIn short,
+  you are left free to concentrate on the fun part -- getting the best return you
+  can from your investments and exploring all the benefits Sharesight offers."
+:author:
+  :id: author_4
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-19T02:11:07+00:00'
+    :created_at: '2016-06-29T23:18:45+00:00'
+    :id: author_4
+  :display_name: Tony Ryburn
+  :first_name: Tony
+  :last_name: Ryburn
+  :title: Executive Chairman
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2011-09-29 00:00:00.000000000 Z
+:meta_description: We are all down-to-earth characters here at Sharesight and not
+  in cloud cuckoo land but we are definitely "In the Cloud".
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/09/29/is-sharesight-in-cloud-cuckoo-land/"
+:slug: is-sharesight-in-cloud-cuckoo-land

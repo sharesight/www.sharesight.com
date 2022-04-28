@@ -1,0 +1,108 @@
+---
+:id: 7bWYOwjY5OSuuaqemwsece
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-01T20:03:57+00:00'
+  :created_at: '2017-06-15T08:36:56+00:00'
+  :id: 7bWYOwjY5OSuuaqemwsece
+:title: Calculate your capital gains tax (without a spreadsheet or calculator)
+:content: "###### NOTE: There is a newer version of this article. See [*Capital gains
+  tax calculator for Australian investors*](/blog/capital-gains-tax-calculator-for-australian-investors/)
+  for more information.\n\nSmash your calculator. [Ditch the spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/).
+  The best way to calculate your investment portfolio’s CGT obligations is to use
+  [Sharesight](/)’s Capital Gains Tax Report. Here’s why:\n\n- **It takes care of
+  the maths** (so you don’t have to).\n- **It makes it easy to optimise your tax position**
+  by letting you experiment with different sale allocation methods.\n- **You can run
+  the report at any time, over any time period.** So not only will you have the information
+  you need at tax time, but throughout the year. This means fewer surprises when the
+  next tax season rolls around.\n\n**Our Australian Capital Gains Tax Report calculates
+  capital gains made on shares as per Australian Tax Office rules** (for those of
+  you in Canada, we also offer a [Canadian CGT Report](/blog/canadian-capital-gains-tax-report/)).
+  The report is based on the ‘discount method’ for shares that were held for more
+  than one year and the ‘other method’ for shares held for less than one year (more
+  on that below).\n\n![featured - calculator - smashed](//images.ctfassets.net/91sm3pewxzag/1lsxCoDTs4uKck660EOU6u/59dc24a51cbeb28bb786f543397ea0ad/featured_calculator-smashed.jpg?w=950)\n\n##
+  How to calculate your CGT\n\n### 1 -- [Sign-up for a Sharesight account](https://portfolio.sharesight.com/signup)\nJoin
+  the tens of thousands of DIY investors already taking control of their portfolio
+  with Sharesight. You can track up to 10 holdings for FREE!\n\n### 2 -- Import your
+  holdings\nYou may add your holdings manually, by spreadsheet (CSV) or via a one-time
+  connection to your online broker:\n![screenshot - add holding](//images.ctfassets.net/91sm3pewxzag/3kh8sYf61yWEOq620wwQaa/3cb694240e5dd7f92f7b3836cee64920/screenshot_add-holding.png?w=950)\n\n###
+  3 -- Confirm your tax settings\nBecause Sharesight lets you track multiple portfolios
+  (tax entities), you’ll want to confirm/update your portfolio’s discount rate before
+  running the CGT Report. To do that, go to Settings > Tax Settings:\n![screenshot
+  - tax settings](//images.ctfassets.net/91sm3pewxzag/597jZ462PuyIIOUGgIKsm0/2ddfe242f73da8f550f509b0a6abe9b3/screenshot_tax-settings.png?w=950)\n\n###
+  4 -- Run the Capital Gains Tax Report\nFrom the Reports menu, select the Capital
+  Gains Tax Report:\n![screenshot - reports - cgt](//images.ctfassets.net/91sm3pewxzag/4nXsSdYIcMSimgi0CiAkY4/7be243839243c08f5599dab112518211/screenshot_reports-cgt.png?w=950)\n\n###
+  5 -- Select your date range\nEnter a custom date range or select from a preset option,
+  including the current or last financial year:\n![screenshot - cgt report - date
+  range](//images.ctfassets.net/91sm3pewxzag/5rL3YVOe9GAys02E0wIWou/9ffc82613f1afef53af13d8dbf80cfaf/screenshot_cgt-report_date.png?w=950)\n\n###
+  6 -- Review your CGT report\nThe Capital Gains Tax Report breaks down:\n\n- Short
+  Term Capital Gains (assets bought and sold within one year or less)\n- Long Term
+  Capital Gains\n- Capital Losses\n\n![screenshot - cgt report](//images.ctfassets.net/91sm3pewxzag/77ExZnqiR2Q0I0imy4igQA/955c9abcc8873a7be01dbfed5ade8abe/screenshot_cgt-report.png?w=950)\nIt
+  also includes a helpful summary:\n![screenshot - cgt report - summary](//images.ctfassets.net/91sm3pewxzag/479S2ijRPi8uAq6iEiYA0E/b75040109e9cddf85cc57e7bfa3237c1/screenshot_cgt-report_summary.png?w=950)\n\n###
+  7 -- Set your prefered sale allocation method\n\nYou can experiment with different
+  sale allocation methods in order to optimise your CGT position. Choose from:\n\n-
+  FIFO (First In, First Out)\n- LIFO (Last In, First Out)\n- Maximise Gain\n- Minimise
+  Gain\n- Minimise CGT\n\nThe “Minimise CGT” option is handy. We’ll assume that you
+  sell shares resulting in the lowest capital gains tax first. This method is more
+  sophisticated than the “Minimise Gain” method because it takes into account the
+  discounting rules. Note that the sales allocation method can be changed for specific
+  holdings or for the entire portfolio:\n![screenshot - cgt report - sale allocation
+  methods](//images.ctfassets.net/91sm3pewxzag/5Fig4Qu4LYOUIwYIYE0Icq/e692762bb8eb10d9d87ab625037d45b1/screenshot_cgt-report_sale-allocation.png?w=950)\n\n###
+  8 -- Carry forward your losses\nYou may also choose to carry forward any losses
+  from the previous reporting period:\n![screenshot - cgt report - carry-forward losses](//images.ctfassets.net/91sm3pewxzag/1xZXHQT8rCOWOKwq6UKKKa/5607d9dcd6b442bc1fa3ca15e5b4a6ee/screenshot_cgt-report_carry-forward-losses.png?w=950)\n\n###
+  9 -- Lock it up\nOnce you’re happy with your report, you may choose to “lock” it.
+  This allows you to alter the sale allocation methods in future reporting periods
+  without invalidating the result for previous periods:\n![screenshot - cgt report
+  - lock](//images.ctfassets.net/91sm3pewxzag/2GgiGSsyWcYO2WKAgmUsIy/4e43b10e653873c1cedd0c37049610a9/screenshot_cgt-report_lock.png?w=950)\n\n##
+  Want more?\n\n- **Download your CGT report** -- As with all of Sharesight’s reports,
+  your entire Capital Gains Tax Report can be downloaded to Excel, PDF or [Google
+  Sheets](/blog/new-open-sharesight-reports-directly-google-sheets/).\n- **Take advantage
+  of tax loss selling** -- The [Unrealised CGT Report](/blog/tax-loss-selling-for-australian-investors/)
+  makes it easy to lower your capital gain tax obligations by letting you model the
+  implications of tax loss selling (tax harvesting).\n- **Share access with your accountant**
+  -- With your capital gains and losses automatically sorted, you should save on accounting
+  fees this tax season. Why not take it a step further by [securely sharing your portfolio
+  with your accountant](/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/)?
+  They’ll have everything they need at their fingertips -- not just at tax-time but
+  throughout the year.\n \n## Need help?\nFor more information visit our [Capital
+  Gains Tax Report help page](https://help.sharesight.com/au/capital_gains/).\n\n<br><br>\n<small><b>Important
+  Disclaimer:</b> We do not provide tax advice. Make sure you seek appropriate tax
+  advice before implementing the ideas in this post.</small>\n\n### FURTHER READING\n-
+  [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)\n-
+  [Why I use Sharesight to track my portfolio](/blog/why-i-use-sharesight-to-track-my-portfolio/)\n-
+  [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)"
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2017-06-15 20:19:00.000000000 +10:00
+:meta_description: Smash your calculator. Ditch the spreadsheet. The best way to calculate
+  your investment portfolio’s CGT obligations is with our Capital Gains Tax Report.
+:featured_image:
+  :title: featured - calculator - smashed
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1lsxCoDTs4uKck660EOU6u/59dc24a51cbeb28bb786f543397ea0ad/featured_calculator-smashed.jpg"
+  :_meta:
+    :updated_at: '2017-06-15T08:39:32+00:00'
+    :created_at: '2017-06-15T08:39:11+00:00'
+    :id: 1lsxCoDTs4uKck660EOU6u
+:url_slug: calculate-your-capital-gains-tax-without-a-spreadsheet-or-calculator
+:slug: calculate-your-capital-gains-tax-without-a-spreadsheet-or-calculator

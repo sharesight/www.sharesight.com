@@ -1,0 +1,77 @@
+---
+:id: 7y1GRHICSecjhSZPzYBjJO
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-03T04:09:02+00:00'
+  :created_at: '2021-03-23T02:31:41+00:00'
+  :id: 7y1GRHICSecjhSZPzYBjJO
+:title: Markdown collapsible section test
+:url_slug: markdown-collapsible-section-test
+:content: "## Frequently asked questions\n<details>\n  <summary>What can I track in
+  Sharesight?</summary>\n<br>\n  <h2>What can I track in Sharesight?</h2>\n\n<p>You
+  can use Sharesight to track the <a href=\"https://www.sharesight.com/au/faq/#which-stock-exchanges-does-sharesight-support\">following
+  investments</a>:</p>\n <ul>\n<li>Stocks, bonds, and ETFs from <a href=\"https://www.sharesight.com/au/faq/#which-stock-exchanges-does-sharesight-support\">over
+  30 stock exchanges</a> (including dividends and distributions)</li>\n   <li>Australian,
+  New Zealand, Canadian, and UK mutual/managed investment funds (U.S. mutual funds
+  planned for late 2021)</li>\n   <li>Global currencies</li>\n<li>8 major cryptocurrencies</li>\n
+  \ </ul>\n<p>Please note that Sharesight does not allow tracking of short selling
+  or CFDs.</p>\n\n</details>\n\n  <details>\n  <summary>How do I import my share portfolio?</summary>\n<br>\n
+  \ <h3>How do I import my share portfolio?</h3>\n <br>\n<p>We integrate with a growing
+  list of online brokers which allows you to automatically import and track all your
+  trading history in just a few clicks.\n\n  You can also import your trading history
+  via CSV (Excel) or simply by entering trades manually.</p>\n  </details>\n\n<details>\n<summary>What
+  if I trade cryptocurrencies not supported by Sharesight?</summary>\n<br>\n<h2>What
+  if I trade cryptocurrencies not supported by Sharesight?</h2>\n<br>\n<p>If you trade
+  cryptocurrencies other than the 8 that are <a href=“https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/”>supported
+  by Sharesight</a>, you can still track your investments by adding a <a href=”https://help.sharesight.com/unquoted-instruments/”>Custom
+  Investment</a> into your Sharesight portfolio.\n<br>\nTo add a Custom Investment,
+  simply click ‘Add New Holding’ on the Portfolio Overview or Holdings page, and select
+  ‘Add a custom investment’ from the top right-hand corner of the Manual Holding box.\n<br>\n\n
+  \ <img src=\"https://images.ctfassets.net/91sm3pewxzag/4Kd2zVlWiZQRgKrhSG9cls/a7ce9b86407213ee5b710df41e6684ca/image_2_crypto_custom_investment.png\"
+  alt=\"Tracking crypto custom investments\">\n\n<small> When entering a cryptocurrency
+  custom investment into Sharesight, make sure to select the country of the fiat currency
+  used to purchase your cryptocurrency. </small>\n\nOnce you have created a Custom
+  Investment, you will be redirected to the Manual Holding screen to add details such
+  as the trade date, trade type, quantity and price. To track the performance of your
+  crypto investment in your portfolio, simply update the price movements by uploading
+  a spreadsheet of prices or manually entering the price movements on a regular basis.
+  \n\nIf you are tracking custom crypto investments along with the rest of the stocks
+  in your portfolio, it is also advised that you classify your investments using the
+  <a href=“https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/”>Custom
+  Groups</a> feature to easily differentiate between these different asset classes.</p>\n</details>"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2021-03-23 10:00:00.000000000 +11:00
+:meta_description: Frequently asked questions Frequently asked questionsFrequently
+  asked questionsFrequently asked questions Frequently asked questions
+:featured_image:
+  :title: View and export trading history Sharesight All Trades Report 0
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2iGptmKwHK936tVz5UmQ23/1cfefe6788f2d5ecb297275ac2936c43/View_and_export_trading_history_Sharesight_All_Trades_Report_0.jpg"
+  :_meta:
+    :updated_at: '2021-03-19T00:42:42+00:00'
+    :created_at: '2021-03-19T00:42:24+00:00'
+    :id: 2iGptmKwHK936tVz5UmQ23
+:hide_from_feed: false
+:slug: markdown-collapsible-section-test

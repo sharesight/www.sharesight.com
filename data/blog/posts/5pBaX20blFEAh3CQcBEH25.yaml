@@ -1,0 +1,146 @@
+---
+:id: 5pBaX20blFEAh3CQcBEH25
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-11-23T00:26:41+00:00'
+  :created_at: '2021-11-22T23:06:52+00:00'
+  :id: 5pBaX20blFEAh3CQcBEH25
+:title: What is the Compound Annual Growth Rate (CAGR)?
+:url_slug: compound-annual-growth-rate-cagr
+:content: "The Compound Annual Growth Rate or CAGR is one measure of an investment’s
+  [annual growth rate over time](https://www.investopedia.com/terms/c/cagr.asp), including
+  the impact of compounding. It is one of several metrics that can be used by investors
+  to measure and compare the past performance of investments or to project their expected
+  future returns. Here we look at some of the advantages and disadvantages of this
+  method.\n\n ![What is the Compound Annual Growth Rate (CAGR)](//images.ctfassets.net/91sm3pewxzag/5BCjXWVx2hMFskqKV6tLcp/d6c63d5c9a7283c544db8bafa054dd92/What_is_the_Compound_Annual_Growth_Rate__CAGR_.jpg?w=950)\n\n##
+  What Is the Compound Annual Growth Rate (CAGR)?\n\nA compound annual growth rate
+  (CAGR) measures the rate of return for an investment — such as a mutual fund or
+  bond — over any given investment timeframe. The CAGR is one of the most accurate
+  ways to calculate and determine returns for any asset that can rise or fall in value
+  over time. This metric is also known as a [\"smoothed\" rate of return](https://www.investopedia.com/investing/compound-annual-growth-rate-what-you-should-know/)
+  because it measures the growth of an investment as if it had grown at a steady rate
+  on an annually compounded basis. Investors can then compare the CAGR of two or more
+  investments within, or across different asset classes to assess how they performed
+  against each other, or alternatively benchmark against the performance of a market
+  index. This ability to evaluate performance across multiple investments can give
+  the CAGR method an advantage over other rates of return.\n\n## What is the CAGR
+  used for?\n\nThe CAGR is a mathematical formula that lets investors know what an
+  investment yields on an annually compounded basis. It is widely considered to be
+  the best formula for evaluating how different investments have performed over time.
+  The CAGR can also be used to compare the historical returns of stocks to bonds or
+  a savings account. However, it should be noted that the CAGR is only useful in comparing
+  investments over the same time periods and does not reflect investment risk. CAGR
+  assumes [a constant growth rate](https://www.businessinsider.com.au/cagr?r=US&IR=T)
+  across the period being assessed, by smoothing volatile or inconsistent investment
+  growth, it’s much easier to compare different investments or to track the performance
+  of a specific investment.\n\n## What is the CAGR formula?\n\nTo calculate the CAGR,
+  an investor essentially just needs three data points: the beginning value of the
+  investment; the end value of the investment; and the number of years of the investment
+  was held. To [calculate the CAGR of an investment](https://corporatefinanceinstitute.com/resources/knowledge/finance/what-is-cagr/)
+  one divides the value at the end of the investment period by its value at the beginning
+  of that period. Then raise the result to an exponent of one divided by the number
+  of years, and subtract one from the subsequent result. \n\nAs an example, consider
+  an investor who has invested $1,000 in a particular fund, which is then worth $1,850
+  after three years. In absolute terms, the fund has nearly doubled the initial stake
+  in generating a return of 85% over the three years. However, this can be misleading
+  and is a case where applying CAGR is a useful exercise. By applying CAGR: *(1850/1000)^(1/3)
+  – 1*, one gets 23%. In other words, the investment in the fund has yielded an average
+  return of 23% every year over the last three years. This is the compounded return
+  earned on an annual basis irrespective of the individual yearly performances of
+  the fund.\n\n## CAGR vs Internal Rate of Return\n\nThe Internal Rate of Return (IRR)
+  is also an important tool to calculate returns from an investment. However, it is
+  often more complex to calculate and more useful in more difficult situations comprising
+  many factors. These situations may involve multiple cash inflow and outflow events
+  that are not possible to calculate using the CAGR. Put another way, while CAGR is
+  easier to calculate, IRR can cope with [more complicated situations](https://www.investopedia.com/ask/answers/070914/what-are-main-differences-between-compound-annual-growth-rate-cagr-and-internal-rate-return-irr.asp).
+  The calculation of IRR makes use of the time period of the investment and the cash
+  flows over that time period. To do so, the investor needs to calculate the discount
+  rate or the IRR at which the Net Present Value of the investment becomes zero.\n\n##
+  What Is Risk-Adjusted CAGR?\n\nTo compare the performance and risk characteristics
+  among various investment alternatives, investors can use a [risk-adjusted CAGR](https://thepressfree.com/compound-annual-growth-rate-cagr-definition/).
+  A simple method for calculating risk-adjusted CAGR is to multiply the CAGR by one
+  minus the investment’s standard deviation. If the standard deviation (the amount
+  of risk) is zero, then the risk-adjusted CAGR is unaffected. The larger the standard
+  deviation, the lower the risk-adjusted CAGR will be.\n\n## Can you calculate CAGR
+  using a spreadsheet?\n\nIt’s possible to calculate CAGR using a spreadsheet, however
+  there is no built-in CAGR formula and you will need to set this up yourself, manually
+  adding your data every time you want to calculate CAGR under a different scenario.
+  By using an automated online portfolio tracker like Sharesight, you can easily compare
+  the performance of your shares over different time periods. \n\nFor example, Sharesight
+  users have the option to set their portfolio’s [annualised performance calculation
+  method](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)
+  to ‘simple’ or ‘compound’. This means that users can choose whether their returns
+  are calculated based on the principles of a simple annualised return or by using
+  a compound annual growth rate (CAGR), along with the time period over which investment
+  performance is calculated. Calculating the CAGR of your investments is also made
+  easier than ever with Sharesight’s ability to automatically track all of your investments
+  in one place, eliminating the need for manual data entry and complex spreadsheets.
+  \n\n## Calculate your investment returns with Sharesight\n\nThousands of investors
+  around the world are using Sharesight to automatically calculate their investment
+  portfolio returns. If you’re not already using Sharesight, what are you waiting
+  for? [Sign up](https://portfolio.sharesight.com/signup) for a Sharesight account
+  so you can: \n\n* Track all your investments in one place, including over 240,000
+  global stocks, ETFs, [mutual/managed funds](https://help.sharesight.com/au/supported-stock-exchanges-and-managed-funds),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Run powerful reports built for investors, including [Performance](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/),
+  [Portfolio Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/),
+  [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/),
+  [Multi-Period](https://www.sharesight.com/blog/multi-period-report/) and [Multi-Currency
+  Valuation](https://www.sharesight.com/blog/value-your-investments-in-any-currency-with-sharesight/)\n\n*
+  See the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  Easily [share access to your portfolio](https://help.sharesight.com/au/memberships_index)
+  with family members, your accountant or other financial professionals so they can
+  see the same picture of your investments that you do.\n\n[Sign up for a FREE Sharesight
+  account](https://portfolio.sharesight.com/signup) and get started tracking your
+  investment performance (and tax) today.\n\n![Sharesight hero image global](//images.ctfassets.net/91sm3pewxzag/1kF5n7IcCq98io5r8Chpbk/76180e973531a6903064ec99a7c386c6/Sharesight_hero_image_global.jpg?w=950)\n\n######
+  **Disclaimer:** The above article is for informational purposes only and does not
+  constitute a specific product recommendation, or taxation or financial advice and
+  should not be relied upon as such. While we use reasonable endeavours to keep the
+  information up-to-date, we make no representation that any information is accurate
+  or up-to-date. If you choose to make use of the content in this article, you do
+  so at your own risk. To the extent permitted by law, we do not assume any responsibility
+  or liability arising from or connected with your use or reliance on the content
+  on our site. Please check with your adviser or accountant to obtain the correct
+  advice for your situation.\n\n### FURTHER READING\n\n* [7 reasons why Sharesight
+  is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n\n*
+  [How your broker’s performance numbers mislead you](https://www.sharesight.com/blog/how-your-brokers-performance-numbers-mislead-you/)\n\n*
+  [3 ways to automate your portfolio admin](https://www.sharesight.com/blog/3-easy-ways-to-automate-your-portfolio-admin/) "
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2021-11-23 10:00:00.000000000 +11:00
+:meta_description: 'The CAGR is one of several metrics investors can use to measure
+  and compare the past performance of investments or project expected future returns. '
+:featured_image:
+  :title: What is the Compound Annual Growth Rate (CAGR)
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/5BCjXWVx2hMFskqKV6tLcp/d6c63d5c9a7283c544db8bafa054dd92/What_is_the_Compound_Annual_Growth_Rate__CAGR_.jpg"
+  :_meta:
+    :updated_at: '2021-11-22T23:13:19+00:00'
+    :created_at: '2021-11-22T23:12:46+00:00'
+    :id: 5BCjXWVx2hMFskqKV6tLcp
+:hide_from_feed: false
+:slug: what-is-the-compound-annual-growth-rate-cagr

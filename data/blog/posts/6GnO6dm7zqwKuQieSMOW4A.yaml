@@ -1,0 +1,74 @@
+---
+:id: 6GnO6dm7zqwKuQieSMOW4A
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-10-26T00:44:41+00:00'
+  :created_at: '2017-02-23T05:27:57+00:00'
+  :id: 6GnO6dm7zqwKuQieSMOW4A
+:title: Power your business with the Sharesight API
+:content: |-
+  We’ve been quietly building a [robust API](https://portfolio.sharesight.com/api). While this isn’t news to the businesses and developers who’ve partnered with [Sharesight](/), our APIs allow anyone from a mobile app developer to a bank to connect to Sharesight, or to leverage our portfolio reporting application for their own software.
+
+  As we add features, reports, and data sets to our core software application, these become available on our API in parallel. This means you can connect your website or application to Sharesight (to extend functionality to your customers), or pull back specific components for your own proprietary use (all behind the scenes).
+
+  ![featured - Sharesight API](//images.ctfassets.net/91sm3pewxzag/2vHBuJaniwIMUwWE2E46s6/438ecad56a9125942d431850d45c7a01/featured_sharesight-api.png?w=950)
+
+  Our original idea was for a complimentary business -- an online broker for example -- to invite their customers to link their accounts to Sharesight. This connection is an easy bridge from execution to reporting, and benefits the broker by encouraging customers to aggregate their accounts via Sharesight (while increasing the broker’s stickiness). Our mates at [CMC Markets](https://www.cmcmarkets.com/en-au/platform/stockbroking-platform/tax-portfolio-reporting) have done a terrific job with [their Sharesight API integration](/blog/sharesight-teams-up-with-cmc-markets-stockbroking/).
+
+  Since then the range of uses has expanded thanks to the creativity and contribution from our partners, especially those in the fintech community. We now have partners who just pull specific data points or reports from our API to combine with their own products.
+
+  PwC, for example, invites their high net worth clients to use Sharesight, but also pulls back the data points they feel most important to display on their own cloud platform, [PwC Next](/blog/pwc-partners-with-sharesight/). Another example is [Macrovue](/blog/announcing-a-new-partner--macrovue/), who make performance and tax reporting available to their clients, but strictly in their look and feel on their website.
+
+  If anything inside of Sharesight would benefit your business, software, or website please send us an email at sales[at]sharesight.com and we’ll grant you access to our test environment free of charge.
+
+  ### FURTHER READING
+
+  - Sharesight API --[Sharesight API Documentation](https://portfolio.sharesight.com/api)
+  - Help -- [Sharesight Connect](https://help.sharesight.com/sharesight_connect/)
+  - Blog -- [Why you should partner with Sharesight](https://www.sharesight.com/blog/why-you-should-partner-with-sharesight/)
+  - Blog -- [A new partnership with CMC Markets](https://www.sharesight.com/blog/a-new-partnership-with-cmc-markets/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2017-02-27 09:00:00.000000000 +11:00
+:meta_description: Use the Sharesight API to to extend functionality to your customers,
+  or pull back specific components for your own proprietary use (all behind the scenes).
+:featured_image:
+  :title: featured - Sharesight API
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2vHBuJaniwIMUwWE2E46s6/438ecad56a9125942d431850d45c7a01/featured_sharesight-api.png"
+  :_meta:
+    :updated_at: '2017-02-23T06:04:26+00:00'
+    :created_at: '2017-02-23T06:04:06+00:00'
+    :id: 2vHBuJaniwIMUwWE2E46s6
+:slug: power-your-business-with-the-sharesight-api

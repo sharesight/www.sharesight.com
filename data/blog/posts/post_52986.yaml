@@ -1,0 +1,114 @@
+---
+:id: post_52986
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T05:48:00+00:00'
+  :created_at: '2016-06-29T23:18:22+00:00'
+  :id: post_52986
+:title: The ten year gap in financial services technology
+:url_slug: the-ten-year-gap-in-financial-services-technology
+:content: "In my estimation, technology in traditional financial services lag other
+  industries by about a decade. Having trouble remembering what your online life was
+  like in 2006? Here's a benchmark: Facebook, Twitter, and the iPhone are each more
+  than 10 years old.\n\nSure, the word [fintech](https://en.wikipedia.org/wiki/Financial_technology)
+  has been all the rage the past couple of years, but it's not a good sign when the
+  word \"tech\" is wrenched into a moniker to explain what the companies involved
+  actually do. We don't refer to Uber as \"taxitech,\" just like we don't think of
+  Airbnb as \"hoteltech.\" It just works. It's how we live.\n\nI'm not sure who coined
+  the term _fintech_, but I can confidently say it's been popularised by incumbents
+  who look quizzically at tech companies (including [Sharesight](/)) as a paddock
+  for propeller-heads. Recently one banker asked me how things were going at the \"$2
+  shop\".\n\n![10 year gap - featured](//images.ctfassets.net/91sm3pewxzag/6IX7vAsrOEmEmS6SICO84u/3ebad33d9ebb6ae2056b09637670a3c0/featured_10-year-gap.jpg?w=950)\n\nIn
+  reality, we in the fintech industry are busy testing ideas and innovative technologies
+  that make everyday life better for those who depend on the [dusty realm](https://www.youtube.com/watch?v=LEsOjfoA4TQ)
+  of financial services. Some of us are outsiders set on challenging the banks head
+  on, while others come from the industry and seek to improve it.\n\n> Every day,
+  clients of financial advisers, accountants, and fund managers are finding ways to
+  access their data and take matters into their own hands — for better or worse.\"\n\nA
+  recent report by PwC highlighted just how much catching up financial services companies
+  have to do on the tech front. According to their survey, 69% of high-net-worth individuals
+  use mobile/online banking, with 40% using self-directed and execution-only investment
+  services, like a low cost online broker. Of those with more than $10M, only 22%
+  are \"very satisfied\" with their existing service.\n\n**That means wealthy people
+  are dissatisfied and their assets are portable. That must terrify those reliant
+  on vertical integration.**\n\nSo this bodes ill for professionals on the wrong side
+  of technology. Every day, clients of financial advisers, accountants, and fund managers
+  are finding ways to access their data and take matters into their own hands — for
+  better or worse. Sure there's dissatisfaction with the banking industry, but technology
+  (particularly mobile) is allowing us to do this in all other facets of life. There's
+  no stopping this trend.\n\n> The truth is, the most successful fintech companies
+  are the ones redefining how people are organising themselves around financial products.
+  And the financial professionals who understand this have a head start.\"\n\nThis
+  is not a surprise to us. While we see the best financial professionals seeking services
+  like Sharesight and our family of connected products, we also talk to those that
+  just don't get it. \n\nSome fintech companies are doing some really cool stuff with
+  technology — blockchain, or the way our developers have applied new JavaScript frameworks
+  to Sharesight, for example. But the truth is, the most successful fintech companies
+  are the ones redefining how people are _organising themselves_ around financial
+  products. And the financial professionals who understand this have a head start.\n\nWe've
+  recently started profiling our financial adviser clients and one common thread is
+  none rely on an out-of-the-box tech solution. Instead they let their clients dictate
+  which apps and services they use - not just for product selection, but access too.\n\nThe
+  banks who persist building or dictating the tech platforms their wealth management
+  teams use may not find their client relationships totally severed. Instead, their
+  assets under management won't grow, and they won't know who else is giving their
+  clients advice.\n\n### FURTHER READING\n\n- Blog -- [Why does finance hate technology?](/blog/why-does-finance-hate-technology/)\n-
+  Blog -- [A broken chain of investment providers: why investors pay the price](/blog/a-broken-chain-of-investment-providers-why-investors-pay-the-price/)\n-
+  Blog -- [Where is the Uber of Australian wealth management?](/blog/where-is-the-uber-of-australian-wealth-management/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:12+00:00'
+    :created_at: '2016-07-07T23:44:29+00:00'
+    :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :name: Thought Leadership
+  :description: 'A collection of thoughts and insights from the Sharesight team about
+    issues relating to investing and the fintech space. '
+  :url_slug: thought-leadership
+:created_at: !ruby/object:DateTime 2016-06-08 00:00:00.000000000 Z
+:meta_description: A recent report by PWC paints a grim picture for professionals
+  on the wrong side of financial services technology - here are our thoughts on the
+  matter.
+:featured_image:
+  :title: 10 year gap - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6IX7vAsrOEmEmS6SICO84u/3ebad33d9ebb6ae2056b09637670a3c0/featured_10-year-gap.jpg"
+  :_meta:
+    :updated_at: '2016-09-01T05:40:23+00:00'
+    :created_at: '2016-09-01T05:39:55+00:00'
+    :id: 6IX7vAsrOEmEmS6SICO84u
+:wordpress_url: "/2016/06/08/the-ten-year-gap-in-financial-services-technology/"
+:slug: the-ten-year-gap-in-financial-services-technology

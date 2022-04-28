@@ -1,0 +1,72 @@
+---
+:id: post_863
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:50+00:00'
+  :created_at: '2016-06-29T23:18:18+00:00'
+  :id: post_863
+:title: International shares + manual entry now available!
+:url_slug: international-shares-manual-entry-now-available
+:content: "The latest good news from Sharesight is that we now support international
+  shares! And that's not all. You can now manually enter investments that Sharesight
+  does not cover (for example unlisted shares, managed funds, and shares on other
+  international exchanges). \n\nBetter yet, this new functionality is available to
+  all Sharesight customers at no cost - your subscription stays the same.\n\n## International
+  shares\nSharesight now supports shares on the New York (NYSE), NASDAQ, and London
+  (LSE) stock exchanges. You can now add these shares into your portfolio just as
+  you would for an ASX or NZX share. Simply choose the appropriate exchange from the
+  drop down list when adding a new share.\n\n![International Shares](//images.ctfassets.net/91sm3pewxzag/3fKdH6KgA0cGo0segWK6uk/31c2a354a4ef91da8e40f7c9325350af/international_exchanges.png?w=950)\n\n##
+  Create and maintain your own instruments\nTo record an unlisted instrument or one
+  that is listed on an exchange that Sharesight does not currently support, select
+  'OTHER' in the 'Market' drop down box. To create a new instrument on the 'OTHER'
+  market, ensure that the 'Add New?' tick box is selected.\n\n![International Shares](//images.ctfassets.net/91sm3pewxzag/1OvMTasMqgSyCGYwEsuUkM/8e03cdfc94488e866416fcee532fc736/create_instrument.png?w=950)\n\nOnce
+  you have added a share on the 'OTHER' market you can manually record dividends and
+  trades against it just like any other share in Sharesight.\n\nTo get up-to-date
+  performance information all you need to do is enter the latest price. Simply go
+  to the detail page and click 'enter a price' in the right hand sidebar. Click 'show
+  prices' to view or edit historical prices.\n\n![International Shares](//images.ctfassets.net/91sm3pewxzag/337AqjpIX6aCG4UO6eOgye/0a3e20e82becf76a98d5af1e062ceec9/maintain_prices.png?w=950)\n\nThe
+  'Show Prices' page allows you to enter new prices and modify existing prices (simply
+  click on the prices to edit them). This page also contains an '[Upload Bulk Prices](https://help.sharesight.com/import-from-csv-file/)'
+  function which allows you to import a CSV file containing share prices (such as
+  the historic price files that can be obtained via the Google finance or Yahoo finance
+  websites).\n\n### FURTHER READING\n\n- Help -- [Supported Stock Exchanges, Mutual
+  Funds, Managed Funds, ETFs, etc.](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/)\n-
+  Blog -- [Global stock markets available on Sharesight](https://www.sharesight.com/blog/global-stock-markets/)\n-
+  Blog -- [Say yes to investment diversity Australia](https://www.sharesight.com/blog/say-yes-to-investment-diversity-australia/)"
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2010-09-10 00:00:00.000000000 Z
+:meta_description: Sharesight now supports international shares and investors may
+  now manually enter investments that Sharesight does not cover (unlisted shares,
+  etc).
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2010/09/10/international-shares-manual-entry-now-available/"
+:slug: international-shares-manual-entry-now-available

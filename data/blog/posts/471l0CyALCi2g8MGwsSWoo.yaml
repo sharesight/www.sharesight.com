@@ -1,0 +1,82 @@
+---
+:id: 471l0CyALCi2g8MGwsSWoo
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T06:24:17+00:00'
+  :created_at: '2018-11-21T23:27:55+00:00'
+  :id: 471l0CyALCi2g8MGwsSWoo
+:title: Sharesight now tracks over 1 million investments
+:content: |-
+  At Sharesight, numbers are very important to us. From the share price data we source from [more than 25 stock exchanges globally](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/) to the importance we put on accurately [calculating your investment performance](https://help.sharesight.com/performance_report/), they are at the core of everything we do.
+
+  Over the last 12 months the [numbers behind Sharesight](/blog/sharesight-in-numbers/) have increased considerably. Sharesight users globally continue to surge after Google turned its back on [DIY investors by ](https://www.sharesight.com/blog/4-ways-sharesight-is-better-than-google-finance/)[crippling ](https://www.sharesight.com/blog/4-ways-sharesight-is-better-than-google-finance/)[Google Finance](https://www.sharesight.com/blog/4-ways-sharesight-is-better-than-google-finance/) last year, and they realised that [Yahoo Finance is even worse](https://www.sharesight.com/blog/yahoo-finance-vs-sharesight--comparing-portfolio-trackers/).
+
+  This growth has pushed the numbers behind Sharesight to new records -- here are the latest ones to be broken:
+
+  ![featured sharesight numbers nov-2018](//images.ctfassets.net/91sm3pewxzag/4zIR7jePsIYm0c0UGe8aQ6/cd1d61084c7ff0b51374e60e5cf0ec78/featured_sharesight_numbers_nov-2018.png?w=950)
+
+  ### Sharesight users are tracking *over a million holdings*
+
+  Sharesight is currently tracking over a million individual holdings ( 1,079,664 to be precise), with the average Sharesight Investor plan user tracking 64 different investment holdings, and Expert plan users tracking an average of 114.
+
+  ### Sharesight currently tracks $6.1B (USD) worth of investments
+
+  If we count only Sharesight users who have been active in the last 30 days (and exclude portfolios larger than $10 million to remove outliers), Sharesight is currently tracking $US6.1 Billion in investments. This is a significant boost from the [$1.9 Billion Sharesight tracked](https://www.sharesight.com/blog/sharesight-in-numbers/) only one year ago.
+
+  ### A new trade is added to Sharesight *nearly every second*
+
+  Whether it be via [Sharesight’s API](https://portfolio.sharesight.com/api), or [imported with a CSV file](https://help.sharesight.com/au/import-from-csv-file/), brokers' [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/), or [manually added](https://help.sharesight.com/setting-up-your-holdings/), Sharesight users currently track a new trade **_nearly every second_**. That equates to over 30 million trades recorded in a single year!
+
+  At the individual portfolio level, across all plans, users have recorded 87 *trades* on average.
+
+  ### Investors in over 60 countries track their investments with Sharesight
+
+  While the majority of Sharesight’s users are in Australia and New Zealand, investors from over 60 countries around the globe currently use Sharesight to track their investments. And as we grow globally, we’ll expand our region-specific features. One example is the launch of Sharesight in Canada, which brought our [Canadian Capital Gains Tax report](https://www.sharesight.com/blog/canadian-capital-gains-tax-report/), support for [RRSP, RRIF](https://www.sharesight.com/blog/rrsp-and-rrif-canadian-tax-settings-in-sharesight-portfolios/) and [TFSA](https://www.sharesight.com/blog/track-your-tfsa-with-sharesight/) portfolios, as well as support for a growing list of [Canadian brokers](https://help.sharesight.com/ca/supported_brokers/).
+
+  ## Join the growing number of Sharesight users
+
+  If you’re not tracking your investment portfolio with a platform like Sharesight, what are you waiting for? Join Sharesight users around the world and [sign up for a free account](https://portfolio.sharesight.com/signup) today to get the full picture of your investment portfolio numbers.
+
+
+  ### FURTHER READING
+
+  - Blog -- [7 reasons to upgrade your Sharesight account](https://www.sharesight.com/blog/7-reasons-to-upgrade-your-sharesight-account/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  - Blog -- [A broken chain of investment providers: why investors pay the price](/blog/a-broken-chain-of-investment-providers-why-investors-pay-the-price/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2018-11-22 10:00:00.000000000 +11:00
+:meta_description: 'From share price data we source from over 25 stock exchanges to
+  accurately calculating your investment performance, numbers are at the core of Sharesight.
+
+  '
+:featured_image:
+  :title: Sharesight tracks 1 million investments
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6a47eaShUIusU0u0kMMSgm/8eb5a983b92e97ac5b7d3b589f1f1c21/Sharesight_tracks_1_million_investments.png"
+  :_meta:
+    :updated_at: '2018-11-22T00:34:16+00:00'
+    :created_at: '2018-11-22T00:33:58+00:00'
+    :id: 6a47eaShUIusU0u0kMMSgm
+:slug: sharesight-now-tracks-over-1-million-investments

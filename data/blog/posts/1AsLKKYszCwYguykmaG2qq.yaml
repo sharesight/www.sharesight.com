@@ -1,0 +1,90 @@
+---
+:id: 1AsLKKYszCwYguykmaG2qq
+:_meta:
+  :content_type_id: post
+  :updated_at: '2018-08-24T04:10:44+00:00'
+  :created_at: '2018-02-13T22:33:52+00:00'
+  :id: 1AsLKKYszCwYguykmaG2qq
+:title: Sharesight now has an Amazon Alexa Skill
+:content: "For anyone with an Amazon Echo, you can now ask Alexa how your shares are
+  doing by adding the Sharesight Alexa Skill.\n\nThe team at Sharesight love technology,
+  so we were excited to hear from a [developer who wanted to build an Alexa Skill](https://www.sharesight.com/blog/qa-with-sharesight-alexa-skill-developer--russell-dear/)
+  using the [Sharesight API](https://portfolio.sharesight.com/api) to allow investors
+  to check their investment portfolio performance using Amazon Alexa voice commands.\n\nIf
+  you own an Amazon Alexa device (such as the Echo or Echo Dot) -- it’s easy to add
+  the skill to your device and connect your Sharesight account.\n\n![featured - Sharesight
+  Amazon Alexa Skill](//images.ctfassets.net/91sm3pewxzag/FLfnDM8n02yOQkeKS8WiY/f80ad6d6221a52b3cbf89a67a1dbdc8d/featured_sharesight-amazon-alexa-skill.png?w=950)\n\n##
+  How to use the Sharesight Alexa Skill\n\nTo get started, you’ll need a Sharesight
+  account ([sign up for free](https://portfolio.sharesight.com/signup)) and to have
+  [added holdings](https://help.sharesight.com/setting-up-your-holdings/) to your
+  portfolio. It goes without saying that you’ll also need an Amazon Alexa device.\n\nYou’ll
+  need to visit [Amazon’s Sharesight Alexa Skill](https://www.amazon.com/Russell-Dear-Sharesight/dp/B078P69Z3L)
+  page to ‘enable’ the Skill, or alternatively you can find the Skill by searching
+  in the [Alexa app](https://www.amazon.com/gp/help/customer/display.html?nodeId=201602060)
+  for Sharesight. \n\nWhen you ‘enable’ the Skill, you will be asked to link Alexa
+  to your Sharesight account using the Sharesight API (you can revoke this access
+  at any time from the \"Account Settings\" page).\nOnce linked, you can interact
+  with with Alexa to check your Sharesight portfolio. \n\nWatch this video demonstrating
+  the Sharesight Skill to see how it works:\n\n<a href=\"https://www.youtube.com/embed/1IGz_7Sgj-8?rel=0\"
+  class=\"embedly-card\" data-card-width=\"100%\" data-card-controls=\"0\">Embedded
+  content: https://www.youtube.com/embed/1IGz_7Sgj-8?rel=0</a>\n\n__Client:__ “Alexa,
+  ask Sharesight how my portfolio is doing”<br>\n__Alexa’s response__ “Portfolio X
+  has a total gain of $2390 or 3.25%. It’s current value is $191,456.”\n\nThe Sharesight
+  Skill has been registered to work in all of the English-speaking markets in which
+  Amazon sells Alexa products (Currently English -- AU, CA, GB, IN, US). Other languages
+  may be added in the future.\n\n## Sharesight Alexa Skill FAQ\n\n### Who developed
+  the Sharesight Alexa Skill?\n\nThe [Sharesight Alexa Skill](https://www.amazon.com/Russell-Dear-Sharesight/dp/B078P69Z3L)
+  was developed by a Russell Dear (a Senior Developer at [Xero](https://www.sharesight.com/partners/xero/))
+  after he purchased an Alexa device and wanted to use it to get daily updates on
+  his Sharesight investment portfolio. Russell built the Sharesight Skill in a personal
+  capacity (it is not affiliated with his work at Xero).\n\nRead our [Q&A with Russell](https://www.sharesight.com/blog/qa-with-sharesight-alexa-skill-developer--russell-dear/)
+  to learn more about how he developed the Sharesight Alexa Skill.\n\n### Is my data
+  secure if I use the Sharesight Alexa Skill?\n\nThe Sharesight Skill connects to
+  your account using the secure [Sharesight API](https://portfolio.sharesight.com/api)
+  -- you can revoke Alexa’s access to your Sharesight account at any time from the
+  \"Account Settings\" page.\n\n### I found a bug or have a suggestion, who should
+  I contact?\n\nSend the Sharesight help team a message when logged in.\n\n## Want
+  to build an app like this for Google Home, etc?\n\nSharesight maintains both the
+  [Sharesight Connect](https://portfolio.sharesight.com/api/1/overview) and [Sharesight
+  User APIs](https://portfolio.sharesight.com/api/2/overview) and we encourage you
+  to connect using these APIs in new and innovative ways. Please send an email to
+  (sales@sharesight.com) and we can discuss granting you access to our test environment
+  free of charge and talk further on how we can build the Sharesight ecosystem.\n\n\n###
+  FURTHER READING\n\n- Blog -- [Student creates mobile app with Sharesight API](https://www.sharesight.com/blog/student-creates-mobile-app-with-sharesight-api/)\n-
+  Blog -- [Power your business with the Sharesight API](https://www.sharesight.com/blog/power-your-business-with-the-sharesight-api/)\n-
+  Blog -- [Sharesight Amazon Alexa Skill Developer Q&A](https://www.sharesight.com/blog/qa-with-sharesight-alexa-skill-developer--russell-dear/)\n\n\n\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-02-14 09:00:00.000000000 +11:00
+:meta_description: For anyone with an Amazon Echo, you can now ask Alexa how your
+  share portfolio is performing by adding the Sharesight Alexa Skill.
+:featured_image:
+  :title: featured - Sharesight Amazon Alexa Skill
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/FLfnDM8n02yOQkeKS8WiY/f80ad6d6221a52b3cbf89a67a1dbdc8d/featured_sharesight-amazon-alexa-skill.png"
+  :_meta:
+    :updated_at: '2018-08-24T04:10:20+00:00'
+    :created_at: '2018-02-13T22:36:41+00:00'
+    :id: FLfnDM8n02yOQkeKS8WiY
+:slug: sharesight-now-has-an-amazon-alexa-skill

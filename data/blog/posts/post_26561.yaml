@@ -1,0 +1,103 @@
+---
+:id: post_26561
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:46+00:00'
+  :created_at: '2016-06-29T23:18:15+00:00'
+  :id: post_26561
+:title: The importance of using a purpose-built application
+:url_slug: the-importance-of-using-a-purpose-built-application
+:content: "Back in the day big businesses built big software with big price tags.
+  With scores of developers, the temptation to stray from a core feature set was too
+  great.\n\nWant a terrific example of an epic fail?\n\nIn 2000, Enron (yes, that
+  [Enron](https://en.wikipedia.org/wiki/Enron_scandal)) teamed up with Blockbuster
+  (yes, that [Blockbuster](https://www.businessinsider.com.au/blockbuster-ceo-passed-up-chance-to-buy-netflix-for-50-million-2015-7))
+  to offer [a broadband service](https://www.forbes.com/2000/07/20/mu4.html). Enron
+  spent $350M on servers alone. Of course, they eventually filed for the largest bankruptcy
+  in US history and its former CEO is due to be released from prison in 2028. Blockbuster
+  also went bankrupt. Their business model seemed to be pretending Netflix didn’t
+  exist. So that didn’t go so well.\n\nIn our industry, we’ve seen $20,000-a-year
+  investment software offer CRMs, self-publishing tools, and even instant messaging.
+  It’s not a pretty sight. Nobody uses these features and they give rise to bloatware.\n\nRecently,
+  Reckon, an accounting software provider, created a stir amongst its client base
+  by [announcing](https://community.reckon.com.au/reckon/topics/stock_price_download_no_longer_active_as_of_1_august)
+  they will no longer provide downloadable share price data on their Reckon Accounts
+  Personal Product. Reckon made this decision due to a “forced technology change,”
+  and is asking clients to move to a new product to retain this functionality. \n\nWhile
+  this is a bummer for their clients who’ve relied on this feature for years, this
+  announcement shouldn’t come as too much of a shock. Reckon provides accounting software,
+  not investment software. We’ve seen their latest release in action - it’s very cool.
+  Their focus is most likely on providing mission-critical accounting features for
+  small businesses, accountants, and individuals.\n\nIf they’re concentrating their
+  efforts on core features, this is a win for their client base - so long as they
+  adopt an open platform architecture and allow their users to connect to purpose-built
+  applications. Look no further than the app store on your mobile as to why this structure
+  is so effective.\n\n[![Shark Laser - featured](//images.ctfassets.net/91sm3pewxzag/4nT7TAer1YIuG8MQGY2mca/7b3915ba5864e34da801ed89003f8293/featured_shark-laser.png?w=950)](http://www.thinkgeek.com/product/f2eb/)\n\n_Shark
+  With Frickin' Laser Pointer_ from [ThinkGeek](http://www.thinkgeek.com/product/f2eb/)\n\nAny
+  software provider focusing on a set of core features will never be able to keep
+  up with speciality apps on the periphery - especially a software provider who's
+  not in the cloud. This is something we remind ourselves of constantly at [Sharesight](/).
+  We get well-intended feedback on a range of ideas from technical charting to document
+  storage to becoming an online broker ourselves. Some of these ideas would generate
+  revenue in the short-term. All of these features would hurt our core application
+  over time. We’re never going to do any of these better than dedicated providers
+  unless we fundamentally change our business.\n\nOur aim is to connect to these services
+  via APIs and let our clients choose which apps to use. In this way, sometimes Sharesight
+  is the platform and sometimes we’re the add on.\n\n***Before relying on an application
+  to provide important life-admin tasks, make sure you understand what its core functionality
+  is. While any application might serve your immediate needs well, there's no guarantee
+  that they'll continue to provide the feature. Products change, competitors change,
+  technology changes. Sometimes the best way to grow is to kill-off peripheral features.***\n\nTo
+  put it another way, trust Sharesight to track and store your portfolio data, but
+  by all means don’t use our file uploader as a free alternative to Dropbox.\n\n###
+  FURTHER READING\n\n- Blog -- [A broken chain of investment providers: why investors
+  pay the price](/blog/a-broken-chain-of-investment-providers-why-investors-pay-the-price/)\n\n-
+  Blog -- [Where is the Uber of Australian wealth management?](/blog/where-is-the-uber-of-australian-wealth-management/)\n\n-
+  Blog -- [What is unbundling and how much can it save me?](/blog/what-is-unbundling-and-how-much-can-it-save-me/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+:created_at: !ruby/object:DateTime 2014-08-01 00:00:00.000000000 Z
+:meta_description: Relying on one single application to do a bunch of things may serve
+  your immediate needs, but there's no guarantee it will continue to do so in the
+  future.
+:featured_image:
+  :title: Shark Laser - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4nT7TAer1YIuG8MQGY2mca/7b3915ba5864e34da801ed89003f8293/featured_shark-laser.png"
+  :_meta:
+    :updated_at: '2016-09-13T11:25:09+00:00'
+    :created_at: '2016-09-13T11:24:55+00:00'
+    :id: 4nT7TAer1YIuG8MQGY2mca
+:wordpress_url: "/2014/08/01/the-importance-of-using-a-purpose-built-application/"
+:slug: the-importance-of-using-a-purpose-built-application

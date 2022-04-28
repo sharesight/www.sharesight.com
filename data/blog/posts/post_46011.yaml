@@ -1,0 +1,58 @@
+---
+:id: post_46011
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:23+00:00'
+  :created_at: '2016-06-29T23:16:00+00:00'
+  :id: post_46011
+:title: Auto-track your Suncorp trades
+:url_slug: auto-track-your-suncorp-trades
+:content: |-
+  Last week, we announced our support of [Select Equities Credit Suisse Trade Confirmation Emails](/blog/select-equities-credit-suisse/). Today, we're adding yet another name to our ever-growing list of [supported brokers](https://help.sharesight.com/supported_brokers/) for automatic trade tracking: **Suncorp**.
+
+  ![Suncorp - Featured](//images.ctfassets.net/91sm3pewxzag/43zwWFR3xuAqA8SIe8yCCe/19732425c2a56a7a78a08a14812498c7/featured_suncorp.png?w=950)
+
+  ### How to automatically track your Suncorp trades
+  Sharesight can automatically record your Suncorp trades by reading the PDF contract note attachments that are emailed to you by Suncorp after a trade has completed. By default, every Sharesight portfolio has a unique email address that is at the ready and "listening" for trades. You may either manually forward your Trade Confirmation Emails to this email address, or better yet, ask Suncorp to include it as a recipient when they send out the trade confirmation email. Once received, Sharesight will "read" the contract note and automatically record the trade details into your portfolio. Once the trade has been successfully recorded into your portfolio, a copy of the contract note PDF will be saved to the holding within your portfolio, and you'll receive a confirmation email from Sharesight.
+
+  With the addition of Suncorp, **Sharesight currently processes Trade Confirmation Emails from 91 brokers across Australia and New Zealand**. If you don't see your broker in our list of [supported brokers](https://help.sharesight.com/supported_brokers/), please leave a comment on our [community forum](https://community.sharesight.com) so we can gauge interest and work towards supporting them in the future.
+
+  ### FURTHER INFORMATION
+  - Help -- [Importing Trade Confirmation Emails](https://help.sharesight.com/contract_notes/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2015-10-09 00:00:00.000000000 Z
+:meta_description: Sharesight makes it easy to auto-track your Suncorp trades - simply
+  forward contract notes to your portfolio via the Trade Confirmation Emails feature.
+:featured_image:
+  :title: Suncorp - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/43zwWFR3xuAqA8SIe8yCCe/19732425c2a56a7a78a08a14812498c7/featured_suncorp.png"
+  :_meta:
+    :updated_at: '2016-09-11T06:53:17+00:00'
+    :created_at: '2016-09-11T06:52:23+00:00'
+    :id: 43zwWFR3xuAqA8SIe8yCCe
+:wordpress_url: "/2015/10/09/auto-track-your-suncorp-trades/"
+:slug: auto-track-your-suncorp-trades

@@ -1,0 +1,102 @@
+---
+:id: post_23672
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:05+00:00'
+  :created_at: '2016-06-29T23:18:30+00:00'
+  :id: post_23672
+:title: 'Announcing a new strategic partner: Stockspot'
+:url_slug: announcing-new-strategic-partner-stockspot
+:content: "###### Note: this partnership has expired and this integration is no longer
+  in place.\n\nWe’re proud to announce a new strategic partner, [Stockspot](https://www.stockspot.com.au)
+  Chris Brycki and his Sydney-based firm provide fully-online, low-fee, hassle-free
+  investing. Stockspot is Australia’s first paperless, managed discretionary account
+  provider for retail investors (like us). They’ll put your money to work in curated
+  ETF model portfolios and Sharesight will act as the investor-facing performance
+  and reporting tool. This is a big deal for investors.\n\n![sharesight + stockspot
+  - featured](//images.ctfassets.net/91sm3pewxzag/3f3TRRH1lCIowc0gm0EYag/f522ae0dffdd987d2db3010721045e82/featured_sharesight-stockspot.png?w=950)\n\nUsing
+  a super simple registration process, investors are taken through a series of questions
+  designed to gauge their risk tolerance, financial situation, investment horizon
+  and liquidity needs. Then they’re presented with portfolio options, complete with
+  a holdings breakdown and future performance expectations.\n\n![Stockspot](//images.ctfassets.net/91sm3pewxzag/WJFkpMRH4AowqE6OWaiqq/30064ccf8d9e906848afd4c893e27633/stockspot1.jpg?w=950)\n\nAll
+  Stockspot portfolios are comprised exclusively of ETFs. Most from Vanguard or iShares
+  (Blackrock), two of the most trusted and popular ETF providers. For an online, managed
+  investment product with a $2,000 minimum, this is 100% appropriate. Once you verify
+  your ID (again, fully-online) and fund your account (you guessed it, fully-online),
+  Stockspot puts your money to work in one of their ETF Model Portfolios. They’ll
+  rebalance you automatically, too.\n\nWe love ETFs. They provide the average investor
+  with so much cost-effective choice. Broad exposure to an index, country, or theme
+  at a low cost? Yes, please. We’re investors through and through at Sharesight. We
+  love picking cheap stocks, but we’re time-poor, and when a good opportunity can’t
+  be found, we invest in ETFs. The \"[core satellite](https://www.vanguardinvestments.com.au/adviser/adv/adviser-resources/knowledge-centre/core-satellite-approach.jsp)\"
+  approach serves us well.\n\nStockspot not only selects high quality ETFs on your
+  behalf, but their low fees mean you’ll have more money to invest over the long term.
+  [Studies have shown](https://www.wsj.com/articles/SB10001424052748704268004575417614035814700)
+  that the fees we pay to invest are the most reliable indicator of future returns
+  - even better predictors than research houses’ ratings. If you’re someone who prefers
+  to invest for the long term and expect to track the broad market - fees are just
+  as important as picking an asset class, let alone a solitary fund manager or company.
+  \n\nEnter [Sharesight](/). In order for Stockspot clients to track their performance,
+  keep tabs on dividends, and run tax reports they’ve chosen to partner with us. Sharesight
+  is the interface that Stockspot relies on to convey mission-critical information
+  to their clients.\n\n![Sharesight + Stockspot](//images.ctfassets.net/91sm3pewxzag/34i8HfKxfiQooYg0mU6SYw/5a92e6c57f37f821202781551bf0d7fe/stockspot2.jpg?w=950)\n\nChris
+  and his team had a look at some old-school portfolio administration providers and
+  determined that Sharesight provided better functionality and a more intuitive interface.
+  Furthermore, Sharesight adds a bit of extra value for his clients. With Sharesight,
+  even though we’ve white-labelled a dedicated version for Stockspot portfolios, his
+  clients can open a Sharesight account. This way they can view their Stockspot holdings
+  alongside their other portfolios. This provides one view onto all their holdings,
+  which is really handy, especially come tax time. \n\nYou’re reading our blog, so
+  you already know how we rant and rave about online \"life admin\". It’s 2014. We
+  expect everything to be accomplished online. Investing, travel booking, taxes, taxi
+  hire, you name it. Stockspot and Sharesight manage to do two important things at
+  once: provide a cost-effective way to invest and a fully-online experience.\n\n###
+  FURTHER READING\n\n- Blog -- [Announcing a new partner - Macrovue](/blog/announcing-a-new-partner--macrovue/)\n-
+  Blog -- [Announcing a new partner - Six Park](/blog/announcing-a-new-partner--six-park/)\n-
+  Blog -- [Visualise your portfolio with Sharesight and Simply Wall St.](/blog/visualise-your-portfolio-with-sharesight-and-simply-wall-st/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+:created_at: !ruby/object:DateTime 2014-05-12 00:00:00.000000000 Z
+:meta_description: Sharesight announces new strategic partner Stockspot, a Sydney-based
+  firm providing fully-online, low-fee, hassle-free investing.
+:featured_image:
+  :title: sharesight + stockspot - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3f3TRRH1lCIowc0gm0EYag/f522ae0dffdd987d2db3010721045e82/featured_sharesight-stockspot.png"
+  :_meta:
+    :updated_at: '2016-09-09T01:56:49+00:00'
+    :created_at: '2016-09-09T01:56:22+00:00'
+    :id: 3f3TRRH1lCIowc0gm0EYag
+:wordpress_url: "/2014/05/12/announcing-new-strategic-partner-stockspot/"
+:slug: announcing-a-new-strategic-partner-stockspot

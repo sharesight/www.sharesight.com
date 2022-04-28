@@ -17,9 +17,6 @@ describe 'URL Middleman Helper', :type => :helper do
     it "should be an absolute url" do
       skip "This does not work – Middleman does not seem to update the `current_page`..  The base function is tested, however."
 
-      visit @url + '/blog/anything'
-      expect(Capybara.app.canonical_url).to eq(@url + '/blog/anything/')
-
       visit @url + '/nz/partners'
       expect(Capybara.app.canonical_url).to eq(@url + '/nz/partners/')
     end
@@ -44,10 +41,6 @@ describe 'URL Middleman Helper', :type => :helper do
 
     it "should strip out .html" do
       expect(@app.absolute_url('something.html')).to eq(@url + '/something/')
-    end
-
-    it "should strip out index" do
-      expect(@app.absolute_url('blog/index')).to eq(@url + '/blog/')
     end
 
     it "should return no trailing slash when no path" do
@@ -180,7 +173,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/faq', 'faq'],
         ['faq', 'faq'],
         ['/ug/faq', 'ug'], # bad "locale id"
-        ['/blog/blog-post-something', 'blog']
       ].each do |assume, expect|
         expect(@app.page_from_path(assume)).to eq(expect)
       end
@@ -276,7 +268,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['', '/'],
         ['/', '/'],
         ['/nz/pages/2/', '/nz/'],
-        ['/blog/pages/2.html', '/blog/'],
         ['/pages/2.html', '/'],
         ['/some-pages/2.html', '/some-pages/2/'],
         ['/some-pages/0f.html', '/some-pages/0f/'],

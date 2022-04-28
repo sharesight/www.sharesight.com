@@ -1,0 +1,96 @@
+---
+:id: post_18772
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:30:50+00:00'
+  :created_at: '2016-06-29T23:15:37+00:00'
+  :id: post_18772
+:title: Sharesight’s beautiful Xero integration
+:url_slug: sharesights-beautiful-xero-integration
+:content: "A lot of [Sharesight](/) clients ask if we’re owned by or somehow part
+  of [Xero](https://www.xero.com). We’re not. But the misunderstanding makes sense.
+  We’re both disruptive cloud companies based in Wellington and spend a lot of time
+  out on the road together. The fact that our integration is so seamless might be
+  the real source of the confusion. In a nutshell, the [Sharesight + Xero connection](/xero/)
+  means you can do proper investment accounting, automatically.\n\n![Xero Add-On](//images.ctfassets.net/91sm3pewxzag/2tcXk9vz6wKWSKAuiuQ8o8/ef31d4dcb3cd55b3da1d34cf7f105aec/Xero-logo.png?w=950)\n\n[We’re
+  a “Five Star” Xero Add-On Partner](https://community.xero.com/business/discussion/2212560/),
+  which means your Sharesight portfolios can be synchronised with Xero. Whether you’re
+  using [Xero Cashbook](/xero/) or any sized Xero business plan, all of your investment
+  data will flow through to Xero’s accounting app “automagically.” It’s super easy
+  to connect the two. Just go to Xero Settings within Sharesight and connect by entering
+  your Xero username and password.\n\n![Xero Cashbook integration](//images.ctfassets.net/91sm3pewxzag/3nPlIC16kMGqyW64E28GY4/a7dd14d6ab31472a3c91c251f2f5eacd/Xero-integraton.png?w=950)
+  \n\nOnce the accounts are synced, just tell Xero if you’d like to use bank transactions
+  or invoices. Now you’re ready to map your Sharesight investment transactions and
+  income with your personalised chart of accounts in Xero. This means you can track
+  your realised gains, losses, dividends reinvested (DRPs), interest income, franking
+  credits, and much more. The point is, you can tailor your chart of accounts for
+  each type of client and setup the corresponding Xero reports accordingly.\n\n![Sharesight’s
+  Beautiful Xero Integration](//images.ctfassets.net/91sm3pewxzag/6Lf6AW2Qus4wqKwwo6mqmY/886ae8ee15aa897b31e6b282d1545ff6/dougs-merge.png?w=950)\n\nUsing
+  [Xero Report Packs](https://digitalfirst.com/xero-report-packs-bring-free-financial-reporting-to-australian-partners/)
+  takes this one step further. Report Packs allow for reusable, special purpose templates.
+  These are especially handy for those with self managed super funds (SMSFs), professional
+  traders, and even the buy and hold long term investor.\n\nFrom this point on when
+  you (or your clients) make a trade or when you receive a dividend payout, this data
+  will go from the broker to Sharesight to Xero in about two minutes. Sharesight will
+  even show you when the data has been sent through successfully. Just watch the little
+  Xero icon appear and go from grey to blue. It’s satisfying, trust us. \n\n![Sharesight’s
+  Beautiful Xero Integration](//images.ctfassets.net/91sm3pewxzag/50QW8JGziU2gyQ4k4MKiQ/5948d9bad0d5a1594b1366f8d0583914/dividend-xero-sync.png?w=950)\n\nIf
+  you’re like a lot of our clients, a good chunk of your day is spent in front of
+  Xero. After all, it’s the engine that underpins your business. Since our sync works
+  even when you’re not logged into Sharesight, you can still see investment activities
+  as they flow through. Have a client who invested in the new OzForex float? Clients
+  that stand to benefit from Westpac’s special dividend? How about a client who turned
+  a quick profit on the Twitter IPO? No problem, we’ve got you covered. We’re not
+  talking about a one line, cryptically coded entry either. Sharesight pushes through
+  all of the execution details. And if you want to investigate a bit more, we’ve added
+  a handy link within each Xero transaction record.\n\n![Xero Cashbook](//images.ctfassets.net/91sm3pewxzag/4cyy86u6QgqGC0aMKMI2uO/e78f9b0bc467bc0c4d3813c649a5b76c/Xero.png?w=950)\n\nBefore
+  the Sharesight and Xero hook-up, investors (and especially accountants) had to play
+  catch up at tax time. Each time an accurate snapshot of capital gains or dividend
+  income was needed, they were forced to wind back the clock and recreate client portfolios.
+  No more. Since Sharesight records trades, corporate actions, and dividends as they
+  happen over the course of a tax year, generating a performance report, capital gains
+  tax report, cash summary, or profit & loss statement is just a couple of clicks
+  away. \n\nSharesight and Xero gives time back to accountants, financial advisers,
+  and investors. This is time freed up from rote, admin tasks like manually entering
+  portfolio data or tracking down a dividend payment. These precious billable hours
+  can now be applied to forward-looking, discussions like tax planning, estate planning,
+  anything to reassure clients you’re thinking about them strategically.\n\n### FURTHER
+  READING\n- Blog -- [Sharesight is now a Silver Xero Partner & Certified Advisor!](/blog/sharesight-now-silver-xero-partner/)\n-
+  Help -- [Connecting your portfolio to Xero](https://help.sharesight.com/xero_settings/)\n-
+  Help -- [Tracking cash investments using Xero](https://help.sharesight.com/tracking-cash-investments-using-xero/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2013-11-18 00:00:00.000000000 Z
+:meta_description: Send your buys, sells, and dividends data to Xero, and view your
+  cash balances within your Sharesight investment portfolios.
+:featured_image:
+  :title: Sharesight + Xero - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/10yaKVs1q8gGMsOUiiU2CM/f38e9493dc26292bc16c6b8d5ea630d9/featured_sharesight_xero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:23:05+00:00'
+    :created_at: '2016-09-09T05:22:53+00:00'
+    :id: 10yaKVs1q8gGMsOUiiU2CM
+:wordpress_url: "/2013/11/18/sharesights-beautiful-xero-integration/"
+:slug: sharesights-beautiful-xero-integration

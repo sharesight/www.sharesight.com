@@ -1,0 +1,71 @@
+---
+:id: 49Tg8xDERO0OkysgQyw8cs
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-10-13T22:19:18+00:00'
+  :created_at: '2018-02-01T23:59:15+00:00'
+  :id: 49Tg8xDERO0OkysgQyw8cs
+:title: RRSP and RRIF Canadian tax settings in Sharesight portfolios
+:content: |-
+  Great news for Canadian investors! Today we’re pleased to formally announce new tax settings for [Sharesight](/) portfolios, just in time for the Canadian tax season. As a reminder, April 30 is the deadline to file your 2017 taxes (if you’re self-employed, it’s June 15).
+
+  ![Featured - Tax Settings Canada](//images.ctfassets.net/91sm3pewxzag/74W0zjDusoKCyWO8e8AiEs/2630c30734c5c7d0bdc627f5bd948020/featured_tax-settings-canada.jpg?w=950)
+
+  ## New tax settings for Canadian Sharesight portfolios
+
+  Investors with a Sharesight portfolio tax residency set to “Canada” now have a choice of the following tax settings which conform to [Canadian Revenue Agency](https://www.canada.ca/en/services/taxes/income-tax.html) (CRA) tax reporting rules:
+
+  - **Non-registered** -- standard tax rules apply (default)
+  - **Registered Retirement Savings Plan (RRSP)** -- Non-resident withholding tax does not apply for US stocks
+  - **Registered Retirement Income Fund (RRIF)** -- Non-resident withholding tax does not apply for US stocks
+
+  ## More info
+
+  - **Visit our dedicated help page**: *[Changing the tax setting of your Canadian portfolio](https://help.sharesight.com/ca/changing-the-tax-setting-of-your-portfolio/)*
+
+  - **Share your feedback** in our forum: *[Canadian tax settings in Sharesight portfolios](https://getsatisfaction.com/sharesight/topics/canadian-tax-settings-in-sharesight-portfolios)*
+
+  - **Get ahead this tax season**: *[3 ways Sharesight helps Canadians at tax time](/blog/3-ways-sharesight-helps-canadians-at-tax-time/)*
+
+  ## Simply the best portfolio tracker for Canadian investors
+
+  Join the thousands of Canadian investors already using [Sharesight](/) to manage their investment portfolios. To get started for FREE, simply [sign-up](https://portfolio.sharesight.com/signup) and import your stocks and [mutual funds](/blog/track-canadian-mutual-funds-with-sharesight/). Then watch as corporate actions such as dividends and stock splits are automatically incorporated. And there’s even a handy mobile app that lets you track your portfolio on the go!
+
+  ### FURTHER READING
+  - [Canadian Capital Gains Tax Report](/blog/canadian-capital-gains-tax-report/)
+  - [Track Canadian Mutual Funds with Sharesight](/blog/track-canadian-mutual-funds-with-sharesight/)
+  - [Import your Questrade trades into Sharesight](/blog/import-your-questrade-trades-into-sharesight/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-02-02 11:04:00.000000000 +11:00
+:meta_description: 'Canadian investors now have a choice of the following tax settings
+  which conform to CRA tax reporting rules: non-registered, RRSP, or RRIF.'
+:featured_image:
+  :title: Featured - Tax Settings Canada
+  :description: Sharesight Canadian Tax Settings
+  :url: "//images.ctfassets.net/91sm3pewxzag/74W0zjDusoKCyWO8e8AiEs/2630c30734c5c7d0bdc627f5bd948020/featured_tax-settings-canada.jpg"
+  :_meta:
+    :updated_at: '2018-02-02T00:03:36+00:00'
+    :created_at: '2018-02-02T00:02:49+00:00'
+    :id: 74W0zjDusoKCyWO8e8AiEs
+:slug: rrsp-and-rrif-canadian-tax-settings-in-sharesight-portfolios

@@ -1,0 +1,70 @@
+---
+:id: 47CE9w0plK8ES6gMSGcsE4
+:_meta:
+  :content_type_id: post
+  :updated_at: '2018-05-16T05:57:18+00:00'
+  :created_at: '2018-04-24T00:20:47+00:00'
+  :id: 47CE9w0plK8ES6gMSGcsE4
+:title: Import foreign exchange transactions via CSV
+:content: |-
+  We know from the feedback that we get that the biggest challenge for many investors is getting their portfolio set up in [Sharesight](https://www.sharesight.com/). So one of our goals is to make it as easy as possible for you to get your data into (and out of) Sharesight. We recently released some improvements to our [CSV file importer](https://help.sharesight.com/import-from-csv-file/) to allow you to import historical foreign exchange (or FX) transactions (including cryptocurrencies) to your Sharesight account.
+
+  ## Tracking foreign exchange investments in your Sharesight portfolio
+
+  We recently introduced [Sharesight’s Foreign Currency tracking feature](https://www.sharesight.com/blog/track-foreign-currency-on-sharesight/) to allow investors to track foreign exchange accounts with intraday prices updated at 5 minute intervals, plus the ability to denominate brokerage fees in the currency being traded.
+
+  Currently 32 worldwide currencies can be tracked using the FX account feature – [plus 8 cryptocurrencies](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/) – with additional currencies to be added in the future.
+
+  ## Import your historical FX transactions to Sharesight
+
+  The first step is getting a list of all of your FX transactions into a spreadsheet. Thankfully this is easier than it sounds as most online brokers allow you to export a copy of your trading history in a form that can be opened up in a spreadsheet program such as Microsoft Excel.
+
+  Provided that your spreadsheet contains one row per trade and one column per attribute (price, quantity, date, brokerage, etc) it is now much easier to import this data into Sharesight.
+
+  ![Screen Shot 2018-04-23 at 11.17.36 am](//images.ctfassets.net/91sm3pewxzag/7jEwuqMt20kCWEUQOq8S4w/8d59c4690c401018d175f267afbe1d38/Screen_Shot_2018-04-23_at_11.17.36_am.png?w=950)
+
+  Sharesight’s [Import bulk trades via CSV](https://help.sharesight.com/import_bulk_trades/) feature lets you map foreign exchange transactions to a currency account holding for each currency held. Once imported you’ll be able to track the value of your FX holdings with prices updated every 5 minutes.
+
+  ![Screen Shot 2018-04-23 at 11.18.30 am](//images.ctfassets.net/91sm3pewxzag/7xl8QmxmxOYiQAqIa4O4qC/36d511c1c56b7b4645d1eb6d297b04f6/Screen_Shot_2018-04-23_at_11.18.30_am.png?w=950)
+
+  ## Sharesight is your passport for investing
+
+  Sharesight understands the importance of diversifying your investments internationally. Which is why [Sharesight now tracks 30 markets around the world](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/). Adding support for intraday foreign exchange rates is all part of our vision to be your passport to unlocking your true portfolio performance.
+
+  ## Unlock your investor passport today
+
+  1. Sign-up for a [FREE Sharesight account](https://portfolio.sharesight.com/signup).
+  2. [Add your holdings](https://help.sharesight.com/getting-started-with-sharesight/) to your portfolio(s).
+  3. Sharesight converts the prices and valuations of your holdings from their listed market to your portfolio’s base currency – automatically – and continues to track currency fluctuations, including their impact on your performance!
+
+  ### FURTHER READING
+
+  - [Track foreign currency on Sharesight](https://www.sharesight.com/blog/track-foreign-currency-on-sharesight/)
+  - [Track Cash Accounts in Sharesight](https://www.sharesight.com/blog/track-cash-accounts-in-sharesight/)
+  - [Track Bitcoin and other cryptocurrencies with Sharesight](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:created_at: !ruby/object:DateTime 2018-04-24 10:00:00.000000000 +10:00
+:meta_description: 'You can now import historical foreign exchange (or FX) transactions
+  (including cryptocurrencies) to your Sharesight account.
+
+  '
+:featured_image:
+  :title: Featured-import-FX-transactions-csv
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2SGM3ZbV3qs0KGYqCIaEi0/25196223d4aea219c7b0babc50de848b/Featured-import-FX-transactions-csv.png"
+  :_meta:
+    :updated_at: '2018-04-24T00:34:58+00:00'
+    :created_at: '2018-04-24T00:34:31+00:00'
+    :id: 2SGM3ZbV3qs0KGYqCIaEi0
+:slug: import-foreign-exchange-transactions-via-csv

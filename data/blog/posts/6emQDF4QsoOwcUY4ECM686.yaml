@@ -1,0 +1,159 @@
+---
+:id: 6emQDF4QsoOwcUY4ECM686
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-10-09T06:06:56+00:00'
+  :created_at: '2017-04-13T03:39:59+00:00'
+  :id: 6emQDF4QsoOwcUY4ECM686
+:title: Vice or virtue - what's the better investment?
+:content: "Thematic investing has outlived its originators.\n\nThe world’s oldest
+  mutual fund, the Putnam Investors Fund, takes a “go anywhere approach” and its mantra
+  is “seeking great companies for investors since 1925.” The theme being great companies
+  as opposed to terrible ones.\n\nToday thematic investing is sexier. Themes range
+  from specific tech sectors to bets against a particular industry. Thematic strategies
+  go hand-in-hand with ETFs. Investors can trade in and out of them on public markets.
+  One of our partners, [Macrovue](/blog/announcing-a-new-partner--macrovue/), curates
+  Vues -- themes you can deploy to suit your preferences.\n\n### That a manager tracks
+  a particular theme is enough to gather assets. \n\nOne of my all time favourites
+  is the [Vice Fund](http://www.usamutuals.com/) (MUTF:VICEX). The folks at Vice run
+  a strategy “across industries with significant barriers to entry including tobacco,
+  alcoholic beverages, gaming, defense, and aerospace industries.”\n\nThat innocuous
+  mission statement betrays the fact that their logo is a martini, a bullseye, a pair
+  of tumbling dice, and a lit cigarette. I’m sure the Trump administration is considering
+  Vice as their default pension option.\n\n![featured - Angels and Demons](//images.ctfassets.net/91sm3pewxzag/2luPlEMQDy8okWIo6QaMGE/fab119b652cfcb0f4921cc94467f9c60/featured_angels-demons.png?w=950)\n\nHaving
+  been a Vice enthusiast for some time, I began to wonder if Vice had an opposite.
+  If Vice is the devil on one shoulder could there be an angel on the other?\n\nSocially
+  responsible investing (SRI) has grown in popularity, becoming almost synonymous
+  with eco-friendly investing. SRI has been around since the 1990s, mostly with a
+  focus on civil rights, poverty, and even better rights for investors.\n\nBut most
+  mainstream SRI funds don’t offer an inverse to the Vice Fund. If vice is defined
+  as immoral or wicked behaviour, the inverse would be a fund that encourages moral
+  and virtuous behaviour.\n\n### What righteous earthy body has enough money to run
+  a fund like that?\n\nThe Christians. I began researching religious-based mutual
+  funds. Turns out there are a lot of them -- Catholic funds, Lutheran funds, evangelical
+  options -- a flavour for every denomination.\n\nAmongst the largest by funds under
+  management and with a name to rival the Vice Fund is the [Ave Maria Rising Dividend
+  Fund](https://avemariafunds.com/fund-family/avedx.html) (MUTF:AVEDX). Talk about
+  an awesome marketing visual -- dividends rising from the grave, safely collected
+  by George Schwartz and Richard Platte, the fund’s managers in suburban Detroit.\n\nAve
+  Maria Rising Dividend seeks dividend income and growth through companies that “do
+  not violate the teachings of the Roman Catholic Church.” Not surprisingly their
+  logo features a Gothic-style church window, an open bible and a cross.\n\n![logos
+  - Vice Fund & Ave Maria Mutual Funds](//images.ctfassets.net/91sm3pewxzag/7LFla1p4HuQE4E2aSgIeWE/70a25a9831212536dbed862b1566a606/logos_vice-ave-maria.png?w=950)\n\n###
+  Two funds on opposite ends of the moral spectrum. What happens when we compare their
+  portfolios?\n\nWhether you prefer the crusaders of virtue or princes of darkness,
+  both options are steeped in conviction -- something you want in such a fund manager.
+  Vice owns just 44 stocks compared to Ave Maria’s 38. The world offers more opportunities
+  to sin I suppose.\n\nObviously investors should expect completely distinct portfolios
+  right?\n\nNope. Digging through their latest disclosure documents shows two companies
+  owned by both funds. In such concentrated portfolios with such opposite mandates
+  that’s a huge surprise. What type of company could possibly pass a screening for
+  both vice and virtue?\n\nLibations!\n\nVice and Ave Maria both own shares in alcohol
+  giants Diageo and Brown-Forman. Each of the four positions represent over 1% of
+  their total portfolios, which means that Vice and Ave Maria have almost 5% of client
+  money copulating.\n\nSurprisingly Ave Maria takes a particular shine to energy (Exxon,
+  Schlumberger, and Halliburton) whereas Vice... actually Vice does nothing surprising.
+  Every company in their portfolio sells a product that kills you (Philip Morris),
+  kills others (Raytheon), takes your money (Crown Casinos), or starts wars (Lockheed
+  Martin).\n\nHere are the top 10 holdings in each portfolio:\n\n### The Vice Fund\n\n|
+  Company     | Type     |\n| ---------- | ---------- |\n| Altria       | Cigarettes
+  \      |\n| American Outdoor Brands       | Guns       |\n| Heineken       | Alcohol
+  \      |\n| Imperial Brands | Cigarettes       |\n| Las Vegas Sands       | Casinos
+  \      |\n| MGM Resorts       | Casinos       |\n| Philip Morris       | Cigarettes
+  \      |\n| Raytheon       | Missiles       |\n| Reynolds American       | Cigarettes
+  \      |\n| Wynn Resorts       | Casinos       |\n\n\n### Ave Maria Rising Dividend\n\n|
+  Company     | Type     |\n| ---------- | ---------- |\n| 3M       | Industrial &
+  Consumer Products       |\n| Amgen       | Biotech       |\n| Cisco Systems       |
+  Tech       |\n| Diageo       | Alcohol       |\n| Emerson Electric       | Industrial
+  Automation       |\n| Medtronic       | Medical Tech       |\n| Omnicom       |
+  Advertising      |\n| UPS       | Shipping       |\n| WW Grainger       | Industrial
+  Parts Distributor       |\n| Zimmer Biomet       | Knee Replacements       |\n\n###
+  Which fund passes the ultimate judgement -- performance?\n\nAccording to Morningstar,
+  $10,000 invested in Ave Maria Rising Dividend would have netted you $2,600 more
+  than the Vice Fund over the last 10 years. That’s redeeming.\n\nWhile the minimum
+  investment amounts are both modest, the price to sin is 61% higher than to give
+  to the collection plate. This expense ratio difference explains a good chunk of
+  the performance gap.\n\n### But how to measure each manager’s true beliefs?\n\nI
+  wanted to measure the performance of each manager’s highest conviction stock picks.
+  To determine, I built each portfolio in [Sharesight](/), but with a twist:\n\n-
+  First, I bought each manager’s top five current holdings by portfolio weight, but
+  invested the current amount of shares held back on the date they first bought the
+  company.\n- Second, I bought the five longest held positions in each portfolio,
+  again investing the current position held back on the day they first bought the
+  stock.\n\nYes, this approach wreaks of hindsight, but it’s a fun way to pit the
+  angels against the demons.\n\n### How did the managers fare based on their conviction
+  picks?\n\nSince the first purchase in 2005, the “Angels” portfolio (Ave Maria Rising
+  Dividend) returned 6.58% annualised, with a 3.05% annualised dividend income.\n\n![screenshot
+  - Angels and Demons 1](//images.ctfassets.net/91sm3pewxzag/gvZ8jot2bm8I6uEIQ4sUi/0da414ca33058edef9daefc6ba795df7/screenshot_angels-demons-1.png?w=950)\n\nSince
+  the first purchase in 2003, the “Demons” portfolio (Vice Fund) returned 32.31% annualised,
+  with a 7.48% annualised dividend income:\n\n![screenshot - Angels and Demons 2](//images.ctfassets.net/91sm3pewxzag/3c2ZnWQmLC4mAwMiIUUcaa/9f8f62a5f324c86c0080adc943ec8fef/screenshot_angels-demons-2.png?w=950)\n\nTo
+  be fair the Vice Fund has been running for longer (it’s also half the size). Here’s
+  a look at how each fund’s conviction picks compare over the same time periods:\n\n|
+  &nbsp; | 1 Year | 3 Year | 5 Year | 7 Year | 10 Year |\n| --- | --- | --- | ---
+  | --- | --- |\n| The Vice Fund            | 17.78% | 22.02% | 25.86% | 29.83% |
+  24.97%|\n| Ave Maria Rising Dividend| 5.98%  | 2.23%  | 6.68%  | 6.16%  | 5.51%
+  |\n| S&P 500 (SPY)            | 14.69% | 11.99% | 16.97% | 16.52% | 8.30% |\n\n<small><i>Performance
+  figures annualised</i></small>\n\n### But what explains those returns?\n\nI ran
+  a [contribution analysis report](/blog/announcing-the-contribution-analysis-report/)
+  in Sharesight to further breakdown Vice’s return profile, with [custom groups](/blog/announcing-custom-groups/)
+  based on how I’d classify these companies.\n\nUnlike most mortal souls, their commitment
+  to smoking has really kept them going.\n\n64% of the Vice Fund’s 14 year return
+  is attributable to their investment in tobacco companies. This explains why even
+  in 2017 British American Tobacco announced plans to buy Reynolds for $49B. Runner
+  up is their investment in “War,” which explains 26% of their total return.\n\n![screenshot
+  - Angels and Demons 3](//images.ctfassets.net/91sm3pewxzag/4Kh3F2sb1KKEK8CY6oieac/7ecbdb39d50eb1a55528e56c3c981731/screenshot_angels-demons-3.png?w=950)\n\nAs
+  for Ave Maria, their return composition is diversified with Emerson Electric and
+  Cisco Systems leading the way. However, even though their portfolio may pass a “Catholic
+  screen,” I was less convinced of their purity.\n\nBased on what I learned in Sunday
+  School, I built another custom group that tags their holdings as “Saints,” “Sinners,”
+  and “Purgatory” for those in between -- these companies may have good intentions,
+  but their products seem to wind up in the hands of companies in the Vice portfolio.\n\nTurns
+  out those stranded in Purgatory are the biggest driver of returns, delivering 64%
+  of the fund’s return over 12 years, followed by the Sinners’ 32%.\n\nThe Saints
+  returned only 4%.\n\nTo Ave Maria’s credit, Emerson Electric, one of their longest
+  held and largest positions has contributed almost 30% to their total return. Unfortunately,
+  Emerson is stuck in Purgatory -- their products are used in nuclear submarines and
+  deep sea oil rigs.\n\n![screenshot - Angels and Demons 4](//images.ctfassets.net/91sm3pewxzag/3dQ7MbJgGAEgC6QGoUEGWA/c9ae59126453cce45df8dcc2d35f7b14/screenshot_angels-demons-4.png?w=950)\n\nThematic
+  investing is a useful tactic, but it’s wise to know what you’re actually buying
+  and at what price. Ave Maria Rising Dividend investors should be thrilled with the
+  fund’s low price, but might take issue with some of their stock picks. The Vice
+  Fund certainly delivers on its name, but investors pay a high price to sin.\n\n###
+  FURTHER READING\n\n- Blog -- [Cate Blanchett, queen of 100% investment returns?](/blog/cate-blanchett-queen-of-100-investment-returns/)\n-
+  Blog -- [Questions to ask before investing in Spaceship](/blog/questions-to-ask-before-investing-in-spaceship/)\n-
+  Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-04-13 15:00:00.000000000 +10:00
+:meta_description: 'Thematic investing is a useful tactic, but it’s wise to know what
+  you’re actually buying and at what price. What are the better investments: vices
+  or virtues?'
+:featured_image:
+  :title: featured - Angels and Demons
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2luPlEMQDy8okWIo6QaMGE/fab119b652cfcb0f4921cc94467f9c60/featured_angels-demons.png"
+  :_meta:
+    :updated_at: '2017-04-13T04:31:19+00:00'
+    :created_at: '2017-04-13T04:30:53+00:00'
+    :id: 2luPlEMQDy8okWIo6QaMGE
+:slug: vice-or-virtue-whats-the-better-investment

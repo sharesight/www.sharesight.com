@@ -1,0 +1,122 @@
+---
+:id: 1yFxx8tIqi1H9OcYoH7hMm
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:37:53+00:00'
+  :created_at: '2019-08-19T04:53:15+00:00'
+  :id: 1yFxx8tIqi1H9OcYoH7hMm
+:title: Sync trades to Sharesight from Interactive Brokers
+:url_slug: sync-trades-to-sharesight-from-interactive-brokers
+:content: "Interactive Brokers clients worldwide can now automatically sync ongoing
+  trades to their Sharesight portfolio simply by connecting their brokerage account
+  using our [Interactive Brokers Integration](https://www.interactivebrokers.com/en/index.php?f=15491).\n\nOnce
+  synced, Sharesight automatically calculates your portfolio performance, and factors-in
+  the impact that foreign exchange movements, dividends, and corporate actions have
+  on your investment returns -- giving you the complete picture of your investment
+  portfolio (and tax).\n\nThis means you’ll spend less time on portfolio admin, and
+  more time doing what *really matters* -- investing.\n\n## Interactive Brokers +
+  Sharesight is built for global investors \n\nSharesight, sometimes called ‘the investors
+  passport’, has always been built with the needs of international investors in mind.
+  We make it easy for users [in over 100 countries](https://www.sharesight.com/blog/create-sharesight-portfolios-in-over-100-countries/)
+  to get the full picture of their investments from over 40 stock markets around the
+  world, all in a single place. So why did we choose to build an integration with
+  Interactive Brokers?\n\nNot only has [Interactive Brokers](https://www.interactivebrokers.com/en/home.php)
+  been rated Best Online Broker 2019 and a Top Online Broker for Nine Consecutive
+  Years by Barron's, but they share our view of the global investor, one not bound
+  by geography --  with the broker offering access to stocks, forex, fixed income,
+  and ETFs in: \n\n* 125 Markets\n\n* 31 Countries\n\n* 24 Currencies\n\nTracking
+  the portfolios of global investors like this is what Sharesight is built for, so
+  this made our decision to integrate with Interactive Brokers an easy one.\n\nPlus,
+  just like the [Sharesight’s partner ecosystem](https://www.sharesight.com/partners/)
+  and [API](https://portfolio.sharesight.com/api), Interactive Brokers makes it easy
+  to join a [growing marketplace of integrations](https://ndcdyn.interactivebrokers.com/Universal/servlet/MarketPlace.MarketPlaceServlet)
+  that connect to and build upon their trading platform.\n\n## Why sync your Interactive
+  Brokers account to Sharesight?\n\nNot only will your Sharesight portfolio be automatically
+  updated with every new trade with Interactive Brokers, you’ll have more time to
+  make the most of Sharesight’s powerful features: \n\n1. **Automatic price and dividend
+  updates** -- Sharesight adjusts your holdings data with stock price & currency fluctuations
+  and automatically incorporates corporate actions such as dividends and share splits
+  into your portfolio.\n\n2. **Understand your true performance** -- Tracking portfolio
+  performance isn’t easy. Brokerage fees, capital gains, corporate actions and currency
+  fluctuations all factor into your performance. Sharesight’s [annualised calculation
+  methodology](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/)
+  provides data-driven insights to help you make better investment decisions going
+  forward.\n\n3. **Run your own tax reports** -- With all your portfolio data in one
+  place, and powerful tax reports such as [Taxable Income](https://www.sharesight.com/blog/5-ways-to-get-the-most-out-of-sharesights-taxable-income-report/),
+  Capital Gains Tax, Unrealised Gains and FIF, Sharesight provides everything you
+  need to figure out your obligations at tax time -- including the ability to [securely
+  share portfolio access directly with your accountant or financial advisor](https://www.sharesight.com/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/).\n\n##
+  Connect your Interactive Brokers account to Sharesight\n\nConnecting your Interactive
+  Brokers account to Sharesight to sync ongoing transactions is easy. If you don’t
+  already have a Sharesight account, you can get started by [signing up for a free
+  account](https://portfolio.sharesight.com/signup).\n\nOnce signed up, you’ll need
+  to request a custom username and password from Interactive Brokers to use with Sharesight
+  so you don’t have to share your trading account login. Then you can connect your
+  Interactive Brokers account within Sharesight.\n\n__Note:__ Read our [Interactive
+  Brokers Integration help page](https://help.sharesight.com/interactive-brokers/)
+  for specific details on how to request an integration login and connect your account
+  to Sharesight.\n\nOnce you’ve connected your Interactive Brokers account to Sharesight
+  with our integration, it should take about 24 hours to import your initial account
+  data (you will have to backfill any historical trades not in the initial sync),
+  with ongoing trades synced daily. \n\n## Become a better investor with Sharesight
+  + Interactive Brokers\n\nNow that you can automatically sync ongoing trades from
+  your Interactive Brokers account directly to your Sharesight portfolio, what are
+  you waiting for? Join over 250,000 investors from around the world using Sharesight
+  to track their international investments and [sign up to Sharesight today](https://portfolio.sharesight.com/signup).\n\n*
+  Track all of your investments in one place, including UK and international stocks,
+  [mutual/managed funds](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Automatically track your [dividend and distribution income](https://www.sharesight.com/dividend-tracker/)
+  from stocks, ETFs and mutual/managed funds\n\n* Run powerful reports built for investors,
+  including [Performance](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/),
+  [Portfolio Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/),
+  [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/),
+  [Future Income](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/)
+  and [Multi-Currency Valuation](https://www.sharesight.com/blog/value-your-investments-in-any-currency-with-sharesight/)\n\n*
+  See the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n[Sign
+  up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) and get
+  started tracking your investment performance (and tax) today.\n\n## FURTHER READING\n\n*
+  Help -- [Interactive Brokers Retail Integration](https://help.sharesight.com/interactive-brokers/)\n\n*
+  Blog -- [Why I use Sharesight to track my portfolio](https://www.sharesight.com/blog/why-i-use-sharesight-to-track-my-portfolio/)\n\n*
+  Blog -- [Why do I need Sharesight with my online broker?](https://www.sharesight.com/blog/why-do-i-need-sharesight-with-my-online-broker/)\n\n*
+  Blog -- [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n\n*
+  Press release -- [Sharesight expands global offering with Interactive Brokers\nintegration](https://assets.ctfassets.net/91sm3pewxzag/7GtcIYvA7eOumzLN72TjlC/920bd66c94c6ecde0c14605d6d7c44ab/PR_Sharesight-expands-global-offering-with-Interactive-Brokers-integration.pdf)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2021-07-15 16:45:00.000000000 +10:00
+:meta_description: 'Interactive Brokers clients can easily sync their account''s trading
+  history to a Sharesight portfolio to unlock world class portfolio performance insights.  '
+:featured_image:
+  :title: Sync trades to Sharesight from Interactive Brokers
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/MON1lnt0LyP7B9eNR3oAc/589b4278667b62387493fc538d6b7642/Sync_trades_to_Sharesight_from_Interactive_Brokers.jpg"
+  :_meta:
+    :updated_at: '2019-08-19T05:27:27+00:00'
+    :created_at: '2019-08-19T05:27:01+00:00'
+    :id: MON1lnt0LyP7B9eNR3oAc
+:hide_from_feed: false
+:slug: sync-trades-to-sharesight-from-interactive-brokers

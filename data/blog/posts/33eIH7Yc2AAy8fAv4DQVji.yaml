@@ -1,0 +1,81 @@
+---
+:id: 33eIH7Yc2AAy8fAv4DQVji
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-08T04:41:25+00:00'
+  :created_at: '2019-11-04T03:53:13+00:00'
+  :id: 33eIH7Yc2AAy8fAv4DQVji
+:title: Sharesight release notes - October 2019
+:url_slug: sharesight-release-notes--october-2019
+:content: |-
+  As always, October was a busy month for the product team with a lot going on behind the scenes. This included switching to a new continuous integration solution to speed up our build times, and undergoing a full independent security audit. Here’s the release highlights for October:
+
+  ![Sharesight Release Notes October 2019](//images.ctfassets.net/91sm3pewxzag/5WmgueSZDkTfIIhJW0xT4j/6e23ae4e9d743bdf67ee9c748cacda4f/Sharesight_Release_Notes_October_2019.jpg?w=950)
+
+  ### New Functionality / Enhancements
+
+  * Added ‘Return of Capital’ transaction type for fixed interest investments to support bonds and notes with an amortising principal.
+
+  * Ongoing improvements to the [trade import UI for our Saxo integration](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/). This will eventually be rolled out to all [brokers and file imports](https://help.sharesight.com/au/importing-your-trading-history-directly-from-your-broker/).
+
+  * Improved [Xero sync](https://www.sharesight.com/xero/) for AU trust distributions to ensure correct tax year alignment
+
+  ### Sharesight Usability
+
+  * Update broker import tiles with improved datepicker.
+
+  * Updated price chart symbols to indicate dividend currency.
+
+  * Improved open & closed positions toggle.
+
+  ### Broker Transaction Import
+
+  * Added support for [TD Investing (Canada) Trade Confirmation Emails](https://www.sharesight.com/blog/track-td-direct-investing-trades-using-sharesight/).
+
+  ### FURTHER READING
+
+  * [Sharesight release notes - September 2019](https://www.sharesight.com/blog/sharesight-release-notes--september-2019/)
+
+  * [Sharesight release notes - August 2019](https://www.sharesight.com/blog/sharesight-release-notes--august-2019/)
+
+  * [Sharesight release notes - July 2019](https://www.sharesight.com/blog/sharesight-release-notes--july-2019/)
+
+  * [Sharesight release notes - June 2019](https://www.sharesight.com/blog/sharesight-release-notes--june-2019/)
+
+  * [Sign up for Sharesight](https://portfolio.sharesight.com/signup)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2019-11-04 10:00:00.000000000 +11:00
+:meta_description: 'As always, October was a busy month for the product team with
+  a lot going on behind the scenes. Here’s the release highlights for October:'
+:featured_image:
+  :title: Sharesight Release Notes October 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5WmgueSZDkTfIIhJW0xT4j/6e23ae4e9d743bdf67ee9c748cacda4f/Sharesight_Release_Notes_October_2019.jpg"
+  :_meta:
+    :updated_at: '2019-11-04T04:46:32+00:00'
+    :created_at: '2019-11-04T04:46:15+00:00'
+    :id: 5WmgueSZDkTfIIhJW0xT4j
+:hide_from_feed: false
+:slug: sharesight-release-notes-october-2019

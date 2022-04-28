@@ -1,0 +1,121 @@
+---
+:id: 42WmN6TDN05Z6o6YdOP4gq
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-11T04:27:44+00:00'
+  :created_at: '2020-10-23T02:06:29+00:00'
+  :id: 42WmN6TDN05Z6o6YdOP4gq
+:title: Automatically import trades to your portfolio using email
+:url_slug: automatically-import-trades-to-your-sharesight-portfolio-using-email
+:content: "Tracking your investment performance used to be complex and time consuming,
+  but Sharesight makes it easy to access award-winning performance and tax reporting
+  with the ability to [automatically import trades](https://help.sharesight.com/contract_notes/)
+  to Sharesight via email. A convenient way of keeping your portfolio up to date,
+  this means users can spend more time focusing on their investments, not entering
+  data. \n\nTo learn how to import trades through Trade Confirmation Emails, and why
+  the [Trade Confirmation Emails Inbox](https://www.sharesight.com/blog/contract-notes-inbox/)
+  is such a useful feature for Sharesight users, keep reading. \n\n![image 0 tradeconfirmations](//images.ctfassets.net/91sm3pewxzag/JaZQKduJIyAltgCVdXUjl/cde183e7c701aa006fbbd75dd55780a8/image_0_tradeconfirmations.jpg?w=950)\n\n##
+  Support for over 200 brokers worldwide (and growing) \n\nSharesight supports [more
+  than 200 brokers](https://www.sharesight.com/blog/supported-brokers-global/) from
+  around the world, including major brokers such as [CommSec (Australia)](https://www.sharesight.com/blog/easily-track-trades-with-commsec-using-sharesight/),
+  [ASB Securities](https://www.sharesight.com/blog/easily-import-asb-securities-trades-into-sharesight/)[
+  (New Zealand)](https://www.sharesight.com/blog/easily-import-asb-securities-trades-into-sharesight/),
+  [Robinhood (USA)](https://www.sharesight.com/blog/automatically-import-robinhood-trades-into-sharesight/),
+  [Questrade (Canada)](https://www.sharesight.com/blog/import-your-questrade-trades-into-sharesight/),
+  [Hargreaves Lansdown (UK)](https://www.sharesight.com/blog/track-hargreaves-lansdown-trades/)
+  and [Saxo Markets](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/)[
+  (Worldwide)](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/)
+  to name just a few, with more brokers added on a regular basis. \n\n## How to import
+  trades via email to Sharesight\n\nIt’s easy for investors to use Sharesight’s Trade
+  Confirmation Emails feature to automatically add buy and sell trades from their
+  brokerage account (or multiple brokerage accounts) to a Sharesight portfolio. \n\nTo
+  use this feature, first ensure your broker is [supported by Sharesight](https://help.sharesight.com/supported-brokers/).
+  Then find the unique Portfolio Email Address linked to your Sharesight portfolio
+  by visiting the ‘Integrations’ tab on your Sharesight portfolio and click on ‘Trade
+  Confirmation Emails’. \n\nYou can then either instruct your broker to email a copy
+  of your trade confirmations directly to this email address or [manually forward
+  the trade confirmations](https://help.sharesight.com/au/manually-forwarding-broker-contract-notes-to-sharesight/)
+  from your broker to Sharesight. \n\n![image 1 tradeconfirmations](//images.ctfassets.net/91sm3pewxzag/0P07uElvgh38mV682LVdj/70ed365fa4805bfb4d7aa4a9bddd6572/image_1_tradeconfirmations.png?w=950)\n\n<small>
+  Use the Portfolio Email Address linked to your Sharesight portfolio to automatically
+  add trades from your broker. </small>\n\n**Note:** This feature is designed primarily
+  for ongoing trades, but it can also be used to fill in historical trades in your
+  Sharesight portfolio. All you need to do is manually forward the Trade Confirmation
+  Emails for the trades you wish to see in your portfolio, starting with the earliest
+  trade you want included.\n\n<a href=\"https://www.youtube.com/embed/GKT6_A3LgMw\"
+  class=\"embedly-card\" data-card-width=\"100%\" data-card-controls=\"0\">Embedded
+  content: https://www.youtube.com/embed/GKT6_A3LgMwI</a>\n\n### The Trade Confirmation
+  Emails inbox\n\nSharesight’s [Trade Confirmations Inbox](https://www.sharesight.com/blog/contract-notes-inbox/)
+  is a useful feature that allows users to view the status of all Trade Confirmation
+  Emails that have been sent to their account, including whether they have been successful
+  or if they have failed. This allows users to review their confirmations and ensure
+  the data is correct. \n\n![image 2 tradeconfirmations](//images.ctfassets.net/91sm3pewxzag/3YjrCWNDdbXyDnpgSXjepC/427e22f22dcdb4cb73af1f51b0e40be6/image_2_tradeconfirmations.jpg?w=950)\n\n<small>
+  A Trade Confirmation Emails Inbox with a trade that was unable to be processed by
+  Sharesight. </small>\n\nFor any Trade Confirmation Emails that fail to process,
+  Sharesight users can have a copy of the confirmation sent to their email, making
+  it easy to identify the exact trade/s that have failed. Reasons a Trade Confirmation
+  Email may be unable to be processed by Sharesight include missing information, unreadable
+  formatting or duplicate confirmations, for example. \n\n![image 3 tradeconfirmations](//images.ctfassets.net/91sm3pewxzag/XZo7K2jdIXC4GOtV8kXmu/2285a0a39873a7bf03dcf7e35ce4705d/image_3_tradeconfirmations.jpg?w=950)\n\n<small>
+  An error caused by duplicate confirmations in the Trade Confirmation Emails Inbox.
+  </small> \n\n## Help add support for your broker to Sharesight\n\nIf your broker
+  is not yet supported by Sharesight, you can request we add support for them, provided
+  they supply emailed or downloadable PDF trade confirmations. All you need to do
+  is contact us by sending our support team a message when logged into your Sharesight
+  account. All we need to add a new broker is some sample buy and sell trade confirmations
+  (email or PDF), the email the broker sends them from and the subject line of the
+  emails.\n\n## Sharesight takes the headache out of tracking your investment performance\n\nNot
+  only does Sharesight save investors time and money by removing the admin headache
+  from tracking their investment performance, but with Sharesight you can:\n\n* Track
+  all of your investments in one place, including stocks, [mutual/managed funds](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Automatically track your [dividend and distribution income](https://www.sharesight.com/au/dividend-tracker/)
+  from stocks, ETFs and mutual/managed Funds\n\n* Run powerful reports built for investors,
+  including [Performance](https://help.sharesight.com/performance_report/), [Portfolio
+  Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/),
+  [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/)
+  and [Future Income](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/)\n\n*
+  See the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\nIf
+  you’re not already using Sharesight, [sign up for a free Sharesight account](https://portfolio.sharesight.com/signup)
+  and start tracking your investments today. \n\n### FURTHER READING\n\n* [Dividend
+  tracker - Sharesight](https://www.sharesight.com/dividend-tracker/)\n\n* [How to
+  track monthly dividend income from your investments](https://www.sharesight.com/blog/how-to-track-monthly-dividend-income-from-your-investments/)\n\n*
+  [How Sharesight calculates your investment performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)"
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-10-23 10:00:00.000000000 +11:00
+:meta_description: Sharesight makes it easy to access award-winning performance and
+  tax reporting with the ability to automatically import trades to Sharesight via
+  email.
+:featured_image:
+  :title: image 0 tradeconfirmations
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/JaZQKduJIyAltgCVdXUjl/cde183e7c701aa006fbbd75dd55780a8/image_0_tradeconfirmations.jpg"
+  :_meta:
+    :updated_at: '2020-10-23T02:09:36+00:00'
+    :created_at: '2020-10-23T02:09:13+00:00'
+    :id: JaZQKduJIyAltgCVdXUjl
+:hide_from_feed: false
+:slug: automatically-import-trades-to-your-portfolio-using-email

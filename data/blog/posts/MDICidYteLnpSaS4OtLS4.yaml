@@ -1,0 +1,72 @@
+---
+:id: MDICidYteLnpSaS4OtLS4
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T06:16:32+00:00'
+  :created_at: '2019-05-08T04:03:01+00:00'
+  :id: MDICidYteLnpSaS4OtLS4
+:title: Sharesight release notes - April 2019
+:content: "April has been noteworthy for the pre-release of our [Interactive Brokers
+  integration](https://getsatisfaction.com/sharesight/topics/add_interactive_brokers)
+  to an enthusiastic beta group. We’ve received a lot of great feedback and will be
+  continuing to enhance and fine tune things over the coming weeks ahead of releasing
+  this to all customers. \n\nThere’s been plenty else happening too, read on for more.\n\n![Sharesight
+  release notes April 2019](//images.ctfassets.net/91sm3pewxzag/2OCD9Z1Pau1FRjUYCOxRL3/6cb04781eb569cd817449478e0198a4b/Sharesight_release_notes_April_2019.jpg?w=950)\n\n##
+  Usability\n\n* Following overwhelmingly positive feedback from our beta users, we
+  Introduced a new ‘sticky’ criteria bar on the overview page, so that you don’t have
+  to scroll up to the top of the page to alter the report settings. This is particularly
+  useful for larger portfolios\n\n* Replaced checkboxes with toggle switches for closed
+  positions and dollar/percentage selection. This is much easier to use on touchscreens
+  in particular\n\n* Added thumbnail icons to the chart selection dropdown\n\n* A
+  range of small usability tweaks to the add holding form, including a smarter way
+  to pre-fill the exchange rate for foreign investments\n\n* Substantial performance
+  improvements on the sold shares report, reducing the median page load time by almost
+  50%\n\n### Broker Import\n\n* Fixes and improved support for 40+ brokers' [Trade
+  Confirmation Emails](https://help.sharesight.com/au/contract_notes/)\n\n* Added
+  support for Internaxx and multi trade Commsec International Trade Confirmation Emails
+  \n\n### Benchmarking\n\n* Expanded the benchmarking function to allow you to benchmark
+  against Unit Trusts, Managed Funds and Ordinary Shares in addition to ETFs \n\n###
+  Sharesight API\n\n* Added cash account adjustment settings in Portfolio List, Create,
+  Show, and Update endpoints\n\n### FURTHER READING\n- [Sharesight release notes -
+  March 2019](https://www.sharesight.com/blog/sharesight-release-notes--march-2019/)\n-
+  [Sharesight release notes - January 2019](https://www.sharesight.com/blog/sharesight-release-notes--january-2019/)\n-
+  [Sharesight release notes - February 2019](https://www.sharesight.com/blog/sharesight-release-notes--february-2019/)\n-
+  [Sharesight's 10 year fintech journey](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/)\n-
+  [Sign up for Sharesight](https://portfolio.sharesight.com/signup)"
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2019-05-08 10:00:00.000000000 +10:00
+:meta_description: 'Sharesight''s technical release notes from April 2019: details
+  of all of the Sharesight features and improvements our development team released
+  during the month.'
+:featured_image:
+  :title: Sharesight release notes April 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2OCD9Z1Pau1FRjUYCOxRL3/6cb04781eb569cd817449478e0198a4b/Sharesight_release_notes_April_2019.jpg"
+  :_meta:
+    :updated_at: '2019-05-08T04:25:44+00:00'
+    :created_at: '2019-05-08T04:25:40+00:00'
+    :id: 2OCD9Z1Pau1FRjUYCOxRL3
+:hide_from_feed: false
+:slug: sharesight-release-notes-april-2019-

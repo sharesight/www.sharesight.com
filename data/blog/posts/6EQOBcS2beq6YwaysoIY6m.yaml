@@ -1,0 +1,88 @@
+---
+:id: 6EQOBcS2beq6YwaysoIY6m
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-08-23T04:30:10+00:00'
+  :created_at: '2018-07-13T03:24:46+00:00'
+  :id: 6EQOBcS2beq6YwaysoIY6m
+:title: Sharesight performance improvements Q&A
+:content: |-
+  When you’re looking at your investment portfolio in [Sharesight](/), you may not be aware that we calculate performance using the latest available data to give you the most accurate picture of your portfolio. This often means running computationally expensive calculations “on the fly”, particularly when [calculating your portfolio performance](https://help.sharesight.com/performance_calculation_method/) over large timeframes or on a portfolio containing a large number of transactions. Improving the performance of the Sharesight website is a key focus here at the moment, and we’ve been making some important ‘behind the scenes’ improvements lately, so I sat down with the Sharesight developers to find out more:
+
+  ## Firstly, tell us a bit about the development team at Sharesight
+
+  From the servers Sharesight runs on, to the market price data feeds we load from our partners, to our performance calculations, technology is at the core of everything Sharesight does. The responsibility for ensuring the technology that underpins Sharesight is well maintained and continues to run smoothly rests with our development team.
+
+  The Sharesight team is from very diverse backgrounds and countries, though the majority of the development team is based in Wellington New Zealand. We work hard to prevent “silos” of information amongst the team, and make sure that we’re all capable of dealing with any part of Sharesight.
+
+  The team develops, implements and maintains all the features in Sharesight, plus we’re responsible for monitoring server infrastructure and keeping Sharesight updated with the latest market prices and exchange rates from data partners. As we’re based around the world and across multiple time zones, there’s always someone ready to jump into any technical problem that may arise.
+
+  ## What tools do you use to monitor Sharesight’s technical performance?
+
+  We use [Datadog](https://www.datadoghq.com) as our main instrumentation tool. Datadog is a window to our infrastructure, as it allows us to see how our servers are performing and how the changes we make impact our performance. Using Datadog APM ([application performance manager](https://en.wikipedia.org/wiki/Application_performance_management)), we can zoom in to see how each component of the application is running on our servers.
+
+  We can also locate the parts of Sharesight (endpoints) that perform the slowest but are used most frequently. Armed with this knowledge, we can concentrate our development efforts on improving the parts of Sharesight where there is the most user impact
+
+  Measuring performance is not enough though. We also need to make sure these metrics are visible so we have a live dashboard in our office that displays the most important metrics across Sharesight’s infrastructure. By having this data visible to the whole team, it gives us an intuitive feel for the metrics, drastically reducing the time it takes to respond to an issue.
+
+  ## Sharesight switched to the Amazon Aurora database recently -- speeding up some calculations by as much as 5x. What else have you been working on to improve performance?
+
+  We’re currently working hard in modernising Sharesight’s interface, implementing [React ](https://reactjs.org)(a javascript library for building user interfaces), and bringing best practices from the fast-changing front-end development industry.
+
+  This modernisation started quite a while ago, by making Sharesight [responsive](https://en.wikipedia.org/wiki/Responsive_web_design) across various platforms (making sure it will work well on the tablet, phone, desktop, etc). Apart from improving mobile usability, this change improved the [time to “first meaningful paint”](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) (page load) by over 60% when opening trade and payout forms!
+
+  ## Can you give an example where Sharesight now performs measurably faster?
+
+  One example is the improvements we’ve made to the Sharesight trade and payout forms when moving to a responsive design. In our testing, we’ve recorded that Sharesight now saves roughly 2.5 seconds on the time to load these pages. That may not seem like a lot, but it’s actually a huge improvement and not an easy feat, especially considering how much data-loading and real-time calculations are taking place.
+
+  ![Sharesight Trade Form](//images.ctfassets.net/91sm3pewxzag/3sbLRiae6A4cEOAAyEsmay/aa1c7258dad57fae61deba2e0404e740/Sharesight_Trade_Form.png?w=950)
+
+  ## What other impacts will users see as a result of these improvements going forward?
+
+  This is a continuous process. Technology changes really fast, and new, better and faster hardware will quickly outpace current performance benchmarks. Also, the best practices in software development that we use today will evolve over time. But by using tools like Datadog to monitor Sharesight’s performance, we will always find ways to continually improve it.
+
+  ### Here are the next big performance tasks in the pipeline:
+
+  __Improved calculation caching:__ Sharesight calculates portfolio performance figures on the fly when loading a page. These calculations can be computationally heavy on larger portfolios or those with significant trading history. Once we have enough React components in the front-end of the site, we’ll be able to cache and reuse a lot of the results from these calculations to speed up page load times if viewing the same page multiple times. This will make navigating around Sharesight a lot faster.
+
+  __Improving compute load distribution:__ We’re changing some of our server components to make better use of Sharesight’s existing servers and evenly distribute the workload. This will improve how Sharesight performs during the day, particularly during peak usage periods.
+
+  ### FURTHER READING
+  - [Q&A with Sharesight co-founder and CTO Scott Ryburn on 10 years of Sharesight](https://www.sharesight.com/blog/qa-with-sharesight-co-founder-and-cto-scott-ryburn-on-10-years-of-sharesight/)
+  - [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)
+  - [How to track a dividend reinvestment plan](/blog/how-to-track-a-dividend-reinvestment-plan/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2018-07-13 00:00:00.000000000 +10:00
+:meta_description: Improving the performance of the Sharesight website is a key focus
+  here at the moment, and we’ve been making some important ‘behind the scenes’ improvements.
+:featured_image:
+  :title: featured - Sharesight performance improvements q&a
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3Su8DI4PiU2E8UKeycg8aE/d45b77dbf6e9b49758137cc0a32e6fcc/featured_performance-improvements-qa.png"
+  :_meta:
+    :updated_at: '2018-08-28T05:24:30+00:00'
+    :created_at: '2018-08-28T05:24:09+00:00'
+    :id: 3Su8DI4PiU2E8UKeycg8aE
+:slug: sharesight-performance-improvements-qa

@@ -1,0 +1,73 @@
+---
+:id: post_46451
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:39+00:00'
+  :created_at: '2016-06-29T23:17:36+00:00'
+  :id: post_46451
+:title: Track the Swiss & Tokyo stock exchanges
+:url_slug: track-the-swiss-tokyo-stock-exchanges
+:content: |-
+  In August we announced support for 3 additional stock markets - [Singapore, Frankfurt and Johannesburg](/blog/global-markets-available-singapore-frankfurt-johannesburg/). This week, we released 2 more:
+
+  - **Swiss Exchange (SWX)**
+  - **Tokyo Exchange (TYO)**
+
+  ![Swiss Tokyo Markets - Featured](//images.ctfassets.net/91sm3pewxzag/3IPY9ZuoysKqEGGYsIk2a2/407f884c57fede5b6190c150ebbd08f9/featured_tokyo-swiss.png?w=950)
+
+  As always, [Sharesight](/) will automatically load past corporate actions including dividends and share splits for holdings from these new markets. And Sharesight leverages a daily foreign exchange feed (FX) to automatically convert the prices and valuations of your holdings from their listed market to your portfolio's base currency. It's yet another way that Sharesight alleviates traditional portfolio admin headaches.
+
+  ![Screenshot: Track the Swiss & Tokyo stock exchanges](//images.ctfassets.net/91sm3pewxzag/66Yh4AY4JqiaKoEmy6kAaC/ae8d3f4317cddf84217df2c322273ca1/blog_screenshot_swiss-tokyo.png?w=950)
+
+  We added the Swiss & Tokyo stock exchanges based on client demand, so if there’s a stock exchange you’d like to see tracked on Sharesight please get in touch via our [forum](https://community.sharesight.com)!
+
+  ### FURTHER READING
+
+  - Blog -- [Track Madrid, Milan, Bombay & India stock markets](/blog/track-madrid-milan-bombay-india-stock-markets/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2015-10-28 00:00:00.000000000 Z
+:meta_description: We've expanded our global markets coverage so investors may now
+  use Sharesight to track the Swiss & Tokyo stock exchanges.
+:featured_image:
+  :title: Swiss Tokyo Markets - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3IPY9ZuoysKqEGGYsIk2a2/407f884c57fede5b6190c150ebbd08f9/featured_tokyo-swiss.png"
+  :_meta:
+    :updated_at: '2016-09-11T06:44:34+00:00'
+    :created_at: '2016-09-11T06:44:11+00:00'
+    :id: 3IPY9ZuoysKqEGGYsIk2a2
+:wordpress_url: "/2015/10/28/track-the-swiss-tokyo-stock-exchanges/"
+:slug: track-the-swiss-tokyo-stock-exchanges

@@ -1,0 +1,97 @@
+---
+:id: zfXLth1WXAciqmEO0QCAY
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-11-28T05:17:31+00:00'
+  :created_at: '2017-11-14T03:28:40+00:00'
+  :id: zfXLth1WXAciqmEO0QCAY
+:title: Introducing the Sharesight Partner Centre
+:content: |-
+  Today I’m pleased to introduce the [Sharesight Partner Centre](/partners/):
+
+  [![featured - Sharesight Partner Centre](//images.ctfassets.net/91sm3pewxzag/1D1dDdQMOYi66U082OSSYU/e95709f462211deb79ca004d08a0bc69/featured_sharesight-partner-centre.jpg?w=950)](/partners/)
+
+  For the past 10 years, we’ve been committed to making [Sharesight](/) the best portfolio tracker for DIY investors and the finance professionals who serve them. From very early on, we knew that [working with like-minded partners](/blog/why-the-right-partners-matter/) was the key to our success and growth.
+
+  It’s why we partnered with tech-driven companies such as [Xero](/xero/) and [CMC Markets Stockbroking](/partners/cmc/) early-on. It’s also why we’re [founding members of FinTech Australia](/blog/sharesight-founding-member-of-fintech-australia/), and proud to be represented on their [ecosystem map](/blog/where-sharesight-fits-in-fintech-australias-ecosystem-map/). In fact, they recognised the strength of our own ecosystem when they named Sharesight the [“Finnies” award winner for Excellence in Industry Collaboration and Partnerships (Australia)](https://www.sharesight.com/blog/sharesight-wins-2017-finnies-award-for-excellence-in-industry-collaboration-partnerships/) earlier this year.
+
+  **Our long-term vision for Sharesight is that it becomes an investor’s passport. Where you journey is up to you -- and it’s the Partner Centre that acts as your investment marketplace.**
+
+  ## How to use the Sharesight Partner Centre
+
+  Visit the Partner Centre to [see all 56 Sharesight partners](/partners/all/), or drill-down to view a specific industry:
+
+  - [Accountants](/partners/accountants/)
+  - [Accounting Software](/partners/accounting-software/)
+  - [Asset Managers & Robo-Advisors](/partners/asset-managers-and-robo-advisors/)
+  - [Associations](/partners/associations/)
+  - [Brokers](/partners/brokers/)
+  - [Data Providers](/partners/data-providers/)
+  - [Financial Advisors](/partners/financial-advisors/)
+  - [Research Providers](/partners/research-providers/)
+  - [Other](/partners/other/)
+
+  Clicking on a company takes you to their individual partner page, which describes the company and how they work with Sharesight -- including whether they use the [Sharesight API](https://portfolio.sharesight.com/api) to push data into Sharesight (like [CMC Markets Stockbroking](/partners/cmc/)), or to pull data out of Sharesight in order to provide award-winning performance reporting to their clients (like [Macrovue](/partners/macrovue/) and [Six Park](/partners/six-park/)).
+
+  ![Sharesight Broker Connect Partners](//images.ctfassets.net/91sm3pewxzag/4BdmVi8s8w40ksmi8mocmC/fda80e05e2b6f668e51a90ce4d1c7cd9/sharesight-broker-connect-partners.jpg?w=950)
+  <small>Just a few of our co-branded Broker API partners</small>
+
+  ## What’s next?
+
+  The Partner Centre will be ever growing and changing, but here are the things we’ll be working on next:
+
+  - If you’re a Sharesight-enabled accounting or financial advice firm and your logo is missing, fear not! We’ll be reaching-out in the coming weeks with details on how to have your company included.
+
+  - We’ll also be adding a search feature that will allow investors to find Sharesight-enabled accountants and financial advisors in their area.
+
+  ## Looking to partner with Sharesight?
+
+  We’re always looking for great companies to join our growing ecosystem:
+
+  - Accountants, financial advisors and fund managers: become a [Sharesight Pro](/pro/) partner.
+  - Fintech companies: find out [why you should partner with Sharesight](/blog/why-you-should-partner-with-sharesight/) and join our "API Rebel Alliance".
+
+  ## Who else should we partner with?
+
+  Are there other companies you’d like to see Sharesight partner with? Leave a comment in our [dedicated Partner Centre forum thread](https://getsatisfaction.com/sharesight/topics/introducing-the-sharesight-partner-centre).
+
+  ### FURTHER READING
+  - Blog -- [Why you need the right tool for the job](/blog/why-you-need-the-right-tool-for-the-job/)
+  - Blog -- [5 Reasons why buy and hold investors use Sharesight](/blog/5-reasons-why-buy-and-hold-investors-use-sharesight/)
+  - Blog -- [Why Australia needs Open Banking like the UK](/blog/why-australia-needs-open-banking-like-the-uk/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2017-11-14 15:17:00.000000000 +11:00
+:meta_description: The Sharesight Partner Centre features accountants, asset managers
+  & robo-advisors, brokers, data providers, financial advisors, research providers,
+  and more.
+:featured_image:
+  :title: featured - Sharesight Partner Centre
+  :description: Sharesight Partner Centre
+  :url: "//images.ctfassets.net/91sm3pewxzag/1D1dDdQMOYi66U082OSSYU/e95709f462211deb79ca004d08a0bc69/featured_sharesight-partner-centre.jpg"
+  :_meta:
+    :updated_at: '2017-11-14T04:15:04+00:00'
+    :created_at: '2017-11-14T04:14:43+00:00'
+    :id: 1D1dDdQMOYi66U082OSSYU
+:slug: introducing-the-sharesight-partner-centre

@@ -1,0 +1,71 @@
+---
+:id: post_25382
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:52:31+00:00'
+  :created_at: '2016-06-29T23:17:17+00:00'
+  :id: post_25382
+:title: 'New feature: Quickly check share performance and dividends'
+:url_slug: how-can-i-quickly-check-share-performance-and-dividends
+:content: |-
+  Our new Share Checker feature lets you quickly check share performance and dividends! It works for managed funds and ETFs too.
+
+  ![Share Checker - Featured](//images.ctfassets.net/91sm3pewxzag/3zRR8qBDQAoIICIUsagWw/898540fc072d7053ce5ce5e0d3584597/featured_share-checker.png?w=950)
+
+  We realised many of you like to keep a watchlist or "dream" portfolio in [Sharesight](/). We do too. We've got a Berkshire Hathaway portfolio and a Tech All-Stars portfolio. Amazing what a little hindsight can do for your total return.
+
+  On the other hand, if you simply wanted to check a company's performance quickly or verify that you've selected the correct security, previously you had to add the holding to your portfolio by going to the trouble of creating a (fictitious) buy transaction.
+
+  Now with the Share Checker you can map the value of $1k invested in mere seconds without having to add phoney data to your portfolio. On the Portfolio Overview page, click the Share Checker button next to the Add Holding button. Then enter your data range, market, and code/name.
+
+  ![Sharesight Share Checker](//images.ctfassets.net/91sm3pewxzag/ulONn9KvWSukkcWyYMiEg/69fcc609d1950242d2a9a7ffc9432cea/blog_share-checker_3.png?w=950)
+
+  On an overlay, you'll see a hypothetical $1,000 investment. Further down the page, you'll see our familiar total return components and then several tabs corresponding to dividends, corporate actions, and news.
+
+  The Trades & Adjustments tab works out retrospectively how many units (rounded to the nearest whole unit) you would have needed to buy to get close to the initial investment of $1,000. Our total return calculation works out the difference between that initial $1,000 and today's value.
+
+  ![Sharesight Share Checker](//images.ctfassets.net/91sm3pewxzag/9HFTlbqU0ME04U0WsM2iu/95d47a149e1e540499d0b5202aa45c1e/blog_share-checker_2.png?w=950)
+
+  We hope you find this feature as handy as we do!
+
+  ### FURTHER READING
+
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  - Blog -- [A broken chain of investment providers: why investors pay the price](/blog/a-broken-chain-of-investment-providers-why-investors-pay-the-price/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-07-31 00:00:00.000000000 Z
+:meta_description: Our new Share Checker features makes it quick and easy to check
+  share performance & dividends. Try it today, it's FREE for all Sharesight users!
+:featured_image:
+  :title: Share Checker - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3zRR8qBDQAoIICIUsagWw/898540fc072d7053ce5ce5e0d3584597/featured_share-checker.png"
+  :_meta:
+    :updated_at: '2016-09-09T00:38:19+00:00'
+    :created_at: '2016-09-09T00:37:46+00:00'
+    :id: 3zRR8qBDQAoIICIUsagWw
+:wordpress_url: "/2014/07/31/how-can-i-quickly-check-share-performance-and-dividends/"
+:slug: new-feature-quickly-check-share-performance-and-dividends

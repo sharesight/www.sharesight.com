@@ -1,0 +1,86 @@
+---
+:id: rHm6MOrowXQpl7UZcjMk8
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:43:36+00:00'
+  :created_at: '2020-06-25T06:34:40+00:00'
+  :id: rHm6MOrowXQpl7UZcjMk8
+:title: Track Charles Schwab trades using Sharesight
+:url_slug: track-charles-schwab-trades-using-sharesight
+:content: "Investors can now import trades automatically to their Sharesight portfolio
+  from US broker [Charles Schwab](https://www.schwab.com) and leverage Sharesight’s
+  award-winning performance, dividend tracking, and tax reporting features.\n\n![track
+  charles schwab stocks](//images.ctfassets.net/91sm3pewxzag/4DfKtnlFz1r1oaKrGmF9yH/fa930288fd4c27afbc2efc04518a8bf7/track_charles_schwab_stocks.jpg?w=950)\n\n##
+  Why use Sharesight with Charles Schwab?\n\nThere’s a raft of features that make
+  Sharesight the must-have portfolio tracking tool for investors, with Sharesight
+  you can: \n\n* Track all your investments in one place, including stocks, [mutual/managed
+  funds](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/),
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Get the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  Run powerful reports built for investors, including [Performance](https://help.sharesight.com/performance_report/),
+  [Portfolio Diversity](https://help.sharesight.com/diversity_report/), [Contribution
+  Analysis](https://help.sharesight.com/contribution-analysis-report/), [Future Income](https://help.sharesight.com/future_income/)
+  (upcoming dividends) & [Taxable Income](https://help.sharesight.com/taxable_income/)
+  (dividends/distributions) \n\n## Import your historical Charles Schwab trading data\n\nImporting
+  your historical Charles Schwab trading history into Sharesight is easy. All you
+  need to do is:\n\n1. [Sign up for a FREE Sharesight account](https://portfolio.sharesight.com/signup)\n\n2.
+  Download your historical trading data CSV from Charles Schwab\n\n3. [Import your
+  historical trades into Sharesight using our broker import wizard](https://help.sharesight.com/importing-your-trading-history-directly-from-your-broker/)\n\n![US
+  Broker CSV import](//images.ctfassets.net/91sm3pewxzag/3B8NBMK0UJZlkTrWqlfBxJ/86f4c9d269955b5a8d691d5b748f96d4/US_Broker_CSV_import.png?w=950)\n\n##
+  Automatically import ongoing trades to Sharesight\n\nSharesight’s [Trade Confirmation
+  Emails](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/)
+  feature is an effortless way to import historical and ongoing trades to a Sharesight
+  portfolio. By simply having your broker’s trade confirmations forwarded to your
+  unique Sharesight email address, all of your trades are synced to your portfolio,
+  inclusive of corporate actions such as dividends, mergers and stock splits, with
+  no effort on your part. \n\n## We need your help to add more brokers in the USA!\n\nIf
+  your broker is not yet on [Sharesight’s list of supported brokers](https://help.sharesight.com/supported_brokers/)
+  but they send you trade confirmation emails (or you’re able to download the PDF
+  trade confirmations, or a CSV of historical trades from your broker manually), then
+  ask us to support your broker by leaving us a message in the chat interface when
+  logged in to your Sharesight account.\n\nWe just need a handful of sample trade
+  confirmation emails/CSV examples in order to support a new broker, so reach-out
+  today if you’d like to see yours added!\n\n### FURTHER READING\n\n* [How Sharesight
+  calculates your investment performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  [Import trades via your broker’s trade confirmations](https://help.sharesight.com/au/contract_notes/)\n\n*
+  [How to get the most out of Sharesight’s performance tracking features](https://www.sharesight.com/blog/how-to-get-the-most-out-of-sharesights-performance-tracking-features/)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-06-25 10:00:00.000000000 +10:00
+:meta_description: Investors can now track trades from US broker Charles Schwab and
+  leverage Sharesight’s award-winning performance, dividend tracking, and tax reporting
+  features.
+:featured_image:
+  :title: track charles schwab stocks
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4DfKtnlFz1r1oaKrGmF9yH/fa930288fd4c27afbc2efc04518a8bf7/track_charles_schwab_stocks.jpg"
+  :_meta:
+    :updated_at: '2020-06-25T06:35:17+00:00'
+    :created_at: '2020-06-25T06:34:59+00:00'
+    :id: 4DfKtnlFz1r1oaKrGmF9yH
+:hide_from_feed: false
+:slug: track-charles-schwab-trades-using-sharesight

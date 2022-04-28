@@ -1,0 +1,88 @@
+---
+:id: 3tcpE7i2TKuNmeQdxMlJg6
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-08-06T07:39:09+00:00'
+  :created_at: '2021-06-08T04:40:14+00:00'
+  :id: 3tcpE7i2TKuNmeQdxMlJg6
+:title: Sharesight release notes - May 2021
+:url_slug: sharesight-release-notes-may-2021
+:content: |
+  May was a bumper month for the product team, highlighted by the release of some important security enhancements allowing you to view all of your logged in devices and remotely sign out each device individually from within your Sharesight Account settings (click on "Manage your devices" on your My Details page). It’s also now possible to [remember your device for 30 days when using our 2FA functionality](https://www.sharesight.com/blog/secure-your-sharesight-account-with-two-factor-authentication/), so you can take advantage of added security without the added hassle!
+
+  ![Sharesight Release Notes May 2021](//images.ctfassets.net/91sm3pewxzag/2Vnxxw1cUtDCYgK28X1IOK/25491c5a9abf017470de1952671421d3/Sharesight_Release_Notes_May_2021.jpg?w=950)
+
+  ## New Functionality / Enhancements
+
+  * Switched to [ISIN codes for UK funds](https://www.sharesight.com/blog/track-uk-mutual-funds-with-sharesight/), for both search and display
+
+  * Redesigned ‘My Details’ page
+
+  * Redesigned [Sharesight Pro](https://www.sharesight.com/au/pro/) dashboard
+
+  * Added support for the following [new stock exchange markets](http://help.sharesight.com/supported-stock-exchanges-and-managed-funds/) (with 20 year price and dividend history):
+
+      * Shanghai Stock Exchange (SHG)
+
+      * Euronext Dublin (DUB)
+
+      * Moscow Exchange (MISX)
+
+      * Stock Exchange of Thailand (BKK)
+
+      * Warsaw Stock Exchange (WAR)
+
+  ## Broker Import Functionality
+
+  * Added support for Futu Securities (Hong Kong)
+
+  * Added support for ShareOwner (Canada)
+
+  * Added support for UBS Securities (Hong Kong)
+
+  * Added support for Phillip Capital (Australia)
+
+  * Added support for Cazenove (UK)
+
+  * Added support for 180 Markets allocation confirmations (Australia)
+
+  ### FURTHER READING
+  * [Sharesight release notes - April 2021](https://www.sharesight.com/blog/sharesight-release-notes--april-2021/)
+  * [Sharesight release notes - March 2021](https://www.sharesight.com/blog/sharesight-release-notes--march-2021/)
+  * [Sharesight release notes - February 2021](https://www.sharesight.com/blog/sharesight-release-notes--february-2021/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2021-06-08 10:00:00.000000000 +10:00
+:meta_description: May was a bumper month for the product team, highlighted by the
+  release of some important security enhancements allowing you to view all your logged
+  in devices.
+:featured_image:
+  :title: Sharesight Release Notes May 2021
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2Vnxxw1cUtDCYgK28X1IOK/25491c5a9abf017470de1952671421d3/Sharesight_Release_Notes_May_2021.jpg"
+  :_meta:
+    :updated_at: '2021-06-08T04:44:19+00:00'
+    :created_at: '2021-06-08T04:44:01+00:00'
+    :id: 2Vnxxw1cUtDCYgK28X1IOK
+:slug: sharesight-release-notes-may-2021

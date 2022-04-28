@@ -1,0 +1,80 @@
+---
+:id: 2ZRgjavkz6EAYQk4KYEmSc
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-05-09T06:45:11+00:00'
+  :created_at: '2016-11-25T00:39:14+00:00'
+  :id: 2ZRgjavkz6EAYQk4KYEmSc
+:title: Beat the tax time rush - or at least prepare for it
+:content: |-
+  Although the [ATO deadline](https://www.ato.gov.au/tax-professionals/prepare-and-lodge/due-dates/) has passed for individuals who file their own tax returns, those who file through a registered agent still have until the end of March to do so. This usually means that you, as an accountant or tax professional, will likely get an influx of clients looking to complete their returns as the due date nears. As much as we hate to say it, share trading and portfolio admin is rarely front and centre when Australians are preparing their return, let alone throughout the rest of the tax year.
+
+  With [Sharesight Pro](/pro/), you can get a head-start on preparing your clients’ tax returns, before they even make an appointment to see you!
+
+  ![featured - laptop + pencils](//images.ctfassets.net/91sm3pewxzag/7JOQ1mpUaIuKagYiWQMacC/79a54b67dd99035ccabf4036bc3b0693/featured_laptop-cgt-pencils.png?w=950)
+
+  ## Share access with your client
+
+  If you haven’t already done so, a great precursor to sitting down with your client to file their return is to [give them access to their Sharesight portfolio](https://help.sharesight.com/share_with_client/). You can provision ‘guest’ access with either ‘read’, ‘read + write’, or full admin capabilities.
+
+  By providing them with this access, you can allow them to have a look over everything to ensure nothing is missing. For example, your client may occasionally trade with a second (or third) broker, and these trades may not be reflected within Sharesight. Having your client double-check their trades and dividends, even as a one-off, could save you the time and effort of having to follow-up on figures that don’t match up!
+
+  ## Leverage professional-grade tax reports
+
+  Sharesight produces reports that cater to the needs of various types of professionals, but most importantly, [accountants](/blog/why-do-accountants-love-sharesight/). Hundreds of accounting firms, planners, advisors, and professional investors utilise Sharesight for the ongoing performance and tax reporting requirements of their clients.
+
+  The two most accessed reports, come tax time, are the [Capital Gains Tax Report](https://help.sharesight.com/au/capital_gains/) and [Taxable Income Report](https://help.sharesight.com/taxable_income/). You can even adjust the sale allocation methods through Sharesight, allowing you to arrive closer to the desired tax outcome for your client.
+
+  For a ‘portfolio snapshot’ or ‘valuation’, you can refer to the [Performance Report](https://help.sharesight.com/performance_report/) -- or to view the portfolio at ‘cost’, refer to our [Historical Cost Report](https://help.sharesight.com/historical_cost_report/). You can choose from a number of default date ranges, such as ‘last financial year’, or nominate your own required start and end dates.
+
+  Sharesight allows you to export all data from these reports into either Excel, PDF or [Google Drive](/blog/new-open-sharesight-reports-directly-google-sheets/). So even if you’re not leveraging our [award-winning Xero integration](/xero/), you can still import the Excel data into an accounting program. And you can even provide your client with a PDF report that is [personalised with your company branding](https://help.sharesight.com/au/applying-your-logo-to-reports/).
+
+  ## Look ahead
+
+  With Sharesight handling the bulk of the historical work, you will hopefully be left with more time and effort to focus on planning ahead for your client. This could be a great opportunity to ensure all of your client’s investments are reflected in Sharesight!
+
+  Not only does Sharesight handle listed equities and managed funds, you can create holdings for a wide range of other investments, such as property, term deposits and other fixed interest products. Through the ability to add these investments and manage prices, dividends/distributions and even valuations, you can be sure there won’t be any gaps.
+
+  In addition, Sharesight’s predictive tax reports can help you and your client effectively plan for the next financial year. For example, the [Future Income Report](https://help.sharesight.com/future_income/) estimates future portfolio cash flows, while the [Unrealised Capital Gains Report](https://help.sharesight.com/au/unrealised_cgt_report/) models the tax outcomes of selling certain parcels of shares, as at any date of your choosing.
+
+  Rather than dissecting the previous tax year, with Sharesight Pro you’ll have all the tools you need to have meaningful and strategic tax planning discussions, not to mention strengthened client relationships.
+
+  ### FURTHER READING
+  - Blog -- [Why do accountants love Sharesight?](/blog/why-do-accountants-love-sharesight/)
+  - Blog -- [Why do financial advisers use Sharesight?](/blog/why-do-financial-advisers-use-sharesight/)
+  - Blog -- [Sharesight + Xero for financial advisers](/blog/sharesight-xero-financial-advisers/)
+:author:
+  :id: 20cluzxZqs8aG4cWiawIA2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2018-03-14T02:19:10+00:00'
+    :created_at: '2016-11-25T00:54:43+00:00'
+    :id: 20cluzxZqs8aG4cWiawIA2
+  :display_name: Josh Rodrigues
+  :first_name: Josh
+  :last_name: Rodrigues
+  :title: Manager, Key Partnerships
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2016-11-25 12:30:00.000000000 +11:00
+:meta_description: 'Strengthen client relationships and get a head-start on preparing
+  your clients’ tax returns, before they even make an appointment to see you. '
+:featured_image:
+  :title: featured - laptop + pencils
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/7JOQ1mpUaIuKagYiWQMacC/79a54b67dd99035ccabf4036bc3b0693/featured_laptop-cgt-pencils.png"
+  :_meta:
+    :updated_at: '2016-11-25T00:52:11+00:00'
+    :created_at: '2016-11-25T00:51:43+00:00'
+    :id: 7JOQ1mpUaIuKagYiWQMacC
+:slug: beat-the-tax-time-rush-or-at-least-prepare-for-it

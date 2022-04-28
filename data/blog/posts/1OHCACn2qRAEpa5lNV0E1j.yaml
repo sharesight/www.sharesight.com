@@ -1,0 +1,59 @@
+---
+:id: 1OHCACn2qRAEpa5lNV0E1j
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-09-08T06:01:37+00:00'
+  :created_at: '2021-09-08T05:45:39+00:00'
+  :id: 1OHCACn2qRAEpa5lNV0E1j
+:title: Sharesight release notes - August 2021
+:url_slug: sharesight-release-notes-august-2021
+:content: |
+  This month we’ve continued to make a number of improvements to the new Multi-Period Report. A reminder that this is available as a preview for Expert plan customers with [beta features enabled](https://help.sharesight.com/beta/). This report will be available to all Expert and Pro users very soon, keep your eyes peeled for an update.
+
+  ## New Functionality / Enhancements
+
+  - Improvements to increase coverage of ex-distribution exit prices for managed funds
+  - Layout and design improvements to header and footer
+  - Added a new field 13R (TFN credits) to Income Tax return section of AU Taxable Income report
+  - Various improvements to the new Multi-Period Report
+
+  ### FURTHER READING
+
+  * [Sharesight release notes - August 2021](https://www.sharesight.com/blog/sharesight-release-notes-july-2021/)
+  * [Sharesight release notes - June 2021](https://www.sharesight.com/blog/sharesight-release-notes-june-2021/)
+  * [Sharesight release notes - May 2021](https://www.sharesight.com/blog/sharesight-release-notes-may-2021/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2021-09-08 10:00:00.000000000 +10:00
+:meta_description: This month we’ve continued to make improvements to the new Multi-Period
+  Report which is currently available to Expert & Pro users with beta features enabled.
+:featured_image:
+  :title: Sharesight Release Notes August 2021
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/4pBAs1raCOBbH3n15BMR6S/c5177989e15e734bb15b571c5b80853b/Sharesight_Release_Notes_August_2021.jpg"
+  :_meta:
+    :updated_at: '2021-09-08T05:56:35+00:00'
+    :created_at: '2021-09-08T05:56:16+00:00'
+    :id: 4pBAs1raCOBbH3n15BMR6S
+:slug: sharesight-release-notes-august-2021

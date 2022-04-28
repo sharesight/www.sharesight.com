@@ -1,0 +1,83 @@
+---
+:id: 1UZxBBpfAMkGUKMUWwQEkK
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-01T05:43:57+00:00'
+  :created_at: '2018-02-09T02:29:35+00:00'
+  :id: 1UZxBBpfAMkGUKMUWwQEkK
+:title: Sharesight adds 17,000 OTC equities and NYSE American market
+:url_slug: sharesight-adds-17000-otc-equities-and-nyse-american-market
+:content: "Today we’re pleased to announce the addition of 3 more global stock markets
+  to [Sharesight](https://www.sharesight.com/) - adding historical, daily and intraday
+  prices for more than 17,000 Over-The-Counter (OTC) equities and the third largest
+  stock exchange in the USA - the NYSE American market (AMEX). With support for [more
+  than 40 global markets](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/),
+  including leading US markets, Sharesight is the ultimate place for investors to
+  track *all of their investments in one place*. \n\n![featured amex-otc-otcbb](//images.ctfassets.net/91sm3pewxzag/6flzOvpMD6QqEYGYQmCcqM/37d354f7266e80d7300e425e3764a117/featured_amex-otc-otcbb.png?w=950)\n\n##
+  What is the NYSE American (AMEX)?\n\nThe [NYSE American exchange](https://www.nyse.com/markets/nyse-american)
+  (also known as the NYSE MKT), previously the ‘American Stock Exchange’ (AMEX) is
+  the third largest stock exchange in the USA. It handles about [10% of all securities
+  traded in the USA](https://www.investopedia.com/terms/a/amex.asp) and caters for
+  growing companies, typically small caps as well as ETFs.\n\nNYSE American support
+  adds nearly 400 additional trackable instruments to Sharesight. Sharesight also
+  supports [15 minute delayed pricing](https://www.sharesight.com/blog/sharesight-intraday-pricing-us-uk-stocks/)
+  for the NYSE American market, giving investors the up-to-date price and performance
+  information they need to make better investment decisions. You can find NYSE American
+  instruments within Sharesight by searching for the ‘AMEX’ market code.\n\n## What
+  are Over-The-Counter (OTC) equities?\n\n“Over-The-Counter” equities are typically
+  stocks, though they can include derivatives and debt securities, as well as [American
+  Depositary Receipts (ADRs)](https://www.otcmarkets.com/learn/american-depositary-receipts)
+  that trade via dealer networks instead of on centralised exchanges (such as the
+  NYSE). Because OTC equities don’t usually meet the listing requirements of centralised
+  exchanges, OTC equities are also known as unlisted stock. \n\nStocks traded Over-The-Counter
+  tend to be those of smaller companies (‘penny stocks’) with less liquidity than
+  stocks listed on the major exchanges.\n\n### Other OTC (OTC)\n\nThe Other OTC Issues
+  market (sometimes known as the [Pink Sheets](https://www.investopedia.com/terms/p/pinksheets.asp),
+  or OTCMKTS if you’re coming from [Google Finance](https://www.sharesight.com/blog/import-your-google-finance-portfolio-into-sharesight/))
+  tracks around 17,000 Over-The-Counter equities. If you’re an investor in OTC equities
+  it’s very likely that you will find them here. When [adding a holding](https://help.sharesight.com/setting-up-your-holdings/)
+  for this market within Sharesight, you can search using the ‘OTC’ market code.\n\n###
+  OTC Bulletin Board (OTCBB)\n\nThe [Over-The-Counter Bulletin Board](https://en.wikipedia.org/wiki/OTC_Bulletin_Board)
+  is a market operated by the [Financial Industry Regulatory Authority (FINRA)](https://en.wikipedia.org/wiki/Financial_Industry_Regulatory_Authority),
+  and it currently tracks around 50 stocks. Companies listed on the OTCBB are required
+  to report (current with SEC filings) but have no size, governance or other requirements.
+  You can search for these holdings within Sharesight using the ‘OTCBB’ market code.\n\n![Screen
+  Shot 2018-02-07 at 3.44.56 pm](//images.ctfassets.net/91sm3pewxzag/iprlv68EvYiEkQUE4kUW4/10635cdbeb8ffdbc1f842f0fdd7b1115/Screen_Shot_2018-02-07_at_3.44.56_pm.png?w=950)\n\n##
+  How to track the NYSE American, OTCBB, and OTC Other markets\n\n1. Sign-up for a
+  [FREE Sharesight account](https://portfolio.sharesight.com/signup).\n2. [Add your
+  holdings](https://help.sharesight.com/getting-started-with-sharesight/) to your
+  portfolio(s).\n3. Sharesight converts the prices and valuations of your holdings
+  from their listed market to your portfolio’s base currency. It also automatically
+  calculates any currency fluctuations on a daily basis (or on a 15 minute delayed
+  basis for AMEX) and backfills past dividends (and continues to add new ones as they
+  are announced).\n\n### Already tracking these holdings in Sharesight?\n\nIf you
+  are currently tracking an AMEX or OTC holding using Sharesight’s [custom investment](https://help.sharesight.com/unquoted-instruments/)
+  feature, you can [merge it with its appropriate instrument](https://help.sharesight.com/merging-a-custom-investment-to-a-listed-or-supported-investment/),
+  without losing any data.\n\n### FURTHER READING\n\n- Blog – [Track the Swiss & Tokyo
+  stock exchanges](https://www.sharesight.com/blog/track-the-swiss-tokyo-stock-exchanges/)\n-
+  Blog – [Track Madrid, Milan, Bombay & India stock markets](https://www.sharesight.com/blog/track-madrid-milan-bombay-india-stock-markets/)\n-
+  Blog – [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:created_at: !ruby/object:DateTime 2018-02-09 13:00:00.000000000 +11:00
+:meta_description: Sharesight now tracks more than 17,000 Over-The-Counter (OTC) equities
+  and the third largest stock exchange in the USA - the NYSE American market (AMEX).
+:featured_image:
+  :title: featured amex-otc-otcbb
+  :description: Sharesight Over The Counter NYSE American
+  :url: "//images.ctfassets.net/91sm3pewxzag/6flzOvpMD6QqEYGYQmCcqM/37d354f7266e80d7300e425e3764a117/featured_amex-otc-otcbb.png"
+  :_meta:
+    :updated_at: '2018-02-09T02:42:52+00:00'
+    :created_at: '2018-02-09T02:42:30+00:00'
+    :id: 6flzOvpMD6QqEYGYQmCcqM
+:slug: sharesight-adds-17000-otc-equities-and-nyse-american-market

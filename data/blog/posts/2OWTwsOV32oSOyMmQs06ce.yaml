@@ -1,0 +1,133 @@
+---
+:id: 2OWTwsOV32oSOyMmQs06ce
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-10-06T04:03:44+00:00'
+  :created_at: '2018-10-24T04:29:41+00:00'
+  :id: 2OWTwsOV32oSOyMmQs06ce
+:title: The exchange traded fund (ETF) tax nightmare
+:url_slug: the-exchange-traded-fund-etf-tax-nightmare
+:content: "ETFs have been a boon for self-directed investors, offering access to a
+  basket of underlying investments, conveniently rolled-up into one security that
+  trades like a stock. They’re listed on public exchanges and require small minimum
+  investments. Launched in 1993, their popularity has soared with total assets scraping
+  the USD $3.5T mark at the end of 2017. In fact, in 2018 21% of investors tracking
+  their [SMSFs on Sharesight](https://www.sharesight.com/blog/smsf-unbundling--how-much-can-it-save-you-in-2017/)
+  bought or sold an ETF.* This is a significant increase on just 3% in 2008.\n\n![chart
+  etf-trade-growth](//images.ctfassets.net/91sm3pewxzag/5M67iz0DdKUwcwyWcQm6ww/90df85fcbcbd4d3add1659460f4bf29c/chart_etf-trade-growth.png?w=950)\n\nNowadays
+  there’s an ETF for everything: emerging markets, water scarcity, even cryptocurrencies.
+  A colleague of mine owns a cybersecurity ETF (ticker: ASX: HACK) that’s returned
+  39% in one year. I’ve personally owned ETFs that track commodity futures and one
+  that shorted the real estate market.\n\nBut with this expanded investment menu of
+  ready-access ETFs, Australian self-directed investors face complex realities. That’s
+  because despite all the positive aspects of ETFs, in actuality they are a tax nightmare
+  for Australian investors who’ve chosen to go off-platform or not rely on a managed
+  service.\n\n## The ETF tax nightmare in Australia\n\nFor Australian investors, ETFs
+  create tax complications because instead of classifying them as ordinary company
+  shares, the ATO classifies ETFs as trusts. To make things more convoluted, in 2016
+  the ATO changed the rules around investment trusts by creating the Attribution Managed
+  Investment Trust (AMIT) regime.\n\nSince the vast majority of ETFs issue distributions
+  (even those that are growth focused), investors face highly complex annual taxation
+  statements. If you own an ETF, you’ll know exactly what I’m talking about, and chances
+  are your accountant does too!\n\n### An example of the ETF tax nightmare: Vanguard
+  Australian Shares (VAS)\n\nIn our research, one purchase of VAS shares, which paid
+  just four dividends throughout the year morphed into 17 distribution and two capital
+  gains components on the annual taxation statement. In turn these correspond to 10
+  items on an individual tax return. Staggering complexity for just one buy!\n\n![VAS
+  tax statement for forum](//images.ctfassets.net/91sm3pewxzag/6rJOSdqpNeo26WK2ccgYKU/b3607f66474de309398f8bee173c7341/VAS_tax_statement_for_forum.PNG)\n<small>VAS
+  annual tax statement 2018</small>\n\nWhy does this happen? VAS invests *[mostly](https://www.vanguardinvestments.com.au/retail/ret/investments/product.html#/fundDetail/etf/portId=8205/?portfolio)*
+  in ASX shares, whose companies in turn pay dividends, are subject to [franking credits](https://www.sharesight.com/blog/dividend-franking-and-performance/)
+  and which undergo corporate actions. This creates all sorts of tax implications.
+  VAS also invests in unlisted securities, derivatives and overseas companies each
+  with their own tax nuances.\n\nWhen you a run a portfolio that big, you need to
+  leave room at the margins for inflows, outflows, rebalancing and hedging. It’s impossible
+  for a portfolio manager to be 100% exposed to their core mandate at all times. And
+  the VAS portfolio changes daily, which means the underlying components of each distribution
+  will be different quarter to quarter as corporate actions occur, or the portfolio
+  turns over so when you buy in or sell out impacts your annual tax situation.\n\nAs
+  time goes by, you receive VAS distributions in cash (usually quarterly or half yearly),
+  along with a simple statement from the registry showing the net payment. At the
+  end of the year, the registry will send you a final statement.\n\nThese final statements
+  contain all of the component and subcomponent information and are far more detailed
+  than what you received during the year. This information can *retroactively modify
+  your cost base and taxable dividend income*, making your tax lodgement very difficult
+  and risking investors \npaying more tax than they need to.\n\n## How fintech is
+  easing the ETF tax nightmare\n\nFintechs like Sharesight have created the expectation
+  for real-time investment information. Once-per-year investment statements are no
+  longer good enough for investors seeking accurate performance data about their hard-earned
+  investment portfolios.\n\nCase in point: in order to provide accurate performance
+  and tax reporting for our clients, we sought to improve the depth and accuracy of
+  exchange traded funds (ETFs) distribution data for our self-directed clients and
+  partners.\n\nWe knew this would be a big undertaking, but it proved more difficult
+  than anticipated. After beginning our journey we realised there was a lack of information
+  and even clear rules available to investors. No one at the ASX, the ETF providers,
+  professional firms, or even the share registries held the answer — but all recognised
+  the problem.\n\nIdeally, we thought we’d license the detailed distribution data
+  from the registries or ETF managers on an ongoing basis. This proved impossible
+  because they don’t calculate the data as the tax year progresses. It’s just one
+  opaque process at year end.\n\nFortunately, Computershare came to the table and
+  agreed to provide us with the detailed information for some of the most popular
+  ETFs as soon as the financial year ended. [We use this data](https://www.sharesight.com/blog/how-sharesight-makes-etf-tax-admin-easy/)
+  as a basis for calculating the distribution components for the 2017 and 2018 Australian
+  financial years.\n\nUnfortunately, not all the registries were able to provide data
+  for their ETFs. We have no idea how it can be that a registry can send personalised
+  taxation statements out to millions of Australians but not be able to provide even
+  notional data to software companies like Sharesight. In some cases we did receive
+  sample data, but not always in a useable format.\n\nAfter months of hard work, including
+  working with our robo-advice partner Six Park, tracking down the right people at
+  Computershare, and even buying ETFs ourselves in a Sharesight company account just
+  to get the statements, we have managed to build a solution that simplifies ETF tax
+  administration for self-directed investors. After months of research we could not
+  find clear answers from the industry, so we believe our feature hits the mark in
+  terms of both accuracy and usability. Hopefully our efforts to serve DIY investors
+  push the industry towards better reporting standards.\n\n## ETFs remain terrific
+  investment options\n\nETFs have helped democratise investing. I use them myself
+  for long and short term investing and support [Sharesight partners](https://www.sharesight.com/partners/)
+  who use them as building blocks for their clients’ portfolios. However, it seems
+  that the zest to market new ‘easy’ ETF investment products wasn’t matched by an
+  ease in tax administration. \n\nThe reality is that all investments have a tax implication
+  of some kind. For example, ASX-listed stocks are vulnerable to future franking credit
+  decisions. And now ETFs bring their own tax complexities. This is just a new piece
+  of the puzzle investors must keep in mind when building and administering their
+  portfolios.\n\n###### Important Disclaimer. We do not provide tax or investment
+  advice. The buying of shares can be complex and varies per individual. You should
+  seek tax and investment advice specific to your situation before acting on any of
+  the information in this article.\n\n### FURTHER READING\n\n- [How Sharesight makes
+  ETF tax admin easy](/blog/how-sharesight-makes-etf-tax-admin-easy/)\n- [Capital
+  gains tax calculator for Australian investors](/blog/capital-gains-tax-calculator-for-australian-investors/)\n-
+  [Improved Taxable Income Report for Australian investors](/blog/improved-taxable-income-report-for-australian-investors/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:12+00:00'
+    :created_at: '2016-07-07T23:44:29+00:00'
+    :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :name: Thought Leadership
+  :description: 'A collection of thoughts and insights from the Sharesight team about
+    issues relating to investing and the fintech space. '
+  :url_slug: thought-leadership
+:created_at: !ruby/object:DateTime 2021-03-04 10:00:00.000000000 +11:00
+:meta_description: ETFs create tax complications because instead of classifying them
+  as ordinary company shares, the ATO classifies ETFs as trusts.
+:featured_image:
+  :title: ETF tax
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5mmBG0PnVKcsOcAsEKKiuE/0d46476573f58605d38fc8b0e11236f6/ETF_tax.jpg"
+  :_meta:
+    :updated_at: '2018-10-24T04:43:34+00:00'
+    :created_at: '2018-10-24T04:43:16+00:00'
+    :id: 5mmBG0PnVKcsOcAsEKKiuE
+:slug: the-exchange-traded-fund-etf-tax-nightmare

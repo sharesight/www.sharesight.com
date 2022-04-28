@@ -1,0 +1,157 @@
+---
+:id: 6MxPo3GwmswqaeCe60yuUs
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:36:19+00:00'
+  :created_at: '2016-09-22T05:37:11+00:00'
+  :id: 6MxPo3GwmswqaeCe60yuUs
+:title: Sharesight – making the most of the cloud
+:url_slug: sharesight-making-the-most-of-the-cloud
+:content: |
+  ###### NOTE: This article was originally [posted on NZTE’s E-business Guide under case-studies](https://web.archive.org/web/20111128013851/http://ebusinessguide.nzte.govt.nz/CaseStudies.aspx). For the sake of preservation we have copied it here. All rights belong to New Zealand Trade and Enterprise. You can contact them at nzte.govt.nz.
+
+  The decision to make his share management software available in the cloud has opened up marketing and business opportunities for Tony Ryburn of [Sharesight](/).
+
+  In the late 1990s Tony became interested in investing in the share market.
+
+  “I guess I’m a typical Kiwi DIYer,” he says. “I wanted to handle it myself. Rather than hiring a traditional full-service broker, I was using online or phone brokers to buy and sell shares and managing the record keeping myself.”
+
+  It was this last task that got Tony thinking.
+
+  ## The spreadsheet
+  He couldn’t find a product to give him the accurate, detailed information he wanted, so he began building an Excel spreadsheet that has now become almost legendary in the company’s history.
+
+  “If you really want to work out your returns over time, you need an annualised return, so you have to be able to factor in the daily share price fluctuations, every dividend paid in that time period and the movement in currency exchange rates.
+
+  “I was pretty computer illiterate, so my kids helped me build it up. It got more and more complex, grew more arms and legs, and I began thinking there must be a way of automating the system and making it available to other people.”
+
+  With the support of son Scott, who had helped create the Excel spreadsheet, Tony set to work developing Sharesight.
+
+  ## First decisions
+  “The very first person we engaged to work on the project was a designer. They needed to take the information from the spreadsheets and help us put it into a user-friendly format that people could easily understand.
+
+  “We also looked at engaging a market research company to get a sense of whether this was a product people wanted and how many of them would use it. But it was incredibly expensive, and we already knew from our own research that there was very little on the market like what we were looking to offer.
+
+  “It also became clear that to get reliable responses to any marketing effort we would have to build dummy screens of what the product would look like, and that was going to cost as much as 20 per cent of the cost of building a system that would actually work!” says Tony.
+
+  It was around this time that Scott persuaded Tony that they had to make a crucial decision about whether or not to create an off-the-shelf software product or a cloud-based one.
+
+  “I realised that if you are building a product to sell in a shop – a chair or a table – then it has to be perfect when it reaches the shop floor. But with software, and particularly with software as a service, you can start with a basic functioning product and build and develop it as you go.
+
+  “The advantages of that approach are that it’s more cost effective to market a cloud-based product than downloadable software, you generate cash flow earlier and you can base future development on feedback from your customers. I call it marketing as you go.”
+
+  “Operating in the cloud also allows us to update prices, dividends, trades and currency changes automatically. Our ultimate aim is to have a system that is fully automated and requires no input from the customer and we are getting pretty close to that now.”
+
+  ## Engaging developers
+  Tony and Scott decided to get things underway and engage a software developer.
+
+  “That was a major hurdle,” says Tony. He and Scott spoke in depth to around five companies or individual developers and got quotes ranging from $50,000 to $250,000.
+
+  “I thought ‘How can that be?’ – it made me very nervous.” Tony spoke to a colleague who worked for a large corporate and had experience working with developers.
+
+  “He said to me that it is almost impossible to come up with a full list of requirements, as once you start building, you discover other things that need to be added or changed, or that you didn’t even know you would need.”
+
+  Tony says, for example, that they had given very little thought to the fact that they would need a payment gateway on their end of the site.
+
+  “I just thought we would purchase something from a reputable company, which we did, we chose to use Payment Express; but building our end of that – the part where our customers interact with it – was actually one of the most significant development tasks on the site.”
+
+  ## Software developers became shareholders
+  Finally they met the right developers. When Tony and Scott approached Marcus Baguley and Nigel Ramsey, both principal consultants at Able Technology in Wellington, they offered to build the site for shares in the company rather than a fee.
+
+  “Scott and I had already realised that this was the best option for us, so we were delighted. We sat down one evening and worked out what had been done to date and what everybody needed to do in the future and negotiated shares in relation to that. In the end it was done and dusted in about an hour.”
+
+  Marcus and Nigel built the site in Ruby on Rails, an open-source web framework that, according to its website, favours “convention over configuration”.
+
+  Tony is an advocate of sticking to the conventions when it comes to web design. Like the expectation that a page of text in English will read from left to right and top to bottom, there are certain things that people have become accustomed to in web design.
+
+  “I think you need to become familiar with those conventions and take care when you are updating your site and making changes,” says Tony. He says this is particularly true of the functioning part of the site, less so with things like the home page, which attract new viewers.
+
+  “Of course, as you bring on more features and add more links and buttons, you can make a mess of what was a really good clean design, and you need to have a tidy up from time to time. But we are very conscious of not upsetting our customers who use the site regularly and are used to where things are.”
+
+  Google Analytics provides the information about traffic to the site, where it comes from and the most effective ad words, but most of their focus is on continuous improvement to the system itself, which is heavily influenced by customer feedback.
+
+  ## Sharing on the cloud
+  As well as the advantages for ongoing development, there are two other key advantages Tony sees to cloud-based solutions, one of which is the ease with which cloud and internet-based services can talk to each other.
+
+  “Our attitude is very much that the data belongs to the client and they can do what they like with it,” says Tony. “That means that the client can choose to share their data online between, say, Sharesight, their broker, their accountant and Xero – so that all their finances are integrated.”
+
+  The other advantage is the ability to offer a “white label” version of the product to brokers, who can then put their own branding on it and use it for their clients. Financial advisory firms are another group who have shown interest in this idea. Accountants use Sharesight to provide a more cost-effective service to their clients.
+
+  And that is the path the company has taken in Australia. They are currently at an advanced stage of negotiations with a number of brokers and advisory firms.
+
+  “We have also hired a professional marketing firm in Australia to help with all aspects of our marketing to self-directed investors and we expect that to have an impact at the individual client level. But it is through partnerships with people and companies who already have a client base that we will gain greatest traction in that market.”
+
+  ## Getting investment
+  In 2009 the company sought out venture capital.
+
+  “We had a lot more development to do,” says Tony, “and Scott, Marcus and Nigel couldn’t be expected to work for shares forever!”
+
+  So the company sent a proposal to angel investors Sparkbox, which was approved and meant they could hire Marcus and Nigel on a contract basis to do most of the work and to also hire their own in-house Ruby on Rails developer.
+
+  “If your company is involved in ongoing development of some kind it makes financial sense to have someone on your staff doing that – it’s cheaper than paying someone on a contract basis.”
+
+  Funds from Sparkbox were supplemented by NZVIF (Seed Fund) Limited, a New Zealand Government initiative that matches investment by private venture capital firms to new ventures.
+
+  ## Advancing into Australia
+  Getting into the Australian market was another significant hurdle for the company.
+
+  “It was at the end of 2010, and it was a real crossroads for us. We knew we needed to get into the Australian market to gain the kind of critical mass we needed, but we weren’t sure how to do that, and we knew we would need more capital. We went to a few trade shows and made contact by phone with a lot of companies. They all thought it was a good idea, but it was hard to convince them to go into partnership with a little company in New Zealand.”
+
+  Then they met Andrew Bird, former chief executive of independent share advisory company Morningstar Australia. Andrew agreed that there was a gap in the Australian market and came on board as an investor and executive director of Sharesight in Australia.
+
+  “There are a lot more self-directed investors in Australia than there are in New Zealand,” says Tony. “Not just in terms of numbers of people, but in terms of percentage of population. These are people who don’t want a full-service broker; they want to do their own research and buy and sell shares as cheaply as possible. They need to be able to produce their own data for tax and accounting purposes and also track their own progress.”
+
+  Sharesight set up a .com.au mirror site that takes into account the more complex Australian tax reporting requirements like capital gains tax. Some of the terminology had to change as well, but generally the web content is very similar. Blog posts are normally posted to both the Australian and New Zealand sites, with occasional ones that are specific to each country.
+
+  “We also did a few other tweaks to the site, especially to make it very clear that we are not providing advice or judgement on which shares to buy, as there are very strict regulations if you want to do that in Australia,” says Tony.
+
+  ## Building relationships
+  In hindsight, Tony says there aren’t many things he would do differently, although he says one thing he would have done is to seek out some sort of mentor.
+
+  “We were incredibly lucky that we met Rod Drury [founder of Xero], and he gave us some really good quality advice as well as contacts and a great deal of encouragement, but that was an informal, ad hoc arrangement.”
+
+  “If you need capital, the ideal situation is to get it from people who are experienced and well-known in your industry and who have the knowledge and the contacts and the experience – that’s just as important as the money.”
+
+  “When I look at all the things that seemed like insurmountable problems at the time and how they were solved: we needed developers – we met Nigel and Marcus; we needed capital – we hooked up with Sparkbox; we needed to get into the Australian market – we met Andrew Bird – it’s the people we have met who have provided us with what we need to be successful.”
+
+  ### FURTHER READING
+
+  - Sharesight API --[Sharesight API Documentation](https://portfolio.sharesight.com/api)
+  - Blog -- [Sharesight raises $2m - thank you customers](https://www.sharesight.com/blog/sharesight-raises-2-million-dollars/)
+  - Blog -- [Why you should partner with Sharesight](https://www.sharesight.com/blog/why-you-should-partner-with-sharesight/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2011-11-24 11:00:00.000000000 +10:00
+:meta_description: 'This article was originally posted on NZTE''s E-business Guide
+  under case-studies: Sharesight: Making the most of the cloud.'
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/11/24/sharesight-making-the-most-of-the-cloud/"
+:slug: sharesight-making-the-most-of-the-cloud

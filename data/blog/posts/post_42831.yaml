@@ -1,0 +1,107 @@
+---
+:id: post_42831
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:30:48+00:00'
+  :created_at: '2016-06-29T23:15:34+00:00'
+  :id: post_42831
+:title: Bank fees vs. IT spend (and the essence of fintech)
+:url_slug: bank-fees-vs-it-spend-and-the-essence-of-fintech
+:content: |-
+  As a technology company we're constantly on the hunt for new apps and services that increase our efficiency. Whether it's [Slack](https://slack.com) for chatting, [Google Hangouts](https://hangouts.google.com) for meetings, or [Freshdesk](https://freshdesk.com) for client service, our day-to-day business runs on third-party software.
+
+  We don't look for a free lunch when it comes to tech. We expect to pay for applications and services as long as they provide value and save time. But we also expect these services to get better iteratively - and the best ones do.
+
+  But like any business we maintain bank accounts, wrestle with currency exposure, pay processing fees, and so forth. Despite the fact that we're cloud based, from the banks' perspective we're no different than a retail shop or cafe.
+
+  This brings me to the intersection of a new and old school when it comes to running a business.
+
+  When prepping our financials for 30 June 2015, I looked at the proportion of our IT spend versus portfolio growth, and the proportion we spend on bank fees versus cash movement.
+
+  ![Expenses - Featured](//images.ctfassets.net/91sm3pewxzag/2BXGseVqsoYUwUi2oEqKQI/e6c032e3b28ca5d9dffcc20ac8b32ffd/featured_expenses.jpg?w=950)
+
+  ## IT spend
+  [Sharesight](/) is growing fast. As such, we require more server horsepower, more stock market data processing umph, faster content delivery for overseas customers, and a nimble hosting provider.
+
+  Our technology stack **must** keep up with new client acquisitions, and the additional features we roll out to everybody. Everything we provide is on-demand. A couple of years ago, we might have supported 100 clients accessing two sharemarkets. Now we have thousands accessing hundreds of markets - each with 20 years of history available.
+
+  Interestingly, our product IT costs have remained fairly flat for over 2 years. Leaving out the increased cost of new datafeeds (new markets, managed funds), the spread between our most and least expensive month is just $1,500.
+
+  ## Bank fees
+  On the other hand, as we grow, we're doing more and more business with our banks. We push more client transactions through our bank accounts each month and we move larger amounts of money between accounts. One would think that as we do more volume and store more capital for them to use with their other, higher-margin businesses, we'd get a break.
+
+  Fundamentally, a bank account is a digital product. It's an electronically maintained collection of 1's and 0's. Combing through our bank statements reveals a nasty mix of merchant fees, foreign transaction fees, "account" fees, "plan" fees, and just a general "bank" fee.
+
+  ## How the ratios stack up:
+  ![Graph: Sharesight IT Spend](//images.ctfassets.net/91sm3pewxzag/2XEyVErSTuACIGCOwigc04/f614bb0d10ae3fb74b0a64cd62b77875/sharesight-it-spend.png?w=950)
+  <small>Left axis is cash vs. bank fee ratio, right axis is IT spend vs. portfolio growth ratio</small>
+
+  ## Takeaways
+  Our IT spend has just become more efficient than our bank spend. Our portfolio growth is **exponential**. As we ask more and more of our IT providers, the ratio of demand to product cost is falling. But, it's the opposite with our banks.
+
+  As we grow, I imagine we'll be afforded opportunities to meet with bankers and be pitched better rates. But that's a floor of the bank that we haven't been invited to yet.
+
+  The nice thing about working with fellow nerds at our IT providers? We never had to ask for that meeting.
+
+  I'm not asking for a discount on the bank fees we pay, but a flat rate would be fair. We're not taxing the banks by pushing more capital through their system. Quite the opposite.
+
+  ## The essence of fintech
+  These two expenses illustrate what fintech is all about: transparently priced, scalable, consumer-driven products.
+
+  Our IT providers are getting better all the time. The engineers they employ remain at the heart of their businesses. They come up with ingenious ways of building scale and efficiency. For them, the world is their marketplace, and the features they haven't yet built are their revenue-generating opportunities.
+
+  It's the same with fintech. Squeezing more money out of our customers is not a priority. Instead, we focus on finding more customers, creating value by adding features, and solving old-school financial problems with state-of-the-art technology.
+
+  So long as the banks insist on charging opaque, 20th century fees, they're just encouraging more fintechs to attack their main street products.
+
+  ### FURTHER READING
+
+  - Blog -- [What apps do we use to run our small business?](/blog/what-apps-do-we-use-to-run-our-small-business/)
+  - Blog -- [Why does finance hate technology?](/blog/why-does-finance-hate-technology/)
+  - Blog -- [Does freemium work?](/blog/does-freemium-work/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2015-08-05 00:00:00.000000000 Z
+:meta_description: We compared our IT spend and our bank fees. The discrepancy really
+  surprised us, and made us think about the essense of fintech.
+:featured_image:
+  :title: Expenses - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2BXGseVqsoYUwUi2oEqKQI/e6c032e3b28ca5d9dffcc20ac8b32ffd/featured_expenses.jpg"
+  :_meta:
+    :updated_at: '2016-09-07T04:14:51+00:00'
+    :created_at: '2016-09-07T04:14:26+00:00'
+    :id: 2BXGseVqsoYUwUi2oEqKQI
+:wordpress_url: "/2015/08/05/bank-fees-vs-it-spend-and-the-essence-of-fintech/"
+:slug: bank-fees-vs-it-spend-and-the-essence-of-fintech

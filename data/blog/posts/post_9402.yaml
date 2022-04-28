@@ -1,0 +1,75 @@
+---
+:id: post_9402
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:33+00:00'
+  :created_at: '2016-06-29T23:18:49+00:00'
+  :id: post_9402
+:title: Meet the Cloud Superheroes
+:url_slug: meet-the-cloud-superheroes
+:content: |-
+  Superheroes spend a lot of time in the clouds but now they’re bringing the cloud to you. Why? So you can learn how cloud services are transforming the lives of accountants and bookkeepers everywhere -- without having to read a book or spend a whole day at a boring conference. The presentations will be short, blindingly informative and probably spandex-free, although we can’t guarantee that. But the event is **completely free**. If you can save the world without raising an invoice or being registered for GST, how can you charge for beer, wine and canapés?
+
+  ## The Cloud Superheroes
+
+  ![Cloud Superheroes - Featured](//images.ctfassets.net/91sm3pewxzag/7nC4l8s0FO2IqM822csCyi/c4dca883df42cc7aaea1c2b25bfde507/featured_cloud-superheroes.png?w=950)
+
+  We can’t reveal their names for obvious reasons but we can say where they’re from:
+
+  ### [Sharesight](/)
+  See how this new generation, online share portfolio management system can make tax reporting a breeze and performance tracking even easier.
+
+  ### [Shoeboxed](https://www.squirrelstreet.com)
+  Learn how Shoeboxed can take a pile of paper receipts and turn it into payables invoices in your accounting package in an instant.
+
+  ### [Fathom](https://www.fathomhq.com)
+  Watch as this management reporting and financial analysis tool reveals loads of improvement opportunities for your clients’ businesses.
+
+  ### [Workforce Guardian](https://www.workforceguardian.com.au)
+  See how a cloud-based tool can help you easily manage staff and create compliant employment contracts — effortlessly.
+
+  There are even two top class MCs. Sholto MacPherson, publisher of cloudadviser.com.au and  [boxfreeit.com.au](https://digitalfirst.com) and a leading business technology journalist, believes cloud software will drive the greatest leap in productivity since the word processor. He’ll host the Sydney and Melbourne events. In Brisbane, Michael Carter from [Practice Paradox](https://practiceparadox.com.au), a marketing and sales guru specialising in the accounting industry, will try and keep the Superheroes in check.
+
+  ### The dates
+
+  - **Melbourne** – Monday 18 March at Federation Square – 4.30-6.30pm
+  - **Brisbane** – Tuesday March 19th at Riverside Centre – 4.30-6.30pm
+  - **Sydney** – Thursday March 21st at Citigroup Centre – 4.30-6.30pm
+
+  You never know – show up wearing spandex and you may get a flight with a Superhero. Places are strictly limited so please **register now**.
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2013-03-14 00:00:00.000000000 Z
+:meta_description: Learn how cloud services are transforming the lives of accountants
+  and bookkeepers everywhere, meet the Cloud Superheroes!
+:featured_image:
+  :title: Cloud Superheroes - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/7nC4l8s0FO2IqM822csCyi/c4dca883df42cc7aaea1c2b25bfde507/featured_cloud-superheroes.png"
+  :_meta:
+    :updated_at: '2016-09-12T04:59:47+00:00'
+    :created_at: '2016-09-12T04:59:25+00:00'
+    :id: 7nC4l8s0FO2IqM822csCyi
+:wordpress_url: "/2013/03/14/meet-the-cloud-superheroes/"
+:slug: meet-the-cloud-superheroes

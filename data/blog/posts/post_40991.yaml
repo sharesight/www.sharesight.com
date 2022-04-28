@@ -1,0 +1,73 @@
+---
+:id: post_40991
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:32+00:00'
+  :created_at: '2016-06-29T23:17:31+00:00'
+  :id: post_40991
+:title: Introducing multiple contract note processing
+:url_slug: introducing-multiple-contract-note-processing
+:content: |-
+  When describing [Sharesight](/), we often use an airplane analogy, in which takeoff and cruising altitude are two very different things.
+
+  Takeoff is the portfolio setup process. Portfolio histories years in the making come to life as historical trades are fired into our database, with corporate actions, dividends, and performance churned out in real time. The result is an accurate picture of how you've gone as an investor as of today.
+
+  Cruising altitude represents Sharesight listening for your trades and dividends on an on-going basis. Clients log in daily to see their new positions, check performance, and run reports, but the hard part is done. Where the engines were taxed getting to 30,000 feet, Sharesight is now cruising along on autopilot.
+
+  But we're always exploring ways to make "takeoff" easier.
+
+  ![multiple contract notes - featured](//images.ctfassets.net/91sm3pewxzag/34oxJVotnqoIAiMKoQCseC/380dd8079366914cd1f076e962f2e442/featured_multiple-contract-notes.jpg?w=950)
+
+  ## Today we're announcing that we now support bulk processing of multiple contract notes.
+  This means that clients can now attach as many contract notes to an email as they wish and send them to Sharesight using the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/) feature for automatic and instantaneous processing.
+
+  This is a perfect solution for investors (or their accountants!) to set up a relatively new portfolio with minimal effort, or to get caught-up on their portfolio admin.&nbsp;Plus we know that in certain situations, brokers will send out contract notes in bulk - especially after a day of heavy trading.
+
+  ### A few things to keep in mind:
+
+  - Brokers will change their contract note/trade confirmation email design from time-to-time, and Sharesight will only support the current look and feel so please take that into consideration when using this new feature.
+  - When sending an email with multiple contract notes, they must be from the same broker. If you use multiple brokers, simply send a different email with the other contract notes.
+  - The best ways to get historical portfolios set up remain our [CSV uploader](https://help.sharesight.com/import-from-csv-file/) and the [Broker Import](https://help.sharesight.com/importing-your-trading-history-directly-from-your-broker/) tool.
+
+  Visit our [help website](https://help.sharesight.com) for more information and [learn how to import contract notes via email](https://help.sharesight.com/contract_notes/) - including how to have your broker automatically email your contract notes to Sharesight.
+
+  ### FURTHER READING
+  - Blog -- [How to confirm your trades with the Trade Confirmation Emails Inbox](/blog/contract-notes-inbox/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2015-05-13 00:00:00.000000000 Z
+:meta_description: Sharesight now supports bulk processing of multiple contract note/trade
+  confirmation emails, making stock tracking and portfolio admin that much easier!
+:featured_image:
+  :title: multiple contract notes - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/34oxJVotnqoIAiMKoQCseC/380dd8079366914cd1f076e962f2e442/featured_multiple-contract-notes.jpg"
+  :_meta:
+    :updated_at: '2016-09-14T06:46:25+00:00'
+    :created_at: '2016-09-14T06:46:02+00:00'
+    :id: 34oxJVotnqoIAiMKoQCseC
+:wordpress_url: "/2015/05/13/introducing-multiple-contract-note-processing/"
+:slug: introducing-multiple-contract-note-processing

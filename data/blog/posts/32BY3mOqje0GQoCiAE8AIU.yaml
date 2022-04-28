@@ -1,0 +1,120 @@
+---
+:id: 32BY3mOqje0GQoCiAE8AIU
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:36:06+00:00'
+  :created_at: '2016-09-14T05:32:41+00:00'
+  :id: 32BY3mOqje0GQoCiAE8AIU
+:title: How to handle the Michael Hill restructure
+:url_slug: michael-hill-restructure
+:content: "In June 2016, Michael Hill shareholders approved a corporate restructure
+  that saw the company move to Australia and subsequently obtain a primary listing
+  on the ASX, while maintaining its listing on the NZX. Michael Hill saw this as a
+  logical move, given that its business was primarily conducted out of Australia and
+  Australia was its biggest market.\n\nAs part of the Scheme of Arrangement, the company
+  delisted from the NZX under the code MHI and listed again under MHJ. It also obtained
+  approval for a primary listing on the ASX, trading under MHJ. Eligible shareholders
+  received shares in the new company on a 1:1 basis, based on the number of units
+  they held in the original company. These same shareholders also had the option to
+  either receive ASX or NZX-listed MHJ shares.\n\n![Michael Hill restructure](//images.ctfassets.net/91sm3pewxzag/2uirBQzsVmUuKkou2mQscg/a8b2156cad39a38cd406ad733a385364/featured_michael-hill.png?w=950)\n\nAs
+  an eligible shareholder, whatever your decision, [Sharesight](/) makes it easy to
+  account for this restructure within your portfolio.\n\nUnfortunately Michael Hill
+  has not yet released information pertaining to the cost base information, for the
+  new shares. The example below will assume the new shares are entered at the closing
+  market price on the first day of trading. There is no official ATO Class Ruling
+  for this corporate action, however, Michael Hill have advised that eligible Australian
+  shareholders can apply for roll-over relief.\n\n## How to handle the Michael Hill
+  restructure if you are a resident of Australia for tax purposes\n\n1. [Sign up for
+  a FREE Sharesight account](https://portfolio.sharesight.com/signup) and add your
+  Michael Hill holding.\n\n2. From there, you'll need to obtain your original cost
+  base of your Michael Hill (MHI.NZX) shares. To do so, run the Historical Cost Report
+  in Sharesight and locate MHI.NZX. Change the date range to ‘Since Inception’ and
+  note the ‘Closing Balance’ figure. This figure will be used when adding the new
+  holding on either the ASX or NZX.\n    ![Michael Hill restructure - screenshot 1](//images.ctfassets.net/91sm3pewxzag/6snwUkciUoAOsu4QcyAu8W/28ffd24f60dd51668e71b45c530307b0/michael-hill-restructure_1.png?w=950)\n\n3.
+  Click on the ‘Holdings’ tab at the top of the page. The tab should drop-down and
+  you will see a button to ‘Add or Import Holdings’, which you will need to click:\n
+  \   ![Michael Hill Restructure - screenshot 4](//images.ctfassets.net/91sm3pewxzag/cpOP1QEsMgGO2MuqYw42m/476fdc57bea2f321b6dda1300021b671/michael-hill-restructure_4.png?w=950)\n
+  \   This will take you to the Add Holdings page. On this page, type ‘MHJ’ in the
+  search bar. A number of different listings will show, by market. You will need to
+  select either MHJ.ASX or MHJ.NZX, depending on what you have received per the corporate
+  action. Then enter the following information:\n\n    **Transaction Type:** Opening
+  Balance  \n    **Date:** 07/07/2016 (Implementation date)  \n    **Cost Base:**
+  Use the Closing Balance figure obtained from the Historical Cost Report  \n    **Quantity:**
+  Same as your original holding\n    ![Michael Hill Restructure - screenshot 2](//images.ctfassets.net/91sm3pewxzag/7otyH7XEhGM4y8mqAOeuki/1a7b3984fed503e64e24ede3b8bbec1c/michael-hill-restructure_2.png?w=950)\n\n4.
+  Once you’ve added the MHJ holding, you should be taken back to the Portfolio Overview
+  page. From there, click into your original MHI holding. On the MHI Holdings page,
+  click ‘Enter a new Trade or Adjustment’ and enter the following details:\n\n    **Transaction
+  Type:** Cancellation  \n    **Date:** 07/07/2016  \n    **Quantity:** Same as your
+  original holding  \n    **Share price:** Enter your original purchase price (or
+  cost base per unit) for MHI. This way no gain is recorded on the disposal of these
+  shares. If you feel that there should be a gain and that your statement (from Michael
+  Hill or Computershare) advises a different price for disposal, you can use that.\n
+  \   ![Michael Hill Restructure - screenshot 3](//images.ctfassets.net/91sm3pewxzag/71ttL2HhHGS4M0K2uUSYIi/9dfc15122192fe031014252704b49648/michael-hill-restructure_3.png?w=950)\n
+  \   \nGiven the presence of rollover relief, it is important to note that the steps
+  above may not account for any applicable CGT discounts, when running the [CGT Report](https://help.sharesight.com/au/capital_gains/),
+  if you sell within the next 12 months. We suggest to add comments against these
+  transactions as a reminder when running CGT reports.\n\n## How to handle the Michael
+  Hill restructure if you are a resident of NZ for tax purposes\nIf you held MHI shares,
+  as an NZ resident for tax, we suggest doing things a little differently to the above
+  steps.\n\n1. [Sign up for a FREE Sharesight account](https://portfolio.sharesight.com/signup)
+  and add your Michael Hill holding.\n\n2. From the ‘Overview’ page, click into your
+  MHI.NZX holding. On the MHI.NZX holdings page, click ‘Enter a new Trade or Adjustment’
+  and enter the following information:\n\n    **Transaction Type: Sell**  \n    **Date:**
+  06/07/2016  \n    **Quantity:** Same as your original holding  \n    **Share price:**
+  $1.14  \n    \n    This is to remove the MHI.NZX holding. It might be a good idea
+  to leave a comment against that transaction to advise why you are recording the
+  ‘sell’.\n    ![Michael Hill Restructure - screenshot 5](//images.ctfassets.net/91sm3pewxzag/4snExOwqYUaqGo0wUisAK2/36f8861e74c46c81a00f11e50ce01be0/michael-hill-restructure_5.png?w=950)\n\n3.
+  Once you’ve done this, you should still remain on the MHI.NZX holdings page. To
+  the top-right, you will see a button ‘Add or Import Holdings’, which you will need
+  to click. This will take you to the Add Holdings page, from which you will create
+  a new holding for your new MHJ shares. Type ‘MHJ’ into the search bar and select
+  either the ASX or NZX listed shares, depending on what you received.\n\n    **Transaction
+  Type:** Buy  \n    **Date:** 07/07/2016  \n    **Quantity:** Same as your original
+  holding  \n    **Price:** If you hold MHJ.NZX, you can enter the price as $1.14.\n\n
+  \    If you hold the ASX-listed stock, you can use Sharesight’s given exchange rate
+  of ‘0.9522’ and then a price of $1.085508, to reflect NZ$1.14, as below:\n    ![Michael
+  Hill Restructure - screenshot 6](//images.ctfassets.net/91sm3pewxzag/7wZrpPKGn6MCSe6Su60sGy/486ca0684fcfe6a6edc94d49d1c12140/michael-hill-restructure_6.png?w=950)\n\n######
+  Please note that we always advise you to consult your financial advisor or accountant
+  regarding corporate actions, especially for tax purposes, as we are not authorised
+  to provide financial advice. For further information regarding this Scheme of Arrangement
+  and information on the tax implications, please refer to the official [Scheme Booklet](http://www.asx.com.au/asxpdf/20160706/pdf/438dljwxh9t47f.pdf).\n\n###
+  GET HELP\n- Community Forum -- [Corporate Action: How to handle the Michael Hill
+  restructure](https://community.sharesight.com/topics/how-to-handle-the-michael-hill-restructure)\n-
+  Help -- [Corporate Actions](https://help.sharesight.com/corporate-actions/)\n\n###
+  FURTHER READING\n- Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)\n-
+  Blog -- [Corporate actions and your investment performance](/blog/corporate-actions-and-your-investment-performance/)\n-
+  Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)"
+:author:
+  :id: author_94
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-08-24T23:48:03+00:00'
+    :created_at: '2016-06-29T23:17:13+00:00'
+    :id: author_94
+  :display_name: Corporate Actions Desk
+  :first_name: Corporate Actions Desk
+  :last_name: ''
+:categories:
+- :id: 1YiQSm5LC0eiMocGIocaaO
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:27+00:00'
+    :created_at: '2016-11-15T02:35:38+00:00'
+    :id: 1YiQSm5LC0eiMocGIocaaO
+  :name: Corporate Actions
+  :description: A listing of popular complex corporate actions, including step-by-step
+    instructions on how to handle them in Sharesight.
+  :url_slug: corporate-actions
+:created_at: !ruby/object:DateTime 2016-07-15 11:00:00.000000000 +10:00
+:meta_description: Follow our step-by-step instructions and learn how to handle the
+  Michael Hill restructure in your Sharesight portfolio(s).
+:featured_image:
+  :title: Michael Hill restructure
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2uirBQzsVmUuKkou2mQscg/a8b2156cad39a38cd406ad733a385364/featured_michael-hill.png"
+  :_meta:
+    :updated_at: '2016-09-14T05:34:58+00:00'
+    :created_at: '2016-09-14T05:34:36+00:00'
+    :id: 2uirBQzsVmUuKkou2mQscg
+:wordpress_url: "/2016/07/15/michael-hill-restructure/"
+:slug: how-to-handle-the-michael-hill-restructure

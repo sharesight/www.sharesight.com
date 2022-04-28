@@ -1,0 +1,102 @@
+---
+:id: 6wqmg7rZ41Sd3OtzfohaUl
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-08T06:48:15+00:00'
+  :created_at: '2019-01-23T06:29:48+00:00'
+  :id: 6wqmg7rZ41Sd3OtzfohaUl
+:title: Improved portfolio trading cash account tracking
+:content: "###### This feature has been improved even further, for more information
+  view our [Sharesight Cash Account feature](https://www.sharesight.com/blog/cash-accounts-now-sync-transactions-with-your-portfolio/)
+  update\n\nTracking trading cash accounts in Sharesight portfolios has been a highly
+  demanded feature. We released [phase 1 of our Cash Account feature in February 2018](https://www.sharesight.com/blog/track-cash-accounts-in-sharesight/),
+  and have just released a major update that automates much of the previously manual
+  data entry required to record your cash transactions.\n\nAs part of this update,
+  you can now elect to have one of your [manual Cash Accounts](https://help.sharesight.com/creating-a-cash-account/)
+  be your nominated trading Cash Account (as long as the Cash Account currency matches
+  your portfolio currency).\n\n## How to set up a Cash Account\n\nTo get started,
+  simply click ‘Add Cash Account’ on the Portfolio Overview page. From there you can
+  specify the name and currency of the Cash Account which will be tied to the portfolio
+  (including its [tax residency](https://help.sharesight.com/tax-residency-of-a-portfolio/)).\n\n![Add
+  Cash Trading Account](//images.ctfassets.net/91sm3pewxzag/4DC7zfQ08wiGw6CjrclIJx/f6cc9f5345e4436b81bb602e58b90aec/add-cash-trading-account.png?w=950)\n\nAfter
+  you have [added transactions to the account](https://help.sharesight.com/adding-a-transaction-to-a-cash-account/),
+  the balance of the Cash Account will appear at a glance on the Portfolio Overview
+  page.\n\n![Tracking trading cash acounts shares](//images.ctfassets.net/91sm3pewxzag/4AFhX4ij58PnbAAQ7s2kOh/0ae364d7b6ea20367a2e818c494094e5/tracking-trading-cash-acounts-shares.png?w=950)\n\nWith
+  Sharesight’s new and improved Cash Account feature, you can now elect to have one
+  of your manual Cash Accounts linked to your portfolio as a trading Cash Account
+  (as long as the Cash Account currency matches your portfolio currency).\n\nOnce
+  you enable this feature, all future trades in the linked portfolio will create a
+  corresponding deposit or withdrawal in your nominated Cash Account. You can select
+  your trading cash account in your portfolio settings:\n\n![Trading cash account](//images.ctfassets.net/91sm3pewxzag/20gvJsKZfQ2aWZMd5miNNo/3c061799202924bd7460b1319a8cbac6/cash-account-screenshot.jpg?w=950)\n\n\n##
+  Syncing historical transact to your Cash Account\n\nAfter you have linked your Cash
+  Account to a portfolio you can then sync historical transactions from your portfolio
+  automatically by clicking on 'Manage Synced Trades' when viewing your Cash Account.
+  You can then choose the date to sync trades from automatically.\n\nFor example,
+  by selecting a date of 01/12/2016, you can get all transactions after that date
+  to sync with the Cash Account then clicking \"Sync all trades\". \n\n![Sync cash
+  account](//images.ctfassets.net/91sm3pewxzag/udpvVIWuNwPPokRzjDHMe/09bec242526b1d9ebf5b709ef0313736/sync-cash-account.png?w=950)\n\nYou
+  can expect to view the cash records in the nominated Cash Account as below: \n\n![Cash
+  account transaction history](//images.ctfassets.net/91sm3pewxzag/7vfvLIcGzvbex5quksnhmQ/0ec1cab9a8d9a4f8af69498881f239c8/Cash_account_transaction_history.png?w=950)\n\n##
+  Cash Account notes\n\nThe value of your Cash Account is included when calculating
+  your portfolio’s value, but does not impact the [percentage return figure](https://help.sharesight.com/performance_calculation_method/).\n\nYou
+  can only use this feature with Sharesight’s built-in Cash Account feature. Due to
+  the way [Xero connected cash accounts](https://www.sharesight.com/xero/) and [Macquarie
+  cash accounts](https://help.sharesight.com/adding-a-macquarie-cash-management-account/)
+  push data into Sharesight automatically, these accounts sync automatically already.
+  \ \n\nAt the moment, Sharesight’s Cash Account feature automatically records buys
+  and sell transactions to your Cash Account. Dividend syncing is not yet available.\n\nClicking
+  on a Cash Account transaction that has been created from a synced trade will bring
+  up the trade \"edit\" form. Cash Account transactions will update automatically
+  when the trade is edited. As these transactions are linked, it is not possible to
+  edit the cash transaction separately from the underlying trade.\n\n## Upgrade today
+  to track your cash\n\nSharesight’s Cash Accounts are a premium feature available
+  only on Sharesight Investor and Expert plans. [Upgrade your Sharesight plan ](https://portfolio.sharesight.com/plans/new)to
+  add a Cash Account to your portfolio and get the full picture of your investment
+  portfolio today.\n\n## Everything you need to know about Sharesight Cash Accounts\n\n*
+  [Creating a Cash Account in Sharesight](https://help.sharesight.com/creating-a-cash-account/)\n\n*
+  [Changing the name of a Cash Account](https://help.sharesight.com/changing-the-name-of-a-cash-account/)\n\n*
+  [Deleting a Cash Account](https://help.sharesight.com/deleting-a-cash-account/)\n\n*
+  [Adding transactions to a Cash Account in Sharesight](https://help.sharesight.com/adding-a-transaction-to-a-cash-account/)\n\n*
+  [Editing a Cash Account transaction](https://help.sharesight.com/editing-a-cash-account-transaction/)\n\n*
+  [Deleting a Cash Account transaction](https://help.sharesight.com/deleting-a-cash-account-transaction/)\n\n*
+  [Searching within a Cash Account](https://help.sharesight.com/searching-within-a-cash-account/)\n\n*
+  [Exporting a Cash Account](https://help.sharesight.com/exporting-a-cash-account/)\n\n###
+  FURTHER READING\n\n* [Track cash & fixed interest investments via Xero](https://www.sharesight.com/blog/track-cash-fixed-interest-investments-via-xero/)\n\n*
+  [Sharesight + Xero](https://www.sharesight.com/xero/)\n\n* [Sharesight Pro Integrates
+  with Macquarie Cash Management Accounts](https://www.sharesight.com/blog/sharesight-integrates-macquarie-cash-management-account/)\n\n*
+  [Sharesight Community - Cash Accounts Discussion](https://getsatisfaction.com/sharesight/topics/tracking-cash)"
+:author:
+  :id: 2LLkZjOWCcaMiqOkgmm8SK
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2018-07-11T03:03:51+00:00'
+    :created_at: '2018-07-11T02:34:44+00:00'
+    :id: 2LLkZjOWCcaMiqOkgmm8SK
+  :display_name: Prashant Mohan
+  :first_name: Prashant
+  :last_name: Mohan
+  :title: Chief Marketing Officer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2019-01-23 10:00:00.000000000 +11:00
+:meta_description: Sharesight's Cash Account feature is now even better, allowing
+  investors to now track their broker trading cash accounts in Sharesight automatically.
+:featured_image:
+  :title: Trading cash account tracking
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6dHl5a7LIgu2vN9QcJMnVY/1ff19c468b42304d6592f2ad3a12f8ba/Trading_cash_account_tracking.jpg"
+  :_meta:
+    :updated_at: '2019-01-23T06:45:24+00:00'
+    :created_at: '2019-01-23T06:45:08+00:00'
+    :id: 6dHl5a7LIgu2vN9QcJMnVY
+:slug: improved-portfolio-trading-cash-account-tracking

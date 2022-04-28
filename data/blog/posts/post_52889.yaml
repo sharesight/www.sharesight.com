@@ -1,0 +1,76 @@
+---
+:id: post_52889
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:09+00:00'
+  :created_at: '2016-06-29T23:18:32+00:00'
+  :id: post_52889
+:title: Tracking the fund managers' picks
+:url_slug: livewire-portfolio-track-the-fund-managers-picks
+:content: |-
+  At [Livewire Live](/blog/livewire-live/), each Australian fund manager panellist was asked to make a stock pick for the coming year. We've built a [Sharesight](/) portfolio with their picks (and the picks from last year). Each buy trade was made the day of their pick and we assumed $10,000 invested in each company inclusive of brokerage costs. All dividends are reinvested.
+
+  ![Tracking the Fund Managers' Picks](//images.ctfassets.net/91sm3pewxzag/5aK9IjwoBGCKs4CMwC2eEO/c8973722149f86b942b747608da6b4ef/featured_livewire-live-portfolio.png?w=950)
+
+  ![Table - Livewire Live Stock Picks 2015-2016](//images.ctfassets.net/91sm3pewxzag/1jB7x7qnDYkgY6GWOMQOWS/b7600a9d91bd4c53bd198d519593f6dc/table_livewire-live-picks-2016__1_.png?w=950)
+
+  The picks from **2015** have had a full year to perform, and the managers made excellent calls. **Total (annualised) return is 32.43%, or a $10,062.31 gain:**
+
+  ![2015 Picks - Tracking the Fund Managers’ Picks](//images.ctfassets.net/91sm3pewxzag/5A8Fskj2WAaigykQIUWsYU/26f0cf3d14113aece0369ec3149640e8/screenshot_livewire-live_2015.png?w=950)
+
+  We'll keep track of the portfolio's performance versus the STW, which tracks the ASX200. For the whole portfolios, the&nbsp;fund managers have outperformed the benchmark, 11.20% vs. -1.89% over the past 12 months (note: our [benchmarking](/blog/benchmarking-now-live-on-sharesight/) feature assumes that you’d invested equal amounts of money in both for the duration of the reporting period - more on this can be found [here](https://help.sharesight.com/interpreting-the-return-index-graph/)).
+
+  ![Portfolio Chart - Tracking the Fund Managers’ Picks](//images.ctfassets.net/91sm3pewxzag/3kU2VavVYk8Y8CEUwcS4IG/dc5a39be9b7a44aaeb92c1c8c2d71849/screenshot_livewire-live_portfolio-chart.png?w=950)
+
+  Too early to assess performance on the entire portfolio, but we'll keep track and post periodic performance updates.
+
+  ![Performance - Tracking the Fund Managers’ Picks](//images.ctfassets.net/91sm3pewxzag/2jkTQMrHeUyIeK04isaUoG/9e2ac86e5f5880b90373c1b098a37303/screenshot_livewire-live_performance.png?w=950)
+
+  ### Track the Livewire Live portfolio
+  We've made it easy to track the fund managers' picks. Simply visit our community forum and [request to have the portfolio shared within your Sharesight account](https://community.sharesight.com/topics/track-the-livewire-live-portfolio). New clients, get started by [signing-up for a FREE account](https://portfolio.sharesight.com/signup)!
+
+  ### Portfolio updates
+  - [June 2016](/blog/livewire-portfolio-track-the-fund-managers-picks/)
+  - [September 2016](/blog/livewire-live-portfolio-september-2016-update/)
+  - [December 2016](/blog/livewire-live-portfolio-december-2016-update/)
+
+  ### FURTHER READING
+  - Blog -- [Get Livewire market insights within your portfolio](/blog/livewire-market-insights-within-your-portfolio/)
+  - Blog -- [Investment insights from Livewire](/blog/investment-insights-from-livewire/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2016-06-09 00:00:00.000000000 Z
+:meta_description: We've built a portfolio tracking the fund managers' picks from
+  Livewire Live 2015 & 2016, assuming $10,000 invested in each company inclusive of
+  brokerage.
+:featured_image:
+  :title: Livewire Live Portfolio 2016 - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5aK9IjwoBGCKs4CMwC2eEO/c8973722149f86b942b747608da6b4ef/featured_livewire-live-portfolio.png"
+  :_meta:
+    :updated_at: '2016-09-01T05:30:28+00:00'
+    :created_at: '2016-07-05T21:43:53+00:00'
+    :id: 5aK9IjwoBGCKs4CMwC2eEO
+:wordpress_url: "/2016/06/09/livewire-portfolio-track-the-fund-managers-picks/"
+:slug: tracking-the-fund-managers-picks

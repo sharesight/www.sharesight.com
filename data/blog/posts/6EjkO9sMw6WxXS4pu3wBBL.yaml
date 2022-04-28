@@ -1,0 +1,122 @@
+---
+:id: 6EjkO9sMw6WxXS4pu3wBBL
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-02T04:26:06+00:00'
+  :created_at: '2020-11-30T06:10:04+00:00'
+  :id: 6EjkO9sMw6WxXS4pu3wBBL
+:title: Connect your CMC account directly to Sharesight's portfolio tracker
+:url_slug: connect-from-cmc-markets-stockbroking-directly-to-sharesights-portfolio-tracker
+:content: |
+  Australian investors who trade in domestic and international shares, ETFs and managed funds through [CMC](https://www.cmcmarkets.com/en-au/)[ Markets Stockbroking](https://www.cmcmarkets.com/en-au/) can take advantage of Sharesight’s award-winning portfolio performance, [dividend tracking](http://www.sharesight.com/dividend-tracker/) and [tax reporting](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/) simply by [connecting their trading account directly to Sharesight](https://help.sharesight.com/import-your-historical-trading-data-and-sync-your-cmc_account/).
+
+  Once connected, users can automatically sync all historical and ongoing trades from CMC into Sharesight. This gives investors more time to focus on investing, rather than time-consuming portfolio admin.
+
+  ![image 0 CMC](//images.ctfassets.net/91sm3pewxzag/6teTfAZu7z51aItidgbmhq/a6817b992ebce6be7b6754d1252ab4aa/image_0_CMC.jpg?w=950)
+
+  ## Who is CMC Markets?
+
+  [CMC Markets](https://www.cmcmarkets.com/en-au/) is a UK-based financial services company with an online brokerage platform for Australian investors called CMC Markets Stockbroking. The platform gives investors access to Australian stocks, ETFs and managed funds with brokerage fees starting from $11. CMC also offers international trades in stocks and ETFs with $0 brokerage fees, including major global markets such as the Nasdaq, New York (NYSE), London (LSE) and Toronto (TSX) stock exchanges, which are also [supported by Sharesight](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/). Other features include investor education on trading strategies, technical and fundamental analysis, as well as access to investor news and market analyst commentary.
+
+  ## Why you should import your CMC trades to Sharesight
+
+  By importing your trades from CMC Markets Stockbroking to Sharesight, you can easily see the [complete picture of your investment performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/) if you trade across multiple brokers and asset classes, plus unlock Sharesight’s advanced [tax reporting designed for Australian investors](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/).
+
+  Unlike the data provided by most brokers, Sharesight takes into account the impact of brokerage fees, [dividends](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/) and [capital gains](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/) when calculating investment returns. Sharesight also offers a range of powerful reports for investors including [Performance](https://help.sharesight.com/performance_report/), [Portfolio Diversity](https://help.sharesight.com/diversity_report/), [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/) and [Future Income](https://help.sharesight.com/future_income/) (upcoming dividends). The ability to track [cash accounts](https://www.sharesight.com/blog/cash-accounts-now-sync-transactions-with-your-portfolio/), [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/) and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/) is just another reason that investors should consider using Sharesight to track their investment portfolio.
+
+  ## How to import your CMC trades to Sharesight
+
+  Investors trading through CMC Markets Stockbroking can easily [establish a secure connection](https://help.sharesight.com/import-your-historical-trading-data-and-sync-your-cmc_account/) between their CMC and Sharesight accounts, which will automatically import historical and ongoing trades into their portfolio. Investors who choose not to link their CMC and Sharesight accounts can also import their historical trading data by uploading a [spreadsheet file of trades](https://www.sharesight.com/blog/import-trades-with-the-sharesight-file-importer/), or have their [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/) automatically forwarded to Sharesight to capture ongoing trades. Keep reading to learn more.
+
+  ## Connect your CMC account directly to Sharesight
+
+  CMC Markets Stockbroking leverages the [Sharesight API](https://portfolio.sharesight.com/api?_ga=2.117754379.344298505.1598830718-1579815040.1595575078) to allow investors to automatically import historical and ongoing trades into a Sharesight portfolio.
+
+  If you’re new to Sharesight, you can get started by [signing up for a free account](https://portfolio.sharesight.com/signup?_ga=2.118866443.344298505.1598830718-1579815040.1595575078).
+
+  ![image 1 CMC](//images.ctfassets.net/91sm3pewxzag/1HTrHHMCxFKiY9CctV73Qp/81def0b8962111e36289d6ca10aefcca/image_1_CMC.png?w=950)
+
+  Once signed up, click ‘Import from a Broker’ on the ‘Add Holding’ page and select CMC, [following the instructions](https://help.sharesight.com/import-your-historical-trading-data-and-sync-your-cmc_account/) to establish a connection between your CMC and Sharesight accounts. For more information, see the video below:
+
+  <a href="https://www.youtube.com/embed/Hb-mCBYCef4" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://www.youtube.com/embed/Hb-mCBYCef4</a>
+
+  **Note: CMC’s integration with the Sharesight API means none of your CMC account details will be visible to Sharesight, and your trading data is downloaded through a secure connection. You can revoke the connection to Sharesight at any time.**
+
+  ## Other ways to import CMC trades to Sharesight
+
+  While connecting your CMC Markets Stockbroking account directly to Sharesight will result in the best experience, should you prefer not to use this method, investors also have the option to import trades via [spreadsheet file](https://www.sharesight.com/blog/import-trades-with-the-sharesight-file-importer/) or [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/).
+
+  ### Import historical trades via spreadsheet
+
+  It’s easy to import historical trades to Sharesight in bulk by uploading a [spreadsheet file](https://www.sharesight.com/blog/import-trades-with-the-sharesight-file-importer/) that contains all the [required information](https://help.sharesight.com/import_bulk_trades/#1) for the trades you wish to import.
+
+  [Click here](https://www.youtube.com/watch?v=EhCNe_EBGJY&feature=youtu.be) for a video with more information on importing CMC trades to Sharesight via spreadsheet.
+
+  ### Import ongoing trades via Trade Confirmation Emails
+
+  Sharesight users can also use the Trade Confirmation Emails feature to automatically add ongoing CMC trades to their Sharesight portfolio. Read our [Trade Confirmation Emails help page](https://help.sharesight.com/contract_notes/) to get started, then forward your trade confirmations to your unique portfolio email address located under the Integrations tab in the Trade Confirmation Emails section.
+
+  ## Start tracking your trades from CMC with Sharesight
+
+  Join thousands of Australian investors already using [Sharesight](https://www.sharesight.com/nz/) to manage their investment portfolios. With Sharesight you can:
+
+  * Automatically track your dividend and distribution income from stocks, ETFs, LICs and Mutual/Managed Funds – [including the value of franking credits](https://help.sharesight.com/nz/automatically-generated-dividends-and-adjustments/)
+
+  * Use the [Dividend Reinvestment Plan (DRPs/DRIPs) feature](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/) to track the impact of DRP transactions on your performance (and tax)
+
+  * See the true picture of your investment performance, including the impact of brokerage fees, dividends, and capital gains with Sharesight’s [annualised performance calculation methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)
+
+  * Run powerful tax reports to calculate your dividend income with the Taxable Income Report
+
+  * Plus calculate your CGT obligations with Sharesight’s [Australian Capital Gains Tax Report](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/) and [Unrealised Capital Gains Tax Report](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)
+
+  [Sign up for a FREE Sharesight account](https://www.sharesight.com/nz/pricing/) and get started tracking your investment performance (and tax) today.
+
+  ![image 2 CMC](//images.ctfassets.net/91sm3pewxzag/5euX2Jtdr9qsqYtfLjQRjy/f0fe2d309c87ff7804e2af97dbf87180/image_2_CMC.png?w=950)
+
+  ### FURTHER READING
+
+  * Help - [Import and sync CMC trades](https://help.sharesight.com/au/import-your-historical-trading-data-and-sync-your-cmc_account/)
+
+  * Blog - [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+
+  * Blog - [5 ways Sharesight helps Australian investors at tax time](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/)
+
+  * Blog - [How to track exchange-traded funds (ETFs)](https://www.sharesight.com/blog/how-to-track-exchange-traded-funds-etfs/)
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-11-30 11:00:00.000000000 +11:00
+:meta_description: Australian investors trading with CMC Markets Stockbroking can
+  connect directly to Sharesight, automatically syncing all trades to their Sharesight
+  portfolio.
+:featured_image:
+  :title: image 0 CMC
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6teTfAZu7z51aItidgbmhq/a6817b992ebce6be7b6754d1252ab4aa/image_0_CMC.jpg"
+  :_meta:
+    :updated_at: '2020-11-30T06:20:03+00:00'
+    :created_at: '2020-11-30T06:19:43+00:00'
+    :id: 6teTfAZu7z51aItidgbmhq
+:hide_from_feed: false
+:slug: connect-your-cmc-account-directly-to-sharesights-portfolio-tracker

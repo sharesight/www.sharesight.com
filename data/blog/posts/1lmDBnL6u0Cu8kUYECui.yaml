@@ -1,0 +1,106 @@
+---
+:id: 1lmDBnL6u0Cu8kUYECui
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-08-23T04:39:58+00:00'
+  :created_at: '2017-09-28T07:35:27+00:00'
+  :id: 1lmDBnL6u0Cu8kUYECui
+:title: Why the right partners matter
+:content: |-
+  ###### This post is part of Sharesight’s 10 year anniversary series. Scroll down to the Further Reading section for every post in the series or read [Sharesight’s 10 year fintech journey](/blog/sharesights-10-year-fintech-journey/) post to get started.
+
+  When we launched [Sharesight](/) in 2007, we had one goal: to help investors understand exactly how their investments were performing. This remains true 10 years later.
+
+  ## Why we embraced partners early on
+
+  From the early days we knew partnerships would be key to ramping up not only our growth, but also the value of Sharesight itself.
+
+  Our thinking was, if we focused on what we do best at Sharesight (performance and tax reporting), we could connect to the other platforms and services investors use to manage their financial lives. We understood that purpose-built applications and services (especially fintechs) offered better value together than vertically integrated banks, but that these challengers would need to be connected in order to enable the seamless flow of information.
+
+  ![High-five](//images.ctfassets.net/91sm3pewxzag/5UQM0pCD3ac44I2oY44iAI/d730cb1a71e431d3a1080ae79653c496/featured_high-five.jpg?w=950)
+
+  ## APIs -- the keys to an open ecosystem
+
+  Enter the humble API. In developer-speak, an API ([Application Programming Interface](https://en.wikipedia.org/wiki/Application_programming_interface) is “a set of subroutine definitions, protocols, and tools for building application software”. Simply put, an API allows two independent systems to “talk” to each other and securely exchange data.
+
+  Because we understood the importance of an open ecosystem of connected apps early-on, APIs have been a crucial component to Sharesight’s growth. We’ve strategically sought-out partners with robust APIs, and we’ve also built our own set of [Sharesight APIs](https://portfolio.sharesight.com/api) so partners could connect and build on the data and connections Sharesight provides. (For more info on the technology behind Sharesight, check out this [Q&A with Sharesight co-founder and CTO Scott Ryburn](/blog/qa-with-sharesight-co-founder-and-cto-scott-ryburn-on-10-years-of-sharesight/).)
+
+  ## Solving investor’s pain points
+
+  Looking out across the investment horizon, it was obvious to us early-on that investors had two immediate needs that fell just outside of what our product did: accounting and stockbroking. So that’s where we focused our first partnerships:
+
+  ### Accounting
+
+  In 2009 [we partnered with Xero](/blog/sharesight-and-xero/) by leveraging their very first API, and allowing investors to automatically upload share investment data into Xero’s accounting system. We then added [Xero Cashbook support](/blog/xero-cashbooks-now-available-via-sharesight/) in 2014, allowing investors to track Xero-enabled bank accounts alongside their other other investments within Sharesight. Later that year, Xero recognised our seamless portfolio management and accounting solution by naming us [Xero Add-On Partner of the Year](/blog/sharesight-wins-xero-add-partner-year/). Our Xero partnership continues to be very popular with Sharesight clients, with **19% of Australian paid plan clients connected to Xero**. To learn more, visit [Sharesight + Xero](/xero/).
+
+  ![Sharesight + Xero](//images.ctfassets.net/91sm3pewxzag/41EbbVzPTig02kESS8k4KI/b9d6de68ba340eb5d11844b07c4aade4/sharesight-xero.png?w=950)
+
+  ### Stockbroking
+
+  In 2010, [Direct Broking](/blog/sharesight-and-direct-broking/) reached-out to us about the possibility of letting their customers push trade data into Sharesight and benefit from our powerful performance and tax reports. Not wanting to miss-out on the opportunity, we leveraged the knowledge gained from connecting Sharesight to Xero (see above) and developed our very first API.
+
+  Over the years more brokers joined Direct Broking to become [Sharesight Connect](https://help.sharesight.com/sharesight_connect/) partners, including [CMC Markets](/blog/sharesight-teams-up-with-cmc-markets-stockbroking/), [BOQ](/blog/sharesight-bank-of-queensland/), [Bendigo Bank](/blog/sharesight-bendigo-bank/) and [ESUPERFUND & EBROKING](/blog/announcing-new-sharesight-strategic-partner-esuperfund-ebroking/). This was a huge step forward for cost-conscious investors as it allowed them to import their historical data from legacy brokers and move, not only to a low-cost broker, but a more tech-focused one as well. **And with 26% of our Australian clients currently connected to Sharesight via one of these brokers, we're confident it's the right approach.**
+
+  ![Sharesight Broker Connect Partners](//images.ctfassets.net/91sm3pewxzag/4BdmVi8s8w40ksmi8mocmC/fda80e05e2b6f668e51a90ce4d1c7cd9/sharesight-broker-connect-partners.jpg?w=950)
+
+  ## The fintech ecosystem
+
+  Fast forward to 2017 and we’ve built a [fintech ecosystem](/blog/why-you-should-partner-with-sharesight/) of investment applications. Sometimes Sharesight is the hub, sometimes we’re just an optional add-on for another service. Sharesight and our partners have created a wide-spectrum of partnership options.
+
+  In addition to accounting and stockbroking, an investor can connect their portfolio to emerging range of fintech services, robo-advisors, news and research providers, and more.
+
+  We believe the key to becoming a necessary service for investors is to do it on their terms because people approach investing in different ways. A connected ecosystem of fintech services, a.k.a. the Rebel Alliance, is proving to be the best way to do that.
+
+  **To our many partners: THANK YOU. It’s been a joy collaborating and growing with you.**
+
+  If you’re not yet a Sharesight partner but would like to be, read *[why you should partner with Sharesight](/blog/why-you-should-partner-with-sharesight/)* and send us an email at sales[at]sharesight.com.
+
+  ### FURTHER READING
+  - [Introducing the Sharesight Partner Centre](/blog/introducing-the-sharesight-partner-centre/)
+  - [These two reasons are why I founded Sharesight](/blog/these-two-reasons-are-why-i-founded-sharesight/)
+  - [Q&A with Sharesight co-founder and CTO Scott Ryburn](/blog/qa-with-sharesight-co-founder-and-cto-scott-ryburn-on-10-years-of-sharesight/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+- :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:12+00:00'
+    :created_at: '2016-07-07T23:44:29+00:00'
+    :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :name: Thought Leadership
+  :description: 'A collection of thoughts and insights from the Sharesight team about
+    issues relating to investing and the fintech space. '
+  :url_slug: thought-leadership
+:created_at: !ruby/object:DateTime 2017-09-28 17:35:00.000000000 +10:00
+:meta_description: From the early days we knew partnerships would be key to ramping
+  up not only our growth, but also the value of Sharesight itself.
+:featured_image:
+  :title: High-five
+  :description: High-five
+  :url: "//images.ctfassets.net/91sm3pewxzag/5UQM0pCD3ac44I2oY44iAI/d730cb1a71e431d3a1080ae79653c496/featured_high-five.jpg"
+  :_meta:
+    :updated_at: '2017-09-28T07:56:41+00:00'
+    :created_at: '2017-09-28T07:55:51+00:00'
+    :id: 5UQM0pCD3ac44I2oY44iAI
+:slug: why-the-right-partners-matter

@@ -1,0 +1,94 @@
+---
+:id: 7hA9FvwIgWGp7jg5wiySw5
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-05-05T06:50:18+00:00'
+  :created_at: '2021-05-05T01:45:04+00:00'
+  :id: 7hA9FvwIgWGp7jg5wiySw5
+:title: Pearler integrates with the Sharesight API
+:content: "[Pearler](http://pearler.com/) now integrates directly with the Sharesight
+  API to send transaction data directly to Sharesight, making life easier for our
+  customers to conduct performance and tax reporting.\n\nAs Australia’s only online
+  broker focused on long-term investing, Pearler is all about making it easier for
+  everyday Australians to buy and accumulate shares. Our Sharesight integration means
+  that it’s now extremely straightforward for our customers to meet their investment
+  reporting needs.\n\nIn fact, a large segment of our early adopters are avid Sharesight
+  users, so it was a no-brainer for us to make their lives easier by connecting their
+  favourite investing tool (Pearler) with their favourite reporting tool (Sharesight)
+  using the [Sharesight API](https://portfolio.sharesight.com/api).\n\n![Pearler Integrates
+  with the Sharesight API](//images.ctfassets.net/91sm3pewxzag/5KdfoBXVaYmP4Zh6qp9d7n/381000e77ec9e430d70997318f62e8e5/Pearler_Integrates_with_the_Sharesight_API.jpg?w=950)\n\n##
+  What is Pearler?\n\nPearler is an online broker for long-term Aussie investors.
+  The company was founded by three friends from Sydney in 2018 after we got fed up
+  with only having two bad options to refer our friends to when they wanted to start
+  investing – confusing trading platforms or expensive micro-investment apps. \n\nJust
+  like other brokers, Pearler allows investors to invest directly into shares and
+  ETFs. But where we differ is that instead of designing our platform around the buying
+  and selling (\"trading\") experience, we’ve built Pearler from the ground up to
+  focus on the thing that matters most – helping people achieve their long-term financial
+  goals.\n\nTo do this we’ve got features like Goals and Autoinvest, which together
+  allow you to set a goal (e.g. financial independence), then automate your investing
+  strategy to achieve these outcomes, and track your progress along the way. \n\nWe’ve
+  also embedded community elements in our platform – we make it easy for our investors
+  to compare and share their portfolios with friends, family and ‘Finfluencers’. Users
+  can discover the most popular stocks and ETFs too, amongst other great features.
+  \n\nOur goal is to make it easy for every Aussie to invest in shares the right way
+  – incremental amounts in diversified portfolios, for the long-term.\n\n### What’s
+  different about Pearler?\n\nOne word: **Long-term**. \n\nWe’ve literally specifically
+  designed Pearler for long-term investors.\n\nMost low-cost brokers focus all their
+  energy on making the trading experience better.  Limit orders, market depths, weekly
+  performance updates, the list goes on… none of this helps a long-term investor!\n\nWe’ve
+  removed all this trading crap and replaced it with genuine long-term investing features
+  like Autoinvest, Goals and Shareable Portfolios.\n\nRather than go through everything
+  line by line, here’s a summary from our [pricing page](https://pearler.com/pricing):\n\n![Pearler
+  Features](//images.ctfassets.net/91sm3pewxzag/3E1qhCtPIMaspZHtJEJ9XK/903dbd75557644e0fb9322acad53ecec/Pearler_Features.png?w=950)\n\n##
+  Why did Pearler integrate with Sharesight?\n\nSharesight and Pearler solve two complementary
+  problems. Pearler makes it easy to invest for the long-term, while Sharesight makes
+  it easy to measure long-term portfolio performance.\n\nNow every long-term investor
+  in Australia can automate both their investments and their reporting. This saves
+  a significant amount of time, maximises returns and reduces stress.  \n\nThe integration
+  was quick and easy using the Sharesight API, with the integration up and running
+  with only light resourcing over a couple of months. \n\n## Get started with Pearler
+  today\n\nTo get started, simply sign up to Pearler using [this link](https://pearler.com/register?deal=sharesight)
+  to pay $0 brokerage on your first investment! Once you’ve opened your Pearler account,
+  simply click on the Sharesight button to connect.\n\n### FURTHER READING\n- [Sharesight
+  Partners - Pearler](https://www.sharesight.com/partners/pearler/ \"Pearler - Broker
+  Partner\") \n- [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  [Press Release - Sharesight to Deliver Powerful Portfolio Tracker to Pearler’s Long-Term
+  Investing Community](https://assets.ctfassets.net/91sm3pewxzag/1kyGBmqNAmn8dLCOYD8wUB/ffb26761b265d6e8d97b00d827bfc3b7/Sharesight_Pearler_press_release.pdf)"
+:author:
+  :id: 4q65s4mbPsQjDQAbTa8nb8
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-05-05T22:59:54+00:00'
+    :created_at: '2021-05-05T01:45:46+00:00'
+    :id: 4q65s4mbPsQjDQAbTa8nb8
+  :display_name: Kurt Walkom
+  :first_name: Kurt
+  :last_name: Walkom
+  :title: Co-Founder
+  :company: Pearler
+:categories:
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+:created_at: !ruby/object:DateTime 2021-05-06 10:00:00.000000000 +10:00
+:meta_description: Pearler now integrates with the Sharesight API to send transaction
+  data directly to Sharesight so investors can access advanced performance and tax
+  reporting.
+:featured_image:
+  :title: Pearler Integrates with the Sharesight API
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5KdfoBXVaYmP4Zh6qp9d7n/381000e77ec9e430d70997318f62e8e5/Pearler_Integrates_with_the_Sharesight_API.jpg"
+  :_meta:
+    :updated_at: '2021-05-05T03:47:52+00:00'
+    :created_at: '2021-05-05T03:46:39+00:00'
+    :id: 5KdfoBXVaYmP4Zh6qp9d7n
+:hide_from_feed: false
+:slug: pearler-integrates-with-the-sharesight-api

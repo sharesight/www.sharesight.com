@@ -1,0 +1,65 @@
+---
+:id: post_51701
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:15+00:00'
+  :created_at: '2016-06-29T23:17:20+00:00'
+  :id: post_51701
+:title: Open Sharesight reports directly in Google Sheets
+:url_slug: new-open-sharesight-reports-directly-google-sheets
+:content: "Following on from our [update to provide reports in OpenXML format](/blog/performance-tax-reports-now-xlsx-format/),
+  we have additionally enabled support for opening reports directly in [Google Sheets](https://www.google.com/sheets/about/),
+  where you can edit them online. These documents are automatically stored in your
+  Google Drive account, where you can access them again in future.\n\n![Open Sharesight
+  reports directly in Google Sheets - Featured](//images.ctfassets.net/91sm3pewxzag/5Ha3CkDtjqio6aGWiY0CMI/a3177a26fb9cfd79bb28131f8e49272e/featured_open-reports-in-google-sheets-drive.png?w=950)\n\n**To
+  open a report directly in Google Sheets, click on the Google Drive icon** next to
+  the Excel and PDF icons on all [Sharesight reports](https://help.sharesight.com/reports/):\n\n![Open
+  Sharesight report in Google Sheets](//images.ctfassets.net/91sm3pewxzag/5nkJ7AmCxU8wCwIi66KU4M/4ce1fd72d652ebec95bb8b275f10fa14/blog_open-in-drive.png?w=950)\n\nTo
+  use this feature for the first time, you will be prompted to sign in to your Google
+  account and authorise [Sharesight](/) to create files in Google Drive. If you have
+  multiple Google accounts, you will be asked to **select the Google Drive account
+  in which you wish to open the report:**\n\n![Select Google account](//images.ctfassets.net/91sm3pewxzag/2aGavkYOeEAoseskiEaMKY/b590c15836b2801855893438e4fa6dc4/blog_select-google-account.png?w=950)
+  \n\n**Click “Allow”** to authorise Google to open your report in Google Sheets:\n\n![Authorise
+  Google](//images.ctfassets.net/91sm3pewxzag/53F5jv9bduSyAKAaICa0kK/da650c6b87f92bd1d8f2c8ce960f6b44/blog_google-auth.png?w=950)\n\n**Your
+  report will then open in Google Sheets** , where it will be automatically saved
+  and can be edited directly:\n\n![Sharesight report in Google Sheets](//images.ctfassets.net/91sm3pewxzag/1pd1cZ8tU0Ae8Asks8QmyQ/d2d74849ab742599a966001cf6f8ad71/blog_google-drive-report.png?w=950)\n\nPlease
+  let us know in the [Sharesight forum](https://community.sharesight.com/topics/open-sharesight-reports-directly-in-google-sheets)
+  if you experience any issues or would like to provide feedback!\n\n### FURTHER READING\n-
+  Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  Blog -- [Login to Sharesight with Google](/blog/login-to-sharesight-with-google/)\n-
+  Blog -- [Introducing the Sharesight Chrome Extension](/blog/sharesight-chrome-extension/)"
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2015-12-07 00:00:00.000000000 Z
+:meta_description: Our latest enhancement lets you open and save your Sharesight investment
+  portfolio performance and tax reports directly in Google Sheets (Google Drive).
+:featured_image:
+  :title: Open Sharesight reports directly in Google Sheets - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5Ha3CkDtjqio6aGWiY0CMI/a3177a26fb9cfd79bb28131f8e49272e/featured_open-reports-in-google-sheets-drive.png"
+  :_meta:
+    :updated_at: '2016-09-02T05:23:34+00:00'
+    :created_at: '2016-09-02T05:23:15+00:00'
+    :id: 5Ha3CkDtjqio6aGWiY0CMI
+:wordpress_url: "/2015/12/07/new-open-sharesight-reports-directly-google-sheets/"
+:slug: open-sharesight-reports-directly-in-google-sheets

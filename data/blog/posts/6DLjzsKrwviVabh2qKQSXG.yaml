@@ -1,0 +1,63 @@
+---
+:id: 6DLjzsKrwviVabh2qKQSXG
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-22T23:20:36+00:00'
+  :created_at: '2022-02-15T02:03:55+00:00'
+  :id: 6DLjzsKrwviVabh2qKQSXG
+:title: Sharesight release notes – January 2022
+:url_slug: sharesight-release-notes-january-2022
+:content: |-
+  The Sharesight dev team introduced a number of small improvements as we kicked off the new year, along with work behind the scenes on some ongoing projects.
+
+  ![Sharesight release notes January](//images.ctfassets.net/91sm3pewxzag/2D2Ol7HzdYHBHzTx2qF8FJ/62765b31540f465b00f0f7546b6d350e/Sharesight_release_notes_January.jpg?w=950)
+
+  ## New Functionality / Enhancements
+  - Updates to alignment and naming of navigation tabs
+  - Added news feed for [Zacks Investment Research](https://www.sharesight.com/blog/zacks-investment-research-news-sharesight/)
+
+  ## Broker Import Functionality (Trade Confirmations)
+  - Added support for Rothschild & Co (Switzerland)
+  - Added support for InvestEngine (UK)
+
+  ### FURTHER READING
+  - [Every feature Sharesight released in 2021](https://www.sharesight.com/blog/every-feature-sharesight-released-in-2021/)
+  - [Sharesight release notes - December 2021](https://www.sharesight.com/blog/sharesight-release-notes-december-2021/)
+  * [Sharesight release notes - November 2021](https://www.sharesight.com/blog/sharesight-release-notes-november-2021/)
+  * [Sharesight release notes - October 2021](https://www.sharesight.com/blog/sharesight-release-notes-october-2021/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2022-02-15 10:00:00.000000000 +11:00
+:meta_description: To kick off 2022 the Sharesight devevelopment team released a number
+  of small improvements, and continued work on some ongoing projects.
+:featured_image:
+  :title: Sharesight release notes January
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/2D2Ol7HzdYHBHzTx2qF8FJ/62765b31540f465b00f0f7546b6d350e/Sharesight_release_notes_January.jpg"
+  :_meta:
+    :updated_at: '2022-02-15T22:10:26+00:00'
+    :created_at: '2022-02-15T22:08:27+00:00'
+    :id: 2D2Ol7HzdYHBHzTx2qF8FJ
+:hide_from_feed: true
+:slug: sharesight-release-notes-january-2022

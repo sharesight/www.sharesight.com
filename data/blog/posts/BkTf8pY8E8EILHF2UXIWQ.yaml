@@ -1,0 +1,89 @@
+---
+:id: BkTf8pY8E8EILHF2UXIWQ
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T06:00:39+00:00'
+  :created_at: '2019-08-07T03:32:25+00:00'
+  :id: BkTf8pY8E8EILHF2UXIWQ
+:title: Sharesight release notes - July 2019
+:content: |
+  The key milestone for Sharesight in July was the release of our Interactive Brokers integration for all retail users. If you trade with Interactive Brokers, your trades can now be automatically imported into Sharesight each day. Check out our [help doc](https://help.sharesight.com/interactive-brokers/) to get started!
+
+  ![Sharesight release notes - July 2019](//images.ctfassets.net/91sm3pewxzag/4UqYyAPZ7ZNeRRASKBAuyn/3b7303bd3f21b03bccc97361e05bd54d/Sharesight_release_notes_-_July_2019.jpg?w=950)
+
+  ## Sharesight release highlights for July 2019:
+
+  ### Portfolio Tracker Functionality
+
+  * Improved [Merge Holding](https://www.sharesight.com/blog/announcing-the-merge-holding-feature/) feature to allow for the full packet level cost base history to be maintained across holdings (as opposed to transferring a single cost base figure to the new holding). This is important for Australian users to allow for [sale allocation optimisation](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/) and to ensure that discount rules are correctly applied.
+
+  * Interest payments on cash accounts are now included in the [Taxable Income Report](https://www.sharesight.com/blog/improved-taxable-income-report-for-australian-investors/).
+
+  * Added a new ‘Interest charged’ transaction type for [manual cash accounts](https://www.sharesight.com/blog/track-cash-accounts-in-sharesight/).
+
+  ### Sharesight Usability
+
+  * Significantly improved date picker rolled out to all reports.
+
+  * Optimised instrument search on the Add Holding form for mobile devices.
+
+  * Added ‘In this calendar year' option to the list of predefined date ranges.
+
+  ### Broker Transaction Import
+
+  * Added support for the new format Pattersons Trade Confirmation Emails.
+
+  * Improved support for Jarden Trade Confirmation Emails to cover bonds and international trades.
+
+  * Improved support for Commsec International Trade Confirmation Emails to handle multiple buys and sells on the same document.
+
+  ### News Feeds
+
+  * Added news feeds from [The Motley Fool Singapore](https://www.sharesight.com/blog/get-the-motley-fool-singapore-insights-in-sharesight/), this content covers listings on the [Singapore Stock Exchange (SGX)](https://www.sharesight.com/blog/track-fractional-shares-on-any-stock-exchange/).
+
+  ### FURTHER READING
+
+  * [Sharesight release notes - June 2019](https://www.sharesight.com/blog/sharesight-release-notes--june-2019/)
+
+  * [Sharesight release notes - May 2019](https://www.sharesight.com/blog/sharesight-release-notes--may-2019/)
+
+  * [Sharesight release notes - April 2019](https://www.sharesight.com/blog/sharesight-release-notes--april-2019/)
+
+  * [Sign up for Sharesight](https://portfolio.sharesight.com/signup)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2019-08-07 10:00:00.000000000 +10:00
+:meta_description: 'The key milestone for Sharesight in July was the release of our
+  Interactive Brokers integration for all retail users. Read our full release notes
+  for July:'
+:featured_image:
+  :title: Sharesight release notes - July 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4UqYyAPZ7ZNeRRASKBAuyn/3b7303bd3f21b03bccc97361e05bd54d/Sharesight_release_notes_-_July_2019.jpg"
+  :_meta:
+    :updated_at: '2019-08-07T03:39:05+00:00'
+    :created_at: '2019-08-07T03:38:17+00:00'
+    :id: 4UqYyAPZ7ZNeRRASKBAuyn
+:hide_from_feed: false
+:slug: sharesight-release-notes-july-2019

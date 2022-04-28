@@ -1,0 +1,100 @@
+---
+:id: 5KQXfJFfyRsR30yzynE0Aj
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-09-27T05:28:29+00:00'
+  :created_at: '2019-09-27T03:55:05+00:00'
+  :id: 5KQXfJFfyRsR30yzynE0Aj
+:title: How to track dividend history using the Share Checker
+:content: |-
+  If you use [Sharesight](/) to track your investment portfolio, you might be familiar with the [Share Checker](https://help.sharesight.com/share-checker/). This handy tool lives within your portfolio and allows you to quickly check the performance of a hypothetical investment of $10,000 of any share, ETF or mutual/managed fund within a selected date range.
+
+  ![Sharesight Share Checker - Telstra 2019](//images.ctfassets.net/91sm3pewxzag/3Wergekal2HfHRlNbf8TyQ/95928aa43ff7258c2f25352a900ce292/screenshot_sharesight-share-checker-2019.png?w=950)
+
+  ### The Share Checker provides:
+
+  - A historical price chart
+  - The EPS, NTA and P/E ratio
+  - The country in which the stock is domiciled
+  - Sector and industry classifications
+  - The investment type and share registry
+
+  And as with all [performance calculations](https://help.sharesight.com/performance_calculation_method/) in Sharesight, the Share Checker displays the total annualised return:
+
+  <table>
+    <tr>
+      <td align="center" colspan="3"><b>SHARESIGHT'S TOTAL ANNUALISED RETURN INCORPORATES:</b></td>
+    </tr>
+    <tr>
+      <td width="33%"><b>Capital Gain</b></td>
+      <td width="33%"><b>Dividends</b></td>
+      <td width="33%"><b>Currency Gain</b></td>
+    </tr>
+    <tr>
+      <td>The gain (or loss) in the stock price during the time period.</td>
+      <td>The dividend income that was paid out during the period.</td>
+      <td>The impact of currency fluctuations on the stock price if it is in a different currency than the portfolio’s <a href="https://help.sharesight.com/tax-residency-of-a-portfolio/">tax residency</a>.</td>
+    </tr>
+    </table>
+
+  ## Using the Share Checker to view historical dividends
+
+  While the Share Checker is a great way to check the overall performance of any stock, ETF, or managed/mutual fund, did you know you can also use it to view all the dividends that were paid out during the selected time period, going back up to 20 years? Take a look at this short animation to see how to do it:
+
+  ![Animation - Sharesight Share Checker : Telstra 2019](//images.ctfassets.net/91sm3pewxzag/70OBLgrCbHTQX6UZpsHHNV/de10387aa82149c6a5f9260447d08e7f/animation_share-checker-dividends.gif)
+
+  As a bonus, if your portfolio has an Australian tax residency, you’ll even see the [franking credits](/blog/how-to-calculate-franking-credits-on-your-investment-portfolio/).
+
+  Looking beyond the dividends, there are additional tabs that display any corporate actions (such as mergers and splits) that occurred during the period, as well as recent news related to the stock from some of our [research providers](/partners/research-providers/).
+
+  ## Simplify your portfolio tracking with Sharesight
+  Sharesight was built for investors like you, and makes it easy to keep track of your portfolio. Here’s how:
+
+  - Get the true picture of your investment performance, including the impact of brokerage fees, dividends, and capital gains with Sharesight’s [annualised performance calculation methodology](https://help.sharesight.com/performance_calculation_method/)
+
+  - Automatically track your daily price & currency fluctuations, as well as handle [corporate actions](https://help.sharesight.com/corporate-actions/) such as dividends and share splits
+
+  - Run powerful tax reports built for investors, including [Capital Gains Tax](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/) (Australia and Canada), [Unrealised Capital Gains, (Australia) ](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)and [Taxable Income](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/) (All regions)
+
+  The best way to understand what Sharesight is all about is to [sign up and try Sharesight for yourself](https://portfolio.sharesight.com/signup). We’re confident that you’ll agree that it’s the best portfolio tracker for investors.
+
+  ### FURTHER READING
+  - [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)
+  - [What is a dividend yield trap?](/blog/what-is-a-dividend-yield-trap/)
+  - [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2019-09-27 15:27:00.000000000 +10:00
+:meta_description: Did you know you can use the Sharesight Share Checker to view all
+  the dividends that were paid out during a selected time period, going back up to
+  20 years?
+:featured_image:
+  :title: featured - How to track dividend history using the Share Checker
+  :description: How to track dividend history using the Share Checker
+  :url: "//images.ctfassets.net/91sm3pewxzag/33fVpQU4rm1mSyKlT0oMiy/a0000272b8726fb074bbb7ae011514cf/featured_how-to-track-dividend-history-using-the-share-checker"
+  :_meta:
+    :updated_at: '2019-09-27T04:32:48+00:00'
+    :created_at: '2019-09-27T04:32:15+00:00'
+    :id: 33fVpQU4rm1mSyKlT0oMiy
+:hide_from_feed: false
+:slug: how-to-track-dividend-history-using-the-share-checker

@@ -1,0 +1,77 @@
+---
+:id: 5wbi3NXbbic6UmUA0UUcgg
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:36:08+00:00'
+  :created_at: '2016-09-22T01:12:49+00:00'
+  :id: 5wbi3NXbbic6UmUA0UUcgg
+:title: PwC partners with Sharesight
+:url_slug: pwc-partners-with-sharesight
+:content: |-
+  We’re pleased to announce that PwC has chosen [Sharesight](/) to be part of [PwC Next](https://nexthub.pwc.com).
+
+  Next is PwC’s cloud-based platform for private clients and businesses. It provides a tailored worldview of PwC clients’ affairs and allows them to engage with PwC anytime, anywhere. Next also integrates with best-of-breed applications such as [Xero](/xero/), [Shoeboxed](https://www.squirrelstreet.com/), and [Spotlight Reporting](https://www.spotlightreporting.com).
+
+  With Next, PwC is aiming to not only transform the way financial & business information is captured, processed and reported, but the way PwC Partners, consultants, and staff interact with their clients to deliver timely and actionable insights.
+
+  ![cloud gears - featured](//images.ctfassets.net/91sm3pewxzag/5bzzE5aEMgo4048yY0K46C/70b6162a5e17a0bd7dee970a0ff2e719/featured_cloud-gears.jpg?w=950)
+
+  Using Sharesight and Next, PwC will have real-time, cloud-based access to their clients’ investment portfolios. This will enable them to provide strategic guidance across client entities regardless of investment objectives, asset classes, or their financial institutions. Plus the existing [Sharesight and Xero integration](/xero/) means tax preparation is seamless, enabling PwC to focus on long term tax planning.
+
+  Clearly investment choices are an individual’s own to make. But, combining the pedigree of PwC’s consulting power with a technology platform built with the investor’s interests at heart is a winning combination that should yield lower costs and better returns. This integration also represents an exciting use of the [Sharesight API](https://portfolio.sharesight.com/api/) with PwC opting to leverage an award winning fintech to enhance their own technical IP.
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+:created_at: !ruby/object:DateTime 2016-09-19 11:00:00.000000000 +10:00
+:meta_description: We’re pleased to announce that PwC has chosen Sharesight to be
+  part of PwC Next - an innovative cloud-based platform for private clients and businesses.
+:featured_image:
+  :title: cloud gears - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5bzzE5aEMgo4048yY0K46C/70b6162a5e17a0bd7dee970a0ff2e719/featured_cloud-gears.jpg"
+  :_meta:
+    :updated_at: '2016-09-22T01:18:11+00:00'
+    :created_at: '2016-09-22T01:17:48+00:00'
+    :id: 5bzzE5aEMgo4048yY0K46C
+:wordpress_url: "/2016/09/19/pwc-partners-with-sharesight/"
+:slug: pwc-partners-with-sharesight

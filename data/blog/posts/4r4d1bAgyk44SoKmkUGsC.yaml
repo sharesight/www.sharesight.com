@@ -1,0 +1,86 @@
+---
+:id: 4r4d1bAgyk44SoKmkUGsC
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T23:46:28+00:00'
+  :created_at: '2017-11-30T05:03:37+00:00'
+  :id: 4r4d1bAgyk44SoKmkUGsC
+:title: Last chance to download your Google Finance portfolio
+:url_slug: last-chance-to-download-your-google-finance-portfolio
+:content: "###### Sharesight is an award-winning portfolio tracker that DIY investors
+  around the world rely on for performance, dividend, and tax reporting. It’s really
+  much more than a Google Finance alternative -- for a side-by-side comparison, check
+  out the [4 ways Sharesight is better than Google Finance](https://www.sharesight.com/blog/4-ways-sharesight-is-better-than-google-finance/).\n\n*__Update
+  February 2nd 2018 - Google is showing a new warning banner when visiting finance.google.com/finance
+  clicking the download link in this banner will take you to the portfolio page where
+  you can follow our instructions below (still working - for now).__*\n\n![image (10)](//images.ctfassets.net/91sm3pewxzag/4dSO4BJxRY46g20OQyoIaq/c4ce0d924dc10e1a52e8bcc766506dfb/image__10_.png?w=950)\n\nHave
+  you logged in to Google Finance only to find the new (and arguably worse) user interface
+  and that you’ve been locked out from your Google Finance portfolio?\n\nIt’s **NOT
+  TOO LATE** to download your Google Finance portfolio data so you can upload it into
+  other portfolio trackers (like Sharesight) to continue tracking your investments
+  - here’s how to do it:\n\n1. Visit [finance.google.com/finance/portfolio](https://finance.google.com/finance/portfolio)
+  -- or your local regional variation  (finance.google.ca/finance for example) instead
+  of google.com/finance\n2. Download the Google OFX file via the notification window
+  that appears\n\n![Google FInance Portfolio Hack](//images.ctfassets.net/91sm3pewxzag/4GYYjx34h2cEQwGSyIya0W/99ec1352176f9bd77ae9b866447b4277/Screen_Shot_2017-11-30_at_3.35.28_pm.png?w=950)\n\n*We’ve
+  tested this as of Friday February 2nd 2018 and it is still working as a workaround,
+  but will update this blog if anything changes.*\n\n## I’ve downloaded my Google
+  Finance OFX file - now what?\n\n1. [Sign-up for a FREE Sharesight account](https://portfolio.sharesight.com/signup)\n2.
+  Upload your Google Finance portfolio OFX file to Sharesight\n3. Double check the
+  data and you’re good to go!\n\n![featured - import google finance portfolio to sharesight](//images.ctfassets.net/91sm3pewxzag/nJmLwIF332u6SA2o0M8KC/af9d290915a0ed67798ad4c04b6a5c4e/featured_import-google-finance-portfolio-to-sharesight.png?w=950)\n\n##
+  Why should I use Sharesight?\n\n- Sharesight was built [by investors, for investors](https://www.sharesight.com/blog/these-two-reasons-are-why-i-founded-sharesight/).\n-
+  DIY investors have __trusted Sharesight__ for **[over 10 years](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/)**.
+  \n- We even [raised $2M in funding](https://www.sharesight.com/blog/sharesight-raises-2-million-dollars/)
+  from our own clients (also investors)!\n- We’re __currently tracking__ over [$1.9B
+  worth of investments](https://www.sharesight.com/blog/sharesight-in-numbers/), across
+  __tens of thousands__ of portfolios.\n\n__Act fast__ and [sign-up for Sharesight
+  ](https://portfolio.sharesight.com/signup)today and import your Google Finance portfolio
+  data __before it is lost__. \n\n### FURTHER READING\n\n- Blog -- [4 Ways Sharesight
+  is better than Google Finance ](https://www.sharesight.com/blog/4-ways-sharesight-is-better-than-google-finance/)\n-
+  Blog -- [Why I use Sharesight to track my portfolio](https://www.sharesight.com/blog/why-i-use-sharesight-to-track-my-portfolio/)\n-
+  Blog -- [How your broker’s performance numbers mislead you](https://www.sharesight.com/blog/how-your-brokers-performance-numbers-mislead-you/)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-11-30 14:00:00.000000000 +11:00
+:meta_description: It’s NOT TOO LATE to download your Google Finance portfolio data
+  so you can import it into other portfolio trackers (like Sharesight) - here’s how
+  to do it.
+:featured_image:
+  :title: featured - import google finance portfolio to sharesight
+  :description: import google finance portfolio to sharesight
+  :url: "//images.ctfassets.net/91sm3pewxzag/nJmLwIF332u6SA2o0M8KC/395422c1756b027c1f3c361757d23e1c/featured_import-google-finance-portfolio-to-sharesight.png"
+  :_meta:
+    :updated_at: '2018-08-24T03:53:52+00:00'
+    :created_at: '2017-10-06T00:02:58+00:00'
+    :id: nJmLwIF332u6SA2o0M8KC
+:slug: last-chance-to-download-your-google-finance-portfolio

@@ -1,0 +1,54 @@
+---
+:id: post_39932
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:04+00:00'
+  :created_at: '2016-06-29T23:15:47+00:00'
+  :id: post_39932
+:title: We're looking for a Sales Engineer!
+:url_slug: were-hiring-a-sales-engineer
+:content: |-
+  Are you interested in finance and tech? And are you one of those rare people who is both outgoing _and_ just a little bit nerdy? Then we might just have the job for you!
+
+  We're currently looking for a Sales Engineer to join our award-winning [fintech](https://en.wikipedia.org/wiki/Financial_technology) company. In this role, you would educate, support and sell to clients, and also liaise with product management, marketing and sales to improve our service and overall processes. We're nimble and growing quickly, so we're looking for someone who's creative, tech-savvy, and eager to contribute.
+
+  For more information and to apply, check out the [job posting](https://www.linkedin.com/jobs/view/56794352).
+
+  ![nerds - featured](//images.ctfassets.net/91sm3pewxzag/1wwv1vSPS8cUKWg4yaksSW/aa5a94ff7b51e3b30f3d60b53ce27faf/featured_nerds.jpg?w=950)
+
+  <small>*We're cool. Really!*</small>
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2015-04-15 00:00:00.000000000 Z
+:meta_description: We're looking for a Sales Engineer to join our award-winning fintech
+  company, based out of our funky new office space in Surry Hills. Could it be you?
+:featured_image:
+  :title: nerds - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1wwv1vSPS8cUKWg4yaksSW/aa5a94ff7b51e3b30f3d60b53ce27faf/featured_nerds.jpg"
+  :_meta:
+    :updated_at: '2016-09-14T00:39:14+00:00'
+    :created_at: '2016-09-14T00:39:01+00:00'
+    :id: 1wwv1vSPS8cUKWg4yaksSW
+:wordpress_url: "/2015/04/15/were-hiring-a-sales-engineer/"
+:slug: were-looking-for-a-sales-engineer

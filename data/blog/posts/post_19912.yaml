@@ -1,0 +1,84 @@
+---
+:id: post_19912
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:00+00:00'
+  :created_at: '2016-06-29T23:17:49+00:00'
+  :id: post_19912
+:title: 2 click FIF reporting. Yes, it's this easy. Yes, it's this automatic.
+:url_slug: 2-click-fif-reporting-yes-its-this-easy-yes-its-this-automatic
+:content: "###### NOTE: There is a newer version of this article. See [*How to calculate
+  your NZ FIF income*](/blog/how-to-calculate-your-nz-fif-income/) for more information.\n\nDespite
+  being a small company, we're rather international. We count Kiwis, Aussies, Americans,
+  Italians, and Germans amongst our ranks. From a billable hours perspective, our
+  payroll is a dream come true for an international tax strategist, but let's leave
+  that for another post. \n\n[Sharesight](/) was founded in Wellington, but for some
+  of our staff it can be easy to overlook the country-specific, core (and killer!)
+  features, which put us on the map. **Our [FIF Report](https://help.sharesight.com/nz/new_fdr_report_page/)
+  is one such example**.\n\nSharesight automatically tracks IRD updates to the FIF
+  investment list and will \"tick\" these investments in your or your client's portfolio.
+  We even store the FIF lists for years gone by so if there's a need to, you can always
+  go back in time and run FIF reports based on the official consideration list.\n\n![FIF
+  Report - featured](//images.ctfassets.net/91sm3pewxzag/1URv4rLVqgOw6SG20mYm8U/5cb471b1d23f00033b85ed798f68b8f4/featured_fif-report.png?w=950)\n\n<small>Run
+  FIF with two clicks. No exaggeration.</small>\n\nWhen you're ready to get your FIF
+  on simply go to our Reports menu, and click FIF Report. Sharesight will default
+  to the current year's list, and scrolling down the page will reveal which of your
+  holdings must be considered for FIF. **The ticked holdings are pre-selected by Sharesight**.
+  You can always un-tick these, but we recommend leaving the list as-is.\n\n![FIF
+  Report](//images.ctfassets.net/91sm3pewxzag/6OiapEPu00ccC0MOaqY2kK/421718b4b1e5b591e5c44e1e122ab197/FIF-report-2.png?w=950)\n\n<small>Tick,
+  tick, tick - we auto nominante holdings for FIF consideration</small>\n\nClick the
+  big 'Calculate' button at the bottom of the page and we'll show you the [Comparative
+  Value](https://help.sharesight.com/nz/cv_method_fif_reports_page/) and [Fair Dividend
+  Rate](https://help.sharesight.com/nz/fdr_income_fif_reports_page/) methods so you
+  can compare each side by side. You'll want to select the lower of the two income
+  calculation models.\n\n![FIF Report](//images.ctfassets.net/91sm3pewxzag/6gyal6aNTGykoYmWgCEWs8/5cbc1cf9f32a1fd75c6a9fe498e97257/FIF-report-3.png?w=950)\n\n<small>Compare
+  both income calculation models and pick the lowest</small>\n\nFrom here you can
+  take a deeper dive. Clicking any of the 'View Details' links will then display the
+  underlying holdings and explain how we arrived at our Total Income. Remember, you
+  can export this data to Excel or PDF and [add your logo](https://help.sharesight.com/applying-your-logo-to-reports/)
+  if you're a [Sharesight Pro](/pro/) partner.\n\n![FIF Report](//images.ctfassets.net/91sm3pewxzag/aVBvCcmVb22qKKgEMQ2YY/1839af4b5e932668a9f23bd2237ae68c/FIF-report-4.png?w=950)\n\n<small>Taking
+  a deeper dive into one of two FIF calc methods</small>\n\nIf you need ***even more***
+  **detail**, click the 'Worksheet' button and we'll reveal the underlying calculation
+  for each holding.\n\n![FIF Report](//images.ctfassets.net/91sm3pewxzag/6B6FzLGfS0sWcOE0O4WqKG/eb07830e3a8170a65ff71a1266b5b835/FIF-report-5.png?w=950)\n\n<small>The
+  guts of our FIF reporting engine</small>\n\nWe're proud of the work we've done on
+  our FIF Report. It's this end-to-end automation you should come to expect from Sharesight.
+  Don't expect us to stop here. There's plenty more country-specific automation in
+  the works...\n\n### FURTHER READING\n- Help -- [FIF Report](https://help.sharesight.com/nz/new_fdr_report_page/)\n-
+  Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  Blog -- [How much money can Sharesight save you?](/blog/how-much-money-can-sharesight-save-you/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-03-03 00:00:00.000000000 Z
+:meta_description: Calculate your 2014 IRD FIF income with our comprehensive FIF report
+  which automatically calculates your peak holding balance & FIF income.
+:featured_image:
+  :title: FIF Report - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1URv4rLVqgOw6SG20mYm8U/5cb471b1d23f00033b85ed798f68b8f4/featured_fif-report.png"
+  :_meta:
+    :updated_at: '2016-09-09T04:06:46+00:00'
+    :created_at: '2016-09-09T04:06:29+00:00'
+    :id: 1URv4rLVqgOw6SG20mYm8U
+:wordpress_url: "/2014/03/03/2-click-fif-reporting-yes-its-this-easy-yes-its-this-automatic/"
+:slug: 2-click-fif-reporting-yes-its-this-easy-yes-its-this-automatic

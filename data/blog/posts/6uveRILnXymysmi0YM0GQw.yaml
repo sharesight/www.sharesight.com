@@ -1,0 +1,81 @@
+---
+:id: 6uveRILnXymysmi0YM0GQw
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:36:15+00:00'
+  :created_at: '2016-09-22T05:09:34+00:00'
+  :id: 6uveRILnXymysmi0YM0GQw
+:title: 'Portfolio Setup Tip #3: Automatic Contract Note Processing'
+:url_slug: portfolio-setup-tip-3-automatic-contract-note-processing
+:content: |-
+  Third in our series of “by now our New Year’s resolutions are long gone and let’s do something manageable” portfolio set up tips is [Sharesight](/)’s terrific [Trade Confirmaation Email](https://help.sharesight.com/contract_notes/) processing feature.
+
+  I hate PDFs. They’re handy, don’t get me wrong. They work on any type of machine, including your mobile (pinch, zoom, pinch, zoom), and they’re the universally accepted official document file for businesses worldwide. And that’s just it. They’re a static, locked document, but one that you need to pay attention to, get data out of, or do something with. You can’t copy and paste and you can’t make changes. This includes buy and sell confirmations, a.k.a. contract notes.
+
+  __Sharesight automatically reads PDFs in Trade Confirmation Emails, without need for human intervention.__ It’s like we’ve got a team of (benevolent) robots behind the scenes scanning PDFs 24/7. This means when a contract note is sent to Sharesight, we automatically suck out the necessary data and update your holdings and portfolios within 60 seconds.
+
+  ![Contract Notes - Featured](//images.ctfassets.net/91sm3pewxzag/59SUe8JUaIs0uAcG4QIO4A/1c35566ce75758272d813502efa34d42/featured_contract-note.png?w=950)
+
+  This feature is most commonly used by investors and accountants keeping portfolios updated from today onwards, i.e. today I buy 200 shares of BHP through Commsec and have the Trade Confirmation Email sent to Sharesight. Portfolio updated just like that. Complete with number of units, purchase price, and even the brokerage fee paid. __Oh, and Sharesight will store a copy of every contract note we receive and attach it to the appropriate trade.__
+
+  When your Trade Confirmation Emails are sent to your email address by your broker, you can either forward them to you dedicated, secure, and private Sharesight email address – or even better – you can add this Sharesight email address to your list of email recipients within your broker account settings. Most brokers allow you to have multiple email addresses on file. This is what I do for my trades and it works perfectly.
+
+  ![sharesight-portfolio-email-address](//images.ctfassets.net/91sm3pewxzag/Oyv10UH3yeOWiqWA0GqY/1d80d54aae4a18998686bcbf278f1de7/sharesight-portfolio-email-address.png?w=950)
+
+  Your Sharesight email address can be found within the Integrations tab, under 'Trade Confirmation Emails'. If the PDFs in your Trade Confirmation Emails require a password to be opened (true for E*TRADE), just enter the password in the field and click “Save Changes.”
+
+  __Because our crack software engineers built this “automagic” technology to be flexible, you can also send through old Trade Confirmation Emails.__ If you have some of these PDFs gathering digital dust somewhere on your hard drive, simply attach them to an email and send to your dedicated Sharesight email address. Our robots will also read the transaction date and recreate those positions when they occurred and update your portfolios accordingly.
+
+  ![sharesight-edit-trade](//images.ctfassets.net/91sm3pewxzag/T9loAU87i6AIu6wYi8Kka/19e3f16a23104d8b746ad02b5ad1128f/sharesight-edit-trade.png?w=950)
+
+  This is just one of several ways to get up and running with Sharesight. Previously in our series of post to help you get started we covered [manually entering opening balances](/blog/scrap-those-new-years-resolutions-and-get-real-portfolio-setup-tip-1-opening-balances-manual-entry-are-your-best-friend/) and [uploading a file with multiple opening balances](/blog/portfolio-setup-tip-2-opening-balances-bulk-upload-are-also-your-best-friend/).
+
+  ### FURTHER INFORMATION
+
+  - Help -- [Importing contract notes via email](https://help.sharesight.com/contract_notes/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-01-23 11:00:00.000000000 +10:00
+:meta_description: The third step in is setting up your Sharesight share tracking
+  portfolio is activating our automatic Trade Confirmation Email processing feature.
+:featured_image:
+  :title: Contract Notes - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/59SUe8JUaIs0uAcG4QIO4A/1c35566ce75758272d813502efa34d42/featured_contract-note.png"
+  :_meta:
+    :updated_at: '2016-09-22T05:12:44+00:00'
+    :created_at: '2016-09-22T05:12:17+00:00'
+    :id: 59SUe8JUaIs0uAcG4QIO4A
+:wordpress_url: "/2014/01/23/portfolio-setup-tip-3-automatic-contract-note-processing/"
+:slug: portfolio-setup-tip-3-automatic-contract-note-processing

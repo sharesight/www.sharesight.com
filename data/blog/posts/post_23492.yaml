@@ -1,0 +1,77 @@
+---
+:id: post_23492
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:20+00:00'
+  :created_at: '2016-06-29T23:18:40+00:00'
+  :id: post_23492
+:title: How do I track my KiwiSaver fund in Sharesight?
+:url_slug: how-do-i-track-my-kiwisaver-fund
+:content: |-
+  On Valentine’s Day this year, [we launched managed funds data on Sharesight](/blog/managed-funds-live-on-sharesight/). It was our romantic overture to add more value to your [Sharesight](/) login. Sweet, right? For two months now, our clients have been tracking fund prices and distributions on a daily basis. We count over 10,000 New Zealand and Australian managed funds on our database.
+
+  ![KiwiSaver - featured](//images.ctfassets.net/91sm3pewxzag/5oonrSot0sEO88IEqI84Oe/160f8033de13c8105e0144381ff03543/featured_kiwisaver.png?w=950)
+
+  Since then, we’ve gathered heaps of client feedback. Remember, the best way to see the features built that you want is simply to ask. [Tweet us](https://twitter.com/Sharesight). [Facebook us](https://www.facebook.com/sharesight). Post to our [community forum](https://community.sharesight.com). It seems that one of the most popular use cases is for folks to simply track down the specific [KiwiSaver](/blog/know-your-portfolio/) fund that they own. Those quarterly paper statements don’t seem to cut the mustard. To find your fund, you’ll want to add a new holding to your portfolio and make sure the “Market” dropdown is set to “Funds NZ”:
+
+  ![screenshot kiwisaver-1](//images.ctfassets.net/91sm3pewxzag/69CWXXGRgIQm6oe6WwY8mo/ff70ea0f6e8537c97e294ed6d8a4b197/screenshot_kiwisaver-1.png?w=950)
+
+  Within the “Code or Company Name” field, begin typing the name of your KiwiSaver fund. Make sure to type this exactly as it appears on your statement. It’s a good idea to type slowly - with thousands of funds on our database our auto-prompt box takes a second to load suggestions. Or if you have the fund code begin entering that in the box, again slowly, so our system has a chance to auto-suggest your fund. Remember, many KiwiSaver funds have very similar names. If you don’t see your fund straightaway keep typing, it should appear as the name gets more specific.
+
+  Once you’ve found your fund, you’re ready to add your transactions or opening balance. By default, Sharesight asks you to record a buy transaction. Check your paper statement. If you see how many units/shares of the fund you own, and the date on which they were purchased, enter those in the "Traded On" and "Quantity" fields. Sharesight knows the price of the fund at the close of trading on every day going back in time. To confirm the price, click the price that populates under the "Unit Price" box.
+
+  If you don’t see details about number of shares or units on your statement, no worries. You can click the option to begin with an "Opening Balance" instead. Enter your "Cost Base" (your fund balance) and considering you don’t know the number of units ("Quantity"), you can determine this on your own. Typically, we match quantity to cost base so that the average cost per share = $1.
+
+  You probably didn’t pay any fees (or shouldn’t have!)&nbsp;so you can leave that field at $0. Click "Save this Holding" and now your KiwiSaver fund is part of your Sharesight portfolio and will be tracked alongside your other holdings. You can do everything that you’re used to doing, like run a [Performance Report](https://help.sharesight.com/performance_report/).
+
+  ![screenshot kiwisaver-2](//images.ctfassets.net/91sm3pewxzag/6SzAmHL8UocmKQAiauYMeW/51cdc64b1e1996a588ad6d0c68b250d3/screenshot_kiwisaver-2.png?w=950)
+
+  If you’re making regular contributions to your KiwiSaver fund, it’s important to understand that Sharesight won’t know when this money is taken out of your pay. Therefore, we can’t update your balance on an on-going basis like we do for shares. Since KiwiSaver funds are designed to be long-term, buy and hold investments, our encouragement is to update your KiwiSaver balance every month or quarter. This should suit investors of nearly all stripes.
+
+  To do so, simply go into your KiwiSaver fund from Portfolio Overview. Within the “All Trades & Adjustments” section click “Enter a new Trade or Adjustment” to update your holding balance or enter a new transaction.
+
+  ![screenshot kiwisaver-3](//images.ctfassets.net/91sm3pewxzag/6HXAPSltSgCcOCMy4Os4QM/b12ce8b1374d374569a0b9983f60023b/screenshot_kiwisaver-3.png?w=950)
+
+  Happy investing and keep the feedback coming!
+
+
+  ### FURTHER READING
+  - Blog -- [Managed funds live on Sharesight](/blog/managed-funds-live-on-sharesight/)
+  - Blog -- [How to calculate your NZ FIF income](/blog/how-to-calculate-your-nz-fif-income/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-05-02 00:00:00.000000000 Z
+:meta_description: Tracking your KiwiSaver fund is easy with Sharesight, a free online
+  portfolio management system that lets you track shares and over 10,000 AU & NZ funds.
+:featured_image:
+  :title: KiwiSaver - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5oonrSot0sEO88IEqI84Oe/160f8033de13c8105e0144381ff03543/featured_kiwisaver.png"
+  :_meta:
+    :updated_at: '2016-09-09T02:22:39+00:00'
+    :created_at: '2016-09-09T02:22:20+00:00'
+    :id: 5oonrSot0sEO88IEqI84Oe
+:wordpress_url: "/2014/05/02/how-do-i-track-my-kiwisaver-fund/"
+:slug: how-do-i-track-my-kiwisaver-fund-in-sharesight

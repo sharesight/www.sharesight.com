@@ -1,0 +1,68 @@
+---
+:id: 2I3BwV5A1WyyE0OYiYq0IA
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T05:43:24+00:00'
+  :created_at: '2018-02-05T00:24:47+00:00'
+  :id: 2I3BwV5A1WyyE0OYiYq0IA
+:title: Automatically import trades to Sharesight from 100 brokers
+:content: |-
+  When [Sharesight's](/) portfolio tracker was born in 2007 all trades needed to be entered manually when maintaining your portfolio. It was only in 2010 that we added the ability to automatically import trades from your broker to your portfolio.
+
+  Starting with [Direct Broking](/blog/sharesight-and-direct-broking/) in New Zealand, we developed the [Sharesight API](/blog/power-your-business-with-the-sharesight-api/) to make importing trades a breeze. Over the years other brokers joined Direct Broking in becoming Sharesight API partners, including [CMC Markets](/blog/sharesight-teams-up-with-cmc-markets-stockbroking/), [BOQ](/blog/sharesight-bank-of-queensland/), [Bendigo Bank](https://www.sharesight.com/blog/sharesight-bendigo-bank/) and [ESUPERFUND & EBROKING](/blog/announcing-new-sharesight-strategic-partner-esuperfund-ebroking/).
+
+  In 2012 we developed a solution that allows you to automatically record your buy and sell trades via the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/) (contract notes) sent by some brokers. Today we’re excited to announce that Sharesight supports the [contract notes of 100 brokers around the world](https://help.sharesight.com/supported_brokers/)!
+
+  ![multiple contract notes - featured](//images.ctfassets.net/91sm3pewxzag/34oxJVotnqoIAiMKoQCseC/380dd8079366914cd1f076e962f2e442/featured_multiple-contract-notes.jpg?w=950)
+
+  ## 100 brokers supported worldwide
+
+  Trade Confirmation Emails are relatively common among brokers in Australia and New Zealand -- which is where the majority of the 100 brokers Sharesight supports are based. As of writing, we also support 2 brokers in the UK: Hargreaves Lansdown and Interactive Investor, and 2 in Canada: Scotiabank and CIBC Investor’s Edge.
+
+  ## We need your help to add our next 100 brokers!
+
+  If your broker is not on [Sharesight’s list of supported brokers](https://help.sharesight.com/supported_brokers/) but they email you trade confirmation emails (or you’re able to download the PDF trade confirmations from your broker), then ask us to support your broker by sharing an ‘idea’ on our [community forum](https://community.sharesight.com/), or by leaving us a message in the chat interface located at the bottom-right of Sharesight.
+
+  We just need a handful of examples in order to support a new broker, so reach out today if you’d like to see yours added!
+
+  ### FURTHER READING
+  - [Why I use Sharesight to track my portfolio](/blog/why-i-use-sharesight-to-track-my-portfolio/)
+  - [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - [How much money can Sharesight save you?](/blog/how-much-money-can-sharesight-save-you/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-02-05 10:00:00.000000000 +11:00
+:meta_description: 'Today we’re excited to announce that Sharesight supports the importing
+  of Trade Confirmation Emails notes from 100 brokers around the world!
+
+  '
+:featured_image:
+  :title: multiple contract notes - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/34oxJVotnqoIAiMKoQCseC/380dd8079366914cd1f076e962f2e442/featured_multiple-contract-notes.jpg"
+  :_meta:
+    :updated_at: '2016-09-14T06:46:25+00:00'
+    :created_at: '2016-09-14T06:46:02+00:00'
+    :id: 34oxJVotnqoIAiMKoQCseC
+:slug: automatically-import-trades-to-sharesight-from-100-brokers

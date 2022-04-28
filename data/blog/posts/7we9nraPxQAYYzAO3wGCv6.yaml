@@ -1,0 +1,101 @@
+---
+:id: 7we9nraPxQAYYzAO3wGCv6
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:44:13+00:00'
+  :created_at: '2020-07-22T04:05:33+00:00'
+  :id: 7we9nraPxQAYYzAO3wGCv6
+:title: Easily import ASB Securities trades into Sharesight
+:url_slug: easily-import-asb-securities-trades-into-sharesight
+:content: "Did you know that you can automatically import trades from over [170 brokers
+  around the world](https://help.sharesight.com/supported_brokers/) into your [Sharesight](https://www.sharesight.com/)
+  portfolio? In 2012 we developed a solution that allows you to automatically record
+  your buy and sell trades via the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/)
+  emailed to you when you trade with some brokers.\n\nInvestors can now import trades
+  automatically to their Sharesight portfolio for New Zealand broker [ASB Securities](https://www.asb.co.nz/asb-securities).
+  This makes it easier than ever for New Zealand investors to leverage Sharesight’s
+  award-winning performance, [dividend tracking](https://www.sharesight.com/dividend-tracker/),
+  and tax reporting features.\n\n![ASB Securities Sharesight](//images.ctfassets.net/91sm3pewxzag/2Y4UiEVl5lGlcKpkS2iKiO/8ae2996241c79b75a1e7b5fcb8ec450a/ASB_Securities_Sharesight.jpg?w=950)\n\n##
+  Who is ASB Securities?\n\nOperating under one of New Zealand’s most well-known banks,[
+  ASB Securities](https://www.asb.co.nz/asb-securities) is a full-service broker that
+  offers DIY online trading on the NZX and ASX, and access to major global markets
+  through its network of brokers. Brokerage fees start from $15 per trade and investors
+  have access to shares, ETFs, New Zealand fixed interest securities, IPOs and margin
+  lending. ASB also provides regular market reports, analyst information and company
+  news to keep investors up-to-date. \n\n## Import your ASB Securities trades to Sharesight\n\nSharesight
+  allows you to import your trading history by directly connecting your ASB Securities
+  account to Sharesight. Alternatively, you can manually import your history by uploading
+  a CSV file, and automatically link ongoing trades through the Trade Confirmation
+  Emails feature. Keep reading to learn more.\n\n## Connect directly to your ASB securities
+  account\n\nThe easiest way to build your Sharesight portfolio is to [connect to
+  your ASB Securities trading account](https://help.sharesight.com/asb-securities/)
+  with Sharesight. This imports your historical buy and sell trades directly from
+  your trading account into Sharesight. \n\n![ASB Securities Sharesight Import](//images.ctfassets.net/91sm3pewxzag/55kGmqUixmR5zJvgQprFjP/864bfe483f1315b2e841e362de17a5e2/ASB_Securities_Sharesight_Import.png?w=950)\n\nTo
+  do this, you will need to enter your ASB Securities login details and choose the
+  trading details you wish to import into Sharesight. \n\n*__Note:__ Your ASB Securities
+  login details will not be saved by Sharesight and your trading data is downloaded
+  through a secure connection. Sharesight has no official relationship with ASB securities
+  and offers this service purely for your convenience.  If you do not wish to disclose
+  your ASB Securities login details we recommend importing via CSV file or Trade Confirmation
+  Emails as outlined below.*\n\nOnce you have imported your historic trades into Sharesight,
+  you can automatically import ongoing trades by using the Trade Confirmation Emails
+  feature, as mentioned below. \n\n## How to import historical trades through a spreadsheet
+  \n\nIf you prefer not to use your broker account login details to connect to Sharesight,
+  another way to easily import historical trades to Sharesight is by creating a [spreadsheet](https://help.sharesight.com/import_bulk_trades/#1)
+  of your trades from your trading account.\n\n![Sharesight CSV Import Screen](//images.ctfassets.net/91sm3pewxzag/3rXn8QHaMZGbxlG1yUHVDO/5e91ca5a68ee6e3f05096e472bf8119b/Sharesight_CSV_Import_Screen.png?w=950)\n\nAs
+  long as the file contains all the [required information](https://help.sharesight.com/import_bulk_trades/#1),
+  you can upload it to Sharesight and quickly bulk import the trading data you wish
+  to see in your portfolio. \n\n## Use Sharesight’s Trade Confirmation Emails feature
+  for ongoing trades\n\nSharesight’s [Trade Confirmation Emails](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/)
+  feature is an effortless way to import historical and ongoing trades to a Sharesight
+  portfolio. By simply having your broker’s trade confirmations forwarded to your
+  unique Sharesight email address, all of your trades are synced to your portfolio,
+  inclusive of corporate actions such as dividends, mergers and stock splits, with
+  no effort on your part. \n\n## We need your help to add more brokers!\n\nIf your
+  broker is not yet on [Sharesight’s list of supported brokers](https://help.sharesight.com/supported_brokers/)
+  but they send you trade confirmation emails (or you’re able to download the PDF
+  trade confirmations, or a spreadsheet of trades from your broker manually), then
+  ask us to support your broker by leaving us a message in the chat interface located
+  at the bottom-right of Sharesight.\n\nWe just need a handful of sample trade confirmation
+  emails in order to support a new broker, so reach-out today if you’d like to see
+  yours added!\n\n### FURTHER READING\n\n* [How Sharesight calculates your investment
+  performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  [5 ways Sharesight helps New Zealand investors at tax time](https://www.sharesight.com/blog/5-ways-sharesight-helps-nz-investors-at-tax-time/)\n\n*
+  [How to track exchange-traded funds (ETFs)](https://www.sharesight.com/blog/how-to-track-exchange-traded-funds-etfs/)\n\n*
+  [Import trades via your broker’s trade confirmations](https://help.sharesight.com/contract_notes/)"
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-07-22 10:00:00.000000000 +10:00
+:meta_description: Investors can now import trades automatically to their Sharesight
+  portfolio for New Zealand broker ASB Securities to track their investment performance.
+:featured_image:
+  :title: ASB Securities Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2Y4UiEVl5lGlcKpkS2iKiO/8ae2996241c79b75a1e7b5fcb8ec450a/ASB_Securities_Sharesight.jpg"
+  :_meta:
+    :updated_at: '2020-07-22T04:11:46+00:00'
+    :created_at: '2020-07-22T04:11:22+00:00'
+    :id: 2Y4UiEVl5lGlcKpkS2iKiO
+:hide_from_feed: false
+:slug: easily-import-asb-securities-trades-into-sharesight

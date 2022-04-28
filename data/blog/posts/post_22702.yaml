@@ -1,0 +1,105 @@
+---
+:id: post_22702
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:05+00:00'
+  :created_at: '2016-06-29T23:15:48+00:00'
+  :id: post_22702
+:title: How do I run an Australian capital gains tax report?
+:url_slug: how-do-i-run-capital-gains-tax-reports-in-sharesight
+:content: "We love blogging about [new features](/blog/the-improved-sharesight-interface-new-body-same-engine/)
+  and [trends](/blog/earth-blogging-switching-apple-android/), but it’s important
+  we don’t lose sight of one of the most useful and valuable features in [Sharesight](/):
+  CGT (realised and **un**realised) reporting. We suppose if this were a 1980s sitcom,
+  this would be the moment when the cheesy music starts and the father sits the son
+  down on the lounge for a heart-to-heart chat.\n\nNormally, it costs $300 to subscribe
+  to our [Aussie Investor Plan](/au/pricing/) for one year ($275 if you sign up for
+  12 months). Having your portfolio's tax position calculated in two mouse clicks
+  has got to be worth at least that much alone. If you disagree, how about we throw
+  in unlimited holdings across three portfolios, unlimited shared portfolio access,
+  support for overseas share markets, and [Xero](/xero/) synchronisation?\n\nThere
+  are two capital gains tax reporting options in Australian Sharesight plans. Both
+  found in the [Reports](https://help.sharesight.com/reports/) menu:\n\n## 1. Unrealised
+  Capital Gains Tax Report\n**(Available in Australian [Investor, Expert](/au/pricing/),
+  and Australian [Shareight Pro](/pro/) plans)**\n\nThe [Unrealised Capital Gains
+  Report](/blog/tax-loss-selling-for-australian-investors/) calculates unrealised
+  capital gains in your portfolio and the resulting taxable income that *would* arise
+  if these shares were sold on the report date. The report is designed for forecasting
+  purposes only, but is extremely useful as we approach tax time. Basically you can
+  model your CGT liability. We’ve seen our share of market uncertainty so far in 2014.
+  The ability to see the tax effect of crystallising those gains (or losses) is valuable
+  for investors and professionals. Doing this with two clicks of your mouse is even
+  better. The report is based on the ‘discount method’ for shares that were held for
+  more than one year and the ‘other method’ for shares held for less than one year
+  (you can change your discount rate on a per portfolio basis in the Settings menu).
+  The report itself breaks down the portfolio’s short and long term unrealised capital
+  gains, and any unrealised capital losses. Remember you can export this data to Excel,
+  PDF, or better yet, you can [share access to the portfolio with anyone you wish](/blog/sharing-is-caring/).\n\n![Unrealised
+  CGT Report](//images.ctfassets.net/91sm3pewxzag/1GW3uUI3QMCecsmsE0i26A/0926edaade6902dd9206cc9901b3c168/unrealised-cgt.png?w=950)\n\n![unrealised
+  capital gains tax report - featured](//images.ctfassets.net/91sm3pewxzag/6J3sJNNNUAeeAiIIYuymoy/204c0ccf9e77341d7e170a361e0975e9/featured_unrealised-capital-gains-tax-report.png?w=950)\n<small><i>Yikes.
+  That's going to be an ugly tax bill</i></small> \n\n## 2. Capital Gains Tax Report\n**(Available
+  in all Sharesight plans, except NZ)**\n\nThe Australian [Capital Gains Tax Report](/blog/capital-gains-tax-calculator-for-australian-investors/)
+  calculates capital gains made on shares as per Australian Tax Office rules. Here
+  again, the report is based on the ‘discount method’ for shares that were held for
+  more than one year and the ‘other method’ for shares held for less than one year.
+  Again, you can change your discount rate on a per portfolio basis in the Settings
+  menu The report itself breaks down short and long term capital gains and capital
+  losses. Same as the unrealised report also provides a nice summary table at the
+  bottom:\n\n![CGT Report](//images.ctfassets.net/91sm3pewxzag/ruRtKoH2DuWawyEMauKQc/0ea98a2cd343a9431229ef1fa9f8267d/cgt-report.png?w=950)\n\n![CGT
+  Summary](//images.ctfassets.net/91sm3pewxzag/2RJIvq6NTaySaOIcUKGIuM/2cd6cbb90e7157f704efa1590e992f1a/cgt-summary.png?w=950)\n<sub><i>You
+  may export to Excel or PDF</i></sub>\n\n## But wait... there's more\n\nYou can customise
+  your date ranges on both reports and you can lock in the method you've chosen. This
+  means that you can alter the sale allocation methods again in the next reporting
+  period without invalidating the CGT result for a previous period. Pretty cool.\n\nYou
+  can also change your sale allocation method by clicking the button on either report.
+  Choose from FIFO, LIFO, Maximise Capital Gains, Minimise Capital Gains, or our Sharesight
+  Minimisation Method. Our in-house method is handy. We'll assume that you sell shares
+  resulting in the lowest capital gains tax first. This method is more sophisticated
+  than the Minimise Capital Gains method because it takes into account the discounting
+  rules. The sales allocation method can be changed for specific holdings or for the
+  entire portfolio.\n\n![change-sale-allocation-method](//images.ctfassets.net/91sm3pewxzag/4OyXvzeIAU4mg40UU6UQKc/f7c7e4f40fb3c8f7493f753159f4e1e1/change-sale-allocation-method.png?w=950)\n\n![sale-allocation-method](//images.ctfassets.net/91sm3pewxzag/3h9zFLymcgAKeUgkUeKQm2/054dc9e676c9ecfa0b91933a079ef27c/sale-allocation-method.png?w=950)\n\nLast
+  you can choose to carry forward any losses from the previous reporting period. The
+  carry-forward loss will be included in the losses section of the report.\n\n![losses-carried-forward](//images.ctfassets.net/91sm3pewxzag/4wamJ5c5lKi2gSaggUoYUO/7f23b149cfe7d066512037e2b58c5d10/losses-carried-forward.png?w=950)\n\n**Your
+  time is better spent doing about a million [other](https://www.youtube.com/watch?v=dEuvBqQBXvk)
+  [things](https://www.youtube.com/watch?v=N7hrQTeb15c) than trying to work out your
+  portfolio tax liability on a spreadsheet at the kitchen table. [Make a tiny investment
+  in Sharesight](/au/pricing/) and get a few hours of your life back.**\n\n### FURTHER
+  READING\n\n- [Making the most out of your Sharesight subscription at EOFY](/blog/eofy/)\n-
+  [Save time & money by sharing your portfolio with your accountant](/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/)\n-
+  [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-04-11 00:00:00.000000000 Z
+:meta_description: Learn how easy it is to run realised and unrealised Capital Gains
+  Tax Reports (CGT Reports) in Sharesight Online Portfolio Manager.
+:featured_image:
+  :title: unrealised capital gains tax report - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6J3sJNNNUAeeAiIIYuymoy/204c0ccf9e77341d7e170a361e0975e9/featured_unrealised-capital-gains-tax-report.png"
+  :_meta:
+    :updated_at: '2016-09-09T02:34:20+00:00'
+    :created_at: '2016-09-09T02:34:01+00:00'
+    :id: 6J3sJNNNUAeeAiIIYuymoy
+:wordpress_url: "/2014/04/11/how-do-i-run-capital-gains-tax-reports-in-sharesight/"
+:slug: how-do-i-run-an-australian-capital-gains-tax-report

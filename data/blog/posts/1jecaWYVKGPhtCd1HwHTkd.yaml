@@ -1,0 +1,86 @@
+---
+:id: 1jecaWYVKGPhtCd1HwHTkd
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T06:33:04+00:00'
+  :created_at: '2019-08-26T23:25:36+00:00'
+  :id: 1jecaWYVKGPhtCd1HwHTkd
+:title: Sharesight hits 100,000 users!
+:content: |
+  Having largely grown through word of mouth from our loyal Sharesight users, we’re excited to announce we’ve hit the 100,000 users milestone!
+
+  Sharesight was [founded just 12 years ago](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/) with a simple premise: to make tracking the true performance of your investments easier. I asked Sharesight co-founder and CTO Scott Ryburn about the journey to 100,000:
+
+  "Having co-founded Sharesight with my father Tony 12 years ago, it really validates the work the Sharesight team have put in to solve the problem of tracking your investment performance. Seeing that so many users have encountered the same problem, and see Sharesight as the solution to it means we’re achieving what we set out to do."
+
+  Now that we’ve hit the 100,000 user milestone, I thought it would be an excellent opportunity to reveal some of the other numbers behind Sharesight, and what users are doing with the platform. Let’s dive deeper.
+
+  ## Sharesight by the numbers
+
+  ![sharesight-100k-numbers](//images.ctfassets.net/91sm3pewxzag/1WsxD7W6WNnnk1HpD9Xhh7/48bd9851b362acfaac4316536db1db41/sharesight-100k-numbers.jpg?w=950)
+
+  ### A new trade is added to Sharesight *every 58 seconds*
+
+  Whether it be via [Sharesight’s API](https://portfolio.sharesight.com/api), [imported with a CSV file](https://help.sharesight.com/au/import-from-csv-file/), a broker [Trade Confirmation Email](https://help.sharesight.com/contract_notes/), or [manually added](https://help.sharesight.com/setting-up-your-holdings/), Sharesight users add on average a new trade **_every 58 seconds_**.
+
+  ### Sharesight users are tracking _over a million holdings_
+
+  Sharesight is currently tracking over a million individual holdings (**_1,280,520 to be precise_**), with the average [Sharesight Investor plan](https://www.sharesight.com/pricing/) user tracking 69 different investment holdings and Expert plan users tracking an average of 124.
+
+  At the individual portfolio level, users have recorded 89 trades on average.
+
+  ### Investors in *over 90 countries* track their investments with Sharesight
+
+  While the majority of Sharesight’s 100,000 users are in Australia and New Zealand, investors from over 90 countries around the globe currently use Sharesight to track their investments. As we grow globally, we’ll expand our region-specific features. One example is the launch of Sharesight in Canada, which has brought our [Canadian Capital Gains Tax report](https://www.sharesight.com/blog/canadian-capital-gains-tax-report/), support for [RRSP, RRIF](https://www.sharesight.com/blog/rrsp-and-rrif-canadian-tax-settings-in-sharesight-portfolios/) and [TFSA](https://www.sharesight.com/blog/track-your-tfsa-with-sharesight/) portfolios, as well as a [growing list of Canadian brokers](https://www.sharesight.com/blog/easily-track-investments-from-12-canadian-brokers/).
+
+  ## Here’s to the next 100,000
+
+  The Sharesight team thanks all our loyal users, [Sharesight Pro](https://www.sharesight.com/pro/) clients and [Sharesight Partners](https://www.sharesight.com/partners/) for getting us to this important milestone.
+
+  If you don’t yet use Sharesight, become one of the *next* 100,000 Sharesight users by [signing up for a free account today](https://portfolio.sharesight.com/signup)!
+
+  ![Sharesight Hero - Laptop](//images.ctfassets.net/91sm3pewxzag/6ZeF8Kv5c8pcVgD5iogE4D/f19820a74d1e3ee3c55c30896e5eb8c7/sharesight_hero_laptop.png?w=950)
+
+
+  ### FURTHER READING
+  - [Sharesight's 10 year fintech journey](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/)
+  - [Sharesight wins 3rd at Benzinga Global Fintech Awards](https://www.sharesight.com/blog/sharesight-wins-3rd-at-benzinga-global-fintech-awards/)
+  - [Sharesight nominated for Investment Innovator of 2019](https://www.sharesight.com/blog/sharesight-nominated-for-investment-innovator-of-2019/)
+  - [Press release - Sharesight userbase reaches 100,000 as investors seek portfolio
+  tracking innovation](https://assets.ctfassets.net/91sm3pewxzag/i59OpT7qgBKsGvqc0QltB/5aa39ef9e5564ac6be6fba6a2747920c/2019-08-27_sharesight_press-release_100k-users.pdf)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2019-08-27 10:00:00.000000000 +10:00
+:meta_description: Having largely grown through word of mouth from our loyal Sharesight
+  users, we’re excited to announce we’ve hit the 100,000 users milestone!
+:featured_image:
+  :title: featured sharesight-100k-global-users
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/31pJHwxEL6M4PPK4d7ra0F/5f59c8a0817060f7ba9d10e2d5e3f053/featured_sharesight-100k-global-users.jpg"
+  :_meta:
+    :updated_at: '2019-08-26T23:31:09+00:00'
+    :created_at: '2019-08-26T23:30:51+00:00'
+    :id: 31pJHwxEL6M4PPK4d7ra0F
+:hide_from_feed: false
+:slug: sharesight-hits-100000-users-

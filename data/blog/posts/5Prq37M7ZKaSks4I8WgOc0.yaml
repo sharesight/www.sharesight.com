@@ -1,0 +1,153 @@
+---
+:id: 5Prq37M7ZKaSks4I8WgOc0
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-12-06T03:52:53+00:00'
+  :created_at: '2018-09-19T02:46:50+00:00'
+  :id: 5Prq37M7ZKaSks4I8WgOc0
+:title: Attribution Managed Investment Trust tax calculations
+:url_slug: attribution-managed-investment-trust-amit-tax-calculations
+:content: "###### This post is from 2018, Sharesight has [updated AMIT ETF distribution
+  information for ETFs and Funds for the 2020/2021 tax year](https://www.sharesight.com/blog/australian-etf-distribution-components-now-available-for-fy20-21/).\n\nThis
+  is the time of year when investors will be receiving their annual year-end tax statements
+  from both listed and unlisted investment trusts, such as [ETFs](https://www.sharesight.com/blog/how-sharesight-makes-etf-tax-admin-easy/)
+  and managed funds. If you have had a close look, you will likely find some significant
+  changes for the 2018 tax year.\n\nAustralian investors face some new and potentially
+  complex tasks when completing the *[Tax Return for Individuals 2018](https://www.ato.gov.au/Individuals/Tax-return/2018/In-detail/Publications/Tax-return-for-individuals-2018/?=redirected)*
+  for the Australian Taxation Office (ATO), particularly if they earn income from
+  managed trusts.\n\nIn 2016 the Australian Government introduced new laws that changed
+  the taxation of Managed Investment Trusts (MITs), in particular the treatment of
+  tax-deferred income. This created a new trust structure known as an Attribution
+  Managed Investment Trust (AMIT) which has new tax implications for investors. \n\nFortunately
+  [Sharesight](https://www.sharesight.com/) handles the changes to trust taxation
+  introduced with Attribution Managed Investment Trusts. If you record the AMIT cost
+  base increase and decrease components for AMIT holdings, Sharesight will correctly
+  adjust the cost base and takes this into account when you run [Sharesight’s Capital
+  Gains Tax Report](https://www.sharesight.com/blog/how-to-calculate-your-2017-2018-capital-gains-tax/)
+  and [Taxable Income Reports](https://www.sharesight.com/blog/improved-taxable-income-report-for-australian-investors/).\n\n##
+  What is an Attribution Managed Investment Trust (AMIT)?\n\nTo understand Attribution
+  Managed Investment Trusts, let’s start with what Managed Investment Trusts (MITs)
+  are. A MIT is a trust structure that allows investors to purchase ‘units’ in the
+  trust as a vehicle to the investment activities the trust undertakes. Typically
+  Managed Investment Trusts will invest in shares, bonds, or property, with the income
+  earned from those investments distributed to unit holders. MITs are considered trusts
+  and income earned is taxed according to [Division 6 of the Income Tax Assessment
+  Act 1936](https://www.ato.gov.au/general/trusts/in-detail/managed-investment-trusts/managed-investment-trusts---overview/).\n\nIn
+  2016 the Australian Government sought to make changes to the taxation of trusts
+  to make Managed Investment Trust administration simpler, reduce administration costs
+  and make the sector more competitive internationally. To do this MITs became a distinct
+  trust structure, that would no longer be taxed the same as a traditional trust --
+  such as a family trust. The new structure is known as an Attribution Managed Investment
+  Trust (AMIT).\n\nExisting MITs that elected to apply to the regime can become Attribution
+  Managed Investment Trusts. Under this regime trustees can now “attribute” taxable
+  income to investors, without the need to make a distribution payment to unit holders.
+  In effect, AMITs no longer need to pass through all the income immediately, as is
+  the case with traditional trusts.\n\nThese attribution changes mean that under the
+  AMIT regime there are changes to how the cost base is handled. Previously MIT taxation
+  only allowed unit holders to record cost base decreases for [CGT-exempt or tax-deferred
+  payments](https://www.ato.gov.au/General/Capital-gains-tax/Shares,-units-and-similar-investments/Non-assessable-payments-in-relation-to-shares-and-units/Trust-non-assessable-payments-(CGT-event-E4)/).
+  Under the AMIT regime it is now possible to record a cost base increase for units
+  in cases where the “attributed” (which is where the A in AMIT comes from) taxable
+  income exceeds the distribution paid to the unit holder. This will occur in cases
+  where income is reinvested by the trust.\n\n## How Sharesight makes AMIT tax calculations
+  easy\n\nSharesight has custom fields that allow AMIT unit holders to correctly record
+  the Trust Income components for these investments. This includes fields for the
+  new AMIT cost base decrease, and AMIT cost base increase adjustments which feed
+  into both Sharesight’s Capital Gains Tax report calculations and the Taxable Income
+  Report for Australians completing their *Tax Return for Individuals 2018* form.\n\nBelow
+  is a real 2018 AMMA (AMIT Member Annual) statement that breaks down the multiple
+  trust income components required by the ATO. Once entered into the corresponding
+  fields in Sharesight (shown) the rest is easy:\n\n![AMITCostBaseDecreaseExample5](//images.ctfassets.net/91sm3pewxzag/4z6xm7zQw1Nx468U7US8Ib/8f2dadf0aabc5e8f28a80dcb6cd956d3/AMITCostBaseDecreaseExample5.PNG)\n\n__IMPORTANT:__
+  When you receive your AMMA statement, make sure you double check the component breakdowns
+  against the values automatically suggested by Sharesight, as these values are likely
+  to be updated in the year-end tax statement and won’t include any AMIT cost base
+  increase or decrease that applies.\n\n![ETF Distributions 2018](//images.ctfassets.net/91sm3pewxzag/2NXEGU1zvqY4GS28C8Yceg/362cb492c4ef79b22a92ff2f5a8a8a23/ETF_Distributions_2018.png?w=950)\n\nSharesight
+  now has updated year-end values available for ETFs on the Computershare registry
+  that you can double check against your statements, but for trusts on other registries
+  it is important to update these values manually yourself. Distributions that do
+  not yet have updated component values are marked with a warning icon per the screenshot
+  above. \n\n## How AMIT cost base adjustments impact investment returns\n\nSharesight
+  takes into account both AMIT cost base increase and decrease components when calculating
+  investment performance. Here’s how it works in each scenario.\n\n### AMIT cost base
+  decrease\n\nWhen calculating performance Sharesight __adds the AMIT cost base decrease
+  component to your gross dividend__ given that it represents cash received that was
+  not attributed to you. \n\n### AMIT cost base increase\n\nWhen calculating performance
+  Sharesight __deducts the AMIT cost base increase from your gross dividend__ given
+  that it reduces your attributed income to the net cash amount you actually received.
+  \n\n### Tax time webinar with PwC & Sharesight\n\nWatch this webinar where PwC Partner
+  Glen Frost & Director Tristan Whitefield & Sharesight CEO, Doug Morris answer your
+  Australian tax time questions.\n\n<a href=\"https://www.youtube.com/embed/56bbRYB4VXo\"
+  class=\"embedly-card\" data-card-width=\"100%\" data-card-controls=\"0\">Embedded
+  content: https://www.youtube.com/embed/56bbRYB4VXo</a>\n\n## Simply the best portfolio
+  tracker for Australian investors\n\nJoin thousands of Australian investors already
+  using [Sharesight](/) to manage their investment portfolios. With Sharesight you
+  can:\n\n- Automatically track your dividend and distribution income from stocks,
+  ETFs, LICs and Mutual/Managed Funds – [including the value of franking credits](https://help.sharesight.com/automatically-generated-dividends-and-adjustments/)\n-
+  Use the [Dividend Reinvestment Plan (DRPs/DRIPs) feature](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  to track the impact of DRP transactions on your performance (and tax)\n- See the
+  true picture of your investment performance, including the impact of brokerage fees,
+  dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n-
+  Run powerful tax reports to calculate your dividend income with the [Taxable Income
+  Report](https://www.sharesight.com/blog/5-ways-to-get-the-most-out-of-sharesights-taxable-income-report/)\n-
+  Plus calculate your CGT obligations with Sharesight's [Australian Capital Gains
+  Tax Report](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/)
+  and [Unrealised Capital Gains Tax Report](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)\n\nTo
+  get started for FREE, simply [sign-up](https://portfolio.sharesight.com/signup),
+  import your holdings and watch as dividends and prices are automatically updated.
+  If you decide to upgrade, you’ll unlock advanced features and everything you need
+  to run your tax reports and gain unparalleled insights into your portfolio performance
+  throughout the year. \n\nPlus, as an Australian tax resident, you can save even
+  more by claiming your Sharesight subscription fees on your tax return<sup>1</sup>.\n\n![Sharesight
+  Hero Min 2021](//images.ctfassets.net/91sm3pewxzag/5V6M5Ql9RBzzW4bzRrKHHi/44f692c36bd7048d77e6cd97e735b0fd/Sharesight_Hero_Min_2021.png?w=950)\n\n###
+  FURTHER READING\n- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)\n-
+  [5 ways to get the portfolio insights you need](/blog/5-ways-to-get-the-portfolio-insights-you-need/)\n\n<small><sup>1</sup>
+  If you derive income from the sharemarket, your Sharesight subscription may be tax
+  deductible. Check with your accountant for details.</small>"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2018-09-19 13:00:00.000000000 +10:00
+:meta_description: Australian investors face some new & potentially complex tasks
+  when completing their 2018 ATO Tax Return, particularly if they earn income from
+  managed trusts.
+:featured_image:
+  :title: Attribution Managed Investment Trust AMIT Tax
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5PoQTr7rsAukComu6Y4Yue/c27ca97e086ed05178f5cf66c5d62b2e/Attribution_Managed_Investment_Trust_AMIT_Tax.png"
+  :_meta:
+    :updated_at: '2018-09-19T03:01:22+00:00'
+    :created_at: '2018-09-19T03:01:01+00:00'
+    :id: 5PoQTr7rsAukComu6Y4Yue
+:slug: attribution-managed-investment-trust-tax-calculations

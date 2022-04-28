@@ -1,0 +1,96 @@
+---
+:id: post_33671
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:52+00:00'
+  :created_at: '2016-06-29T23:18:18+00:00'
+  :id: post_33671
+:title: Benchmarking now live on Sharesight
+:url_slug: benchmarking-now-live-on-sharesight
+:content: "###### UPDATE: 30-May-2019: You may now [benchmark your portfolio against
+  any stock, ETF, or fund](https://www.sharesight.com/blog/benchmark-your-portfolio-against-any-stock-etf-or-fund/)\n\nWe're
+  starting 2015 with a bang by announcing a major new feature. [Benchmarking](https://help.sharesight.com/benchmarking/)
+  is now available to all clients on the [Investor, Expert](/pricing/), and [Sharesight
+  Pro](/pro/) plans!\n\nUnderstanding how your portfolio is performing is a critical
+  ingredient to being a successful investor. [Sharesight](/)'s performance tracking
+  is all about helping you with this goal and benchmarking is the next step in this
+  process. You use Sharesight, so you know exactly how your investments have performed,
+  but how do they compare to the overall market? How about overseas markets? Is your
+  performance strong simply because the overall market went up, or is it due to the
+  individual stocks you picked, or down to your asset allocation? Lots of market uncertainty
+  out there. You need to know exactly where you stand.\n\n![Benchmarking - featured](//images.ctfassets.net/91sm3pewxzag/XlIIqxYeaGka0IwciiGUE/1d38ddbb9e43eaa0798d45b1b50b2eed/featured_benchmarking.png?w=950)\n\nBenchmarking
+  allows you to select **any ETF** on our database to use for comparison. Note that
+  a benchmark is&nbsp;saved at the portfolio level, so it can be applied to all portfolios
+  in your account. \n\nWithin the advanced options menu above the chart on the [Portfolio
+  Overview page](https://help.sharesight.com/show_portfolio/), you'll find a new section
+  for selecting your benchmark instrument.\n\n![Benchmarking your investments - Sharesight](//images.ctfassets.net/91sm3pewxzag/45Hwe8EfjG0IOI2i6cUmiu/a85816a1a59b268fa3feddfacd9317ab/blog_benchmarking_1.png?w=950)\n\nThe
+  common benchmark dropdown menu offers you preselected options for tracking your
+  portfolio against popular market indexes. The list is made up of popular index-tracking
+  ETFs on the ASX and NZX. We think this is a good starting point.\n\n![Benchmarking
+  your Investments - Sharesight](//images.ctfassets.net/91sm3pewxzag/3qptC3fiTCSsqiws8KkqUU/df71edac2c920011b6e676a6c681ad49/blog_benchmarking_2.png?w=950)\n\nBut
+  you can search for a specific security by typing in the name or code. So if you
+  want to track your portfolio against a Gold ETF you're in luck:\n\n![Benchmarking
+  your investments - Sharesight](//images.ctfassets.net/91sm3pewxzag/2EEeCgJj2UIKiOmasg8Awo/f65ae14026f14f1df0e9e3bd66639786/blog_benchmarking_3.png?w=950)\n\nClick
+  \"Apply\" and the benchmark will be saved against your portfolio. You'll immediately
+  notice a new line of data underneath your portfolio's capital, income, and currency
+  return, which displays the selected benchmark's performance. Makes for a quick like-for-like
+  comparison.\n\n![Benchmarking your investments - Sharesight](//images.ctfassets.net/91sm3pewxzag/3GGvD2kYz6siMIQmMAwqMi/703aa7736b665efacd1c1d2c84d84946/blog_benchmarking_4.png?w=950)\n\nAnd
+  what would benchmarking be without charting? Selecting the \"graph performance\"
+  option in the chart type dropdown menu will reveal your portfolio's performance
+  versus your benchmark.\n\n![Benchmarking your investments - Sharesight](//images.ctfassets.net/91sm3pewxzag/m743kNRGpw2UO4MI04EgK/775f78e71bfa44c6d7fafcbaa29d1185/blog_benchmarking_5.png?w=950)\n\n**This
+  is where our developers added a bit of extra mustard to make Sharesight benchmarking
+  better than anything else we've seen.**\n\nEven though everyone talks about \"the
+  market,\" it's a difficult concept to grasp when you try to work out what your hard-earned
+  dollars would have done had they been invested in \"the market.\" Indexes are theoretical,
+  complex and not particularly useful.\n\nWe've chosen to compare your portfolio with
+  your chosen benchmark **as if you'd invested equal amounts of real money in both**.
+  When you plot your holdings on the chart, you'll see that the Y-axis scales so that
+  both investments begin at the same point. Tracking your mouse along the lines will
+  display a pop-up that shows how the value of each changes.\n\n![Benchmarking](//images.ctfassets.net/91sm3pewxzag/1daL8HN8Pu0e0agEQ8kM28/7efcf679f405c463d27f47c121ee000a/blog_benchmarking_6.png?w=950)\n\nThis
+  is also why we've used real ETFs as our suggested benchmarks versus the broad market
+  indexes. You and I can actually invest in an ETF. It's a legitimate, tradable security
+  that we can actually put our money to work in. Not so with the generic market indexes
+  we see in the newspaper or on TV. An ETF is similar to a traditional index in that
+  it tracks a market, sector, or country, but an ETF also reflects the cost of investing
+  (management fees) and factors in things like franking credits.\n\nPlease also take
+  a minute to read our Help section on [how to interpret the return index graph](https://help.sharesight.com/interpreting-the-return-index-graph/).\n\nAs
+  with all our new features, take some time to investigate and [let us know your feedback](https://community.sharesight.com).\n\n###
+  Further information\n\n- Help -- [Benchmarking portfolios](https://help.sharesight.com/benchmarking/)\n-
+  Blog -- [Asset allocation reporting in Sharesight](/blog/asset-allocation-reporting-in-sharesight/)\n-
+  Blog -- [5 ways to maximise returns in a low-return world](/blog/5-ways-to-maximise-returns-in-a-low-return-world/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2015-01-27 00:00:00.000000000 Z
+:meta_description: Our new benchmarking feature lets you track your Sharesight portfolio(s)
+  against popular market indexes or specific securities.
+:featured_image:
+  :title: Benchmarking - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/XlIIqxYeaGka0IwciiGUE/1d38ddbb9e43eaa0798d45b1b50b2eed/featured_benchmarking.png"
+  :_meta:
+    :updated_at: '2016-09-14T01:44:05+00:00'
+    :created_at: '2016-09-14T01:43:45+00:00'
+    :id: XlIIqxYeaGka0IwciiGUE
+:wordpress_url: "/2015/01/27/benchmarking-now-live-on-sharesight/"
+:slug: benchmarking-now-live-on-sharesight

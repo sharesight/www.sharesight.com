@@ -1,0 +1,87 @@
+---
+:id: 76W66hTPt4XF2uX8T26EHg
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T05:53:49+00:00'
+  :created_at: '2019-04-04T01:03:09+00:00'
+  :id: 76W66hTPt4XF2uX8T26EHg
+:title: Sharesight release notes - March 2019
+:content: "Our focus in March has been geared toward our [Interactive Brokers integration](https://getsatisfaction.com/sharesight/topics/add_interactive_brokers).
+  We are only a week or so away from opening the feature up to enthusiastic early
+  adopters. Our [beta](https://help.sharesight.com/beta/) users will hear more from
+  us in the next couple of weeks regarding this integration.\n\nHere’s what else we’ve
+  been up to in March:\n\n![Sharesight Release Notes March 2019](//images.ctfassets.net/91sm3pewxzag/3mDEpcvz0DGqJbo7TzLTn8/995d5442ad7d0cdf006a1cb09c2d0cda/Sharesight_Release_Notes_March_2019.jpg?w=950)\n\n##
+  Country currency coverage\n\n* Foreign exchange (forex) rates and support for 40
+  additional currencies added to the [32 we already support](/blog/track-foreign-currency-on-sharesight/)
+  (plus [8 cryptocurrencies](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/))
+  \n\n## Usability\n\n* Introduced the ability for any of our users to add themselves
+  to the [Sharesight beta](https://help.sharesight.com/beta/) program via the My Details
+  page\n\n* Improved functionality regarding total claimable foreign tax paid on the
+  [Foreign Investment Fund (FIF) Report](https://help.sharesight.com/nz/new_fdr_report_page/)
+  for New Zealand users. We now segment any FIF tax paid by their respective holdings
+  and calculate a maximum claimable foreign tax paid per holding\n\n* Introduced a
+  minor layout change to the criteria selection on the [Portfolio Overview](https://help.sharesight.com/show_portfolio/)
+  and [Individual Holding](https://help.sharesight.com/show_holding/) pages in preparation
+  for some final overview changes coming in April\n\n* Gmail users can set their [Trade
+  Confirmation Emails import](https://help.sharesight.com/contract_notes/) address
+  as a forwarding address within their Gmail client now and verify that forwarding
+  address from within the [Trade Confirmation Emails Inbox](https://help.sharesight.com/viewing-the-contract-notes-inbox/)\n\n*
+  Enhancements to the manual [Cash Account](https://help.sharesight.com/creating-a-cash-account/)
+  trade syncing through improved handling of unsettled trades adjustment feature and
+  DRP trades \n\n* Improvements to the new trade form, particularly in regard to the
+  instrument search, better handling of errors and the introduction of a new exchange
+  rate search function\n\n* Improvements to the trade notification process for those
+  using the [Sharesight Connect API](https://help.sharesight.com/sharesight_connect/)\n\n*
+  Fixes and improved support for 20+ [contract notes](https://help.sharesight.com/contract_notes/)\n\n*
+  Made some additional IE11 improvements following on from last month’s effort\n\n*
+  Added new [broker support](https://help.sharesight.com/supported_brokers/) for Charles
+  Stanley, Pac Partners, Craigs, Investorfirst Securities\n\n* Introduced the ability
+  for users to set a financial year end day instead of just the month (to cater specifically
+  to our UK users)\n\n* Enabled handling of fractional quantities on almost all remaining
+  markets, including the NZX and ASX to allow for investments through micro-investing
+  platforms such as Sharesies \n\n* Enabled the storing of criteria selection on our
+  [mobile app](https://www.sharesight.com/blog/sharesight-mobile-app--april-2017-update/)
+  after logging out\n\n* Introduced a new [Sharesight20](https://www.sharesight.com/blog/sharesight20/)
+  page to feature all our Sharesight20 top 20 trades snapshots \n\n## Sharesight API\n\n*
+  API V3 (in beta): Added an endpoint to return a trade log of all interactive broker
+  trades\n\n### FURTHER READING\n- [Sharesight release notes - January 2019](https://www.sharesight.com/blog/sharesight-release-notes--january-2019/)\n-
+  [Sharesight release notes - February 2019](https://www.sharesight.com/blog/sharesight-release-notes--february-2019/)\n-
+  [Sharesight's 10 year fintech journey](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/)\n-
+  [Sign up for Sharesight](https://portfolio.sharesight.com/signup)\n"
+:author:
+  :id: 6c2rn0t4WcM4UkSwUMukm0
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-03-27T01:09:26+00:00'
+    :created_at: '2017-03-27T01:07:33+00:00'
+    :id: 6c2rn0t4WcM4UkSwUMukm0
+  :display_name: Ben Clendon
+  :first_name: Ben
+  :last_name: Clendon
+  :title: Senior Project Manager
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2019-04-04 10:00:00.000000000 +11:00
+:meta_description: 'Sharesight''s technical release notes from March 2019: details
+  of all of the Sharesight features and improvements our development team released
+  during the month.'
+:featured_image:
+  :title: Sharesight Release Notes March 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3mDEpcvz0DGqJbo7TzLTn8/995d5442ad7d0cdf006a1cb09c2d0cda/Sharesight_Release_Notes_March_2019.jpg"
+  :_meta:
+    :updated_at: '2019-04-04T01:06:46+00:00'
+    :created_at: '2019-04-04T01:06:43+00:00'
+    :id: 3mDEpcvz0DGqJbo7TzLTn8
+:hide_from_feed: false
+:slug: sharesight-release-notes-march-2019-

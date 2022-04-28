@@ -1,0 +1,71 @@
+---
+:id: post_874
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:57+00:00'
+  :created_at: '2016-06-29T23:16:19+00:00'
+  :id: post_874
+:title: Sharesight has partnered with Direct Broking
+:url_slug: sharesight-and-direct-broking
+:content: "###### **26-Mar-2019** -- Article updated to reflect that Direct Broking
+  was acquired by First NZ Capital Securities Limited (FNZC) from ANZ Bank in December
+  2018.\n\nWe are delighted to announce that [Sharesight](/) has partnered with [Direct
+  Broking](/partners/direct-broking/) so you can choose to have share trading data
+  automatically recorded in Sharesight.\n\n![featured - Sharesight + Direct Broking](//images.ctfassets.net/91sm3pewxzag/3dvN493E00QY08qa2CkWSo/8eadf47c0215442d105d75b349cddf3c/featured_direct-broking-sharesight.png?w=950)\n\n##
+  Who is Direct Broking\n\nLocated in Wellington, Direct Broking is a leading online
+  share broker in New Zealand. They provide an efficient, easy and affordable DIY
+  share and bond trading service to thousands of investors in New Zealand. And they
+  provide access, by phone or internet, to share markets in New Zealand, Australia
+  and the US and UK.\n\n## Connect your Direct Broking account to  Sharesight\n\nDirect
+  Broking has leveraged the [Sharesight API](https://portfolio.sharesight.com/api)
+  to allow their clients to automatically push trade data into their Sharesight portfolios.
+  \n\nIf you're a Direct Broking customer, you can log in to your trading account
+  and follow the simple online process to connect your Direct Broking account to your
+  Sharesight portfolio. If you're not already a Sharesight client, you can subscribe
+  to Sharesight as part of this process.\n\nOnce the connection is set up, any trades
+  placed via Direct Broking will automatically be recorded into your Sharesight portfolio.
+  This eliminates the need to manually record trade data into Sharesight each time
+  you buy and sell shares!\n\n## Learn more and get started\n\n- [Learn more about
+  Direct Broking + Sharesight](https://www.directbroking.co.nz/directtrade/static/sharesightintro.aspx)\n-
+  [Apply for a Direct Broking account](https://www.directbroking.co.nz/directtrade/static/downloadforms.aspx)\n-
+  [Import your Direct Broking trades into your Sharesight portfolio](https://help.sharesight.com/sharesight_connect/)\n\n###
+  FURTHER READING\n\n- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)\n-
+  [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  [Why I use Sharesight to track my portfolio](/blog/why-i-use-sharesight-to-track-my-portfolio/)"
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2010-09-22 00:00:00.000000000 Z
+:meta_description: Investors can automatically record Direct Broking trades in Sharesight,
+  eliminating the need to manually record trade data each time they buy & sell shares.
+:featured_image:
+  :title: featured - Sharesight + Direct Broking
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3dvN493E00QY08qa2CkWSo/8eadf47c0215442d105d75b349cddf3c/featured_direct-broking-sharesight.png"
+  :_meta:
+    :updated_at: '2019-03-26T01:28:51+00:00'
+    :created_at: '2017-04-10T05:18:59+00:00'
+    :id: 3dvN493E00QY08qa2CkWSo
+:hide_from_feed: false
+:wordpress_url: "/2010/09/22/sharesight-and-direct-broking/"
+:slug: sharesight-has-partnered-with-direct-broking

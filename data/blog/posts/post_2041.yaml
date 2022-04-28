@@ -1,0 +1,67 @@
+---
+:id: post_2041
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:46+00:00'
+  :created_at: '2016-06-29T23:17:40+00:00'
+  :id: post_2041
+:title: Sharesight server upgrade & outage notice
+:url_slug: sharesight-server-upgrade-outage-notice
+:content: |+
+  [Sharesight](/) will be offline for approximately 2 - 3 hours while we upgrade our servers. The expected outage will commence at 7.30am NZT on the 25 August 2011. We apologise for any inconvenience that this may cause.
+
+  ## What's included in the update?
+  This upgrade contains primarily 'behind the scenes' changes to ensure that Sharesight continues to be as fast, secure and reliable as possible.
+
+  We are moving to a new server infrastructure which includes dedicated load balanced application and database servers. The new architecture will offer speed improvements and also greatly improve our capacity as our user base continues to increase. The new architecture also offers improved scalability and redundancy.
+
+  ## Update
+
+  - **The upgrade is now complete.**
+
+  - **Post upgrade stats indicate that average portfolio load times are around 30% quicker.**
+
+  ### FURTHER READING
+
+  - Blog -- [Remember me function improved](https://www.sharesight.com/blog/remember-me-function-improved/)
+  - Blog -- [Introducing 20 minute delayed pricing for ASX holdings](https://www.sharesight.com/blog/introducing-20-minute-delayed-pricing-for-asx-holdings/)
+  - Blog -- [ASX historic data now in Sharesight](https://www.sharesight.com/blog/asx-historic-data-now-in-sharesight/)
+
+:author:
+  :id: author_5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-02T03:00:23+00:00'
+    :created_at: '2016-06-29T23:16:41+00:00'
+    :id: author_5
+  :display_name: Marcus Baguley
+  :first_name: Marcus
+  :last_name: Baguley
+  :title: Principal Consultant
+  :company: Abletech
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2011-08-24 00:00:00.000000000 Z
+:meta_description: Sharesight will be offline for approximately 2 - 3 hours while
+  we upgrade our servers. The expected outage will commence at 7.30am NZT on the 25
+  August 2011.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/08/24/sharesight-server-upgrade-outage-notice/"
+:slug: sharesight-server-upgrade-outage-notice
+...

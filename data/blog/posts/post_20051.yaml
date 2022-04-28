@@ -1,0 +1,100 @@
+---
+:id: post_20051
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:34:45+00:00'
+  :created_at: '2016-06-29T23:18:14+00:00'
+  :id: post_20051
+:title: The improved Sharesight interface. New body. Same engine.
+:url_slug: the-improved-sharesight-interface-new-body-same-engine
+:content: "As we've blogged before, the development of [Sharesight](/) features is
+  based on the feedback we receive from you. Along with adding more types of investments,
+  benchmarking, and mobile/tablet capability, making Sharesight even more user-friendly
+  is critically important. People love using our product because it's intuitive. Investment
+  portfolios are serious business, but that doesn't mean the software we use to track
+  them can't evolve rapidly and look and feel like the apps we use for news, travel,
+  or social media. So as more and more functionality gets added to Sharesight, _keeping_
+  our product user-friendly, whilst surfacing new capabilities is something we need
+  to plan carefully.\n\nThe bedrock for this future plan will be released this week,
+  as we roll out **our brand new user interface**. If you're a beta user or elected
+  to get a sneak peak, you've probably already seen the new look Sharesight. Not only
+  is this a more elegant design, but our Product Manager and developers are happy
+  because they can release new user-facing functionality rapidly.\n\n![New Sharesight
+  Interface](//images.ctfassets.net/91sm3pewxzag/3OdjZhjV7iW6sSWe6wsY26/df94628e35218a8d901d9a34a53e6984/newui.png?w=950)\n<small>*Hello,
+  is it me you're looking for?*</small>\n\n### Refreshed, Crisp Design\n\nThe first
+  thing you're likely to notice is the new interface uses more real estate than the
+  old version. This is by design. If you resize your browser, you'll notice Sharesight
+  responds accordingly. This is all part of maximising the amount of information you
+  can view, based on your browser or device. We've also changed our fonts, text size,
+  and generally added more spacing to our pages and tables. This has all been done
+  to improve readability and increase the amount of information we can display at
+  one time.\n\n### Tablet Compatibility, Responsive Design, Mobiles\n\nAfter PC-based
+  browsers, a huge portion of our user base logs into Sharesight on their iPads or
+  tablets. Sharesight has been rebuilt using [responsive design](https://en.wikipedia.org/wiki/Responsive_web_design),
+  which **works beautifully on all tablets**. Go ahead and give it a try. Not only
+  will the pages render smartly, but so will the menus and overlays, even when you're
+  in landscape mode. \n\nSharesight will now work more effectively on mobiles (browsers),
+  although depending on the size of your screen, it won't be 100% optimised. We've
+  heard your feedback about developing a mobile app, so we will. We've gathered some
+  excellent feedback already on what you'd expect in a Sharesight app versus going
+  to Sharesight on your mobile browser.\n\n### Better Charting\nOn the Portfolio Overview
+  page and the individual holding pages, you'll notice larger, more usable charts.
+  Again, the focus is on displaying more data, whilst making it simpler to comprehend.
+  If you find the charts too large, you can elect to hide them on the Overview page.
+  If you're thinking, \"why the hell are they taking up so much space with those charts,\"
+  there's a reason: benchmarking. One of the most common feature requests we receive
+  is to add benchmarking. We'll soon have a project underway to allow for basic index
+  [benchmarking](/blog/benchmarking-now-live-on-sharesight/), but we plan on exploring
+  [contribution analysis](/blog/announcing-the-contribution-analysis-report/) (i.e.
+  which holdings contributed/detracted what amount from my portfolio), and benchmarking/modelling
+  against your other portfolios. \n\n### Overlays\nIn the past, in order to edit a
+  trade or dividend, Sharesight loaded an entirely new page, where you did your work,
+  and then reloaded again to take you back to where you were. That was a waste of
+  your time. So, we've built overlays to allow you to quickly edit trades and dividends.
+  \n\n![Overlay](//images.ctfassets.net/91sm3pewxzag/3oKXsKyQQ0SSmI8wmIsQMy/8da006195afafaf576e6c03c7f965fff/overlay1.png?w=950)\n<small>*Don't
+  call me a popup. I'm an overlay.*</small>\n\nYou'll find many more design improvements
+  throughout the app, especially in the menu tabs and account settings pages. A couple
+  of our favourites are the top level portfolio value and return data on the [Portfolio
+  Overview page](https://help.sharesight.com/show_portfolio/) and the lightning bolt
+  icons for automatically populated dividends and corporate actions.\n\n**We're already
+  gathering feedback on our new UI, and listening for more. Get in touch via our [community
+  forum](https://community.sharesight.com) or social media channels!**\n\n### FURTHER
+  READING\n- Blog -- [Managed funds live on Sharesight](/blog/managed-funds-live-on-sharesight/)\n-
+  Blog -- [How do I run capital gains tax reports in Sharesight?](/blog/how-do-i-run-capital-gains-tax-reports-in-sharesight/)\n-
+  Blog -- [2014: year in review](/blog/2014-year-review/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-03-16 00:00:00.000000000 Z
+:meta_description: We're excited to announce the new and improved Sharesight interface,
+  featuring a crisp look, responsive design, and improved charting features.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2014/03/16/the-improved-sharesight-interface-new-body-same-engine/"
+:slug: the-improved-sharesight-interface-new-body-same-engine

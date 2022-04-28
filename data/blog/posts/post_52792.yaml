@@ -1,0 +1,115 @@
+---
+:id: post_52792
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:13+00:00'
+  :created_at: '2016-06-29T23:17:19+00:00'
+  :id: post_52792
+:title: How to handle the NAB renounceable rights offer
+:url_slug: nab-renounceable-rights-offer
+:content: |-
+  In early 2015, NAB announced that it would be undertaking an accelerated Renounceable Entitlement Offer, in order to raise roughly $5.5 billion in capital. The offer gave eligible retail NAB shareholders to right to purchase 2 NAB shares, at an issue price of $28.50, for every 25 NAB shares they held.
+
+  Eligible NAB shareholders had the options of either:
+
+  - **Taking up the offer** , meaning they could purchase X number of NAB shares (based on what their entitlement was) at the issue price of $28.50.
+
+  - **Selling their rights (or even purchase more)** on the rights market, under the code NABR.ASX.
+
+  - **Doing nothing** and having NAB sell their entitlements through a retail [bookbuild](https://en.wikipedia.org/wiki/Book_building) process.
+
+  Whichever option you chose at the time, [Sharesight](/) allows you to easily account for this within your portfolio.
+
+  ![NAB renounceable rights offer - featured](//images.ctfassets.net/91sm3pewxzag/4p6HNWeIycc82McIuE46Ee/5daec293997495ccbc9f80ec9f432533/featured_nab-renounceable-rights-offer.png?w=950)
+
+  ## Follow these steps to handle the NAB renounceable rights offer
+
+  ### Taking up your entitlement offer
+  If you decided to take up the offer, you simply need to enter a new Buy transaction within your NAB holding, as follows:
+
+  1. [**Sign up for a FREE Sharesight account**](https://portfolio.sharesight.com/signup) and add your NAB holding.
+
+  2. Within the ‘All Trades and Adjustments’ section, click on ‘Enter a new Trade or Adjustment’.
+
+  3. Enter the trade date as 11/06/2015 (issue date of the new shares). The share purchase price will be $28.50 (the offer issue price). You can enter a comment explaining this purchase was part of the offer.
+
+  ![NAB Renounceable Rights Offer #1](//images.ctfassets.net/91sm3pewxzag/13sMsZnKFuUGgoKEo4KqIi/67321821020bc098be08e8a0bb8f6dd6/screenshot-nab-1.png?w=950)
+
+  ### Selling your entitlements on market
+  If you decided to sell your rights/entitlements on market, you will need to add a holding under the code NABR (rights code) and then enter a Sell transaction against it.
+
+  1. [**Sign up for a FREE Sharesight account**](https://portfolio.sharesight.com/signup) and add your NAB holding.
+
+  2. To add the rights holding, from the ‘Overview’ page click ‘Add or Import Holdings’.
+
+      ![NAB Renounceable Rights Offer #2](//images.ctfassets.net/91sm3pewxzag/3hFesuTlbycKkc0MqK8eyy/f213f1e994b057ec3b19fe77e6ab4d77/screenshot-nab-2.png?w=950)
+
+  3. Using a ‘Buy’ trade, enter the code NABR ( ASX), and ‘Trade Date’ as 09/05/2015. The quantity will be your NAB quantity divided by 25, then multiplied by 2. For example, if you hold 1000 NAB shares - (1000 / 25) x 2 = 80. Share price will be $0. Note - you can return to this transaction at a later stage to enter a comment.
+
+      ![NAB Renounceable Rights Offer #3](//images.ctfassets.net/91sm3pewxzag/5UzwC6xNe0OaekUcyEUmCY/838e7efd3871650585cb81a2c4a01bef/screenshot-nab-3.png?w=950)
+
+  4. Once you’ve saved this new holding, you will be taken to the ‘Overview’ page, where you should now be able to see your new holding NABR. Clicking on the new holding you will be taken to the ‘Holding’ page for NABR.
+
+  5. From the ‘Holding’ page, under the ‘All Trades and Adjustments’ section, click ‘Enter a new Trade or Adjustment’. In this new window, change the ‘Type’ to Sell, enter the trade date, full (or partial if applicable) quantity, Sell price and comments (if applicable). For some of this information, you may need to refer to your Trade Confirmation Email / contract note from your brokerage account. You can also upload any related Trade Confirmation Emails for future reference.
+
+      ![NAB Renounceable Rights Offer #4](//images.ctfassets.net/91sm3pewxzag/2RDFZk2n602YGcEK0MEYSY/a54a603ecf5c99ee41f0313dafeee4ca/screenshot-nab-4.png?w=950)
+
+  ### If your entitlements were sold through the bookbuild process (i.e. no action)
+
+  If you decided to do nothing and allowed NAB to attempt to sell your entitlements through a retail bookbuild process, you would have likely received a nice little payment of $3.10 per entitlement. The best way to account for this would be to create a new ‘unfranked’ dividend payment for your NAB holding. To do so:
+
+  1. [**Sign up for a FREE Sharesight account**](https://portfolio.sharesight.com/signup) and add your NAB holding.
+  2. From the ‘Overview’, click into your NAB holding.
+  3. On the NAB ‘Holding’ page, scroll down to the ‘All Income’ section and click ‘Enter a new Dividend’.
+  4. In this new window, per your Payment Summary document received directly from NAB, enter the amount you received into the ‘Unfranked Income’ section. If you do not have your Payment Summary, you can use - Entitlement Quantity x $3.10 = payment received.
+
+  **Note - Figure of $3.10 per entitlement was obtained from NAB and other research sources. It is always best to refer to your Payment Summary for exact amounts.**
+
+  ![NAB Renounceable Rights Offer #5](//images.ctfassets.net/91sm3pewxzag/1B5UyXg70cMcWU4OAKgCI4/2463e845b6a10ee386181411946d31a2/screenshot-nab-5.png?w=950)
+
+  For most investors these corporate actions can be time consuming and confusing. Sharesight provides you with the tools and technology to help keep your portfolio up to date. Remember to check our [community forum](https://community.sharesight.com) to interact with other investors and learn how they approach these issues.
+
+  ###### Please note that we always advise you to consult your financial advisor or accountant regarding corporate actions, especially for tax purposes, as we are not authorised to provide financial advice. The information above, including the dates is subject to change. We encourage you to review the offical [Nab Retail Entitlement Offer document](https://www.nab.com.au/about-us/shareholder-centre/entitlement-offer) for full details.
+
+  ### GET HELP
+  - Help -- [Renounceable Rights](https://help.sharesight.com/renounceable-rights/)
+  - Blog -- [Corporate actions and your investment performance](/blog/corporate-actions-and-your-investment-performance/)
+
+  ### FURTHER READING
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [Corporate actions and your investment performance](/blog/corporate-actions-and-your-investment-performance/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_94
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-08-24T23:48:03+00:00'
+    :created_at: '2016-06-29T23:17:13+00:00'
+    :id: author_94
+  :display_name: Corporate Actions Desk
+  :first_name: Corporate Actions Desk
+  :last_name: ''
+:categories:
+- :id: 1YiQSm5LC0eiMocGIocaaO
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:27+00:00'
+    :created_at: '2016-11-15T02:35:38+00:00'
+    :id: 1YiQSm5LC0eiMocGIocaaO
+  :name: Corporate Actions
+  :description: A listing of popular complex corporate actions, including step-by-step
+    instructions on how to handle them in Sharesight.
+  :url_slug: corporate-actions
+:created_at: !ruby/object:DateTime 2016-05-26 00:00:00.000000000 Z
+:meta_description: Follow these instructions and learn how to handle the NAB renouncable
+  rights offer (NAB corporate action) in your Sharesight portfolio.
+:featured_image:
+  :title: NAB renounceable rights offer - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4p6HNWeIycc82McIuE46Ee/5daec293997495ccbc9f80ec9f432533/featured_nab-renounceable-rights-offer.png"
+  :_meta:
+    :updated_at: '2016-09-01T06:33:21+00:00'
+    :created_at: '2016-09-01T06:32:50+00:00'
+    :id: 4p6HNWeIycc82McIuE46Ee
+:wordpress_url: "/2016/05/26/nab-renounceable-rights-offer/"
+:slug: how-to-handle-the-nab-renounceable-rights-offer

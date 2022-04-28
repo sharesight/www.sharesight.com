@@ -1,0 +1,102 @@
+---
+:id: 77kJDvxDJEzGJ55Ltotz0e
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-10-28T00:34:08+00:00'
+  :created_at: '2020-07-28T05:12:19+00:00'
+  :id: 77kJDvxDJEzGJ55Ltotz0e
+:title: nutworth - stay in control with net worth tracking
+:content: |-
+  *nutworth joins the [growing list of Sharesight API partners](https://www.sharesight.com/partners/) that have built solutions that connect to the Sharesight API and build value for investors. In this post from nutworth founder Tapio Saarinen he explains the origin of the platform, how easy it was to connect to the Sharesight API and how investors can track their net wealth journey with nutworth.*
+
+  Our financial journey can be complex. Perhaps you start out with a student loan that sits in the back of your mind, but you don’t really notice until it’s gone one day. Maybe you buy a house (with a mortgage), a car (with a loan), you’ve been working so you have retirement savings and you’ve bought shares in a couple of companies that you believe in. Plus, crypto was booming, so you’ve got a few BTC or ETH laying around somewhere on an old harddrive. Oh, and US tech stocks are booming too, so some of those please.
+
+  Just trying to keep track of all these things can be a nightmare, let alone trying to answer some very basic questions. How are my assets diversified? How does this compare to a year ago? What are my overall debt levels, how are they changing and am I comfortable with this? What happened a month ago that caused my net worth to go down? How much am I actually gaining or losing each month overall?
+
+  If you want to be in control, you’re going to need to assess your holdings on a regular basis and you’re going to need to keep records. Plus, you’ll want a way to visualise where you are, where you came from, and where you’re going.
+
+  ![Nutworth Net Worth](//images.ctfassets.net/91sm3pewxzag/4Sxet3848Kt7VKtY9VP6WP/37855133b2f2645a3205751f63578cfb/image_0.png?w=950)
+
+  Over the last year, we’ve been hard at work creating [nutworth](https://nutworth.app) - an easy to use net worth tracking platform with advanced analytics and multi-currency capabilities. Today, we’re thrilled to announce that we’ve partnered with Sharesight so that you can incorporate your Sharesight portfolios directly into your net worth entries in a simple, intuitive fashion.
+
+  ## Getting started with nutworth
+
+  If you’re just starting out on your financial journey, nutworth has a [simple net worth calculator you can fill out](https://nutworth.app/simple-net-worth-calculator). It’ll add up your assets, subtract your liabilities and give you an overall figure in the currency of your choice ([and avocados](https://nutworth.app/about/avocados)). You don’t need to sign up to use it, but if you do choose to create an account this’ll be your first net worth entry.
+
+  ![Nutworth](//images.ctfassets.net/91sm3pewxzag/2RqSwLD6l4sXPi3u1AIRWS/3aeb8cc80ffc05865bc121320ce4a627/Nutworth.png?w=950)
+
+  If you have more complex affairs or you already have historic data (e.g in a spreadsheet) you’ll want to [sign up directly instead](https://nutworth.app/sign_up). Once you’ve got an account, you can either proceed to "Add an Entry" and set up the different categories you want or alternatively choose to import your existing data. Our importer is fairly advanced, but if you do encounter issues you can reach out via our [support email](mailto:support@nutworth.app).
+
+  ![Nutworth Net Worth Tracking](//images.ctfassets.net/91sm3pewxzag/68RHJ5JJJ1Wuu2kfBJQ6XA/65db71f8b929a2a5a1d005518f7c5c27/Nutworth_Net_Worth_Tracking.png?w=950)
+
+  The more net worth data you have, the more nutworth can do for you. Once you have your first data point, you’ll be able to see visual breakdowns of your assets by class. Come back after a month or so and put in a second point and you’ll start to be able to see how your assets are changing over time. Keep going for a year and you’ll start to be able to accurately see the longer term macro trends and relative performance of asset classes. Your net worth data will allow you to make better informed decisions and know exactly where you stand.
+
+  ## Connecting Sharesight with nutworth
+
+  To make it easy for Sharesight users to import their assets into nutworth we built a connection using the [Sharesight API](https://portfolio.sharesight.com/api)[,](https://portfolio.sharesight.com/api) which was well documented and easy to implement - our prototype was up and running within a week. The Sharesight team were friendly, knowledgeable and great to work with.
+
+  ![Connect to Nutworth](//images.ctfassets.net/91sm3pewxzag/fPrBrU4PDrDfb0euIsKxj/2686ce10a8dd8f049050b406545153af/Connect_to_Nutworth.png?w=950)
+
+  In nutworth, each asset you track has a category. The Sharesight integration is available on the "Shares", “Retirement Savings” and “Custom” asset categories. The first time you want to import one of your holdings from Sharesight, click the little settings button next to your holding and choose “Import from Sharesight”.
+
+  A window will then pop up that will prompt you to sign in to Sharesight and authorise the connection. Once you’re done, you can choose which of the portfolios in your account you want to connect. Then the value of your portfolio for the date of your entry will import.
+
+  ![Nutworth Import](//images.ctfassets.net/91sm3pewxzag/2AZFeg3yKzqe2eEotZxTBR/4bf601b382d8127b2cc319426984ad88/Nutworth_Import.png?w=950)
+
+  After you connect for the first time, your asset input will have a link beneath it saying "Click to load from Sharesight". Click it and it’ll pull your portfolio value. Couldn’t be simpler!
+
+  ## Try nutworth free today
+
+  [Take nutworth for a spin](https://nutworth.app) and see what it can do for you. It’s completely free for up to 100 entries with 8 holdings and you can export your data as a spreadsheet at any time, so you don’t need to worry about being locked in. To say thanks for reading this far, the code SHARESIGHT will get you 20% off our annual and monthly plans.
+
+  We’re passionate about improving our product and it’s only going to continue to get better. If you have any questions or feedback, we’d love to hear from you as well - you can [contact us here](mailto:support@nutworth.app).
+
+  *The team at Sharesight are always excited to explore opportunities to work and partner with others in the finance and fintech ecosystem like nutworth. If anything offered by the [Sharesight API](https://portfolio.sharesight.com/api) or inside Sharesight would benefit your business, platform, or website please [send us an email](mailto:sales@sharesight.com) and we can grant you access to our test environment free of charge and talk further on how we can partner to build value for customers.*
+
+  ### FURTHER READING
+
+  * Sharesight.com – [Learn about the Sharesight API](https://portfolio.sharesight.com/api)
+
+  * [Sharesight Partner Centre - nutworth](https://www.sharesight.com/partners/nutworth/)
+
+  * [Why you should partner with Sharesight](https://www.sharesight.com/blog/why-you-should-partner-with-sharesight/)
+
+  * [Power your business with the Sharesight API](https://www.sharesight.com/blog/power-your-business-with-the-sharesight-api/)
+
+  * [Forwardcaster integrates with Sharesight API](https://www.sharesight.com/blog/forwardcaster-integrates-with-sharesight-api/)
+:author:
+  :id: 646qMa2KLPmHoiw26vc733
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-28T05:20:18+00:00'
+    :created_at: '2020-07-28T05:19:50+00:00'
+    :id: 646qMa2KLPmHoiw26vc733
+  :display_name: " Tapio Saarinen"
+  :first_name: " Tapio"
+  :last_name: 'Saarinen '
+  :title: Founder
+  :company: nutworth
+:categories:
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+:created_at: !ruby/object:DateTime 2020-07-28 10:00:00.000000000 +10:00
+:meta_description: nutworth joins the growing list of partners in the Sharesight ecosystem
+  that connect to the Sharesight API and create value for investors.
+:featured_image:
+  :title: nutworth net work tracking sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4sbsPdOvbLj6HJg83D63GZ/866f87ae319bc30a0e4b882417ece69b/nutworth_net_work_tracking_sharesight.jpg"
+  :_meta:
+    :updated_at: '2020-07-28T05:22:57+00:00'
+    :created_at: '2020-07-28T05:22:20+00:00'
+    :id: 4sbsPdOvbLj6HJg83D63GZ
+:hide_from_feed: false
+:slug: nutworth-stay-in-control-with-net-worth-tracking

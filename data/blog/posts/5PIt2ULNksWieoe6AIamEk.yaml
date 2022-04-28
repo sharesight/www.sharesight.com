@@ -1,0 +1,86 @@
+---
+:id: 5PIt2ULNksWieoe6AIamEk
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:25:07+00:00'
+  :created_at: '2018-10-03T06:04:52+00:00'
+  :id: 5PIt2ULNksWieoe6AIamEk
+:title: Import Saxo Capital Market trade details into Sharesight
+:url_slug: sync-trades-to-sharesight-from-saxo-markets
+:content: "###### 10-Sep-2019: Our new API integration with Saxo Markets allows you
+  to automatically sync your Saxo trades to Sharesight. For more info, see: *[Sync
+  trades to Sharesight from Saxo Markets](/blog/sync-trades-to-sharesight-from-saxo-markets/)*.\n\nDid
+  you know that you can import trades into your Sharesight portfolio from over [100
+  brokers around the world?](https://www.sharesight.com/blog/automatically-import-trades-to-sharesight-from-100-brokers/)
+  In 2012 we developed a solution that allows you to record your buy and sell trades
+  via the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/)
+  (PDF contract notes) sent to you when trading with some brokers. \n\nWe’ve now added
+  the ability to import trades to your Sharesight portfolio from Saxo Capital Markets
+  Australia (owned by Danish based Saxo Bank). This makes it easier than ever for
+  investors to leverage our award-winning performance, dividend tracking, and tax
+  reporting features.\n\n## Who is Saxo Capital Markets?\n\nFrom the [Saxo Capital
+  Markets about us page](https://www.home.saxo/en-au/about-us):\n\n*“Saxo Capital
+  Markets (Australia) Pty Ltd is a subsidiary of Saxo Bank A/S, an online trading
+  and investment specialist. Saxo Capital Markets (Australia) Pty Ltd is licensed
+  and regulated by the Australian Securities & Investments Commission and has operated
+  in Sydney since 2011.”*\n\n## How to enable Sharesight’s Trade Confirmation Emails
+  feature\n\nSharesight’s [Trade Confirmation Emails](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/)
+  feature is an effortless way to import historical and ongoing trades to a Sharesight
+  portfolio. By simply having your broker’s trade confirmations forwarded to your
+  unique Sharesight email address, all of your trades are synced to your portfolio,
+  inclusive of corporate actions such as dividends, mergers and stock splits, with
+  no effort on your part. \n\n__Note:__ Unfortunately Saxo Capital Markets does not
+  automatically email trade confirmations, so you will need to manually download the
+  trade details report PDFs and attach them to an email you send to your Sharesight
+  broker import email address with ‘Saxo’ in the title. For more details on how to
+  do this, see our help page on [manually forwarding Trade Confirmation Emails to
+  Sharesight](https://help.sharesight.com/manually-forwarding-broker-contract-notes-to-sharesight/).\n\n##
+  We need your help to add more brokers!\n\nWe can only guarantee this will work for
+  Saxo Capital Markets contract notes in Australia. If you trade with Saxo in a region
+  outside Australia, please get in touch by chatting to our support team so we can
+  add support for trade confirmations in your region.\n\nIf you trade with any other
+  broker not yet on [Sharesight’s list of supported brokers](https://help.sharesight.com/supported_brokers/),
+  but they email you trade confirmations/contract notes (or you’re able to download
+  the PDF trade confirmations from your broker), ask us to support your broker by
+  sharing an ‘idea’ on our [community forum](https://community.sharesight.com/), or
+  by leaving us a message in the chat interface located at the bottom-right of Sharesight.\n\nWe
+  just need a handful of Trade Confirmation Emails in order to support a new broker,
+  so reach out today if you’d like to see yours added!\n\n### FURTHER READING\n- [5
+  ways Sharesight helps Australian investors at tax time](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/)\n-
+  [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)\n-
+  [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-10-03 10:00:00.000000000 +10:00
+:meta_description: We’ve now added the ability to import trades to your Sharesight
+  portfolio from Saxo Capital Markets Australia (owned by Danish based Saxo Bank).
+:featured_image:
+  :title: import-saxo-capital-markets-trades-to-sharesight (1)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5hb0iyWaMoCmuKGUCyeMQo/fd28f2e5e81c439347674cffab1cdb75/import-saxo-capital-markets-trades-to-sharesight__1_.png"
+  :_meta:
+    :updated_at: '2018-10-03T06:21:44+00:00'
+    :created_at: '2018-10-03T06:21:11+00:00'
+    :id: 5hb0iyWaMoCmuKGUCyeMQo
+:slug: import-saxo-capital-market-trade-details-into-sharesight

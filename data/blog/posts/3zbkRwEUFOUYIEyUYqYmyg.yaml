@@ -1,0 +1,75 @@
+---
+:id: 3zbkRwEUFOUYIEyUYqYmyg
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T05:19:03+00:00'
+  :created_at: '2017-03-08T05:04:24+00:00'
+  :id: 3zbkRwEUFOUYIEyUYqYmyg
+:title: Sharesight a proud sponsor of Rails Girls Wellington
+:url_slug: sharesight-a-proud-sponsor-of-rails-girls-wellington
+:content: |-
+  In honour of [International Women’s Day](https://www.internationalwomensday.com), we’re pleased to support [Rails Girls Wellington](http://railsgirls.com/wellington.html) -- a free two-day workshop offering a friendly and supportive environment for women of all ages to learn the popular web application framework [Ruby on Rails](https://rubyonrails.org).
+
+  According to Rails Girls organising volunteer Dawn Richardson, "New Zealand tech companies struggle to fill developer roles, yet women still comprise just 20% of the industry. Female founders are rare and some companies still have no women in technical roles. Rails Girls Wellington is trying to change that."
+
+  Looking at the numbers, Rails Girls Wellington is definitely making an impact. Their first four events introduced over 180 women to coding, many of whom have gone on to pursue further training or programming-related jobs. Last August’s event alone attracted three times the applications than the available 50 spaces, which were quickly filled by women aged 10 to 57, spanning the full technical gamut, from tech "newbies" to experienced developers looking to learn a new language.
+
+  ![featured - Rails Girls + Sharesight](//images.ctfassets.net/91sm3pewxzag/3VV2VnNUhyewso6MyCSQYS/8d59a986404a79dbf2fd3542ac91775a/featured_rails-girls-sharesight.png?w=950)
+
+  We’re proud to be able to contribute to this event which provides women the support and coaching they need to learn a new technical skill in an approachable environment with a good tutor-to-student ratio to help make the most of their time there.
+
+  This year’s event is taking place over the 22-23 April weekend, with applications opening 20 March. Visit the [Rails Girls Wellington website](http://railsgirls.com/wellington.html) for the latest updates. And if you can’t make the Wellington event, check out the [Rails Girls website](http://railsgirls.com) to see if there’s an existing chapter in your local city. Or access the [Rails Girls materials](http://railsgirls.com/materials.html) and run through the tutorials in your own time.
+
+  Building a more inclusive and diverse (fin)tech industry is something we’re proud to support and continue to work towards. Stay tuned for more updates from us on this topic!
+
+  ### FURTHER READING
+
+  - [Sharesight co-founder’s most rewarding investment](/blog/sharesight-co-founders-most-rewarding-investment/)
+  - [Sharesight founding member of FinTech Australia](/blog/sharesight-founding-member-of-fintech-australia/)
+  - [Sharesight's 10 year fintech journey](/blog/sharesights-10-year-fintech-journey/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+:created_at: !ruby/object:DateTime 2017-03-08 16:11:00.000000000 +11:00
+:meta_description: Sharesight is pleased to support Rails Girls Wellington, a free
+  2-day workshop that helps women of all ages learn the Ruby on Rails web application
+  framework.
+:featured_image:
+  :title: featured - Rails Girls + Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3VV2VnNUhyewso6MyCSQYS/8d59a986404a79dbf2fd3542ac91775a/featured_rails-girls-sharesight.png"
+  :_meta:
+    :updated_at: '2017-03-08T05:22:42+00:00'
+    :created_at: '2017-03-08T05:22:11+00:00'
+    :id: 3VV2VnNUhyewso6MyCSQYS
+:slug: sharesight-a-proud-sponsor-of-rails-girls-wellington

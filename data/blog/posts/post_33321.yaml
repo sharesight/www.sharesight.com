@@ -1,0 +1,84 @@
+---
+:id: post_33321
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:36+00:00'
+  :created_at: '2016-06-29T23:16:45+00:00'
+  :id: post_33321
+:title: Announcing a partnership with Intelligent Investor
+:url_slug: announcing-partnership-intelligent-investor
+:content: "###### Note: this partnership has expired and this integration is no longer
+  in place.\n\nWe're excited to announce [Intelligent Investor](https://www.intelligentinvestor.com.au)
+  as a new strategic partner! \n\nIntelligent Investor provides independent research
+  on ASX-listed stocks, model portfolios, educational articles, special reports, podcasts
+  and a service where clients can get advice directly from analysts. They've been
+  at it since 1998. In a conflict-ridden industry focused on selling bank-manufactured
+  products, truly independent research is vital for all investors. Even more so for
+  DIYs and SMSFs.\n\nWe're thrilled about this integration. One, it links [Sharesight](/)
+  to a company providing a high-quality product. Two, it's exactly the kind of linkage
+  that we constantly evangelise on this blog. Sharesight doesn't have plans to write
+  investment research and Intelligent Investor was reluctant to build a portfolio
+  tool. By focussing on our respective core competencies, building a link, and letting
+  the client choose which applications to use, everybody wins. \n\n### How it works\n\n**Intelligent
+  Investor clients now have the option to create a free Sharesight account with just
+  a couple of clicks. When they arrive on Sharesight, we've built a customised version:**\n\n![Intelligent
+  Investor Hero - featured](//images.ctfassets.net/91sm3pewxzag/4hxGI4D2UUQe0cSi6mgOgQ/c8bd868ccd01577ab96415c5a808c770/featured_sharesight-intelligent-investor.png?w=950)\n\n**In
+  addition to mirroring their look and feel, we've also integrated their research.
+  H = hold, B = buy, S = sell:**!\n\n![Sharesight & Intelligent Investor](//images.ctfassets.net/91sm3pewxzag/5ysCRIPMQgCA2siiIsImCE/be42eae2c59b9c1796f96e4a5b58c732/sharesight-intelligent-investor-1.png?w=950)
+  \n\n**Hovering over your holdings will reveal your current weighting AND Intelligent
+  Investor's recommended portfolio weighting:**!\n\n![Sharesight & Intelligent Investor](//images.ctfassets.net/91sm3pewxzag/3d5vUh7kMMOWO0iMWsAWQo/8f568dec1177b4368163a97700527f36/sharesight-intelligent-investor-2.png?w=950)\n\n**More
+  integration awaits on the holding-specific pages. In addition to a link to the full
+  research report from Intelligent Investor, we've pulled in a news feed of their
+  research, analysts notes, special, reports, etc.:**\n\n![Sharesight & Intelligent
+  Investor](//images.ctfassets.net/91sm3pewxzag/OZiNCwDP4O2QmGu6gIqMC/2b37f0d296a0bb15ba04f234267d177b/sharesight-intelligent-investor-3.png?w=950)\n\n![Sharesight
+  & Intelligent Investor](//images.ctfassets.net/91sm3pewxzag/3e3MU6E35u0KsCMYACGK2u/9ecf8b8f5e5fc6502af6da0c5050b035/sharesight-intelligent-investor-4.png?w=950)\n\nThe
+  unbundled (but linked) ecosystem of investing apps is now a reality, spanning the
+  entire spectrum of requirements. With Sharesight's portfolio manager, you can link
+  brokerage, accounting, financial advice, and investment research into a best-of-breed
+  solution. You control how it works. You control which services you want to pay for."
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+:created_at: !ruby/object:DateTime 2015-04-01 00:00:00.000000000 Z
+:meta_description: We're excited to announce Intelligent Investor as a strategic partner,
+  allowing investors to view buy/hold/sell recommendations within their portfolios.
+:featured_image:
+  :title: Intelligent Investor Hero - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4hxGI4D2UUQe0cSi6mgOgQ/c8bd868ccd01577ab96415c5a808c770/featured_sharesight-intelligent-investor.png"
+  :_meta:
+    :updated_at: '2016-09-14T00:41:45+00:00'
+    :created_at: '2016-09-14T00:41:31+00:00'
+    :id: 4hxGI4D2UUQe0cSi6mgOgQ
+:wordpress_url: "/2015/04/01/announcing-partnership-intelligent-investor/"
+:slug: announcing-a-partnership-with-intelligent-investor

@@ -1,0 +1,112 @@
+---
+:id: post_19272
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-02T04:14:24+00:00'
+  :created_at: '2016-06-29T23:17:51+00:00'
+  :id: post_19272
+:title: 'Portfolio set up tips: Bulk upload opening balances'
+:url_slug: portfolio-setup-tip-2-opening-balances-bulk-upload-are-also-your-best-friend
+:content: "Last time we told you [how to setup a portfolio manually using our opening
+  balance feature](/blog/scrap-those-new-years-resolutions-and-get-real-portfolio-setup-tip-1-opening-balances-manual-entry-are-your-best-friend/).
+  For portfolios with less than 20 holdings, this is an easy process, which takes
+  about 10 minutes.\n\nNow, for the second entry in our \"scrap your bold New Year's
+  resolution and do something you can actually commit to\" series we're staying with
+  opening balances, but we're covering how to upload an **unlimited number of holdings
+  at once** using our [Bulk Import: Opening Balance feature](https://help.sharesight.com/upload-import-opening-balances/)
+  (seriously, we once helped a client do this with 12,000 holdings).\n\nThis process
+  is especially useful for [Sharesight Pro](/pro/) partners. Some of the accountants
+  and financial advisers we work with are onboarding new clients who inherently have
+  opening balances. Others are moving data from legacy or offline software into Sharesight,
+  and more still are moving data from spreadsheets into Sharesight. Spreadsheets are
+  by far the most common \"system\" used by professionals. Sharesight is here to end
+  your reliance on offline, error-prone, manually updated procedures forever. It's
+  2014 after all, time to go cloud!\n\nIf you're a [Sharesight Investor or Expert
+  Plan](/pricing/) user with more than 20 holdings or you'd prefer to organise your
+  opening balance data in spreadsheet format first (or already maintain it this way),
+  this process will be helpful for you too.\n\nTo get started, as we explained last
+  time, you'll need to pick your \"Big Bang\" date and wave goodbye to transactional
+  history data prior to this date. Your portfolio will **NOT BE** inaccurate using
+  this method, it's just that by forgoing historical trade data, you can't go back
+  before the opening balance date to examine your portfolio's performance in say,
+  2004, for example.\n\nChances are you’ll have access to an accurate opening balance
+  date as at the portfolio’s last tax lodgement or some other official statement period.
+  We advise clients to pick the oldest possible date at which your portfolio data
+  is reliable. This way you’ll have access to some history too. **From a compliance
+  perspective, though, choosing an opening balance date immediately following the
+  previous tax year (e.g. 1 July 2013) is the safest way to go**.\n\n1. In order to
+  calculate an accurate opening balance, all we need is **opening balance date, code,
+  cost basis,** and **quantity held**. This means Sharesight needs to have at least
+  these data points available on the spreadsheet you're about to import.\n\n2. In
+  terms of the file itself, we require CSV format. Most software will export files
+  in CSV format, but if your file is in .xls, .xlt, or .xlsx format (standard Excel
+  formats), you can easily switch to CSV by \"Saving As\" and then changing the file
+  format.\n\n3. Or download a pre-formatted template from Sharesight [here](https://portfolio.sharesight.com/templates/bulk_trades.csv)\n\n4.
+  You'll notice the file we provide contains extra data columns. These aren't mandatory,
+  but if you have the data feel free to include it in the appropriate columns.\n\n5.
+  On the Add New Holdings page, scroll down to the bottom and click the \"+Bulk Import\"
+  button.\n  ![Opening Balances](//images.ctfassets.net/91sm3pewxzag/4sPkezR17iw4qo6mwwmSe4/7c3a252dc2d4f5398ca189d528a115f8/opening-balances-1.png?w=950)\n\n6.
+  The next page will prompt you to locate and upload the file. **Be sure to choose
+  \"opening balances\" from the \"You are importing\" dropdown.** Note the template
+  file is available for download here too.\n  ![Opening Balances](//images.ctfassets.net/91sm3pewxzag/3Yt9NLzvbyWoMgAsGooEEA/bdd7f2fcd1056ae9526c4e049c200e4b/opening-balances-2.png?w=950)\n\n7.
+  Sharesight will now begin its \"automagic\" upload process and first ask you to
+  confirm the column headers (data columns) in your file. If you have data in the
+  wrong column, you can make edits here.\n  ![Opening Balances](//images.ctfassets.net/91sm3pewxzag/g2MjxIi7bGG4GeScuQqgC/9be52b85422cc04d538a76dc54e53240/opening-balances-3.png?w=950)\n\n8.
+  Next, Sharesight will ask you to confirm the actual data in your file, and alert
+  you if any errors have been found. You can make edits to your data directly on this
+  page without having to change your file. Notice in this screenshot, I left out the
+  number of QAN shares. Sharesight still accepts the file so you can fill in the blanks
+  here.\n  ![Opening Balances - featured](//images.ctfassets.net/91sm3pewxzag/1LhpYxfmeYs2m4a6u0Q8Gy/ec0bb83b8ad534d74010605a82942886/featured_opening-balances.png?w=950)\n\nAnd
+  that's it! Once you click Save, your portfolio will be setup from that opening balance
+  date forward.\n\n### A few handy notes on the logic behind this process\n\nThis
+  upload will add data to anything you already have input for this portfolio, and
+  will look for any discrepancies and alert you if there are issues. As an example,
+  if you recorded a few transactions for QAN prior to the newly introduced opening
+  balance, Sharesight will inform you of the discrepancy and allow you to make edits
+  to fix the error.\n\nYou can include different opening balance dates for each holding
+  in the same file. Opening balance dates correspond to holdings, not the portfolio
+  as a whole.\n\nIf you want to layer on or backfill buy and sell transactions you
+  can do so at any time between your portfolio’s opening balance date and today. You
+  can do this by forwarding [trade confirmation emails](https://help.sharesight.com/contract_notes/)
+  to Sharesight or by manually entering buy or sell transactions. More on both of
+  these processes later in this series.\n\nHere’s a link to our help page on [setting
+  up your holdings](https://help.sharesight.com/setting-up-your-holdings/) for more
+  info.\n\n**Next up: [Portfolio Setup Tip #3: Creating a Portfolio Using Historical
+  Trades (Manual)](/blog/portfolio-setup-tip-3-automatic-contract-note-processing/)** "
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-01-16 00:00:00.000000000 Z
+:meta_description: Follow our step-by-step instructions and learn how easy it is to
+  import your opening balances via bulk upload into your Sharesight share tracker
+  portfolio(s).
+:featured_image:
+  :title: Opening Balances - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1LhpYxfmeYs2m4a6u0Q8Gy/ec0bb83b8ad534d74010605a82942886/featured_opening-balances.png"
+  :_meta:
+    :updated_at: '2016-09-13T23:08:38+00:00'
+    :created_at: '2016-09-13T23:08:04+00:00'
+    :id: 1LhpYxfmeYs2m4a6u0Q8Gy
+:wordpress_url: "/2014/01/16/portfolio-setup-tip-2-opening-balances-bulk-upload-are-also-your-best-friend/"
+:slug: portfolio-set-up-tips-bulk-upload-opening-balances

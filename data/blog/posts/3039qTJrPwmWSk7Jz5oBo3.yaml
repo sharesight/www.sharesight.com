@@ -1,0 +1,61 @@
+---
+:id: 3039qTJrPwmWSk7Jz5oBo3
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-25T05:12:44+00:00'
+  :created_at: '2022-01-25T05:02:22+00:00'
+  :id: 3039qTJrPwmWSk7Jz5oBo3
+:title: Sharesight release notes - December 2021
+:url_slug: sharesight-release-notes-december-2021
+:content: |
+  In December our development team released support for an additional Canadian stock exchange, plus continued to expand our international broker support.
+
+  ![Sharesight Release Notes December 2021](//images.ctfassets.net/91sm3pewxzag/6kQ2ST33Y1UtNlQykhhLac/e2b6ce5b45e895edfa25ef2646ef7584/Sharesight_Release_Notes_December_2021.jpg?w=950)
+
+  ## New Functionality / Enhancements
+  * Added support for NEO stock exchange (Canada) with 20 year price and dividend history
+
+  ## Broker Import Functionality (Trade Confirmations)
+  * Added support for Smith & Williamson (UK)
+  * Added support for Credo Wealth (UK)
+
+  ### FURTHER READING
+  * [Sharesight release notes - November 2021](https://www.sharesight.com/blog/sharesight-release-notes-november-2021/)
+  * [Sharesight release notes - October 2021](https://www.sharesight.com/blog/sharesight-release-notes-october-2021/)
+  * [Every feature Sharesight released in 2021](https://www.sharesight.com/blog/every-feature-sharesight-released-in-2021/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2022-01-21 10:00:00.000000000 +11:00
+:meta_description: In December our development team released support for an additional
+  Canadian stock exchange, plus continued to expand our international broker support.
+:featured_image:
+  :title: Sharesight Release Notes December 2021
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/6kQ2ST33Y1UtNlQykhhLac/e2b6ce5b45e895edfa25ef2646ef7584/Sharesight_Release_Notes_December_2021.jpg"
+  :_meta:
+    :updated_at: '2022-01-25T05:10:14+00:00'
+    :created_at: '2022-01-25T05:09:50+00:00'
+    :id: 6kQ2ST33Y1UtNlQykhhLac
+:hide_from_feed: false
+:slug: sharesight-release-notes-december-2021

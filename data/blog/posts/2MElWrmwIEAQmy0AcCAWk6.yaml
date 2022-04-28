@@ -1,0 +1,80 @@
+---
+:id: 2MElWrmwIEAQmy0AcCAWk6
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T05:23:51+00:00'
+  :created_at: '2017-04-20T01:03:08+00:00'
+  :id: 2MElWrmwIEAQmy0AcCAWk6
+:title: Sharesight Mobile App - April 2017 update
+:url_slug: sharesight-mobile-app--april-2017-update
+:content: |-
+  Following-up on the [last update to our mobile app](/blog/sharesight-mobile-app--january-2017-update/) and all the great [feedback](https://community.sharesight.com/topics/when-are-the-ios-android-mobile-apps-coming-guys) we received, we’re pleased to announce the Sharesight Mobile App -- April 2017 update.
+
+  ![featured - sharesight mobile app 2017-04](//images.ctfassets.net/91sm3pewxzag/16recIgyZGKmgy2MC8MYu4/7e0fd2d8b05ded6d284cfbffe0d2bd97/featured_sharesight-mobile-app_2017-04.png?w=950)
+
+  ## What’s new in the Sharesight Mobile App -- April 2017 update
+
+  Beyond a few bug fixes and numerous styling tweaks to accommodate smaller screen sizes (such as the iPhone 5), here are the two major changes included in this update:
+
+  ### 1. Sign-in via Google
+
+  Clients have already been [signing-up and signing-in to Sharesight using Google](/blog/login-to-sharesight-with-google/) for a couple years now. Today’s update extends this time-saving feature to the mobile app as well:
+
+  ![Sharesight Mobile App - 2017-04 - Google sign-in - med](//images.ctfassets.net/91sm3pewxzag/5LXVAWjVsc0kwqkesAME6K/c80834c065197a925d9e7563c39728e3/sharesight-mobile-app-2017-04-google-sign-in_med.png?w=950)
+
+  **Note that to use this feature you must sign-in to Sharesight using your Google/Gmail email address.** If your usual Sharesight login (email) is not your Google/Gmail email address, you may update it by [logging-in to Sharesight](https://portfolio.sharesight.com/login) and navigating to “Account Settings” > “My Details” > “Change Email”.
+
+  ### 2. 20 minute delayed pricing for the ASX and NZX
+
+  When we launched the [Sharesight mobile app](/blog/introducing-the-sharesight-mobile-app/) in late 2016, we knew that intra-day pricing was the next logical step. So after recently introducing [20 minute delayed pricing on the Sharesight website for ASX and NZX listed shares](/blog/introducing-20-minute-delayed-pricing-for-asx-holdings/), we’re pleased to now offer this feature on the mobile app:
+
+  ![sharesight-mobile-app-2017-04-20-min-delayed-pricing](//images.ctfassets.net/91sm3pewxzag/1sTMSMdvcMmO6wooskKqoa/280f5b79181225f300eeac72267fc573/sharesight-mobile-app-2017-04-20-min-delayed-pricing.png?w=950)
+
+  **Note that you will need to hit the “refresh” icon in order to see the latest prices.**
+
+  ## What’s next
+  This will likely be the last major mobile app update for a little while as we’re buckling-down on our (ever-growing) list of feature and partnership requests. However please continue to share your thoughts on the mobile app via the [Sharesight Mobile App forum topic](https://community.sharesight.com/topics/when-are-the-ios-android-mobile-apps-coming-guys) so that we can track and prioritise them accordingly.
+
+  ### All posts in this series
+  - [Introducing the Sharesight Mobile App](/blog/introducing-the-sharesight-mobile-app/)
+  - [Sharesight Mobile App - January 2017 update](/blog/sharesight-mobile-app--january-2017-update/)
+  - [Sharesight Mobile App - April 2017 update](/blog/sharesight-mobile-app--april-2017-update/)
+
+  ### FURTHER READING
+  - Help -- [Sharesight Mobile App](https://help.sharesight.com/sharesight-mobile-app/)
+  - Forum -- [Sharesight Apple/Android Mobile App](https://community.sharesight.com/topics/when-are-the-ios-android-mobile-apps-coming-guys)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2017-04-20 13:50:00.000000000 +10:00
+:meta_description: The latest Sharesight Mobile App update includes the ability to
+  sign-in via Google, as well as 20 minute delayed pricing for ASX and NZX listed
+  shares.
+:featured_image:
+  :title: featured - sharesight mobile app 2017-04
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/16recIgyZGKmgy2MC8MYu4/7e0fd2d8b05ded6d284cfbffe0d2bd97/featured_sharesight-mobile-app_2017-04.png"
+  :_meta:
+    :updated_at: '2017-04-20T03:17:35+00:00'
+    :created_at: '2017-04-20T03:17:12+00:00'
+    :id: 16recIgyZGKmgy2MC8MYu4
+:slug: sharesight-mobile-app-april-2017-update

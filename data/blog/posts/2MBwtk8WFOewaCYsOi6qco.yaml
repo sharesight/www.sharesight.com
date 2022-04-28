@@ -1,0 +1,88 @@
+---
+:id: 2MBwtk8WFOewaCYsOi6qco
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-08-23T04:47:15+00:00'
+  :created_at: '2017-05-31T05:33:30+00:00'
+  :id: 2MBwtk8WFOewaCYsOi6qco
+:title: Ode to the spreadsheet
+:content: "Over 70% of investors used a spreadsheet before finding [Sharesight](/).
+  In fact, we keep the spreadsheet that served as the Sharesight prototype under lock
+  and key in the Sharesight archives:\n\n![screenshot - Tony's spreadsheet](//images.ctfassets.net/91sm3pewxzag/44MMFaGO3usYsEiKGUemKO/88d3f16a0463e930832ccb970a3d91ac/screenshot_tony-spreadsheet.png?w=950)\n<small>The
+  spreadsheet that started it all -- for more info see <a href=\"/about-sharesight/\"><i>The
+  Sharesight Story</i></a>.</small>\n \nWhen we talk to new clients we often find
+  ourselves delicately explaining how Sharesight will begin automating what used to
+  be done manually in a spreadsheet. Customers sometimes ask if they can download
+  our price or dividend data so they can manually do the calculations in their spreadsheet.
+  It’s a case of letting go, we tell them.\n \nUnfortunately, we can’t tell people
+  what to do with the hours we give them back. It is truly amazing how some people
+  don’t put a value on their own time, happy to tinker away on Saturday afternoons
+  learning new Excel tricks. I’m guilty of it myself, having recently memorised the
+  keyboard shortcut for “Paste Special”. (For other Mac users out there who are curious,
+  it’s Command + Control + V.)\n\n![featured - laptop spreadsheet 2](//images.ctfassets.net/91sm3pewxzag/59jPKS6AVO44eeKgUWySCs/cbf12ea9d82c1561da9c2eb331b4c612/featured_laptop-spreadsheet-2.jpg?w=950)\n
+  \nOur [spreadsheet upload](https://help.sharesight.com/import-from-csv-file/) feature
+  is one of the most popular ways investors get started on Sharesight. With just a
+  few required data points, you can [import your historical trades](https://help.sharesight.com/import_bulk_trades/)
+  to create your first portfolio, which in turn will automatically calculate your
+  performance, capital gains and losses, dividend income, and more. If you don’t have
+  your old trades handy, you can [begin with an opening balance](https://help.sharesight.com/upload-import-opening-balances/),
+  which is the simplest way to get going.\n \nAnd yes, you can always export your
+  portfolio data back into Excel (.csv) if you can’t break the habit.\n \nAgain, I’m
+  guilty as charged. Even though we use [Xero](/xero/) for financial reporting I can’t
+  resist downloading their profit and loss or cash summary reports into my own models,
+  which I’ve been perfecting for years. Truthfully, I rely 100% on Xero to collect
+  and process the data, it’s just that I can’t resist having a play with the numbers.\n
+  \nSo in honour of underappreciated spreadsheets everywhere, have a listen to this
+  recent [Planet Money podcast on the history of spreadsheets](http://pca.st/4M1j)
+  and their surprising impact on a number of industries. (If you’re not already subscribed
+  to Planet Money, we highly recommend doing so.)\n \nSharesight and spreadsheets:
+  frienemies forever.\n\n### FURTHER READING\n- [7 reasons why Sharesight is better
+  than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)\n-
+  [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-05-31 15:56:00.000000000 +10:00
+:meta_description: It's truly amazing how much time people will spend tinkering away
+  on an Excel spreadsheet, even though there are better solutions. We're guilty of
+  it too.
+:featured_image:
+  :title: featured - laptop spreadsheet 2
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/59jPKS6AVO44eeKgUWySCs/cbf12ea9d82c1561da9c2eb331b4c612/featured_laptop-spreadsheet-2.jpg"
+  :_meta:
+    :updated_at: '2017-05-31T06:56:55+00:00'
+    :created_at: '2017-05-31T06:56:19+00:00'
+    :id: 59jPKS6AVO44eeKgUWySCs
+:slug: ode-to-the-spreadsheet

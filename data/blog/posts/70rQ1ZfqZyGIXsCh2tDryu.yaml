@@ -1,0 +1,89 @@
+---
+:id: 70rQ1ZfqZyGIXsCh2tDryu
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:20:55+00:00'
+  :created_at: '2020-07-23T23:16:33+00:00'
+  :id: 70rQ1ZfqZyGIXsCh2tDryu
+:title: Vanguard Brokerage Services can now be imported into Sharesight
+:url_slug: easily-import-trades-from-vanguard-brokerage-services-into-sharesight
+:content: "Sharesight now supports [over 170 brokers](https://help.sharesight.com/supported_brokers/)
+  worldwide, making it easier than ever to track your investment portfolio. Investors
+  can automatically import historical and ongoing buy and sell trades into a Sharesight
+  portfolio through the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/)
+  sent by most brokers, which is a convenient way to keep your portfolio up-to-date.
+  \ \n\n[Vanguard Brokerage Services](https://investor.vanguard.com/investing/transaction-fees-commissions/etfs)
+  is one of the many brokers from which you can automatically import trades directly
+  into your Sharesight portfolio. This allows investors in the United States to make
+  the most of Sharesight’s award-winning performance, [dividend tracking](https://www.sharesight.com/dividend-tracker/)
+  and tax reporting features. \n\n## Who is Vanguard Brokerage Services?\n\n[Vanguard
+  Brokerage Services](https://investor.vanguard.com/investing/vanguard-brokerage)
+  is a US-based trading service operating under [The Vanguard Group](https://about.vanguard.com/),
+  which is best-known for its provision of mutual funds and ETFs. Geared towards long-term
+  and low-cost investors, Vanguard Brokerage offers $0 brokerage fees for online trades
+  in stocks and ETFs.\n\n## Import your Vanguard Brokerage data to Sharesight\n\nSharesight
+  allows you to import your historical and ongoing trades in US stocks and ETFs through
+  the Trade Confirmation Emails feature, or you can choose to manually import your
+  historical trades by uploading a spreadsheet file. Keep reading to learn more. \n\n##
+  How to import historical trades through a spreadsheet \n\nOne simple way to import
+  historical trades to Sharesight is by creating and formatting a [ spreadsheet file](https://help.sharesight.com/import_bulk_trades/#1)
+  filled with trades from your trading account.\n\n![Sharesight vanguard spreadsheet](//images.ctfassets.net/91sm3pewxzag/3tNUglqWMfGkbW8cU1DmOO/f08ed7ee515fd08884ce8a441b9f2a55/Sharesight_vanguard_spreadsheet.png?w=950)\n\nAs
+  long as the file contains all the [required information](https://help.sharesight.com/import_bulk_trades/#1),
+  you can upload it to Sharesight and quickly bulk import the trading data you wish
+  to see in your portfolio. \n\n## Use Sharesight’s Trade Confirmation Emails feature
+  for ongoing trades\n\nSharesight’s [Trade Confirmation Emails](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/)
+  feature is an effortless way to import historical and ongoing trades to a Sharesight
+  portfolio. By simply having your broker’s trade confirmations forwarded to your
+  unique Sharesight email address, all of your trades are synced to your portfolio,
+  inclusive of corporate actions such as dividends, mergers and stock splits, with
+  no effort on your part. \n\n**Note:** This feature is designed primarily for ongoing
+  trades, but it can also be used to fill in historical trades in your Sharesight
+  portfolio. All you need to do is manually forward the Trade Confirmation Emails
+  for the trades you wish to see in your portfolio, starting with the earliest trade
+  you want included. \n\n## We need your help to add more US brokers!\n\nSharesight
+  is looking to add more US brokers to its [list of supported brokers](https://investor.vanguard.com/investing/transaction-fees-commissions/etfs).
+  If your broker is not yet on the list, let us know by leaving a message in the chat
+  interface located at the bottom-right of Sharesight. All we will need from you is
+  some sample buy and sell trade confirmations (email or PDF), the email the broker
+  sends them from and the subject line of the emails.\n\nWe only require a few sample
+  documents to support a new broker, so reach out today if you want to see yours added!\n\n###
+  FURTHER READING\n\n* [Getting started with Sharesight](https://help.sharesight.com/getting-started-with-sharesight/)\n\n*
+  [How Sharesight calculates your investment performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  [How to track exchange-traded funds (ETFs)](https://www.sharesight.com/blog/how-to-track-exchange-traded-funds-etfs/)\n\n*
+  [Import trades via your broker’s trade confirmations](https://help.sharesight.com/contract_notes/)"
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-07-24 09:00:00.000000000 +10:00
+:meta_description: Vanguard Brokerage Services is one of the many brokers from which
+  you can automatically import trades directly into your Sharesight portfolio.
+:featured_image:
+  :title: sharesight vanguard brokerage services
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/hIYgWJCts9xkd4LIuSgll/f0f61b18f0e07e9ccc7f76ad8c60e1db/sharesight_vanguard_brokerage_services.jpg"
+  :_meta:
+    :updated_at: '2020-07-23T23:40:20+00:00'
+    :created_at: '2020-07-23T23:40:00+00:00'
+    :id: hIYgWJCts9xkd4LIuSgll
+:hide_from_feed: false
+:slug: vanguard-brokerage-services-can-now-be-imported-into-sharesight

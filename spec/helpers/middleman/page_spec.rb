@@ -44,7 +44,6 @@ describe 'Page Helper', :type => :helper do
         ['/pro', 'pro'],
         ['/nz/partners', 'partners'],
         ['/partners/all', 'partners/all'],
-        ['/blog', 'blog'],
       ].each do |array|
         visit array[0]
         expect(@app.full_page_path_name).to eq(array[1])
@@ -61,8 +60,6 @@ describe 'Page Helper', :type => :helper do
         ['/partners/all/pages', 'partners/all/pages'],
         ['/partners/all/some-pages/2', 'partners/all/some-pages/2'],
         ['/partners/all/page/2', 'partners/all/page/2'],
-        ['/blog/some-blog-post', 'blog/some-blog-post'],
-        ['/blog/category/pages/2.html', 'blog/category']
       ].each do |array|
         visit array[0]
         expect(@app.full_page_path_name(path: array[0])).to eq(array[1])
@@ -95,9 +92,6 @@ describe 'Page Helper', :type => :helper do
 
       visit '/partners'
       expect(@app.page_path_name).to eq('partners')
-
-      visit '/blog'
-      expect(@app.page_path_name).to eq('blog')
     end
   end
 
@@ -105,9 +99,6 @@ describe 'Page Helper', :type => :helper do
     # This is a 1:1 proxy of locale_page
     it "should be the page we expect" do
       expect(@app.current_locale_page[:page]).to eq('index')
-
-      visit '/blog'
-      expect(@app.current_locale_page[:page]).to eq('blog')
 
       visit '/nz/partners'
       expect(@app.current_locale_page[:page]).to eq('partners')
@@ -120,7 +111,6 @@ describe 'Page Helper', :type => :helper do
       [
         # [input, expectation]
         ['/', 'index'],
-        ['/blog', 'blog'],
         ['/nz/partners', 'partners'],
         ['/ca/partners/all', 'partners/all'],
         ['/partners/all', 'partners/all']
@@ -172,7 +162,6 @@ describe 'Page Helper', :type => :helper do
   context "locale_page" do
     it "should respond with the right page id" do
       expect(@app.locale_page(page: 'index')[:page]).to eq('index')
-      expect(@app.locale_page(page: 'blog')[:page]).to eq('blog')
       expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
     end
 
@@ -204,7 +193,6 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should match expected counts" do
-      expect(@app.page_counts['blog']).to eq(1)
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
       expect(@app.page_counts['index']).to eq(6)
@@ -216,12 +204,7 @@ describe 'Page Helper', :type => :helper do
   end
 
   context "page_alternative_locales" do
-    it "should be a hash" do
-      expect(@app.page_alternative_locales('blog')).to be_kind_of(::Array)
-    end
-
     it "should match expected counts" do
-      expect(@app.page_alternative_locales('blog').length).to eq(1)
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
       expect(@app.page_alternative_locales('index').length).to eq(6)
@@ -234,7 +217,6 @@ describe 'Page Helper', :type => :helper do
 
   context "is_valid_page?" do
     it "should match expectations" do
-      expect(@app.is_valid_page?('blog')).to be true
       expect(@app.is_valid_page?('xero')).to be true
       expect(@app.is_valid_page?('partners')).to be true
 
@@ -245,10 +227,6 @@ describe 'Page Helper', :type => :helper do
 
   context "is_valid_locale_id_for_page?" do
     it "should match expectations" do
-      locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('blog', locale[:id])).to be !!(locale[:id] == 'global')
-      end
-
       locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('xero', locale[:id])).to be true
       end
@@ -270,7 +248,6 @@ describe 'Page Helper', :type => :helper do
       end
 
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
-      expect(@app.is_valid_locale_id_for_page?('blog', 'uka')).to be false
       expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
       expect(@app.is_valid_locale_id_for_page?('partners', 'nzd')).to be false
     end
@@ -278,7 +255,6 @@ describe 'Page Helper', :type => :helper do
 
   context "get_page_base_locale" do
     it "should match expectations" do
-      expect(@app.get_page_base_locale('blog')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('partners')[:id]).to eq(default_locale_id)

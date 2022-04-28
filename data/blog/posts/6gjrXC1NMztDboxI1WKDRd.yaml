@@ -1,0 +1,103 @@
+---
+:id: 6gjrXC1NMztDboxI1WKDRd
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-12-06T23:02:50+00:00'
+  :created_at: '2020-12-04T01:12:42+00:00'
+  :id: 6gjrXC1NMztDboxI1WKDRd
+:title: Trade source information now in Sharesight
+:content: "Sharesight makes it easy to see all of your investments in one place with
+  the ability to track both historical and ongoing trades automatically from more
+  than one broker. Consolidating this information in Sharesight is your key to unlocking
+  powerful multi-asset performance and tax reporting\n\nTo add additional context
+  to this consolidated data, Sharesight shows both the trade source and the date the
+  trade was added to your Sharesight portfolio. Read on to learn how this works.\n\n![Trade
+  source Sharesight](//images.ctfassets.net/91sm3pewxzag/1exHv63wLHzW4W2BSs5zgV/e073c3b09343c9e7d839200feec6a96e/Trade_source_Sharesight.jpg?w=950)\n\n##
+  Trade created and source information in Sharesight\n\nWith the ability to add trades
+  to your Sharesight portfolio through a broker, via email, a spreadsheet or even
+  manually, it can be useful to be able to identify the source of a trade at a later
+  date. Identifying a trade source may be useful for identifying which brokerage account
+  holds an investment you wish to sell, or identifying whether you need to consolidate
+  holdings with a single broker before selling. \n\nIn Sharesight this data is shown
+  when hovering over the trade information icon of the trade or adjustment in question
+  (as shown in the screenshot below). This will bring up the ‘Created On’ date, the
+  Source, and the Category, which we’ll explain below.\n\n![Trade Source](//images.ctfassets.net/91sm3pewxzag/3ecXZBo7mvDnIM3kwR4Nor/776fcd2abd193515f7332990e901c296/Trade_Source.png?w=950)\n\n###
+  Trade ‘created on’ date\n\nThe Created on date can help identify when new trades
+  were added to Sharesight. This can differ from the traded date, here’s how they
+  differ:  \n\n**Created on:** This is the date the trade was added to your Sharesight
+  portfolio \n\n**Traded date:** This is the date the buy or sell transaction occurred
+  (and is the date used for performance and tax calculations)\n\n### Trade source
+  information\n\nIn cases where a source has been identified, this will show the name
+  of the source. For example, the name of your broker (Robinhood in the above screenshot),
+  or if the transaction was automatically generated via a [Dividend Reinvestment Plan
+  (DRP)](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/),
+  [share/stock split](https://www.sharesight.com/blog/what-investors-need-to-know-about-stock-splits/)
+  (Reconstruction), or manually entered into Sharesight.\n\n### Trade category information\n\nThis
+  will show whether a trade was added via Sharesight’s [Trade Confirmation Feature](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/),
+  the web interface, uploaded in a [spreadsheet using the Sharesight File Importer](https://www.sharesight.com/blog/import-trades-with-the-sharesight-file-importer/),
+  the Sharesight [API](https://portfolio.sharesight.com/api), Company Event, or directly
+  from your broker.\n\n## NOTE\n\n* Sharesight has over 250 different sources in our
+  database currently\n\n* Sharesight is regularly adding new sources as they are identified
+  (so they may not appear initially for new sources)\n\n* Source data will be *progressively
+  backfilled* on trades where it is known (eg: Trade Confirmation Emails, company
+  events), though will not appear on historical trades added via the Sharesight web
+  interface, File Import, and some API transaction sources prior to this update\n\n*
+  New trades added to Sharesight portfolios will display this information\n\n## Track
+  all of your investments in the one place\n\nThousands of investors like you are
+  already using [Sharesight](https://www.sharesight.com/au/) to all of your investments
+  in one place. What are you waiting for? [Sign up](https://portfolio.sharesight.com/signup)
+  and:\n\n* Track all of your investments in one place, including stocks, [mutual/managed
+  funds](https://help.sharesight.com/au/supported-stock-exchanges-and-managed-funds/?_ga=2.266129671.947584253.1600037779-1579815040.1595575078&_gac=1.8055302.1599522265.EAIaIQobChMI-L3r4ZzY6wIVVwQrCh0k4wH7EAAYASAAEgL19PD_BwE),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Automatically track your [dividend and distribution income](https://www.sharesight.com/au/dividend-tracker/)
+  from stocks, ETFs and mutual/managed Funds\n\n* Run powerful reports built for investors,
+  such as [Performance](https://help.sharesight.com/au/performance_report/), [Portfolio
+  Diversity](https://help.sharesight.com/au/diversity_report/), [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/)
+  and [Future Income](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/)\n\n*
+  See the true picture of your investment performance, including the impact of brokerage
+  fees, dividends, and capital gains with Sharesight’s [annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n[Sign
+  up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) and get
+  started tracking your investment performance (and tax) today.\n\n### FURTHER READING\n\n*
+  [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n\n*
+  [How to track exchange-traded funds (ETFs)](https://www.sharesight.com/blog/how-to-track-exchange-traded-funds-etfs/)\n\n*
+  [3 ways Sharesight helps investors at tax time](https://www.sharesight.com/blog/3-ways-sharesight-helps-investors-at-tax-time/)\n\n*
+  [How to track monthly dividend income from your investments](https://www.sharesight.com/blog/how-to-track-monthly-dividend-income-from-your-investments/)"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-12-04 10:00:00.000000000 +11:00
+:meta_description: 'Sharesight now shows both the trade source and the date the trade
+  was added to your Sharesight portfolio to make it easy to view trades from multiple
+  sources. '
+:featured_image:
+  :title: Trade source Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1exHv63wLHzW4W2BSs5zgV/e073c3b09343c9e7d839200feec6a96e/Trade_source_Sharesight.jpg"
+  :_meta:
+    :updated_at: '2020-12-04T01:14:46+00:00'
+    :created_at: '2020-12-04T01:14:32+00:00'
+    :id: 1exHv63wLHzW4W2BSs5zgV
+:hide_from_feed: false
+:slug: trade-source-information-now-in-sharesight

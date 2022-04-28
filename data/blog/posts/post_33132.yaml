@@ -1,0 +1,85 @@
+---
+:id: post_33132
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:54+00:00'
+  :created_at: '2016-06-29T23:16:17+00:00'
+  :id: post_33132
+:title: How do I attach a file in Sharesight?
+:url_slug: how-do-i-attach-a-file-in-sharesight
+:content: |-
+  At its very core, [Sharesight](/) is an online repository for all your portfolio data. In fact, having all your holdings and trade details in one place is what makes it possible for Sharesight to automate dividend tracking and offer powerful 1-click performance and tax reports. But in terms of pure data, we understand that sometimes numbers aren't enough. So for notes and other details, Sharesight lets you add your own comments within individual holding, trade, and income records. And another feature that's available to [Sharesight Pro](/pro/), [Investor and Expert](/pricing/) members is the ability to upload your own files to individual holding or trade records as well.
+
+  ![paperclips - featured](//images.ctfassets.net/91sm3pewxzag/3IJWTl9y8UIiY4QwYGAIqK/22d18240dc1490a8b7433043e3e1347d/featured_paperclips.jpg?w=950)
+
+  ## Storing files at the holding-level
+  Sharesight allows you to **store up to five files per holding.** This can be a useful place to store annual reports and other files associated with the holding.
+
+  To upload a file to a holding, simply expand the "File Attachments" tab on the right-hand side of the screen, click on the "upload a file" button, and select the file(s) you wish to upload:
+
+  ![File Attachments - Add to Holding](//images.ctfassets.net/91sm3pewxzag/3Y1nxcYkNqki4qeCiWUiEk/25119dd8820eb6d6dd52806649ed5e77/file-attachments_holding-add.png?w=950)
+
+  Once uploaded, the file names will be displayed. Simply click on a file to open it, or click on the trash icon to delete it:
+
+  ![File Attachments – View within Holding](//images.ctfassets.net/91sm3pewxzag/5pP3Ql4mXuGoiEgyeycgUE/3e99b0092b06ffbe525fc93f869aac50/file-attachments_holding-view.png?w=950)
+
+  ## Storing files at the trade-level
+  In addition to storing files at the holding level, **you may store one file for each recorded trade within a holding.**
+
+  To upload a file to a trade record, simply click on the trade's "edit" link:
+
+  ![Edit Trade Details](//images.ctfassets.net/91sm3pewxzag/S3j3cGvggSSm4qaWsWII0/477a8690421e520415cf1ffc7348d25c/file-attachments_trade-edit.png?w=950)
+
+  Click on the "choose a file" button:
+
+  ![Adding a File Attachment to a Trade](//images.ctfassets.net/91sm3pewxzag/5sUT4RHRy8A8eYOgUkamIe/813c20f7c0e61ba776198a1130b02736/file-attachments_trade.png?w=950)
+
+  Then click on the "save changes" button. The holding details page will refresh and a paperclip icon will appear next to the trade's "edit" link:
+
+  ![Saved file attachment](//images.ctfassets.net/91sm3pewxzag/7Hjn2wWYpyAgAM8mUMQMuu/72654822398cc566db6b11a5b113eb82/file-attachments_trade-saved.png?w=950)
+
+  To access the file, simply click on the "edit" link again. Your file will appear in the modal window. Simply click on it to view it, or click on the trash icon to delete it.
+
+  ![View Trade File Attachment](//images.ctfassets.net/91sm3pewxzag/6BqtG1p0kwOUaM48W4IqqU/051c98b00f7b5bff3e71b0c8a99b656d/file-attachments_trade-view.png?w=950)
+
+  Note: if the trade was [automatically captured via Trade Confirmation Emails feature](https://help.sharesight.com/contract_notes/), then the PDF of the trade will appear here and will count towards your allotted file.
+
+  ### FURTHER READING
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+  - Blog -- [How to confirm your trades with the Trade Confirmation Emails Inbox](/blog/contract-notes-inbox/)
+  - Blog -- [Introducing multiple Trade Confirmation Email processing](/blog/introducing-multiple-contract-note-processing/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-11-21 00:00:00.000000000 Z
+:meta_description: Learn how to attach a file in Sharesight, and store files at the
+  holding or trade level within your Sharesight portfolios.
+:featured_image:
+  :title: paperclips - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3IJWTl9y8UIiY4QwYGAIqK/22d18240dc1490a8b7433043e3e1347d/featured_paperclips.jpg"
+  :_meta:
+    :updated_at: '2016-09-20T06:56:01+00:00'
+    :created_at: '2016-09-20T06:55:29+00:00'
+    :id: 3IJWTl9y8UIiY4QwYGAIqK
+:wordpress_url: "/2014/11/21/how-do-i-attach-a-file-in-sharesight/"
+:slug: how-do-i-attach-a-file-in-sharesight

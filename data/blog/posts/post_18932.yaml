@@ -1,0 +1,58 @@
+---
+:id: post_18932
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-28T23:37:42+00:00'
+  :created_at: '2016-06-29T23:18:36+00:00'
+  :id: post_18932
+:title: 'New Pro feature: personalised marketing materials'
+:url_slug: new-pro-feature-personalised-marketing-materials
+:content: |-
+  We just launched a useful feature for our [Sharesight Pro](/pro/) clients. Within “My Details” you can now create your own Sharesight materials to help educate your clients about Sharesight. On the “Marketing Materials” tab you’re able to add your company logo, personalised text, and generate the PDF files right there within Sharesight. Give it a go and let us know what you think.
+
+  ![Marketing materials page](//images.ctfassets.net/91sm3pewxzag/4chsQb3yHeEWK48oyeIcUY/e8f7a69394c671c84fd6c03afdb04f3f/Marketing-materials-page.png?w=950)
+
+  Our aim here is not only to help you explain Sharesight to your clients, but to open up new revenue possibilities for your practice. Once clients see how easy it is to track true performance and tax, chances are they’ll engage with you, their trusted accountant or financial adviser. If you’re looking to reach the fast growing SMSF market, or your prospect list contains clients with money in the sharemarket, Sharesight becomes an effective sales tool.
+
+  One of the biggest roadblocks to advisor/client happiness is the initial information upload. It’s an awkward dance, especially when you’ve just brought a new client on board. The Professional needs the information, clients don’t have it ready, and so goes the waltz. Even the biggest, global “white-shoe” firms struggle with this stage. Sharesight makes the investment side of this process a whole lot easier - and if you’d prefer a bit of guidance, we offer free training with a Pro subscription.
+
+  Also don’t forget, you can add your company logo to ALL Sharesight reports, like Performance Report, CGT Report, Future Income, etc. Just upload your logo on the “My Details” tab and you’re all set.
+
+  ![adding a logo](//images.ctfassets.net/91sm3pewxzag/33q1ePmu3SmCs8omUkkeS2/8d848e2da3425006925a4d2b73518c99/adding-a-logo.png?w=950)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2013-11-28 00:00:00.000000000 Z
+:meta_description: Follow our step-by-step instructions on how to create your own
+  marketing materials to help educate your clients about Sharesight portfolio management
+  services.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2013/11/28/new-pro-feature-personalised-marketing-materials/"
+:slug: new-pro-feature-personalised-marketing-materials

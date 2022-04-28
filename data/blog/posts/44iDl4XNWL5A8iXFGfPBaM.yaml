@@ -1,0 +1,102 @@
+---
+:id: 44iDl4XNWL5A8iXFGfPBaM
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-12-06T03:44:31+00:00'
+  :created_at: '2019-11-27T01:45:47+00:00'
+  :id: 44iDl4XNWL5A8iXFGfPBaM
+:title: What is a capital call transaction?
+:content: "Many of our clients are sophisticated and experienced investors who use
+  Sharesight to get a consolidated view across multi-asset class portfolios. Sharesight
+  supports tracking a wide range of asset classes, many with prices updated automatically.
+  In this post we’ll cover how to track what is known as a *capital call* transaction
+  -- a type of transaction that is commonly encountered in private equity investments.\n\n![capital
+  call transaction](//images.ctfassets.net/91sm3pewxzag/6z3T8OVTL8o4mzqHFZ4F7T/4c8fce5ef286f9acf139f4c92f8a2811/capital_call_transaction.jpg?w=950)\n\n##
+  Private equity capital calls\n\nA [\"capital call\" or “draw down”](https://www.securedocs.com/blog/private-equity-what-is-a-capital-call)
+  transaction occurs in the context of private equity and venture capital investments.
+  It is the legal term for the scenario where an investment firm asks for the capital
+  already committed to it by an investor to provide the funds -- usually when an investment
+  deal is due to close.\n\nFor example, an investor might commit $500,000 into a private
+  equity fund. This is called [capital commitment](https://www.investopedia.com/terms/c/capital-commitment.asp).
+  But she may pay only $100,000 on signing the agreement. A certain period of time
+  later, the fund may issue a capital call for the remaining $400,000 over a period
+  of years, so the investor can meet her commitments. This means that the cost base
+  of the investment goes up in line with the capital calls.\n\n## Returns through
+  return of capital, dividends and interest payments\n\nTo illustrate this, consider
+  the following example of an investor (let’s call him Harry) who has committed $500,000
+  to a private equity fund called PE fund 1. In his Sharesight portfolio, Harry adds
+  this holding as a [custom investment](https://help.sharesight.com/au/unquoted-instruments/)
+  under the Investment type ‘Ordinary Shares’ for the original amount paid into the
+  fund of $100,000. \n\nHarry then uses [Sharesight’s custom groups feature](https://help.sharesight.com/custom-groups/)
+  to create his own group called \"Private Equity\" into which he has grouped this
+  investment to help track it alongside any other private equity investments. \n\nThereafter,
+  the fund sends a capital call notice to Harry for another $100,000. He records this
+  in Sharesight as a \"capital call\" transaction by adding a trade or adjustment
+  to the holding and selecting the appropriate transaction type per the screenshot
+  below\n\n![Capital Call](//images.ctfassets.net/91sm3pewxzag/1DqynzpNsrEePgeYbUrVro/7acab8a0ce3fa186b3b6a84ba1385f6a/Capital_Call.png?w=950)
+  \n\nWhenever there is a return of capital by the fund, this can be recorded using
+  the same process and instead selecting \"return of capital\" as the transaction
+  type.\n\n## Track multi-asset class portfolios in Sharesight\n\nBy bringing all
+  his investments into Sharesight, Harry is able to see the return from the private
+  equity fund, in the same manner as a publicly listed stock. This way, he is able
+  to compare the total annualised return in the same dimension and manner as the rest
+  of his portfolio.\n\nThe capital call and [return of capital](https://www.investopedia.com/terms/r/returnofcapital.asp)
+  transactions represent the capital movements in and out of the fund, while the dividends
+  are paid as [franked or unfranked amounts](https://www.sharesight.com/blog/how-to-calculate-franking-credits-on-your-investment-portfolio/)
+  depending on where the underlying revenue was generated. \n\nThe cost base of the
+  holding is increased by the capital call value. Over time the fund is expected to
+  return money (ie: make distributions) in the form of capital or [dividends](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/).
+  These have different tax implications depending on the fund and tax implications
+  of the individual investor. \n\n![Tracking private equity investments](//images.ctfassets.net/91sm3pewxzag/1vniAtV4VvK4ZZiIzouoT6/b4342718ab524ca8aa7574504ffc777f/Tracking_private_equity_investments.png?w=950)\n\n##
+  Be a rational and disciplined investor\n\nA big part of being a disciplined investor
+  is documenting your investment strategy. The reports and features highlighted above
+  are just two of the ways Sharesight makes it easy to [track asset allocation and
+  your investment performance](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/).\n\n###
+  With Sharesight you can:\n\nGet the true picture of your investment performance,
+  including the impact of brokerage fees, dividends, and capital gains with Sharesight’s
+  [annualised performance calculation methodology](https://help.sharesight.com/au/performance_calculation_method/).\n\nTrack
+  all your investments in one place (across multiple asset classes) and in turn compare
+  different asset classes by the same performance metrics so you can identify winners
+  and losers in your portfolio.\n\nThe best way to understand what Sharesight is all
+  about is to [sign up and try Sharesight for yourself](https://portfolio.sharesight.com/signup).
+  We’re confident that you’ll agree that it’s the best portfolio tracker for investors.\n\n###
+  FURTHER READING\n\n- [Why I use Sharesight to track my portfolio](/blog/why-i-use-sharesight-to-track-my-portfolio/)\n
+  \n- [Track foreign currency on Sharesight](https://www.sharesight.com/blog/track-foreign-currency-on-sharesight/)\n
+  \n- [Track Cash Accounts in Sharesight](https://www.sharesight.com/blog/track-cash-accounts-in-sharesight/)\n\n-
+  [Track Bitcoin and other cryptocurrencies with Sharesight](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n"
+:author:
+  :id: 2LLkZjOWCcaMiqOkgmm8SK
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2018-07-11T03:03:51+00:00'
+    :created_at: '2018-07-11T02:34:44+00:00'
+    :id: 2LLkZjOWCcaMiqOkgmm8SK
+  :display_name: Prashant Mohan
+  :first_name: Prashant
+  :last_name: Mohan
+  :title: Chief Marketing Officer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2019-11-27 11:00:00.000000000 +11:00
+:meta_description: Here we cover how to track what is known as a *capital call* transaction
+  -- a type of transaction that is commonly encountered in private equity investments.
+:featured_image:
+  :title: capital call transaction
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6z3T8OVTL8o4mzqHFZ4F7T/4c8fce5ef286f9acf139f4c92f8a2811/capital_call_transaction.jpg"
+  :_meta:
+    :updated_at: '2019-11-27T01:48:36+00:00'
+    :created_at: '2019-11-27T01:48:25+00:00'
+    :id: 6z3T8OVTL8o4mzqHFZ4F7T
+:hide_from_feed: false
+:slug: what-is-a-capital-call-transaction

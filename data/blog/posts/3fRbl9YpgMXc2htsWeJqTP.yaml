@@ -1,0 +1,66 @@
+---
+:id: 3fRbl9YpgMXc2htsWeJqTP
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T05:41:39+00:00'
+  :created_at: '2019-07-05T01:13:48+00:00'
+  :id: 3fRbl9YpgMXc2htsWeJqTP
+:title: Sharesight release notes - June 2019
+:content: "June saw a continued focus on improving site performance with major improvements
+  to the load speed of our charts, particularly the valuation chart. We didn’t quite
+  manage a public release of our [Interactive Brokers integration](https://getsatisfaction.com/sharesight/topics/add_interactive_brokers)
+  as anticipated but have now added support for multi account file structures and
+  a range of other improvements to ensure the accuracy and reliability of this service.
+  \n\nAs a reminder, users who want early access to features we’re developing like
+  our Interactive Brokers Integration, should [join the Sharesight Beta Program](https://help.sharesight.com/nz/beta/).\n\n![Sharesight
+  Release Notes July 2019](//images.ctfassets.net/91sm3pewxzag/3oXijrpVM1lgA2KqY1jz16/2314afc2cdf6ada801a264f19c16b7d0/Sharesight_Release_Notes_July_2019.jpg?w=950)\n\n##
+  Development release highlights for June 2019:\n\n### Usability\n\n* Improved [portfolio
+  overview chart](https://help.sharesight.com/show_portfolio/) load speed via backend
+  enhancements and additional dedicated server infrastructure to handle charting.\n\n*
+  Significant improvements to the date picker when manually entering (typing a date).
+  The improved datepicker is currently available on the [Performance Report](https://help.sharesight.com/performance_report/),
+  [All Trades Report](https://help.sharesight.com/trades_report/) and [Taxable Income
+  Report](https://help.sharesight.com/taxable_income/). We will be rolling this out
+  to all other reports in the near future.\n\n### Broker Import\n\n* Added support
+  for Jarden Trade Confirmation Emails (NZ) following rebrand from First NZ Capital.\n\n*
+  Added [CSV Broker Import support for Stake](https://www.sharesight.com/blog/stake-clients-can-now-easily-track-trades-using-sharesight/)
+  (Australia)\n\n### FURTHER READING\n\n* [Sharesight release notes - May 2019](https://www.sharesight.com/blog/sharesight-release-notes--may-2019/)\n\n*
+  [Sharesight release notes - April 2019](https://www.sharesight.com/blog/sharesight-release-notes--april-2019/)\n\n*
+  [Sharesight release notes - March 2019](https://www.sharesight.com/blog/sharesight-release-notes--march-2019/)\n\n*
+  [Sign up for Sharesight](https://portfolio.sharesight.com/signup)\n"
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2019-07-05 10:00:00.000000000 +10:00
+:meta_description: The Sharesight development team in June continued work on our Interactive
+  Brokers integration, improved chart load speed, date pickers, plus a lot more.
+:featured_image:
+  :title: Sharesight Release Notes July 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3oXijrpVM1lgA2KqY1jz16/2314afc2cdf6ada801a264f19c16b7d0/Sharesight_Release_Notes_July_2019.jpg"
+  :_meta:
+    :updated_at: '2019-07-05T01:16:49+00:00'
+    :created_at: '2019-07-05T01:16:23+00:00'
+    :id: 3oXijrpVM1lgA2KqY1jz16
+:hide_from_feed: false
+:slug: sharesight-release-notes-june-2019

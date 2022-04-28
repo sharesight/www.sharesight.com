@@ -1,0 +1,78 @@
+---
+:id: post_1796
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:07+00:00'
+  :created_at: '2016-06-29T23:18:32+00:00'
+  :id: post_1796
+:title: Big Brother is watching and acting
+:url_slug: big-brother-is-watching-and-acting
+:content: |-
+  The Australian Tax Office (ATO) [warned this week](https://web.archive.org/web/20111231145820/http://www.ato.gov.au/corporate/content.aspx?doc=/content/00288191.htm) that more than 40,000 suspect tax returns for FY11 have already been flagged by its computer system. Cases have included overstated or fraudulent claims for spousal offset or education tax refunds, but the ATO has also declared that declaration of franking credits by share market investors is also on its radar.
+
+  While some of these returns concern suspected fraudulent behaviour, no doubt quite a number relate to mistaken claims entered in good faith. We are human after all!
+
+  The news from the ATO provides a timely reminder for those of us looking to complete our tax returns over the next few weeks that not only is it important to complete your tax return accurately, but it is also essential to ensure careful record keeping throughout the financial year. If you don’t have up-to-date information at your fingertips, chasing the data you need gets very time-consuming - often leading to errors or corner cutting.
+
+  Many DIY investors are finding that using a service such as [Sharesight](/) can help them stay on the right side of the ATO at tax time. Sharesight automatically tracks data relating to your shares throughout the year, enabling instant access to taxable income reports that contain a summary of gross dividends, franking credits and withholding tax information for all dividends. You can also access CGT reports in a couple of clicks of the mouse.
+
+  But for DIY sharemarket investors who haven’t already signed up to the service, here are some tips to make your EOFY life a little easier...
+
+  - You need to keep a record of all shares bought, the date you bought them and the price paid. When you choose to sell, you will need those records to work out the potential capital gains tax due.
+  - To calculate the capital gain or capital loss when disposing of only part of an investment in shares or units, you need to be able to identify which ones you have disposed of. This can be very important because shares or units bought at different times may have different amounts included in their cost and can alter the amount of tax you may need to pay.
+  - Keep track of all dividends received for tax purposes. You will need the date the dividend is paid, the net amount and the franked amount (whether you must pay tax on the whole sum received or whether you have received franking credits from the issuer if they have already paid part or all of the tax due).
+  - Remember that the potential tax due can change as the price of your stocks goes up or down and this may influence the time you choose to sell.
+  - Storing your records online through a service such as Sharesight allows you to view your records at any time wherever you are in the world, and also gives instant access to your accountant or financial adviser.
+
+  With the ATO bringing on-board ever more sophisticated techniques (click [here](http://www.theaustralian.com.au/australian-it/government/tax-office-recoups-millions-through-data-modelling/story-fn4htb9o-1226106222966) for The Australian’s report on how their computer modelling is tracking down false claims), the disorganised investors among us have no excuse but to get our houses in order! See [www.ato.gov.au](https://www.ato.gov.au) for more information on the tax requirements that come with investing in shares.
+
+  ### FURTHER READING
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [3 reasons why your return figures seem incorrect (but actually aren’t)](/blog/interpreting-portfolio-performance/)
+:author:
+  :id: author_8
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-05-12T04:48:32+00:00'
+    :created_at: '2016-06-29T23:15:39+00:00'
+    :id: author_8
+  :display_name: Andrew Bird
+  :first_name: Andrew
+  :last_name: Bird
+  :title: Executive Chairman
+  :company: Sharesight
+:categories:
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2011-08-11 00:00:00.000000000 Z
+:meta_description: The Australian Tax Office (ATO) warned this week that more than
+  40,000 suspect tax returns for FY11 have already been flagged by its computer system.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/08/11/big-brother-is-watching-and-acting/"
+:slug: big-brother-is-watching-and-acting

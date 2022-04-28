@@ -1,0 +1,65 @@
+---
+:id: post_173
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:00+00:00'
+  :created_at: '2016-06-29T23:16:20+00:00'
+  :id: post_173
+:title: FIF report now available!
+:url_slug: fif-report-now-available
+:content: |-
+  ###### For the latest information about this feature, see [*How to calculate your NZ FIF income*](/blog/how-to-calculate-your-nz-fif-income/).
+
+  Today we are pleased to announce the release of our [Foreign Investment Fund (FIF) Report](https://help.sharesight.com/nz/new_fdr_report_page/). If you invest in Australian shares, the report shows whether or not you are caught by the new FIF taxation rules. If you are, it will calculate your taxable FIF income.
+
+  The first part of the report shows which of your shares are caught by the new rules after allowing for various [FIF exemptions](https://help.sharesight.com/nz/fif_exempt_income_fdr_reports_page/). For most investors, there is also a further threshold exemption if the cost price of your overseas investments is less than $50,000. The report provides the cost price of all of your shares that are subject to FIF tax, so you can see whether you exceed the threshold amount.
+
+  If you are caught by the new rules, the report will calculate your FIF tax liability under both the [Fair Dividend Rate (FDR) method](https://help.sharesight.com/nz/fdr_income_fif_reports_page/) and the [Comparative Value (CV) method](https://help.sharesight.com/nz/cv_method_fif_reports_page/) so that you can select the one that minimises your tax bill.
+
+  The report provides a simple summary page as well as detailed report pages, and worksheets detailing all aspects of the calculations. As with the other Sharesight reports, the FIF report has a number of sophisticated ‘behind the scenes’ features such as automatically adjusting for share splits, consolidations and bonus issues.
+
+  The FIF Report can be run on an existing portfolio at the click of a button. New users can easily set up a portfolio in a few minutes because dividends, splits and consolidations, share prices and exchange rates are all provided automatically.
+
+  The first part of the report, showing whether you are caught by the new rules, is now available to all Sharesight subscribers (including free trial users). The remainder of the report is available to subscribers on the [NZ Expert plan](/nz/pricing/)
+
+  ### FURTHER READING
+
+  - [5 ways Sharesight helps NZ investors at tax time](/blog/5-ways-sharesight-helps-nz-investors-at-tax-time/)
+  - [Managed funds live on Sharesight](/blog/managed-funds-live-on-sharesight/)
+  - [Introducing 20 minute delayed pricing for NZX holdings](/blog/introducing-20-minute-delayed-pricing-for-nzx-holdings/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2008-06-16 00:00:00.000000000 Z
+:meta_description: Calculate your 2008 IRD FIF income with our comprehensive FIF report
+  which automatically calculates your peak holding balance & FIF income.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2008/06/16/fif-report-now-available/"
+:slug: fif-report-now-available

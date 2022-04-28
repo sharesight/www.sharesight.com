@@ -1,0 +1,51 @@
+---
+:id: post_45
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:41+00:00'
+  :created_at: '2016-06-29T23:16:48+00:00'
+  :id: post_45
+:title: Watch your investment grow
+:url_slug: watch-your-investment-grow
+:content: |-
+  We’ve added a new graph option to the portfolio overview page that lets you visualise the value of your portfolio over time. You can switch between this and the portfolio gains graph by clicking the ‘change’ link to the top right of the graph. As with the other selection criteria, [Sharesight](/) will remember your graph choice next time you login, so you will always see your preferred graph right away.
+
+  ![Watch your investment grow](//images.ctfassets.net/91sm3pewxzag/31rXvKMgmASOKoMGA6uICw/301229a3c20f96f1ac4e18b0fdff39d9/portfolio_value_graph.png?w=950)
+
+  Thanks to all of you who have been providing us with feedback. We have some more great features on the way soon, please keep the feedback coming!
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2008-01-07 00:00:00.000000000 Z
+:meta_description: We’ve added a new graph option to the portfolio overview page that
+  lets you visualise the value of your portfolio over time.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2008/01/07/watch-your-investment-grow/"
+:slug: watch-your-investment-grow

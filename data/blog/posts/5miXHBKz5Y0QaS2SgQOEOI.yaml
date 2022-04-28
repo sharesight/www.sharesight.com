@@ -1,0 +1,106 @@
+---
+:id: 5miXHBKz5Y0QaS2SgQOEOI
+:_meta:
+  :content_type_id: post
+  :updated_at: '2018-01-31T01:02:59+00:00'
+  :created_at: '2018-01-16T04:28:28+00:00'
+  :id: 5miXHBKz5Y0QaS2SgQOEOI
+:title: Student creates mobile app with Sharesight API
+:content: |-
+  We recently had a university student (Brett) from Australia’s Deakin University approach us to develop a mobile app for iOS using the [Sharesight API](https://portfolio.sharesight.com/api) for a student project. We asked him some questions after he completed his project -- here’s what he had to say:
+
+  ### What does your app do?
+
+  My app “Cow Splash” (had a bit of fun with the name) does the following:
+
+  - Lets you log into your [Sharesight](https://www.sharesight.com/) account
+  - Displays the logged-in Sharesight user info (name, email, plan)
+  - Displays the user’s portfolios (including country, inception date of the portfolio and the portfolio name)
+  - Displays further portfolio details including total gain, current value, as well as each holding (code, investment name, quantity, total gain, value), market total gain and value
+
+  ![featured sharesight-api-cow-splash](//images.ctfassets.net/91sm3pewxzag/6kPEMdIVocqU2aW6SmgWsC/0e224843839f7ff727177ad3df54693b/featured_sharesight-api-cow-splash.png?w=950)
+
+  ### Why did you choose to develop against the Sharesight API?
+
+  I chose to develop against the Sharesight API as it met the project brief well (basic cross-platform app utilising an API). It was also sparked by my interest in investing over the last 2-3 years.
+
+  ### Which technologies helped you the most while developing your app and why?
+
+  [Visual Studio Mac](https://www.visualstudio.com/vs/visual-studio-mac/) - IDE used to develop using Xamarin Forms targeting iOS and Android in a cross-platform manner.
+
+  ### Which programming languages did you use in your app?
+
+  C#
+
+  ### Are you working on any other projects or have any coming up you'd like to mention?
+
+  I’ve got an iOS app called “[Snapshot Wall](https://itunes.apple.com/au/app/snapshot-wall/id1104317101?mt=8)” that displays free, high resolution images from [Unsplash](https://unsplash.com/).
+
+  ### If you could continue to develop your app, what 3 features would you add next?
+
+  The three features I’d add next:
+
+  - Graphing the total gain over time, much like the portfolio overview page of the Sharesight website
+  - Theming to use branding colours e.g. Bendigo Bank, CMC Markets etc for supported [Sharesight partners](/partners/)
+  - Access to [Sharesight reports](https://help.sharesight.com/reports/)
+
+  ### Do you have a blog / social profile you'd like us to point people to for more info / to get in touch?
+
+  I’ve got a [Github page](https://github.com/Brett-Best) -- check it out!
+
+  ## You too can leverage the Sharesight API
+
+  We’d like to thank Brett for his interest in developing against the Sharesight API and congratulate him on his results.
+
+  Sharesight maintains both the [Sharesight Connect](https://portfolio.sharesight.com/api/1/overview) and [Sharesight User APIs](https://portfolio.sharesight.com/api/2/overview) and we encourage other members of the [fintech ecosystem](/blog/where-sharesight-fits-in-fintech-australias-ecosystem-map/) to connect using these APIs in new and innovative ways to build value for customers. Sharesight partners [amscot stockbroking](/blog/sharesight-connects-to-amscot-stockbroking-and-state-one/), [Macrovue](/blog/announcing-a-new-partner--macrovue/), [Six Park](/blog/announcing-a-new-partner--six-park/), [Simply Wall Street](/blog/visualise-your-portfolio-with-sharesight-and-simply-wall-st/), [CMC Stockbroking](/blog/sharesight-teams-up-with-cmc-markets-stockbroking/), [PwC](/blog/pwc-partners-with-sharesight/) (plus others) already use Sharesight’s APIs.
+
+  If anything offered by the [Sharesight API](https://portfolio.sharesight.com/api) or inside Sharesight would benefit your business, platform, or website please [send us an email](mailto:sales@sharesight.com) and we can grant you access to our test environment free of charge and talk further on how we can partner to build value for customers.
+
+  ### Sharesight Reader mobile app
+
+  Looking to check your Sharesight portfolio on the go? Download Sharesight's mobile app:
+
+  For iOS - [Sharesight Mobile App](https://itunes.apple.com/au/app/sharesight-reader/id1147841214?mt=8)
+  <br>For Android - [Sharesight Mobile App](https://play.google.com/store/apps/details?id=com.sharesight.reader&hl=en)
+
+  ### FURTHER READING
+
+  - Blog -- [Introducing the Sharesight Mobile App](/blog/introducing-the-sharesight-mobile-app/)
+  - Help -- [Sharesight Mobile App](https://help.sharesight.com/sharesight-mobile-app/)
+  - Sharesight.com -- [Learn about the Sharesight API](https://portfolio.sharesight.com/api)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2018-01-16 16:00:00.000000000 +11:00
+:meta_description: We recently had a student (Brett) from Australia’s Deakin University
+  approach us to develop a mobile app for iOS using the Sharesight API for a student
+  project.
+:featured_image:
+  :title: featured sharesight-api-cow-splash
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6kPEMdIVocqU2aW6SmgWsC/0e224843839f7ff727177ad3df54693b/featured_sharesight-api-cow-splash.png"
+  :_meta:
+    :updated_at: '2018-01-16T05:07:58+00:00'
+    :created_at: '2018-01-16T05:07:36+00:00'
+    :id: 6kPEMdIVocqU2aW6SmgWsC
+:slug: student-creates-mobile-app-with-sharesight-api

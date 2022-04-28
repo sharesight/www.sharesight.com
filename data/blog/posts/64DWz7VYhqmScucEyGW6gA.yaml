@@ -1,0 +1,104 @@
+---
+:id: 64DWz7VYhqmScucEyGW6gA
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-11-05T03:05:13+00:00'
+  :created_at: '2017-11-09T04:06:48+00:00'
+  :id: 64DWz7VYhqmScucEyGW6gA
+:title: New functionality for Consolidated Views
+:url_slug: new-functionality-for-consolidated-views
+:content: |-
+  We recently expanded the functionality of the Consolidated Views feature within [Sharesight](/). Read on to learn what’s changed, and how to leverage these changes to gain additional insights into your investment portfolios.
+
+  ![featured - tetris blocks](//images.ctfassets.net/91sm3pewxzag/3Tp29XHl1ueeAiuUmAA6c0/03e37cfb21f4033f4b0ecf9830259c70/featured_blocks-tetris.jpg?w=950)
+
+  ## What is a Consolidated View?
+
+  The Consolidated View feature allows you to “group” multiple portfolios within Sharesight and run a selection of reports across them:
+
+  <a href="https://youtu.be/Mvi-POJo-go" class="embedly-card" data-card-width="100%" data-card-controls="1">Embedded content: Using Consolidated Views - Sharesight Portfolio Management</a>
+
+  For more information on Consolidated Views (including the differences between a Portfolio and a Consolidated View), visit our help page on *[Using Consolidated Views](https://help.sharesight.com/consolidated_views/)*.
+
+  ## What’s changed?
+
+  Once you’ve created a Consolidated View, you may then:
+
+  ### 1 -- Group by Portfolio
+
+  This expanded functionality allows you to easily compare the performance of portfolios at a glance, without having to switch back and forth between them.
+
+  From the [Portfolio Overview page](https://help.sharesight.com/show_portfolio/), select “Group by: Portfolio” from the advanced options menu:
+
+  ![screenshot - Group by Portfolio - Menu](//images.ctfassets.net/91sm3pewxzag/51hQ9NeQHSCOGEWCuwEGiM/11d95ac946c328f19bca851f0786c178/screenshot_group-by-portfolio_menu.png?w=950)
+
+  This will chart your consolidated, as well as individual portfolios:
+
+  ![screenshot - Group by Portfolio - Chart](//images.ctfassets.net/91sm3pewxzag/qzD1vvAqe4EIYyi028Wak/0cd7e5643d496126744c4d901f565168/screenshot_group-by-portfolio_chart.png?w=950)
+
+  It will also group your holdings by portfolio, and display their individual returns:
+
+  ![screenshot - Group by Portfolio - Holdings](//images.ctfassets.net/91sm3pewxzag/1klDrakZJyUmoQmwuuCm44/b8c5ea73bd44ec11c41176842b9a2f55/screenshot_group-by-portfolio_holdings.png?w=950)
+
+  The "Group by Portfolio" setting is also now available on the following reports:
+
+  - [Performance Report](https://help.sharesight.com/performance_report/)
+  - [Diversity Report](https://help.sharesight.com/diversity_report/)
+  - [Sold Securities Report](https://help.sharesight.com/sold_shares/)
+  - [Historical Cost Report](https://help.sharesight.com/historical_cost_report/)
+
+  ### 2 -- Run a Contribution Analysis Report
+
+  You may now also run a [Contribution Analysis Report](/blog/announcing-the-contribution-analysis-report/) on a Consolidated View:
+
+  ![screenshot - Consolidated View - Contribution Analysis Report](//images.ctfassets.net/91sm3pewxzag/79tfdjiwZGGQo8MS00Kwoe/58e35db8820fd221c0e025e6e6a4fa89/screenshot_consolidated-view_contribution-analysis-report.png?w=950)
+
+  Previously unavailable for Consolidated Views, the Contribution Analysis Report provides insights into the drivers of your portfolio’s performance, be they particular stocks, [assets](/blog/asset-allocation-reporting-in-sharesight/), or exposure to certain countries, sectors, or industries. In the example above, we’re learning which sectors have had the biggest impact on our family’s consolidated portfolio returns.
+
+  For more information on this feature, visit our [Contribution Analysis Report](https://help.sharesight.com/contribution-analysis-report/) help page.
+
+  ###### [Sign-up for a FREE Sharesight account](https://portfolio.sharesight.com/signup), then upgrade to try the premium features mentioned in this article.
+
+  ### Have you leveraged Consolidated Views to track your portfolios?
+  Share your thoughts in our [dedicated forum topic](https://getsatisfaction.com/sharesight/topics/new-functionality-for-consolidated-views).
+
+  ---
+
+  ### FURTHER READING
+  - [Asset allocation reporting in Sharesight](/blog/asset-allocation-reporting-in-sharesight/)
+  - [8 tips to get your portfolio on track today](/blog/8-tips-to-get-your-portfolio-on-track-today/)
+  - [3 Sharesight email alerts you should enable today](/blog/3-sharesight-email-alerts-you-should-enable-today/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2017-11-09 15:57:00.000000000 +11:00
+:meta_description: Leverage the latest updates to the Consolidated Views feature in
+  order to gain additional insights into your investment portfolios.
+:featured_image:
+  :title: featured - tetris blocks
+  :description: featured - tetris blocks
+  :url: "//images.ctfassets.net/91sm3pewxzag/3Tp29XHl1ueeAiuUmAA6c0/03e37cfb21f4033f4b0ecf9830259c70/featured_blocks-tetris.jpg"
+  :_meta:
+    :updated_at: '2017-11-09T04:45:56+00:00'
+    :created_at: '2017-11-09T04:45:29+00:00'
+    :id: 3Tp29XHl1ueeAiuUmAA6c0
+:slug: new-functionality-for-consolidated-views

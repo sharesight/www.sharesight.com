@@ -1,0 +1,108 @@
+---
+:id: ZGSr2rpO17VtChwxUe58o
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-01-21T04:28:57+00:00'
+  :created_at: '2020-07-23T00:07:14+00:00'
+  :id: ZGSr2rpO17VtChwxUe58o
+:title: Easily import trades from nabtrade into Sharesight
+:url_slug: easily-import-trades-from-nabtrade-into-sharesight
+:content: "Getting started with Sharesight is now easier than ever with the ability
+  to automatically import trades from [over 170 brokers](https://help.sharesight.com/supported_brokers/)
+  into your Sharesight portfolio. An effortless way of keeping your portfolio up-to-date,
+  investors can automatically record historic and ongoing buy and sell trades through
+  the [Trade Confirmation Emails](https://help.sharesight.com/contract_notes/) sent
+  when trading with most brokers.\n\n[nabtrade](https://www.nabtrade.com.au/investor/home/)
+  is one of the many brokers from which you can automatically import trades directly
+  into your Sharesight portfolio. This gives nabtrade users the opportunity to leverage
+  Sharesight’s award-winning performance, [dividend tracking](https://www.sharesight.com/dividend-tracker/)
+  and tax reporting features.\n\n![Sharesight import trades nabtrade](//images.ctfassets.net/91sm3pewxzag/1HvxaML9a66iqUz9oTp1Wa/77df22709152c1edb833ddcd8be73f9c/Sharesight_import_trades_nabtrade.jpg?w=950)\n\n##
+  Who is nabtrade?\n\n[nabtrade](https://www.nabtrade.com.au/) is an online trading
+  platform run by [NAB](https://www.nab.com.au/), one of Australia’s biggest banks.
+  The platform has consistently received a 5-star value rating from Canstar, with
+  brokerage fees from $14.95 per trade. Not just available to NAB customers, nabtrade
+  offers all investors access to Australian and international shares, ETFs, bonds,
+  margin lending and SMSF services.\n\n## Import your nabtrade data to Sharesight\n\nSharesight
+  allows you to import your trading history by directly connecting your nabtrade account
+  to Sharesight. Alternatively, you can manually import your history by uploading
+  a spreadsheet file, and automatically link ongoing trades through the Trade Confirmation
+  Emails feature. Keep reading to learn more.\n\n## Connect directly to your nabtrade
+  account\n\nThe easiest way to build your Sharesight portfolio is to [connect to
+  your nabtrade account](https://help.sharesight.com/nabtrade/) with Sharesight. This
+  imports your historical buy and sell trades directly from your trading account into
+  Sharesight. \n\n![Sharesight nabtrade login](//images.ctfassets.net/91sm3pewxzag/1tXUIJSHqowKyyUFjF8QXk/4774863fe7dce19c9a889a9c53820bd8/Sharesight_nabtrade_login.png?w=950)\n\nTo
+  do this, you will need to enter your nabtrade login details and choose the trading
+  history you wish to import into Sharesight. \n\n***Note:** Your nabtrade login details
+  will not be saved by Sharesight and your trading data is downloaded through a secure
+  connection. Sharesight has no official relationship with nabtrade and offers this
+  service purely for your convenience.  If you do not wish to disclose your nabtrade
+  login details we recommend importing via a spreadsheet or Trade Confirmation Emails
+  as outlined below.*\n\nOnce you have imported your historic trades into Sharesight,
+  you can automatically import ongoing trades by using the Trade Confirmation Emails
+  feature, as mentioned below. \n\n## How to import historical trades through a spreadsheet
+  \n\nIf you prefer not to use your broker account login details to connect to Sharesight,
+  another way to easily import historical trades to Sharesight is by uploading a spreadsheet
+  with your trading history. \n\n![Sharesight nabtrade spreadsheet](//images.ctfassets.net/91sm3pewxzag/4gymT0S4TXyVizNscRvszH/8bbbc3da6e41198e49b3c9b3e8c18c6e/Sharesight_nabtrade_spreadsheet.png?w=950)\n\nAs
+  long as the file contains all the [required information](https://help.sharesight.com/import_bulk_trades/#1),
+  you can upload it to Sharesight and quickly bulk import the trading data you wish
+  to see in your portfolio. \n\n## Use Sharesight’s Trade Confirmation Emails feature
+  for ongoing trades\n\nSharesight’s [Trade Confirmation Emails](https://www.sharesight.com/blog/automatically-import-trades-to-your-sharesight-portfolio-using-email/)
+  feature is an effortless way to import historical and ongoing trades to a Sharesight
+  portfolio. By simply having your broker’s trade confirmations forwarded to your
+  unique Sharesight email address, all of your trades are synced to your portfolio,
+  inclusive of corporate actions such as dividends, mergers and stock splits, with
+  no effort on your part. \n\nYou can also add your Sharesight portfolio email address
+  to your nabtrade account, simply access your account settings, then under ‘delivery
+  methods’ click ‘edit’, enter the email address and your PIN to confirm, then click
+  ‘apply changes’ - this will ensure a copy of your trade confirmation emails get
+  sent to Sharesight automatically.\n\n## We need your help to add more brokers!\n\nIf
+  your broker is not yet on Sharesight’s [list of supported brokers](https://help.sharesight.com/supported_brokers/),
+  let us know by leaving us a message in the chat interface located at the bottom-right
+  of Sharesight. What we will need is some sample buy and sell trade confirmations
+  (email or PDF), the email the broker sends them from and the subject line of the
+  emails.\n\nWe only require a handful of sample documents to support a new broker,
+  so reach out today if you want to see yours added!\n\n### FURTHER READING\n\n* Help
+  - [Import your nabtrade trades](https://help.sharesight.com/nabtrade/)\n\n* [How
+  Sharesight calculates your investment performance](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n*
+  [5 ways Sharesight helps Australian investors at tax time](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/)\n\n*
+  [How to track exchange-traded funds (ETFs)](https://www.sharesight.com/blog/how-to-track-exchange-traded-funds-etfs/)\n\n*
+  [Import trades via your broker’s trade confirmations](https://help.sharesight.com/contract_notes/)\n"
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-07-23 10:00:00.000000000 +10:00
+:meta_description: 'nabtrade users can automatically import trades directly into their
+  Sharesight portfolio, giving them access to Sharesight''s award-winning portfolio
+  tracker.
+
+  '
+:featured_image:
+  :title: Sharesight import trades nabtrade
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1HvxaML9a66iqUz9oTp1Wa/77df22709152c1edb833ddcd8be73f9c/Sharesight_import_trades_nabtrade.jpg"
+  :_meta:
+    :updated_at: '2020-07-23T00:13:54+00:00'
+    :created_at: '2020-07-23T00:13:28+00:00'
+    :id: 1HvxaML9a66iqUz9oTp1Wa
+:hide_from_feed: false
+:slug: easily-import-trades-from-nabtrade-into-sharesight

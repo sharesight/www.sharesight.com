@@ -1,0 +1,83 @@
+---
+:id: post_25241
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-02T00:10:55+00:00'
+  :created_at: '2016-06-29T23:18:43+00:00'
+  :id: post_25241
+:title: Sharesight Pro Integrates with Macquarie Cash Management Accounts
+:url_slug: sharesight-integrates-macquarie-cash-management-account
+:content: |-
+  We’re happy to announce that [Sharesight Pro](/pro/) now supports Macquarie Cash Management Accounts. Keeping an eye on client cash flow is handy. Tracking cash for trade and dividend settlement purposes is critical. Now do it automatically inside Sharesight with [the industry’s most popular cash product](http://www.macquarie.com/au/advisers/solutions/cash/cash-management-account). We figured why stop with just shares, ETFs, and managed funds?
+
+  ![Sharesight + Macquarie - featured](//images.ctfassets.net/91sm3pewxzag/Eo8V8omiI0e0ISkcKK0C4/0e7d5289c41e6f2afacafd87464beece/featured_sharesight-macquarie.png?w=950)
+
+  We’ve built an automated and on-going link to Macquarie CMA, which means you can pull in your CMA transaction history and cash balance straight into Sharesight - a perfect solution for CMAs used for buy, sell, and dividend reconciliation and so you can seamlessly report an up to date cash balance in Sharesight.
+
+  <a href="https://www.youtube.com/embed/SYccABWV_3Q?rel=0" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://www.youtube.com/embed/SYccABWV_3Q?rel=0</a>
+
+  Once you sync the two, we’ll automatically display each portfolio’s cash balance on the Portfolio Overview page. If you see the Macquarie logo, you know you’re synced up! The CMA account will now be automatically updated every day with no manual intervention required.
+
+  ![Sharesight: Add Cash Account](//images.ctfassets.net/91sm3pewxzag/M7zL6jmVQ4W8aSOaoOqAG/60e4e369d02b3fc640ab18f0a150ecc0/add-cash-account.png?w=950)
+
+  ![Sharesight: Cash Accounts](//images.ctfassets.net/91sm3pewxzag/5TwVzLPF4cYuUsgQq8OGKc/f298cc02776e08e79c6d2b9b6aecb616/cash-accounts.png?w=950)
+
+  Clicking into the cash account will display the latest transactional history. On the detail page you can search through the cash transactions or export the data to Excel or PDF.
+
+  ![Sharesight: Cash Account](//images.ctfassets.net/91sm3pewxzag/3lAaJsEESsyaIQ2Ac6wWwK/75c0394de8f422234be4397bc2b8664c/cash-account1.png?w=950)
+
+  Setup is easy and a one-off step. Once you instruct Macquarie and Sharesight to talk to one another (using the Macquarie ESI token), you can add as many client CMA accounts as necessary using a dropdown menu.
+
+  ![Sharesight: Macquarie Settings](//images.ctfassets.net/91sm3pewxzag/79Dm2dQ1awSAouekWeGUw6/120aa7fa89351ed6a05d2ad7ed5fb371/macquarie-settings.png?w=950)
+
+  The CMA data will now be automatically updated going forward and available across the Sharesight application and reports. No more creating custom securities and updating cash balances manually.
+
+  What’s more, we’ve created an Unsettled Trades Adjustment option. If the CMA account is used as the trade settlement account, using this feature will automatically offset for the T+3 rule. In other words, Sharesight will temporarily adjust the CMA balance until the cash is debited/credited for the trade so that an accurate cash balance is always maintained. If you don’t use the CMA as the settlement account, you can switch this feature off.
+
+  ![Sharesight: Macquarie Cash Account](//images.ctfassets.net/91sm3pewxzag/2IZUgHjBvaOGCS4EwuCuM6/fad28b8e389e5cf78a7b8d3dae8e1a07/macquarie-cash-account.png?w=950)
+
+  This is a big step for Sharesight. Your feedback was the key driver behind this new feature. As we have more professional investors, asset managers, and financial advisers switching to Sharesight, a proper cash tracking system was mission critical.
+
+  As always, [send us your feedback](https://community.sharesight.com)!
+
+  ### FURTHER INFORMATION
+
+  - Help -- [Adding a Macquarie Cash Management Account (CMA)](https://help.sharesight.com/adding-a-macquarie-cash-management-account/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-07-22 00:00:00.000000000 Z
+:meta_description: Sharesight Pro now supports Macquarie Cash Management Accounts,
+  so you can reconcile trades and get a true sense of your overall wealth standing.
+:featured_image:
+  :title: Sharesight + Macquarie - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/Eo8V8omiI0e0ISkcKK0C4/0e7d5289c41e6f2afacafd87464beece/featured_sharesight-macquarie.png"
+  :_meta:
+    :updated_at: '2016-09-13T11:35:09+00:00'
+    :created_at: '2016-09-13T11:34:57+00:00'
+    :id: Eo8V8omiI0e0ISkcKK0C4
+:wordpress_url: "/2014/07/22/sharesight-integrates-macquarie-cash-management-account/"
+:slug: sharesight-pro-integrates-with-macquarie-cash-management-accounts

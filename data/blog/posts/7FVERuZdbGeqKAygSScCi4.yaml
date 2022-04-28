@@ -1,0 +1,111 @@
+---
+:id: 7FVERuZdbGeqKAygSScCi4
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-09-21T04:36:13+00:00'
+  :created_at: '2016-09-14T05:23:21+00:00'
+  :id: 7FVERuZdbGeqKAygSScCi4
+:title: 3 reasons why your return figures may seem incorrect
+:url_slug: interpreting-portfolio-performance
+:content: |-
+  As Client Support Manager at [Sharesight](/), I sometimes receive questions from clients who claim to see an ‘incorrect’ portfolio performance figure when reviewing their portfolio overview page or specific tax and performance reports. One of the reasons we built Sharesight was to help investors understand their true performance, so we take performance calculations very seriously.
+
+  In nearly all cases, the discrepancy is often just a matter of making sure you have the right settings in place before running your reports. Here are the top 3 reasons why your portfolio performance figures might seem incorrect, and how to interpret the data.
+
+  ![Interpreting portfolio performance - featured](//images.ctfassets.net/91sm3pewxzag/4H1kBhCQY0MCAY8iQQ8c4Q/24768cbab8dfded4608ada8b723f9c42/featured_portfolio-performance.png?w=950)
+
+  ## Date Range
+  This is without a doubt the most common question I receive from clients. The beauty of Sharesight is that you’re able to run reports across any date range — going as far back as the purchase date of your first share holding. This is true for your entire portfolio and the individual holdings.
+
+  However if the date range is set to something else (e.g. the last 2 weeks), the calculations will not include the return on shares held as at the ‘since first purchase’ date.
+
+  Often clients compare what they see on Sharesight to what they have in their spreadsheets or online broker. Ensuring you’re comparing the same date range is critical.
+
+  ![since first purchase - screenshot](//images.ctfassets.net/91sm3pewxzag/1ESzz3jGr6ysEosEIEC2us/931888ef21910a776f5349dbcda480bd/screenshot_since-first-purchase.png?w=950)
+
+  The date range setting also influences the amount/percentage of dividend income, as only those dividends related to shares held between the selected date range will be included in the ‘Income’ section where your dividends are listed. To change the date range on the [Portfolio Overview](https://help.sharesight.com/show_portfolio/) page or any tax or performance report, have a look at the following video:
+
+  <a href="https://www.youtube.com/embed/ZIG4mE9Muno" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://www.youtube.com/embed/ZIG4mE9Muno</a>
+
+  **Note:** Any changes you make to the date range settings are saved in your portfolio, so they are pre-set the next time you login.
+
+  ## Advanced Options
+  The configuration of the Advanced Options within your Sharesight portfolio(s) — specifically the ‘Open + Closed Positions’ settings — also affect return portfolio performance figures.
+
+  ![open + closed positions - screenshot](//images.ctfassets.net/91sm3pewxzag/6PwbtagFsAI2iisY0Wmqs2/363e14d6600a4cd0602e68b2b5042d9c/screenshot_open-closed-positions.png?w=950)
+
+  By default, the Portfolio Overview Page and the [Performance Report](https://help.sharesight.com/performance_report/) are set to display only currently held, or ‘Open Positions’. This causes the Performance and [CGT Report](https://help.sharesight.com/au/capital_gains/) to exclude your sold, or ‘Closed Positions’, which in turn might lead to unexpected return figures. To update this setting, simply follow the instructions in this video:
+
+  <a href="https://www.youtube.com/embed/33b0KZb6MgM" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://www.youtube.com/embed/33b0KZb6MgM</a>
+
+  ### Notes
+
+  - Any changes you make to the Open + Closed Positions are saved in your portfolio, so they are pre-set the next time you login.
+
+  - On the Portfolio Overview page, Free plan clients may only report on Open Positions. You’ll need to upgrade to a Paid plan to report on Open + Closed Positions on this page.
+
+  - All clients (including those on the Free plan) may report on Open + Closed Positions on the Performance Report by updating the "advanced options" settings.
+
+  ## Annualised Returns
+  If you’ve confirmed the date range and Open + Closed positions settings and your portfolio performance returns still seem off, the issue is likely due to Sharesight annualising your returns. For more information please refer to our [Calculation Methodology](https://help.sharesight.com/au/performance_calculation_method/) help page.
+
+  **Note:** Portfolio annualisation only applies if you’ve held your shares for longer than one year. We apply a total return for investments held for less than one year.
+
+  Stating portfolio performance in annual versus total return terms is typically more useful for investors. Unfortunately, the financial services industry has a habit of stating things in opaque “total” or “average” terms, which is what you might be using as a basis for comparison.
+
+  For starters, annual periods are comparable to other investments, easy to understand, and more relatable to our financial lives in general. Also, an annualised approach means the Sharesight methodology can factor in the magnitude and timing of additional investments (known as a dollar-weighted return). After all, this is how most of us invest, not with one large chunk of capital, but with subsequent amounts over time.
+
+  Total returns are exactly that – they do not specify a time period. So a healthy looking total return may not be that great once you realise that it’s stated over a 25 year time period. Also watch for for terms like “average annualised return” or “average annual return”. Usually this is marketing jargon that aims to smooth over volatile or poor returns in past years.
+
+  I hope you found this article useful. Let me know if you have any questions concerning the calculations in your portfolio. You can reach me by clicking on the ‘Help’ tab in your Sharesight account.
+
+  ### FURTHER READING
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [How to interpret the P/E ratio](/blog/how-to-interpret-the-pe-ratio/)
+  - Blog -- [A broken chain of investment providers: why investors pay the price](/blog/a-broken-chain-of-investment-providers-why-investors-pay-the-price/)
+:author:
+  :id: author_91
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-02T03:03:04+00:00'
+    :created_at: '2016-06-29T23:16:49+00:00'
+    :id: author_91
+  :display_name: Emma van der Maas
+  :first_name: Emma
+  :last_name: van der Maas
+  :title: Customer Support Manager
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2016-07-19 11:00:00.000000000 +10:00
+:meta_description: Learn the 3 factors that affect portfolio performance return figures
+  – including date range, open+closed positions, and annualised returns.
+:featured_image:
+  :title: Interpreting portfolio performance - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4H1kBhCQY0MCAY8iQQ8c4Q/24768cbab8dfded4608ada8b723f9c42/featured_portfolio-performance.png"
+  :_meta:
+    :updated_at: '2016-09-14T05:23:12+00:00'
+    :created_at: '2016-09-14T05:22:37+00:00'
+    :id: 4H1kBhCQY0MCAY8iQQ8c4Q
+:wordpress_url: "/2016/07/19/interpreting-portfolio-performance/"
+:slug: 3-reasons-why-your-return-figures-may-seem-incorrect

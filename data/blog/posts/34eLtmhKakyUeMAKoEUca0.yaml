@@ -1,0 +1,80 @@
+---
+:id: 34eLtmhKakyUeMAKoEUca0
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:57+00:00'
+  :created_at: '2016-09-01T03:21:42+00:00'
+  :id: 34eLtmhKakyUeMAKoEUca0
+:title: Where to find the "missing dividends" on your performance report
+:url_slug: find-missing-dividends-performance-report
+:content: |-
+  As Client Support Manager at [Sharesight](/), I sometimes receive queries from clients who query “missing” dividends on their performance report. This question is especially common at tax time, when investors double-check their dividend income in preparation of their tax returns. Let’s take a look at why this issue arises and where to find those missing dividends.
+
+  ## Locating missing dividends
+
+  Fiscal tax years for individuals vary around the world. In Australia the tax year ends on 30 June -- so we receive an influx of queries in July from Australian investors seeing dividends in their Taxable Income report, but not on their Performance Report.
+
+  **The short answer as to why certain dividends may appear to be excluded is that the or ‘ex dividend’ (also called 'ex date' or 'action date') took place before the current month.**
+
+  Let’s take a closer look by reviewing our ANZ holding. The Corporate Actions tab indicates that while the dividend ex date 09 May, it was only paid out to investors on 1 July:
+
+  ![missing dividends : dividend details - screenshot](//images.ctfassets.net/91sm3pewxzag/4bdfqYvYEw8sosSiocAyyW/47d859fdaee83fe22397337a968ca64a/screenshot_missing-dividends_dividend.png?w=950)
+
+  As expected, the ANZ dividend is visible in the Taxable Income report for July:
+
+  ![screenshot missing-dividends taxable-income](//images.ctfassets.net/91sm3pewxzag/1kgIQ7ZyICYemY2UCCSCsc/06d009c3743d0d1e710b4540c683d750/screenshot_missing-dividends_taxable-income.png?w=950)
+
+  However, as the ANZ dividend went ex on 09 May, it will not show up on the Overview Page or the Performance Report for the month of July:
+
+  ![Missing Dividends - featured](//images.ctfassets.net/91sm3pewxzag/5dRghlR7MAeyumkMgMYkiS/8a8d77b3b82a00f84402363456b22317/featured_missing-dividends.png?w=950)
+
+  ## Performance vs. tax: different reports for different purposes
+
+  It’s important to understand the difference between these two reports and how they treat dividends:
+
+  - The [Performance Report](https://help.sharesight.com/performance_report/) provides the performance of the holdings during the selected date range. You must have held a holding as at the ex dividend date for it to appear in this report.
+
+  - The [Taxable Income Report](https://help.sharesight.com/taxable_income/) lists all dividend payments and interest payments received within the selected time period. It displays dividend and interest payments on the date that they were paid or credited to the investor.
+
+  I hope you found this article useful. If you have any questions, get in touch via the Help tab in your portfolio or in the [Community Forum](https://community.sharesight.com/).
+
+  ### FURTHER READING
+  - Blog -- [3 reasons why your return figures seem incorrect (but actually aren’t)](/blog/interpreting-portfolio-performance/)
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [How to interpret the P/E ratio](/blog/how-to-interpret-the-pe-ratio/)
+:author:
+  :id: author_91
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-02T03:03:04+00:00'
+    :created_at: '2016-06-29T23:16:49+00:00'
+    :id: author_91
+  :display_name: Emma van der Maas
+  :first_name: Emma
+  :last_name: van der Maas
+  :title: Customer Support Manager
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2016-08-31 01:00:00.000000000 +12:00
+:meta_description: Learn the difference between our tax and performance reports and
+  where to find any "missing dividends" not appearing on your Performance Report.
+:featured_image:
+  :title: Missing Dividends - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5dRghlR7MAeyumkMgMYkiS/8a8d77b3b82a00f84402363456b22317/featured_missing-dividends.png"
+  :_meta:
+    :updated_at: '2016-09-14T04:18:48+00:00'
+    :created_at: '2016-09-14T04:18:33+00:00'
+    :id: 5dRghlR7MAeyumkMgMYkiS
+:wordpress_url: "/2016/08/31/find-missing-dividends-performance-report/"
+:slug: where-to-find-the-missing-dividends-on-your-performance-report

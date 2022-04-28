@@ -1,0 +1,127 @@
+---
+:id: 3j5DWTY0lqW04OeKoyCsuM
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-08-23T04:44:26+00:00'
+  :created_at: '2017-03-15T04:00:50+00:00'
+  :id: 3j5DWTY0lqW04OeKoyCsuM
+:title: Corporate actions and your investment performance
+:content: "Online brokers earn revenue based on the size and number of trades you
+  make (and cash accounts), which is why they invest in features like real-time dashboards,
+  technical charting, and new investment offerings.\n\nOnline brokers don’t provide
+  what [Sharesight](/) does. It’s not like they don’t want to. It’s just really hard
+  to do.\n\nHard things are hard.\n\n![featured - blocks](//images.ctfassets.net/91sm3pewxzag/1AZw7u79GkqCqIMKsSIICa/f5a7e78dce66c46fb0516648366273e3/featured_blocks.jpg?w=950)\n\nI
+  was reminded of just how difficult recently when logging in to my US broker -- a
+  full service broker -- with a great online capability. We’ve already demonstrated
+  [how misleading the performance information is](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  on your broker’s website. This was a similarly puzzling situation, but it was a
+  [corporate action](https://help.sharesight.com/corporate-actions/) that tripped
+  me up.\n\nI own shares in Spectra Energy, a pipeline company in the United States.
+  At least I thought I owned shares in Spectra Energy. I received a price alert email
+  from Sharesight telling me the price had gone to $0. Checking the [Sharesight Mobile
+  App](/blog/introducing-the-sharesight-mobile-app/) revealed that yes my Spectra
+  shares were worthless.\n\nSo I logged in to my broker. My current holdings page
+  was missing Spectra altogether. Skimming the screen, a new company caught my eye
+  -- Enbridge, which had already netted me $218 somehow.\n\n![screenshot - Enbridge
+  1](//images.ctfassets.net/91sm3pewxzag/5akej7JjvyMssUAMUOaSS6/b539036c6856266b7d91aaf823c184a2/screenshot_enbridge-1.png?w=950)\n\nAs
+  any experienced investor would have guessed, there was a takeover of some kind.
+  But, that’s not where I’m going with this. I received no alert or mention of this
+  from my broker whatsoever. I checked my email, nothing. I checked the communications
+  area on the broker’s site, nothing.\n\n![screenshot - Enbridge 2](//images.ctfassets.net/91sm3pewxzag/4IVHA1J7S0EwO8kQmciwoI/17eea42d95f9eb1cb0c5d588ac69c924/screenshot_enbridge-2.png?w=950)\n\nFor
+  a less experienced investor this would be confusing, perhaps enough to make you
+  sell off Enbridge altogether. For a buy and hold type (like me) this was an unpleasant
+  surprise. Fortunately, the news feed inside Sharesight contained articles on what
+  happened.\n\n![screenshot - Enbridge 3](//images.ctfassets.net/91sm3pewxzag/2gSmnVaqQUMCsAiEm2MOQo/9272d64e012afc1ba79cf97703bf0a99/screenshot_enbridge-3.png?w=950)\n\nDoing
+  more digging, I checked the broker’s unrealized gains page. Their return calculations
+  are non-annualized, which simply compare the buy price with the last price, irrespective
+  of dividends or new money in and out - not a real performance calculation!\n\nAnd
+  there was Enbridge again. Checking the tax lot details revealed another surprise
+  -- I’ve owned Enbridge for two years! Although I have no way of knowing for certain,
+  I think the broker allocated my Enbridge shares on the original buy date for Spectra
+  for capital gains tax purposes.\n\nThe broker also shows me my adjusted cost for
+  49 Enbridge shares is $1,799.11. That means my average cost per share should be
+  $36.72 (as they display below). However, Enbridge closed at $48.44 on 23 March 2015.
+  That’s a 33% difference. The broker provides no information to explain this, but
+  I assume it’s due to the ratio used to apportion the shares.\n\n![screenshot - Enbridge
+  4](//images.ctfassets.net/91sm3pewxzag/6e6M4uTBYcsK68KOy2mWSI/d9c79f18ba9b1a1fbd571b995a5055ec/screenshot_enbridge-4.png?w=950)\n\n**So
+  at this point, I own shares in a surprise company at a cost base I don’t understand.
+  The broker’s site contains no information on my Spectra shares whatsoever. There
+  is no preservation of my investment history for tax or performance purposes.**\n\nFortunately,
+  I’ve been tracking this portfolio in [Sharesight](/). I have full visibility across
+  both companies and total control of the data -- including Spectra’s dividend history,
+  which was never factored into my broker’s data in the first place. If I need help
+  from my accountant, we have a complete track record of data as delivered to Sharesight
+  by the stock exchange. \n\nTo handle this in Sharesight, I enter a sell trade against
+  my Spectra shares at the original cost base. Then I add my Enbridge shares using
+  an opening balance. I use the official corporate action date of 28 February 2017
+  for both. Even though Sharesight wants me to use the closing price for that day
+  ($41.85) to work out the market value, I’m able to override this in order to use
+  the mystery cost base that my broker displays.\n\n![screenshot - Enbridge 5](//images.ctfassets.net/91sm3pewxzag/7pAJKBRAYMm4Q2skkCUks0/2f060631324e6d5799c7a6a919253cf7/screenshot_enbridge-5.png?w=950)\n\nThis
+  approach preserves my performance history by linking the two companies. This is
+  important to me as an investor -- I want to know the true performance of a stock
+  that I did in fact own for two years. I’ll consider future performance to be attributed
+  to what Enbridge management does from the takeover date onwards. This approach also
+  maintains my dividend income from Spectra, and doesn’t factor in old Enbridge dividends
+  that I never received.\n\nFinally I enter a special dividend to reflect a residual
+  amount of cash received because no partial shares were issued when converting Spectra
+  to Enbridge. To add a final bit of complexity, Enbridge is a Canadian company. Spectra
+  was based in the US. Sharesight gives me the option to record this dividend in CAD,
+  but I choose to record the banked amount in USD to match my bank transaction history.\n\n![screenshot
+  - Enbridge 6](//images.ctfassets.net/91sm3pewxzag/4RlxQCfWp224Cmucu8SeIs/0032696d10c99ac584727ef5978507fd/screenshot_enbridge-6.png?w=950)\n\n![screenshot
+  - Enbridge 7](//images.ctfassets.net/91sm3pewxzag/5e6WFCr7tKOQ4weeqUyUq4/016829c8fe39d5ec240a2a59974f2620/screenshot_enbridge-7.png?w=950)\n\n**This
+  is why investors must fill in the gaps. Your broker knows 1, your share registry
+  knows 2, but only Sharesight can tell you they add up to 3.**\n\nMajor corporate
+  actions are difficult for portfolio managers at all levels to handle, but Sharesight
+  alerted me to the issue and gave me a straightforward, step-by-step pathway to handle
+  the takeover. Moreover, my steps are all safely stored in my portfolio so my accountant
+  can double check them at tax time.\n\nThe end result is smooth portfolio performance,
+  alongside accurate tax reporting that reflects what turned out to be a massive [$166B
+  merger](https://www.enbridge.com/investment-center/faqs/enbridge-and-spectra-merger-faqs-updated)
+  between two energy companies.\n\n### FURTHER READING\n- Topic -- [Corporate Actions](/blog/corporate-actions/)\n-
+  Blog -- [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)\n-
+  Blog -- [How to track a dividend reinvestment plan](/blog/how-to-track-a-dividend-reinvestment-plan/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 1YiQSm5LC0eiMocGIocaaO
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:27+00:00'
+    :created_at: '2016-11-15T02:35:38+00:00'
+    :id: 1YiQSm5LC0eiMocGIocaaO
+  :name: Corporate Actions
+  :description: A listing of popular complex corporate actions, including step-by-step
+    instructions on how to handle them in Sharesight.
+  :url_slug: corporate-actions
+:created_at: !ruby/object:DateTime 2017-03-20 14:03:00.000000000 +11:00
+:meta_description: When a tricky a corporate action such as a spin off or takeover
+  occurs, it’s important to fill the data gaps left by your broker and share registry.
+:featured_image:
+  :title: featured - blocks
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1AZw7u79GkqCqIMKsSIICa/f5a7e78dce66c46fb0516648366273e3/featured_blocks.jpg"
+  :_meta:
+    :updated_at: '2017-03-16T02:47:28+00:00'
+    :created_at: '2017-03-16T02:47:09+00:00'
+    :id: 1AZw7u79GkqCqIMKsSIICa
+:slug: corporate-actions-and-your-investment-performance

@@ -1,0 +1,105 @@
+---
+:id: 21JCkSy4wJg4iK0EhqH6gi
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-08-26T07:50:52+00:00'
+  :created_at: '2020-08-26T04:41:56+00:00'
+  :id: 21JCkSy4wJg4iK0EhqH6gi
+:title: The tax admin trap for Australian ETF investors
+:content: "###### Disclaimer: Sharesight does not provide tax or investment advice.
+  The buying of shares can be complex and varies by individual. Seek tax and investment
+  advice specific to your situation before acting on any information in this article.\n\n*This
+  piece was originally published on the [Morningstar website](https://www.morningstar.com.au/stocks/article/investing-basics-australias-etf-tax-admin-nig/204940)*\n\nExchange-traded
+  funds continue to gain popularity with self-directed investors and it's easy to
+  see why. They offer access to a basket of securities, often with low management
+  fees, conveniently rolled-up into one security that trades like a stock on the exchange.\n\nLaunched
+  in 1993, assets invested in ETFs globally broke through the $5 trillion mark in
+  2019. On the back of this, Bank of America strategists now predict the ETF market
+  will hit $30 trillion in assets under management by 2030. That’s on par with the
+  GDP of the entire US economy.\n\nLooking at our own data on ETF popularity from
+  over 100,000 DIY investors and financial professionals who track their portfolio
+  and investment performance with Sharesight, 36 per cent of self-managed super fund
+  (SMSF) users bought or sold an ETF in 2019, a significant increase on a figure of
+  only 5 per cent in 2009. \n\n![SMSF ETF data](//images.ctfassets.net/91sm3pewxzag/4sILBmxPzxDvbrqFUuM2zt/85c8753449111f472e205908293ac870/SMSF_ETF_data.png?w=950)\n\nDespite
+  these advantages, ETFs can become a tax administration nightmare for investors who
+  choose to go off-platform or don't rely on a managed service.  \n\n## ETF tax admin
+  in Australia\n\nETFs create tax complications because the Australian Taxation Office
+  (ATO) classifies them as trusts, not ordinary company shares. Complicating matters
+  further, the ATO changed the rules around investment trusts in 2016 by creating
+  the Attribution Managed Investment Trust (AMIT) regime.\n\n### What is an Attribution
+  Managed Investment Trust?\n\nTo understand [Attribution Managed Investment Trusts](https://www.sharesight.com/blog/attribution-managed-investment-trust-amit-tax-calculations/),
+  a good place to start is Managed Investment Trusts (MITs). An MIT is a trust structure
+  that allows investors to purchase \"units\" in the trust to access the underlying
+  investment activities the trust is set up to undertake, generally investing in shares,
+  bonds, or property.\n\nIn 2016 the Australian government overhauled MITs with the
+  aim of making fund administration easier and the sector more competitive globally
+  by introducing AMITs.\n\nThe AMIT structure allows trustees to \"attribute\" taxable
+  income to investors, without the need to make a distribution payment to unit holders.
+  Removing the need to pass through all income immediately, as with traditional trusts.\n\nThis
+  change has implications for how the cost base is handled and introduces several
+  complications for investors at tax time.\n\n### An example: Vanguard Australian
+  Shares ETF (ASX: VAS)\n\nIf we look at an AMMA statement from Vanguard’s VAS shares,
+  which paid four dividends throughout the financial year this statement is from,
+  those payments morphed into **17 distributions and two capital gains components**
+  on the annual taxation statement. In turn these correspond to 10 items on an individual
+  tax return. Staggering complexity for just one buy!\n\n![VAS AMMA statement](//images.ctfassets.net/91sm3pewxzag/pFJOYYVM08nUtH5Cb7nko/0725fe93f851308510176ba1cdc8adb9/VAS_AMMA_statement.png?w=950)\n\n*Why
+  does this happen?*\n\nVAS invests mostly in ASX shares, whose companies in turn
+  pay dividends, are subject to franking credits and which undergo corporate actions.
+  This creates all sorts of tax implications. VAS also invests in unlisted securities,
+  derivatives and overseas companies each with their own tax nuances.\n\nAs time goes
+  by, you receive VAS distributions in cash (usually quarterly or half yearly), along
+  with a simple statement from the registry showing the net payment. At the end of
+  the year, the registry will send you a final AMMA statement.\n\nThese final statements
+  contain all the component and subcomponent information and are far more detailed
+  than what you received during the year. This information can retroactively modify
+  your cost base and taxable dividend income, making your tax lodgement very difficult
+  and risking investors paying more tax than they need to.\n\n## ETF investors need
+  to be mindful of the tax implications\n\nETFs opened a world of opportunities for
+  investors. I use them myself as a building block for my portfolio. But one thing
+  we’ve learned from our users at Sharesight is that with this ease of access to investments
+  opportunities through ETFs, comes additional tax administration burdens that investors
+  need to be mindful of.\n\nTo help limit this ETF tax admin burden on investors we’re
+  working with our partners at [Computershare](https://www.sharesight.com/au/partners/computershare/)
+  to automatically provide accurate AMIT trust distribution data directly within Sharesight.
+  Securing this data takes time, but we’re looking forward to having this available
+  for the most recent financial year soon.\n\n \n### FURTHER READING\n- [5 ways Sharesight
+  helps Australian investors at tax time](/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/)\n-
+  [Capital gains tax calculator for Australian investors](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/)\n-
+  [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)\n\n"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2020-08-26 10:00:00.000000000 +10:00
+:meta_description: 'Despite many advantages, ETFs can become a tax administration
+  nightmare for investors who choose to go off-platform or don''t rely on a managed
+  service.  '
+:featured_image:
+  :title: ETF tax admin Australia
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/7AoXxuxtiC6Jv9rpy1Iac0/a749e5c74e4e7bc3058f02864fceec52/ETF_tax_admin_Australia.jpg"
+  :_meta:
+    :updated_at: '2020-08-26T04:49:46+00:00'
+    :created_at: '2020-08-26T04:49:33+00:00'
+    :id: 7AoXxuxtiC6Jv9rpy1Iac0
+:hide_from_feed: false
+:slug: the-tax-admin-trap-for-australian-etf-investors

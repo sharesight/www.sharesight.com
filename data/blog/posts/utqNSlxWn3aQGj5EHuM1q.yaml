@@ -1,0 +1,68 @@
+---
+:id: utqNSlxWn3aQGj5EHuM1q
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-03-09T22:03:52+00:00'
+  :created_at: '2022-03-08T23:32:47+00:00'
+  :id: utqNSlxWn3aQGj5EHuM1q
+:title: Sharesight release notes – Febuary 2022
+:url_slug: sharesight-release-notes-febuary-2022
+:content: |-
+  The main focus for February was the launch of our revamped [plans and pricing](https://www.sharesight.com/pricing/), including additional portfolios and expanded reporting for some plan types. The Sharesight development team also worked on additional broker support as well as technical enhancements to our [Xero integration](https://www.sharesight.com/xero/) and the [Sharesight API](https://portfolio.sharesight.com/api).
+
+  ![Sharesight release notes February 2022](//images.ctfassets.net/91sm3pewxzag/4ZDP81TVKDSSSoqwSFXxTr/647adff185a75e44da94dddf0673ae46/Sharesight_release_notes_February_2022.jpg?w=950)
+
+  ## New functionality/Enhancements
+  * Added support for syncing Capital Calls to [Xero](https://www.sharesight.com/xero/) as bank transactions
+
+  ## Broker Import Functionality (Trade Confirmations)
+  * Added support for SEDOL identifiers in trade confirmations
+
+  * Added support for [Wealthsimple](https://www.sharesight.com/blog/easily-track-wealthsimple-trades-with-sharesight/) trade confirmations (Canada)
+
+  * Added support for Standard Chartered Bank (Singapore)
+
+  ## Sharesight API
+  * [V2] Added a new ‘signup_via_your_integration’ attribute to the my_user endpoint. This allows API partners to identify users that signed up via their integration.
+
+  ### FURTHER READING
+  * [Sharesight release notes – January 2022](https://www.sharesight.com/blog/sharesight-release-notes-january-2022/)
+  * [Every feature Sharesight released in 2021](https://www.sharesight.com/blog/every-feature-sharesight-released-in-2021/)
+  * [Sharesight release notes – December 2021](https://www.sharesight.com/blog/sharesight-release-notes-december-2021/)
+  * [Sharesight release notes – November 2021](https://www.sharesight.com/blog/sharesight-release-notes-november-2021/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2022-03-09 10:00:00.000000000 +11:00
+:meta_description: 'In February our main focus was the launch of our revamped plans
+  and pricing, plus added broker support and other technical enhancements. '
+:featured_image:
+  :title: Sharesight release notes February 2022
+  :description: ''
+  :url: "//images.ctfassets.net/91sm3pewxzag/4ZDP81TVKDSSSoqwSFXxTr/647adff185a75e44da94dddf0673ae46/Sharesight_release_notes_February_2022.jpg"
+  :_meta:
+    :updated_at: '2022-03-08T23:47:35+00:00'
+    :created_at: '2022-03-08T23:47:24+00:00'
+    :id: 4ZDP81TVKDSSSoqwSFXxTr
+:hide_from_feed: false
+:slug: sharesight-release-notes-febuary-2022

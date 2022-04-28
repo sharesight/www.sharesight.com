@@ -1,0 +1,131 @@
+---
+:id: post_52483
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:46+00:00'
+  :created_at: '2016-06-29T23:16:12+00:00'
+  :id: post_52483
+:title: How to track a dividend reinvestment plan
+:url_slug: how-to-track-a-dividend-reinvestment-plan
+:content: |-
+  Also known as DRPs or DRIPs, dividend reinvestment plans (or distribution reinvestment plans if referring to funds or trusts such as ETFs and REITs) allow you to increase your holdings over time by automatically reinvesting your dividends in new shares rather than receiving cash. While DRPs can be an easy way to grow your portfolio over time, they also greatly add to your portfolio record-keeping admin because of all the additional trades they incur.
+
+  In this article, we’ll explore:
+
+  - [The DRP tracking nightmare](#The-DRP-tracking-nightmare)
+  - [How to track a dividend reinvestment plan with Sharesight](#How-to-track-a-dividend-reinvestment-plan-with-Sharesight)
+  - [Dividend reporting at tax time and throughout the year](#Dividend-reporting-at-tax-time-and-throughout-the-year)
+
+  ![How to track a dividend reinvestment plan](//images.ctfassets.net/91sm3pewxzag/54spX9FnNQK2qSkUHPsKSE/fef6212c1ba19f2f197bebd43ca370f9/featured_how-to-track-a-dividend-reinvestment-plan.jpg?w=950)
+
+  ## The DRP tracking nightmare
+
+  While deciding [whether or not to proceed with a dividend reinvestment plan](/blog/the-pros-and-cons-of-dividend-reinvestment-plans/) might be a straight-forward decision for most investors, the reality is that if they do proceed with a DRP, tracking all those reinvested dividends and properly calculating performance can quickly become a nightmare.
+
+  That’s because each reinvested dividend counts as a new trade transaction, so on average you’ll end up with 2-4 new trades per year for each DRP you participate in. Plus many taxation offices (including the ATO) require that you record the purchase price of your shares in order to calculate your capital gains tax (CGT) when you sell the shares. Long-time [Sharesight](/) client Mike Deam explains how this can quickly add up:
+
+  > One of the issues with DRPs is the paperwork it creates. If you hold a share and reinvest it for 10 years at 2 DRPs a year, you end up with over 20 acquisition events to manage. Add to that issues, bonus issues, share top-up plans... well you get the picture.<br><cite>Mike Deam -- Sharesight client</cite>
+
+  ## How to track a dividend reinvestment plan with Sharesight
+
+  The good news is that [Sharesight](/) takes the hassle out of tracking dividend reinvestment plans. Our dividend reinvestment feature lets you activate a DRP for a particular holding and automatically track the reinvested dividends. Alternatively, you may manually reinvest a specific dividend, at the correct reinvestment price. Here’s how:
+
+  ### 1 -- [Sign-up for a Free Sharesight account](https://portfolio.sharesight.com/signup)
+
+  Once you’ve signed-up, simply [add your holdings](https://help.sharesight.com) and watch as Sharesight automatically backfills past dividends (and continues to add new ones as they are announced).
+
+  ### 2 -- Activate automatic DRP tracking (or manually add your reinvested dividends)
+
+  - **If you have registered a DRP for a holding listed on the ASX or NZX**, simply activate the “[Auto Dividend Reinvestment](https://help.sharesight.com/drp/)” feature. This will automatically record a reinvestment for each dividend payment. This setting can be found under the “Holding Settings” section in the sidebar of the Holding page for each holding.<br><br>
+
+  - **If you have activated a DRP for a holding not listed on the ASX or NZX**, you may manually record a dividend reinvestment when you [add or edit a dividend payment](https://help.sharesight.com/recording-trades-dividends-and-adjustments/).
+
+  ![DRP settings - Sharesight](//images.ctfassets.net/91sm3pewxzag/2YK5SFLkjpL01h2dyUaopD/e2405cfa5dbc88c077ff90e53efb1361/drp-settings_sharesight.png?w=950)
+
+  Either way, when a dividend reinvestment is recorded, a trade for the new shares is recorded in your portfolio, in addition to the dividend record.
+
+  ![DRP - all trades - Sharesight](//images.ctfassets.net/91sm3pewxzag/BLJ7Ocwpwu2A3wysxRt3s/7b78e498a60ee79721206c58439ebf0a/drp-all-trades_sharesight.png?w=950)
+
+  ### 3 -- Upload your official dividend statements (optional)
+
+  One of the best things about Sharesight is that it stores all your portfolio data in one place. You can take this one step further by attaching your official dividend statements to the dividend records within a particular holding.
+
+  ![dividend statement attachment - Sharesight](//images.ctfassets.net/91sm3pewxzag/31LCLOPW4JQb95fWpbYTWa/76748cc5111fd7e1b675173b418d766f/dividend-statement-attachment_sharesight.png?w=950)
+
+  If you don’t have electronic copies of your dividend statements, you can either scan your paper statements, or use a smartphone app that converts photos of your paper statements to PDFs, which you can then upload to Sharesight.
+
+  > “Sharesight is particularly helpful because it lets me store the dividend statements with each dividend. If you don’t have electronic copies of your statements, and don’t have a scanner handy, then try the TurboScan smartphone app.<br>
+  <cite>Mike Deam -- Sharesight client</cite>
+
+  ### 4 -- Track your DRP residual balances
+
+  If the value of the shares you received as part of the DRP does not add up to the cash dividends you would have received, a residual balance is carried-forward to the next dividend payment. You may [track DRP residual balances in Sharesight](/blog/track-drp-residual-balances/) by choosing from various rounding methods: round up, round down, round to the nearest, round down and track balance.
+
+  ![DRP residual balances - Sharesight](//images.ctfassets.net/91sm3pewxzag/5itXlNvznHjlVDcmRnBPzs/6dc6cfd34f5faf0079f78e973c9a7b05/drp-residual-balances_sharesight.png?w=950)
+
+  ## Dividend reporting at tax time and throughout the year
+
+  As indicated in the screenshot in step 2 above, once you have begun tracking your reinvested dividends, they will appear in the “All Trades & Adjustments” section of that holding’s page. In order to see all of your portfolio’s dividends, simply run the [Taxable Income Report](https://help.sharesight.com/taxable_income/). It displays all dividends and interest payments received over the selected period.
+
+  ![Sharesight Taxable Income Report - USA 2019](//images.ctfassets.net/91sm3pewxzag/3fGXeBwzgZ3Fs3odujRkue/eb971c0d6553dc8c79364bc1f871d6ea/sharesight_taxable-income-report-usa-2019.png?w=950)
+
+  While you can run this report throughout the year, it is particularly helpful at tax time. If you work with an accountant, you can export the report to Excel, PDF, or [Google Sheets](/blog/new-open-sharesight-reports-directly-google-sheets/) and share it with them. Or better yet, share secure portfolio access with them, so they have everything they need in one place.
+
+  ### For more info, see:
+
+  - Sharesight Help -- [How to automatically track a DRP](https://help.sharesight.com/drp/)
+  - Sharesight Help -- [How to manually reinvest dividends](https://help.sharesight.com/how-to-set-up-a-dividend-to-be-reinvested/)
+
+  ## Track the impact of dividends on your investment performance
+
+  With Sharesight’s advanced [dividend tracking](https://www.sharesight.com/dividend-tracker/) and performance reporting features, investors can access unparalleled insights into their investments at the click of a button. With Sharesight investors can:
+
+  - Automatically [track your dividend and distribution income](https://www.sharesight.com/dividend-tracker/) from stocks, ETFs, LICs and Mutual/Managed Funds – including the value of franking credits
+  - Use the [Dividend Reinvestment Plan (DRPs/DRIPs) feature](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/) to track the impact of DRP transactions on your performance (and tax)
+  - Run powerful reports to calculate your dividend income with the [Taxable Income Report](https://www.sharesight.com/blog/5-ways-to-get-the-most-out-of-sharesights-taxable-income-report/), [portfolio diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/) and Capital Gains Tax obligations (Australia and Canada)
+  - Easily [share access of your portfolio](https://www.youtube.com/watch?v=9nSd-PmryGM) with family members, your accountant or other financial professionals so they can see the same picture of your investments as you do
+
+  [Sign up for a free Sharesight account](https://portfolio.sharesight.com/signup) and start tracking the impact of dividends on your investment portfolio today!
+
+  ![Sharesight 150000 users hero image](//images.ctfassets.net/91sm3pewxzag/B21OgiZvgzDtSnSPHkhE7/6e15d0943185d5afdefe1f72da18fb9c/image_1_.png?w=950)
+
+  ### FURTHER READING
+  - [The pros and cons of dividend reinvestment plans](/blog/the-pros-and-cons-of-dividend-reinvestment-plans/)
+  - [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)
+  - [What is a dividend yield trap?](/blog/what-is-a-dividend-yield-trap/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-12-06 11:45:00.000000000 +10:00
+:meta_description: DRPs/DRIPs are an easy way to grow your portfolio over time. But
+  the additional trades they incur makes them a nightmare to track. Here's how Sharesight
+  helps.
+:featured_image:
+  :title: featured - How to track a dividend reinvestment plan
+  :description: How to track a dividend reinvestment plan
+  :url: "//images.ctfassets.net/91sm3pewxzag/54spX9FnNQK2qSkUHPsKSE/fef6212c1ba19f2f197bebd43ca370f9/featured_how-to-track-a-dividend-reinvestment-plan.jpg"
+  :_meta:
+    :updated_at: '2019-05-29T02:15:26+00:00'
+    :created_at: '2019-05-29T02:12:04+00:00'
+    :id: 54spX9FnNQK2qSkUHPsKSE
+:wordpress_url: "/2016/04/18/how-to-track-a-dividend-reinvestment-plan/"
+:slug: how-to-track-a-dividend-reinvestment-plan

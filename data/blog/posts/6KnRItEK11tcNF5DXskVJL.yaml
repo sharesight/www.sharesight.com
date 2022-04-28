@@ -1,0 +1,89 @@
+---
+:id: 6KnRItEK11tcNF5DXskVJL
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-11-25T05:37:24+00:00'
+  :created_at: '2020-11-10T04:36:32+00:00'
+  :id: 6KnRItEK11tcNF5DXskVJL
+:title: Sharesight release notes - October 2020
+:content: |-
+  September saw us add support for a number of additional brokers and release a preview of a brand new report to [beta users](https://help.sharesight.com/beta/). We’re also steadily and incrementally releasing a broad range of usability improvements and optimisations for mobile devices.
+
+  ![Sharesight release notes October 2020](//images.ctfassets.net/91sm3pewxzag/5OaiIk6H1ST2W9JW3iahMJ/1894478cb6479d0aa190d1bdba5f70dc/Sharesight_release_notes_October_2020.jpg?w=950)
+
+  ### New Functionality / Enhancements
+
+  * Preview release of our new Foreign Currency Valuation report to Expert plan users with beta features enabled.
+
+  ### Usability
+
+  * Improved visibility of the Annual Tax Components Form form on the Taxable Income Report (Australian portfolios)
+
+  * Improved frontend error messaging and included options to try again or contact support
+
+  * Improved performance of the CSV importer to handle large files and various improvements to validation and error messaging
+
+  ### Broker Import Functionality
+
+  * Added support for [SelfWealth CSV files](https://www.sharesight.com/blog/automatically-import-selfwealth-trades-into-sharesight/) (Australia)
+
+  * Added support for TD Ameritrade trade confirmations (US)
+
+  * Added support for [Magellan trade confirmations](https://www.sharesight.com/blog/automatically-import-magellan-unlisted-funds-to-sharesight/) (Australia)
+
+  * Added support for Apex clearing / [M1 Finance](https://www.sharesight.com/blog/easily-track-m1-finance-trades-with-sharesight/) / [Ally Invest](https://www.sharesight.com/blog/easily-import-trades-from-ally-invest-to-sharesight/) trade confirmations (US)
+
+  * Added support for Firstrade trade confirmations (US)
+
+  * Added support for Trading212 trade confirmations (UK)
+
+  * Added support for Merrill trade confirmations (US)
+
+  * Added support for CCZ Statton Equities trade confirmations (Australia)
+
+  ### Sharesight API
+
+  * [V3 API] Added Sector classification, Industry classification and instrument description to the instrument object
+
+  ### FURTHER READING
+
+  * [Sharesight release notes - September 2020](https://www.sharesight.com/blog/sharesight-release-notes--september-2020/)
+  * [Sharesight release notes - August 2020](https://www.sharesight.com/blog/sharesight-release-notes--august-2020/)
+  * [Sharesight release notes - July 2020](https://www.sharesight.com/blog/sharesight-release-notes--july-2020/)
+  * [Sign up for Sharesight](https://portfolio.sharesight.com/signup)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2020-11-10 10:00:00.000000000 +11:00
+:meta_description: September saw us add support for a number of additional brokers
+  and release a preview of a brand new report to Sharesight beta users.
+:featured_image:
+  :title: Sharesight release notes October 2020
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5OaiIk6H1ST2W9JW3iahMJ/1894478cb6479d0aa190d1bdba5f70dc/Sharesight_release_notes_October_2020.jpg"
+  :_meta:
+    :updated_at: '2020-11-10T04:48:03+00:00'
+    :created_at: '2020-11-10T04:37:49+00:00'
+    :id: 5OaiIk6H1ST2W9JW3iahMJ
+:hide_from_feed: false
+:slug: sharesight-release-notes-october-2020

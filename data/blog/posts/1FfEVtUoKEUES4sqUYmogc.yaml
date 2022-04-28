@@ -1,0 +1,88 @@
+---
+:id: 1FfEVtUoKEUES4sqUYmogc
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-07-20T05:40:55+00:00'
+  :created_at: '2016-11-24T23:57:38+00:00'
+  :id: 1FfEVtUoKEUES4sqUYmogc
+:title: Announcing a new partner - Six Park
+:content: "We’re pleased to announce that [Six Park](https://www.sixpark.com.au/)
+  has chosen [Sharesight](/) to power their globally diversified, professionally managed
+  portfolio service. The [Sharesight API](https://portfolio.sharesight.com/api) and
+  interface will assist in offering their clients our award-winning investment reporting.\n\n![featured
+  - six park + sharesight](//images.ctfassets.net/91sm3pewxzag/4DkJFpXT96eocgg4gmiu0Q/1fc59da4a3dcdf17c3dd490c7f6c648d/featured_six-park-sharesight.png?w=950)\n\nSix
+  Park is an automated investment management service (frequently referred to as a
+  \ “robo-advisor\"), that is differentiated by the experience and calibre of its
+  active [Advisory Board](https://www.sixpark.com.au/about-us/advisors-team). They
+  provide a low-cost, diversified approach to investing by using ETFs. Their philosophy
+  centres on not trying to pick stocks or time the market, but rather on the [Modern
+  Portfolio Theory](http://www.investopedia.com/terms/m/modernportfoliotheory.asp)
+  to automatically manage client portfolios. It’s telling that the people who founded
+  the company originally come from the lofty world of institutional finance - they
+  now how financial products are packaged and can combine their experience with technology
+  to provide a low-cost investment strategy for just about anyone.  \n\nSix Park will
+  also make use of the Sharesight API to enhance their own client interface. This
+  is a terrific example of what’s possible when developers use Sharesight as a platform.\n\n![hero
+  - six park](//images.ctfassets.net/91sm3pewxzag/fX3I2BHRwkY0EaECCW82a/0a600fa63c407ea0c396322a9c0c8b62/hero_six-park.png?w=950)\n\nRoboadvice
+  continues to gain momentum around the world. Even if you prefer to manage your own
+  portfolio, it’s certainly a positive development that millions of previously unadvised
+  people now have access to low cost, online financial advice.\n\n### FURTHER READING\n-
+  [Where Sharesight fits in Fintech Australia’s ecosystem map](/blog/where-sharesight-fits-in-fintech-australias-ecosystem-map/)\n-
+  [Visualise your portfolio with Sharesight and Simply Wall St.](/blog/visualise-your-portfolio-with-sharesight-and-simply-wall-st/)\n-
+  [Announcing a new partner - Macrovue](/blog/announcing-a-new-partner--macrovue/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2016-11-25 12:26:00.000000000 +11:00
+:meta_description: Six Park has chosen Sharesight to power their globally diversified,
+  professionally managed portfolio service by leveraging our award-winning investment
+  reports.
+:featured_image:
+  :title: featured - six park + sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4DkJFpXT96eocgg4gmiu0Q/1fc59da4a3dcdf17c3dd490c7f6c648d/featured_six-park-sharesight.png"
+  :_meta:
+    :updated_at: '2016-11-25T01:06:39+00:00'
+    :created_at: '2016-11-25T00:35:03+00:00'
+    :id: 4DkJFpXT96eocgg4gmiu0Q
+:slug: announcing-a-new-partner-six-park

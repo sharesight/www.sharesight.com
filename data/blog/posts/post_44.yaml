@@ -1,0 +1,56 @@
+---
+:id: post_44
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:30:56+00:00'
+  :created_at: '2016-06-29T23:15:42+00:00'
+  :id: post_44
+:title: ASX historical data now in Sharesight
+:url_slug: asx-historic-data-now-in-sharesight
+:content: |-
+  We have had live ASX data in [Sharesight](/) for several weeks now, but after a lengthy data import we now have a full 10 years of ASX data in our database as well.
+
+  This is great news for all of you that own Australian shares as Sharesight will now provide full dividend and corporate action data for all of your historic ASX share purchases, and allow comprehensive reporting for the last 10 years of market activity.
+
+  ### FURTHER READING
+
+  - Help -- [Supported Stock Exchanges, Mutual Funds, Managed Funds, ETFs, etc.](https://help.sharesight.com/au/supported-stock-exchanges-and-managed-funds/)
+  - Blog -- [Introducing 20 minute delayed pricing for ASX holdings](https://www.sharesight.com/blog/introducing-20-minute-delayed-pricing-for-asx-holdings/)
+  - Blog -- [Managed funds live on Sharesight](https://www.sharesight.com/blog/managed-funds-live-on-sharesight/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2007-12-19 00:00:00.000000000 Z
+:meta_description: Sharesight now has a full 10 years of ASX historic data - meaning
+  investors may track a decade's worth of share price and dividend data for ASX-listed
+  shares.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2007/12/19/asx-historic-data-now-in-sharesight/"
+:slug: asx-historical-data-now-in-sharesight

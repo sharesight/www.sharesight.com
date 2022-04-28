@@ -1,0 +1,59 @@
+---
+:id: post_2972
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-11-11T02:53:37+00:00'
+  :created_at: '2016-06-29T23:15:58+00:00'
+  :id: post_2972
+:title: How Sharesight operates in the Cloud
+:url_slug: how-does-sharesight-operate-in-the-cloud
+:content: |-
+  In [my last blog](/blog/is-sharesight-in-cloud-cuckoo-land/) I promised to tell you a bit more about how [Sharesight’s](/) portfolio management service operates in the Cloud. I explained that because we are in the Cloud our servers do all the work and you do not have to worry about viruses, downloading share portfolio software onto your computer, keeping it up-to-date, backing up data so you don’t lose it or running out of space on your computer.
+
+  So, without getting too complicated about it, what actually happens behind the scenes to give you all these advantages? Well firstly, when I say ‘our servers do all the work’ I don’t mean that we have a big computer sitting in our office storing all your data and doing all the calculations. **That would be far too risky!** What would happen if we had a burglary or a fire, or our computer broke down, or we had an earthquake that wrecked the place or maybe a major power cut?
+
+  Our servers are located in highly specialised, professionally operated data centres. They have state-of-the-art systems to make sure all our data, including yours, is stored in a way that deals with the risks I have just mentioned. They have many ways of doing this but in particular they ensure that they have high levels of physical security and all the data is stored on multiple servers in multiple locations.
+
+  The other major risk is that someone might hack into your data. To guard against this your important information -- your password and credit card details - are encrypted so that this information is not intelligible to a hacker. You will have seen the letters HTTP before. HTTP is short for ‘Hyper Text Transfer Protocol’ and it is basically a protocol, or set of rules, for sending individual messages securely across the internet. You will also have seen the letters SSL or ‘Secure Socket Layer’ which is designed to ensure a secure connection between you and our Servers. Together these two protocols are known as HTTPS.
+
+  **Sharesight uses HTTPS to provide you with the highest level of security.** However HTTPS can slow down the time it takes to load each page and for this reason Sharesight, by default, uses HTTPS only on your payment and login pages. However customers on our Investor and Expert plans can choose to enable HTTPS on all Sharesight pages.
+
+  So does all this jargon mean that we at Sharesight absolutely guarantee the security of all your information 100%?
+
+  **Your data is very secure but no one can ever guarantee 100% security. What we can say is that unless you happen to live in Fort Knox, your data is a lot more secure with us than it would be on your home computer.**
+:author:
+  :id: author_4
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-19T02:11:07+00:00'
+    :created_at: '2016-06-29T23:18:45+00:00'
+    :id: author_4
+  :display_name: Tony Ryburn
+  :first_name: Tony
+  :last_name: Ryburn
+  :title: Executive Chairman
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2011-10-17 00:00:00.000000000 Z
+:meta_description: Sharesight co-founder Tony Ryburn explains how Sharesight operates
+  in the Cloud, specifically in terms of hosting and platform security.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/10/17/how-does-sharesight-operate-in-the-cloud/"
+:slug: how-sharesight-operates-in-the-cloud

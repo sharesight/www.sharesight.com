@@ -1,0 +1,87 @@
+---
+:id: post_1787
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:10+00:00'
+  :created_at: '2016-06-29T23:18:33+00:00'
+  :id: post_1787
+:title: Hands up for a Capital Gains Tax
+:url_slug: hands-up-for-a-capital-gains-tax
+:content: |-
+  Hopefully you all got your tax returns done on time.
+
+  I sent mine in at the last minute as usual despite having all the hard work done for me in the [Sharesight](/) tax reports. Being able to export all my share-related data from Sharesight into [Xero](/xero/) is also a huge time-saver when it comes to preparing the annual accounts for my Family Trust. It’s a great example of the real benefits that cloud computing can deliver.
+
+  I get caught under the Foreign Investment Fund (FIF) regime and I shudder to think of the time I would have wasted on this if it were not for the Sharesight [FIF Report](/blog/how-to-calculate-your-nz-fif-income/).
+
+  [Accountants](/blog/why-do-accountants-love-sharesight/) (the ones not using Sharesight) hate FIF reporting as much as their clients because it is simply not possible for them to do the required work for a fee that either they, or their clients, would consider reasonable. National seems to be reluctant to get rid of this ridiculous tax and Labour seems hell-bent on making things worse.
+
+  Fortunately the likelihood of a more comprehensive [capital gains tax](https://help.sharesight.com/au/capital_gains/) is the same as the likelihood of Labour forming a Government after the next election. That is not to say that there aren’t some good reasons for introducing a capital gains tax. But let’s remember that our experience with FIF shows how real the objections to a capital gains tax are:
+
+  1. **It’s expensive for taxpayers** (in time and/or accounting fees)
+  2. **It's complicated** (hands up all those who understand FIF!)
+  3. **It's avoidable** (avoid buying shares caught under the FIF regime)
+  4. **It does not eliminate bias**
+  5. **It's not cost-effective** (there is no simple solution that will raise significant tax in the short-medium future)
+
+  ### FURTHER READING
+
+  - [How to calculate your NZ FIF income](/blog/how-to-calculate-your-nz-fif-income/)
+  - [5 ways Sharesight makes EOFY a breeze](/blog/5-ways-sharesight-makes-eofy-a-breeze/)
+  - [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_4
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-19T02:11:07+00:00'
+    :created_at: '2016-06-29T23:18:45+00:00'
+    :id: author_4
+  :display_name: Tony Ryburn
+  :first_name: Tony
+  :last_name: Ryburn
+  :title: Executive Chairman
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+- :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:12+00:00'
+    :created_at: '2016-07-07T23:44:29+00:00'
+    :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :name: Thought Leadership
+  :description: 'A collection of thoughts and insights from the Sharesight team about
+    issues relating to investing and the fintech space. '
+  :url_slug: thought-leadership
+:created_at: !ruby/object:DateTime 2011-07-29 00:00:00.000000000 Z
+:meta_description: Sharesight co-founder Tony Ryburn shares his thoughts about Capital
+  Gains Tax (CGT) and Sharsight's powerful Foreign Investment Fund (FIF) regime reports.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2011/07/29/hands-up-for-a-capital-gains-tax/"
+:slug: hands-up-for-a-capital-gains-tax

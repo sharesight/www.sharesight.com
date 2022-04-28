@@ -2,18 +2,6 @@ require 'spec_helper'
 
 describe 'Build Sanity', :type => :feature do
   it "should have data from Contentful" do
-    page_data_dir = dir_list("data/blog/posts/")
-    expect(page_data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data.blog.posts.length).to be > 0
-
-    data_dir = dir_list("data/blog/authors/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data.blog.authors.length).to be > 0
-
-    data_dir = dir_list("data/blog/categories/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data.blog.categories.length).to be > 0
-
     data_dir = dir_list("data/partners/partners/")
     expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data.partners.partners.length).to be > 0
@@ -33,9 +21,6 @@ describe 'Build Sanity', :type => :feature do
     expect(root_dir).to include("js")
     expect(root_dir).to include("img")
     expect(root_dir).to include("css")
-
-    # directories only in root directory
-    expect(root_dir).to include("blog")
 
     # files only in root directory
     expect(root_dir).to include("favicon.ico")

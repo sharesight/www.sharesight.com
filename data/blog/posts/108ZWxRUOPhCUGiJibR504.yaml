@@ -1,0 +1,86 @@
+---
+:id: 108ZWxRUOPhCUGiJibR504
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-05-08T04:30:50+00:00'
+  :created_at: '2020-05-08T04:22:51+00:00'
+  :id: 108ZWxRUOPhCUGiJibR504
+:title: Sharesight release notes - April 2020
+:content: |
+  April was one of our busiest and the product team worked hard to ensure that Sharesight was as fast and reliable as always. Here’s a run down of the updates we shipped:
+
+  ![Sharesight release notes April 2020](//images.ctfassets.net/91sm3pewxzag/1REi0y7VppK2vnLVYpLQHK/aa0d09eff67476f55730b1ead7b9210c/Sharesight_release_notes_April_2020.jpg?w=950)
+
+  ## Sharesight release highlights for April 2020
+
+  ### Tax Reporting
+
+  * Updated the [FIF report (NZ)](https://www.sharesight.com/blog/how-to-calculate-your-nz-fif-income/) for the 2020 Financial year
+
+  ### Sharesight Usability
+
+  * Improved confirmation messaging when deleting a cash account transaction that’s linked to a trade.
+
+  * Added a broker search function and improved visibility of our trade confirmation email feature on the Broker Import screen.
+
+  ### Broker Transaction Import
+
+  * Added a direct API integration with [Hatch](https://www.sharesight.com/blog/investors-can-now-sync-trades-to-sharesight-from-hatch/) (New Zealand)
+
+  ### Sharesight API
+
+  * Added support for the Capital Call transaction type to our V2 and V3 Trades endpoints
+
+  * Added  V3 API endpoints to List, View, Create, Update and Delete Custom Investments
+
+  ### Market Data
+
+  * Added support for stocks listed on the the [BATS Markets (BZX) exchange](https://www.sharesight.com/blog/track-bats-markets-bzx-listed-stocks-with-sharesight/)
+
+  ### FURTHER READING
+
+  * [Sharesight release notes - March 2020](https://www.sharesight.com/blog/sharesight-release-notes--march-2020/)
+
+  * [Sharesight release notes - February 2020](https://www.sharesight.com/blog/sharesight-release-notes--february-2020/)
+
+  * [Sharesight release notes - January 2020](https://www.sharesight.com/blog/sharesight-release-notes--january-2020/)
+
+  * [Every new feature + improvement Sharesight released in 2019](https://www.sharesight.com/blog/every-new-feature-improvement-sharesight-released-in-2019/)
+
+  * [Sign up for Sharesight](https://portfolio.sharesight.com/signup)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2020-05-08 10:00:00.000000000 +10:00
+:meta_description: 'April was one of our busiest and the product team worked hard
+  to ensure that Sharesight was as fast and reliable as always. Here’s what we shipped:'
+:featured_image:
+  :title: Sharesight release notes April 2020
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1REi0y7VppK2vnLVYpLQHK/aa0d09eff67476f55730b1ead7b9210c/Sharesight_release_notes_April_2020.jpg"
+  :_meta:
+    :updated_at: '2020-05-08T04:29:55+00:00'
+    :created_at: '2020-05-08T04:28:43+00:00'
+    :id: 1REi0y7VppK2vnLVYpLQHK
+:hide_from_feed: false
+:slug: sharesight-release-notes-april-2020

@@ -1,0 +1,107 @@
+---
+:id: 6ATT1PUGJ8HoxNeHunnPsc
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-11-19T04:53:50+00:00'
+  :created_at: '2019-09-10T00:51:06+00:00'
+  :id: 6ATT1PUGJ8HoxNeHunnPsc
+:title: Sync trades to Sharesight from Saxo Markets
+:content: |-
+  [Saxo Markets](https://www.home.saxo/en-au?cmpid=af_sharesight) clients in Australia can now take advantage of Sharesight’s award-winning performance and tax reporting simply by connecting their trading account using Sharesight’s new Saxo Markets integration.
+
+  Once connected, Sharesight will sync your account’s trading history and automatically calculate your portfolio performance, inclusive of foreign exchange movements, dividends and corporate actions -- giving you the complete picture of your investment returns (and tax) all in a single place.
+
+  ![Saxo Markets Sharesight](//images.ctfassets.net/91sm3pewxzag/20PFTkZEjV2NMMzP9nAPjF/9e8fc61eb616817c1ce07af7cd8da629/Saxo_Markets_Sharesight.jpg?w=950)
+
+  ## Why Saxo Markets?
+
+  [Democratising trading and investment](https://www.home.saxo/en-au?cmpid=af_sharesight) is in Saxo Market’s DNA, with the broker launching one of the first online trading platforms in 1998. Today, Saxo Markets supports clients in over 180 countries, including a significant number in Australia, with investors trading FX, CFDs, stocks, options, futures all from a single account.
+
+  This tech-first approach is shared by Sharesight’s vision to build a portfolio tracker that makes it easy for investors to get the performance and tax insights they need. Plus, just like [Sharesight’s partner ecosystem](https://www.sharesight.com/partners/) and [API](https://portfolio.sharesight.com/api), [Saxo Markets’ open API](https://www.developer.saxo/) made it easy to join a [growing number of partners ](https://www.home.saxo/institutional-and-partners/client-stories/overview)that connect to and build upon their trading platform.
+
+  ## Why connect your Saxo Markets account to Sharesight?
+
+  Not only will your Sharesight portfolio automatically import all your historical trades when you choose to, every new trade you make with Saxo Markets can be easily synced with your Sharesight portfolio -- giving you more time to make the most of Sharesight’s powerful features:
+
+  1. **Automatic price and dividend updates** -- Sharesight adjusts your holdings data with stock price & currency fluctuations and automatically incorporates corporate actions such as dividends, reinvestment plans and share splits into your portfolio.
+
+  2. **Understand your true performance** -- Tracking portfolio performance isn’t easy. Brokerage fees, capital gains, corporate actions and currency fluctuations all factor into your performance. Sharesight’s [annualised calculation methodology](https://help.sharesight.com/au/performance_calculation_method/) provides data-driven insights to help you make better investment decisions going forward.
+
+  3. **Run your own tax reports** -- With all your portfolio data in one place, and powerful tax reports such as [Taxable Income](https://help.sharesight.com/taxable_income/), Capital Gains Tax, Unrealised Gains and Future Income (upcoming dividends), Sharesight provides everything you need to figure out your obligations at tax time -- including the ability to [securely share portfolio access directly with your accountant or financial advisor](https://www.sharesight.com/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/).
+
+  ## Connect your Saxo Markets account to Sharesight
+
+  Connecting your Saxo Markets account to Sharesight is easy. If you don’t already have a Sharesight account, you can get started by [signing up for a free account](https://portfolio.sharesight.com/signup).
+
+  Once signed up, you can connect your Saxo Markets account to Sharesight by selecting ‘Import from a broker’ then clicking on the Saxo Markets tile and following the prompts (read our [Importing trade data from Saxo Markets help page](https://help.sharesight.com/saxo-markets/) for specific details on the process).
+
+  ![Saxo Markets Import Sharesight](//images.ctfassets.net/91sm3pewxzag/6n0bHHDnKkpChVavVfSJ1/9dd7618bb51c06398dc24a2d256f268c/Saxo_Markets_Import_Sharesight.png?w=950)
+
+  **Note:** Once you’ve connected your Saxo Markets account to Sharesight using this integration, you’ll be able to [sync future trades](https://help.sharesight.com/saxo/) simply by revisiting the integrations tab and requesting the latest trades from Saxo Markets.
+
+  ## See the full picture with Sharesight
+
+  Now that you can sync your Saxo Markets account directly to your Sharesight portfolio, what are you waiting for? Join investors around the world already using Sharesight to get the full picture of their investments and [sign up to Sharesight today](https://portfolio.sharesight.com/signup).
+
+
+  **DISCLAIMER: Trading can result in losses. Please ensure you understand the risks.**
+
+  Saxo Capital Markets (Australia) Pty Ltd ABN 32 110 128 286 AFSL 280372 (‘Saxo’ or ‘Saxo Markets’) is a wholly owned subsidiary of Saxo Bank A/S, headquartered in Denmark. Please refer to our General Business Terms & Combined Financial Services Guide & Product Disclosure Statement at [home.saxo/en-au](https://www.home.saxo/en-au?cmpid=af_sharesight).  Prior to opening an account and investing in a financial product, please consider whether acquiring or continuing to hold financial products is suitable for you.
+
+  ### FURTHER READING
+
+  * Blog -- [Why I use Sharesight to track my portfolio](https://www.sharesight.com/blog/why-i-use-sharesight-to-track-my-portfolio/)
+
+  * Blog -- [Why do I need Sharesight with my online broker?](https://www.sharesight.com/blog/why-do-i-need-sharesight-with-my-online-broker/)
+
+  * Blog -- [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+
+  * Help -- [Import trades to Sharesight from Saxo Markets ](https://help.sharesight.com/saxo-markets/)
+
+  * Help -- [Syncing ongoing trades to Sharesight from Saxo Markets](https://help.sharesight.com/saxo/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 25Ev44KTruEAswcCiImMM4
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:22+00:00'
+    :created_at: '2016-07-07T23:45:15+00:00'
+    :id: 25Ev44KTruEAswcCiImMM4
+  :name: Partner News
+  :description: The latest Sharesight partner news from leading brokers, accounting
+    firms, asset managers, data providers and research providers.
+  :url_slug: partner-news
+:created_at: !ruby/object:DateTime 2019-09-10 10:00:00.000000000 +10:00
+:meta_description: Saxo Markets clients in Australia can now take advantage of Sharesight’s
+  award-winning performance and tax reporting by using our new Saxo Markets integration.
+:featured_image:
+  :title: Saxo Markets Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/20PFTkZEjV2NMMzP9nAPjF/9e8fc61eb616817c1ce07af7cd8da629/Saxo_Markets_Sharesight.jpg"
+  :_meta:
+    :updated_at: '2019-09-10T01:23:49+00:00'
+    :created_at: '2019-09-10T01:23:45+00:00'
+    :id: 20PFTkZEjV2NMMzP9nAPjF
+:hide_from_feed: false
+:slug: sync-trades-to-sharesight-from-saxo-markets

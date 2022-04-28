@@ -1,0 +1,75 @@
+---
+:id: 5DxdA3XLgc4geGk0M84Ei2
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-01-27T06:27:55+00:00'
+  :created_at: '2018-06-19T06:49:17+00:00'
+  :id: 5DxdA3XLgc4geGk0M84Ei2
+:title: Improved Taxable Income Report for Australian investors
+:content: |-
+  Just in time for the Australian end of financial year (EOFY), we’ve added a helpful new income tax return feature to [Sharesight](/) to assist individual investors in completing their tax returns.
+
+  ## Where can I access the income tax return feature?
+
+  The new income tax return feature is located at the bottom of the [Taxable Income Report](https://help.sharesight.com/taxable_income/). The report lists all dividend payments and interest payments received within the selected time period, broken-up by Australian and overseas taxable income. It’s designed to provide the portfolio information you are required to include in your tax return to the ATO.
+
+  ![screenshot - Taxable Income Report](//images.ctfassets.net/91sm3pewxzag/4rf7FQbsz6KMMgeGCAEcg6/0f77b078da61b81fa3d8f7faa7031d3c/screenshot_sharesight-taxable-income-report_2018-06-19-min.png?w=950)
+
+  ## What’s changed?
+
+  The new income tax return section takes the Taxable Income Report one step further, by providing field references to the relevant sections on the Australian Income Tax Return for Individuals and Income Tax Return for Individuals (supplementary section), as well as the totals required for the Income Tax Return based on non-trust and trust income.
+
+  ![composition sharesight income-tax-return](//images.ctfassets.net/91sm3pewxzag/5u8wUdxnFsUy9zoXEZxqnG/e0b7eca2297c72fe3bddbe70b6067e0f/composition_sharesight_income-tax-return-min.png?w=950)
+
+  ## Who will see the new income tax return section?
+
+  Any portfolio with:
+
+  - **A tax residency set to “Australia”** and;
+  - **A tax entity type set to “Individual or Trust”** (although it’s only relevant to individual tax entities)
+
+  ## Notes on the income tax return section
+  - The tax return field references are based on the tax return for individuals 2018 and tax return for individuals (supplementary section) 2018.
+  - Sharesight does not provide taxation advice and this report does not constitute personal taxation advice. If you have any questions about your tax position we recommend you contact your accountant or tax advisor.
+
+  ## Want more info?
+  Visit the [Taxable Income Report](https://help.sharesight.com/taxable_income/) help page.
+
+  ### FURTHER READING
+  - [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)
+  - [Capital gains tax calculator for Australian investors](/blog/capital-gains-tax-calculator-for-australian-investors/)
+  - [Offset your capital gains by tax loss selling before EOFY](/blog/offset-your-capital-gains-by-tax-loss-selling/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-06-20 08:00:00.000000000 +10:00
+:meta_description: We’ve added a helpful new income tax return feature to Sharesight
+  to assist Australian investors in completing their tax returns.
+:featured_image:
+  :title: featured - improved taxable income report
+  :description: featured - improved taxable income report
+  :url: "//images.ctfassets.net/91sm3pewxzag/2jPhg5LrTaYIagKEe0Oimo/5a00568a69cbe336049c18fd7e36b599/featured_improved-taxable-income-report.png"
+  :_meta:
+    :updated_at: '2018-08-28T05:58:28+00:00'
+    :created_at: '2018-06-19T07:23:05+00:00'
+    :id: 2jPhg5LrTaYIagKEe0Oimo
+:slug: improved-taxable-income-report-for-australian-investors

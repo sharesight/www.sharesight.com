@@ -1,0 +1,102 @@
+---
+:id: post_491
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:53+00:00'
+  :created_at: '2016-06-29T23:16:56+00:00'
+  :id: post_491
+:title: My Summer of Code
+:url_slug: my-summer-of-code
+:content: "Hello there, my name is James Sullivan and I'm the newest addition to the
+  [Sharesight](/) team. Since November, the team has hosted me as the Wellington [Summer
+  of Code](https://summeroftech.co.nz) intern.\n\nLast year I was a fourth year Software
+  Engineering student studying a Bachelor of Information Technology at Victoria University
+  of Wellington. My commercial software development experience came from being the
+  Summer of Code intern at [Xero](/xero/) during the summer of 2008/2009. The experiences
+  learnt there and in previous jobs helped in quickly becoming a productive member
+  of the Sharesight team. Most of my development experience had been more desktop
+  oriented software with Java and C#/.NET, so being dropped into the world of Ruby
+  and Ruby on Rails was quite a bit of an eye opener and I had to quickly get an understanding
+  of how to use it appropriately.\n\nThe Wellington Summer of Code is an internship
+  program started by John Clegg to match ICT students around Wellington with ICT companies
+  around Wellington. This year was the fourth year it has been run and it has grown
+  to well over a hundred students vying for positions at over twenty companies from
+  small startups to large corporate and government organisations. Each internship
+  is around twelve weeks of full time work covering various aspects of ICT.\n\nAt
+  Sharesight, I worked on the development of a few new features that will make life
+  easier and less stressful for the Sharesight customers. Here's an overview of what
+  I worked on and some of the experiences I had while in the middle of it all.\n\n![James
+  Sullivan - featured](//images.ctfassets.net/91sm3pewxzag/2hNDwB5HpiGSOSgsquuK8U/b344559e606e6379b4949a2554cbbec2/featured_james-sullivan.jpg?w=950)\n\n###
+  Trade Confirmation Emails importer\nThe [Trade Confirmation Emails Importer](https://help.sharesight.com/contract_notes/)
+  is a new feature of Sharesight that will eliminate the need to record new shares
+  as you buy and sell. This feature works by taking the Trade Confirmation Emails
+  / PDF contract notes that you receive from your broker once a trade is completed,
+  and automatically extracts the relevant trade data and records it into your Sharesight
+  portfolio. Development of this feature was really interesting as we had to work
+  with processes that already existed, while keeping any extra steps as close to zero
+  as possible. The process of this development also exposed me to a somewhat different
+  way of doing things than I had experienced in the past. \n\nSome of the interesting
+  problems encountered included finding and creating a way to give as much feedback
+  as possible to the customer should something not work during the processing of the
+  Trade Confirmation Emails. For example, if the processing failed due to the contract
+  note selling more shares then we knew were owned, then we could tell the customer
+  exactly why the processing failed. On the other end, the processing may have failed
+  for a reason that could not be easily defined so we would have to send a much broader
+  email with several things to check. We also had to build it in a way that new messages
+  could easily and quickly be added in the future.\n\nThe Trade Confirmation Emails
+  import function is currently undergoing the final stage of user testing and is available
+  to members of the [Sharesight Beta Group](https://help.sharesight.com/beta/).\n\n###
+  Trades report and trade export function\nOne of the things that we have had many
+  customer requests for at Sharesight is the ability to export all the trades that
+  a customer has entered. The second project I worked on helps solve this issue, giving
+  each customer the ability to export their data from Sharesight should they feel
+  they need to. This was an interesting project that required me to look at the problem
+  from the customer’s perspective. This meant going through each step while thinking
+  of the ways a customer would look at the information, links, buttons, etc. and build
+  the report in a way that would be clear, easy and quick to use.\n\nDuring the development
+  of the trades report, we researched the import/export formats of other related systems
+  to ensure that the format we used in the trades report was broadly compatible with
+  other similar systems.\n\nThis morning we made the Trades report available to all
+  Sharesight customers.\n\n### Conclusion\nThe internship has been an interesting
+  and good learning experience. I have learnt a lot about the development of good,
+  solid web based software solutions. You may even see another blog post from me in
+  the future, as I have been taken on as a full time developer for Sharesight.\n\n###
+  FURTHER READING\n\n- Blog -- [Sharesight a proud sponsor of Rails Girls Wellington](/blog/sharesight-a-proud-sponsor-of-rails-girls-wellington/)\n-
+  Sharesight API --[Sharesight API Documentation](https://portfolio.sharesight.com/api)\n-
+  Help -- [Sharesight Connect](https://help.sharesight.com/sharesight_connect/)"
+:author:
+  :id: author_6
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-11-29T01:58:31+00:00'
+    :created_at: '2016-06-29T23:17:30+00:00'
+    :id: author_6
+  :display_name: James Sullivan
+  :first_name: James
+  :last_name: Sullivan
+  :title: Intern
+  :company: Sharesight
+:categories:
+- :id: 1n7zYPdite6iYOeAMQAWSs
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:15+00:00'
+    :created_at: '2016-07-07T23:35:58+00:00'
+    :id: 1n7zYPdite6iYOeAMQAWSs
+  :name: Company News
+  :description: Follow the latest Sharesight company news, including what the Sharesight
+    team is up to in our Australia and New Zealand offices.
+  :url_slug: company-news
+:created_at: !ruby/object:DateTime 2010-03-15 00:00:00.000000000 Z
+:meta_description: James Sullivan joined the Sharesight team as the Wellington Summer
+  of Code intern - here's what he got up to while working with us.
+:featured_image:
+  :title: James Sullivan - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2hNDwB5HpiGSOSgsquuK8U/b344559e606e6379b4949a2554cbbec2/featured_james-sullivan.jpg"
+  :_meta:
+    :updated_at: '2016-09-12T08:07:11+00:00'
+    :created_at: '2016-09-12T08:06:53+00:00'
+    :id: 2hNDwB5HpiGSOSgsquuK8U
+:wordpress_url: "/2010/03/15/my-summer-of-code/"
+:slug: my-summer-of-code

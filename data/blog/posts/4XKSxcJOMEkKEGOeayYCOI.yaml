@@ -1,0 +1,108 @@
+---
+:id: 4XKSxcJOMEkKEGOeayYCOI
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-10-30T08:13:45+00:00'
+  :created_at: '2017-10-30T03:52:45+00:00'
+  :id: 4XKSxcJOMEkKEGOeayYCOI
+:title: 2017 stock picking competition - October update
+:content: |-
+  Last year we emailed [Sharesight](/) clients asking them to nominate one ASX-listed stock they believed would be the top performer for the 2017 calendar year (January to December). Our mates at [Livewire](/partners/livewire/) did the same. They also invited some of Australia’s top fund managers to weigh-in as well. We then built virtual $500,000 ‘Sharesight Portfolios’ of the top 5 stock picks (with each stock weighted equally in the portfolio at $100,000). Our robo-adviser partner, [Six Park](/partners/six-park/), joined in to help serve as a benchmark of sorts.
+
+  ![featured - coins chess](//images.ctfassets.net/91sm3pewxzag/1RkV1BxXdqE2UQgwgsOEEo/34781ba66afbd33329b432f60e5c78b8/featured_coins-chess.jpg?w=950)
+
+  Three quarters are in the books for our stock picking competition. So after nine months, who is in the lead -- the Sharesight clients, the Livewire readers, the fund managers or the Six Park portfolios?
+
+  ![Stock Picking Competition - October 2017 - Performance](//images.ctfassets.net/91sm3pewxzag/175gSBonIyGEiImYMWGS8m/4205649efb9ef1cb022afd0008feb28c/screenshot_stock-picking-competition_2017-10_performance.png?w=950)
+
+  ## Performance
+
+  As at September 30, 2017, the fund managers have really started to outpace the field. Their 22% return is way out ahead of the pack, with the Livewire picks generating a respectable return and the Sharesight client picks failing to break even. Interestingly the Six Park Balanced portfolio has nearly matched the ASX 200 benchmark, although the spread between their balanced option and their Aggressive Growth portfolio is thus far narrow.
+
+  | Portfolio     | Total Return %     | Total Return $     |
+  | ---------- | ---------- | ---------- |
+  | <b>Sharesight</b>| <span style="color:red">-5.58%</span>|<span style="color:red">-$28,087</span>|
+  | <b>Fund Managers</b>| 22.48%       | $113,252       |
+  | <b>Livewire</b>| 6.47%       | $32,854       |
+  | <b>Benchmark</b><br>ASX 200 (STW)| 4.68%       | $23,380       |
+  | <b>Six Park - Aggressive Growth</b>| 5.68%       | $28,414       |
+  | <b>Six Park - Balanced</b>| 4.33%       | $21,627       |
+
+  ## What explains these returns?
+
+  Imdex (IMD) continues to be the best performing stock across all portfolios, up 57% so far this year. The only stock shared across all three portfolios, Altium (ALU), is the second best performer up over 36%. By comparison, Google (GOOGL), is up 13%.
+
+  The Sharesight portfolio has the unfortunate honour of owning the two worst performing (by far) stocks: Retail Food Group (RFG) and Vocus Group (VOC). These two dogs have erased over $70k from our initial $500k portfolio.
+
+  Six Park’s exposure to emerging markets (VGE) explains the bulk of the Aggressive Growth portfolio’s return. Five out of the six constituents in their Balanced portfolio are in positive territory, with only their exposure to infrastructure (DJRE) losing ground.
+
+  There’s an interesting polarity developing between the gainers and losers across all portfolios. The “worst” performing stock to gain ground is up over 8%, whereas the “best” performing loser is down 4%.
+
+  If you had invested equally across all portfolios you’d be up over 7%.
+
+  ![screenshot stock-picking-competition 2017-10 contribution-analysis-report](//images.ctfassets.net/91sm3pewxzag/soes418AcSGoW6qOWiamS/dadad35a6408086ea7bc41f824db2470/screenshot_stock-picking-competition_2017-10_contribution-analysis-report.png?w=950)
+
+  ## Track the portfolios
+
+  The best way to analyse the return characteristics of these portfolios is to:
+
+  1. [Sign up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) if you don't already have one.
+  2. Request to [have the portfolios shared with you](https://goo.gl/forms/NDKU7TOFmHlObHHF3) so they appear in your Sharesight account.
+  3. Run a [Performance Report](https://help.sharesight.com/performance_report/) or [Contribution Analysis Report](/blog/announcing-the-contribution-analysis-report/).
+
+  ### Portfolio notes
+
+  - We’ve “invested” $100,000 in each holding while assuming a brokerage fee for each buy transaction of $9.95.
+  - All dividends are/will be included in the total performance calculation, and are reinvested. Total performance also factors in currency effects.
+  - Performance figures are total return (versus annualised) as none of the portfolio positions has been held for longer than one year.
+  - The benchmark return figure assumes that all $500,000 was invested in the benchmark ETF.
+  - Allocation to the underlying ETFs in the Six Park portfolios are based on their prescribed asset allocations.
+
+  ### All articles in this series
+  - [2017 stock picking competition](/blog/2017-stock-picking-competition/)
+  - [2017 stock picking competition - survey results](/blog/2017-stock-picking-competition--survey-results/)
+  - [2017 stock picking competition - February update](/blog/2017-stock-picking-competition--february-update/)
+  - [2017 stock picking competition - April update](/blog/2017-stock-picking-competition--april-update/)
+  - [2017 stock picking competition - July update](/blog/2017-stock-picking-competition--july-update/)
+  - [2017 stock picking competition - October update](/blog/2017-stock-picking-competition--october-update/)
+
+  ### FURTHER READING
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [How much money can Sharesight save you?](/blog/how-much-money-can-sharesight-save-you/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-10-30 15:26:00.000000000 +11:00
+:meta_description: 'Three quarters are in the books for our stock picking competition.
+  See who''s in the lead so far: Sharesight customers, Livewire readers, or the Fund
+  Managers. '
+:featured_image:
+  :title: featured - coins chess
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1RkV1BxXdqE2UQgwgsOEEo/34781ba66afbd33329b432f60e5c78b8/featured_coins-chess.jpg"
+  :_meta:
+    :updated_at: '2017-10-30T04:26:20+00:00'
+    :created_at: '2017-10-30T04:25:57+00:00'
+    :id: 1RkV1BxXdqE2UQgwgsOEEo
+:slug: 2017-stock-picking-competition-october-update

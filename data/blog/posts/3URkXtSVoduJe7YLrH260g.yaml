@@ -1,0 +1,57 @@
+---
+:id: 3URkXtSVoduJe7YLrH260g
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-03-24T04:11:11+00:00'
+  :created_at: '2021-03-24T03:24:12+00:00'
+  :id: 3URkXtSVoduJe7YLrH260g
+:title: Sharesight release notes - February 2021
+:content: "This month we released our new [two factor authentication (2FA) solution](https://www.sharesight.com/blog/secure-your-sharesight-account-with-two-factor-authentication/).
+  We plan to add an option to trust your device for 30 days in a future release. \n\n![Sharesight
+  Release Notes February 2021](//images.ctfassets.net/91sm3pewxzag/3tS0Kuya0pwCNvN5nxnru7/932b5af61632650f85e8769a0f90fd25/Sharesight_Release_Notes_February_2021.jpg?w=950)\n\n##
+  New Functionality / Enhancements\n- Added a “Group by Currency” option to all reports.
+  This is particularly useful in the new Foreign Currency Valuation Report.\n- Redesigned
+  Reports Tab.\n- New [two factor authentication solution](https://www.sharesight.com/blog/secure-your-sharesight-account-with-two-factor-authentication/).\n\n##
+  Broker Import Functionality\n- Added support for Selfwealth contract notes with
+  US trades (Australia).\n\n### FURTHER READING\n\n* [Sharesight release notes – January
+  2021](https://www.sharesight.com/blog/sharesight-release-notes-january-2021/)\n*
+  [Sharesight release notes – December 2020](https://www.sharesight.com/blog/sharesight-release-notes-december-2020/)\n*
+  [Sharesight release notes - November 2020](https://www.sharesight.com/blog/sharesight-release-notes--november-2020/)\n*
+  [Sign up for Sharesight](https://portfolio.sharesight.com/signup)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2021-03-24 10:00:00.000000000 +11:00
+:meta_description: 'This month we released our new two factor authentication (2FA)
+  solution. We plan to add an option to trust your device for 30 days in a future
+  release. '
+:featured_image:
+  :title: Sharesight Release Notes February 2021
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3tS0Kuya0pwCNvN5nxnru7/932b5af61632650f85e8769a0f90fd25/Sharesight_Release_Notes_February_2021.jpg"
+  :_meta:
+    :updated_at: '2021-03-24T03:30:16+00:00'
+    :created_at: '2021-03-24T03:29:34+00:00'
+    :id: 3tS0Kuya0pwCNvN5nxnru7
+:hide_from_feed: false
+:slug: sharesight-release-notes-february-2021

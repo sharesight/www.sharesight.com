@@ -1,0 +1,156 @@
+---
+:id: 5Yr5bDTH2MCqs2WMO4iwiE
+:_meta:
+  :content_type_id: post
+  :updated_at: '2020-04-17T05:46:43+00:00'
+  :created_at: '2017-08-02T06:09:12+00:00'
+  :id: 5Yr5bDTH2MCqs2WMO4iwiE
+:title: 3 easy ways to automate your portfolio admin
+:content: "Investors tend to fall into two camps when it comes to staying on top of
+  their [investment portfolios](https://www.sharesight.com/). They either attempt
+  to track every minor detail and metric in a complicated spreadsheet – or they don’t
+  really bother doing it at all.\n\nDon’t get us wrong – [spreadsheets are awesome](https://www.sharesight.com/blog/ode-to-the-spreadsheet/)
+  and certainly serve their purpose. But there are [many reasons](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+  why you shouldn’t track your portfolio in a spreadsheet. Alternatively, if you’re
+  not actively tracking and engaging with your portfolio, how do you know you’re making
+  the most from your investments? \n\nSure, checking your online broker’s reports
+  is a good start, but they [often fail](https://www.sharesight.com/blog/how-your-brokers-performance-numbers-mislead-you/)
+  to incorporate the impact of things like brokerage fees, currency effects and corporate
+  actions when calculating your return and don’t give you the full picture. (Here’s
+  a [real-life example](https://www.sharesight.com/blog/why-i-use-sharesight-to-track-my-portfolio/)
+  of how an unreported share split made an investor think she was down -47.73%, when
+  she was really up nearly 5%.)\n\n![3 easy ways to automate your portfolio admin](//images.ctfassets.net/91sm3pewxzag/42Etxbx92jY2BQew3AbiiU/eb28c3fb238ce5a6ebab01055682f305/3_easy_ways_to_automate_your_portfolio_admin.jpg?w=950)\n\n##
+  See all your investments in one place\n\nLike most things in life, the key to staying
+  on top of your investments over the long run is to automate as many of the tedious
+  admin tasks that eat up your time as possible. \n\nThe first step in automating
+  your portfolio admin should be to [sign-up for a free Sharesight account](https://portfolio.sharesight.com/signup).
+  Import your holdings (either your entire trading history or simply your opening
+  balances), then sit back and watch as price and dividend data is updated automatically,
+  so you can spend more time tracking your investment performance, and less on tedious
+  admin tasks. \n\nOnce your portfolio is set up, you’ll want to automate as many
+  of the day-to-day admin tasks as possible. Here are 3 easy ways to do that:\n\n##
+  1. Track ongoing trades automatically\n\nKeeping your portfolio up-to-date with
+  your latest trades is a crucial step to staying ahead of your portfolio admin, as
+  it ensures that your performance figures are accurate and allows you to make timely
+  data-driven investing decisions. There are 3 ways to get your new trades into Sharesight:\n\n###
+  **Sync your brokerage account via Sharesight Connect**\n\nIf you trade with any
+  of the following brokers, then you’re in luck:\n\n* [CMC Markets Stockbroking (AU)](https://www.sharesight.com/partners/cmc/)\n\n*
+  [Bendigo Invest Direct (AU)](https://www.sharesight.com/partners/bendigo-bank/)\n\n*
+  [Bank of Queensland (AU)](https://www.sharesight.com/partners/boq/)\n\n* [eBroking/eSuperfund
+  (AU)](https://www.sharesight.com/partners/esuperfund/)\n\n* [Direct Broking (NZ)](https://www.sharesight.com/partners/direct-broking/)\n\n*
+  [Amscot (AU)](https://www.sharesight.com/blog/sharesight-connects-to-amscot-stockbroking-and-state-one/)\n\nThat’s
+  because these brokers have partnered with Sharesight to allow their customers to
+  automatically sync ongoing trades through the [Sharesight API](https://portfolio.sharesight.com/api).
+  Here’s how to connect one of those brokerage accounts using [Sharesight Connect](https://help.sharesight.com/sharesight_connect/).
+  And for those of you in Canada or the UK, stay tuned for upcoming Sharesight Connect
+  broker integrations in your region.\n\n### Connect your brokerage account through
+  an integration\n\nIn addition to the Sharesight API, a number of custom integrations
+  exist between Sharesight and online brokers that allow you to easily import trades
+  to a Sharesight portfolio, including:\n\n* [Saxo Markets](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/)\n\n*
+  [Interactive Brokers](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-interactive-brokers/)\n\n![Integrations](//images.ctfassets.net/91sm3pewxzag/14YM4Iw9bjCGdCDkBzIRBG/a76b5f168411c2f0a2ccec9cb12d9bb7/Integrations.png?w=950)\n\n###
+  Import trades automatically from broker Trade Confirmation Emails\n\nIf your online
+  broker provides Trade Confirmation Emails or you can download PDFs from your account
+  of these trades, then you can forward those confirmations to Sharesight and we’ll
+  automagically \"read\" the trade details from the contents and add the trades to
+  your portfolio.\n\nIt’s just a matter of forwarding the emails to us, or including
+  Sharesight as a recipient on your trade confirmation emails in your brokerage account.
+  Learn more by visiting: *[Import trades via your broker’s trade confirmations](https://help.sharesight.com/contract_notes/)*.
+  We currently support Trade Confirmation Emails from [100+ online brokers](https://help.sharesight.com/supported_brokers/)
+  – If your broker's are not yet available in Sharesight, leave a message in our [community
+  forum](https://community.sharesight.com/) if you’d like us to add support for your
+  broker. \n\n![Brroker Email Import](//images.ctfassets.net/91sm3pewxzag/7pQrdm9UwYFL9gRBU9Vlji/57e252904f39c45cd9381e567505f329/Brroker_Email_Import.png?w=950)\n\n##
+  2. Keep up with corporate actions\n\nSharesight automatically tracks the vast majority
+  of corporate actions that occur throughout the year – including dividends and share
+  splits. They appear as unconfirmed transactions on the portfolio overview or individual
+  holding pages:\n\n![Unconfirmed transactions](//images.ctfassets.net/91sm3pewxzag/69FXMJdoaHS4m8AgfzSMN/6f4037853ce84be4614aebb3bd390bcf/Unconfirmed_transactions.png?w=950)\n\nFrom
+  the individual holding page, simply click on the unconfirmed transactions icon in
+  order to review and confirm the transaction(s):\n\n![Confirm transactions](//images.ctfassets.net/91sm3pewxzag/4mDOz6Fm8hUmv870Xod44T/423789ab968b43d58b2083358c01ef6c/Confirm_transactions.png?w=950)\n\nIn
+  the event of a complex corporate action which requires a decision on your part,
+  you’ll need to manually adjust your portfolio according to your particular situation.
+  Here’s how:\n\n* If you hold shares in a listed company that is wholly acquired
+  by another listed company (with [100% rollover relief](https://www.ato.gov.au/general/capital-gains-tax/shares,-units-and-similar-investments/takeovers-and-mergers,-scrip-for-scrip-rollover/)),
+  you can use our new [Merge Holding](https://www.sharesight.com/blog/announcing-the-merge-holding-feature/)
+  feature to record the company merger in your portfolio.\n\n* See our collection
+  of [major corporate actions](https://www.sharesight.com/blog/corporate-actions/)
+  and how to handle them in Sharesight.\n\n* Visit our [corporate actions help documentation](https://help.sharesight.com/corporate-actions/)
+  for step-by-step instructions on how to handle other corporate actions in Sharesight.\n\nWe
+  recommend reviewing your corporate actions on a monthly basis. This ensures the
+  accuracy of your performance figures, and depending on the number of holdings in
+  your portfolio (and how active they are in terms of corporate actions), it can save
+  you a lot of time at the end of the year.\n\n## 3. Track your dividend reinvestment
+  plans (DRPs)\n\nSpeaking of dividends, if you’re partaking in a dividend reinvestment
+  plan (also known as a DRP or DRIP), it’s especially important to properly track
+  its impact on your portfolio. Sharesight makes it easy:\n\n* If you hold shares
+  with companies listed on the ASX or NZX and have opted-in to their dividend reinvestment
+  plan, then you’ll want to activate Sharesight’s [Auto Dividend Reinvestment feature](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  for the holding, which will automatically track a DRP by reinvesting all dividends.
+  It will even let you automatically [track the residual balances](https://www.sharesight.com/blog/track-drp-residual-balances/)
+  that can occur with some DRPs.\n\n* For shares listed on other markets, you can
+  manually record a dividend reinvestment when you [add or edit a dividend payment](https://help.sharesight.com/recording-trades-dividends-and-adjustments/).\n\nEither
+  way, when a dividend reinvestment is recorded in Sharesight, a dividend reinvestment
+  trade for the new shares is recorded in your portfolio, in addition to the dividend
+  record. And your performance figures are updated accordingly.\n\n![Dividend Reinvestment
+  Plan](//images.ctfassets.net/91sm3pewxzag/2Kf1asmCjJx1PYBAgY2jJ5/51af692d8a6cd0b5f17d8389dc3ec78c/Dividend_Reinvestment_Plan.png?w=950)\n\nAutomating
+  day-to-day portfolio transactions can save you hours of manual updates at the end
+  of the year. And with everything always up to date and in one place, you’ll always
+  know exactly how you’re doing.\n\n## Automate your portfolio tracking with Sharesight\nSharesight
+  was built to make it easy for investors like you to *spend more time investing*
+  and less time updating spreadsheets. Here’s how:\n\n- Automatically track your daily
+  price & currency fluctuations, as well as handle [corporate actions](https://help.sharesight.com/corporate-actions/)
+  such as dividends and share splits.\n\n- Get the true picture of your investment
+  performance, including the impact of brokerage fees, dividends, and capital gains
+  with Sharesight’s [annualised performance calculation methodology](https://help.sharesight.com/performance_calculation_method/).\n\n-
+  Run powerful tax reports built for investors, including [Capital Gains Tax](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/)
+  (Australia and Canada), [Unrealised Capital Gains, (Australia) ](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)and
+  [Taxable Income](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/)
+  (All regions).\n\nThe best way to understand what Sharesight is all about is to
+  [sign up and try Sharesight for free](https://portfolio.sharesight.com/signup).
+  We’re confident that you’ll agree that it’s the best portfolio tracker for investors.\n\n###
+  FURTHER READING\n\n* [8 tips to get your portfolio on track today](https://www.sharesight.com/blog/8-tips-to-get-your-portfolio-on-track-today/)\n\n*
+  [Corporate actions and your investment performance](https://www.sharesight.com/blog/corporate-actions-and-your-investment-performance/)\n\n*
+  [3 reasons why you need to be tracking dividends](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/)"
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2019-10-15 13:00:00.000000000 +10:00
+:meta_description: 'To stay on top of your investment portfolio, you’ll want to automate
+  as many of the day-to-day admin tasks as possible. Here are 3 easy ways to do that:'
+:featured_image:
+  :title: 3 easy ways to automate your portfolio admin
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/42Etxbx92jY2BQew3AbiiU/eb28c3fb238ce5a6ebab01055682f305/3_easy_ways_to_automate_your_portfolio_admin.jpg"
+  :_meta:
+    :updated_at: '2019-10-14T23:59:09+00:00'
+    :created_at: '2019-10-14T23:59:06+00:00'
+    :id: 42Etxbx92jY2BQew3AbiiU
+:hide_from_feed: false
+:slug: 3-easy-ways-to-automate-your-portfolio-admin

@@ -1,0 +1,162 @@
+---
+:id: 4uO5KgKh9Kqa2keOsUC4Ka
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-24T06:03:51+00:00'
+  :created_at: '2016-11-16T21:37:01+00:00'
+  :id: 4uO5KgKh9Kqa2keOsUC4Ka
+:title: How your broker’s performance numbers mislead you
+:url_slug: how-your-brokers-performance-numbers-mislead-you
+:content: "As an investor, knowing the true performance of your investment portfolio
+  is crucial. You may ask, \"Why do I need Sharesight to track my performance? I already
+  get those numbers from my broker.\" The truth is, while most brokers provide some
+  form of performance metrics, these metrics are typically reduced to daily price
+  movements and capital gains measured from the stock’s purchase date. \n\nUnlike
+  most brokers, Sharesight gives investors the full picture of their performance by
+  calculating returns on an annualised basis, including the impact of **capital gains
+  and losses**, **dividends**, **brokerage fees** and **currency fluctuations**. With
+  the ability to track the performance of more than 240,000 stocks, ETFs and funds
+  in [over 40 major global markets](https://www.sharesight.com/blog/track-stocks-global-exchanges-sharesight/),
+  Sharesight is the perfect place to track *all of your investments in one place*.
+  \n\n![Broker vs Sharesight 0](//images.ctfassets.net/91sm3pewxzag/3Uu4nk6fiWt9jGky4JJ7DH/937b85a75b90f8e6d5f4e0517ed33c14/Broker_vs_Sharesight_0_.jpg?w=950)\n\nThis
+  post will explain why your broker’s performance numbers are misleading, and how
+  Sharesight provides investors with the true picture of their returns. \n\n## Brokers
+  don’t consider the impact of time\n\nIf you look at the performance figures provided
+  by your broker compared to Sharesight, you will notice a key difference: brokers
+  tend to focus on daily price movements and capital gains since the holding’s purchase
+  date, while Sharesight provides you with [annualised returns](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/).
+  For example, here is a table representing the performance data given by a typical
+  broker for a small basket of stocks:\n\n| Code      | Last price     | Net avg.
+  price     | Cost     | Market value     | Day gain     | P&L     | P&L %     |\n|
+  ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ----------
+  | ---------- |\n| CHC       | 12.260       | 10.316       | 1,485.56       | 1,765.44
+  \      | —       | 279.88       | 18.54%       |\n| CSL       | **↓**260.120       |
+  290.931       | 2,036.52       | 1,820.84       | -11.83       | -215.68       |
+  -10.51%       |\n| NDQ       | **↑**28.120       | 27.563       | 4,796.00       |
+  4,892.88       | 13.92       | 96.88       | 2.02%       |\n| STW       | **↓**63.750
+  \      | 56.208       | 2,979.00       | 3,378.75       | -12.72       | 399.75
+  \      | 13.42%       |\n\n<small> Performance numbers for a small basket of stocks
+  and ETFs, pulled from a typical broker. </small>\n\nAs you can see, the broker puts
+  a lot of emphasis on daily price changes. While this could be useful if you’re just
+  trading on these daily price swings, it’s essentially useless for calculating your
+  investment performance over the long term. Fortunately, some brokers also show you
+  your capital gains or losses to date, as seen above under ‘P&L’. This figure is
+  handy to know, but it is meaningless for comparing the performance of one investment
+  to another.\n\nHere is what the same trades look like in Sharesight: \n\n![stocks
+  in Sharesight 1](//images.ctfassets.net/91sm3pewxzag/6xZQD5glzYDXSu3oF4vsKy/fbc6df5bae3556c130e6c87b48f263e5/stocks_in_Sharesight_1_.png?w=950)\n<small>
+  The same stocks in Sharesight, with a slight difference in the price due to Sharesight’s
+  20 minute delayed live pricing. </small>\n\nWith Sharesight, returns are calculated
+  by default on an annualised basis. Why is this important? Let’s look at the example
+  of Charter Hall (ASX: CHC) above. The broker lists capital gains as 18.54% since
+  the stock’s purchase date, which was in 2019. In the past year however, this stock
+  achieved capital gains of 30.4%. This annualised performance figure is meaningful,
+  because it allows an investor to directly compare the performance of this investment
+  to other holdings in their portfolio over the same period, as well as hypothetical
+  investments they could have made instead. \n\n## Brokers don’t track dividends\n\nIn
+  most cases, dividends are the responsibility of the share registries or stock transfer
+  agents, not brokers. This means if you want to keep track of how much you’re earning
+  inclusive of dividend income, you will need to source this information from paper
+  statements, share registry websites or a combination of both. \n\nIt is important
+  to [keep track of dividend income](https://www.sharesight.com/dividend-tracker/)
+  because it can have a significant impact on your returns. This can be seen from
+  the screenshot below, which shows an LSE stock with dividends contributing to 5.52%
+  of the total return against capital losses of -10.14%, resulting in a net total
+  return of -4.62%. \n\n![Dividend returns Sharesight 2](//images.ctfassets.net/91sm3pewxzag/4KqbscSORgJaW3BJLtequ9/16e97b692d41fb93f24716e058967d88/Dividend_returns_Sharesight_2_.png?w=950)\n<small>
+  An example of an LSE stock where dividends contribute significantly to returns.
+  </small>\n\nSharesight automatically [tracks dividends](https://www.sharesight.com/dividend-tracker/),
+  including the option to track [dividend reinvestment plans](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  (DRPs) with the Auto Dividend Reinvestment feature, and view upcoming dividends
+  that have been announced with the [Future Income Report](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/).
+  \n\n## Brokerage fees are ignored\n\nWith most brokers relying on brokerage fees
+  and other transaction costs as a source of profit, it makes sense that they don’t
+  call attention to just how much these fees impact your returns. Brokerage fees can
+  certainly add up, especially in proportion to small trade parcels or in large portfolios
+  filled with trades. With Sharesight, you can record your brokerage fees for each
+  trade, with these costs being included when calculating your capital gains. \n\n##
+  Currency fluctuations are not factored in \n\nAnother important element that most
+  brokers fail to include in their performance numbers is the impact of foreign currency
+  fluctuations. This can have a significant impact on returns for anyone who invests
+  globally, as can be seen in the screenshot example below, which shows a stock holding
+  where foreign currency contributes -24.90% to the total return against 78.51% capital
+  gains and 1.14% dividends, resulting in a net total return of 54.75%. \n\n![Foreign
+  currency Sharesight 3](//images.ctfassets.net/91sm3pewxzag/4R3EnbYbKOWXy6O19T9lrK/23fce16f7c758dee11f053e4688fb222/Foreign_currency_Sharesight_3_.png?w=950)\n<small>
+  An example of how currency fluctuations impact an investor’s holding of a Nasdaq
+  stock in a non-US portfolio. </small>\n\nWith Sharesight, users can track the performance
+  of their investments in [over 75 different currencies](https://www.sharesight.com/blog/track-investments-in-fx-currencies-with-sharesight/)
+  – including [cryptocurrencies](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)
+  – with access to live (20 minute delayed) and end-of-day pricing updates. \n\n##
+  What you get from your broker compared to Sharesight\n\n|      | Most brokers    |
+  Sharesight     |\n| ---------- | ---------- | ---------- |\n| __Performance__       |
+  Simple return. Doesn’t include dividends, brokerage, currency fluctuations       |
+  Annualised, money-weighted total return. Incorporates dividends, brokerage, currency
+  fluctuations       |\n| __Performance period__       | Limited: often only \"since
+  yesterday\", or “since first purchase”       | Any time period       |\n| __Dividends__
+  \      | No       | [Yes](https://www.sharesight.com/dividend-tracker/) – automatically
+  displays the exact dividends based on how many shares you own (these can be edited),
+  and they are factored into your total return       |\n| __DRPs/DRIPs__       | No
+  \      | [Yes](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  – and included in total return       |\n| __Foreign exchange impacts__       | No
+  currency fluctuations as foreign investments often aren’t tracked against your home
+  currency       | Yes – converts any foreign investments back to the portfolio’s
+  home currency (on a daily basis)       |\n| __Tax reporting__       | Limited, if
+  any       | [Yes](https://help.sharesight.com/reports/)       |\n| __Benchmarking__
+  \      | No       | [Yes](https://www.sharesight.com/blog/benchmark-your-portfolio-against-any-stock-etf-or-fund/)
+  \      |\n\n## Don’t be misled by your broker, try Sharesight today\n\nIf you’re
+  not already using Sharesight, what are you waiting for? Join thousands of self-directed
+  investors like yourself who are using Sharesight to get the full picture of their
+  investment performance. [Sign up](https://portfolio.sharesight.com/signup) today
+  so you can: \n\n* Track the price and performance all of your investments in one
+  place, including stocks, [mutual funds](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/),
+  [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/)
+  and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)\n\n*
+  Automatically track your [dividend and distribution income](https://www.sharesight.com/dividend-tracker/)
+  from stocks, ETFs and mutual funds\n\n* Run powerful reports built for investors,
+  such as [Performance](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/),
+  [Portfolio Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/),
+  [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/)
+  and [Future Income](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/)
+  (upcoming dividends)\n\n* Easily [share access of your portfolio](https://www.youtube.com/watch?v=9nSd-PmryGM)
+  with family members, your accountant or other financial professionals so they can
+  see the same picture of your investments as you do\n\n[Sign up for a free account](https://portfolio.sharesight.com/signup)
+  to get started tracking your investments (and tax) today. \n\n![Sharesight devices
+  4](//images.ctfassets.net/91sm3pewxzag/zSVnDdMhP7qazbQkdkJ75/0c2fa2d985def81b59acc4ece96b275b/Sharesight_devices_4.jpg?w=950)\n\n###
+  FURTHER READING\n\n* [What your broker tells you vs what they actually mean](https://www.sharesight.com/blog/what-your-broker-tells-you-vs-what-they-actually-mean/)\n\n*
+  [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/why-i-use-sharesight-to-track-my-portfolio/)\n\n*
+  [3 reasons why you need to be tracking dividends](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/)\n"
+:author:
+  :id: 1V7atykNwuMwG6BxNopvP5
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-07-22T04:21:31+00:00'
+    :created_at: '2020-07-22T04:17:18+00:00'
+    :id: 1V7atykNwuMwG6BxNopvP5
+  :display_name: Stephanie Stefanovic
+  :first_name: Stephanie
+  :last_name: Stefanovic
+  :title: Content Writer
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2021-03-26 10:00:00.000000000 +11:00
+:meta_description: 'This post will explain why your broker’s performance numbers are
+  misleading, and how Sharesight provides investors with the true picture of their
+  returns. '
+:featured_image:
+  :title: Broker vs Sharesight 0
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/21xIRvM8ShZG3ZKgt3CWH8/a8ad09885601109487200d3c24f98354/Broker_vs_Sharesight_0_.jpg"
+  :_meta:
+    :updated_at: '2021-03-25T23:32:26+00:00'
+    :created_at: '2021-03-25T23:32:06+00:00'
+    :id: 21xIRvM8ShZG3ZKgt3CWH8
+:hide_from_feed: false
+:slug: how-your-brokers-performance-numbers-mislead-you

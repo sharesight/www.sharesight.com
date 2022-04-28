@@ -1,0 +1,81 @@
+---
+:id: 7cvD2EZjEJ4zIr7tLjULvY
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-12-17T05:39:16+00:00'
+  :created_at: '2019-08-26T01:52:50+00:00'
+  :id: 7cvD2EZjEJ4zIr7tLjULvY
+:title: Improved stock market news in Sharesight
+:content: |-
+  Being an informed investor means having access to the latest news and insights that impact your investments. Sharesight’s news feed feature is just one way investors can access crucial information that might impact a stock’s price.
+
+  After adding [The Motley Fool Singapore insights](https://www.sharesight.com/blog/get-the-motley-fool-singapore-insights-in-sharesight/) to the Sharesight news feed last month, we’ve released a new improvement that consolidates all the latest news from across our content partners into a single news feed for each stock, rather than potentially hiding news behind tabs for each news provider.
+
+  ![Improved stock market news in Sharesight](//images.ctfassets.net/91sm3pewxzag/35AEZRPY5sBhjU55H4wxZW/3afff41d835dad248ccf8e8e4e467759/Improved_stock_market_news_in_Sharesight.jpg?w=950)
+
+  ## Improved news feed layout
+
+  For any stock listed with news available, you will now see a single news feed for that stock when viewing the holding in Sharesight, either through the share checker, or when viewing a particular holding. Clicking the links will take you to the news site to read more. Below we see the latest news for Telstra, which illustrates how we identify the source of each article in the news feed -- in this case, from [Firstlinks](/partners/firstlinks/), and [Livewire](/partners/livewire/):
+
+  ![Telstra stock news](//images.ctfassets.net/91sm3pewxzag/3OnDFBApHNnc2DjncGZDP2/5f53ac5412727603a022aead00428b47/Telstra_stock_news.png?w=950)
+
+  ## More stock news feeds coming to Sharesight
+
+  Currently users will mostly see news on ASX and SGX listed stocks due to coverage provided by our [current news partners](https://www.sharesight.com/partners/research-providers/). We are however keen to work with other publishers to add their news feeds to Sharesight stocks across all the markets Sharesight covers.
+
+  If you’re a potential content partner, reach out -- we’d love to hear from you.
+
+  ## Be an informed investor with Sharesight
+
+  Sharesight not only helps you access the latest news and insights to make informed decisions, with Sharesight you can:
+
+  * Get the true picture of your investment performance, including the impact of brokerage fees, dividends, and capital gains with Sharesight’s [annualised performance calculation methodology](https://help.sharesight.com/nz/performance_calculation_method/)
+
+  * Automatically track your daily price & currency fluctuations, as well as handle [corporate actions](https://help.sharesight.com/nz/corporate-actions/) such as dividends and share splits
+
+  * See upcoming dividends with the [Future Income Report](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/)
+
+  * Run powerful tax reports built for investors, including [Capital Gains Tax](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/) (Australia and Canada), [Unrealised Capital Gains (Australia),](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/) and [Taxable Income](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/) (All regions)
+
+  The best way to understand what Sharesight is all about is to [sign up and try Sharesight for yourself](https://portfolio.sharesight.com/signup). We’re confident that you’ll agree that it’s the best portfolio tracker for informed investors.
+
+  ### FURTHER READING
+  - [Cuffelinks insights now available within Sharesight](https://www.sharesight.com/blog/cuffelinks-insights-now-available-within-sharesight/)
+  - [Get Livewire market insights within your portfolio](https://www.sharesight.com/blog/livewire-market-insights-within-your-portfolio/)
+  - [Get The Motley Fool UK insights in Sharesight](https://www.sharesight.com/blog/get-the-motley-fool-uk-insights-in-sharesight/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2019-08-26 10:00:00.000000000 +10:00
+:meta_description: Sharesight’s news feed feature is just one way investors can access
+  crucial information that might impact a stock’s price.
+:featured_image:
+  :title: Improved stock market news in Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/35AEZRPY5sBhjU55H4wxZW/3afff41d835dad248ccf8e8e4e467759/Improved_stock_market_news_in_Sharesight.jpg"
+  :_meta:
+    :updated_at: '2019-08-26T01:54:56+00:00'
+    :created_at: '2019-08-26T01:54:53+00:00'
+    :id: 35AEZRPY5sBhjU55H4wxZW
+:hide_from_feed: false
+:slug: improved-stock-market-news-in-sharesight

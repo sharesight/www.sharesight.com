@@ -1,0 +1,97 @@
+---
+:id: post_52607
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:31:34+00:00'
+  :created_at: '2016-06-29T23:16:06+00:00'
+  :id: post_52607
+:title: How to handle the Macquarie Group / Sydney Airport reconstruction
+:url_slug: macquarie-sydney-airport-reconstruction
+:content: |-
+  In 2013, Macquarie Group (MQG) announced they would be relinquishing their stake in Sydney Airports (SYD).
+
+  As part of the reconstruction, Macquarie Group distributed 1 Sydney Airport stapled security to its shareholders.
+
+  The distribution consisted of a 'Return of Capital' of $2.5737 per share and a ‘Special Dividend’ of $1.1563. This dividend was not received as a cash payment but is still considered assessable income, per the ATO Class Ruling [CR 2014/10](https://www.ato.gov.au/law/view/document?docid=CLR/CR201410/NAT/ATO/00001). The two components, together, brought the value/cost base of the new SYD stapled securities to $3.73.
+
+  **Note:** If entering this corporate action for the first time, you may find that immediately after the reconstruction, Macquarie implemented a ‘Consolidation’ of all shares on issue, meaning MQG shareholdings were reduced. The steps below are based on pre-consolidation quantities.
+
+  ###### Please note that we always advise you to consult your financial advisor or accountant regarding corporate actions, especially for tax purposes as we are not authorised to provide financial advice. The information below, including the dates is subject to change. We encourage you to review the [official MQG calculator offer document](http://www.macquarie.com.au/mgl/au/advisers/products-platforms/tools/calculators/mqg-ca-calculator) for full details.
+
+  ![Macquarie Group / Sydney Airport reconstruction - featured](//images.ctfassets.net/91sm3pewxzag/2ecyOf4CgMOQaEa604GcuK/538c561c65f5e65e339b1ae9fcf43f18/featured_syd-reconstruction.png?w=950)
+
+  ## How to handle the Macquarie Group / Sydney Airport reconstruction in Sharesight
+
+  ### Recording the 'Return of Capital' and 'Special Dividend'
+
+
+  1. [**Sign up for a FREE Sharesight account**](https://portfolio.sharesight.com/signup) and add your Macquarie Group (MQG) holding.
+
+  2. Once on the holdings page for Macquarie Group, click ‘Enter a New Transaction or Adjustment’. From the transaction ‘Type’ drop-down menu, select ‘Return of Capital’. Use the date 13/01/2014.
+
+  3. Calculate your ‘Capital Return Value’ figure by multiplying your pre-consolidation MQG quantity by $2.5737. Click ‘Save this trade’ to save.
+
+  ![How to handle the Macquarie Group / Sydney Airport Reconstruction](//images.ctfassets.net/91sm3pewxzag/5MSG07vsZOQu0YgiUcqcU0/bd8a59ef766244aa8b8c38985e929755/blog_syd_1.png?w=950)
+
+  ### Entering the 'Special Dividend' in Sharesight
+
+  1. Once you’ve entered the ‘Return of Capital’ transaction, you should be taken back to the Macquarie Group holdings page. Below your trade history, you will see your dividend/income history, along with a button ‘Enter a New Dividend’, which you will need to click to enter a new transaction.
+
+  2. In the new transaction box, enter 13/01/2014 as the paid date. The dividend was announced at $1.1563 and was 40% franked, 60% unfranked. To calculate the franked and unfranked portions, use the following: - Franked = MQG Quantity x $0.4625 - Unfranked = MQG Quantity x $0.6938 For any franking credits, refer to any statements received from Macquarie.
+
+  3. Enter a note to advise this is a special dividend as part of the reconstruction. Click save to finalise this dividend.
+
+  ![How to handle the Macquarie Group / Sydney Airport Reconstruction](//images.ctfassets.net/91sm3pewxzag/5LzOwin5eMwiSEcs2aIyoK/3081f5dc2c8b5381c39c0f961a3f32e7/blog_syd_2.png?w=950)
+
+  ### Entering your new Sydney Airport (SYD) holding
+
+  1. From the 'Overview' page or 'Holdings' tab, click ‘Add Holding’.
+
+  2. Search for SYD on the ASX. If you did not hold SYD prior to the reconstruction, you can use an 'Opening Balance' transaction. If you did, you will need to use a ‘Buy’ transaction. In either case, the SYD quantity will be the same as your pre-consolidated Macquarie shares. The purchase price (or average cost per share for an Opening Balance) should be $3.73 and the date, 13/01/2014.
+
+  ![How to handle the Macquarie Group / Sydney Airport Reconstruction](//images.ctfassets.net/91sm3pewxzag/3hHBcgPAfuKogIem008CmQ/02f28e533027f999e39c7519f37001a5/blog_syd_3.png?w=950)
+
+  **Note:** Sharesight will automatically handle the consolidation of your Macquarie Group shareholding.
+
+  ### GET HELP
+  - Community Forum -- [Corporate Action: How to handle the Macquarie Group / Sydney Airport reconstruction](https://community.sharesight.com/topics/what_do_i_do_now_re_macquarie_group)
+  - Help -- [Corporate Actions](https://help.sharesight.com/corporate-actions/)
+
+  ### FURTHER READING
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+  - Blog -- [Corporate actions and your investment performance](/blog/corporate-actions-and-your-investment-performance/)
+  - Blog -- [7 reasons why Sharesight is better than a spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_94
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-08-24T23:48:03+00:00'
+    :created_at: '2016-06-29T23:17:13+00:00'
+    :id: author_94
+  :display_name: Corporate Actions Desk
+  :first_name: Corporate Actions Desk
+  :last_name: ''
+:categories:
+- :id: 1YiQSm5LC0eiMocGIocaaO
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:27+00:00'
+    :created_at: '2016-11-15T02:35:38+00:00'
+    :id: 1YiQSm5LC0eiMocGIocaaO
+  :name: Corporate Actions
+  :description: A listing of popular complex corporate actions, including step-by-step
+    instructions on how to handle them in Sharesight.
+  :url_slug: corporate-actions
+:created_at: !ruby/object:DateTime 2016-04-27 00:00:00.000000000 Z
+:meta_description: Follow these instructions and learn how to handle the Macquarie
+  Group / Sydney Airport Reconstruction in your Sharesight portfolio.
+:featured_image:
+  :title: Macquarie Group / Sydney Airport reconstruction - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2ecyOf4CgMOQaEa604GcuK/538c561c65f5e65e339b1ae9fcf43f18/featured_syd-reconstruction.png"
+  :_meta:
+    :updated_at: '2016-09-02T00:16:02+00:00'
+    :created_at: '2016-09-02T00:15:35+00:00'
+    :id: 2ecyOf4CgMOQaEa604GcuK
+:wordpress_url: "/2016/04/27/macquarie-sydney-airport-reconstruction/"
+:slug: how-to-handle-the-macquarie-group-sydney-airport-reconstruction

@@ -1,0 +1,70 @@
+---
+:id: post_9892
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-02T00:53:55+00:00'
+  :created_at: '2016-06-29T23:17:39+00:00'
+  :id: post_9892
+:title: Record your share trades automatically!
+:url_slug: data-entry-whats-that-have-your-share-trades-recorded-automatically
+:content: |-
+  Our aim at [Sharesight](/) is to make share market investing as easy as possible for you. With that aim in mind, a little over a year ago we announced our newly developed Trade Confirmation Emails import feature. This saves you the hassle of having to manually record new trades into your Sharesight portfolio each time you buy and sell. Since then we have gone on to support over [30 different brokers](https://help.sharesight.com/supported_brokers/) across Australia and NZ!
+
+  For those of you who have yet to try it, here’s a quick rundown on how it all works and how to set it up (it’s really easy!).
+
+  ## How it works
+  Sharesight provides you with a unique email address for your portfolio and you instruct your Broker to send a copy of each of your Trade Confirmation Emails to this email address.
+
+  Each time we receive an email with a trade confirmation from your broker, Sharesight will automatically scan the attachment and create the trade record in your portfolio. As soon as the trade has been created (typically within 10 minutes) you will receive a confirmation email from Sharesight containing a link to the newly created trade. As an added bonus, a copy of your trade confirmation is attached to the trade record in Sharesight for future reference (trust me, your accountant will love it!).
+
+  ## How to record your share trades automatically
+
+  **Step 1** -- Make a note of the email address for your portfolio. To view the email address for your portfolio, you must enable the [Trade Confirmation Emails function](https://help.sharesight.com/contract_notes/). To do this, first click the ‘Integrations’ link and then click ‘Trade Confirmation Emails’. Once enabled, the email address for your portfolio will be displayed. This is the email address where you will send your Trade Confirmation Email PDF for processing.
+
+  **Step 2** -- Check that we currently support your broker. We maintain an up-to-date list of supported brokers [here](https://help.sharesight.com/supported_brokers/). If your broker is not on the list, ask us to support your broker by submitting an ‘idea’ to the [community forum](https://community.sharesight.com).
+
+  **Step 3** -- Send through your Trade Confirmation Emails (or get your broker to do it) Simply ask your broker to email your Trade Confirmation Emails to the email address generated in Step 1. Alternatively you can manually forward your contract note emails or set up a mail forwarding rule - just make sure to include the name of the broker ([as per our list of supported brokers](https://help.sharesight.com/supported_brokers/)) is in the subject line of the email.
+
+  That’s it, your portfolio will now be kept up to date automatically each time you trade!
+
+  ### FURTHER INFORMATION
+
+  - Help -- [Importing Trade Confirmation Emails](https://help.sharesight.com/contract_notes/)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+  - Blog -- [How your broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2013-04-17 00:00:00.000000000 Z
+:meta_description: Data entry, what's that? Learn how to record your share trades
+  automatically with Sharesight, your share portfolio tracker.
+:featured_image:
+  :title: Sharesight Hero - featured (1200x630)
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/49XiEawdQIE0K2aAKukAg0/342f02f932f652cc754a9a315565e348/featured_sharesight-hero.png"
+  :_meta:
+    :updated_at: '2016-09-09T05:08:56+00:00'
+    :created_at: '2016-07-22T03:54:16+00:00'
+    :id: 49XiEawdQIE0K2aAKukAg0
+:wordpress_url: "/2013/04/17/data-entry-whats-that-have-your-share-trades-recorded-automatically/"
+:slug: record-your-share-trades-automatically

@@ -1,0 +1,63 @@
+---
+:id: 4D2yuQMC4QAt559pG4MmRW
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-02-04T23:29:11+00:00'
+  :created_at: '2021-02-04T23:05:36+00:00'
+  :id: 4D2yuQMC4QAt559pG4MmRW
+:title: Sharesight release notes – January 2021
+:content: |
+  The team has been full steam ahead as we launch into the new year. We’ve rolled out some major changes to our infrastructure to ensure that Sharesight continues to be fast and reliable as we continue to scale. We’re also gearing up to release a [two factor authentication (2FA) solution](https://www.sharesight.com/blog/secure-your-sharesight-account-with-two-factor-authentication/) for enhanced security, keep an eye out for this in the coming weeks. Here’s what else we’ve been up to in the new year:
+
+  ![Sharesight Release Notes January 2021](//images.ctfassets.net/91sm3pewxzag/3NmqtrxlnpnErd5TUduCs3/3d00cbb1c2db6767dfe236725d94562c/Sharesight_Release_Notes_January_2021.jpg?w=950)
+
+  ## New Functionality / Enhancements
+  - Redesigned Billing Details page
+  - Redesigned All Trades Report
+  - Updates to our new Foreign Currency Valuation Report (available to Expert plan users with beta features enabled)
+
+  ## Broker Import Functionality
+  - Added support for [Hargreaves Lansdown managed fund trade confirmations](https://www.sharesight.com/blog/track-hargreaves-lansdown-trades/) (UK)
+
+  ### FURTHER READING
+
+  * [Sharesight release notes – December 2020](https://www.sharesight.com/blog/sharesight-release-notes-december-2020/)
+  * [Sharesight release notes - November 2020](https://www.sharesight.com/blog/sharesight-release-notes--november-2020/)
+  * [Sharesight release notes - October 2020](https://www.sharesight.com/blog/sharesight-release-notes--october-2020/)
+  * [Sign up for Sharesight](https://portfolio.sharesight.com/signup)
+:author:
+  :id: author_2
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:31+00:00'
+    :created_at: '2016-06-29T23:15:36+00:00'
+    :id: author_2
+  :display_name: Scott Ryburn
+  :first_name: Scott
+  :last_name: Ryburn
+  :title: CTO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+:created_at: !ruby/object:DateTime 2021-02-05 10:00:00.000000000 +11:00
+:meta_description: 'We’ve rolled out some major changes to our infrastructure to ensure
+  that Sharesight continues to be fast and reliable as we continue to scale. '
+:featured_image:
+  :title: Sharesight Release Notes January 2021
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3NmqtrxlnpnErd5TUduCs3/3d00cbb1c2db6767dfe236725d94562c/Sharesight_Release_Notes_January_2021.jpg"
+  :_meta:
+    :updated_at: '2021-02-04T23:28:06+00:00'
+    :created_at: '2021-02-04T23:24:58+00:00'
+    :id: 3NmqtrxlnpnErd5TUduCs3
+:hide_from_feed: false
+:slug: sharesight-release-notes-january-2021

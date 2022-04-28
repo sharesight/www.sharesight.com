@@ -1,0 +1,97 @@
+---
+:id: 3iACW7rkeIGaOoy88OIkIE
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-05-31T00:15:40+00:00'
+  :created_at: '2018-01-22T04:13:54+00:00'
+  :id: 3iACW7rkeIGaOoy88OIkIE
+:title: What ASX moving to blockchain SHOULD mean for investors
+:content: "###### NOTE: A version of this article first appeared in [Investor Daily](https://www.investordaily.com.au/analysis/42440-what-a-blockchain-powered-asx-should-mean).\n\nThe
+  ASX announced it will be replacing its settlement system, known as CHESS, with a
+  “[blockchain-inspired technology](http://www.afr.com/business/banking-and-finance/asx%20to%20upgrade%20to%20blythe%20master's%20blockchain-inspired%20digital%20asset%20holdings%20technology-20171206-h00avz).”
+  Those of us investment nerds with an interest in financial plumbing have been keeping
+  a close eye on this for years.\n\nI think this is a smart business move aimed at
+  reducing operating costs and hopefully a step towards more efficient markets. In
+  fact, [CHESS](/blog/what-is-chess/) was one of the world’s first electronic settlement
+  systems, and the ASX has long been recognised as a leader in technology. I recall
+  hearing about the ASX in my days at the Chicago Board of Trade (now owned by CME
+  Group), another leader in market tech (bitcoin futures anyone?). \n\nI’ve seen this
+  referred to as a “fintech revolution.” The reality is less exciting, but there is
+  a chance for investors to benefit.\n\n![Featured-Doug-Morris-Sharesight](//images.ctfassets.net/91sm3pewxzag/2bUTLDyCVu4MYio2I4eOO/e2a7068bd22a8b25bc33f856217f1b4a/Featured-Doug-Morris-Sharesight.jpg?w=950)\n\nThe
+  ASX is basically transitioning CHESS to a new database run by a company in which
+  they own a $40M stake. There is no open consensus approach (needed for a truly distributed
+  solution), and access to CHESS data will remain private.\n\nThe ASX is a conservative
+  outfit (rightly so) tasked with maintaining the stock market in the interest of
+  the Australian economy - a big job! Their approach to this transition makes sense
+  in that context. Not to mention, they’re a for-profit enterprise. My guess is the
+  efficiencies gained will be sold as “market speed” and “price discovery” features
+  to institutional trading houses and companies looking to list.\n\nThe ASX does,
+  however, have an opportunity in front of them, one that would create better outcomes
+  for millions of investors.\n\nIf the new CHESS system is truly what it’s cracked
+  up to be, “[an immutable, synchronised record that creates a provable, single version
+  of the truth](http://www.afr.com/business/banking-and-finance/asx%20to%20upgrade%20to%20blythe%20master's%20blockchain-inspired%20digital%20asset%20holdings%20technology-20171206-h00avz)”
+  then fair access should be granted to all parties. That includes everyone from market
+  makers to fintechs to individual investors wanting access to data that belongs to
+  them.\n\nIndeed, Treasurer Scott Morrison agrees, [saying](http://sjm.ministers.treasury.gov.au/media-release/128-2017/)
+  “we support the ASX's commitment to designing a system that does not raise barriers
+  to access for non-affiliated market operators and clearing and settlement facilities.”\n\nHistorically,
+  access to CHESS data was only granted to those with a seat at the big table: prime
+  brokers, banks, and financial institutions. Even though CHESS was designed to [lower
+  costs for investors](http://www.asx.com.au/documents/research/chess_brochure.pdf),
+  not everyone can gain access and they’re forced to rely on traditional, fee-layering
+  gatekeepers. Our repeated attempts at Sharesight to access CHESS data have gone
+  nowhere.\n\nIt ought to be easy for the ASX to create a permissioning system to
+  allow for secure access to CHESS data on an individualised basis. No modern record-keeping
+  system on the planet would be complete without one. If you’ve ever logged into something
+  using your Google or Facebook account, then you’ve benefited from this type of technology.\n\nEveryone
+  from technology companies, to upstart brokers, mobile apps, lenders, to traditional
+  advice professionals would benefit from equal access to CHESS because they could
+  in turn could provide more accurate and efficient services to their clients.\n\nThis
+  would be a boon for investors because they’d enjoy more products and services, and
+  ultimately lower costs.\n\nThe ASX, for its part, would benefit as well. First,
+  they could charge for access to CHESS. This is no different than a software company
+  licensing access to its API. Second, this would encourage more trading, and more
+  capital would enter the market.\n\nWhile perhaps not a revolutionary moment, the
+  ASX does have a golden opportunity to follow through on a fintech promise. Here’s
+  hoping they do the right thing for Australian investors.\n\n### FURTHER READING\n-
+  Sharesight.com -- [Sign up to Sharesight for FREE](https://portfolio.sharesight.com/signup)\n-
+  Blog -- [Sharesight wins 2017 Finnies award for Excellence in Industry Collaboration
+  & Partnerships](https://www.sharesight.com/blog/sharesight-wins-2017-finnies-award-for-excellence-in-industry-collaboration-partnerships/)\n-
+  Blog -- [Power your business with the Sharesight API](https://www.sharesight.com/blog/power-your-business-with-the-sharesight-api/)\n-
+  Blog -- [Why you should partner with Sharesight](https://www.sharesight.com/blog/why-you-should-partner-with-sharesight/)\n"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:12+00:00'
+    :created_at: '2016-07-07T23:44:29+00:00'
+    :id: 6g9VrvwGWs2KGC6WY6gOAE
+  :name: Thought Leadership
+  :description: 'A collection of thoughts and insights from the Sharesight team about
+    issues relating to investing and the fintech space. '
+  :url_slug: thought-leadership
+:created_at: !ruby/object:DateTime 2018-01-23 09:00:00.000000000 +11:00
+:meta_description: Everyone from fintech companies, to brokers, mobile apps, lenders
+  and financial advice professionals would benefit from equal access to ASX's CHESS
+  replacement.
+:featured_image:
+  :title: Featured-Doug-Morris-Sharesight
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2bUTLDyCVu4MYio2I4eOO/e2a7068bd22a8b25bc33f856217f1b4a/Featured-Doug-Morris-Sharesight.jpg"
+  :_meta:
+    :updated_at: '2018-01-22T04:25:14+00:00'
+    :created_at: '2018-01-22T04:24:25+00:00'
+    :id: 2bUTLDyCVu4MYio2I4eOO
+:slug: what-asx-moving-to-blockchain-should-mean-for-investors

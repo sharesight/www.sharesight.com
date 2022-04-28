@@ -1,0 +1,85 @@
+---
+:id: wzULUGX8Gl0NqoLDW42Os
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-03-24T23:54:02+00:00'
+  :created_at: '2019-06-26T23:38:04+00:00'
+  :id: wzULUGX8Gl0NqoLDW42Os
+:title: How to see upcoming dividends with Sharesight
+:url_slug: how-to-see-upcoming-dividends-with-sharesight
+:content: |-
+  If you’re a dividend investor, knowing the timing and amount of upcoming dividends is helpful in managing your cash flow. Sharesight’s [Future Income Report](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/) helps investors see all of the expected dividends (or distributions) announced to the market for stocks in their portfolios.
+
+  ![See upcoming dividends](//images.ctfassets.net/91sm3pewxzag/3Etyy92pACTC4EOYFKDe71/d44279f370d1f7b778028181caee9411/See_upcoming_dividends.jpg?w=950)
+
+  ## What is dividend investing?
+
+  Dividend investors search for investments with high yield, that is, investments that pay regular reliable income just by holding them. For equities, this income comes in the form of dividends paid by companies (or distributed by listed investment vehicles such as ETFs) to investors, usually (but not always) twice yearly.
+
+  Dividend investing is an investment strategy favoured by retirees (such as those in with a SMSF in the drawdown phase in Australia) to provide regular income, without needing to sell investments. Dividend investors need to be mindful though, that they don’t fall into the [dividend yield trap](https://www.sharesight.com/blog/what-is-a-dividend-yield-trap/).
+
+  ## How to see upcoming dividend payments
+
+  Listed companies will announce the expected dividend value (expressed as dollars/cents per share) and both the [ex-dividend date](https://www.sharesight.com/blog/ex-dividend-dates-and-their-impact-on-stock-prices-explained/) and payment date to the market ahead of time. After this dividend information has been announced, it will be available for any stock tracked by Sharesight (on any of the almost 30 exchanges we support) by running the[ Future Income Report](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/).
+
+  ## Sharesight’s Future Income Report
+
+  Sharesight’s [Future Income Report](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/) returns a list of all the announced upcoming dividends/distributions and expected interest payments from fixed income securities in your portfolio. In the below screenshot we can see a number of ASX stocks in a dividend investor portfolio with upcoming ex-dividend and payment dates several months into the future.
+
+  ![Upcoming Dividends](//images.ctfassets.net/91sm3pewxzag/36SwWM3SJbak9HzZC9NG6K/61fb5be3ba522fbd16c8511e17952274/Upcoming_Dividends.png?w=950)
+
+  The Future Income Report is most useful over time horizons looking a few months into the future, as the report returns a list of *announced* dividends, and companies (typically) only announce dividends that far into the future. Most Sharesight users run the Future Income Report during dividend reporting season (when the majority of dividends are announced), to give them an idea of what their income will be each dividend reporting season.
+
+  ## Sharesight -- built for dividend investors
+
+  [Sharesight](https://www.sharesight.com/nz/) was built for investors like you, and makes it easy to keep track of your portfolio. Here’s how:
+
+  * Automatically track your daily price & currency fluctuations, [dividends and distributions](https://www.sharesight.com/au/dividend-tracker/), and handle corporate actions such as share splits.
+
+  * See upcoming dividend payments with the[ Future Income Report](https://help.sharesight.com/future_income/).
+
+  * Calculate your dividend income with the [Taxable Income Report](https://help.sharesight.com/taxable_income/).
+
+  * Get the full picture of your investment performance, including the impact of brokerage fees, dividends, and capital gains with Sharesight’s annualised [performance calculation methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/).
+
+  ### FURTHER READING
+  - [How to track a dividend reinvestment plan](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  - [3 reasons why you need to be tracking dividends](https://www.sharesight.com/blog/3-reasons-why-you-need-to-be-tracking-dividends/)
+  - [What is a dividend yield trap?](https://www.sharesight.com/blog/what-is-a-dividend-yield-trap/)
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2019-06-27 10:00:00.000000000 +10:00
+:meta_description: Sharesight’s Future Income Report helps investors see all of the
+  expected dividends (or distributions) announced to the market for stocks in their
+  portfolios.
+:featured_image:
+  :title: See upcoming dividends
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3Etyy92pACTC4EOYFKDe71/d44279f370d1f7b778028181caee9411/See_upcoming_dividends.jpg"
+  :_meta:
+    :updated_at: '2019-06-26T23:43:52+00:00'
+    :created_at: '2019-06-26T23:43:48+00:00'
+    :id: 3Etyy92pACTC4EOYFKDe71
+:hide_from_feed: false
+:slug: how-to-see-upcoming-dividends-with-sharesight

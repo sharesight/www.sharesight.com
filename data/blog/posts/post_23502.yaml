@@ -1,0 +1,73 @@
+---
+:id: post_23502
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:19+00:00'
+  :created_at: '2016-06-29T23:16:35+00:00'
+  :id: post_23502
+:title: Is investing getting cheaper?
+:url_slug: investing-getting-cheaper
+:content: |-
+  Probably. The May 3rd edition of The Economist sheds some light on a topic we spend a lot of time thinking about at [Sharesight](/): the fixed costs of investing. Their [cover](http://www.economist.com/printedition/covers/2014-05-01/ap-e-eu-la-me-na-uk) teased the topic with the words “Death of the fund manager,” but they wouldn’t be The Economist without eye-catching headlines and witty captions.
+
+  ![Coins - featured](//images.ctfassets.net/91sm3pewxzag/4HjAdLscsgKgqUUQOawksg/b097050d633a2d7d8d1f15d797eb3db7/featured_coins.jpg?w=950)
+
+  No one is dying, that’s an overstatement. Last time we craned our necks at the [Perpetual](https://www.perpetual.com.au) skyscraper in Sydney it seemed like they were still paying the window washers. The briefing [*Will invest for food*](https://www.economist.com/news/briefing/21601500-books-and-music-investment-industry-being-squeezed-will-invest-food), was a terrific look at how passive, low-cost investment options are putting the squeeze on more expensive, active fund managers. People in workforces worldwide (or their employers or governments) are demanding lower fees for their investments, particularly for pensions. Now, we love active managers who earn their fees, but there are too many sub-par managers charging too much money to people who have no idea what they're paying for.
+
+  We’ll let you read the article yourselves, but they covered an especially fascinating topic: the psychology behind the price it takes to invest. Because returns on investments (particularly in funds) aren’t seen for years, the low-cost options aren’t the most popular. If commissions paid to advisers are baked into the net return, investors feel like they’re getting something for free, which they prefer to paying even a tiny, up-front fixed fee.
+
+  Furthermore, well-heeled investors tend to think that an expensive manager must be exclusive, and therefore, worth it. That’s bananas. Warren Buffett didn’t earn the moniker “Oracle of Omaha” by picking expensive stocks. Bernie Madoff was exclusive. Part of his con was turning people away from his fund to preserve an aura of exclusivity. How’d that turn out?
+
+  The Economist touched on the passive versus active debate too. This merits a separate blog post, but we believe most people have room for indexing in their portfolios. Especially folks who don’t have proper investment training, don’t have time to research, or are especially risk-averse. We love picking stocks, but it (should) take time and know-how.
+
+  We wish the briefing took one step further. They hinted at the topic by mentioning the changes in the music and book industry...
+
+  If the price of active management is being forced downwards, won’t this force active managers to seek larger customer bases? How will they sell their funds to us, the retail investors? Our hope is the downward pricing pressure on active managers spurs the creation of investment marketplaces. An “app store,” of options. We love high quality active managers with conviction. A marketplace would hopefully highlight the best active managers and allow investors to make like comparisons of fees and returns data alongside the index trackers.
+
+  At Sharesight, we provide a product that’s about letting you control your portfolio data. We’re passionate about the idea that you own your investment data and can tap into a marketplace of best-of-breed apps. Aggregation, access, and portability. After all, [we want to invest in everything that professionals have access to](/blog/the-high-price-of-investment-access/).
+
+  Investing will always introduce the unknown. The only certainty is that it will cost you something to do it and to keep track of it. So why not control what you can?
+
+  Oh, and as good as The Economist is at headlines and captions, we’ve yet to see one better than the [New York Post](https://nypost.com/2010/02/22/83-killer-in-denial/).
+
+  ### FURTHER READING
+
+  - Blog -- [How much money can Sharesight save you?](/blog/how-much-money-can-sharesight-save-you/)
+  - Blog -- [Zero dollar brokerage - too good to be true?](/blog/is-zero-dollar-brokerage-too-good-to-be-true/)
+  - Blog -- [What is automation worth to you?](/blog/what-is-automation-worth-to-you/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2014-05-06 00:00:00.000000000 Z
+:meta_description: Is investing getting cheaper? We hope so! Here are our thoughts
+  on the fund managers and the overall investment landscape.
+:featured_image:
+  :title: Coins - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4HjAdLscsgKgqUUQOawksg/b097050d633a2d7d8d1f15d797eb3db7/featured_coins.jpg"
+  :_meta:
+    :updated_at: '2016-09-13T11:55:31+00:00'
+    :created_at: '2016-09-13T11:55:20+00:00'
+    :id: 4HjAdLscsgKgqUUQOawksg
+:wordpress_url: "/2014/05/06/investing-getting-cheaper/"
+:slug: is-investing-getting-cheaper

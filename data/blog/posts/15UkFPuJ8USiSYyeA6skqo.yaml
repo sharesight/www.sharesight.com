@@ -1,0 +1,102 @@
+---
+:id: 15UkFPuJ8USiSYyeA6skqo
+:_meta:
+  :content_type_id: post
+  :updated_at: '2017-11-09T05:20:36+00:00'
+  :created_at: '2017-01-10T00:38:53+00:00'
+  :id: 15UkFPuJ8USiSYyeA6skqo
+:title: Announcing the Contribution Analysis Report
+:content: "Today we released a new feature, the Contribution Analysis Report. This
+  report is available for [Expert Plan](/pricing/) and [Sharesight Pro](/pro/) customers
+  and is now available in the [Reports](https://help.sharesight.com/reports/) menu.\n\n##
+  What the Contribution Analysis Report means for investors\n\nThe Contribution Analysis
+  Report explains the drivers behind your portfolio’s performance, be they stock selection,
+  [asset allocation](/blog/asset-allocation-reporting-in-sharesight/), or exposure
+  to certain countries, sectors, or industries. \n\nThis type of analysis is also
+  referred to as *[performance attribution](https://en.wikipedia.org/wiki/Performance_attribution)*
+  and is important for investors because it provides an explanation of how your returns
+  are derived and critically, where your portfolio tracks or diverges from the benchmark.
+  As any experienced investor knows, significant outperformers and underperformers
+  mask the real factors behind your historical performance.\n\n![Featured - Contribution
+  Analysis Report](//images.ctfassets.net/91sm3pewxzag/3xLWwN4lK8Cyciy6ec2O6M/0fb29262a6d484744aa8200f2c87a7ee/featured_contribution-analysis-report.png?w=950)\n\nWe’ve
+  packed a great deal of flexibility into the Contribution Analysis Report -- you
+  can view contribution analysis at the individual stock level, or roll up to various
+  categories -- including the [Custom Groups](/blog/announcing-custom-groups/) you’ve
+  created. The report can be run across the entire history of your portfolio or a
+  specific time period.\n\n## The Contribution Analysis Report in action\n\nHere’s
+  an example of the Contribution Analysis Report using my portfolio over the past
+  six months. In the first screenshot, I’ve chosen to view the individual holdings.
+  It’s immediately clear which positions have contributed to (and detracted from)
+  my total return, and by what degree.\n\n![Screenshot - Contribution Analysis Report
+  1](//images.ctfassets.net/91sm3pewxzag/1rrYSMY2jCiMquQIeK8UQe/5e1d1eac5e90457a63c05f80b4015e16/screenshot_contribution-analysis-report_1.png?w=950)\n\nOzforex
+  (OFX) really stung me, but Amazon (AMZN) and Alumina (AWC) helped. I can also see
+  that Xero (XRO) and my position in a global healthcare ETF (IXJ) weighed me down.\n\nBut
+  was it Amazon the company, or the tech sector in general that gave my portfolio
+  a lift? Should I rebalance my portfolio towards Aussie resources, or is there something
+  about Alumina (or aluminium) that explains that particular gain?\n\nSwitching to
+  the Industry Classification view provides the answer. The aluminium industry has
+  done well, but the general metals/mining space has done better -- a fact not apparent
+  on the individual holdings view. \n\nMore surprising is that my exposure to Financial
+  Conglomerates (Berkshire Hathaway and Magellan Financial) has given my portfolio
+  the biggest boost -- contributing almost 20% of my total return. Maybe it’s the
+  global blue chips inside those holdings that are really providing alpha.\n\n![Screenshot
+  - Contribution Analysis Report 2](//images.ctfassets.net/91sm3pewxzag/608PAgsE0ggWqo2GycaeGI/00469094171ae186a9c3959508fbeeeb/screenshot_contribution-analysis-report_2.png?w=950)\n\nSince
+  I like to invest in companies I follow closely and in specific themes, and because
+  companies don’t always fit into sector or industry classifications, I use Custom
+  Groups to apply my own particular worldview. Doing so is constructive because it
+  shows me that my macro ideas are generating positive returns on the whole. My “Core”
+  investments are doing exactly as I’d hoped, but surprisingly my tech shares are
+  contributing the least.\n\n![Screenshot - Contribution Analysis Report 3](//images.ctfassets.net/91sm3pewxzag/6pIgftnGvKogoIIQq8Gi60/3f4546e9369c087ee9a58214bb38fe9b/screenshot_contribution-analysis-report_3.png?w=950)\n\nWe
+  hope you enjoy the Contribution Analysis Report -- as always we’d love to hear your
+  feedback via our [Community Forum](https://community.sharesight.com).\n\n**UPDATE
+  - 9 Nov 2017)** -- You may now [run a Contribution Analysis Report on a Consolidated
+  View](/blog/new-functionality-for-consolidated-views/).\n\n### FURTHER READING\n-
+  Help -- [Contribution Analysis Report](https://help.sharesight.com/contribution-analysis-report/)\n-
+  Community Forum -- [Contribution Analysis Report](https://community.sharesight.com/topics/contribution-analysis-report)\n-
+  Blog -- [Announcing Custom Groups](/blog/announcing-custom-groups/)\n- Blog -- [Asset
+  allocation reporting in Sharesight](/blog/asset-allocation-reporting-in-sharesight/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2017-01-10 14:45:00.000000000 +11:00
+:meta_description: The Contribution Analysis Report explains the drivers behind your
+  portfolio’s performance by clearly identifying significant outperformers and underperformers.
+:featured_image:
+  :title: Featured - Contribution Analysis Report
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3xLWwN4lK8Cyciy6ec2O6M/0fb29262a6d484744aa8200f2c87a7ee/featured_contribution-analysis-report.png"
+  :_meta:
+    :updated_at: '2017-01-10T02:35:38+00:00'
+    :created_at: '2017-01-10T02:35:17+00:00'
+    :id: 3xLWwN4lK8Cyciy6ec2O6M
+:slug: announcing-the-contribution-analysis-report

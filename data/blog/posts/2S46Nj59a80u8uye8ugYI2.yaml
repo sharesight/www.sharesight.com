@@ -1,0 +1,119 @@
+---
+:id: 2S46Nj59a80u8uye8ugYI2
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-01-25T05:27:19+00:00'
+  :created_at: '2018-06-25T05:44:17+00:00'
+  :id: 2S46Nj59a80u8uye8ugYI2
+:title: How Sharesight makes ETF tax admin easy
+:content: "[Sharesight](/) makes tax time easy, and with our new and improved handling
+  of ETF distributions and more powerful Australian Taxable Income Report, things
+  just got even easier.\n\n## ETFs are an admin headache at tax time\n\n[ETFs (Exchange
+  Traded Funds)](https://www.investopedia.com/terms/e/etf.asp) are a type of investment
+  fund that can be bought and sold on stock exchanges. These funds issue distributions
+  (in essence, ‘dividends’) to shareholders throughout the financial year for any
+  income earned by the fund. ETFs are structured as unit trusts, which impacts how
+  the income earned (dividends, realised capital gains, interest, etc) is split across
+  different categories for reporting purposes. This increases the complexity of completing
+  your tax return for the Australian Tax Office (ATO).\n\nHere is an ETF income distribution
+  statement for a popular ASX-listed ETF (VAS.ASX - Vanguard Australian Shares Index
+  ETF). Just look at that complexity:\n\n![VAS tax statement for forum](//images.ctfassets.net/91sm3pewxzag/6rJOSdqpNeo26WK2ccgYKU/b3607f66474de309398f8bee173c7341/VAS_tax_statement_for_forum.PNG)\n\n##
+  How Sharesight makes ETF tax admin easy\n\nThroughout the year, ETF managers will
+  typically provide quarterly income distribution estimates from their operations.
+  These are already automatically captured by Sharesight, but as these are estimates,
+  they need reconciling against the year-end income statement provided by the ETF
+  manager.\n\nWe’ve made significant improvements in how Sharesight handles the data
+  underpinning ETF income distributions and how we report these for Australian investors.
+  Read on for the details:\n\n### Default all ETF distributions to Trust Income\n\nWe’ve
+  updated the way we handle ETF distribution income to consider it ‘trust income’
+  by default. This change is really important, because distributions from ETFs for
+  Australian investors need to be recorded in ‘Section 13 - Partnerships and Trusts’
+  of the *income tax return for individuals (supplementary section)*, which differs
+  from ordinary dividend and interest income which would be entered in the standard
+  *tax return for individuals* - in Section 10 (interest) and Section 11 (dividends).\n\n![Edit
+  a Payment ETF](//images.ctfassets.net/91sm3pewxzag/3BkIfbWJsQqcEAY6kE2ggk/0c9e25e341cbb6cd56bbd3db3ff19e03/Edit_a_Payment_ETF.png?w=950)\n\n###
+  Fields for all required ETF distribution components\n\nWe’ve updated the fields
+  available for recording a payment within a holding to include all the fields investors
+  need to accurately record their ETF distributions. \n\n![Edit a Payment VAS ETF](//images.ctfassets.net/91sm3pewxzag/41ACXM5YEwGgseUUOuegce/d441011634b78dcfea48d0e7502a3910/Edit_a_Payment_VAS_ETF.png?w=950)\n\n###
+  We get end of year ETF income distribution details directly from Computershare\n\n(Hey
+  [Link Market Services](https://www.linkmarketservices.com.au/) and [BoardRoom](https://boardroomlimited.com.au/),
+  we would love to get this data from you too!)\n\nEnd of year component details from
+  [Computershare](https://www.sharesight.com/partners/computershare/) for FY2016/17
+  are now available within Sharesight. We hope to have FY2017/18 data loaded as soon
+  as it is available (likely August) - saving you the time required to enter these
+  from your end of year income statements.\n\n### We tell you if ETF distributions
+  are incomplete\n\nWe now display a warning icon alongside unconfirmed transactions
+  for each ETF payout where the components that make up the distribution have not
+  been finalised at year end. There has been some confusion in the past over whether
+  the quarterly ETF income figures were correct, and as these are only estimates,we
+  now clearly indicate when this occurs in order to avoid any confusion.\n\n![ETF
+  Distributions](//images.ctfassets.net/91sm3pewxzag/1aVgJsSfBOE8csQK0kImMO/2575879af5061924ae6e4fb935d303d5/ETF_Distributions.png?w=950)\n\n###
+  We even tell you when end of year tax details are available\n\nAs soon as end of
+  financial year component details are available, we now display an alert against
+  the distributions involved so you can action the information.\n\n![End of year ETF
+  Distributions](//images.ctfassets.net/91sm3pewxzag/3eOE7d9SIEAsqISsIWAMMK/25324181a0cb034e5fdd1c23a7ecbd22/End_of_year_ETF_Distributions.png?w=950)\n\n###
+  We also make it simple to update your distribution with end of year details\n\nFinal
+  distribution details can differ from quarterly estimates - so we’ve made it easy
+  to reset a confirmed payout if you’ve confirmed it during the year and it doesn’t
+  match the end of financial year taxation statement.\n\n![Edit end of year distrubutions](//images.ctfassets.net/91sm3pewxzag/4XmnGepa64OOuy2CkwgGe2/4f47b97000e82c7b7e4f5a782951d360/Edit_end_of_year_distrubutions.png?w=950)\n\n###
+  ETF distributions are correctly attributed to the year they are earned\n\nIf an
+  ETF distribution is paid in (for example) July, but the distribution payment is
+  for income earned by the ETF in the previous financial year, it needs to be included
+  in the previous financial year on your Australian income tax return. We’ve improved
+  the way we handle this, in many cases handling it automatically.\n\n![ETF distribution
+  financial year payment](//images.ctfassets.net/91sm3pewxzag/5q1atmY2nmo8UoEwOQE2Qc/cd0ee66d924509a641c7d20c6adf8eb3/ETF_distribution_financial_year_payment.png?w=950)\n\n##
+  Sharesight's handling of ETFs now more powerful with new taxable income report\n\nSharesight’s
+  new [Taxable Income Report](https://www.sharesight.com/blog/improved-taxable-income-report-for-australian-investors/)
+  now provides field references to the relevant sections on the Australian *income
+  tax return for individuals and income tax return for individuals (supplementary
+  section)*, as well as the totals required for the income tax return based on non-trust
+  and trust income -- making completing your tax return easier than ever.\n\n![composition
+  sharesight income-tax-return](//images.ctfassets.net/91sm3pewxzag/5u8wUdxnFsUy9zoXEZxqnG/e0b7eca2297c72fe3bddbe70b6067e0f/composition_sharesight_income-tax-return-min.png?w=950)\n\n##
+  Sharesight makes tax time easy\n\nJoin thousands of Australian investors already
+  using [Sharesight](https://www.sharesight.com/) to manage their investment portfolios.
+  To get started for FREE, simply [sign-up](https://portfolio.sharesight.com/signup)
+  and import your shares and [managed funds](https://www.sharesight.com/blog/managed-funds-live-on-sharesight/).
+  Then watch as corporate actions such as dividends, ETF distributions and stock splits
+  are automatically recorded towards your tax return. We’re confident that you’ll
+  agree Sharesight is the best share portfolio tracker available today.\n\n### Need
+  help?\n\n- [Sharesight Taxable Income Report](https://help.sharesight.com/taxable_income/)\n-
+  Ask in our [Sharesight Community Forum](https://c.getsatisfaction.com/Sharesight)\n\n###
+  FURTHER READING\n- [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)\n-
+  [Capital gains tax calculator for Australian investors](/blog/capital-gains-tax-calculator-for-australian-investors/)\n-
+  [Offset your capital gains by tax loss selling before EOFY](/blog/offset-your-capital-gains-by-tax-loss-selling/)"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-06-25 10:00:00.000000000 +10:00
+:meta_description: We’ve made significant improvements in how Sharesight handles the
+  data underpinning ETF income distributions and how we report these for Australian
+  investors.
+:featured_image:
+  :title: featured - ETF tax admin
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/2IqJKHjvGEeQwSUGU0MqGg/aec9eb3f8c5d840c4510d6f9f670ebeb/featured_etf-tax-admin.png"
+  :_meta:
+    :updated_at: '2018-08-28T05:46:03+00:00'
+    :created_at: '2018-06-25T06:48:51+00:00'
+    :id: 2IqJKHjvGEeQwSUGU0MqGg
+:slug: how-sharesight-makes-etf-tax-admin-easy

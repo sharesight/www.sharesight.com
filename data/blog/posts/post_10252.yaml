@@ -1,0 +1,83 @@
+---
+:id: post_10252
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:32:09+00:00'
+  :created_at: '2016-06-29T23:16:30+00:00'
+  :id: post_10252
+:title: Dividend franking & performance
+:url_slug: dividend-franking-and-performance
+:content: |-
+  Dividend franking or imputation is one of the great features of investing in shares for NZ and Australian investors. It increases the effective return on your investment and can have a very significant impact on your overall share performance. With [Sharesight](/) it’s easy to track franking credits so that you can claim the correct amount on your tax return, but we also account for it in analysing your portfolio so you can see exactly how it impacts on your performance.
+
+  ## What is franking?
+  In essence franking provides a tax credit to the shareholder for company tax already paid by the company. It’s a way of avoiding double taxing of company profits. For those not familiar with franking (or imputation for kiwis), here's a good explanation of [dividend franking](https://en.wikipedia.org/wiki/Dividend_imputation), and here's the [ATO’s explanation of dividend franking](https://www.ato.gov.au/Forms/You-and-your-shares-2013-14/?page=5).
+
+  ## How does dividend franking work in Sharesight?
+  Let’s take Telstra as an example. Telstra currently<sup>1</sup> pays a fully franked dividend of 15.50c per share. Each dividend carries a 6.64c franking credit for the tax paid by the company which lifts the “grossed-up” value of the dividend to 22.14c. The 15.50c is paid by Telstra in cash and the 6.64c is claimable by the investor as a credit in their tax return.
+
+  When we calculate performance we take the full 22.14c grossed-up dividend and include this in the return. Needless to say it can make a big difference.
+
+  Have a look at this screenshot of 100 shares of TLS bought in June 2015:
+
+  ![Dividend Franking 1](//images.ctfassets.net/91sm3pewxzag/jy9FolRXmocEy2SwQiMs4/7a236fb5744144c11aa2f8996253fae8/dividend-franking_1.png?w=950)
+
+  The compounded return from dividends is nearly 12%. You can see in the  dividends received that the cash dividend paid and the franking credit is included.
+
+  In the following screenshot I have removed the franking credits -- as if TLS carried no franking. It’s clear the dividend return is significantly lower:
+
+  ![Dividend Franking - 2](//images.ctfassets.net/91sm3pewxzag/4nUOTjjsUoAMy8k6AYa0oC/b971f92615d222261f53a3b9114dad36/dividend-franking_2.png?w=950)
+
+  The dividends return without franking falls to just over 8%. All things being equal, it certainly pays to own a company paying fully franked dividends.
+
+  One thing to note is that all franking is not the same. QBE, for example earns a large portion of its income overseas which cannot be franked and therefore the gross dividend is lower than it would be if QBE were a 100% Australian-based company. In the screenshot below you can see that only a portion of the total dividend is franked with the balance being an unfranked dividend. All of this is captured in our return calculations.
+
+  ![Dividend Franking - 3](//images.ctfassets.net/91sm3pewxzag/tyaUDHgUDuaeIWumwkMes/76ca99150e0957a41ff20e8a055234c6/dividend-franking_3.png?w=950)
+
+  Lastly, we also account for differences in dividend franking between Australian and NZ investors. An Australian buying NZ shares is not entitled to NZ imputation credits. Similarly a NZ investor is not entitled to Australian franking credits (with some exceptions). We capture this as well and do not include the franking in the above situations.
+
+  It’s all about trying to give you the true picture on your portfolio performance and making sure you can get your tax right with a minimum of fuss.
+
+  <sup>1</sup> **2017-02-24** -- Figures and screenshots have been updated.
+
+  ### FURTHER READING
+
+  - Blog -- [3 easy ways to automate your portfolio admin](https://www.sharesight.com/blog/3-easy-ways-to-automate-your-portfolio-admin/)
+  - Blog -- [How to track a dividend reinvestment plan](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  - Blog -- [Manage your SMSF with Sharesight + Xero](https://www.sharesight.com/blog/sharesight-xero-for-smsfs/)
+:author:
+  :id: author_8
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2020-05-12T04:48:32+00:00'
+    :created_at: '2016-06-29T23:15:39+00:00'
+    :id: author_8
+  :display_name: Andrew Bird
+  :first_name: Andrew
+  :last_name: Bird
+  :title: Executive Chairman
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2013-05-03 00:00:00.000000000 Z
+:meta_description: Learn about dividend franking, including how Sharesight automatically
+  tracks it for you, and how it impacts your portfolio performance returns.
+:featured_image:
+  :title: Featured - Dividend Franking
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/66s3eLn5sWweSKSCgikIwi/1b6eef23e4862e46d1424007df8db4ec/featured_dividend-franking.png"
+  :_meta:
+    :updated_at: '2017-02-24T05:24:33+00:00'
+    :created_at: '2017-02-24T05:24:11+00:00'
+    :id: 66s3eLn5sWweSKSCgikIwi
+:wordpress_url: "/2013/05/03/dividend-franking-and-performance/"
+:slug: dividend-franking-performance

@@ -1,0 +1,83 @@
+---
+:id: 5AsqIrCHNmMqGqwiqEGsEA
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T04:25:46+00:00'
+  :created_at: '2016-09-22T04:55:52+00:00'
+  :id: 5AsqIrCHNmMqGqwiqEGsEA
+:title: Does freemium work? A look at the streaming music industry
+:url_slug: does-freemium-work
+:content: |-
+  [Sharesight](/) is a freemium product. A portion of our product is free, with the full feature set available in our premium packages. Free + premium = freemium. It’s the ultimate “try before you buy” concept and because we help people with sensitive investment data, it’s a fair (and necessary) way for our customers to kick our tyres for as long and as hard as they wish.
+
+  This remains a unique concept so we keep an eye on others who’ve deployed this model. One of the oldest in relative terms is the streaming/online music industry. Chances are you’re at least a free subscriber to Pandora or iTunes Radio. At Sharesight Sydney, we use the $9.99/month Spotify package for the office. Both Google and Amazon offer streaming music platforms too, and there’s a host of smaller players.
+
+  Recently, Taylor Hatmaker at The Kernel wrote a piece on the state of the online music industry. She asks: “Are streaming music services about to bite the dust?” Hatmaker points out that Apple redoubling their efforts via their Beats acquisition and Billboard finally recognising songs streamed in their “top” lists are important developments.
+
+  ![online music companies](//images.ctfassets.net/91sm3pewxzag/3yzF53sByEm6iKwOWiE4eK/b9c4cf745b04499e787a0fd7f41a3f2f/online-music.png?w=950)
+
+  But streaming music companies aren’t profitable. Even though [Pandora has 250 million users](https://www.forbes.com/sites/greatspeculations/2014/09/04/whats-driving-pandoras-total-active-user-count/#536f6d9752ab), [Spotify 15 million](https://www.rollingstone.com/music/music-news/spotify-reaches-15-million-subscribers-66484/), and [iHeart Radio over 50 million](https://www.theverge.com/2014/6/17/5817132/iheartradio-hits-50-million-registered-users), these companies haven’t reached breakeven. Hatmaker puts it plainly:
+
+  > Consumers are blissfully ignorant, mostly content to endure a few ads to listen to unlimited free music. Considering how many people are sharing the pie, the ad-supported “free” streaming model remains a bonkers excuse for a business plan, no matter how you slice it.<br><cite>Taylor Hatmaker</cite>
+
+  In my view, profitability doesn’t elude these companies because of the freemium model. Spotify reports 15 million __paid__ users and Pandora over 3 million. At $9.99 and $4.99 monthly, that’s $2 billion dollars in potential annualised revenue (both companies report about $1 billion each in revenue). Ultimately, music is something that’s in widespread, global demand and translates perfectly to mobile. All genres from decades past are available to an ever-growing market. More music is reaching more people.
+
+  So where’s the revenue going?
+
+  Acronyms abound in freemium businesses, but a vital metric is CAC (client acquisition cost). If your CAC is greater than what you expect someone to pay, you’re in trouble. But the CAC for streaming music companies is probably very low. Downloading the app to your mobile or signing up via Facebook should be close to $0, while their spend on advertising probably averages less than $100 per client (an educated guess). So gathering customers cheaply is not an issue.
+
+  But a different CAC bedevils these companies: content acquisition cost. Streaming music companies claim that 70% of their revenues are paid back to record companies and recording artists to license music. That might work if all users paid something, but the majority of their userbases never upgrade from free. So even with low client acquisition costs, solid free to paid subscriber ratios, and a gargantuan addressable market, it will be difficult to survive and prosper given that each new free listener means more “ears” to pay for.
+
+  ![Online Music - featured](//images.ctfassets.net/91sm3pewxzag/6eIamqIoucqeKw6QmuoASK/64eebd8a6a57f806b86f39d478ebb14a/featured_online-music.jpg?w=950)
+
+  Compare this to [Sharesight](/). We pay to acquire some customers (e.g. advertising on Google), but our on-going fixed costs are low. We rely on clients to provide content (e.g. their trade data) and license info from exchanges who charge fixed and variable fees, which are many times lower than 70% of revenue. We keep features such as tax reporting, portfolio sharing, and personalised support entirely behind our paywall because giving away all of our IP would send us into a death spiral: no paying clients = no revenue = no development or support = a terrible product plastered with banner ads (just think: “Payday Loans” or “Trade GOLD Cheap” stretched across the top of your portfolio).
+
+  So freemium does work, but the inputs need to be carefully calibrated from day one. What content or features to give away for free? How long does the free service last? What features to reserve for paid plans? How much to charge? How often to charge? These are the most important variables to tweak.
+
+  In my view, streaming music companies are far too generous with their content. And once that threshold was crossed, it became far more difficult to convince people to pay with supplemental “features” or discounted pricing. Right now every song in the world is available on demand, across multiple devices, for free. If you’re willing to put up with a few advertisements (far fewer than terrestrial radio or TV) then you’ll become conditioned to expect free music.
+
+  Take me as an example. My personal music spend on albums (CDs) was probably about $800 per annum. When iTunes came along, my spend went up significantly to around $1,200. Then a friend introduced me to Pandora in 2005, which meant free music at home and work. Then the iPhone launched. More free music while commuting. Then Spotify debuted. Same again, but with a better library and curated playlists. After three years, I finally broke down and bought Spotify Premium and still don’t pay Pandora a cent. My music spend is now $120 per year: __8% of what I’m willing to pay__.
+
+  If streaming music companies throttle back what they give away free then their free to paid ratio should improve and the content costs should align with paid user totals. As for the huge cut that record companies take from artists and streaming music companies for distribution, here’s hoping that changes as it has in other industries (e.g. investment platforms and wraps). One wonders why the artists don’t just publish their work directly via the online music players given the [peanuts](https://www.wired.com/2014/11/aloe-blacc-pay-songwriters/) they end up with.
+
+  Ultimately, the price people are willing to pay for music online seems to be stabilising at $9.99 per month. Given the amount of content available that’s incredible value. If Pandora or Spotify can’t make freemium work due to the payouts necessary to the old-school music machine then perhaps they were just ahead of their time, or started off too generously to attract customers. Remember, a whole generation of music fans grew up on Napster and Pirate Bay. If they fail, I expect one of the “techmedia” giants (probably Apple) to win out by simultaneously strong-arming the record companies and leveraging their massive retail client base.
+
+  As Hatmaker concludes:
+
+  >It might seem silly to frame the entire streaming music conversation around Apple, but the company defined the digital music era, putting a previously unthinkable catalogue of songs in our pockets with one-two punch of industry prescience in the iPod and iTunes. The music industry was never the same — and now, in fits and starts, it’s all happening again.<br><cite>Taylor Hatmaker</cite>
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 3kmu1tVbriyoYKWOsuCaqM
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:38+00:00'
+    :created_at: '2016-07-07T23:43:37+00:00'
+    :id: 3kmu1tVbriyoYKWOsuCaqM
+  :name: Industry News
+  :description: Our thoughts on the latest financial industry news, as it applies
+    to Sharesight, and the investing and fintech industries.
+  :url_slug: industry-news
+:created_at: !ruby/object:DateTime 2015-03-26 11:00:00.000000000 +10:00
+:meta_description: Are streaming music services about to bite the dust? Our thoughts
+  on the freemium online music vs. SaaS services such as Sharesight's model.
+:featured_image:
+  :title: Online Music - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/6eIamqIoucqeKw6QmuoASK/64eebd8a6a57f806b86f39d478ebb14a/featured_online-music.jpg"
+  :_meta:
+    :updated_at: '2016-09-22T05:03:11+00:00'
+    :created_at: '2016-09-22T05:03:00+00:00'
+    :id: 6eIamqIoucqeKw6QmuoASK
+:wordpress_url: "/2015/03/26/does-freemium-work/"
+:slug: does-freemium-work-a-look-at-the-streaming-music-industry

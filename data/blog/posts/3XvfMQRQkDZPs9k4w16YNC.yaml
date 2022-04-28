@@ -1,0 +1,165 @@
+---
+:id: 3XvfMQRQkDZPs9k4w16YNC
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T03:59:40+00:00'
+  :created_at: '2019-06-07T05:35:00+00:00'
+  :id: 3XvfMQRQkDZPs9k4w16YNC
+:title: Tax loss selling for Australian investors
+:url_slug: tax-loss-selling-for-australian-investors
+:content: "###### The below article is for informational purposes only and does not
+  constitute a product recommendation, or taxation or financial advice and should
+  not be relied upon as such. Please check with your adviser or accountant to obtain
+  the correct advice for your situation.\n\nTax loss selling is a strategy that investors
+  can leverage to minimise their net capital gains during a financial year for tax
+  purposes. While tax loss selling can be used at any time, it is most often implemented
+  in the lead up to the end of each financial year. This makes June a particularly
+  good time to review your investment portfolio and decide whether to leverage a tax
+  loss selling strategy to help offset any capital gains you incurred for the year.\n\nThis
+  article will cover:\n\n- [What is tax loss selling?](#what-is-tax-loss-selling)\n-
+  [A tax loss selling example](#a-tax-loss-selling-example)\n- [How to model tax loss
+  selling opportunities with Sharesight](#how-to-model-tax-loss-selling-opportunities-with-sharesight)\n-
+  [Avoiding wash sales](#avoiding-wash-sales)\n\n![Tax loss selling harvesting Australia](//images.ctfassets.net/91sm3pewxzag/4QoVQsztyvl7nK8B5yedhJ/f07b8323a1859bae7453ec63890456d0/Tax_loss_selling_harvesting_Australia.jpg?w=950)\n\n##
+  What is tax loss selling (harvesting)?\nSimply put, tax loss selling (or tax loss
+  harvesting) involves selling investments that have incurred capital losses in order
+  to “net out” or offset capital gains realised during the year.\n\n### Notes on tax
+  loss selling\n\n- Although many investors leverage tax loss selling toward the end
+  of the year, you may harvest tax losses at any time.\n\n- Higher tax rates apply
+  for investments you’ve held for a year or less (short-term capital gains), than
+  for investments you’ve sold after holding them for longer than a year.\n\n- The
+  amount of money you can save in taxes through tax loss selling depends on your tax
+  rate (individual/trust, SMSF, or company).\n\n## A tax loss selling example\nTo
+  help explain how tax loss selling works, let’s look at an example calculation:\n\nLet’s
+  say you were lucky enough to buy CSL (ASX: CSL) back in 2012 when it was trading
+  at $32. It’s currently sitting at just under $300, so you’ve incurred a total annualised
+  return of around 33%.\n\nHowever you have taken a big loss on formerly high-flying
+  Retail Food Group (ASX: RFG), which you bought at $4.00 back in 2014, but is now
+  only worth $0.075 per share.\n\n| Holding | Purchase Value | Market Value | Capital
+  Gain |\n| ---------- | ---------- | ---------- | ---------- |\n| ASX: CSL       |
+  $3,200.00       | $30,557.00      | $27,357.00      |\n| ASX: RFG       | $4,000.00
+  \     | $75      | <span style=\"color:red\">$-3,925.00</span>       |\n\nWhile
+  you could hold onto RFG in the hopes that it will someday bounce back, another option
+  is to sell both RFG and CSL before the end of the year to offset some of the gain
+  in your CSL stock with the RFG sale. Doing so may not only soften the blow of the
+  loss, but also encourage you to move on to new opportunities next year.\n\n## How
+  to model tax loss selling opportunities with Sharesight\nIf you hold investments
+  that have suffered losses this year, Sharesight’s Unrealised CGT Report can help
+  you calculate how to offset your capital gains by:\n\n<ol>\n  <li><b>Displaying
+  the CGT position for all your holdings which are not yet sold</b> (if they were
+  sold on the date of the report) broken down into:\n  <ul>\n    <li>Short term capital
+  gains (unrealised)</li>\n    <li>Long term capital gains (unrealised)</li>\n    <li>Capital
+  losses (unrealised)</li>\n  </ul>\n  </li>\n  <li><b>Modelling the capital gains
+  tax</b> that would arise across your portfolio if the shares identified were sold
+  on the report date.</li>\n  <li><b>Allowing you to modify the CGT sale allocation
+  method</b> at the overall portfolio or individual holding level to determine your
+  optimum position.</li>\n</ol>\n\n![Tax loss harvesting calculator](//images.ctfassets.net/91sm3pewxzag/19pZPwrsY1MAbxQIlj9zZk/be2fe6c9435c32bd373a8e9bd86775c6/Tax_loss_harvesting_calculator.png?w=950)\n\nThe
+  report uses the ‘[discount method](https://www.ato.gov.au/General/Capital-gains-tax/Working-out-your-capital-gain-or-loss/Working-out-your-capital-gain/The-discount-method-of-calculating-your-capital-gain/)’
+  for shares that have been held for more than 1 year and the ‘other method’ for shares
+  held for less than one year. The discount rate is based on the tax settings of an
+  Australian portfolio:\n\n- **Individuals / Trust** – CGT discount of 50 %\n- **Self
+  Managed Super Fund** – CGT discount of 33⅓ %\n- **Company** – CGT discount of nil\n\nThe
+  report also allows you to specify the sale allocation method at the overall portfolio
+  and individual holding level to determine your optimum position, including:\n\n-
+  **First In, First Out (FIFO)** – Sharesight assumes that you sell your longest held
+  shares first.\n- **Last In, First Out (LIFO)** – Sharesight assumes that you sell
+  your most recently purchased shares first.\n- **Maximise Gain** – Sharesight assumes
+  that you sell shares with the lowest purchase price first.\n- **Minimise Gain**
+  – Sharesight assumes that you sell shares with the highest purchase price first.\n-
+  **Minimise CGT** – Sharesight assumes that you sell shares that will result in the
+  lowest capital gains tax first. This method is more sophisticated than the ‘Minimise
+  capital gain’ method because it takes into account the Australian CGT discounting
+  rules.\n\n![Capital Gains Tax Sale Allocation Methods - 2021](//images.ctfassets.net/91sm3pewxzag/2NwJViKWOajHaIE22xsVs7/0ee50c8134e93cd4c0d25b057bb8a279/Capital_Gains_Tax_Sale_Allocation_Methods_-_2021.png?w=950)\n\n##
+  Notes on the Unrealised CGT Report\n\n- The Unrealised CGT report is designed for
+  forecasting purposes only. Refer to the [Capital Gains Tax Report](/blog/capital-gains-tax-calculator-for-australian-investors/)
+  to calculate your actual (realised) taxable capital gain income for a specific period.\n-
+  You may carry forward losses from the previous reporting period by clicking on the
+  ‘Advanced Options’ link.\n- It’s a good idea to run the report throughout the year,
+  not just at the end, in order to stay on top of opportunities to offset gains and
+  losses throughout the year. You may want to [share secure portfolio access](/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/)
+  with your accountant and/or adviser, so they can keep this in mind as well.\n- The
+  Unrealised CGT Report is available on Australian [Investor and Expert plans](/au/pricing/).\n-
+  For more information, visit the [Unrealised CGT Report help page](https://help.sharesight.com/au/unrealised_cgt_report/).\n\n##
+  Avoiding wash sales\nIn 2008, the Australian Tax Office (ATO) issued issued tax
+  ruling [TR 2008/1](https://www.ato.gov.au/law/view/document?docid=TXR/TR20081/NAT/ATO/00001),
+  which specifically outlaws arrangements where *“...in substance there is no significant
+  change in the taxpayer’s economic exposure to, or interest in, the asset, or where
+  that exposure or interest may be reinstated by the taxpayer”*.\n\nIn other words,
+  the ATO prevents investors from selling a stock in one financial year to take advantage
+  of a capital loss event, only to buy that stock again in the new financial year.
+  This is known as a “wash sale” and the ATO will disallow the loss if the sole intention
+  of the sale was to minimise tax. As Sharesight Executive Director Andrew Bird [said](/blog/tax-loss-selling-made-easy/),
+  “if you are going to sell, make sure you really mean it. If you still believe in
+  that stock then choose a different ‘loser’ to sell to offset your gain.”\n\n## Offsetting
+  your capital gains webinar\n\nIn this webinar, Sharesight CEO, Doug Morris explains
+  tax loss selling and how investors can calculate capital gains tax offset opportunities
+  with Sharesight's Unrealised Capital Gains Tax Report. \n\n<a href=\"https://www.youtube.com/embed/Tl_Zl59Qs9w\"
+  class=\"embedly-card\" data-card-width=\"100%\" data-card-controls=\"0\">Embedded
+  content: https://www.youtube.com/embed/Tl_Zl59Qs9w</a>\n\n## Calculate tax loss
+  selling opportunities with Sharesight\n\nJoin thousands of Australian investors
+  already using Sharesight to track their investment portfolios and optimise their
+  CGT position by [signing up today](https://www.sharesight.com/pricing/). With Sharesight
+  you can:\n\n- Automatically track your dividend and distribution income from stocks,
+  ETFs, LICs and Mutual/Managed Funds from over 30 global exchanges – [including the
+  value of franking credits](https://www.sharesight.com/blog/how-to-calculate-franking-credits-on-your-investment-portfolio/)\n\n-
+  Use the [Dividend Reinvestment Plan (DRPs/DRIPs) feature](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)
+  to track the impact of DRP transactions on your performance (and tax)\n\n- See the
+  true picture of your investment performance, including the impact of brokerage fees,
+  dividends, and capital gains with [Sharesight’s annualised performance calculation
+  methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)\n\n-
+  Run powerful tax reports to calculate your dividend income with the [Taxable Income
+  Report](https://www.sharesight.com/blog/5-ways-to-get-the-most-out-of-sharesights-taxable-income-report/)\n\n-
+  Plus calculate your CGT obligations with Sharesight’s [Australian Capital Gains
+  Tax Report](https://www.sharesight.com/blog/capital-gains-tax-calculator-for-australian-investors/)
+  and [Unrealised Capital Gains Tax Report](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)\n\n[Sign
+  up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) and get
+  started tracking your investment performance (and tax) today.\n\n![Hero laptop ASX
+  benchmark](//images.ctfassets.net/91sm3pewxzag/3LRLgbzTKnKp4FkYmnH9Y4/82c6267a657e87ffdc4d32149543ed66/Hero_laptop_ASX_benchmark.png?w=950)\n\n###
+  FURTHER READING\n- [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)\n-
+  [5 ways Sharesight helps Australian investors at tax time](https://www.sharesight.com/blog/5-ways-sharesight-helps-australian-investors-at-tax-time/)\n-
+  [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)\n"
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2021-05-23 17:00:00.000000000 +10:00
+:meta_description: A tax loss selling (tax loss harvesting) strategy can offset some
+  of the capital gains you incurred during the year. Shareight's Unrealised CGT report
+  can help.
+:featured_image:
+  :title: Tax loss selling harvesting Australia
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/4QoVQsztyvl7nK8B5yedhJ/f07b8323a1859bae7453ec63890456d0/Tax_loss_selling_harvesting_Australia.jpg"
+  :_meta:
+    :updated_at: '2021-05-24T05:55:08+00:00'
+    :created_at: '2021-05-24T05:45:02+00:00'
+    :id: 4QoVQsztyvl7nK8B5yedhJ
+:hide_from_feed: false
+:slug: tax-loss-selling-for-australian-investors

@@ -1,0 +1,76 @@
+---
+:id: 3YsVd7Y4f6eUMoWWYuu08U
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-10-14T00:24:43+00:00'
+  :created_at: '2017-05-29T04:56:01+00:00'
+  :id: 3YsVd7Y4f6eUMoWWYuu08U
+:title: Announcing Sharesight Public Portfolios
+:content: "###### UPDATE (31-05-2019): This feature is no longer publicly available.
+  If you would like to build your own public portfolio, check out the [Sharesight
+  API](https://portfolio.sharesight.com/api).\n\nSo much of what makes [Sharesight](/)
+  a great product is based on visibility -- whether it’s visibility across your investments,
+  or visibility across your client base. \n \nWe create visibility by offering bottoms-up
+  performance and tax reporting in a cloud-based product with an intuitive interface.\n\n![featured
+  - sharesight public portfolios](//images.ctfassets.net/91sm3pewxzag/3hTGvZ6BcsQscY4gCmuIwK/04a629a1648cc3656842816ce01e2741/featured_public-portfolio-2.png?w=950)\n
+  \nToday we’re taking this to the next level. **Sharesight Public Portfolios** is
+  a new feature that we’ll be rolling out in phases. Essentially it allows for public
+  access to a portfolio -- Sharesight-lite, if you will. We’re brainstorming ways
+  to offer Public Portfolios to our entire client base, but to give you a sneak preview
+  here’s a Public Portfolio based one of my real portfolios:\n\n![screenshot - sharesight
+  public portfolio](//images.ctfassets.net/91sm3pewxzag/6C0enDRqHSmeOwEcWuUGOa/9bfd18c075ed519dad6d4dcc03b3d622/screenshot_public-portfolio)\n\nOur
+  plan is to use Public Portfolios to convey investment themes in our own content,
+  and then begin working with key partners to help them broadcast their own portfolios.
+  An example might be a research house running a model portfolio, a stockpicker publicising
+  their views, a roboadviser conveying the effectiveness of their asset allocation,
+  or a financial publication tracking a handful of stocks.\n \nIn fact, our launch
+  partner for Public Portfolios is [The Telegraph newspaper](http://www.telegraph.co.uk),
+  in the UK. \n\nTheir [Business](http://www.telegraph.co.uk/business/) section has
+  included insightful stock commentary for decades and features the popular [Questor
+  portfolio](http://www.telegraph.co.uk/business/questor/). Their journalists have
+  rebuilt the Questor portfolio, including its history, in Sharesight and will make
+  it available to their readers as a Public Portfolio. From there, readers will be
+  able to sign-up for a free Sharesight account and begin to track their own portfolio(s)
+  and gain access to easy-to-understand performance and tax reports.\n \n“Seeing is
+  believing” and our hope is that investors everywhere benefit from the Public Portfolio
+  feature. If you’d like to leverage a Public Portfolio for yourself, or have more
+  questions, please <a href=\"mailto:mailto:sales@sharesight.com\">get in touch</a>.\n\n###
+  FURTHER READING\n- Blog -- [3 reasons why your return figures seem incorrect (but
+  actually aren’t)](/blog/interpreting-portfolio-performance/)\n- Blog -- [How your
+  broker’s performance numbers mislead you](/blog/how-your-brokers-performance-numbers-mislead-you/)\n-
+  [3 reasons why you need to be tracking dividends](/blog/3-reasons-why-you-need-to-be-tracking-dividends/)"
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2017-05-29 16:02:00.000000000 +10:00
+:meta_description: Sharesight Public Portfolios is a new feature that allows for public
+  access to a portfolio -- Sharesight-lite, if you will.
+:featured_image:
+  :title: featured - sharesight public portfolios
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/3hTGvZ6BcsQscY4gCmuIwK/04a629a1648cc3656842816ce01e2741/featured_public-portfolio-2.png"
+  :_meta:
+    :updated_at: '2017-05-29T06:43:06+00:00'
+    :created_at: '2017-05-29T06:42:41+00:00'
+    :id: 3hTGvZ6BcsQscY4gCmuIwK
+:slug: announcing-sharesight-public-portfolios

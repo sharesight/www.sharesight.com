@@ -1,0 +1,129 @@
+---
+:id: 1QsbR1jL9iEUysyKS2UeME
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-05-18T00:19:35+00:00'
+  :created_at: '2017-10-25T05:30:33+00:00'
+  :id: 1QsbR1jL9iEUysyKS2UeME
+:title: Yahoo Finance vs Sharesight -- comparing portfolio trackers
+:content: |-
+  If you’re an investor that owns stocks on both local and international markets, tracking the performance of your portfolio is often beyond the scope of most portfolio trackers. Often this means [tracking your portfolio manually using a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/), or alternatively Yahoo Finance, but there’s a better way — here’s 3 reasons why investors should be looking for a Yahoo Finance alternative:
+
+  ## 1. Misleading performance
+
+  Like [most brokers](https://www.sharesight.com/blog/how-your-brokers-performance-numbers-mislead-you/), the major issue with Yahoo Finance is that it only calculates your *simple return* — the difference between what you paid for the stock, and what it’s worth now. That’s bad because **you can’t compare the relative performance of investments in your portfolio** if you've owned them for different periods, to do that **you need to calculate annualised returns** instead.
+
+  See that +60.87% total gain figure in Yahoo Finance on this 2015 investment in General Motors? On an annualised basis that has seen capital growth at a rate of 8.7% p.a.
+
+  ![Screenshot - Yahoo Finance](//images.ctfassets.net/91sm3pewxzag/4obOSrGOdTlDzi5OriruKB/799e183ac950d362402387f1a1f95e32/Screenshot_-_Yahoo_Finance.png?w=950)
+
+  Sadly, this is the most misunderstood concept when tracking investment returns. Once you start tracking your investments using an [annualised calculation methodology](https://help.sharesight.com/performance_calculation_method/), you’ll finally understand your *true* performance. This gives you the data-driven insights that allow you to make better investment decisions, (and hopefully become a better investor in the long-term).
+
+  ## 2. Doesn’t factor in dividends
+
+  Other factors that impact performance are brokerage fees, foreign currency fluctuations and corporate actions such share splits and dividends. Sadly, Yahoo doesn’t allow you to [track dividends](https://www.sharesight.com/dividend-tracker/) either. If you own dividend-generating stocks and attempt to track them in Yahoo finance, your performance numbers will quickly go askew.
+
+  Remember that 8.7% annualised capital gain I talked about earlier? Here it is again. But **once you factor-in the impact of dividends** on your investment performance, the annualised return figure jumps to 12.43%:
+
+  ![GM - Dividend + Cap Gain](//images.ctfassets.net/91sm3pewxzag/7vGwBR2GkObkuZ1Ew5FbR1/03bf20725d2fe1c3bb05da994a3ab3e3/GM_-_Dividend___Cap_Gain.png?w=950)
+
+  As you can see, [dividends play a huge part in your performance return](https://www.sharesight.com/blog/3-reasons-why-dividend-tracking-is-crucial/). And what about[ dividend reinvestment plans](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/)[ (DRPs or DRIPs)](https://www.sharesight.com/blog/how-to-track-a-dividend-reinvestment-plan/), which let you use your cash dividends to purchasing additional shares in a company without paying commissions? These have an additional impact on your performance (and are yet another component of your performance that you can’t track using Yahoo Finance).
+
+  ## 3. Doesn’t track the impact of foreign exchange fluctuations
+
+  If you’re investing internationally, knowing the impact of forex changes on your investment return is yet another part of the equation to understanding your true performance. Sharesight tracks the impact of foreign exchange fluctuations on your portfolio, Yahoo Finance does not.
+
+  Returning to our example above, if this was an an international investor based in Australia with an investment in GM stock on the NYSE, you also need to consider any change in foreign exchange rates since the original purchase. When you factor in forex impacts **the total annualised return actually figure is 10.42% p.a.:**
+
+  ![GM - Currency Gain](//images.ctfassets.net/91sm3pewxzag/7J0L1zxXzcsT1Zqdl1sIY9/4f2de13d903ca49765d1d28d1ad7d526/GM_-_Currency_Gain.png?w=950)
+
+  ## Why investors should use Sharesight instead of Yahoo Finance
+
+  Yahoo is a great place to check your old [GeoCities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) email. But when it comes to tracking your investments, you should be using a purpose-built portfolio tracker like [Sharesight](https://www.sharesight.com), which not only tracks your annualised performance, but includes dividend tracking, tax reporting, plus wealth of other features specifically designed for DIY investors. Here’s a side-by-side comparison of Yahoo Finance and Sharesight to show you what we mean:
+
+  | &nbsp; | Yahoo     | Sharesight     |
+  | ---------- | ---------- | ---------- |
+  | <b>Performance</b> |Simple return<br><br>Doesn’t include dividends, brokerage, foreign currency|Annualised, money-weighted total return<br><br>Includes dividends, brokerage, foreign currency|
+  | <b>Performance Period</b> |Limited: since yesterday, or since first purchase only|Any time period|
+  |<b>Dividends</b>|No|Yes -- automatically displays the exact dividends based on how many shares you own (these can be edited too)<br><br>Dividends are rolled back up into your performance calculation|
+  |<b>DRPs/DRIPs</b>|No|Yes|
+  |<b>Foreign Currency</b>|No -- you can change the portfolio’s currency but currency fluctuations for foreign investments aren't tracked|Yes -- converts any foreign investments back to the portfolio’s home currency ([with forex prices updated every 5 minutes](https://www.sharesight.com/blog/track-investments-in-67-different-currencies-with-sharesight/))|
+  |<b>Market Coverage</b>|[Pretty much everything](https://help.yahoo.com/kb/SLN2310.html)|[Full list of markets tracked by Sharesight](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/)|
+  |<b>Price Updates</b>|[Mix of real-time/15/20/30 mins](https://help.yahoo.com/kb/SLN2310.html)|20 minute delayed pricing for AU and NZ, otherwise end of day|
+  |<b>Number of Holdings & Portfolios</b>|Unlimited|Track up to 10 holdings for FREE, for more, see our [pricing plans](/pricing/)|
+  |<b>Custom Investments</b>|No|Yes|
+  |<b>Performance & Tax Reports</b>|No|Yes -- performance, diversity, contributions analysis, taxable income, future income, etc.<br><br>[Full list of Sharesight reports](https://help.sharesight.com/reports/)|
+  |<b>Benchmarking</b>|No|Yes ([Benchmark your portfolio against any of the more than 170,000 stocks, funds, ETFs](https://www.sharesight.com/blog/benchmark-your-portfolio-against-any-stock-etf-or-fund/))
+  |<b>Track Brokerage Costs</b>|No|Yes -- Here’s the [impact brokerage costs have on your investment return](https://www.sharesight.com/blog/brokerage-fees-and-your-investment-performance/).|
+  |<b>Cash Tracking</b>|[Yes](https://help.yahoo.com/kb/SLN4888.html)|Yes - [Cash account tracking that syncs transactions to your portfolio](https://www.sharesight.com/blog/cash-accounts-now-sync-transactions-with-your-portfolio/).|
+  |<b>News</b>|Yahoo|Livewire, Firstlinks, [The Motley Fool UK](https://www.sharesight.com/blog/get-the-motley-fool-uk-insights-in-sharesight/)|
+  |<b>Portfolio Sharing</b>|No|Yes -- [share secure access with anyone](https://www.sharesight.com/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/), according to the level of access they require: read-only, read-write, admin|
+
+  ### It’s easy to import your Yahoo Finance portfolio to Sharesight
+
+  If you’re already using Yahoo Finance to track your investment portfolio, we’ve made it easy to import your data into Sharesight. All you need to do is:
+
+  1. Download your portfolio from Yahoo Finance (as a .csv file)
+
+  2. Upload it to Sharesight
+
+  That’s it. We go into more detail in our guide [‘Easily import your Yahoo Finance portfolio into Sharesight’](https://www.sharesight.com/blog/easily-import-your-yahoo-finance-portfolio-into-sharesight/).
+
+  ## Sign up today and track your investment performance (and more) with Sharesight
+
+  Over [250,000 investors like you](http://www.sharesight.com/blog/over-250000-global-investors-track-their-portfolios-with-sharesight/) are already using Sharesight to track their investment portfolios. What are you waiting for? [Sign up](https://portfolio.sharesight.com/signup) and:
+
+  * Track all of your investments in one place, including stocks, [mutual/managed funds](https://help.sharesight.com/supported-stock-exchanges-and-managed-funds/?_ga=2.266129671.947584253.1600037779-1579815040.1595575078&_gac=1.8055302.1599522265.EAIaIQobChMI-L3r4ZzY6wIVVwQrCh0k4wH7EAAYASAAEgL19PD_BwE), [property](https://www.sharesight.com/blog/how-to-track-an-investment-property-in-sharesight/) and even [cryptocurrency](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/)
+
+  * Automatically track your [dividend and distribution income](https://www.sharesight.com/dividend-tracker/) from stocks, ETFs and mutual/managed Funds
+
+  * Run powerful reports built for investors, such as [Performance](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/), [Portfolio Diversity](https://www.sharesight.com/blog/how-to-track-your-asset-allocation-strategy-in-sharesight/), [Contribution Analysis](https://www.sharesight.com/blog/explore-your-portfolio-performance-with-the-contribution-analysis-report/) and [Future Income](https://www.sharesight.com/blog/how-to-see-upcoming-dividends-with-sharesight/) (upcoming dividends)
+
+  * See the true picture of your investment performance, including the impact of brokerage fees, dividends, and capital gains with Sharesight’s [annualised performance calculation methodology](https://www.sharesight.com/blog/how-sharesight-calculates-your-investment-performance/)
+
+  [Sign up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) and get started tracking your investment performance (and more) today.
+
+  ![featured import-yahoo-finance-portfolio-to-sharesight-2021.](//images.ctfassets.net/91sm3pewxzag/3Gl2HXT7yRqUcE4o8tUGAD/bb0ffa273b3da1ca537c94446815a429/featured_import-yahoo-finance-portfolio-to-sharesight-2021..png?w=950)
+
+  ### FURTHER READING
+
+  * [3 ways to become a better investor in 2021](https://www.sharesight.com/blog/3-ways-to-become-a-better-investor-in-2021/)
+
+  * [Track your investments with Sharesight’s Performance Report](https://www.sharesight.com/blog/track-your-investments-with-sharesights-performance-report/)
+
+  * [7 reasons why Sharesight is better than a spreadsheet](https://www.sharesight.com/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 5tHeOVcN8sW4aIuo60uE8y
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:51:07+00:00'
+    :created_at: '2016-07-07T23:43:52+00:00'
+    :id: 5tHeOVcN8sW4aIuo60uE8y
+  :name: Investing Tips
+  :description: We're DIY investors who are passionate about investing. Here's a collection
+    of investing tips and insights we've shared over the years.
+  :url_slug: investing-tips
+:created_at: !ruby/object:DateTime 2021-02-02 16:31:00.000000000 +11:00
+:meta_description: Looking for a Yahoo Finance alternative? Sharesight provides annualised
+  performance, automatic dividends, currency impacts and advanced portfolio tracking.
+:featured_image:
+  :title: featured - Sharesight vs Yahoo Finance
+  :description: Sharesight vs Yahoo Finance
+  :url: "//images.ctfassets.net/91sm3pewxzag/bJbakPPqLYuS842CwqaWy/d847c92654cd7bfc4e9c10656623eecd/featured_sharesight-vs-yahoo-finance.png"
+  :_meta:
+    :updated_at: '2017-10-26T01:09:46+00:00'
+    :created_at: '2017-10-26T01:09:18+00:00'
+    :id: bJbakPPqLYuS842CwqaWy
+:hide_from_feed: false
+:slug: yahoo-finance-vs-sharesight-comparing-portfolio-trackers

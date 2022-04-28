@@ -1,0 +1,110 @@
+---
+:id: 5kViDH65VY8M8CKKeeMeCe
+:_meta:
+  :content_type_id: post
+  :updated_at: '2019-07-31T04:44:45+00:00'
+  :created_at: '2018-06-14T23:24:19+00:00'
+  :id: 5kViDH65VY8M8CKKeeMeCe
+:title: How to calculate your 2017-2018 capital gains tax
+:content: |-
+  ###### NOTE: There is a newer version of this article. See [*Capital gains tax calculator for Australian investors*](/blog/capital-gains-tax-calculator-for-australian-investors/) for more information.
+
+  ###### Disclaimer: The below article is for informational purposes only and does not constitute a product recommendation, or taxation or financial advice and should not be relied upon as such. Please check with your adviser or accountant to obtain the correct advice for your situation.
+
+  [Forget your spreadsheet](/blog/7-reasons-why-sharesight-is-better-than-a-spreadsheet/). The best way to calculate your investment portfolio’s CGT obligations is to use Sharesight's Capital Gains Tax Report. Here’s why:
+
+  - **It takes care of the maths** (so you don’t have to).
+  - **It optimises your tax position** by letting you experiment with different sale allocation methods.
+  - **It’s available to run at any time**, over any time period. So not only will you have the information you need at tax time, but throughout the year. This means fewer surprises when the next tax season rolls around.
+
+  ![featured - Sharesight CGT Report AU](//images.ctfassets.net/91sm3pewxzag/22Zqb4dGiA2MoQuAIGmCYS/cc004bc83cc26b4d9a64009c151d8cac/featured_sharesight-cgt-report-au_2018-06-14.jpg?w=950)
+
+  ## Calculate your CGT with Sharesight
+
+  [Sharesight's](/) Capital Gains Tax Report calculates capital gains made on sold shares as per Australian Tax Office (ATO) rules (for those of you in Canada, we also offer a [Canadian CGT Report](/blog/canadian-capital-gains-tax-report/)). You may run the report over any period in order to see:
+
+  - The CGT position for all your holdings sold within the period.
+  - Your CGT gains broken-up into short and long term, as well as your losses.
+  - A summary of the short and long term gains and losses, as well as any capital gain or claimable loss.
+
+  ![Tablet - Sharesight CGT Report AU](//images.ctfassets.net/91sm3pewxzag/3E4X7UpF9KEgqK4KmmQukg/8160a866c4a8d2fecfb5c5733a931fe4/tablet_sharesight-cgt-report_2018-06-14.jpg?w=950)
+
+  The report uses the ‘[discount method](https://www.ato.gov.au/General/Capital-gains-tax/Working-out-your-capital-gain-or-loss/Working-out-your-capital-gain/The-discount-method-of-calculating-your-capital-gain/)’ for shares that have been held for more than 1 year and the ‘other method’ for shares held for less than one year. The discount rate is based on the tax settings of an Australian portfolio:
+
+  - **Individuals / Trust** -- CGT discount of 50 %
+  - **Self Managed Super Fund** -- CGT discount of 33⅓ %
+  - **Company** -- CGT discount of nil
+
+  The report also allows you to specify the sale allocation method at the overall portfolio and individual holding level to determine your optimum position, including:
+
+  - **First In, First Out (FIFO)** -- Sharesight assumes that you sell your longest held shares first.
+  - **Last In, First Out (LIFO)** -- Sharesight assumes that you sell your most recently purchased shares first.
+  - **Minimise Gain** -- Sharesight assumes that you sell shares with the highest purchase price first.
+  - **Maximise Gain** -- Sharesight assumes that you sell shares with the lowest purchase price first.
+  - **Minimise CGT** -- Sharesight assumes that you sell shares that will result in the lowest capital gains tax first. This method is more sophisticated than the ‘Minimise capital gain’ method because it takes into account the Australian CGT discounting rules.
+
+  The sale allocation method can be changed for specific holdings or for the entire portfolio:
+
+  ![screenshot - Sharesight - Sale Allocation Methods](//images.ctfassets.net/91sm3pewxzag/6aQzGxQ8P6CmYs42sAM8qQ/a31a0d01832bcc060d38a8119055159d/screenshot_sale-allocation-methods_2018-06-14.png?w=950)
+
+  ## Notes on the Capital Gains Tax Report
+
+  - You may carry forward any losses from the previous reporting period.
+  - Once you’re happy with your report, you may choose to “lock” it. This allows you to alter the sale allocation methods in future reporting periods without invalidating the result for previous periods.
+
+  ## Other helpful features
+
+  - **Download your CGT Report** -- As with all of Sharesight’s reports, your entire Capital Gains Tax Report can be downloaded to Excel, PDF or [Google Sheets](/blog/new-open-sharesight-reports-directly-google-sheets/).
+  - **Share your portfolio with your accountant** -- With your capital gains and losses automatically sorted, you should save on accounting fees this tax season. Why not take it a step further by [sharing secure portfolio access](/blog/save-time-money-by-sharing-your-portfolio-with-your-accountant/) with your accountant? They’ll have everything they need at their fingertips -- not just at tax-time but throughout the year.
+
+  ## More tax reports
+
+  - **[The Unrealised CGT Report](/blog/tax-loss-selling-for-australian-investors/)** makes it easy to lower your capital gain tax obligations by modelling the implications of selling shares to offset gains and losses you incurred during the year.
+  - **[The Taxable Income Report](https://help.sharesight.com/au/taxable_income/)** lists all dividend payments and interest payments received during the year, which you are required to include in your tax return to the ATO.
+
+  ## Need help?
+  For more information visit our [Capital Gains Tax Report help page](https://help.sharesight.com/au/capital_gains/).
+
+  ## Get started today
+  [Sign-up for a FREE Sharesight account](https://portfolio.sharesight.com/signup) and join the tens of thousands of investors already taking control of their portfolio with Sharesight.
+
+  ### FURTHER READING
+  - [Get on top of your FY2017-18 corporate actions](/blog/get-on-top-of-your-fy2017-18-corporate-actions/)
+  - [Record-keeping requirements for Australian investors](/blog/record-keeping-requirements-for-australian-investors/)
+  - [5 ways to get the portfolio insights you need](/blog/5-ways-to-get-the-portfolio-insights-you-need/)
+
+  *<small>Important Disclaimer: We do not provide tax advice. Make sure you seek appropriate tax advice before implementing the ideas in this post.</small>*
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-06-15 10:40:00.000000000 +10:00
+:meta_description: Forget your spreadsheet. The best way to calculate your investment
+  portfolio’s CGT obligations is to use Sharesight’s Capital Gains Tax Report.
+:featured_image:
+  :title: featured - Sharesight CGT Report AU
+  :description: featured - Sharesight CGT Report AU
+  :url: "//images.ctfassets.net/91sm3pewxzag/22Zqb4dGiA2MoQuAIGmCYS/cc004bc83cc26b4d9a64009c151d8cac/featured_sharesight-cgt-report-au_2018-06-14.jpg"
+  :_meta:
+    :updated_at: '2018-06-14T23:45:27+00:00'
+    :created_at: '2018-06-14T23:44:57+00:00'
+    :id: 22Zqb4dGiA2MoQuAIGmCYS
+:slug: how-to-calculate-your-2017-2018-capital-gains-tax

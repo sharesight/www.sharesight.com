@@ -1,0 +1,70 @@
+---
+:id: post_52710
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:35:42+00:00'
+  :created_at: '2016-06-29T23:18:55+00:00'
+  :id: post_52710
+:title: Announcing Custom Groups
+:url_slug: announcing-custom-groups
+:content: |-
+  The lens through which an investor views their portfolio varies based on their objectives, investment philosophy, and even where they live. That's why we've built a new feature that allows clients to fully customise how their [Sharesight](/) portfolio holdings are grouped.
+
+  ![Custom Groups - Featured](//images.ctfassets.net/91sm3pewxzag/672m20lqH6CSouaQW2eAAk/813f26342ebc61c102d55a257106195e/featured_custom-groups.png?w=950)
+
+  Custom Groups is a user-driven option and is available in addition to the standard Market, Country, Sector, Industry, and Investment Type options.
+
+  **You'll find Custom Groups within Account Settings > My Custom Groups:**
+  ![Custom Groups #1 - Sharesight](//images.ctfassets.net/91sm3pewxzag/2SoFqHKKreo0SyIA6sAEC4/c166241bf4bd0f44fad6d98aafb00350/custom-groups-1-min-1.png?w=950)
+  ![Custom Groups #2 - Sharesight](//images.ctfassets.net/91sm3pewxzag/3dslHstBtuCu2YEG2AqwWs/e6677663377b837f7d87fbb6bb73656b/custom-groups-2-min-700x373.png?w=950)
+
+  Once you've customised your groups we recommend applying them to the [Portfolio Overview](https://help.sharesight.com/show_portfolio/) and [Performance Report](https://help.sharesight.com/performance_report/) pages:
+
+  ![Custom Groups #3 - Sharesight](//images.ctfassets.net/91sm3pewxzag/5QnVo7sh0WEe0Ys8kESgYY/95e177a25a16b41300ae2b604ee9b733/custom-groups-3_B-min.png?w=950)
+
+  And definitely the [Diversity Report](https://help.sharesight.com/diversity_report/), which will show you asset allocation on your terms:
+
+  ![Custom Groups #4 - Sharesight](//images.ctfassets.net/91sm3pewxzag/5DAisLVxkIGiew2208Quek/2196edff7c6dcc87e595d5e21054dfca/custom-groups-4-min.png?w=950)
+
+  ### FURTHER INFORMATION
+
+  - Community Forum -- [Custom Groups](https://community.sharesight.com/topics/ability_to_group_by_user_defined_headings)
+  - Blog -- [Asset Allocation Reporting in Sharesight](/blog/asset-allocation-reporting-in-sharesight/)
+  - Blog -- [Announcing the Contribution Analysis Report](/blog/announcing-the-contribution-analysis-report/)
+  - Help -- [Custom Groups](https://help.sharesight.com/custom-groups/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2016-05-23 00:00:00.000000000 Z
+:meta_description: Our Custom Groups feature allows investors to organise and group
+  their portfolio holdings according to their prefered asset allocation methodology.
+:featured_image:
+  :title: Custom Groups - Featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/672m20lqH6CSouaQW2eAAk/813f26342ebc61c102d55a257106195e/featured_custom-groups.png"
+  :_meta:
+    :updated_at: '2016-09-01T06:45:55+00:00'
+    :created_at: '2016-09-01T06:45:22+00:00'
+    :id: 672m20lqH6CSouaQW2eAAk
+:wordpress_url: "/2016/05/23/announcing-custom-groups/"
+:slug: announcing-custom-groups

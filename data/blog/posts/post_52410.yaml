@@ -1,0 +1,72 @@
+---
+:id: post_52410
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:57+00:00'
+  :created_at: '2016-06-29T23:17:47+00:00'
+  :id: post_52410
+:title: Sharesight Pro portfolio search tool
+:url_slug: sharesight-pro-portfolio-search-tool
+:content: |-
+  Great news for [Sharesight Pro](/pro/) partners managing a large amount of portfolios: we've added a portfolio search tool to the Sharesight Pro dashboard, making it easier to search and filter by client portfolio names:
+
+  ![Sharesight Pro Portfolio Search Tool](//images.ctfassets.net/91sm3pewxzag/1q0EOZL1XW2GW802iY0uAU/7f6569a65f20f63669f19852da71b8eb/featured_pro-portfolio-search.png?w=950)
+
+  ### A few notes on the new Sharesight Pro dashboard portfolio search tool:
+
+  1. The search will return results when two or more characters are entered, or display 'no results' if no results are found.
+
+  2. Results are displayed in alphabetical order with one exception: if a portfolio name starts with the exact search value, then that portfolio will take precedence.
+
+  3. A maximum of 10 results will be displayed within the dropdown list.
+
+  4. **Only those portfolios that are available to the user will be returned.** So a staff user's search results will only include those portfolios they normally have&nbsp;access to within their dashboard.
+
+  5. Clicking on a search result (the portfolio name) will take you to that portfolio.
+
+  ### We hope this feature will help you with the day-to-day management of your Sharesight portfolios. If you have any questions, please contact your Account Manager, or [start a Free 30-day trial of Sharesight Pro](https://portfolio.sharesight.com/professional_signup).
+
+  <br>
+
+  ---
+
+  ### FURTHER READING
+
+  - Blog: [Why do financial advisers use Sharesight?](/blog/why-do-financial-advisers-use-sharesight/)
+  - Blog: [6 reasons why accountants love Sharesight Pro](/blog/6-reasons-why-accountants-love-sharesight-pro/)
+  - Help: [Using the Sharesight Pro dashboard](https://help.sharesight.com/professional_dashboard/)
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2016-03-30 00:00:00.000000000 Z
+:meta_description: We've added a portfolio search tool to the Sharesight Pro dashboard,
+  making it easier to search and filter by client portfolio names.
+:featured_image:
+  :title: Sharesight Pro Portfolio Search Tool
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/1q0EOZL1XW2GW802iY0uAU/7f6569a65f20f63669f19852da71b8eb/featured_pro-portfolio-search.png"
+  :_meta:
+    :updated_at: '2016-09-02T02:08:52+00:00'
+    :created_at: '2016-09-02T02:08:29+00:00'
+    :id: 1q0EOZL1XW2GW802iY0uAU
+:wordpress_url: "/2016/03/30/sharesight-pro-portfolio-search-tool/"
+:slug: sharesight-pro-portfolio-search-tool

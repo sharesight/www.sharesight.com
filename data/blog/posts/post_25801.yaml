@@ -1,0 +1,96 @@
+---
+:id: post_25801
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-06-15T22:33:37+00:00'
+  :created_at: '2016-06-29T23:17:35+00:00'
+  :id: post_25801
+:title: 'Introducing Broker Import: Automatic portfolio setup!'
+:url_slug: introducing-broker-import
+:content: |-
+  This is a huge new feature announcement. Now on [Sharesight](/) you can **instantly import your trading history directly from your broker** -- meaning no data to enter or spreadsheets to upload. This is by far, the easiest way to get started with Sharesight or to bring in your additional portfolios.
+
+  ![Broker Import - featured](//images.ctfassets.net/91sm3pewxzag/5SVpvuybjGaQke8cwAqMwC/3bafa06864995220ec83bbbeaac25799/featured_broker-import.png?w=950)
+
+  Broker Import allows you to login to your online brokerage account - from within Sharesight. After you securely connect, we’ll automatically import your buy and sell transactions within a date range of your choice. Importing takes a few seconds. When finished, your portfolio will now be setup on Sharesight - complete with your entire trading history.
+
+  <a href="https://www.youtube.com/embed/QnJkX9_2IvE" class="embedly-card" data-card-width="100%" data-card-controls="0">Embedded content: https://www.youtube.com/embed/QnJkX9_2IvE</a>
+
+  ## Give it a try
+  To try it out, we’d recommend creating a new portfolio, or using a “spare” portfolio you might keep for watchlist purposes. From the new dropdown menu next to Add Holding, select Import from your broker and choose your broker (Westpac is coming soon!):
+
+  ![Broker Import by Sharesight](//images.ctfassets.net/91sm3pewxzag/vBHbs163OSYWaMQmQYiWa/440dc068c06a0518a4cf0c6f78bf8df5/blog_broker-import1.png?w=950)
+
+  On the next screen, enter the same details you use to login to your broker’s website and click Import. **For security reasons, Sharesight will never store or remember your broker login details.** You’re essentially downloading your trading history through a secure connection, and uploading it into Sharesight’s existing setup process.
+
+  ![Sharesight Broker Authentication](//images.ctfassets.net/91sm3pewxzag/4YsBhQu05iG8CYuQwUKmWY/bdca94efd8fc705d3dc134b9cca9154f/Sharesight-Broker-Authentication.png?w=950)
+
+  After a few seconds, Sharesight will display the trading history collected from your broker. This is a really handy step, which allows you to confirm the trades you’re about to use to create the portfolio’s history. For those of you who’ve used our bulk importer before, you might notice that we’ve married Broker Import with our existing spreadsheet upload process.
+
+  This page will also allow you to make adjustments (if necessary) without having to leave Sharesight. If you do get stuck on a particular holding, you can always come back and add it manually later.
+
+  ![Sharesight - Confirm Trade Import](//images.ctfassets.net/91sm3pewxzag/32vZXdUkTSk04W0YGugKQG/9ecf8b8f5e5fc6502af6da0c5050b035/Sharesight-Confirm-Import.png?w=950)
+
+  Once ready click Save all transactions and Sharesight will begin building your portfolio. You’ll see a number of green rows of data layering on top of one another. Any errors that do appear can be dealt with on this page, ignored, or handled once inside your new portfolio. In other words, should any of your holdings not flow through to Sharesight automatically, we’ll flag those, but still set up your portfolio based on the trades that did come through successfully.
+
+  ![Saved Trades](//images.ctfassets.net/91sm3pewxzag/2rvco3fvsoEYGsYCMoW2S2/37a30e17a4ff7aa2d06785f426471ca4/sharesight-saved-trades.png?w=950)
+
+  And that’s it! The page will refresh and you’ll be taken into your new portfolio. And just like Sharesight does for any holding, we’ll auto-populate all subsequent dividends and corporate actions.
+
+  ![Sharesight Portfolio Overview](//images.ctfassets.net/91sm3pewxzag/67sZ2TqKTSegMSQEsGq0uI/b2a7c9b059ae31aea19166a1acac972d/sharesight-portfolio-overview.png?w=950)
+
+  We're thrilled about this new feature and we can't wait to get [your feedback](https://community.sharesight.com/topics/new_import_data_directly_from_your_broker). We think this will help investors of all kinds and the professionals who look after their portfolios. The faster and easier you can get your data to work in Sharesight, the quicker you can make better investment and tax decisions. We've always made it our mission to cut down on the admin time spent on portfolios. We think Broker Import represents an exponential leap forward.
+
+  ### Keep in mind when using a feature that's THIS automatic & powerful:
+
+  - <del><b>It’s still beta.</b> There is only so much testing we can do. This feature will be only be optimised after you give it a go and send us your feedback.</del>
+
+  - **Broker Import will only bring in your historical trades.** You will still need to use our [Trade Confirmation Emails feature](https://help.sharesight.com/contract_notes/) for auto-recording future buys and sells.
+
+  - **Be mindful of how much history to bring across.** If you bring in 20 years worth of trade data, you'd be wise to go through and double check your dividends and corporate actions since we populate everything automatically. And for 20 years --that's a lot of data. Any edits that you missed will compound over time. Starting since your last tax return or for the past 12 months is a more manageable approach.
+
+  - **Negative balances.** If you've ever transferred holdings from one broker to another, you may encounter a negative balance error message. Since the original broker doesn't give your current broker any transactional details, Sharesight won't receive them either. This results in a situation where you're telling Sharesight to, for example, sell units in a holding we don't know that you own. This is easily fixed right on the error page:
+   1. **Record the missing transaction(s).** Click the ‘Add row’ link to record any missing transactions.
+   2. **Exclude the holding from the import and deal with it later.** If you don’t have the missing data at hand, you can use the delete checkbox to exclude certain transactions from the import. You can [manually add these holdings](https://help.sharesight.com/getting-started-with-sharesight/) later.
+
+  ### FURTHER READING
+
+  - Help -- [Importing your trading history directly from your broker](https://help.sharesight.com/importing-your-trading-history-directly-from-your-broker/)
+  - Forum -- [Import data directly from your broker](https://community.sharesight.com/topics/new_import_data_directly_from_your_broker)
+  - Blog -- [Why do I need Sharesight with my online broker?](/blog/why-do-i-need-sharesight-with-my-online-broker/)
+:author:
+  :id: author_51
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2016-12-05T04:37:16+00:00'
+    :created_at: '2016-06-29T23:17:20+00:00'
+    :id: author_51
+  :display_name: Doug Morris
+  :first_name: Doug
+  :last_name: Morris
+  :title: CEO
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2014-07-23 00:00:00.000000000 Z
+:meta_description: Sharesight has made it easier than ever to set up investment portfolios
+  with the newly launched Broker Import functionality.
+:featured_image:
+  :title: Broker Import - featured
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/5SVpvuybjGaQke8cwAqMwC/3bafa06864995220ec83bbbeaac25799/featured_broker-import.png"
+  :_meta:
+    :updated_at: '2016-09-13T11:31:22+00:00'
+    :created_at: '2016-09-13T11:31:07+00:00'
+    :id: 5SVpvuybjGaQke8cwAqMwC
+:wordpress_url: "/2014/07/23/introducing-broker-import/"
+:slug: introducing-broker-import-automatic-portfolio-setup

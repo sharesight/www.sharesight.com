@@ -1,0 +1,265 @@
+---
+:id: 12kJI6wZ6cHi4votyVuIJG
+:_meta:
+  :content_type_id: post
+  :updated_at: '2021-07-08T04:40:44+00:00'
+  :created_at: '2020-01-09T03:05:01+00:00'
+  :id: 12kJI6wZ6cHi4votyVuIJG
+:title: Every new feature + improvement Sharesight released in 2019
+:url_slug: every-new-feature-improvement-sharesight-released-in-2019
+:content: "Last year was another big year at Sharesight, we reached [over 100,000
+  users](https://www.sharesight.com/blog/sharesight-hits-100000-users/) and month
+  after month we released new features and improvements to make Sharesight better
+  than ever. \n\nWhile not every new feature release gets its own blog post to explain
+  it, they are all covered in our [monthly release notes](https://www.sharesight.com/blog/release-notes/)
+  so you can stay up to date with the latest improvements. \n\nWith 2019 now behind
+  us, let's revisit everything we released during the year.\n\n![Every new feature
+  + improvement Sharesight released in 2019](//images.ctfassets.net/91sm3pewxzag/71jqRziqjgmzoTfYXnCJYd/4d682902b11a48ac34c777f3daa0c17f/Every_new_feature___improvement_Sharesight_released_in_2019.jpg?w=950)\n\n#
+  January\n\n## Broker Import\n\nAdded [CSV file import](https://help.sharesight.com/import_bulk_trades/)
+  support for the following brokers:\n\n* Virtual Broker (Canada).\n\n* National Bank
+  of Canada.\n\n* Qtrade (Canada).\n\n* Credential Direct (Canada).\n\n* HSBC (Canada).\n\nAdded
+  [Email contract note trade import](https://help.sharesight.com/supported_brokers/)
+  for: \n\n* [Stake](/blog/stake-clients-can-now-easily-track-trades-using-sharesight/)
+  (Australia).\n\n## Usability\n\n* Release redesigned Portfolio Overview page featuring
+  asynchronous data loading (this will allow various page speed improvements which
+  will be released over the coming weeks).\n\n* Improved Add Holding Form offering
+  major usability enhancements for mobile devices. This has been released to selected
+  customers ahead of general release in the coming weeks.\n\n* Redesigned Billing
+  Details page to provide quicker and clearer access to billing information and invoice
+  history.\n\n* Improve Contract Note / Trade Confirmation Email Password field in
+  the settings tab to clearly indicate when a password has been saved.\n\n* Performance
+  calculation parameter caching released to beta users. This offers substantial page
+  load improvements especially for large portfolios. We anticipate rolling this out
+  to all customers over the coming weeks.\n\n## API\n\n* API V3 (in beta): Added valid
+  position indicator to holdings endpoint.\n\n* API V3 (in beta): Added total portfolio
+  performance endpoint.\n\n## Behind the scenes\n\n* Implement Cypress.io for end
+  to end testing.\n\n# February\n\n## Broker Import\n\n- Added support for [Praemium
+  trading history file](https://www.sharesight.com/blog/import-your-praemium-portfolio-into-sharesight/),
+  allowing Praemium users to more easily transition to Sharesight.\n\n## Usability\n\n-
+  Replace loading spinners with ‘skeletons’ on the overview page.\n- Minor design
+  revisions for mobile devices - removed unnecessary padding, fix alignment issues,
+  add columns on tablet and phone landscape orientation.\n- Created a new Integrations
+  tab and moved portfolio sharing to the settings tab. This will make it easier to
+  configure broker integrations in future.\n- Improve CSV import screen to display
+  values up to 10 decimal places without recourse to scientific notation.\n- Allow
+  the use of special characters in custom group names.\n- Various bug fixes / enhancements
+  for IE11 (But please use a modern browser if you can, IE11 is outdated and offers
+  a poor experience by comparison).\n- Added an ex date column to the Future Income
+  Report along with various layout improvements.\n\n## Security\n- Require confirmation
+  of existing password when changing password.\n- Introduce Content Security Policy
+  headers as further protection against cross site scripting (XSS), clickjacking and
+  content injection attacks.\n\n## Sharesight API\n- API V3 (in beta): Added an endpoint
+  to return performance for a benchmark instrument.\n\n# March\n\n## Country currency
+  coverage\n\n* Foreign exchange (forex) rates and support for 40 additional currencies
+  added to the [32 we already support](/blog/track-foreign-currency-on-sharesight/)
+  (plus [8 cryptocurrencies](https://www.sharesight.com/blog/track-bitcoin-and-other-cryptocurrencies-with-sharesight/))
+  \n\n## Usability\n\n* Introduced the ability for any of our users to add themselves
+  to the [Sharesight beta](https://help.sharesight.com/beta/) program via the My Details
+  page.\n\n* Improved functionality regarding total claimable foreign tax paid on
+  the [Foreign Investment Fund (FIF) Report](https://help.sharesight.com/nz/new_fdr_report_page/)
+  for New Zealand users. We now segment any FIF tax paid by their respective holdings
+  and calculate a maximum claimable foreign tax paid per holding.\n\n* Introduced
+  a minor layout change to the criteria selection on the [Portfolio Overview](https://help.sharesight.com/show_portfolio/)
+  and [Individual Holding](https://help.sharesight.com/show_holding/) pages in preparation
+  for some final overview changes coming in April.\n\n* Gmail users can set their
+  [broker email import](https://help.sharesight.com/contract_notes/) address as a
+  forwarding address within their Gmail client now and verify that forwarding address
+  from within the [Contract Note Inbox](https://help.sharesight.com/viewing-the-contract-notes-inbox/).\n\n*
+  Enhancements to the manual [Cash Account](https://help.sharesight.com/creating-a-cash-account/)
+  trade syncing through improved handling of unsettled trades adjustment feature and
+  DRP trades .\n\n* Improvements to the new trade form, particularly in regard to
+  the instrument search, better handling of errors and the introduction of a new exchange
+  rate search function.\n\n* Improvements to the trade notification process for those
+  using the [Sharesight Connect API](https://help.sharesight.com/sharesight_connect/).\n\n*
+  Fixes and improved support for 20+ [contract notes](https://help.sharesight.com/contract_notes/).\n\n*
+  Made some additional IE11 improvements following on from last month’s effort.\n\n*
+  Added new [broker support](https://help.sharesight.com/supported_brokers/) for Charles
+  Stanley, Pac Partners, Craigs, Investorfirst Securities.\n\n* Introduced the ability
+  for users to set a financial year end day instead of just the month (to cater specifically
+  to our UK users).\n\n* Enabled handling of fractional quantities on almost all remaining
+  markets, including the NZX and ASX to allow for investments through micro-investing
+  platforms such as Sharesies .\n\n* Enabled the storing of criteria selection on
+  our [mobile app](https://www.sharesight.com/blog/sharesight-mobile-app--april-2017-update/)
+  after logging out.\n\n* Introduced a new [Sharesight20](https://www.sharesight.com/blog/sharesight20/)
+  page to feature all our Sharesight20 top 20 trades snapshots.\n\n## Sharesight API\n\n*
+  API V3 (in beta): Added an endpoint to return a trade log of all interactive broker
+  trades.\n\n![featured - Sharesight API](//images.ctfassets.net/91sm3pewxzag/2vHBuJaniwIMUwWE2E46s6/438ecad56a9125942d431850d45c7a01/featured_sharesight-api.png?w=950)\n\n#
+  March\n\n## Usability\n\n* Following overwhelmingly positive feedback from our beta
+  users, we Introduced a new ‘sticky’ criteria bar on the overview page, so that you
+  don’t have to scroll up to the top of the page to alter the report settings. This
+  is particularly useful for larger portfolios.\n\n* Replaced checkboxes with toggle
+  switches for closed positions and dollar/percentage selection. This is much easier
+  to use on touchscreens in particular.\n\n* Added thumbnail icons to the chart selection
+  dropdown.\n\n* A range of small usability tweaks to the add holding form, including
+  a smarter way to pre-fill the exchange rate for foreign investments.\n\n* Substantial
+  performance improvements on the sold shares report, reducing the median page load
+  time by almost 50%.\n\n## Broker Import\n\n* Fixes and improved support for 40+
+  [Contract notes](https://help.sharesight.com/au/contract_notes/).\n\n* Added support
+  for Internaxx Contract notes and multi trade Commsec International contract notes.\n\n##
+  Benchmarking\n\n* Expanded the benchmarking function to allow you to benchmark against
+  Unit Trusts, Managed Funds and Ordinary Shares in addition to ETFs. \n\n## Sharesight
+  API\n\n* Added cash account adjustment settings in Portfolio List, Create, Show,
+  and Update endpoints.\n\n# April\n\n## Usability\n\n* Following overwhelmingly positive
+  feedback from our beta users, we Introduced a new ‘sticky’ criteria bar on the overview
+  page, so that you don’t have to scroll up to the top of the page to alter the report
+  settings. This is particularly useful for larger portfolios.\n\n* Replaced checkboxes
+  with toggle switches for closed positions and dollar/percentage selection. This
+  is much easier to use on touchscreens in particular.\n\n* Added thumbnail icons
+  to the chart selection dropdown.\n\n* A range of small usability tweaks to the add
+  holding form, including a smarter way to pre-fill the exchange rate for foreign
+  investments.\n\n* Substantial performance improvements on the sold shares report,
+  reducing the median page load time by almost 50%.\n\n## Broker Import\n\n* Fixes
+  and improved support for 40+ [Contract notes](https://help.sharesight.com/au/contract_notes/).\n\n*
+  Added support for Internaxx Contract notes and multi trade Commsec International
+  contract notes.\n\n## Benchmarking\n\n* Expanded the benchmarking function to allow
+  you to benchmark against Unit Trusts, Managed Funds and Ordinary Shares in addition
+  to ETFs. \n\n## Sharesight API\n\n* Added cash account adjustment settings in Portfolio
+  List, Create, Show, and Update endpoints.\n\n# May\n\n## Usability\n\n* Improvements
+  to streamline the onboarding flow on both desktop and mobile for new users that
+  haven’t added any data to a Sharesight portfolio.\n\n* Improved placeholder text
+  on the [add holding form](https://help.sharesight.com/adding-additional-holdings-to-your-portfolio/).\n\n*
+  Display localised currency icons (ie: €,￥, $) for dividend and distribution payments
+  on the price chart of the [Holdings page](https://help.sharesight.com/show_holding/).\n\n##
+  Broker Import\n\n* Added file import support for New Zealand broker Hatch.\n\n*
+  Added email [contract note support](https://help.sharesight.com/supported_brokers/)
+  for Mint Partners and Macrovue.\n\n## Supported stock exchanges\n\nSharesight now
+  tracks [28 international stock exchanges and managed/mutual fund markets](https://help.sharesight.com/au/supported-stock-exchanges-and-managed-funds/).\n\n*
+  Added support for [Shenzhen Stock Exchange (Sharesight code SHE)](https://www.sharesight.com/blog/track-the-shenzhen-stock-exchange-she-with-sharesight/).\n\n*
+  Added support for [Korea Exchange (Sharesight code KRX) ](https://www.sharesight.com/blog/track-korea-exchange-krx-stocks-with-sharesight/).\n\n*
+  Added support for [Taiwan Stock Exchange (Sharesight code TAI)](https://www.sharesight.com/blog/track-the-taiwan-stock-exchange-twse-with-sharesight/).\n\n##
+  Sharesight API\n\n* Add a new optional parameter include_limited to the v3 performance
+  endpoint (beta) - This will return limited information for holdings that exceed
+  the allowable limit based on the users subscription.\n\n# June\n\n## Usability\n\n*
+  Improved [portfolio overview chart](https://help.sharesight.com/show_portfolio/)
+  load speed via backend enhancements and additional dedicated server infrastructure
+  to handle charting.\n\n* Significant improvements to the date picker when manually
+  entering (typing a date). The improved datepicker is currently available on the
+  [Performance Report](https://help.sharesight.com/performance_report/), [All Trades
+  Report](https://help.sharesight.com/trades_report/) and [Taxable Income Report](https://help.sharesight.com/taxable_income/).
+  We will be rolling this out to all other reports in the near future.\n\n## Broker
+  Import\n\n* Added support for Jarden Contract Notes (NZ) following rebrand from
+  First NZ Capital.\n\n* Added [CSV Broker Import support for Stake](https://www.sharesight.com/blog/stake-clients-can-now-easily-track-trades-using-sharesight/)
+  (Australia).\n\n# July\n\n## Portfolio Tracker Functionality\n\n* Improved [Merge
+  Holding](https://www.sharesight.com/blog/announcing-the-merge-holding-feature/)
+  feature to allow for the full packet level cost base history to be maintained across
+  holdings (as opposed to transferring a single cost base figure to the new holding).
+  This is important for Australian users to allow for [sale allocation optimisation](https://www.sharesight.com/blog/tax-loss-selling-for-australian-investors/)
+  and to ensure that discount rules are correctly applied.\n\n* Interest payments
+  on cash accounts are now included in the [Taxable Income Report](https://www.sharesight.com/blog/improved-taxable-income-report-for-australian-investors/).\n\n*
+  Added a new ‘Interest charged’ transaction type for [manual cash accounts](https://www.sharesight.com/blog/track-cash-accounts-in-sharesight/).\n\n##
+  Usability\n\n* Significantly improved date picker rolled out to all reports.\n\n*
+  Optimised instrument search on the Add Holding form for mobile devices.\n\n* Added
+  ‘In this calendar year' option to the list of predefined date ranges.\n\n## Broker
+  Transaction Import\n\n* Added support for the new format Pattersons contract notes.\n\n*
+  Improved support for Jarden contract notes to cover bonds and international trades.\n\n*
+  Improved support for Commsec International contract notes to handle multiple buys
+  and sells on the same document.\n\n## News Feeds\n\n* Added news feeds from [The
+  Motley Fool Singapore](https://www.sharesight.com/blog/get-the-motley-fool-singapore-insights-in-sharesight/),
+  this content covers listings on the [Singapore Stock Exchange (SGX)](https://www.sharesight.com/blog/track-fractional-shares-on-any-stock-exchange/).\n\n#
+  August\n\n* We have [updated ETF distribution information available for the FY19
+  Australian tax year ](https://www.sharesight.com/blog/updated-australian-etf-distributions-now-available-for-fy19/)for
+  all iShares (BlackRock), Russell Investments, ETF Securities and Vanguard ETFs from
+  Sharesight partner Computershare. This means that for the majority of ETFs in Australia,
+  users will not need to manually update their ETF distribution components from their
+  AMMA statement using [Sharesight’s pro-rata form](https://help.sharesight.com/nz/taxable_income/#1)
+  to add this information to their portfolio.\n\n* We now allow you to override the
+  foreign withholding tax rate individually against each foreign holding in your portfolio.
+  You’ll find this under ‘holding settings’ on the holding page. \n\n* For Australian
+  users, we now have more accurate exchange rate information available for foreign
+  currency dividends paid by ASX listed instruments, so that your AUD totals exactly
+  match your dividend statement.\n\n## Sharesight Usability\n\n* Improved input error
+  messaging on various forms.\n\n* Restyled [news feed on the holding page (and share
+  checker)](https://www.sharesight.com/blog/improved-stock-market-news-in-sharesight/)
+  to better surface news across all content providers.\n\n## Broker Transaction Import\n\n*
+  Added support for Evans & Partners International [contract notes](https://help.sharesight.com/contract_notes/).\n\n*
+  Integration with Saxo Online Trading released as a beta feature.\n\n# September\n\n##
+  New Functionality / Enhancements\n\n- Added the ability to update the cash account
+  transaction type for cash accounts that are synced from Xero. This allows you to
+  correctly categorise interest payments for including in the Taxable Income Report.\n-
+  Increased the precision of the Average purchase price (Cost Base) to 3 decimal places
+  under the Holding Information section on the Holding Page.\n- Improved reporting
+  of portfolio usage on the billing page for Pro users.\n\n## Sharesight Usability\n\n-
+  Redesigned File Upload page for the CSV file importer.\n\n## Broker Transaction
+  Import\n- Added support for Support Wilson International Contract notes.\n\n# October\n\n##
+  New Functionality / Enhancements\n\n* Added ‘Return of Capital’ transaction type
+  for fixed interest investments to support bonds and notes with an amortising principal.\n\n*
+  Ongoing improvements to the [trade import UI for our Saxo integration](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/).
+  This will eventually be rolled out to all [brokers and file imports](https://help.sharesight.com/au/importing-your-trading-history-directly-from-your-broker/).\n\n*
+  Improved [Xero sync](https://www.sharesight.com/xero/) for AU trust distributions
+  to ensure correct tax year alignment.\n\n## Sharesight Usability\n\n* Update broker
+  import tiles with improved datepicker.\n\n* Updated price chart symbols to indicate
+  dividend currency.\n\n* Improved open & closed positions toggle.\n\n## Broker Transaction
+  Import\n\n* Added support for [TD Investing (Canada) Contract Notes](https://www.sharesight.com/blog/track-td-direct-investing-trades-using-sharesight/).\n\n#
+  November\n\n## New Functionality / Enhancements\n\n- Added a [‘Capital Call’ transaction
+  type](https://www.sharesight.com/blog/what-is-a-capital-call-transaction/) as sometimes
+  required for Private Equity investments.\n- Improved symbol mapping for our [Interactive
+  Brokers Integration](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-interactive-brokers/).\n-
+  Improved Symbol mapping for our [Saxo Integration](https://www.sharesight.com/blog/sync-trades-to-sharesight-from-saxo-markets/).\n\n##
+  Broker Transaction Import\n\n- Added contract note support for [Smartshares transaction
+  statements](https://www.sharesight.com/blog/track-your-smartshares-in-sharesight/)\n-
+  Added support for Citadel contract Notes (South Africa).\n\n# December\n\n## New
+  Functionality / Enhancements\n\n* Added news feeds from [The Motley Fool UK](https://www.sharesight.com/blog/get-the-motley-fool-uk-insights-in-sharesight/).\n\n*
+  Added option to allow our [CSV upload templates](https://help.sharesight.com/import_bulk_trades/)
+  to be opened directly in Google Drive.\n\n## Sharesight Usability\n\n* Rebuilt our
+  change plans page for retail customers, to make it clearer and easier to compare
+  the different functionality offered on each plan.\n\n* Rebuilt our [custom groups](https://help.sharesight.com/custom-groups/)
+  user interface for improved usability and to bring it in line with the javascript
+  library (React) that we are using to progressively modernise our front-end technology.\n\n*
+  Minor design tweak to improve tooltip readability.\n\n## Broker Transaction Import\n\n*
+  Added support for IG (Australia) Statements/Contract Notes that contain multiple
+  trades.\n\n* Added support for [CIBC (Canada) trade confirmation emails](https://www.sharesight.com/blog/track-cibc-investors-edge-trades-using-sharesight/).\n\n##
+  Here’s to an amazing 2020!\n\nThe Sharesight team thanks all our loyal users, [Sharesight
+  Pro](https://www.sharesight.com/pro/) clients and [Sharesight Partners](https://www.sharesight.com/partners/)
+  for joining us on this journey!\n\nIf you don’t yet use Sharesight, join over 100,000
+  users by [signing up for a free account today](https://portfolio.sharesight.com/signup)!\n\n###
+  FURTHER READING\n- [Top 10 Sharesight blog articles of 2019](https://www.sharesight.com/blog/top-10-sharesight-blog-articles-of-2019/)\n-
+  [Sharesight's 10 year fintech journey](https://www.sharesight.com/blog/sharesights-10-year-fintech-journey/)\n-
+  [Why you should partner with Sharesight](https://www.sharesight.com/blog/why-you-should-partner-with-sharesight/)\n-
+  [Power your business with the Sharesight API](https://www.sharesight.com/blog/power-your-business-with-the-sharesight-api/)\n"
+:author:
+  :id: 1YwVFlsM28AQEus6MgCwck
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2021-06-24T05:48:58+00:00'
+    :created_at: '2017-06-14T06:06:40+00:00'
+    :id: 1YwVFlsM28AQEus6MgCwck
+  :display_name: David Olsen
+  :first_name: David
+  :last_name: Olsen
+  :title: Senior Marketing Manager - Content/SEO
+  :company: Sharesight
+:categories:
+- :id: 9ls7vishk30UTapZQuarb
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:47:58+00:00'
+    :created_at: '2019-02-18T02:52:53+00:00'
+    :id: 9ls7vishk30UTapZQuarb
+  :name: Release Notes
+  :description: Sharesight technical release notes - the latest features and improvements
+    from Sharesight's development team in Wellington, New Zealand.
+  :url_slug: release-notes
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2020-01-09 10:00:00.000000000 +11:00
+:meta_description: Last year was a big one at Sharesight, month after month we released
+  new features and improvements to make Sharesight better than ever. Here's the full
+  list!
+:featured_image:
+  :title: Every new feature + improvement Sharesight released in 2019
+  :description:
+  :url: "//images.ctfassets.net/91sm3pewxzag/71jqRziqjgmzoTfYXnCJYd/4d682902b11a48ac34c777f3daa0c17f/Every_new_feature___improvement_Sharesight_released_in_2019.jpg"
+  :_meta:
+    :updated_at: '2020-01-09T03:43:24+00:00'
+    :created_at: '2020-01-09T03:43:21+00:00'
+    :id: 71jqRziqjgmzoTfYXnCJYd
+:hide_from_feed: false
+:slug: every-new-feature-improvement-sharesight-released-in-2019

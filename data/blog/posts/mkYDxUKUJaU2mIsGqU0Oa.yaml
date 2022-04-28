@@ -1,0 +1,120 @@
+---
+:id: mkYDxUKUJaU2mIsGqU0Oa
+:_meta:
+  :content_type_id: post
+  :updated_at: '2022-02-14T05:41:42+00:00'
+  :created_at: '2018-03-26T00:25:47+00:00'
+  :id: mkYDxUKUJaU2mIsGqU0Oa
+:title: How to calculate your 2018 FIF income
+:url_slug: how-to-calculate-your-2018-fif-income
+:content: "###### NOTE: There is a newer version of this article. See [*How to calculate
+  your NZ FIF income*](/blog/how-to-calculate-your-nz-fif-income/) for more information.\n\nPortfolio
+  tax reporting can be a real hassle. This is especially true for New Zealand residents
+  with offshore holdings such as foreign shares and managed funds. That’s because
+  certain overseas holdings are taxed under the New Zealand foreign investment fund
+  (FIF) rules, which means there are special tax requirements for investors who hold
+  them.\n\nAs a New Zealand based company, [Sharesight](/) was built for self-directed
+  Kiwi investors. To help you navigate the FIF rules, we’ve pulled together some background
+  information on the scheme, including some recent changes that have taken place.
+  We’ll also show you how to use Sharesight to determine whether your holdings are
+  subject to the foreign investment rules, and automatically calculate your FIF income
+  if that’s the case.\n\n![featured nz-dollars-calculator](//images.ctfassets.net/91sm3pewxzag/5UBMMTUmI0yIaIa2iqWYCO/fa23f0b752d9858af708a2a2ef9a2d71/featured_nz-dollars-calculator.jpg?w=950)\n\n##
+  What is a foreign investment fund (FIF)?\nAs stated by the New Zealand Inland Revenue
+  Department (IRD), a foreign investment fund (FIF) is an offshore investment held
+  by a New Zealand-resident taxpayer who holds:\n\n- less than 10% of the shares in
+  a foreign company\n- less than 10% of the units in a foreign unit trust\n- between
+  10% and 40% of the shares in a foreign company which is not a CFC\n- an interest
+  in a life insurance policy where a FIF is the insurer and the policy is not offered
+  or entered into in New Zealand\n- an interest in a foreign superannuation scheme\n\nIt
+  does not include interest earned from term deposits, bonds, debentures or money
+  lent. \n\n## Changes to FIF exemptions\nBefore we go any further, here’s a bit of
+  background information:\n\n- In previous years, the IRD published an Australian
+  share exemption lists – also known as the IR871.\n- The list indicated whether an
+  Australian company listed on the ASX (excluding listed investment companies) was
+  exempt from the FIF rules for that financial year.\n- The IRD enacted changes from
+  1 April 2017 to simplify the exemptions list.\n- The key change is basically the
+  removal of any reference to an approved index and instead the company simply has
+  to be on the official list of ASX limited (other rules still apply).\n- These changes
+  take effect for the 2017-2018 tax year and beyond.\n\n## Steps to calculate your
+  2017-2018 FIF income\nAs a result of these IRD rules, investors who have certain
+  types of overseas investments may have FIF income. And while the IRD has an online
+  tool that lets you check if you are required to do anything under the FIF rules,
+  if you determine that you do, the actual calculations can get quite complicated.\n\nThe
+  good news is that **investors on a [Sharesight NZ Expert](https://www.sharesight.com/nz/pricing/)
+  or [Sharesight NZ Pro plan](https://www.sharesight.com/nz/pro/) can run their own
+  [FIF Report](https://help.sharesight.com/nz/new_fdr_report_page/) in just a few
+  clicks.** Here’s how to do it:\n\n### 1. Determine which of your holdings are subject
+  to FIF\nSharesight automatically flags any holdings within your portfolio which
+  are subject to FIF rules:\n\n![screenshot - Sharesight FIF Report](//images.ctfassets.net/91sm3pewxzag/52cehHtLAsG4WiWS8GEY8e/b9d8357bc6fee8d4c95bba06ae0b5c43/screenshot_fif-2018.png?w=950)\n\n######
+  NOTE: Update 29 March - we have updated the list of holdings and taken the FIF report
+  out of \"draft\" mode.<br><br>We recommend double-checking your FIF-included companies
+  against the IRD calculator. If you notice any holdings that are not automatically
+  included/excluded by Sharesight, please leave a message on our [dedicated forum
+  topic](https://getsatisfaction.com/sharesight/topics/how-to-calculate-your-2018-fif-income).\n\n###
+  2. Calculate your ‘peak holding balance’\nSharesight determines whether you exceed
+  the FIF threshold ($50,000 for individuals). Based on the example above, the answer
+  is “yes” because the peak balance is $168,385.34.\n\n### 3. Calculate your FIF income\nIf
+  you exceed the FIF threshold, clicking the “Calculate” button will automatically
+  calculate your FIF income under both the [Fair Dividend Rate Method](https://help.sharesight.com/nz/fdr_income_fif_reports_page/)
+  and [Comparative Value Method](https://help.sharesight.com/nz/cv_method_fif_reports_page/)
+  (generally you are permitted to use either methodology, but check with your accountant
+  if you are unsure as there are some exceptions):\n\n![screenshot - Sharesight FIF
+  Report - calculated](//images.ctfassets.net/91sm3pewxzag/4QCo0ZHITmokeWmAIseWus/6af0f6839755d00c3a50fed97a143119/screenshot_fif-2018_calculated.png?w=950)\n\nWhy
+  struggle with maths equations and complicated tax rules when Sharesight can calculate
+  your FIF income for you, in just a few clicks? Our Expert and Pro plan clients agree:\n\n>
+  I used the FIF reports for the first time and it greatly assisted the preparation
+  of 2013/14 years tax returns. Sent copies of report to IRD with the returns and
+  it was no problem. Well done Sharesight and well worth upgrading to include this
+  reporting facility.<br>\n<cite>RICHARD MADDREN — SHARESIGHT CLIENT SINCE 2008</cite>\n\n>
+  We have been using this great app for several years. It makes it easy to review
+  portfolio performance, keep track of income and manage those awful FIF calculations
+  at tax time. The subscription is easily recovered in time savings at year end...<br>\n<cite>MARGARET
+  HOLMES — SHARESIGHT CLIENT SINCE 2010</cite>\n\n## Get your FIF Report today\nBy
+  compiling all your portfolio data in one place, Sharesight eliminates the paper-chase
+  and headaches normally associated with performance and tax reporting. To get started,
+  simply [signup for a FREE Sharesight account](https://portfolio.sharesight.com/signup)
+  and add your holdings. From there you can [upgrade to an NZ Expert plan](https://www.sharesight.com/nz/pricing/)
+  for only $39/month to get INSTANT access to your FIF Report, as well as other premium
+  features including:\n\n- [Traders Tax Report](https://help.sharesight.com/nz/traders_tax/)\n-
+  [Diversity Report](https://help.sharesight.com/nz/diversity_report/)\n- [Benchmarking](https://help.sharesight.com/nz/benchmarking/)\n-
+  [Contribution Analysis Report](/blog/announcing-the-contribution-analysis-report/)
+  (useful for Asset Allocation)\n\n### MORE INFO\n- Forum -- [How to calculate your
+  2018 FIF income](https://getsatisfaction.com/sharesight/topics/how-to-calculate-your-2018-fif-income)\n-
+  Help -- [FIF Report](https://help.sharesight.com/nz/new_fdr_report_page/)\n\n###
+  FURTHER READING\n- [5 ways Sharesight helps NZ investors at tax time](/blog/5-ways-sharesight-helps-nz-investors-at-tax-time/)\n-
+  [Managed funds live on Sharesight](/blog/managed-funds-live-on-sharesight/)\n- [Introducing
+  20 minute delayed pricing for NZX holdings](/blog/introducing-20-minute-delayed-pricing-for-nzx-holdings/)"
+:author:
+  :id: author_71
+  :_meta:
+    :content_type_id: author
+    :updated_at: '2017-10-05T04:28:39+00:00'
+    :created_at: '2016-06-29T23:17:00+00:00'
+    :id: author_71
+  :display_name: Angela Thompson
+  :first_name: Angela
+  :last_name: Thompson
+  :company: Sharesight
+:categories:
+- :id: 4ShfNN1yaA4MEswwYCM2su
+  :_meta:
+    :content_type_id: category
+    :updated_at: '2022-03-08T00:50:55+00:00'
+    :created_at: '2016-07-07T23:44:16+00:00'
+    :id: 4ShfNN1yaA4MEswwYCM2su
+  :name: Sharesight Features & Tips
+  :description: A collection of Sharesight features, including helpful tips and step-by-step
+    instructions on getting the most out of your Sharesight membership.
+  :url_slug: sharesight-features-tips
+:created_at: !ruby/object:DateTime 2018-03-26 11:28:00.000000000 +11:00
+:meta_description: Sharesight's comprehensive FIF Report automatically calculates
+  your 2017-2018 FIF income, which you can use for your New Zealand IRD tax return.
+:featured_image:
+  :title: featured nz-dollars-calculator
+  :description: featured - NZ dollars + calculator
+  :url: "//images.ctfassets.net/91sm3pewxzag/5UBMMTUmI0yIaIa2iqWYCO/fa23f0b752d9858af708a2a2ef9a2d71/featured_nz-dollars-calculator.jpg"
+  :_meta:
+    :updated_at: '2018-03-26T02:44:08+00:00'
+    :created_at: '2018-03-26T02:41:46+00:00'
+    :id: 5UBMMTUmI0yIaIa2iqWYCO
+:slug: how-to-calculate-your-2018-fif-income
