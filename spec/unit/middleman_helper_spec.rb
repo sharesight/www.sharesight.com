@@ -17,7 +17,6 @@ expectations = [
   { append: '/jp/index.html', locale_id: 'nz', output: '/nz/jp/', base_output: '/jp/' },
   { append: '/nz/index.html', locale_id: 'au', output: '/au/', base_output: '' }, # switch to locale
 
-  { append: 'blog/sitemap.xml', locale_id: nil, output: '/blog/sitemap.xml' },
   { append: 'foo.bar#baz', locale_id: nil, output: '/foo.bar#baz' },
 ]
 

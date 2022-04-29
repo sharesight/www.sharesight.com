@@ -15,7 +15,6 @@ Dir[File.join(File.dirname(__FILE__), 'helpers', '**', '*.rb')].each{ |file| req
 
 module CapybaraHelpers
   include ::CapybaraBaseHelpers
-  include ::CapybaraBlogHelpers
   include ::CapybaraFileHelpers
   include ::CapybaraLandingPagesHelpers
   include ::CapybaraLocaleHelpers

@@ -28,15 +28,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "blog",
-        "page_title": "Sharesight Blog",
-        "page_description": "The Sharesight blog is the best place to learn about product features and tips, company news, and our thoughts on investing and fintech.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.8,
-        "sitemap_changefreq": "daily",
-        "proxy": false
-      },
-      {
         "page": "partners",
         "page_title": "Sharesight Partners",
         "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
