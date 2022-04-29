@@ -5,9 +5,10 @@ As this is a public repo, everything is stored in local environment keys.
 #### Environment Settings:
  - Contenful, see `config/contentful.rb`
    - Create your **own** Contentful keys for each space.
-   - Blog Space: https://app.contentful.com/spaces/91sm3pewxzag/api/keys
+   <!-- THE Blog is not deprecated - and built as part of the gatsby site static-www -->
+   <!-- - Blog Space: https://app.contentful.com/spaces/91sm3pewxzag/api/keys
      - CONTENTFUL_BLOG_ACCESS_TOKEN
-     - CONTENTFUL_BLOG_PREVIEW_TOKEN
+     - CONTENTFUL_BLOG_PREVIEW_TOKEN -->
    - Partners Space: https://app.contentful.com/spaces/rafbawofr5bl/api/keys
      - CONTENTFUL_PARTNERS_ACCESS_TOKEN
      - CONTENTFUL_PARTNERS_PREVIEW_TOKEN
@@ -22,8 +23,6 @@ As this is a public repo, everything is stored in local environment keys.
 Example local `.envrc` file for development—using direnv (https://direnv.net/):
 ```
 # .envrc
-export CONTENTFUL_BLOG_ACCESS_TOKEN=DELIVERY_TOKEN_HERE
-export CONTENTFUL_BLOG_PREVIEW_TOKEN=PREVIEW_TOKEN_HERE
 export CONTENTFUL_PARTNERS_ACCESS_TOKEN=DELIVERY_TOKEN_HERE
 export CONTENTFUL_PARTNERS_PREVIEW_TOKEN=PREVIEW_TOKEN_HERE
 export CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN=DELIVERY_TOKEN_HERE

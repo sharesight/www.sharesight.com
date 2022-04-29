@@ -1,4 +1,4 @@
-load File.expand_path('./page.rb', __dir__)
+load File::expand_path('./page.rb', __dir__)
 
 module MiddlemanSpaceHelpers
   include MiddlemanPageHelpers # for locale_page method
@@ -11,10 +11,10 @@ module MiddlemanSpaceHelpers
   end
 
   def space_category_title
-    # NOTE: This could fail on a partner called 'blog' or a blog titled 'Partners are the the way of the future, man'
-    # That's why blog comes first, I guess.
-    # Ideally, I would ignore localization paths and then expect the first one to be blog/partners..
-    space = 'Partners'
+    # NOTE: the blog has been removed, though this check is there to ensure it's the partners page
+    space = if current_path_array.any?{ |path| /^partners/ =~ path }
+      'Partners'
+    end
     # The locals.category is passed here by pagination proxy via the locals hash.
     category = current_page.metadata[:locals][:category]
     return space unless is_category_page?
