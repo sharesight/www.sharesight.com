@@ -111,4 +111,8 @@
       flex-basis: 17.5%; // Fit into fifths, but account for padding
     }
   }
+
+  img { 
+    max-width: 100%;
+  }
 }
