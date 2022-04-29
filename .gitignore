@@ -22,6 +22,7 @@ tmp/
 .idea/
 
 # Ignore Contentful
+data/blog/
 data/partners/
 data/landing-pages/
 .*-space-hash

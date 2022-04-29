@@ -5,6 +5,7 @@ describe 'Space Middleman Helper', :type => :helper do
     @app = Capybara.app
   end
 
+  context "is_category_page?" do
     ## Partners
     it "should be false on partners" do
       visit '/partners/'
@@ -105,3 +106,4 @@ describe 'Space Middleman Helper', :type => :helper do
       end
     end
   end
+end
