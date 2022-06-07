@@ -112,3 +112,13 @@
     }
   }
 }
+
+ // Images
+  // used globally - affects /crypto and .track-etfs pages
+  img {
+    max-width: 100%;
+  
+    &.small {
+      max-width: 220px;
+    }
+  }

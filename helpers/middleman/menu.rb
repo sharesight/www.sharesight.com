@@ -280,11 +280,6 @@ module MiddlemanMenuHelpers
               ]
             }
           ]
-        },
-        {
-          visible_mobile: false,
-          # For this row, we just use a specific blog partial rather than try to fit it into this format…
-          partial: 'partials/header/blog',
         }
       ]
     }

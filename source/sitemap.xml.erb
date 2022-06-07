@@ -2,31 +2,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<%# Only doing Blog for the default locale %>
-<% if locale_obj[:id] == default_locale_id %>
-  <%# Iterate through every blog category with more than one post. %>
-  <% blog_categories.select{ |category| category[:count] > 0 }.each do |category| %>
-    <% updated_at = category.dig(:_meta, :updated_at) || category.dig(:_meta, 'updated_at') %>
-    <url>
-      <loc><%= base_url(category[:path]) %></loc>
-      <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
-      <changefreq>daily</changefreq>
-      <priority>0.6</priority>
-    </url>
-  <% end %>
-
-  <%# Iterates through every post. %>
-  <% blog_posts(order: :latest_first).select{ |post| post[:title].present? }.each do |post| %>
-    <% updated_at = post[:_meta][:updated_at] %>
-    <url>
-      <loc><%= post_url(post) %></loc>
-      <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
-      <changefreq>daily</changefreq>
-      <priority>0.7</priority>
-    </url>
-  <%end%>
-<% end %>
-
 <%#
   Iterate through every partner category with more than zero partners.
   Does not include partners/all (which is in locale_obj[:pages])
