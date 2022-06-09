@@ -256,3 +256,70 @@
     }
   }
 }
+
+
+aside.table {
+  padding-top: 0;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  text-align: left;
+  @media (min-width:1024px) {
+    border-spacing: 26px;
+    border-collapse: separate;
+  }
+  @media (min-width:768px) and (max-width:1024px) {
+    padding-top: 30px;
+  }
+
+  .row {
+    display: table-row;
+  }
+
+  .cell {
+    @media (min-width:1024px) {
+      display: table-cell;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+
+    p {
+      @media (min-width:768px) {
+        width: 100%;
+      }
+      @media (max-width:1024px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &.image {
+      padding-right: 0;
+      padding-top: 10px;
+      @media (min-width:768px) {
+        width: 100%;
+      }
+      @media (min-width:1024px) {
+        width: 50%;
+      }
+    }
+
+    &.description {
+      padding-right: 0;
+      vertical-align: middle;
+    }
+  }
+
+  footer {
+    margin: 25px 0 10px;
+  }
+}
