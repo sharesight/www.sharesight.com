@@ -40,8 +40,6 @@ describe 'Page Helper', :type => :helper do
         ['/nz', 'index'],
         ['/ca/xero', 'xero'],
         ['/xero', 'xero'],
-        ['/ca/pro', 'pro'],
-        ['/pro', 'pro'],
         ['/nz/partners', 'partners'],
         ['/partners/all', 'partners/all'],
       ].each do |array|
@@ -80,12 +78,6 @@ describe 'Page Helper', :type => :helper do
 
       visit '/nz'
       expect(@app.page_path_name).to eq('index')
-
-      visit '/ca/pro'
-      expect(@app.page_path_name).to eq('pro')
-
-      visit '/pro'
-      expect(@app.page_path_name).to eq('pro')
 
       visit '/nz/partners'
       expect(@app.page_path_name).to eq('partners')
@@ -132,9 +124,6 @@ describe 'Page Helper', :type => :helper do
     it "should be the page of the global locale" do
       expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
       expect(@app.base_locale_page(page: 'xero')[:page_title]).to eq("Xero + Sharesight Portfolio Tracker")
-
-      visit '/pro'
-      expect(@app.base_locale_page[:page_title]).to eq("Sharesight Pro")
     end
 
     it "should be a valid on the partners base" do
@@ -162,16 +151,6 @@ describe 'Page Helper', :type => :helper do
   context "locale_page" do
     it "should respond with the right page id" do
       expect(@app.locale_page(page: 'index')[:page]).to eq('index')
-      expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
-    end
-
-    it "should respond with a localized 'code' based page" do
-      expect(@app.locale_page(page: 'pro')[:page_title]).to eq('Sharesight Pro')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('global'))[:page_title]).to eq('Sharesight Pro')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('au'))[:page_title]).to eq('Sharesight Pro Australia')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('ca'))[:page_title]).to eq('Sharesight Pro Canada')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('nz'))[:page_title]).to eq('Sharesight Pro New Zealand')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('uk'))[:page_title]).to eq('Sharesight Pro UK')
     end
 
     it "should return a page from the global locale when it doesn't exist on the requested locale" do
@@ -236,10 +215,6 @@ describe 'Page Helper', :type => :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('pro', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
       end
 
@@ -272,10 +247,6 @@ describe 'Page Helper', :type => :helper do
 
     it "should return false for index" do
       expect(@app.is_unlocalized_page?('index')).to be false
-    end
-
-    it "should return false for pro" do
-      expect(@app.is_unlocalized_page?('pro')).to be false
     end
 
     it "should return false for an unknown page" do

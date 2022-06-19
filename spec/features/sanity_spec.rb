@@ -34,7 +34,6 @@ describe 'Build Sanity', :type => :feature do
       dir = dir_list("build/#{locale_id}")
       expect(dir).to include("index.html")
       expect(dir).to include("partners")
-      expect(dir).to include("pro")
       expect(dir).to include("xero")
     end
 
