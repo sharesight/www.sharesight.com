@@ -208,7 +208,7 @@ module MiddlemanMenuHelpers
                   icon: 'smiley',
                   icon_hover: 'smiley-wink-fill',
                   label: 'Reviews',
-                  title: locale_page(page: 'reviews', locale_obj: locale_obj)[:page_title],
+                  title:  "Reviews | #{locale_obj[:append_title]}",
                   href: localize_url('reviews', locale_id: locale_obj[:id]),
                 }
               ],
