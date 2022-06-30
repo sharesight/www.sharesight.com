@@ -80,7 +80,7 @@ jobs:
       run: bundle exec rspec spec -p --format d
 
 
-    # -------- Deploy to S3 ++ Notify Bugsnag and Github Deployment of Status
+    # -------- Deploy to S3 and notify Github Deployment of Status
     - name: Update deployment status to pending
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       uses: 'deliverybot/deployment-status@v1.1.1'
@@ -91,21 +91,7 @@ jobs:
     - name: Deploy to S3
       if: success() && steps.env.outputs.should_deploy == 'true'
       run: bundle exec middleman s3_sync
-    - name: Notify Bugsnag of Released Code
-      if: success() && steps.env.outputs.should_deploy == 'true'
-      run: |
-        curl https://build.bugsnag.com/ \
-          --header "Content-Type: application/json" \
-          --data '{
-            "apiKey": ${{ secrets.BUGSNAG_API_KEY }},
-            "releaseStage": ${{ steps.env.outputs.app_env }},
-            "builderName": "Github Actions",
-            "sourceControl": {
-              "provider": "github",
-              "repository": ${{ github.repository }},
-              "revision": ${{ github.sha }}
-            }
-          }'
+
     - name: Update deployment status to success
       # NOTE: Only for deployment events, not commits/etc (which don't have an external deployment context)
       if:  github.event_name == 'deployment' && success() && steps.env.outputs.should_deploy == 'true'

@@ -3,20 +3,6 @@
   # For JS that should be appended to the <body>, use `./_body_js.html.erb`
 %>
 
-<% if ApplicationConfig.const_defined?(:Bugsnag) && ApplicationConfig::Bugsnag::API_KEY %>
-  <!-- Bugsnag -->
-  <script src="https://d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
-    data-apikey='<%= ApplicationConfig::Bugsnag::API_KEY %>'></script>
-
-  <script>
-    if (typeof Bugsnag !== 'undefined') {
-      Bugsnag.releaseStage = '<%= env_name %>';
-      Bugsnag.notifyReleaseStages = ["production", "staging", "testing"];
-    }
-  </script>
-  <!-- End Bugsnag -->
-<% end %>
-
 <% if ApplicationConfig.const_defined?(:GoogleAnalytics) && ApplicationConfig::GoogleAnalytics::TAG_MANAGER_CONTAINER %>
   <script> // Google Tag Manager
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
