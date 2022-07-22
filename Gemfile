@@ -31,8 +31,3 @@ group :test do
   gem 'chromedriver-helper' # for headless chrome
   gem 'rspec'
 end
-
-group :development, :test do
-  # gem 'byebug'
-  gem 'bundler-audit'
-end
