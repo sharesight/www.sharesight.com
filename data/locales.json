@@ -56,13 +56,6 @@
         "page_description": "Thanks for taking the time to complete our survey.",
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
         "no_index": true
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro",
-        "page_description": "Cutting-edge online stock portfolio management software for accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -115,13 +108,6 @@
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Australia.",
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro Australia",
-        "page_description": "Cutting-edge online share portfolio management software for Australian accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
         "sitemap_priority": 0.8
       }
     ]
@@ -176,13 +162,6 @@
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Canada.",
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 0.8
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro Canada",
-        "page_description": "Cutting-edge online stock portfolio management software for Canadian accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -235,13 +214,6 @@
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in New Zealand.",
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro New Zealand",
-        "page_description": "Cutting-edge online share portfolio management software for New Zealand accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
         "sitemap_priority": 0.8
       }
     ]
@@ -296,13 +268,6 @@
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in the UK.",
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "sitemap_priority": 0.8
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro UK",
-        "page_description": "Cutting-edge online share portfolio management software for UK accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -355,13 +320,6 @@
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro US",
-        "page_description": "Cutting-edge online stock portfolio management software for US accountants & financial advisors. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for US financial professionals.",
         "sitemap_priority": 0.8
       }
     ]

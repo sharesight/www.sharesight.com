@@ -112,19 +112,6 @@ describe 'Header', type: :feature do
         expect(links[1][:href]).to eq(Capybara.app.config[:signup_url])
       end
 
-      it "pro has a different signup url" do
-        visit '/pro'
-
-        links = page.all(:css, 'nav .nav__ctas a[href].nav__cta')
-
-        expect(links.length).to eq(2)
-        expect(links[0].text).to eq('Log In')
-        expect(links[0][:href]).to eq(Capybara.app.config[:login_url])
-
-        expect(links[1].text).to include('Get Sharesight Free')
-        expect(links[1][:href]).to eq(Capybara.app.config[:pro_signup_url])
-      end
-
       it "has expected descriptions" do
         descriptions = page.all(:css, 'nav [role="menubar"] .menu__description')
 
@@ -226,19 +213,6 @@ describe 'Header', type: :feature do
 
           expect(expected_links.length).to(eq(0), "Found leftover links in expected_links: #{expected_links}")
         end
-      end
-
-      it "pro has a different signup url inside the modal" do
-        visit '/pro'
-
-        links = page.all(:css, 'nav #mobile-nav a')
-
-        sign_up = links.find do |link|
-          link.text.include?('Sign Up')
-        end
-
-        expect(sign_up.text).to include('Sign Up')
-        expect(sign_up[:href]).to eq(Capybara.app.config[:pro_signup_url])
       end
 
       it "has no descriptions" do
