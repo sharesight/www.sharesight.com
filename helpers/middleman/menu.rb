@@ -143,7 +143,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'users',
                   label: 'Finance Professionals',
-                  title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
+                  title: "Sharesight Pro | #{locale_obj[:append_title]}",
                   href: localize_url('pro', locale_id: locale_obj[:id]),
                   description: 'Grow your business with **Sharesight Pro**.'
                 },
