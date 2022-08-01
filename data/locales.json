@@ -28,22 +28,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "partners",
-        "page_title": "Sharesight Partners",
-        "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight Partners",
-        "page_description": "Sharesight’s full list of ecosystem partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
@@ -95,22 +79,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "partners",
-        "page_title": "Sharesight Australia Partners",
-        "page_description": "Our award-winning partnerships feature Australian brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight Australia Partners",
-        "page_description": "Sharesight’s full list of Australian partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Australia.",
@@ -153,22 +121,6 @@
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "partners",
-        "page_title": "Sharesight Canada Partners",
-        "page_description": "Our award-winning partnerships feature Canadian brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight Canadian Partners",
-        "page_description": "Sharesight’s full list of Canadian partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
       },
       {
         "page": "xero",
@@ -215,22 +167,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "partners",
-        "page_title": "Sharesight New Zealand Partners",
-        "page_description": "Our award-winning partnerships feature New Zealand brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight New Zealand Partners",
-        "page_description": "Sharesight’s full list of New Zealand partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in New Zealand.",
@@ -275,22 +211,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "partners",
-        "page_title": "Sharesight UK Partners",
-        "page_description": "Our award-winning partnerships feature UK brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight UK Partners",
-        "page_description": "Sharesight’s full list of UK partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
         "page": "xero",
         "page_title": "Xero + Sharesight Portfolio Tracker",
         "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in the UK.",
@@ -333,22 +253,6 @@
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "partners",
-        "page_title": "Sharesight US Partners",
-        "page_description": "Our award-winning partnerships feature online brokers, accounting software, data & research providers, financial professionals, robo-advisors, and more.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
-      },
-      {
-        "page": "partners/all",
-        "page_title": "All Sharesight Partners",
-        "page_description": "Sharesight’s full list of ecosystem partners - Accountants, asset managers, associations, brokers, data & research providers, financial and robo-advisors.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.8,
-        "proxy": false
       },
       {
         "page": "xero",
