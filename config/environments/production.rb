@@ -13,10 +13,6 @@ module ApplicationConfig
     APP_ID = 'tv6jsyee'
   end
 
-  module Bugsnag
-    API_KEY = ENV['BUGSNAG_API_KEY']
-  end
-
   module AddThis
     ID = 'ra-5b7e0717fea453d4'
   end
