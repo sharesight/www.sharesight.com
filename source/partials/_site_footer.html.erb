@@ -78,9 +78,6 @@
       </div>
 
       <div class="footer__apps">
-        <a href="<%= config[:google_store_url] %>" class="footer__app" title="<%= locale_obj[:footer_android_alt] %>"><img src="<%= image_path('icons/google-play-badge.svg')%>" alt="<%= locale_obj[:footer_android_alt] %>"></a>
-        <a href="<%= config[:ios_store_url] %>" class="footer__app" title="<%= locale_obj[:footer_ios_alt] %>"><img src="<%= image_path('icons/app-store-badge.svg')%>" alt="<%= locale_obj[:footer_ios_alt] %>"></a>
-
         <div class="footer__social">
           <% data.social_media_icons.each do |smi| %>
             <a href="<%= smi.url %>" class="footer__social-link" title="Check us out on <%= smi.name %>">
