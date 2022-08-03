@@ -8,6 +8,7 @@ load 'helpers/basic_helper.rb'
 require 'mappers/default'
 
 load 'extensions/landing-pages.rb'
+load 'extensions/partners.rb'
 load 'extensions/routing.rb'
 
 require 'aws/s3'
@@ -64,7 +65,7 @@ activate :routing
 # Fetch via Contentful
 # NOTE: This must exist in this file, cannot be an extension as `middleman-contentful` doesn't appear to be able to initiate from any source other than config.rb.
 # Do note, you MUST run `middleman contentful` prior to `middleman [build|server]` as contentful does not work properly with lifecycle hooks and data will be parsed post-configuration, pre-build (where other things can't hook into it)
-[ ContentfulConfig::LandingPagesSpace ].each do |space|
+[ ContentfulConfig::PartnersSpace, ContentfulConfig::LandingPagesSpace ].each do |space|
   use_preview_api = config[:env_name] != 'production'
   contentful_access_token = (use_preview_api) ? space::PREVIEW_ACCESS_TOKEN : space::ACCESS_TOKEN
 
@@ -100,6 +101,7 @@ activate :routing
 end
 
 # activate :pagination
+activate :partners_space # creates the pagination and routing
 activate :landing_pages_space # creates pages and routing
 
 # Sync to S3.  Unfortunately this doesn't appear to like any lifecycles either and isn't working in an extension.
