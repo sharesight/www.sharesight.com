@@ -2,6 +2,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+<%#
+  Iterate through every partner category with more than zero partners.
+  Does not include partners/all (which is in locale_obj[:pages])
+%>
+<% partners_categories(withIndex: false).select{ |category| category[:count] > 0 }.each do |category| %>
+  <% updated_at = category.dig(:_meta, :updated_at) || category.dig(:_meta, 'updated_at') %>
+  <url>
+    <loc><%= localize_url(category[:path], locale_id: locale_obj[:id]) %></loc>
+    <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+
+    <% data.locales.each do |locale| %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= localize_url(category[:path], locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <%end%>
+  </url>
+<% end %>
+<%# Iterates through every partner. %>
+<% partners_collection().each do |partner| %>
+  <% updated_at = partner[:_meta][:updated_at] %>
+  <url>
+    <loc><%= partner_url(partner, locale_id: locale_obj[:id]) %></loc>
+    <% if updated_at %><lastmod><%= updated_at %></lastmod><% end %>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+
+    <% data.locales.each do |locale| %>
+      <% if locale[:id] == default_locale_id %>
+        <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="x-default" />
+      <% end %>
+      <xhtml:link rel="alternate" href="<%= partner_url(partner, locale_id: locale[:id]) %>" hreflang="<%= locale[:lang].downcase %>" />
+    <%end%>
+  </url>
+<%end%>
+
 <%# Iterates through every landing page. %>
 <% landing_pages_collection(locale_obj: locale_obj).select{ |landing_page| landing_page[:no_index] != true }.each do |landing_page| %>
   <% updated_at = landing_page[:_meta][:updated_at] %>
