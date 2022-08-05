@@ -19,12 +19,6 @@ describe 'Page Helper', :type => :helper do
 
     it "should include what we expect" do
       expect(@app.current_path_array).to include('index.html')
-
-      visit '/nz/partners/foo-bar'
-      expect(@app.current_path_array).to eq(['index.html']) # invalid page, falls back to previous path
-
-      visit '/nz/partners/all'
-      expect(@app.current_path_array).to include('partners', 'all.html')
     end
   end
 
@@ -42,27 +36,9 @@ describe 'Page Helper', :type => :helper do
         ['/xero', 'xero'],
         ['/ca/pro', 'pro'],
         ['/pro', 'pro'],
-        ['/nz/partners', 'partners'],
-        ['/partners/all', 'partners/all'],
       ].each do |array|
         visit array[0]
         expect(@app.full_page_path_name).to eq(array[1])
-      end
-    end
-
-    it "should match expectations for invalid pages" do
-      # NOTE: Invalid pages do not get a new current_page global, so we must mock it
-
-      [
-        # [input, expectation]
-        ['/partners/all/pages/2', 'partners/all'],
-        ['/partners/all/pages/a', 'partners/all/pages/a'],
-        ['/partners/all/pages', 'partners/all/pages'],
-        ['/partners/all/some-pages/2', 'partners/all/some-pages/2'],
-        ['/partners/all/page/2', 'partners/all/page/2'],
-      ].each do |array|
-        visit array[0]
-        expect(@app.full_page_path_name(path: array[0])).to eq(array[1])
       end
     end
   end
@@ -86,12 +62,6 @@ describe 'Page Helper', :type => :helper do
 
       visit '/pro'
       expect(@app.page_path_name).to eq('pro')
-
-      visit '/nz/partners'
-      expect(@app.page_path_name).to eq('partners')
-
-      visit '/partners'
-      expect(@app.page_path_name).to eq('partners')
     end
   end
 
@@ -99,9 +69,6 @@ describe 'Page Helper', :type => :helper do
     # This is a 1:1 proxy of locale_page
     it "should be the page we expect" do
       expect(@app.current_locale_page[:page]).to eq('index')
-
-      visit '/nz/partners'
-      expect(@app.current_locale_page[:page]).to eq('partners')
     end
   end
 
@@ -111,20 +78,10 @@ describe 'Page Helper', :type => :helper do
       [
         # [input, expectation]
         ['/', 'index'],
-        ['/nz/partners', 'partners'],
-        ['/ca/partners/all', 'partners/all'],
-        ['/partners/all', 'partners/all']
       ].each do |array|
         visit array[0]
         expect(@app.valid_page_from_path).to eq(array[1])
       end
-    end
-
-    it "should be the parent page for a partner entry" do
-      first_partner = get_partners_partners().find{ |model| model[:name] }
-
-      visit @app.partner_path(first_partner)
-      expect(@app.base_locale_page[:page]).to eq("partners")
     end
   end
 
@@ -135,23 +92,6 @@ describe 'Page Helper', :type => :helper do
 
       visit '/pro'
       expect(@app.base_locale_page[:page_title]).to eq("Sharesight Pro")
-    end
-
-    it "should be a valid on the partners base" do
-      visit 'nz/partners'
-      expect(@app.base_locale_page[:page]).to eq("partners")
-    end
-
-    it "should be a valid on the partners/all path" do
-      visit 'nz/partners/all'
-      expect(@app.base_locale_page[:page]).to eq("partners/all")
-    end
-
-    it "should be partners for the first partner" do
-      first_partner = get_partners_partners().find{ |model| model[:name] }
-
-      visit @app.partner_path(first_partner)
-      expect(@app.base_locale_page[:page]).to eq("partners")
     end
 
     it "should return the page from the global locale, even when it doesn't exist on any other locale" do
@@ -197,7 +137,6 @@ describe 'Page Helper', :type => :helper do
 
       expect(@app.page_counts['index']).to eq(6)
       expect(@app.page_counts['xero']).to eq(6)
-      expect(@app.page_counts['partners']).to eq(6)
 
       expect(@app.page_counts['fake-page']).to eq(nil)
     end
@@ -209,7 +148,6 @@ describe 'Page Helper', :type => :helper do
 
       expect(@app.page_alternative_locales('index').length).to eq(6)
       expect(@app.page_alternative_locales('xero').length).to eq(6)
-      expect(@app.page_alternative_locales('partners').length).to eq(6)
 
       expect(@app.page_alternative_locales('fake-page')).to be false
     end
@@ -218,7 +156,6 @@ describe 'Page Helper', :type => :helper do
   context "is_valid_page?" do
     it "should match expectations" do
       expect(@app.is_valid_page?('xero')).to be true
-      expect(@app.is_valid_page?('partners')).to be true
 
       expect(@app.is_valid_page?(nil)).to be false
       expect(@app.is_valid_page?('fake-page')).to be false
@@ -229,10 +166,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations" do
       locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('xero', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('partners', locale[:id])).to be true
       end
 
       locales.each do |locale|
@@ -249,7 +182,6 @@ describe 'Page Helper', :type => :helper do
 
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
       expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
-      expect(@app.is_valid_locale_id_for_page?('partners', 'nzd')).to be false
     end
   end
 
@@ -257,7 +189,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations" do
       expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
-      expect(@app.get_page_base_locale('partners')[:id]).to eq(default_locale_id)
 
       # Bad pages always get default
       expect(@app.get_page_base_locale(nil)[:id]).to eq(default_locale_id)
@@ -299,7 +230,6 @@ describe 'Page Helper', :type => :helper do
         [' | Sharesight UK', ' | Sharesight'],
         ['Sharesight UK', 'Sharesight UK'],
 
-        ['Foo Bar | Sharesight Canada Partners', 'Foo Bar | Sharesight Partners'],
         ['Foo Bar | Sharesight Canada FooBar', 'Foo Bar | Sharesight FooBar'],
         ['Foo Bar | Sharesight Canadian FooBar', 'Foo Bar | Sharesight Canadian FooBar']
       ].each do |array|
