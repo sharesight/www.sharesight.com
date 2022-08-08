@@ -14,12 +14,6 @@ module Middleman
         @paginated_model_entry = :name
         @per_page = 30
         @localize = true
-
-        # So partners/all goes to all partners (paginated)
-        @index_path = "#{space}/#{BasicHelper::url_friendly_string(@index_category)}"
-
-        # So partners/ goes to featured.
-        @index_page_file = 'featured.html'
       end
 
       private

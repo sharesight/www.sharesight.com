@@ -218,7 +218,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'identification-card',
                   label: 'Partner Directory',
-                  title: locale_page(page: 'partners', locale_obj: locale_obj)[:page_title],
+                  title: "Partner Directory | #{locale_obj[:append_title]}",
                   href: localize_url('partners', locale_id: locale_obj[:id]),
                 },
                 {

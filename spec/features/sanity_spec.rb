@@ -2,14 +2,6 @@ require 'spec_helper'
 
 describe 'Build Sanity', :type => :feature do
   it "should have data from Contentful" do
-    data_dir = dir_list("data/partners/partners/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data.partners.partners.length).to be > 0
-
-    data_dir = dir_list("data/partners/categories/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data.partners.categories.length).to be > 0
-
     data_dir = dir_list("data/landing-pages/pages/")
     expect(data_dir - [".", ".."]).not_to be_empty
     expect(Capybara.app.data['landing-pages'].pages.length).to be > 0
@@ -33,7 +25,6 @@ describe 'Build Sanity', :type => :feature do
       expect(root_dir).to include(locale_id) if locale_id != ''
       dir = dir_list("build/#{locale_id}")
       expect(dir).to include("index.html")
-      expect(dir).to include("partners")
       expect(dir).to include("xero")
     end
 
