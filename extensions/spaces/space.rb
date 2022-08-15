@@ -33,28 +33,9 @@ module Middleman
       def after_configuration
         @index_path = @index_path.gsub(/\/$/, '') || "#{space}/#{BasicHelper::url_friendly_string(@index_category)}"
         @index_slug = @index_path.gsub(/^#{space}\/?/, '')
-
-        if has_contentful_data?
-          get_locales_array.each do |locale_obj|
-            proxy_index_page(locale_obj)
-            proxy_category_pages(locale_obj)
-            proxy_individual_pages(locale_obj)
-          end
-        end
       end
 
       private
-
-      # Generate all Individual Blog Pages
-      def proxy_individual_pages(locale_obj)
-        paginated_collection(locale_obj[:lang]).each do |model|
-          next unless is_valid_paginated_model?(model)
-          app.proxy path_for_proxy("#{space}/#{url_slug(model)}", locale_obj[:id]), "/#{space.downcase}/individual.html", locals: {
-            @paginated_model.to_sym => model,
-            locale_obj: locale_obj
-          }, ignore: true
-        end
-      end
 
       def process_collection_by_name(name, lang)
         @processed_collections = {} if !@processed_collections
@@ -118,68 +99,6 @@ module Middleman
         end
 
         return categories
-      end
-
-      # No pagination or anything on the index page; eg. partners/featured.html
-      def proxy_index_page(locale_obj)
-        return unless @index_page_file
-
-        file_path = "/#{space}/#{@index_page_file}"
-
-        resource = ::Middleman::Sitemap::Resource.new(
-          app.sitemap,
-          path_for_proxy(space, locale_obj[:id]),
-          file_path
-        )
-
-        locals = { locale_obj: locale_obj }
-        resource.add_metadata(locals) # might be irrelevant as we're adding them below
-
-        app.proxy resource.path, resource.source_file, locals: locals, ignore: true
-      end
-
-      def proxy_category_pages(locale_obj)
-        file_path = "/#{space}/paginated.html"
-
-        categories_list(locale_obj[:lang]).each do |category|
-          per_page = @per_page
-          total_pages = (category[:set].length.to_f / per_page).ceil
-
-          # Iterate through to generate the page resources, nothing more.
-          # We need a list of resources so we can have prev_page and next_page context.
-          page_num = 1
-          resources = []
-          while page_num <= total_pages do
-            resources.push(::Middleman::Sitemap::Resource.new(
-              app.sitemap,
-              paginated_path(category[:path], page_num, locale_obj[:id]),
-              file_path
-            ))
-            page_num += 1
-          end
-
-          # Iterate through created resources, add metadata, those proxy pages.
-          resources.each_with_index do |resource, index|
-            page_num = index + 1
-            current_set = category[:set].drop(per_page * index).take(per_page)
-
-            pagination = PaginationContext.new(
-              set: current_set,
-              per_page: per_page,
-              total_pages: total_pages,
-              total_items: category[:set].length,
-              current_page: page_num,
-              index_page: resources[0],
-              next_page: index < total_pages ? resources[index + 1] : nil,
-              prev_page: index > 0 ? resources[index - 1] : nil
-            )
-
-            locals = { category: category, pagination: pagination, locale_obj: locale_obj }
-            resource.add_metadata(locals) # might be irrelevant as we're adding them below
-
-            app.proxy resource.path, resource.source_file, locals: locals, ignore: true
-          end
-        end
       end
 
       def path_for_proxy(slug, locale_id)
