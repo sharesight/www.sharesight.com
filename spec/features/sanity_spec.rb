@@ -24,7 +24,6 @@ describe 'Build Sanity', :type => :feature do
     ['', 'au', 'ca', 'nz', 'uk'].each do |locale_id|
       expect(root_dir).to include(locale_id) if locale_id != ''
       dir = dir_list("build/#{locale_id}")
-      expect(dir).to include("index.html")
       expect(dir).to include("pro")
       expect(dir).to include("xero")
     end

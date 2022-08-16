@@ -6,16 +6,12 @@ require 'spec_helper'
 expectations = [
   { append: '', locale_id: nil, output: '' },
   { append: '/', locale_id: nil, output: '' },
-  { append: 'index.html', locale_id: nil, output: '' },
-  { append: '/index.html', locale_id: nil, output: '' },
   { append: '/nz/', locale_id: nil, output: '' }, # supported locale
   { append: '/jp/', locale_id: nil, output: '/jp/' }, # unsupported locale
   { append: '/nz/', locale_id: 'global', output: '' },
   { append: '/jp/', locale_id: 'global', output: '/jp/' },
 
   { append: '/nz/foo/', locale_id: 'nz', output: '/nz/foo/', base_output: '/foo/' },
-  { append: '/jp/index.html', locale_id: 'nz', output: '/nz/jp/', base_output: '/jp/' },
-  { append: '/nz/index.html', locale_id: 'au', output: '/au/', base_output: '' }, # switch to locale
 
   { append: 'foo.bar#baz', locale_id: nil, output: '/foo.bar#baz' },
 ]

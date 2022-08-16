@@ -34,8 +34,6 @@ module Middleman
         locale.pages.select{ |page| page.proxy.nil? || page.proxy == true }.each do |page|
           path = ''
           path += "/#{locale.id}" if locale.id != app.default_locale_id
-          path += "/#{page[:page]}" if page[:page] != 'index'
-          path += '/index.html'
 
           app.proxy path, "page-#{page[:page]}.html", :locals => { locale_obj: locale }, ignore: true
         end

@@ -25,7 +25,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "absolute_url" do
     it "should return if already providing a full url" do
       expect(@app.absolute_url(@url)).to eq(@url)
-      expect(@app.absolute_url(@url + '/index.html')).to eq(@url + '/index.html')
     end
 
     it "should strip out .html" do
@@ -78,8 +77,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/nz/xero/', @url + '/xero/'],
         ['/ca/', @url],
         ['/ca', @external_url, @external_url],
-        ['index.html', @url],
-        ['index.html', @external_url, @external_url],
         ['/', @url]
       ].each do |arr|
         assume = arr[0]
@@ -101,7 +98,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/nz/xero/', '/nz/xero/', 'nz'],
         ['/ca/', ''],
         ['/', ''],
-        ['/index.html', ''],
         ['/ca', '/nz/', 'nz'],
         ['/', '/nz/', 'nz']
       ].each do |arr|
@@ -141,8 +137,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "page_from_path" do
     it "should match our expectations" do
       [
-        ['', 'index'],
-        ['/', 'index'],
         ['/nz/fake-page', 'fake-page'],
         ['/nz/faq', 'faq'],
         ['/faq', 'faq'],
@@ -198,9 +192,7 @@ describe 'URL Middleman Helper', :type => :helper do
         ['', ''],
         ['.html', ''],
         ['/', '/'],
-        ['/index.html', '/index'],
         ['/nz.html', '/nz'],
-        ['/nz/index/anything', '/nz/index/anything']
       ].each do |array|
         expect(@app.strip_html_from_path(array[0])).to eq(array[1])
       end
@@ -216,22 +208,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/eu/faq', '/eu/faq/']
       ].each do |array|
         expect(@app.strip_locale_from_path(array[0])).to eq(array[1])
-      end
-    end
-  end
-
-  context "strip_index_from_path" do
-    it "should remove the locale from the path" do
-      [
-        # input, # output
-        ['', '/'],
-        ['/', '/'],
-        ['/nz//', '/nz/'],
-        ['/nz', '/nz/'],
-        ['/nz/index', '/nz/'],
-        ['/nz/index/anything', '/nz/anything/']
-      ].each do |array|
-        expect(@app.strip_index_from_path(array[0])).to eq(array[1])
       end
     end
   end

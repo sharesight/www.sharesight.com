@@ -31,17 +31,6 @@ describe 'Helper', :type => :helper do
     end
   end
 
-  context "is_current_locale_id?" do
-    it "should be the current locale at the path" do
-      locales.each_with_index do |locale, index|
-        other_locale = locales[index + (index + 1 < locales.length ? 1 : -1)]
-        visit locale[:path]
-        expect(@app.is_current_locale_id?(locale[:id])).to be true
-        expect(@app.is_current_locale_id?(other_locale[:id])).to be false
-      end
-    end
-  end
-
   context "get_locale_obj" do
     it "should have an id matching the locale" do
       locales.each do |locale|

@@ -16,10 +16,6 @@ describe 'Page Helper', :type => :helper do
       visit '/nz'
       expect(@app.current_path_array).to be_kind_of(::Array)
     end
-
-    it "should include what we expect" do
-      expect(@app.current_path_array).to include('index.html')
-    end
   end
 
   context "full_page_path_name" do
@@ -30,8 +26,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations for valid pages" do
       [
         # [input, expectation]
-        ['/', 'index'],
-        ['/nz', 'index'],
         ['/ca/xero', 'xero'],
         ['/xero', 'xero'],
         ['/ca/pro', 'pro'],
@@ -52,11 +46,6 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should match what we expect" do
-      expect(@app.page_path_name).to eq('index')
-
-      visit '/nz'
-      expect(@app.page_path_name).to eq('index')
-
       visit '/ca/pro'
       expect(@app.page_path_name).to eq('pro')
 
@@ -65,29 +54,8 @@ describe 'Page Helper', :type => :helper do
     end
   end
 
-  context "current_locale_page" do
-    # This is a 1:1 proxy of locale_page
-    it "should be the page we expect" do
-      expect(@app.current_locale_page[:page]).to eq('index')
-    end
-  end
-
-  context "valid_page_from_path" do
-    # This is a 1:1 proxy of locale_page
-    it "should be the page we expect" do
-      [
-        # [input, expectation]
-        ['/', 'index'],
-      ].each do |array|
-        visit array[0]
-        expect(@app.valid_page_from_path).to eq(array[1])
-      end
-    end
-  end
-
   context "base_locale_page" do
     it "should be the page of the global locale" do
-      expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
       expect(@app.base_locale_page(page: 'xero')[:page_title]).to eq("Xero + Sharesight Portfolio Tracker")
 
       visit '/pro'
@@ -101,7 +69,6 @@ describe 'Page Helper', :type => :helper do
 
   context "locale_page" do
     it "should respond with the right page id" do
-      expect(@app.locale_page(page: 'index')[:page]).to eq('index')
       expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
     end
 
@@ -135,7 +102,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expected counts" do
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
-      expect(@app.page_counts['index']).to eq(6)
       expect(@app.page_counts['xero']).to eq(6)
 
       expect(@app.page_counts['fake-page']).to eq(nil)
@@ -146,7 +112,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expected counts" do
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
-      expect(@app.page_alternative_locales('index').length).to eq(6)
       expect(@app.page_alternative_locales('xero').length).to eq(6)
 
       expect(@app.page_alternative_locales('fake-page')).to be false
@@ -173,14 +138,9 @@ describe 'Page Helper', :type => :helper do
       end
 
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
       end
 
-      expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
       expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
     end
   end
@@ -188,7 +148,6 @@ describe 'Page Helper', :type => :helper do
   context "get_page_base_locale" do
     it "should match expectations" do
       expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
-      expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
 
       # Bad pages always get default
       expect(@app.get_page_base_locale(nil)[:id]).to eq(default_locale_id)
@@ -199,10 +158,6 @@ describe 'Page Helper', :type => :helper do
   context "is_unlocalized_page" do
     it "should return false for xero" do
       expect(@app.is_unlocalized_page?('xero')).to be false
-    end
-
-    it "should return false for index" do
-      expect(@app.is_unlocalized_page?('index')).to be false
     end
 
     it "should return false for pro" do
