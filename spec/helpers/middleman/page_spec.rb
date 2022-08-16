@@ -32,8 +32,6 @@ describe 'Page Helper', :type => :helper do
         # [input, expectation]
         ['/', 'index'],
         ['/nz', 'index'],
-        ['/ca/xero', 'xero'],
-        ['/xero', 'xero'],
       ].each do |array|
         visit array[0]
         expect(@app.full_page_path_name).to eq(array[1])
@@ -80,7 +78,6 @@ describe 'Page Helper', :type => :helper do
   context "base_locale_page" do
     it "should be the page of the global locale" do
       expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
-      expect(@app.base_locale_page(page: 'xero')[:page_title]).to eq("Xero + Sharesight Portfolio Tracker")
     end
 
     it "should return the page from the global locale, even when it doesn't exist on any other locale" do
@@ -115,7 +112,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_counts['survey-thanks']).to eq(1)
 
       expect(@app.page_counts['index']).to eq(6)
-      expect(@app.page_counts['xero']).to eq(6)
 
       expect(@app.page_counts['fake-page']).to eq(nil)
     end
@@ -126,7 +122,6 @@ describe 'Page Helper', :type => :helper do
       expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
 
       expect(@app.page_alternative_locales('index').length).to eq(6)
-      expect(@app.page_alternative_locales('xero').length).to eq(6)
 
       expect(@app.page_alternative_locales('fake-page')).to be false
     end
@@ -134,8 +129,6 @@ describe 'Page Helper', :type => :helper do
 
   context "is_valid_page?" do
     it "should match expectations" do
-      expect(@app.is_valid_page?('xero')).to be true
-
       expect(@app.is_valid_page?(nil)).to be false
       expect(@app.is_valid_page?('fake-page')).to be false
     end
@@ -143,10 +136,6 @@ describe 'Page Helper', :type => :helper do
 
   context "is_valid_locale_id_for_page?" do
     it "should match expectations" do
-      locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('xero', locale[:id])).to be true
-      end
-
       locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
       end
@@ -156,13 +145,11 @@ describe 'Page Helper', :type => :helper do
       end
 
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
-      expect(@app.is_valid_locale_id_for_page?('xero', nil)).to be false
     end
   end
 
   context "get_page_base_locale" do
     it "should match expectations" do
-      expect(@app.get_page_base_locale('xero')[:id]).to eq(default_locale_id)
       expect(@app.get_page_base_locale('index')[:id]).to eq(default_locale_id)
 
       # Bad pages always get default
@@ -172,10 +159,6 @@ describe 'Page Helper', :type => :helper do
   end
 
   context "is_unlocalized_page" do
-    it "should return false for xero" do
-      expect(@app.is_unlocalized_page?('xero')).to be false
-    end
-
     it "should return false for index" do
       expect(@app.is_unlocalized_page?('index')).to be false
     end
