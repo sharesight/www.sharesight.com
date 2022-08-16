@@ -16,6 +16,3 @@
 
   <%= partial "sections/#{type}", locals: section.merge({ locale_obj: locale_obj, class_name: class_name }) %>
 <% end %>
-
-<%# A campaign code cookie for the landing page %>
-<%= partial "partials/campaign_code_cookie", locals: locals.merge({ locale_obj: locale_obj }) %>
