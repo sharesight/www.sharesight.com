@@ -7,5 +7,4 @@ use ZippyStaticCache, :urls => ['/img', '/css', '/js', '/fonts']
 use Rack::Zippy::AssetServer, 'build'
 use Rack::TryStatic,
   root: 'build',
-  urls: ['/'],
-  try: ['.html', 'index.html', '/index.html']
+  urls: ['/']
