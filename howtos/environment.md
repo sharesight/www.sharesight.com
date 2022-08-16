@@ -5,7 +5,7 @@ As this is a public repo, everything is stored in local environment keys.
 #### Environment Settings:
  - Contenful, see `config/contentful.rb`
    - Create your **own** Contentful keys for each space.
-   <!-- The Blog is now deprecated - and built as part of the gatsby site static-www -->
+   <!-- The Blog and Landing Pages are now deprecated - and built as part of the gatsby site static-www -->
    - Blog Space: https://app.contentful.com/spaces/91sm3pewxzag/api/keys
      - CONTENTFUL_BLOG_ACCESS_TOKEN
      - CONTENTFUL_BLOG_PREVIEW_TOKEN
@@ -25,9 +25,6 @@ Example local `.envrc` file for development—using direnv (https://direnv.net/)
 # .envrc
 export CONTENTFUL_PARTNERS_ACCESS_TOKEN=DELIVERY_TOKEN_HERE
 export CONTENTFUL_PARTNERS_PREVIEW_TOKEN=PREVIEW_TOKEN_HERE
-export CONTENTFUL_LANDING_PAGES_ACCESS_TOKEN=DELIVERY_TOKEN_HERE
-export CONTENTFUL_LANDING_PAGES_PREVIEW_TOKEN=PREVIEW_TOKEN_HERE
-```
 
 #### Github Actions Secrets
   - All of these go into https://github.com/sharesight/www.sharesight.com/settings/secrets under the same name.
