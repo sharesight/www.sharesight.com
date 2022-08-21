@@ -57,9 +57,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_path" do
     it "should match our expectations" do
       [
-        ['/xero.html', '/xero/'],
-        ['/ca//xero', '/xero/'],
-        ['/nz/xero/', '/xero/'],
         ['/ca/', ''],
         ['/ca', ''],
         ['/', '']
@@ -73,9 +70,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_url" do
     it "should match our expectations" do
       [
-        ['/xero', @url + '/xero/'],
-        ['/ca//xero', @url + '/xero/'],
-        ['/nz/xero/', @url + '/xero/'],
         ['/ca/', @url],
         ['/ca', @external_url, @external_url],
         ['index.html', @url],
@@ -95,10 +89,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_path" do
     it "should match our expectations" do
       [
-        ['/xero.html', '/xero/'],
-        ['/ca//xero', '/nz/xero/', 'nz'],
-        ['/ca//xero', '/ca/xero/', 'ca'],
-        ['/nz/xero/', '/nz/xero/', 'nz'],
         ['/ca/', ''],
         ['/', ''],
         ['/index.html', ''],
@@ -117,10 +107,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_url" do
     it "should match our expectations" do
       [
-        ['/xero.html', @url + '/xero/'],
-        ['/ca//xero', @url + '/nz/xero/', 'nz'],
-        ['/ca//xero', @url + '/ca/xero/', 'ca'],
-        ['/nz/xero/', @url + '/nz/xero/', 'nz'],
         ['/ca/', @url],
         ['/ca', @external_url + '/nz/', 'nz', @external_url],
         ['/', @url + '/nz/', 'nz'],
