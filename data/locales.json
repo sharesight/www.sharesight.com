@@ -28,13 +28,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
         "page": "pro",
         "page_title": "Sharesight Pro",
         "page_description": "Cutting-edge online stock portfolio management software for accountants & financial advisers. Track prices, dividends, performance and tax!",
@@ -70,13 +63,6 @@
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Australia.",
-        "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
-        "sitemap_priority": 0.8
       },
       {
         "page": "pro",
@@ -116,13 +102,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in Canada.",
-        "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
         "page": "pro",
         "page_title": "Sharesight Pro Canada",
         "page_description": "Cutting-edge online stock portfolio management software for Canadian accountants & financial advisers. Track prices, dividends, performance and tax!",
@@ -158,13 +137,6 @@
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in New Zealand.",
-        "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
-        "sitemap_priority": 0.8
       },
       {
         "page": "pro",
@@ -204,13 +176,6 @@
         "sitemap_changefreq": "daily"
       },
       {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing in the UK.",
-        "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
-        "sitemap_priority": 0.8
-      },
-      {
         "page": "pro",
         "page_title": "Sharesight Pro UK",
         "page_description": "Cutting-edge online share portfolio management software for UK accountants & financial advisers. Track prices, dividends, performance and tax!",
@@ -246,13 +211,6 @@
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "xero",
-        "page_title": "Xero + Sharesight Portfolio Tracker",
-        "page_description": "Used together, Sharesight's investment portfolio tracking system and Xero provide complete visibility into your overall wealth standing.",
-        "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
-        "sitemap_priority": 0.8
       },
       {
         "page": "pro",
