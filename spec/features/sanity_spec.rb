@@ -1,12 +1,6 @@
 require 'spec_helper'
 
 describe 'Build Sanity', :type => :feature do
-  it "should have data from Contentful" do
-    data_dir = dir_list("data/landing-pages/pages/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data['landing-pages'].pages.length).to be > 0
-  end
-
   it "should have built a site" do
     root_dir = dir_list("build")
     # technical assets directories
@@ -26,15 +20,6 @@ describe 'Build Sanity', :type => :feature do
       dir = dir_list("build/#{locale_id}")
       expect(dir).to include("index.html")
       expect(dir).to include("pro")
-    end
-
-    Capybara.app.data.locales.each do |locale|
-      get_landing_pages(locale).each do |landing_page|
-        locale_id = locale[:id]
-        locale_id = '' if locale_id == 'global' # we're looking at the build directory
-        dir = dir_list("build/#{locale_id}")
-        expect(dir).to include("#{landing_page[:url_slug]}")
-      end
     end
   end
 
