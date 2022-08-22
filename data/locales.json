@@ -26,13 +26,6 @@
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "survey-thanks",
-        "page_title": "Thanks | Sharesight",
-        "page_description": "Thanks for taking the time to complete our survey.",
-        "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
-        "no_index": true
       }
     ]
   },

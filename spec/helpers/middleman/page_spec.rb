@@ -79,23 +79,11 @@ describe 'Page Helper', :type => :helper do
     it "should be the page of the global locale" do
       expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
     end
-
-    it "should return the page from the global locale, even when it doesn't exist on any other locale" do
-      expect(@app.base_locale_page(page: 'survey-thanks')[:page_title]).to eq("Thanks | Sharesight")
-    end
   end
 
   context "locale_page" do
     it "should respond with the right page id" do
       expect(@app.locale_page(page: 'index')[:page]).to eq('index')
-    end
-
-    it "should return a page from the global locale when it doesn't exist on the requested locale" do
-      expect(@app.locale_page(page: 'survey-thanks')[:page_title]).to eq("Thanks | Sharesight")
-
-      # This page is special in that it doesn't have a localized version…
-      expect(@app.locale_page(page: 'survey-thanks', locale_obj: @app.get_locale_obj('nz'))[:page_title]).to eq("Thanks | Sharesight")
-      expect(@app.locale_page(page: 'survey-thanks', locale_obj: @app.get_locale_obj('uk'))[:page_title]).to eq("Thanks | Sharesight")
     end
 
     it "should respond with nil when no page is found" do
@@ -109,8 +97,6 @@ describe 'Page Helper', :type => :helper do
     end
 
     it "should match expected counts" do
-      expect(@app.page_counts['survey-thanks']).to eq(1)
-
       expect(@app.page_counts['index']).to eq(6)
 
       expect(@app.page_counts['fake-page']).to eq(nil)
@@ -119,8 +105,6 @@ describe 'Page Helper', :type => :helper do
 
   context "page_alternative_locales" do
     it "should match expected counts" do
-      expect(@app.page_alternative_locales('survey-thanks').length).to eq(1)
-
       expect(@app.page_alternative_locales('index').length).to eq(6)
 
       expect(@app.page_alternative_locales('fake-page')).to be false
@@ -138,10 +122,6 @@ describe 'Page Helper', :type => :helper do
     it "should match expectations" do
       locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
-      end
-
-      locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('survey-thanks', locale[:id])).to be !!(locale[:id] == 'global')
       end
 
       expect(@app.is_valid_locale_id_for_page?('index', 'gb')).to be false
