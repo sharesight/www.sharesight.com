@@ -12,8 +12,6 @@ describe 'Build Sanity', :type => :feature do
     expect(root_dir).to include("favicon.ico")
     expect(root_dir).to include(match(/favicon-16x16-[A-f0-9]+\.png/)) # is hashed
     expect(root_dir).to include(match(/favicon-32x32-[A-f0-9]+\.png/)) # is hashed
-    expect(root_dir).to include("robots.txt")
-    expect(root_dir).to include("sitemap.xml")
 
     ['', 'au', 'ca', 'nz', 'uk'].each do |locale_id|
       expect(root_dir).to include(locale_id) if locale_id != ''
