@@ -13,23 +13,12 @@ describe 'URL Middleman Helper', :type => :helper do
     end
   end
 
-  context "canonical_url" do
-    it "should be an absolute url" do
-      skip "This does not work – Middleman does not seem to update the `current_page`..  The base function is tested, however."
-
-      visit @url + '/nz/partners'
-      expect(Capybara.app.canonical_url).to eq(@url + '/nz/partners/')
-    end
-  end
-
   context "current_global_url" do
     it "should be the current absolute url" do
       skip "This does not work – Middleman does not seem to update the `current_page`.."
 
       visit @url + '/'
       expect(Capybara.app.current_global_url).to eq(@url)
-      visit @url + '/nz/partners'
-      expect(Capybara.app.current_global_url).to eq(@url + '/partners/')
     end
   end
 
@@ -68,12 +57,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_path" do
     it "should match our expectations" do
       [
-        ['/xero.html', '/xero/'],
-        ['/ca//xero', '/xero/'],
-        ['/nz/xero/', '/xero/'],
-        ['/partners/all.html', '/partners/all/'],
-        ['/nz/partners/all/', '/partners/all/'],
-        ['/ca/partners/all', '/partners/all/'],
         ['/ca/', ''],
         ['/ca', ''],
         ['/', '']
@@ -87,12 +70,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "base_url" do
     it "should match our expectations" do
       [
-        ['/xero', @url + '/xero/'],
-        ['/ca//xero', @url + '/xero/'],
-        ['/nz/xero/', @url + '/xero/'],
-        ['/partners/all.html', @url + '/partners/all/'],
-        ['/nz/partners/all', @url + '/partners/all/'],
-        ['/ca/partners/all', @external_url + '/partners/all/', @external_url],
         ['/ca/', @url],
         ['/ca', @external_url, @external_url],
         ['index.html', @url],
@@ -112,14 +89,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_path" do
     it "should match our expectations" do
       [
-        ['/xero.html', '/xero/'],
-        ['/ca//xero', '/nz/xero/', 'nz'],
-        ['/ca//xero', '/ca/xero/', 'ca'],
-        ['/nz/xero/', '/nz/xero/', 'nz'],
-        ['/partners/all.html', '/partners/all/'],
-        ['/partners//all.html', '/ca/partners/all/', 'ca'],
-        ['/nz/partners/all', '/uk/partners/all/', 'uk'],
-        ['/ca/partners/all', '/nz/partners/all/', 'nz'],
         ['/ca/', ''],
         ['/', ''],
         ['/index.html', ''],
@@ -138,14 +107,6 @@ describe 'URL Middleman Helper', :type => :helper do
   context "localize_url" do
     it "should match our expectations" do
       [
-        ['/xero.html', @url + '/xero/'],
-        ['/ca//xero', @url + '/nz/xero/', 'nz'],
-        ['/ca//xero', @url + '/ca/xero/', 'ca'],
-        ['/nz/xero/', @url + '/nz/xero/', 'nz'],
-        ['/partners/all.html', @url + '/partners/all/'],
-        ['/partners//all.html', @url + '/ca/partners/all/', 'ca'],
-        ['/nz/partners/all', @url + '/uk/partners/all/', 'uk'],
-        ['/ca/partners/all', @external_url + '/nz/partners/all/', 'nz', @external_url],
         ['/ca/', @url],
         ['/ca', @external_url + '/nz/', 'nz', @external_url],
         ['/', @url + '/nz/', 'nz'],
@@ -271,11 +232,6 @@ describe 'URL Middleman Helper', :type => :helper do
         ['/pages/2.html', '/'],
         ['/some-pages/2.html', '/some-pages/2/'],
         ['/some-pages/0f.html', '/some-pages/0f/'],
-        ['/partners/pages/22.html', '/partners/'],
-        ['/partners/pages/0f.html', '/partners/pages/0f/'],
-        ['/partners/pages/zero.html', '/partners/pages/zero/'],
-        ['/partners/pages/NaN.html', '/partners/pages/NaN/'],
-        ['/partners/pages/1.2.html', '/partners/pages/1.2'] # no trailing slash because it thinks this is an extension (eg .csv)
       ].each do |array|
         expect(@app.strip_pagination_from_path(array[0])).to eq(array[1])
       end
