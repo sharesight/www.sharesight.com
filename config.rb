@@ -43,7 +43,6 @@ config[:community_url] = ApplicationConfig::COMMUNITY_URL
 config[:api_url] = "#{config[:portfolio_url]}/api"
 config[:signup_url] = "#{config[:portfolio_url]}/signup"
 config[:login_url] = "#{config[:portfolio_url]}/login"
-config[:pro_signup_url] = "#{config[:portfolio_url]}/professional_signup"
 
 # Activate Middleman Extensions
 activate :syntax, :line_numbers => true

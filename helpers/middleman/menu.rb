@@ -5,24 +5,22 @@ module MiddlemanMenuHelpers
   include MiddlemanLocaleHelpers # for current_locale_obj method
   include MiddlemanPageHelpers # for locale_page method
 
-  def get_menu_config(locale_obj: current_locale_obj, professional: false)
+  def get_menu_config(locale_obj: current_locale_obj)
     return [
-      get_features_menu(locale_obj: locale_obj, professional: professional),
-      get_benefits_menu(locale_obj: locale_obj, professional: professional),
-      get_pricing_menu(locale_obj: locale_obj, professional: professional),
-      get_resources_menu(locale_obj: locale_obj, professional: professional)
+      get_features_menu(locale_obj: locale_obj),
+      get_benefits_menu(locale_obj: locale_obj),
+      get_pricing_menu(locale_obj: locale_obj),
+      get_resources_menu(locale_obj: locale_obj)
     ]
   end
 
   private
 
-  def get_pricing_href(locale_obj: current_locale_obj, professional: false)
-    return '#pricing' if professional
-    
+  def get_pricing_href(locale_obj: current_locale_obj)
     return localize_url('pricing', locale_id: locale_obj[:id])
   end
 
-  def get_features_menu(locale_obj: current_locale_obj, professional: false)
+  def get_features_menu(locale_obj: current_locale_obj)
     return {
       label: 'Features',
       rows: [
@@ -89,7 +87,7 @@ module MiddlemanMenuHelpers
                   visible_desktop: false,
                   label: 'Pricing',
                   icon: 'wallet',
-                  href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
+                  href: get_pricing_href(locale_obj: locale_obj), # this goes to an anchor for pro
                   title: "Pricing | #{locale_obj[:append_title]}",
                 },
                 {
@@ -117,7 +115,7 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_benefits_menu(locale_obj: current_locale_obj, professional: false)
+  def get_benefits_menu(locale_obj: current_locale_obj)
     return {
       label: 'Benefits',
       rows: [
@@ -143,7 +141,7 @@ module MiddlemanMenuHelpers
                 {
                   icon: 'users',
                   label: 'Finance Professionals',
-                  title: locale_page(page: 'pro', locale_obj: locale_obj)[:page_title],
+                  title: "Sharesight Pro | #{locale_obj[:append_title]}",
                   href: localize_url('pro', locale_id: locale_obj[:id]),
                   description: 'Grow your business with **Sharesight Pro**.'
                 },
@@ -162,16 +160,16 @@ module MiddlemanMenuHelpers
     }
   end
 
-  def get_pricing_menu(locale_obj: current_locale_obj, professional: false)
+  def get_pricing_menu(locale_obj: current_locale_obj)
     return {
       visible_mobile: false,
       label: 'Pricing',
-      href: get_pricing_href(locale_obj: locale_obj, professional: professional), # this goes to an anchor for pro
+      href: get_pricing_href(locale_obj: locale_obj), # this goes to an anchor for pro
       title: "Pricing | #{locale_obj[:append_title]}",
     }
   end
 
-  def get_resources_menu(locale_obj: current_locale_obj, professional: false)
+  def get_resources_menu(locale_obj: current_locale_obj)
     return {
       label: 'Resources',
       class: 'menu--lg',

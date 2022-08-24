@@ -32,8 +32,6 @@ describe 'Page Helper', :type => :helper do
         # [input, expectation]
         ['/', 'index'],
         ['/nz', 'index'],
-        ['/ca/pro', 'pro'],
-        ['/pro', 'pro'],
       ].each do |array|
         visit array[0]
         expect(@app.full_page_path_name).to eq(array[1])
@@ -54,12 +52,6 @@ describe 'Page Helper', :type => :helper do
 
       visit '/nz'
       expect(@app.page_path_name).to eq('index')
-
-      visit '/ca/pro'
-      expect(@app.page_path_name).to eq('pro')
-
-      visit '/pro'
-      expect(@app.page_path_name).to eq('pro')
     end
   end
 
@@ -86,25 +78,12 @@ describe 'Page Helper', :type => :helper do
   context "base_locale_page" do
     it "should be the page of the global locale" do
       expect(@app.base_locale_page(page: 'index')[:page_title]).to eq("Stock Portfolio Tracker | Sharesight")
-
-      visit '/pro'
-      expect(@app.base_locale_page[:page_title]).to eq("Sharesight Pro")
     end
   end
 
   context "locale_page" do
     it "should respond with the right page id" do
       expect(@app.locale_page(page: 'index')[:page]).to eq('index')
-      expect(@app.locale_page(page: 'pro')[:page]).to eq('pro')
-    end
-
-    it "should respond with a localized 'code' based page" do
-      expect(@app.locale_page(page: 'pro')[:page_title]).to eq('Sharesight Pro')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('global'))[:page_title]).to eq('Sharesight Pro')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('au'))[:page_title]).to eq('Sharesight Pro Australia')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('ca'))[:page_title]).to eq('Sharesight Pro Canada')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('nz'))[:page_title]).to eq('Sharesight Pro New Zealand')
-      expect(@app.locale_page(page: 'pro', locale_obj: @app.get_locale_obj('uk'))[:page_title]).to eq('Sharesight Pro UK')
     end
 
     it "should respond with nil when no page is found" do
@@ -142,7 +121,6 @@ describe 'Page Helper', :type => :helper do
   context "is_valid_locale_id_for_page?" do
     it "should match expectations" do
       locales.each do |locale|
-        expect(@app.is_valid_locale_id_for_page?('pro', locale[:id])).to be true
       end
 
       locales.each do |locale|
@@ -166,10 +144,6 @@ describe 'Page Helper', :type => :helper do
   context "is_unlocalized_page" do
     it "should return false for index" do
       expect(@app.is_unlocalized_page?('index')).to be false
-    end
-
-    it "should return false for pro" do
-      expect(@app.is_unlocalized_page?('pro')).to be false
     end
 
     it "should return false for an unknown page" do

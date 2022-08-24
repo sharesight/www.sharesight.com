@@ -26,13 +26,6 @@
         "footer_tagline": "Simply the best portfolio management tool for DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro",
-        "page_description": "Cutting-edge online stock portfolio management software for accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -63,13 +56,6 @@
         "footer_tagline": "Simply the best portfolio management tool for Australian DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro Australia",
-        "page_description": "Cutting-edge online share portfolio management software for Australian accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -100,13 +86,6 @@
         "footer_tagline": "Simply the best portfolio management tool for Canadian DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro Canada",
-        "page_description": "Cutting-edge online stock portfolio management software for Canadian accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -137,13 +116,6 @@
         "footer_tagline": "Simply the best portfolio management tool for New Zealand DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro New Zealand",
-        "page_description": "Cutting-edge online share portfolio management software for New Zealand accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -174,13 +146,6 @@
         "footer_tagline": "Simply the best portfolio management tool for UK DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro UK",
-        "page_description": "Cutting-edge online share portfolio management software for UK accountants & financial advisers. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   },
@@ -211,13 +176,6 @@
         "footer_tagline": "Simply the best portfolio management tool for US DIY investors.",
         "sitemap_priority": 1,
         "sitemap_changefreq": "daily"
-      },
-      {
-        "page": "pro",
-        "page_title": "Sharesight Pro US",
-        "page_description": "Cutting-edge online stock portfolio management software for US accountants & financial advisors. Track prices, dividends, performance and tax!",
-        "tagline": "A comprehensive investment portfolio tracker and reporting tool for US financial professionals.",
-        "sitemap_priority": 0.8
       }
     ]
   }
