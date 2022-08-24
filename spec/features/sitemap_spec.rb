@@ -35,29 +35,8 @@ describe 'Sitemap', :type => :feature do
       expectation = 0
       expectation += locale[:pages].reject{ |page| page[:no_index] == true }.length
 
-      expectation += get_landing_pages(locale).reject { |lp| lp[:no_index] == true }.length
-
       expect(all(:xpath, '//urlset/url').length).to eq(expectation)
       expect(all(:xpath, '//urlset/url/loc').length).to eq(expectation)
-    end
-  end
-
-  Capybara.app.data.locales.each do |locale|
-    it "should have all landing pages for locale #{locale['id']}" do
-      visit localize_path('sitemap.xml', locale_id: locale[:id])
-
-      get_landing_pages(locale).reject { |lp| lp[:no_index] }.each do |landing_page|
-        url = localize_url(landing_page[:url_slug], locale_id: locale[:id])
-
-        xpath = generate_xpath('//urlset/url/loc', text: url)
-        expect(page).to have_xpath(xpath), "#{landing_page.url_slug} is missing in sitemap (expected #{url})."
-
-        locales.each do |sublocale|
-          url = localize_url(landing_page[:url_slug], locale_id: sublocale.id)
-          xpath = generate_xpath('//urlset/url/link', args: { href: url })
-          expect(page).to have_xpath(xpath), "#{landing_page.name} is missing in sitemap (expected #{url})."
-        end
-      end
     end
   end
 

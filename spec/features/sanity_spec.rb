@@ -1,12 +1,6 @@
 require 'spec_helper'
 
 describe 'Build Sanity', :type => :feature do
-  it "should have data from Contentful" do
-    data_dir = dir_list("data/landing-pages/pages/")
-    expect(data_dir - [".", ".."]).not_to be_empty
-    expect(Capybara.app.data['landing-pages'].pages.length).to be > 0
-  end
-
   it "should have built a site" do
     root_dir = dir_list("build")
     # technical assets directories
@@ -20,22 +14,6 @@ describe 'Build Sanity', :type => :feature do
     expect(root_dir).to include(match(/favicon-32x32-[A-f0-9]+\.png/)) # is hashed
     expect(root_dir).to include("robots.txt")
     expect(root_dir).to include("sitemap.xml")
-
-    ['', 'au', 'ca', 'nz', 'uk'].each do |locale_id|
-      expect(root_dir).to include(locale_id) if locale_id != ''
-      dir = dir_list("build/#{locale_id}")
-      expect(dir).to include("pro")
-      expect(dir).to include("xero")
-    end
-
-    Capybara.app.data.locales.each do |locale|
-      get_landing_pages(locale).each do |landing_page|
-        locale_id = locale[:id]
-        locale_id = '' if locale_id == 'global' # we're looking at the build directory
-        dir = dir_list("build/#{locale_id}")
-        expect(dir).to include("#{landing_page[:url_slug]}")
-      end
-    end
   end
 
   it "should not include git conflict markers in source" do # checks for <<<<<<< (7 of those)

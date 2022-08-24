@@ -12,7 +12,7 @@
 <%
   # We store this menu data in here to be used for both Desktop and Mobile navigation..
   locale_obj = locals[:locale_obj] || current_locale_obj
-  menus = get_menu_config(locale_obj: locale_obj, professional: locals[:professional])
+  menus = get_menu_config(locale_obj: locale_obj)
 %>
 
 <div class="container nav__container">
@@ -21,16 +21,16 @@
       <img src="<%=image_path('logos/logo.svg')%>" alt="<%= locale_obj[:default_title] %>" class="site_logo">
     </a>
 
-    <%= partial "partials/header/desktop_navigation", locals: { menus: menus, professional: locals[:professional] } %>
+    <%= partial "partials/header/desktop_navigation", locals: { menus: menus } %>
 
     <div class="nav__ctas">
       <a href="<%= config[:login_url] %>" class="nav__cta btn--transparent" title="Log In to Sharesight">Log In</a>
-      <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
+      <a href="<%= config[:signup_url] %>" class="nav__cta btn--highlight" title="Sign Up for Sharesight for Free">
         <span class="show-mobile hide-desktop">Sign Up</span>
         <span class="show-desktop hide-mobile">Get Sharesight Free</span>
       </a>
     </div>
 
-    <%= partial "partials/header/mobile_navigation", locals: { menus: menus, professional: locals[:professional] } %>
+    <%= partial "partials/header/mobile_navigation", locals: { menus: menus } %>
   </nav>
 </div>

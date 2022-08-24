@@ -17,8 +17,6 @@ const localization = {
 
   isGlobalOnlyPage() {
     // NOTE: Could look in `locales.json` (via config.locales) to see if the current path is global.
-    if (window.location.pathname.indexOf('/blog') === 0) return true;
-    if (window.location.pathname.indexOf('/survey-thanks') === 0) return true;
     if (document.getElementById('_404')) return true;
     return false;
   },
