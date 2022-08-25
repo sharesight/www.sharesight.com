@@ -29,7 +29,6 @@ RSpec::Matchers.define :have_base_metas do
   match do |page|
     expect(page).to have_meta('utf-8', name_key: 'charset')
     expect(page).to have_meta('viewport')
-    expect(page).to have_meta('robots') # NOTE: We cannot test what this is as it changes in production vs. develop vs. local…but it does change on a page-by-page basis!
     expect(page).to have_meta('application-name', 'Sharesight')
   end
 

@@ -7,17 +7,9 @@ module Middleman
     def after_configuration
       route()
       proxy_pages()
-      sitemaps()
     end
 
     private
-
-    def sitemaps()
-      app.data.locales.each do |locale|
-        app.config[:locale_obj] = locale
-        app.proxy "/#{locale[:id]}/sitemap.xml", "sitemap.xml", :locals => { locale_obj: locale }, ignore: false
-      end
-    end
 
     def route()
       # Routing Overrides
