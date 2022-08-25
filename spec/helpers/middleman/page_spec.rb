@@ -121,6 +121,9 @@ describe 'Page Helper', :type => :helper do
   context "is_valid_locale_id_for_page?" do
     it "should match expectations" do
       locales.each do |locale|
+      end
+
+      locales.each do |locale|
         expect(@app.is_valid_locale_id_for_page?('index', locale[:id])).to be true
       end
 

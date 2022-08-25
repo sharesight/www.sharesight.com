@@ -17,7 +17,7 @@
     ],
 
     'Partners' => [
-{ name: 'Sharesight Pro', href: localize_url('pro', locale_id: locale_obj[:id]), title: "Sharesight Pro | #{locale_obj[:append_title]}" },
+      { name: 'Sharesight Pro', href: localize_url('pro', locale_id: locale_obj[:id]), title: "Sharesight Pro | #{locale_obj[:append_title]}" },
       { name: 'Partner Directory', href: localize_url('partners', locale_id: locale_obj[:id]), title: "Partner Directory | #{locale_obj[:append_title]}"  },
       { name: 'Become a Partner', href:localize_url('become-a-partner', locale_id: locale_obj[:id]), title: "Partner with Sharesight | #{locale_obj[:append_title]}" },
       { name: 'Become an Affiliate', href: localize_url('affiliates', locale_id: locale_obj[:id]), title: "Affiliates | #{locale_obj[:append_title]}" },
@@ -74,7 +74,7 @@
 
       <div class="footer__buttons">
         <a href="<%= config[:login_url] %>" class="footer__login" title="Log In to Sharesight">Log In</a>
-        <a href="<%= locals[:professional] ? config[:pro_signup_url] : config[:signup_url] %>" class="footer__sign-up" title="Sign up for Sharesight">SIGN UP</a>
+        <a href="<%= config[:signup_url] %>" class="footer__sign-up" title="Sign up for Sharesight">SIGN UP</a>
       </div>
 
       <div class="footer__apps">
