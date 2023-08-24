@@ -54,7 +54,7 @@ jobs:
 
 
     # -------- Github Checkout
-    - uses: actions/checkout@v3.0.2
+    - uses: actions/checkout@v3.6.0
 
 
     # -------- Ruby & Dependencies
